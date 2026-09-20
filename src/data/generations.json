@@ -1,0 +1,200 @@
+[
+  {
+    "id": "tarmac",
+    "name": "Specialized Tarmac",
+    "short": "TARMAC",
+    "subtitle": "从轻量轮廓，走向气动与轻量的汇合。",
+    "note": "近代三章。SL6、SL7 的年份按所引官方车型档案；SL8 按发布资料。不是完整历代清单，也不把档案年份当作首发年份。",
+    "hero": "tarmac-sl8",
+    "nodes": [
+      {
+        "id": "sl6",
+        "year": 2020,
+        "basis": "官方车型档案",
+        "name": "SL6",
+        "title": "经典的轻量侧影",
+        "text": "下沉后上叉与独立把立，是图鉴这台 SL6 的观察线索。图中配置为 2020 年存档，不能据此推定 SL6 在 2020 年首次出现。",
+        "change": "轻量车架与相对独立的前端部件。",
+        "look": "先看后上叉接点，再看把立与头管的关系。",
+        "source": "https://www.specialized.com/th/en/bike-archive",
+        "bikeId": "tarmac-sl6"
+      },
+      {
+        "id": "sl7",
+        "year": 2021,
+        "basis": "官方车型档案",
+        "name": "SL7",
+        "title": "把 Venge 的气动思路带进 Tarmac",
+        "text": "SL7 引入来自 Venge 开发经验的管型与前端整合，继续强调轻量。此节点以 2021 官方档案为依据；图鉴照片来自同代 2022 配置。",
+        "change": "前端走线和气动管型成为整车设计的重要部分。",
+        "look": "观察把立下方走线，以及座管和后轮之间的关系。",
+        "source": "https://www.specialized.com/us/en/s-works-tarmac-sl7-sram-red-etap-axs/p/175312",
+        "bikeId": "tarmac-sl7"
+      },
+      {
+        "id": "sl8",
+        "year": 2023,
+        "basis": "发布年份",
+        "name": "SL8",
+        "title": "前端更突出，后端更纤细",
+        "text": "2023 年发布资料介绍了 Speed Sniffer 前端与更细的座管设计。造型变化可以直接观察；瓦数和轻量主张仍需连同白皮书测试条件阅读。",
+        "change": "进一步分配前端气动与后端轻量的设计任务。",
+        "look": "转到正侧面，看头管前伸与细座管的对照。",
+        "source": "https://www.specialized-onlinestore.jp/shop/t/t1784/",
+        "bikeId": "tarmac-sl8"
+      }
+    ]
+  },
+  {
+    "id": "madone",
+    "name": "Trek Madone",
+    "short": "MADONE",
+    "subtitle": "轻量与气动，分开探索，又重新相遇。",
+    "note": "精选六个节点。年份采用 Trek 世代谱；Gen 6 页标题为 2018，正文提及 2019 年配置改进，两者在本页分开说明。",
+    "hero": "madone-slr9",
+    "nodes": [
+      {
+        "id": "gen1",
+        "year": 2003,
+        "basis": "原厂世代谱",
+        "name": "Gen 1",
+        "title": "开始为气流塑形",
+        "text": "早期 Madone 在下管与座管加入气动造型。",
+        "change": "气动与轻量共同进入开发视野。",
+        "look": "留意早期管型上的气动延伸。",
+        "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
+        "bikeId": ""
+      },
+      {
+        "id": "gen4",
+        "year": 2012,
+        "basis": "原厂世代谱",
+        "name": "Gen 4",
+        "title": "截尾管型成为主角",
+        "text": "Kammtail Virtual Foil 管型和较大的气动头管出现。",
+        "change": "空气动力学重新成为重点。",
+        "look": "截尾轮廓与直接安装制动器。",
+        "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
+        "bikeId": ""
+      },
+      {
+        "id": "gen5",
+        "year": 2015,
+        "basis": "原厂世代谱",
+        "name": "Gen 5",
+        "title": "整合化向前一步",
+        "text": "隐藏走线、一体把组与 IsoSpeed 进入 Madone。",
+        "change": "专用气动平台与轻量 Émonda 分工。",
+        "look": "前端整合与座管连接结构。",
+        "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
+        "bikeId": ""
+      },
+      {
+        "id": "gen6",
+        "year": 2018,
+        "basis": "原厂世代谱标题",
+        "name": "Gen 6",
+        "title": "保留气动，增加调节",
+        "text": "Trek 历史页正文将碟刹、可调 IsoSpeed 和分体把组的改进记在 2019 年。",
+        "change": "调节范围成为设计的一部分。",
+        "look": "上管 IsoSpeed 与可调把组。",
+        "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
+        "bikeId": ""
+      },
+      {
+        "id": "gen7",
+        "year": 2022,
+        "basis": "原厂世代谱",
+        "name": "Gen 7",
+        "title": "IsoFlow 留下一处空白",
+        "text": "座管区域的 IsoFlow 镂空成为这一代的识别特征。",
+        "change": "后端连接方式发生明显变化。",
+        "look": "先找座管下方的镂空。",
+        "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
+        "bikeId": ""
+      },
+      {
+        "id": "gen8",
+        "year": 2024,
+        "basis": "原厂世代谱",
+        "name": "Gen 8",
+        "title": "轻量与气动重新合流",
+        "text": "Full System Foil 管型将 Madone 与碳纤维 Émonda 的方向重新整合。",
+        "change": "竞赛平台重新同时面向冲刺与爬坡。",
+        "look": "保留 IsoFlow，观察管型如何收细。",
+        "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
+        "bikeId": "madone-slr9"
+      }
+    ]
+  },
+  {
+    "id": "tcr",
+    "name": "Giant TCR",
+    "short": "TCR",
+    "subtitle": "紧凑式车架，跨越材料与整合方式的演进。",
+    "note": "精选五个节点，年份与世代编号采用 Giant 官方历史页。ISP 属于特定级别，并非每一台 TCR 都使用一体座管。",
+    "hero": "tcr-pro0",
+    "nodes": [
+      {
+        "id": "gen1",
+        "year": 1997,
+        "basis": "原厂历史记录",
+        "name": "第 1 代",
+        "title": "紧凑式公路车的开端",
+        "text": "首代 TCR 采用紧凑式几何，提供 S、M、L 三个车架尺寸。",
+        "change": "改变传统公路车的比例安排。",
+        "look": "倾斜上管与较小的后三角。",
+        "source": "https://www.giant-bicycles.com/global/tcr",
+        "bikeId": ""
+      },
+      {
+        "id": "gen2",
+        "year": 2002,
+        "basis": "原厂历史记录",
+        "name": "第 2 代",
+        "title": "进入全复合材料时代",
+        "text": "Giant 的首款全复合材料 TCR 车架组在环法亮相。",
+        "change": "核心车架材料改变。",
+        "look": "材料变化，不等于单凭照片能判断重量。",
+        "source": "https://www.giant-bicycles.com/global/tcr",
+        "bikeId": ""
+      },
+      {
+        "id": "gen4",
+        "year": 2005,
+        "basis": "原厂历史记录",
+        "name": "第 4 代",
+        "title": "ISP 出现",
+        "text": "这一代首次提供一体座管，并以五个尺码上市。",
+        "change": "座管开始成为车架整体的一部分。",
+        "look": "区分一体座管与可抽出的独立座管。",
+        "source": "https://www.giant-bicycles.com/global/tcr",
+        "bikeId": ""
+      },
+      {
+        "id": "gen9",
+        "year": 2020,
+        "basis": "原厂历史记录",
+        "name": "第 9 代",
+        "title": "继续优化管型",
+        "text": "第九代开发加入更多气动管型考量。",
+        "change": "在既有竞赛平台上推进效率设计。",
+        "look": "观察管型轮廓，不由外观估算风阻。",
+        "source": "https://www.giant-bicycles.com/global/tcr",
+        "bikeId": ""
+      },
+      {
+        "id": "gen10",
+        "year": 2024,
+        "basis": "原厂历史记录",
+        "name": "第 10 代",
+        "title": "走线融入前端",
+        "text": "OverDrive Aero 转向管与内走线把组成为新一代重点。",
+        "change": "前端部件作为系统一起设计。",
+        "look": "D 形转向管、垫圈和把立之间的关系。",
+        "source": "https://www.giant-bicycles.com/global/tcr",
+        "bikeId": "tcr-pro0"
+      }
+    ]
+  }
+]

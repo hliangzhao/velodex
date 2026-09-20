@@ -19,6 +19,15 @@ export function createApp(catalog = loadCatalog(), { production = false } = {}) 
   app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
   app.get('/api/catalog', (_req, res) => res.json(catalog));
   app.get('/api/brands', (_req, res) => res.json(catalog.brands));
+  app.get('/api/rider-stories', (_req, res) => {
+    try {
+      res.json(
+        JSON.parse(readFileSync(new URL('../public/rider-stories.json', import.meta.url), 'utf8')),
+      );
+    } catch {
+      res.status(503).json({ error: '故事快照暂不可用' });
+    }
+  });
   const parts = loadParts();
   app.get('/api/parts', (req, res) => {
     const { category, brand, q } = req.query;

@@ -7,6 +7,7 @@ import BikeCard from './BikeCard';
 import stories from './data/stories.json';
 import { SaveButton } from './Library';
 import './workshop.css';
+import './community.css';
 
 export function StoryCards({ catalog, limit }: { catalog: Catalog; limit?: number }) {
   return (
@@ -127,6 +128,20 @@ export default function Discover() {
                   </a>
                 </div>
                 <StoryCards catalog={catalog} limit={3} />
+                <div className="reading-paths">
+                  <a href={`${base}?view=generations`}>
+                    <small>THE FAMILY TREE</small>
+                    <h3>经典车型世代谱</h3>
+                    <p>一个名字，跨过几个时代。</p>
+                    <span>沿时间线看设计 →</span>
+                  </a>
+                  <a href={`${base}?view=riders`}>
+                    <small>BUILT BY RIDERS</small>
+                    <h3>车友装车故事</h3>
+                    <p>从一张配置单，到真正骑它的人。</p>
+                    <span>阅读与投稿 →</span>
+                  </a>
+                </div>
               </section>
               <section className="comparison-invite">
                 <div>

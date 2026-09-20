@@ -7,6 +7,7 @@ import { base } from './SiteChrome';
 import chinaPrices from './data/china-prices.json';
 import { drawPoster, itemName } from './BuildPoster';
 import WeightAssistant from './WeightAssistant';
+import { emptyStory } from '../shared/rider-stories.mjs';
 import {
   slots,
   newBuild,
@@ -473,9 +474,28 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
           <strong>{fit.title}</strong>
           <p>{fit.text}</p>
           <a href={`${base}?view=workshop&tool=fit`}>打开轮胎与轮圈核对 →</a>
+          <a href={`${base}?view=workshop&tool=interfaces`}>逐项核对装车接口 →</a>
           <p>还需确认车架的中轴、轴制式、制动接口、塔基、走线与轮胎间隙；此清单不构成装配认证。</p>
         </div>
         <div className="work-actions">
+          <button
+            className="light-button"
+            onClick={() => {
+              const draft = {
+                ...emptyStory(),
+                title: build.title,
+                bike: bike.name,
+                setup: slots
+                  .map(([id, label]) => `${label}：${itemName(build, id, bike, parts.products)}`)
+                  .join('\n'),
+              };
+              location.assign(
+                `${base}?view=riders&compose=1#draft=${encodeURIComponent(JSON.stringify(draft))}`,
+              );
+            }}
+          >
+            写下装车故事 ↗
+          </button>
           <button className="light-button" disabled={!ready} onClick={save}>
             <Save size={16} />
             保存到本机

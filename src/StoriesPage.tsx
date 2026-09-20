@@ -93,6 +93,20 @@ export default function StoriesPage() {
                 <p>沿着一个细节、一段世代、或一种骑行方式，重新认识那些熟悉的名字。</p>
                 {storyId && <p role="status">这篇专题暂未收录，可以从下面的选集继续阅读。</p>}
               </header>
+              <div className="reading-paths">
+                <a href={`${base}?view=generations`}>
+                  <small>THE FAMILY TREE</small>
+                  <h2>经典车型世代谱</h2>
+                  <p>Tarmac、Madone、TCR：沿设计变化逐代看。</p>
+                  <span>走进年代档案 →</span>
+                </a>
+                <a href={`${base}?view=riders`}>
+                  <small>BUILT BY RIDERS</small>
+                  <h2>车友装车故事</h2>
+                  <p>骑行场景、配置取舍，以及后来才知道的事。</p>
+                  <span>看看车与它的主人 →</span>
+                </a>
+              </div>
               <StoryCards catalog={catalog} />
             </>
           )

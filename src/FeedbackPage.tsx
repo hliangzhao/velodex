@@ -102,6 +102,9 @@ export default function FeedbackPage() {
           <span className="eyebrow">THE GUESTBOOK / 骑友来信</span>
           <h1>把下一次更新，交给好奇心。</h1>
           <p>想看一台车、发现一个错误，或只是来聊聊自己的装车思路。</p>
+          <a className="text-link" href={`${base}?view=riders`}>
+            有自己的车？写一篇装车故事 →
+          </a>
         </div>
         <a href={feedbackUrl} target="_blank" rel="noreferrer">
           完整留言区 <ExternalLink size={16} />

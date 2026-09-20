@@ -1,6 +1,7 @@
 import { writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
-const query = `query { repository(owner:"hliangzhao",name:"velodex") { discussion(number:1) { url comments(last:50) { totalCount nodes { id bodyText url createdAt author { login } replies(last:10) { totalCount nodes { id bodyText url createdAt author { login } } } } } } } }`;
+import { exportRiderStories } from '../shared/rider-stories.mjs';
+const query = `query { repository(owner:"hliangzhao",name:"velodex") { discussion(number:1) { url comments(last:100) { totalCount nodes { id body bodyText isMinimized url createdAt author { login } replies(last:10) { totalCount nodes { id bodyText isMinimized url createdAt author { login } } } } } } } }`;
 let payload;
 if (process.env.GITHUB_TOKEN) {
   const response = await fetch('https://api.github.com/graphql', {
@@ -35,14 +36,32 @@ const data = {
   url: discussion?.url || 'https://github.com/hliangzhao/velodex/discussions',
   available: Boolean(discussion),
   total: discussion?.comments.totalCount || 0,
-  comments: (discussion?.comments.nodes || []).map((c) => ({
-    ...clean(c),
-    replies: c.replies.nodes.map(clean),
-    replyTotal: c.replies.totalCount,
-  })),
+  comments: (discussion?.comments.nodes || [])
+    .slice(-50)
+    .filter((c) => !c.isMinimized)
+    .map((c) => ({
+      ...clean(c),
+      replies: c.replies.nodes.filter((r) => !r.isMinimized).map(clean),
+      replyTotal: c.replies.totalCount,
+    })),
 };
 await writeFile(
   new URL('../public/feedback.json', import.meta.url),
   JSON.stringify(data, null, 2) + '\n',
 );
 console.log(`Exported ${data.comments.length} public feedback comments.`);
+const stories = exportRiderStories(discussion?.comments.nodes || []);
+await writeFile(
+  new URL('../public/rider-stories.json', import.meta.url),
+  JSON.stringify(
+    {
+      updatedAt: data.updatedAt,
+      available: Boolean(discussion),
+      scanned: discussion?.comments.nodes.length || 0,
+      stories,
+    },
+    null,
+    2,
+  ) + '\n',
+);
+console.log(`Exported ${stories.length} rider stories.`);

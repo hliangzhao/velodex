@@ -7,10 +7,12 @@ import DreamBuild from './DreamBuild';
 import { amount, fitCheck, gear, upgrade, wheelFit } from './workshop';
 import './workshop.css';
 const StructureLab = lazy(() => import('./StructureLab'));
+const InterfaceTool = lazy(() => import('./InterfaceTool'));
 const tabs = [
   ['build', '梦幻装车单'],
   ['gears', '齿比计算器'],
   ['fit', '轮胎 × 轮圈'],
+  ['interfaces', '装车接口核对'],
   ['upgrade', '升级前后'],
   ['structures', '结构观察室'],
 ] as const;
@@ -50,7 +52,11 @@ export default function WorkshopPage() {
           </a>
         ))}
       </nav>
-      {tool === 'gears' ? (
+      {tool === 'interfaces' ? (
+        <Suspense fallback={<p>正在准备接口核对…</p>}>
+          <InterfaceTool />
+        </Suspense>
+      ) : tool === 'gears' ? (
         <GearTool />
       ) : tool === 'upgrade' ? (
         <UpgradeTool />
