@@ -1963,7 +1963,7 @@ footer > a:last-child {
   gap: 35px;
 }
 .geometry-visual {
-  background: #eef1e7;
+  background: #f2f3ed;
   padding: 22px 25px 12px;
   display: flex;
   flex-direction: column;
@@ -1979,11 +1979,67 @@ footer > a:last-child {
 }
 .geometry-visual svg {
   width: 100%;
-  max-height: 350px;
+  max-height: 370px;
+  margin: 16px 0 10px;
+}
+.geometry-wheels {
+  stroke: #d1d7c9;
+  stroke-width: 1.2;
+}
+.geometry-frame {
+  stroke: #a6b39a;
+}
+.geometry-frame-inner {
+  stroke: #f2f3ed;
+}
+.geometry-guides {
+  stroke: #b9c3af;
+  stroke-width: 1;
+  stroke-dasharray: 5 5;
+}
+.geometry-dimensions {
+  stroke: #758762;
+  stroke-width: 1.25;
+}
+.geometry-labels {
+  font:
+    500 17px 'Barlow',
+    sans-serif;
+  letter-spacing: 0.5px;
+  fill: #4e653c;
+  stroke: #f2f3ed;
+  stroke-width: 8px;
+  paint-order: stroke;
+  stroke-linejoin: round;
+}
+.geometry-badge circle {
+  fill: #f2f3ed;
+  stroke: #a2b18f;
+  stroke-width: 1;
+}
+.geometry-badge text {
+  fill: #526b3d;
+  font:
+    500 15px 'Barlow',
+    sans-serif;
+}
+.geometry-datums {
+  fill: #779d44;
+  stroke: #f2f3ed;
+  stroke-width: 1.5;
+}
+.geometry-key {
+  display: inline-block;
+  color: #779257;
+  font:
+    500 11px 'Barlow',
+    sans-serif;
+  margin-right: 3px;
 }
 .geometry-visual > p {
   font-size: 11px;
-  color: #8b9781;
+  color: #77816d;
+  line-height: 1.7;
 }
 .size-selector {
   display: flex;

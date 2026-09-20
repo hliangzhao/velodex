@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import type { Bike, GeometrySize } from './types';
+import GeometryDiagram from './GeometryDiagram';
 
 export default function Engineering({
   bike,
@@ -39,8 +40,11 @@ export default function Engineering({
               <span>{bike.family} / GEOMETRY</span>
               <span>{g.size} 码</span>
             </div>
-            <GeometryDiagram g={g} />
-            <p>关键尺寸示意 · 不包含把立、垫圈与骑手姿态</p>
+            <GeometryDiagram g={g} bikeId={bike.id} />
+            <p>
+              A—H 对照参数卡片 · 单位 mm / ° · 轮廓为尺寸关系示意
+              {g.wheelbase === null && '；轴距未公布，前轴位置仅作示意'}
+            </p>
           </div>
           <div className="geometry-details">
             <div className="size-selector" aria-label="车架尺码">
@@ -64,10 +68,10 @@ export default function Engineering({
                 ['后下叉', '五通至后轴', g.chainstay, 'mm'],
                 ['BB Drop', '五通下沉量', g.bbDrop, 'mm'],
                 ['头管长度', '原厂参考', g.headTube, 'mm'],
-              ].map(([name, label, value, unit]) => (
+              ].map(([name, label, value, unit], index) => (
                 <div key={name}>
                   <dt>
-                    {name}
+                    <span className="geometry-key">{String.fromCharCode(65 + index)}</span> {name}
                     <small>{label}</small>
                   </dt>
                   <dd>
@@ -160,58 +164,5 @@ export default function Engineering({
         </div>
       )}
     </section>
-  );
-}
-function GeometryDiagram({ g }: { g: GeometrySize }) {
-  const scale = 0.39,
-    bb = { x: 232, y: 298 };
-  const rearX = bb.x - Math.sqrt(g.chainstay ** 2 - g.bbDrop ** 2) * scale;
-  const wheelY = bb.y - g.bbDrop * scale;
-  const frontX = rearX + (g.wheelbase ?? 985) * scale;
-  const ht = { x: bb.x + g.reach * scale, y: bb.y - g.stack * scale };
-  const hb = {
-    x: ht.x + Math.cos((g.headAngle * Math.PI) / 180) * g.headTube * scale,
-    y: ht.y + Math.sin((g.headAngle * Math.PI) / 180) * g.headTube * scale,
-  };
-  const st = {
-    x: bb.x - Math.cos((g.seatAngle * Math.PI) / 180) * g.stack * 0.9 * scale,
-    y: bb.y - Math.sin((g.seatAngle * Math.PI) / 180) * g.stack * 0.9 * scale,
-  };
-  return (
-    <svg
-      viewBox="-60 0 660 450"
-      role="img"
-      aria-label={`${g.size} 码几何示意：Stack ${g.stack} 毫米，Reach ${g.reach} 毫米`}
-    >
-      <g fill="none" stroke="#c5cdbe" strokeWidth="2">
-        <circle cx={rearX} cy={wheelY} r={126} />
-        <circle cx={frontX} cy={wheelY} r={126} />
-      </g>
-      <g fill="none" stroke="#516444" strokeWidth="7" strokeLinejoin="round">
-        <path
-          d={`M ${bb.x} ${bb.y} L ${st.x} ${st.y} L ${ht.x} ${ht.y} L ${hb.x} ${hb.y} Z M ${st.x} ${st.y} L ${rearX} ${wheelY} L ${bb.x} ${bb.y} M ${hb.x} ${hb.y} L ${frontX} ${wheelY}`}
-        />
-      </g>
-      <g stroke="#92aa47" strokeWidth="1.5" strokeDasharray="4 4">
-        <path
-          d={`M ${bb.x} ${bb.y} V ${ht.y - 28} H ${ht.x} V ${ht.y} M ${bb.x} ${bb.y} H ${ht.x + 38} V ${ht.y} H ${ht.x}`}
-        />
-      </g>
-      <g fill="#536a2b" fontFamily="Barlow, sans-serif" fontSize="16">
-        <text x={(bb.x + ht.x) / 2} y={ht.y - 38} textAnchor="middle">
-          REACH {g.reach}
-        </text>
-        <text
-          x={ht.x + 47}
-          y={(bb.y + ht.y) / 2}
-          transform={`rotate(90 ${ht.x + 47} ${(bb.y + ht.y) / 2})`}
-          textAnchor="middle"
-        >
-          STACK {g.stack}
-        </text>
-      </g>
-      <circle cx={bb.x} cy={bb.y} r={7} fill="#d5f660" stroke="#536a2b" />
-      <circle cx={ht.x} cy={ht.y} r={6} fill="#d5f660" stroke="#536a2b" />
-    </svg>
   );
 }
