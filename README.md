@@ -16,7 +16,7 @@ npm run dev
 - 退出：Ctrl+C
 
 ```sh
-npm test          # HTTP API、数据完整性、21 款车默认及极端尺码的 3D 网格检查
+npm test          # HTTP API、数据完整性、27 款车默认及极端尺码的 3D 网格检查
 npm run build     # TypeScript 检查与生产构建
 npm start         # Express 同时提供前端与 API，默认 127.0.0.1:3001
 npm run format    # 整理源码格式
@@ -35,7 +35,7 @@ npm run build:pages
 npm run preview:pages  # http://127.0.0.1:4173/velodex/
 ```
 
-Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 打包为带内容哈希的静态资源，不需要运行 Express。图片、首页链接和 3D 模块使用正确的站点子路径；车型分享链接仍使用 `?bike=xlab-ad9`。本地开发及 `npm run build` / `npm start` 继续使用 Express API。
+Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server/data/parts.json` 打包为带内容哈希的静态资源，不需要运行 Express。图片、首页链接和 3D 模块使用正确的站点子路径；车型分享链接仍使用 `?bike=xlab-ad9`。本地开发及 `npm run build` / `npm start` 继续使用 Express API。
 
 更新车型数据后推送即可发布新版本。工作流从 Pages 配置读取站点路径；本地 Pages 预览默认使用 `/velodex/`，可通过 `PAGES_BASE_PATH` 覆盖。
 
@@ -43,19 +43,31 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 打包为�
 
 - 真实整车图上的八类部件热点：车架、手变、曲柄、牙盘、飞轮、功率计、轮组、轮胎。
 - 对应车型的详细参数、完整配置弹窗、图片放大、隐藏热点欣赏整车。
-- 品牌与车型搜索、在售系列 / 经典存档 / 人气精选，以及气动、全能、爬坡、耐力定位筛选。
+- 品牌与车型搜索、在售系列 / 经典存档 / 人气精选，以及气动、全能、爬坡、耐力及 TT 计时定位筛选。
 - `?bike=xlab-ad9` 等链接可直接分享车型，支持浏览器前进和后退。
 - 响应式桌面 / 平板 / 手机布局，键盘操作、弹窗焦点管理、减少动态效果偏好。
 
-目前收录 10 个品牌、21 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
+目前收录 12 个品牌、27 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
 
 新增 TCR Advanced Pro 0 AXS、Defy Advanced Pro 0、Ultimate CF SLX 8 Di2、Endurace CF SLX 8 Di2、Cannondale SuperSix EVO 2 Gen 5、美利达 SCULTURA 8000 / SCULTURA ENDURANCE 8000，以及迪卡侬 Van Rysel RCR-R Pro。新增项均有实拍、八类部件记录、逐尺码几何和独立 3D 轮廓。
+
+新增 Colnago Y1Rs / V5Rs、BMC Teammachine R 01 ONE、Cervélo R5 / P5 和 Canyon Speedmax CFR TT。职业赛场标签附官方车队报道，价格保留原币种和地区；零售配置与车手赛日配置分开说明。
+
+## 涂装与配件图鉴
+
+- 已收录 9 款车的多涂装，共 44 个整车外观条目。点击色块切换官方图片，`?bike=y1rs&paint=ysbo` 可直接分享，支持浏览器前进 / 后退。
+- 不同构图的涂装有独立热点；部分官方展示车的附件和齿比与所列零售选项不同，页面明确提示。
+- `?view=parts` 打开独立配件图鉴：11 个厂商、18 款轮组 / 变速系统 / 轮胎。
+- 按类别、厂商、在售 / 经典、关键词筛选；查看参数、设计特点、适用场景与兼容性；同类最多三款并排比较。
+- `?view=parts&product=zipp-303-firecrest` 支持产品直达；整车部件与对应配件系列双向链接。
+- 配件资料在 `server/data/parts.json`，Pages 与 Express 共用；性能介绍区分设计取向和实测，不虚构统一评分或跨品牌瓦数排名。
+- 有图片的产品使用厂商素材；无图时显示明确的类别图示，不将其作为准确产品外观。
 
 ## 车型 3D 与工程资料
 
 点击“车型 3D”加载 Three.js 视图，鼠标拖拽旋转、滚轮 / 双指缩放，可直接点击部件查询参数。提供正侧视图、复位和“仅看车架”；键盘方向键旋转，`+` / `-` 缩放，`R` 复位。
 
-3D 使用各车型的官方实拍轮廓与所选尺码几何近似重建：连续前车架壳体、变截面前后叉、独立座管、轮圈、辐条、碟片、传动与弯把。Madone 的 IsoFlow 镂空、Dogma 的 ONDA 前叉、Propel 一体座管、S5 深管型、RT9 圆座管及 EDR 储物舱分别建模。AD8 / AD9 的主要轮廓相近，保留其共性，不为区分型号而虚构不同形状。
+3D 使用各车型的官方实拍轮廓与所选尺码几何近似重建：连续前车架壳体、变截面前后叉、独立座管、轮圈、辐条、碟片、传动与弯把。Madone 的 IsoFlow 镂空、Dogma 的 ONDA 前叉、Propel 一体座管、S5 深管型、RT9 圆座管及 EDR 储物舱分别建模。新增 P5 / Speedmax 的 TT 基础把、托肘与延伸把，Speedmax 的封闭后轮，以及 Y1Rs 的双 Y 接点与鸥翼把组。AD8 / AD9 的主要轮廓相近，保留其共性，不为区分型号而虚构不同形状。
 
 **精度边界：**这不是原厂 CAD，也不是可用于制造或拟合的扫描模型。Stack、Reach、角度和轴距来自注明的资料；管型深度、侧向宽度、接点曲率与部件表面依据照片估计。3D 使用中性素色；涂装、螺钉、链线与精确零件造型以实拍及原厂资料为准。部分尺码座管长度为插值，Dogma 未公开的轴距仅在绘图中使用近似值，参数表仍显示未列出。
 
@@ -93,7 +105,9 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 打包为�
 | `GET /api/bikes/xlab-ad9`                                         | 单款整车             |
 | `GET /api/bikes/xlab-ad9/components/power`                        | 单个部件             |
 
-未知车型 / 部件返回 404，错误筛选参数返回 400。支持的分类为 `all`、`current`、`classic`、`popular`。
+未知车型 / 部件返回 404，错误筛选参数返回 400。支持的分类为 `all`、`current`、`classic`、`popular`、`pro`、`flagship`。
+
+配件 API：`GET /api/parts?category=wheels&brand=zipp&q=303`，`GET /api/parts/zipp-303-firecrest`。非法分类和重复筛选参数返回 400，未知产品返回 404。
 
 ## 目录
 

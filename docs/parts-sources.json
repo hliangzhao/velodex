@@ -1,0 +1,94 @@
+{
+  "checkedDate": "2026-09-20",
+  "assets": [
+    {
+      "id": "zipp-404-firecrest",
+      "url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/wheels/wheels/wh-404-firecrest-tl-db-b1/productassets_wh-404-ftld-b1_fg/wh-404-fc-tldbcl-700r-xdr-12x142-std-b1-c-side-s.png",
+      "source": "https://www.sram.com/en/zipp/models/wh-404-ftld-b1",
+      "file": "/parts/zipp-404-firecrest.png",
+      "width": 1336,
+      "height": 1336
+    },
+    {
+      "id": "zipp-303-firecrest",
+      "url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/wheels/wheels/wh-303-firecrest-tl-db-a1/productassets_wh-303-ftld-a1_fg/amwh-303-fc-tl-dbcl-700f-12x100-std-a1-c-side-s.png?w=1000&amp;quality=90&amp;format=webp",
+      "source": "https://www.sram.com/en/service/models/wh-303-ftld-a1",
+      "file": "/parts/zipp-303-firecrest.png",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "enve-ses45",
+      "url": "https://enve.com/cdn/shop/files/SES_4.5_Front_WHITE.jpg?v=1774562990",
+      "source": "https://enve.com/products/ses-4-5",
+      "file": "/parts/enve-ses45.jpg",
+      "width": 3000,
+      "height": 2251
+    },
+    {
+      "id": "roval-rapide-clx3",
+      "url": "https://assets.specialized.com/i/specialized/30026-650_WHL_RAPIDE-CLX-III-700C-FRONT-GLOSS-CARBON-GLOSS_HERO-SQUARE?fmt=webp&w=1000",
+      "source": "https://www.specialized.com/us/en/roval-rapide-clx-iii/p/1000256237",
+      "file": "/parts/roval-rapide-clx3.webp",
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "id": "sram-red-e1",
+      "url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/shiftbrake-combo/ed-red-e1/productassets_ed-red-e1_fg/am-ed-red-axs-e1-sjc-rear-rt-f20-1800-c-lever-3q-s-v02.png",
+      "source": "https://www.sram.com/en/sram/models/ed-red-e1",
+      "file": "/parts/sram-red-e1.png",
+      "width": 1336,
+      "height": 1336
+    },
+    {
+      "id": "schwalbe-pro-one",
+      "url": "https://s3-fsn.scale.sc/schwalbe.public/prod-sde/media/c0/bd/76/1787835153/hs493_schwalbe_pro-one_standard.png_01a04343c3a1708c84fff153ca9186cc.png?ts=1787835155",
+      "source": "https://www.schwalbe.com/en/PRO-One-Tubeless-11654217",
+      "file": "/parts/schwalbe-pro-one.png",
+      "width": 900,
+      "height": 720
+    },
+    {
+      "id": "vittoria-corsa-pro",
+      "url": "https://vittoria.com/cdn/shop/files/corsa-pro-tlr-01.webp?v=1775056019&width=2048",
+      "source": "https://vittoria.com/products/corsa-pro-tubeless-ready",
+      "file": "/parts/vittoria-corsa-pro.png",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "id": "dt-arc1100-65",
+      "url": "https://d2a13k6araex7u.cloudfront.net/itc/00/00/00/00/00/00/00/00/70/00/30/67/3/67683/image-thumb__67683__model-finder_product-image/PHO_WARC110AIDXCA30672_WEB_SHO_001.1087ac20.jpg",
+      "source": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-db",
+      "file": "/parts/dt-arc1100-65.jpg",
+      "width": 315,
+      "height": 315
+    },
+    {
+      "id": "aero111",
+      "url": "https://www.continental-tires.com/products/bicycle/tires/aero-111/_jcr_content/root/container/tabs/item_1719318237663/image.coreimg.png/1741858852847/continental--aero-111--productpicture--0.png",
+      "source": "https://www.continental-tires.com/products/bicycle/tires/aero-111/",
+      "file": "/parts/aero111.png",
+      "width": 1280,
+      "height": 1280
+    },
+    {
+      "id": "pirelli-race-tlr-rs",
+      "url": "https://tyre24.pirelli.com/dynamic_engine/velo/assets/images/products/p_zero_race_tlr_rs_1.jpg",
+      "source": "https://www.pirelli.com/tires/en-us/bike/tires/catalogue/p-zero-race-tlr-rs",
+      "file": "/parts/pirelli-race-tlr-rs.jpg",
+      "width": 1248,
+      "height": 1156
+    },
+    {
+      "id": "gp5000-str",
+      "url": "https://www.continental-tires.com/adobe/dynamicmedia/deliver/dm-aid--f49a14a2-b080-4574-829f-92977c0d5300/Continental__Grand-Prix-5000-S-TR-tr__ProductPicture__30.png.webp?width=1000",
+      "file": "/parts/gp5000-str.webp",
+      "width": 1000,
+      "height": 1000,
+      "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-s-tr/"
+    }
+  ],
+  "note": "Official manufacturer product images. Copyright retained by original owners. Single components illustrate their corresponding product family."
+}

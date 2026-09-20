@@ -34,6 +34,11 @@ test('every model and frame-size extreme generates finite, raycastable geometry'
       const { meshes, group, feature } = buildBikeModel(bike, g);
       assert.ok(feature && meshes.length > 50, bike.id);
       const parts = new Set(meshes.map((m) => m.userData.part));
+      const structures = new Set(meshes.map((m) => m.userData.structure));
+      assert.equal(structures.has('tt-extension'), bike.kind === 'TT 计时', bike.id);
+      assert.equal(structures.has('tt-elbow-pad'), bike.kind === 'TT 计时', bike.id);
+      assert.equal(structures.has('rear-disc'), bike.id === 'speedmax-cfr-tt', bike.id);
+
       assert.equal(parts.has('power'), bike.hasPowerMeter, `${bike.id}/power-meter equipment`);
       for (const id of ['frame', 'shifters', 'crank', 'chainrings', 'cassette', 'wheels', 'tires'])
         assert.ok(parts.has(id), `${bike.id}/${id}`);

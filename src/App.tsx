@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import type { Bike, Catalog, Collection } from './types';
 import { imageUrl, loadCatalog } from './catalog';
+import { paintsForBike } from './bikePaints';
 
 import Engineering from './Engineering';
 const Bike3D = lazy(() => import('./Bike3D'));
@@ -23,6 +24,8 @@ const collections: { id: Collection; label: string }[] = [
   { id: 'current', label: '在售系列' },
   { id: 'classic', label: '经典存档' },
   { id: 'popular', label: '人气精选' },
+  { id: 'pro', label: '职业赛场' },
+  { id: 'flagship', label: '高端旗舰' },
 ];
 function App() {
   const [catalog, setCatalog] = useState<Catalog | null>(null);
@@ -31,6 +34,9 @@ function App() {
     new URLSearchParams(location.search).get('bike') || 'tarmac-sl8',
   );
   const [componentId, setComponentId] = useState('frame');
+  const [paintId, setPaintId] = useState(
+    new URLSearchParams(location.search).get('paint') || 'default',
+  );
   const [collection, setCollection] = useState<Collection>('all');
   const [brand, setBrand] = useState('all');
   const [query, setQuery] = useState('');
@@ -41,6 +47,7 @@ function App() {
   const [expanded, setExpanded] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const workbench = useRef<HTMLDivElement>(null);
+  const currentSearch = useRef(location.search);
   const load = () => {
     setError('');
     loadCatalog()
@@ -49,12 +56,20 @@ function App() {
   };
   useEffect(load, []);
   useEffect(() => {
-    const onBack = () =>
+    const onBack = () => {
+      if (currentSearch.current === location.search) return;
+      currentSearch.current = location.search;
       setSelectedId(new URLSearchParams(location.search).get('bike') || 'tarmac-sl8');
+      setPaintId(new URLSearchParams(location.search).get('paint') || 'default');
+      setIs3D(false);
+      setGeometrySize('');
+    };
     window.addEventListener('popstate', onBack);
     return () => window.removeEventListener('popstate', onBack);
   }, []);
   const bike = catalog?.bikes.find((b) => b.id === selectedId) || catalog?.bikes[0];
+  const paints = bike ? paintsForBike(bike) : [];
+  const paint = paints.find((p) => p.id === paintId) || paints[0];
   const geometry =
     bike?.geometry.sizes.find((g) => g.size === geometrySize) ||
     bike?.geometry.sizes.find((g) => g.size === bike.geometry.defaultSize) ||
@@ -81,7 +96,10 @@ function App() {
     panel?.querySelector<HTMLButtonElement>('button[aria-label="退出放大"]')?.focus();
     const trapFocus = (e: KeyboardEvent) => {
       if (e.key !== 'Tab' || dialog.current?.open) return;
-      const buttons = Array.from(panel?.querySelectorAll<HTMLButtonElement>('button') || []);
+      const buttons = Array.from(
+        panel?.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], [tabindex="0"]') ||
+          [],
+      ).filter((element) => element.getClientRects().length > 0);
       const first = buttons[0],
         last = buttons[buttons.length - 1];
       if (e.shiftKey && document.activeElement === first) {
@@ -103,13 +121,26 @@ function App() {
     setSelectedId(item.id);
     setGeometrySize('');
     setComponentId('frame');
+    setPaintId('default');
     const url = new URL(location.href);
     url.searchParams.set('bike', item.id);
+    url.searchParams.delete('paint');
     history.pushState({}, '', url);
+    currentSearch.current = url.search;
     document.getElementById('explorer')?.scrollIntoView({
       behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
       block: 'start',
     });
+  };
+  const selectPaint = (id: string) => {
+    setPaintId(id);
+    setIs3D(false);
+    const url = new URL(location.href);
+    url.searchParams.set('bike', bike!.id);
+    if (id === 'default') url.searchParams.delete('paint');
+    else url.searchParams.set('paint', id);
+    history.pushState({}, '', url);
+    currentSearch.current = url.search;
   };
   const filtered =
     catalog?.bikes.filter(
@@ -144,13 +175,14 @@ function App() {
           </a>
           <a href="#collection">车型图鉴</a>
           <a href="#brands">品牌索引</a>
+          <a href={`${import.meta.env.BASE_URL}?view=parts`}>配件图鉴</a>
         </nav>
         <span className="header-caption">
           THE ROAD BIKE INDEX<span>为热爱，拆解每一处细节。</span>
         </span>
       </header>
       <main>
-        {!catalog || !bike || !component ? (
+        {!catalog || !bike || !component || !paint ? (
           <div className="load-state" role="status">
             <span className="eyebrow">VÉLODEX / ROAD MACHINES</span>
             <h1>{error || '正在打开公路车图鉴…'}</h1>
@@ -195,6 +227,35 @@ function App() {
                   </button>
                 </div>
               </div>
+              {(bike.race || bike.price) && (
+                <div className="bike-context">
+                  {bike.race && (
+                    <a
+                      href={bike.race.source}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={bike.race.note}
+                    >
+                      <span>RACE DNA</span>
+                      {bike.race.label}
+                      <ArrowUpRight size={14} />
+                    </a>
+                  )}
+                  {bike.price && (
+                    <a
+                      href={bike.price.source}
+                      target="_blank"
+                      rel="noreferrer"
+                      title={`${bike.price.market} · 核对 ${bike.price.checkedAt}，非实时成交价`}
+                    >
+                      <span>官方参考价</span>
+                      {bike.price.label}
+                      <small>{bike.price.market}</small>
+                      <ArrowUpRight size={14} />
+                    </a>
+                  )}
+                </div>
+              )}
               <div
                 ref={workbench}
                 className={`workbench ${expanded ? 'is-expanded' : ''}`}
@@ -202,10 +263,10 @@ function App() {
                 aria-modal={expanded || undefined}
                 aria-label={expanded ? '放大整车探索' : undefined}
               >
-                <div className={`visual-panel ${bike.imageTone === 'dark' ? 'photo-dark' : ''}`}>
+                <div className={`visual-panel ${paint.imageTone === 'dark' ? 'photo-dark' : ''}`}>
                   <div className="view-mode">
                     <button aria-pressed={!is3D} onClick={() => setIs3D(false)}>
-                      整车实拍
+                      官方整车图
                     </button>
                     <button aria-pressed={is3D} onClick={() => setIs3D(true)}>
                       车型 3D
@@ -254,17 +315,17 @@ function App() {
                         className="bike-canvas"
                         style={
                           {
-                            aspectRatio: bike.imageRatio,
-                            '--image-ratio': bike.imageRatio,
+                            aspectRatio: paint.imageRatio,
+                            '--image-ratio': paint.imageRatio,
                           } as CSSProperties
                         }
                       >
                         <img
                           className="bike-photo"
-                          src={imageUrl(bike.image)}
-                          style={{ objectPosition: bike.imagePosition }}
-                          alt={`${currentBrand?.name} ${bike.name} ${bike.color} 传动侧整车实拍`}
-                          key={bike.id}
+                          src={imageUrl(paint.image)}
+                          style={{ objectPosition: paint.imagePosition }}
+                          alt={`${currentBrand?.name} ${bike.name} ${paint.name} 官方整车图片`}
+                          key={`${bike.id}-${paint.id}`}
                           fetchPriority="high"
                         />
                         {showPins &&
@@ -272,7 +333,10 @@ function App() {
                             <button
                               key={part.id}
                               className={`hotspot ${component.id === part.id ? 'selected' : ''}`}
-                              style={{ left: `${part.x}%`, top: `${part.y}%` }}
+                              style={{
+                                left: `${paint.hotspots?.[part.id]?.x ?? part.x}%`,
+                                top: `${paint.hotspots?.[part.id]?.y ?? part.y}%`,
+                              }}
                               onClick={() => setComponentId(part.id)}
                               aria-label={`查看${part.name}参数`}
                               aria-pressed={component.id === part.id}
@@ -299,15 +363,38 @@ function App() {
                     </p>
                   )}
                   <div className="visual-bottom">
-                    <span>
-                      <i className="paint-dot" style={{ background: bike.colorHex }} />
-                      {is3D ? '无涂装 / 中性材质' : bike.color}
-                    </span>
+                    <div className="paint-selection">
+                      <span className="paint-name" aria-live="polite">
+                        <i
+                          className="paint-dot"
+                          style={{ background: is3D ? '#737b82' : paint.hex }}
+                        />
+                        {is3D ? '无涂装 / 中性材质' : paint.name}
+                      </span>
+                      {paints.length > 1 && (
+                        <div className="paint-options" role="group" aria-label="选择涂装">
+                          {paints.map((p) => (
+                            <button
+                              key={p.id}
+                              title={p.name}
+                              aria-label={`切换涂装：${p.name}`}
+                              aria-pressed={p.id === paint.id && !is3D}
+                              onClick={() => selectPaint(p.id)}
+                            >
+                              <i style={{ background: p.hex }} />
+                              {p.id === paint.id && !is3D && <Check size={12} />}
+                            </button>
+                          ))}
+                          <small>{paints.length} 款涂装</small>
+                        </div>
+                      )}
+                    </div>
                     <span className="view-note">
-                      DRIVE SIDE <span>传动侧</span>
+                      {is3D ? 'INTERACTIVE 3D' : 'OFFICIAL PHOTO'}{' '}
+                      <span>{is3D ? '结构视图' : '官方图片'}</span>
                     </span>
                   </div>
-                  {bike.imageNote && <p className="image-note">{bike.imageNote}</p>}
+                  {paint.note && <p className="image-note">{paint.note}</p>}
                 </div>
                 <aside className="component-panel" aria-label="部件参数" aria-live="polite">
                   <div className="part-topline">
@@ -338,6 +425,14 @@ function App() {
                       ))}
                     </dl>
                   </div>
+                  {!!component.catalogIds?.length && (
+                    <a
+                      className="part-catalog-link"
+                      href={`${import.meta.env.BASE_URL}?view=parts&product=${component.catalogIds[0]}`}
+                    >
+                      探索配件系列档案 <ArrowUpRight size={15} />
+                    </a>
+                  )}
                   <button className="all-specs" onClick={() => dialog.current?.showModal()}>
                     查看完整配置 <ArrowUpRight size={18} />
                   </button>
@@ -425,7 +520,7 @@ function App() {
                 </label>
               </div>
               <div className="kind-filters" aria-label="车型定位">
-                {['all', '气动竞赛', '全能公路', '轻量爬坡', '长途耐力'].map((value) => (
+                {['all', '气动竞赛', '全能公路', '轻量爬坡', '长途耐力', 'TT 计时'].map((value) => (
                   <button key={value} aria-pressed={kind === value} onClick={() => setKind(value)}>
                     {value === 'all' ? '全部定位' : value}
                   </button>
@@ -462,7 +557,11 @@ function App() {
                     ? catalog.collectionNote
                     : collection === 'current'
                       ? '在售系列指官方地区网站仍有产品展示，不代表实时库存或中国大陆供货。'
-                      : '保留经典世代的当年配置，感受公路车设计的演进。'}
+                      : collection === 'pro'
+                        ? '记录职业车队使用的同系平台；此处展示的零售配置不等于某场比赛的车手定制配置。'
+                        : collection === 'flagship'
+                          ? '品牌高端平台与旗舰配置精选；标价保留官方地区及币种，不作跨市场价格排名。'
+                          : '保留经典世代的当年配置，感受公路车设计的演进。'}
                 </p>
               )}
               {filtered.length ? (
@@ -556,9 +655,21 @@ function App() {
               <div className="source-note">
                 <h3>资料与图片来源</h3>
                 <p>
-                  {bike.imageNote ||
+                  {paint?.note ||
                     '图片与参数对应此页面注明的整车版本；配置可能因地区、尺寸和批次而调整。'}
                 </p>
+                {bike.race && <p>{bike.race.note}</p>}
+                {bike.price && (
+                  <p>
+                    官方参考价 {bike.price.label} · {bike.price.market} · 核对{' '}
+                    {bike.price.checkedAt}。价格可能调整，不代表本地售价或实时库存。
+                  </p>
+                )}
+                {paint && (
+                  <a href={paint.source} target="_blank" rel="noreferrer">
+                    当前涂装原始页面 <ArrowUpRight size={15} />
+                  </a>
+                )}
                 <p>
                   图片：{bike.imageCredit} · 核对：{bike.checkedAt}
                 </p>

@@ -61,6 +61,18 @@
       "name": "美利达 MERIDA",
       "country": "中国台湾",
       "founded": "1972"
+    },
+    {
+      "id": "colnago",
+      "name": "COLNAGO",
+      "country": "意大利",
+      "founded": "1954"
+    },
+    {
+      "id": "bmc",
+      "name": "BMC",
+      "country": "瑞士",
+      "founded": "1994"
     }
   ],
   "bikes": [
@@ -73,10 +85,7 @@
       "edition": "2026 · 美国版",
       "kind": "全能公路",
       "description": "轻量与空气动力学，在同一台赛车上交汇。SL8 用纤细的后上叉与利落的前端，勾勒全能竞赛的轮廓。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/tarmac-sl8.png",
       "imageCredit": "Specialized",
       "imageRatio": 1.7777777777777777,
@@ -99,22 +108,10 @@
           "title": "S-Works FACT 12r Carbon",
           "description": "针对不同尺码调整碳纤维结构。下管与头管的造型兼顾空气动力学和整体重量。",
           "specs": [
-            [
-              "结构",
-              "FACT 12r 碳纤维"
-            ],
-            [
-              "走线",
-              "全内走线"
-            ],
-            [
-              "五通",
-              "螺纹五通"
-            ],
-            [
-              "后轴",
-              "12 × 142 mm"
-            ]
+            ["结构", "FACT 12r 碳纤维"],
+            ["走线", "全内走线"],
+            ["五通", "螺纹五通"],
+            ["后轴", "12 × 142 mm"]
           ]
         },
         {
@@ -126,19 +123,11 @@
           "title": "Shimano Dura-Ace ST-R9270",
           "description": "把电子换挡与液压制动集成在手变中，支持 12 速 Di2 系统。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
-          ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -149,23 +138,12 @@
           "title": "Shimano Dura-Ace R9200",
           "description": "HollowTech II 曲柄搭载双边功率计；曲柄长度随车架尺码变化。",
           "specs": [
-            [
-              "结构",
-              "HollowTech II"
-            ],
-            [
-              "曲柄长度",
-              "165–175 mm（依尺码）"
-            ],
-            [
-              "56 码配置",
-              "172.5 mm"
-            ],
-            [
-              "五通",
-              "BB-R9100"
-            ]
-          ]
+            ["结构", "HollowTech II"],
+            ["曲柄长度", "165–175 mm（依尺码）"],
+            ["56 码配置", "172.5 mm"],
+            ["五通", "BB-R9100"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "chainrings",
@@ -176,19 +154,11 @@
           "title": "Dura-Ace 52 / 36T",
           "description": "双盘齿数组合，兼顾平路巡航和爬坡时的挡位选择。",
           "specs": [
-            [
-              "大盘",
-              "52T"
-            ],
-            [
-              "小盘",
-              "36T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
-          ]
+            ["大盘", "52T"],
+            ["小盘", "36T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "cassette",
@@ -199,19 +169,11 @@
           "title": "Dura-Ace 11–30T",
           "description": "12 片飞轮与前双盘搭配，让踩踏节奏更容易保持。",
           "specs": [
-            [
-              "齿比范围",
-              "11–30T"
-            ],
-            [
-              "片数",
-              "12 片"
-            ],
-            [
-              "后拨",
-              "Dura-Ace R9250"
-            ]
-          ]
+            ["齿比范围", "11–30T"],
+            ["片数", "12 片"],
+            ["后拨", "Dura-Ace R9250"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "power",
@@ -222,22 +184,10 @@
           "title": "4iiii Precision Pro",
           "description": "原配双边功率计，记录踩踏输出。这一版本支持 Apple Find My。",
           "specs": [
-            [
-              "测量",
-              "双边功率"
-            ],
-            [
-              "安装",
-              "集成于 R9200 曲柄"
-            ],
-            [
-              "随车配置",
-              "原配"
-            ],
-            [
-              "定位功能",
-              "Apple Find My"
-            ]
+            ["测量", "双边功率"],
+            ["安装", "集成于 R9200 曲柄"],
+            ["随车配置", "原配"],
+            ["定位功能", "Apple Find My"]
           ]
         },
         {
@@ -249,23 +199,12 @@
           "title": "Roval Rapide CLX III",
           "description": "前高后低的框高组合，使用碳纤维轮圈与碳纤维增强辐条。",
           "specs": [
-            [
-              "前 / 后框高",
-              "51 / 48.5 mm"
-            ],
-            [
-              "内宽",
-              "21 mm"
-            ],
-            [
-              "轮圈",
-              "碳纤维"
-            ],
-            [
-              "系统",
-              "Tubeless Ready"
-            ]
-          ]
+            ["前 / 后框高", "51 / 48.5 mm"],
+            ["内宽", "21 mm"],
+            ["轮圈", "碳纤维"],
+            ["系统", "Tubeless Ready"]
+          ],
+          "catalogIds": ["roval-rapide-clx3"]
         },
         {
           "id": "tires",
@@ -276,18 +215,9 @@
           "title": "S-Works Turbo TLR",
           "description": "Race 版本外胎，28 mm 标称宽度。出厂整车配置内胎，轮组支持真空系统。",
           "specs": [
-            [
-              "尺寸",
-              "700 × 28c"
-            ],
-            [
-              "型号",
-              "Turbo TLR Race"
-            ],
-            [
-              "出厂内胎",
-              "700 × 20/28 mm"
-            ]
+            ["尺寸", "700 × 28c"],
+            ["型号", "Turbo TLR Race"],
+            ["出厂内胎", "700 × 20/28 mm"]
           ]
         }
       ],
@@ -377,7 +307,17 @@
         "source": "https://www.specialized.com/us/en/s-works-tarmac-sl8-shimano-dura-ace-di2/p/4221553?color=5460152-4221553",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "paints": [
+        {
+          "id": "fjord",
+          "name": "Premium Fjord Metallic / 峡湾绿",
+          "hex": "#8B9F96",
+          "image": "/bikes/tarmac-sl8--fjord.png",
+          "source": "https://www.specialized.com/us/en/s-works-tarmac-sl8-shimano-dura-ace-di2/p/4221553?color=5460166-4221553",
+          "imageRatio": 1.7777777777777777
+        }
+      ]
     },
     {
       "id": "madone-slr9",
@@ -388,10 +328,7 @@
       "edition": "Gen 8 · 美国版资料",
       "kind": "全能公路",
       "description": "IsoFlow 镂空座管与 Full System Foil 管型，塑造了第八代 Madone 的标志性轮廓。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/madone-slr9.png",
       "imageCredit": "Trek",
       "imageNote": "外观为 2025 年同代官方涂装图；参数参考 Trek 官方 2026 年 ML 码资料，具体批次配置以原厂为准。",
@@ -415,22 +352,10 @@
           "title": "900 Series OCLV Carbon",
           "description": "以 IsoFlow 座管结构和 Full System Foil 管型整合气动与轻量设计。",
           "specs": [
-            [
-              "材质",
-              "900 系列 OCLV 碳纤维"
-            ],
-            [
-              "座管结构",
-              "IsoFlow"
-            ],
-            [
-              "五通",
-              "T47"
-            ],
-            [
-              "尾钩",
-              "UDH"
-            ]
+            ["材质", "900 系列 OCLV 碳纤维"],
+            ["座管结构", "IsoFlow"],
+            ["五通", "T47"],
+            ["尾钩", "UDH"]
           ]
         },
         {
@@ -442,19 +367,11 @@
           "title": "Shimano Dura-Ace R9270",
           "description": "Dura-Ace Di2 电子变速与液压碟刹组合。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
-          ]
+            ["换挡", "Di2 电子"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -465,19 +382,11 @@
           "title": "Shimano Dura-Ace R9200",
           "description": "这里按官方 ML 码资料展示，不将其他尺码曲柄长度混用。",
           "specs": [
-            [
-              "型号",
-              "R9200"
-            ],
-            [
-              "ML 码长度",
-              "172.5 mm"
-            ],
-            [
-              "盘片",
-              "52 / 36T"
-            ]
-          ]
+            ["型号", "R9200"],
+            ["ML 码长度", "172.5 mm"],
+            ["盘片", "52 / 36T"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "chainrings",
@@ -488,19 +397,11 @@
           "title": "Dura-Ace 52 / 36T",
           "description": "原配双盘组合，配合 11–30T 飞轮。",
           "specs": [
-            [
-              "大盘",
-              "52T"
-            ],
-            [
-              "小盘",
-              "36T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
-          ]
+            ["大盘", "52T"],
+            ["小盘", "36T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "cassette",
@@ -511,19 +412,11 @@
           "title": "Shimano CS-R9200",
           "description": "12 速 Dura-Ace 飞轮，搭配 M9100 链条。",
           "specs": [
-            [
-              "齿比范围",
-              "11–30T"
-            ],
-            [
-              "片数",
-              "12"
-            ],
-            [
-              "链条",
-              "Dura-Ace / XTR M9100"
-            ]
-          ]
+            ["齿比范围", "11–30T"],
+            ["片数", "12"],
+            ["链条", "Dura-Ace / XTR M9100"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "power",
@@ -534,18 +427,9 @@
           "title": "功率计未列入规格",
           "description": "官方参考配置只列 R9200 曲柄，未单独确认功率计。",
           "specs": [
-            [
-              "配备状态",
-              "官方未列明"
-            ],
-            [
-              "曲柄",
-              "R9200"
-            ],
-            [
-              "热点",
-              "曲柄测量区域示意"
-            ]
+            ["配备状态", "官方未列明"],
+            ["曲柄", "R9200"],
+            ["热点", "曲柄测量区域示意"]
           ]
         },
         {
@@ -557,22 +441,10 @@
           "title": "Bontrager Aeolus RSL 51",
           "description": "碳纤维轮组，前后均为 51 mm 框高。",
           "specs": [
-            [
-              "框高",
-              "51 mm"
-            ],
-            [
-              "轮圈",
-              "OCLV Carbon"
-            ],
-            [
-              "系统",
-              "Tubeless Ready"
-            ],
-            [
-              "轴规格",
-              "12×100 / 12×142 mm"
-            ]
+            ["框高", "51 mm"],
+            ["轮圈", "OCLV Carbon"],
+            ["系统", "Tubeless Ready"],
+            ["轴规格", "12×100 / 12×142 mm"]
           ]
         },
         {
@@ -584,18 +456,9 @@
           "title": "Bontrager Aeolus RSL RD",
           "description": "28 mm 公路真空胎，棉线胎体与芳纶胎唇。",
           "specs": [
-            [
-              "尺寸",
-              "700 × 28 mm"
-            ],
-            [
-              "胎体密度",
-              "170 TPI"
-            ],
-            [
-              "系统",
-              "Tubeless Ready"
-            ]
+            ["尺寸", "700 × 28 mm"],
+            ["胎体密度", "170 TPI"],
+            ["系统", "Tubeless Ready"]
           ]
         }
       ],
@@ -690,10 +553,7 @@
       "edition": "2026 · 英国版 4039",
       "kind": "气动竞赛",
       "description": "粗壮的气动管型与可调的 PACE 座舱，是这台德国赛车的鲜明标记。为高速巡航和冲刺而设计。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/aeroad-cfr.png",
       "imageCredit": "Canyon",
       "imageRatio": 1.7777777777777777,
@@ -716,22 +576,10 @@
           "title": "Canyon Aeroad CFR",
           "description": "第四代 Aeroad 的 CFR 碳纤维车架，配合整合式 PACE 座舱。",
           "specs": [
-            [
-              "材质",
-              "CFR 碳纤维"
-            ],
-            [
-              "轮胎间隙",
-              "32 mm"
-            ],
-            [
-              "后轴",
-              "12 × 142 mm"
-            ],
-            [
-              "前叉",
-              "FK0137 CF Disc"
-            ]
+            ["材质", "CFR 碳纤维"],
+            ["轮胎间隙", "32 mm"],
+            ["后轴", "12 × 142 mm"],
+            ["前叉", "FK0137 CF Disc"]
           ]
         },
         {
@@ -743,18 +591,9 @@
           "title": "Shimano ST-R9270",
           "description": "Di2 电子变速与液压碟刹组合。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "双活塞液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "双活塞液压碟刹"]
           ]
         },
         {
@@ -766,18 +605,9 @@
           "title": "Dura-Ace Powermeter Crank",
           "description": "原配带功率计曲柄，长度根据车架尺码配置。",
           "specs": [
-            [
-              "M 码长度",
-              "172.5 mm"
-            ],
-            [
-              "尺寸范围",
-              "170–175 mm"
-            ],
-            [
-              "五通规格",
-              "PF 86.5"
-            ]
+            ["M 码长度", "172.5 mm"],
+            ["尺寸范围", "170–175 mm"],
+            ["五通规格", "PF 86.5"]
           ]
         },
         {
@@ -789,18 +619,9 @@
           "title": "Shimano 52 / 36T",
           "description": "原配双盘，各尺码使用相同的 52/36T 齿数组合。",
           "specs": [
-            [
-              "大盘",
-              "52T"
-            ],
-            [
-              "小盘",
-              "36T"
-            ],
-            [
-              "盘片数量",
-              "2"
-            ]
+            ["大盘", "52T"],
+            ["小盘", "36T"],
+            ["盘片数量", "2"]
           ]
         },
         {
@@ -812,19 +633,11 @@
           "title": "Shimano CS-R9200",
           "description": "Dura-Ace 12 速飞轮。",
           "specs": [
-            [
-              "齿比范围",
-              "11–30T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ],
-            [
-              "链条",
-              "Shimano XTR"
-            ]
-          ]
+            ["齿比范围", "11–30T"],
+            ["速别", "12 速"],
+            ["链条", "Shimano XTR"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "power",
@@ -835,18 +648,9 @@
           "title": "Dura-Ace 集成功率计",
           "description": "产品页列明的原配功率曲柄，用于记录骑行输出。",
           "specs": [
-            [
-              "品牌",
-              "Shimano"
-            ],
-            [
-              "系列",
-              "Dura-Ace"
-            ],
-            [
-              "配置",
-              "随车原配"
-            ]
+            ["品牌", "Shimano"],
+            ["系列", "Dura-Ace"],
+            ["配置", "随车原配"]
           ]
         },
         {
@@ -858,22 +662,10 @@
           "title": "DT Swiss ARC 1100 DICUT",
           "description": "前后均为 55 mm 框高的碳纤维轮组。",
           "specs": [
-            [
-              "前 / 后框高",
-              "55 / 55 mm"
-            ],
-            [
-              "内宽",
-              "22 mm"
-            ],
-            [
-              "碟片接口",
-              "Center Lock"
-            ],
-            [
-              "轮圈",
-              "碳纤维"
-            ]
+            ["前 / 后框高", "55 / 55 mm"],
+            ["内宽", "22 mm"],
+            ["碟片接口", "Center Lock"],
+            ["轮圈", "碳纤维"]
           ]
         },
         {
@@ -885,19 +677,11 @@
           "title": "Continental 气动组合",
           "description": "前轮采用 Aero 111，后轮采用 GP5000 S TR。",
           "specs": [
-            [
-              "前胎",
-              "Aero 111 · 26 mm"
-            ],
-            [
-              "后胎",
-              "GP5000 S TR · 28 mm"
-            ],
-            [
-              "轮径",
-              "700c"
-            ]
-          ]
+            ["前胎", "Aero 111 · 26 mm"],
+            ["后胎", "GP5000 S TR · 28 mm"],
+            ["轮径", "700c"]
+          ],
+          "catalogIds": ["gp5000-str"]
         }
       ],
       "geometry": {
@@ -1002,10 +786,7 @@
       "edition": "2026 · 英国版",
       "kind": "气动竞赛",
       "description": "一体式座管与 AeroSystem 管型形成流畅的侧面轮廓。CADEX 碳纤维轮组延续整车的气动取向。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/propel-sl0.jpg",
       "imageCredit": "Giant",
       "imageRatio": 1.6,
@@ -1028,22 +809,10 @@
           "title": "Advanced SL Composite",
           "description": "一体式座管、空气动力学管型与 OverDrive Aero 前端。",
           "specs": [
-            [
-              "材质",
-              "Advanced SL 碳纤维"
-            ],
-            [
-              "座管",
-              "一体式座管"
-            ],
-            [
-              "后轴",
-              "12 × 142 mm"
-            ],
-            [
-              "胎容",
-              "32 mm"
-            ]
+            ["材质", "Advanced SL 碳纤维"],
+            ["座管", "一体式座管"],
+            ["后轴", "12 × 142 mm"],
+            ["胎容", "32 mm"]
           ]
         },
         {
@@ -1055,19 +824,11 @@
           "title": "Shimano Dura-Ace ST-R9270",
           "description": "电子换挡手变，与 Dura-Ace 液压碟刹配套。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "碟片",
-              "前 160 / 后 140 mm"
-            ]
-          ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -1078,22 +839,10 @@
           "title": "Shimano Dura-Ace",
           "description": "按车架尺码配置曲柄长度，搭配 CEMA 陶瓷压入式五通。",
           "specs": [
-            [
-              "M 码长度",
-              "170 mm"
-            ],
-            [
-              "XS / S",
-              "165 mm"
-            ],
-            [
-              "L / XL",
-              "172.5 mm"
-            ],
-            [
-              "五通",
-              "CEMA Ceramic"
-            ]
+            ["M 码长度", "170 mm"],
+            ["XS / S", "165 mm"],
+            ["L / XL", "172.5 mm"],
+            ["五通", "CEMA Ceramic"]
           ]
         },
         {
@@ -1105,18 +854,9 @@
           "title": "Dura-Ace 54 / 40T",
           "description": "面向竞速的大齿数组合。",
           "specs": [
-            [
-              "大盘",
-              "54T"
-            ],
-            [
-              "小盘",
-              "40T"
-            ],
-            [
-              "盘片数量",
-              "2"
-            ]
+            ["大盘", "54T"],
+            ["小盘", "40T"],
+            ["盘片数量", "2"]
           ]
         },
         {
@@ -1128,19 +868,11 @@
           "title": "Dura-Ace 11–30T",
           "description": "Dura-Ace 12 速飞轮与 M9100 链条搭配。",
           "specs": [
-            [
-              "齿比范围",
-              "11–30T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ],
-            [
-              "链条",
-              "M9100"
-            ]
-          ]
+            ["齿比范围", "11–30T"],
+            ["速别", "12 速"],
+            ["链条", "M9100"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "power",
@@ -1151,18 +883,9 @@
           "title": "原配信息未列明",
           "description": "此地区官网未单独列出功率计，不把同系列其他版本的配置代入。",
           "specs": [
-            [
-              "配备状态",
-              "官方未列明"
-            ],
-            [
-              "曲柄",
-              "Shimano Dura-Ace"
-            ],
-            [
-              "核验范围",
-              "2026 英国版"
-            ]
+            ["配备状态", "官方未列明"],
+            ["曲柄", "Shimano Dura-Ace"],
+            ["核验范围", "2026 英国版"]
           ]
         },
         {
@@ -1174,22 +897,10 @@
           "title": "CADEX Ultra 50",
           "description": "前后 50 mm 框高，采用碳纤维空气动力学辐条。",
           "specs": [
-            [
-              "前 / 后框高",
-              "50 / 50 mm"
-            ],
-            [
-              "辐条",
-              "Super Aero Carbon"
-            ],
-            [
-              "前花鼓",
-              "CADEX R3 Aero"
-            ],
-            [
-              "后花鼓",
-              "R3-C40 · 40T 棘轮"
-            ]
+            ["前 / 后框高", "50 / 50 mm"],
+            ["辐条", "Super Aero Carbon"],
+            ["前花鼓", "CADEX R3 Aero"],
+            ["后花鼓", "R3-C40 · 40T 棘轮"]
           ]
         },
         {
@@ -1201,18 +912,9 @@
           "title": "CADEX Aero Tubeless",
           "description": "原配真空胎，规格表同时列出标称宽度与 26.5 mm 宽度参考。",
           "specs": [
-            [
-              "标称尺寸",
-              "700 × 25c"
-            ],
-            [
-              "官网宽度参考",
-              "26.5 mm"
-            ],
-            [
-              "结构",
-              "折叠真空胎"
-            ]
+            ["标称尺寸", "700 × 25c"],
+            ["官网宽度参考", "26.5 mm"],
+            ["结构", "折叠真空胎"]
           ]
         }
       ],
@@ -1307,10 +1009,7 @@
       "edition": "M40X 世代 · 英国版",
       "kind": "全能公路",
       "description": "曲线鲜明的 Onda 前叉，不对称的车架设计。Dogma F 用独特的意式轮廓，诠释自己的竞赛语言。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/dogma-f.png",
       "imageCredit": "Pinarello",
       "imageRatio": 1.33422281521014,
@@ -1333,22 +1032,10 @@
           "title": "TorayCa M40X Carbon",
           "description": "不对称车架配合 Onda 前叉，采用 eTiCR 内走线系统。",
           "specs": [
-            [
-              "碳纤维",
-              "TorayCa M40X"
-            ],
-            [
-              "五通",
-              "意式螺纹"
-            ],
-            [
-              "走线",
-              "eTiCR"
-            ],
-            [
-              "前叉",
-              "Onda / ForkFlap"
-            ]
+            ["碳纤维", "TorayCa M40X"],
+            ["五通", "意式螺纹"],
+            ["走线", "eTiCR"],
+            ["前叉", "Onda / ForkFlap"]
           ]
         },
         {
@@ -1360,19 +1047,11 @@
           "title": "Shimano Dura-Ace Di2",
           "description": "此页面标示 Dura-Ace Di2 套件，未单独标注手变零件编号。",
           "specs": [
-            [
-              "系列",
-              "Dura-Ace Di2"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "制动",
-              "液压碟刹"
-            ]
-          ]
+            ["系列", "Dura-Ace Di2"],
+            ["速别", "2 × 12 速"],
+            ["制动", "液压碟刹"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -1383,18 +1062,9 @@
           "title": "Shimano FC-R9200",
           "description": "HollowTech II 曲柄；产品页未给出所展示尺码的曲柄长度。",
           "specs": [
-            [
-              "型号",
-              "FC-R9200"
-            ],
-            [
-              "结构",
-              "HollowTech II"
-            ],
-            [
-              "曲柄长度",
-              "按尺码与配置核验"
-            ]
+            ["型号", "FC-R9200"],
+            ["结构", "HollowTech II"],
+            ["曲柄长度", "按尺码与配置核验"]
           ]
         },
         {
@@ -1406,19 +1076,11 @@
           "title": "Dura-Ace 双盘",
           "description": "官方列出 FC-R9200 双盘系统，但未明确盘片齿数。",
           "specs": [
-            [
-              "系列",
-              "Dura-Ace"
-            ],
-            [
-              "速别",
-              "12 速"
-            ],
-            [
-              "盘片齿数",
-              "官方未列明"
-            ]
-          ]
+            ["系列", "Dura-Ace"],
+            ["速别", "12 速"],
+            ["盘片齿数", "官方未列明"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "cassette",
@@ -1429,19 +1091,11 @@
           "title": "Shimano CS-R9200",
           "description": "Dura-Ace 12 速飞轮，齿比范围依具体供货配置确认。",
           "specs": [
-            [
-              "型号",
-              "CS-R9200"
-            ],
-            [
-              "片数",
-              "12 片"
-            ],
-            [
-              "齿比范围",
-              "官方未列明"
-            ]
-          ]
+            ["型号", "CS-R9200"],
+            ["片数", "12 片"],
+            ["齿比范围", "官方未列明"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "power",
@@ -1452,18 +1106,9 @@
           "title": "原配信息未列明",
           "description": "官方规格表未确认功率计配置，不能仅凭 Dura-Ace 套件推断标配。",
           "specs": [
-            [
-              "配备状态",
-              "官方未列明"
-            ],
-            [
-              "曲柄型号",
-              "FC-R9200"
-            ],
-            [
-              "安装位置",
-              "热点示意曲柄区域"
-            ]
+            ["配备状态", "官方未列明"],
+            ["曲柄型号", "FC-R9200"],
+            ["安装位置", "热点示意曲柄区域"]
           ]
         },
         {
@@ -1475,18 +1120,9 @@
           "title": "Princeton Peak 4550 DB",
           "description": "此展示版本采用 Princeton 轮组；官网同时列有 DT Swiss 配置。",
           "specs": [
-            [
-              "所展示版本",
-              "Peak 4550 DB"
-            ],
-            [
-              "另一官方选项",
-              "ARC 1400 · 50 mm"
-            ],
-            [
-              "轴规格",
-              "12×100 / 12×142 mm"
-            ]
+            ["所展示版本", "Peak 4550 DB"],
+            ["另一官方选项", "ARC 1400 · 50 mm"],
+            ["轴规格", "12×100 / 12×142 mm"]
           ]
         },
         {
@@ -1498,19 +1134,11 @@
           "title": "Continental GP5000 S TR",
           "description": "28 mm 真空公路胎。",
           "specs": [
-            [
-              "型号",
-              "Grand Prix 5000 S TR"
-            ],
-            [
-              "ETRTO",
-              "28-622"
-            ],
-            [
-              "轮径",
-              "700c"
-            ]
-          ]
+            ["型号", "Grand Prix 5000 S TR"],
+            ["ETRTO", "28-622"],
+            ["轮径", "700c"]
+          ],
+          "catalogIds": ["gp5000-str"]
         }
       ],
       "geometry": {
@@ -1549,10 +1177,7 @@
       "edition": "现行世代 · 美国版",
       "kind": "气动竞赛",
       "description": "从标志性的前端到深框轮组，S5 将空气动力学作为整车系统来设计。Reef Blue 涂装让轮廓更鲜明。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/cervelo-s5.png",
       "imageCredit": "Cervélo",
       "imageRatio": 1.8426647767540751,
@@ -1575,22 +1200,10 @@
           "title": "Cervélo S5 Carbon",
           "description": "车架、座舱与轮组协同设计，配一体式碳纤维把组。",
           "specs": [
-            [
-              "车架",
-              "碳纤维"
-            ],
-            [
-              "座舱",
-              "一体式碳纤维"
-            ],
-            [
-              "座管",
-              "碳纤维"
-            ],
-            [
-              "五通",
-              "陶瓷轴承"
-            ]
+            ["车架", "碳纤维"],
+            ["座舱", "一体式碳纤维"],
+            ["座管", "碳纤维"],
+            ["五通", "陶瓷轴承"]
           ]
         },
         {
@@ -1602,19 +1215,11 @@
           "title": "Shimano Dura-Ace Di2",
           "description": "采用 Shimano 旗舰电子变速系统。",
           "specs": [
-            [
-              "系列",
-              "Dura-Ace Di2"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "制动",
-              "液压碟刹"
-            ]
-          ]
+            ["系列", "Dura-Ace Di2"],
+            ["速别", "2 × 12 速"],
+            ["制动", "液压碟刹"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -1625,18 +1230,9 @@
           "title": "Dura-Ace 功率曲柄",
           "description": "此整车版本在官网摘要中列有功率计；具体曲柄长度需依尺码确认。",
           "specs": [
-            [
-              "系列",
-              "Dura-Ace"
-            ],
-            [
-              "功率计",
-              "原配"
-            ],
-            [
-              "长度",
-              "依尺码确认"
-            ]
+            ["系列", "Dura-Ace"],
+            ["功率计", "原配"],
+            ["长度", "依尺码确认"]
           ]
         },
         {
@@ -1648,18 +1244,9 @@
           "title": "Dura-Ace 54 / 40T",
           "description": "偏重高速竞赛的大盘组合，搭配更宽范围飞轮。",
           "specs": [
-            [
-              "大盘",
-              "54T"
-            ],
-            [
-              "小盘",
-              "40T"
-            ],
-            [
-              "盘片数量",
-              "2"
-            ]
+            ["大盘", "54T"],
+            ["小盘", "40T"],
+            ["盘片数量", "2"]
           ]
         },
         {
@@ -1671,18 +1258,9 @@
           "title": "Shimano 11–34T",
           "description": "12 速系统，34T 大飞轮扩展爬坡挡位。",
           "specs": [
-            [
-              "齿比范围",
-              "11–34T"
-            ],
-            [
-              "片数",
-              "12"
-            ],
-            [
-              "系统",
-              "Dura-Ace Di2"
-            ]
+            ["齿比范围", "11–34T"],
+            ["片数", "12"],
+            ["系统", "Dura-Ace Di2"]
           ]
         },
         {
@@ -1694,18 +1272,9 @@
           "title": "原配功率计",
           "description": "官网明确列有功率计，公开配置摘要未标注制造商与测量方式。",
           "specs": [
-            [
-              "配备状态",
-              "原配"
-            ],
-            [
-              "传动",
-              "Dura-Ace Di2"
-            ],
-            [
-              "具体型号",
-              "官网摘要未列明"
-            ]
+            ["配备状态", "原配"],
+            ["传动", "Dura-Ace Di2"],
+            ["具体型号", "官网摘要未列明"]
           ]
         },
         {
@@ -1717,22 +1286,10 @@
           "title": "Reserve 57 | 64 TA",
           "description": "与 S5 车架共同开发的 Turbulent Aero 碳纤维轮组。",
           "specs": [
-            [
-              "型号",
-              "57 | 64 TA"
-            ],
-            [
-              "前 / 后框高",
-              "57 / 64 mm"
-            ],
-            [
-              "花鼓",
-              "DT Swiss 180"
-            ],
-            [
-              "轮圈",
-              "碳纤维"
-            ]
+            ["型号", "57 | 64 TA"],
+            ["前 / 后框高", "57 / 64 mm"],
+            ["花鼓", "DT Swiss 180"],
+            ["轮圈", "碳纤维"]
           ]
         },
         {
@@ -1744,18 +1301,9 @@
           "title": "轮胎配置待核验",
           "description": "官方公开配置摘要未列出外胎型号，先保留未知项，避免以媒体测试车配置替代原厂资料。",
           "specs": [
-            [
-              "车型",
-              "S5 Dura-Ace Di2"
-            ],
-            [
-              "轮胎型号",
-              "待核验"
-            ],
-            [
-              "宽度",
-              "待核验"
-            ]
+            ["车型", "S5 Dura-Ace Di2"],
+            ["轮胎型号", "待核验"],
+            ["宽度", "待核验"]
           ]
         }
       ],
@@ -1850,9 +1398,7 @@
       "edition": "2022 · 经典存档",
       "kind": "全能公路",
       "description": "将轻量与气动整合的经典一代。保留 2022 年 S-Works 版本的配置档案，回看 Tarmac 的演进。",
-      "collections": [
-        "classic"
-      ],
+      "collections": ["classic"],
       "image": "/bikes/tarmac-sl7.png",
       "imageCredit": "Specialized",
       "imageRatio": 1.6220600162206003,
@@ -1875,22 +1421,10 @@
           "title": "S-Works FACT 12r Carbon",
           "description": "SL7 世代车架，将内走线、碟刹与气动管型整合。",
           "specs": [
-            [
-              "碳纤维",
-              "FACT 12r"
-            ],
-            [
-              "五通",
-              "螺纹 BSA 68"
-            ],
-            [
-              "后轴",
-              "12 × 142 mm"
-            ],
-            [
-              "刹车接口",
-              "Flat Mount"
-            ]
+            ["碳纤维", "FACT 12r"],
+            ["五通", "螺纹 BSA 68"],
+            ["后轴", "12 × 142 mm"],
+            ["刹车接口", "Flat Mount"]
           ]
         },
         {
@@ -1902,18 +1436,9 @@
           "title": "SRAM RED eTap AXS",
           "description": "无线电子换挡系统，搭配液压碟刹。",
           "specs": [
-            [
-              "换挡",
-              "eTap AXS 无线"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "制动",
-              "液压碟刹"
-            ]
+            ["换挡", "eTap AXS 无线"],
+            ["速别", "2 × 12 速"],
+            ["制动", "液压碟刹"]
           ]
         },
         {
@@ -1925,18 +1450,9 @@
           "title": "SRAM RED AXS",
           "description": "原配功率曲柄；曲柄长度随尺码调整。",
           "specs": [
-            [
-              "54 / 56 码",
-              "172.5 mm"
-            ],
-            [
-              "尺寸范围",
-              "165–175 mm"
-            ],
-            [
-              "五通",
-              "SRAM DUB BSA 68"
-            ]
+            ["54 / 56 码", "172.5 mm"],
+            ["尺寸范围", "165–175 mm"],
+            ["五通", "SRAM DUB BSA 68"]
           ]
         },
         {
@@ -1948,18 +1464,9 @@
           "title": "SRAM RED AXS 双盘",
           "description": "官网现存规格页的牙盘字段与整车不符，因此暂不录入齿数。",
           "specs": [
-            [
-              "系统",
-              "RED AXS 双盘"
-            ],
-            [
-              "齿数",
-              "待核验"
-            ],
-            [
-              "数据备注",
-              "官方字段存在冲突"
-            ]
+            ["系统", "RED AXS 双盘"],
+            ["齿数", "待核验"],
+            ["数据备注", "官方字段存在冲突"]
           ]
         },
         {
@@ -1971,18 +1478,9 @@
           "title": "SRAM XG-1290",
           "description": "10T 最小齿的 12 速公路飞轮。",
           "specs": [
-            [
-              "型号",
-              "RED XG-1290"
-            ],
-            [
-              "齿比范围",
-              "10–33T"
-            ],
-            [
-              "片数",
-              "12 片"
-            ]
+            ["型号", "RED XG-1290"],
+            ["齿比范围", "10–33T"],
+            ["片数", "12 片"]
           ]
         },
         {
@@ -1994,18 +1492,9 @@
           "title": "SRAM RED AXS Power Meter",
           "description": "整车原配功率牙盘，功率测量集成在传动组件内。",
           "specs": [
-            [
-              "配置",
-              "原配功率计"
-            ],
-            [
-              "系列",
-              "SRAM RED AXS"
-            ],
-            [
-              "安装",
-              "牙盘区域"
-            ]
+            ["配置", "原配功率计"],
+            ["系列", "SRAM RED AXS"],
+            ["安装", "牙盘区域"]
           ]
         },
         {
@@ -2017,22 +1506,10 @@
           "title": "Roval Rapide CLX",
           "description": "这一代采用前 51 mm、后 60 mm 的轮圈搭配。",
           "specs": [
-            [
-              "前 / 后框高",
-              "51 / 60 mm"
-            ],
-            [
-              "内宽",
-              "21 mm"
-            ],
-            [
-              "辐条",
-              "DT Swiss Aerolite"
-            ],
-            [
-              "前 / 后辐条数",
-              "18 / 24"
-            ]
+            ["前 / 后框高", "51 / 60 mm"],
+            ["内宽", "21 mm"],
+            ["辐条", "DT Swiss Aerolite"],
+            ["前 / 后辐条数", "18 / 24"]
           ]
         },
         {
@@ -2044,18 +1521,9 @@
           "title": "Specialized Turbo Cotton",
           "description": "棉线胎体公路胎，原配内胎。",
           "specs": [
-            [
-              "尺寸",
-              "700 × 26 mm"
-            ],
-            [
-              "胎体密度",
-              "320 TPI"
-            ],
-            [
-              "内胎",
-              "Turbo Ultralight"
-            ]
+            ["尺寸", "700 × 26 mm"],
+            ["胎体密度", "320 TPI"],
+            ["内胎", "Turbo Ultralight"]
           ]
         }
       ],
@@ -2161,10 +1629,7 @@
       "edition": "巴西版 · 105 Di2",
       "kind": "气动竞赛",
       "description": "喜德盛 X-LAB AD 家族的起点。碳纤维气动车架、电子变速与功率计，把训练需要的细节放进一台车。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/xlab-ad7.png",
       "imageCredit": "X-LAB 巴西官方",
       "imageTone": "dark",
@@ -2189,22 +1654,10 @@
           "title": "XDS Carbon 气动车架",
           "description": "X-LAB AD 系列碳纤维车架，配一体式 Branta 碳纤维车把。",
           "specs": [
-            [
-              "材质",
-              "XDS Carbon"
-            ],
-            [
-              "尾钩",
-              "UDH"
-            ],
-            [
-              "前叉",
-              "碳纤维 · 100 × 12 mm"
-            ],
-            [
-              "中轴",
-              "T47 · 24 mm"
-            ]
+            ["材质", "XDS Carbon"],
+            ["尾钩", "UDH"],
+            ["前叉", "碳纤维 · 100 × 12 mm"],
+            ["中轴", "T47 · 24 mm"]
           ]
         },
         {
@@ -2216,23 +1669,12 @@
           "title": "Shimano 105 Di2",
           "description": "电子变速与液压碟刹集成在同一对手变中。",
           "specs": [
-            [
-              "型号",
-              "ST-R7170"
-            ],
-            [
-              "变速",
-              "2 × 12 速"
-            ],
-            [
-              "夹器",
-              "BR-R7170"
-            ],
-            [
-              "碟片",
-              "前 160 / 后 140 mm"
-            ]
-          ]
+            ["型号", "ST-R7170"],
+            ["变速", "2 × 12 速"],
+            ["夹器", "BR-R7170"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "catalogIds": ["105-r7100"]
         },
         {
           "id": "crank",
@@ -2243,18 +1685,9 @@
           "title": "Branta 铝合金功率曲柄",
           "description": "按车架尺寸配置不同长度，图片与数据采用页面注明的地区版本。",
           "specs": [
-            [
-              "曲柄",
-              "铝合金"
-            ],
-            [
-              "轴心",
-              "24 mm 钢轴"
-            ],
-            [
-              "曲柄长度",
-              "XS/S 165 · M/L 170 · XL 172.5 mm"
-            ]
+            ["曲柄", "铝合金"],
+            ["轴心", "24 mm 钢轴"],
+            ["曲柄长度", "XS/S 165 · M/L 170 · XL 172.5 mm"]
           ]
         },
         {
@@ -2266,18 +1699,9 @@
           "title": "Branta 52 / 36T",
           "description": "双盘配置，与 Shimano 12 速电子变速搭配。",
           "specs": [
-            [
-              "齿数",
-              "52 / 36T"
-            ],
-            [
-              "盘片",
-              "双盘"
-            ],
-            [
-              "链条",
-              "CN-M7100 / KMC X12"
-            ]
+            ["齿数", "52 / 36T"],
+            ["盘片", "双盘"],
+            ["链条", "CN-M7100 / KMC X12"]
           ]
         },
         {
@@ -2289,18 +1713,9 @@
           "title": "Shimano CS-R7101",
           "description": "11–34T 飞轮为这套整车提供较宽的齿比范围。",
           "specs": [
-            [
-              "齿比",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ],
-            [
-              "系列",
-              "Shimano 105"
-            ]
+            ["齿比", "11–34T"],
+            ["速别", "12 速"],
+            ["系列", "Shimano 105"]
           ]
         },
         {
@@ -2312,22 +1727,10 @@
           "title": "Branta 集成功率计",
           "description": "集成在 Branta 曲柄中，支持 Apple Find My。",
           "specs": [
-            [
-              "安装",
-              "原厂曲柄集成"
-            ],
-            [
-              "测量",
-              "官方未注明单 / 双边"
-            ],
-            [
-              "连接",
-              "官方未列出协议"
-            ],
-            [
-              "查找",
-              "Apple Find My"
-            ]
+            ["安装", "原厂曲柄集成"],
+            ["测量", "官方未注明单 / 双边"],
+            ["连接", "官方未列出协议"],
+            ["查找", "Apple Find My"]
           ]
         },
         {
@@ -2339,18 +1742,9 @@
           "title": "Branta C45 SL",
           "description": "Branta 自有碳纤维轮组，三款 AD 整车采用不同轮组配置。",
           "specs": [
-            [
-              "车圈",
-              "碳纤维"
-            ],
-            [
-              "辐条",
-              "PSR Wing20 气动辐条"
-            ],
-            [
-              "型号",
-              "C45 SL"
-            ]
+            ["车圈", "碳纤维"],
+            ["辐条", "PSR Wing20 气动辐条"],
+            ["型号", "C45 SL"]
           ]
         },
         {
@@ -2362,18 +1756,9 @@
           "title": "Branta R630F",
           "description": "轮胎型号与尺寸按对应地区整车配置列示。",
           "specs": [
-            [
-              "规格",
-              "700 × 30C"
-            ],
-            [
-              "胎体",
-              "60 TPI"
-            ],
-            [
-              "品牌",
-              "Branta"
-            ]
+            ["规格", "700 × 30C"],
+            ["胎体", "60 TPI"],
+            ["品牌", "Branta"]
           ]
         }
       ],
@@ -2458,10 +1843,7 @@
       "edition": "美国版 · 105 Di2",
       "kind": "气动竞赛",
       "description": "以 T800 碳纤维构筑气动轮廓，搭配 Branta 碳纤维功率曲柄与轮组。从日常训练，到下一次冲线。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/xlab-ad8.jpg",
       "imageCredit": "X-LAB / XDS",
       "imageTone": "dark",
@@ -2486,22 +1868,10 @@
           "title": "Toray T800 气动车架",
           "description": "X-LAB AD 系列碳纤维车架，配一体式 Branta 碳纤维车把。",
           "specs": [
-            [
-              "材质",
-              "Toray T800"
-            ],
-            [
-              "尾钩",
-              "UDH"
-            ],
-            [
-              "前叉",
-              "碳纤维 · 100 × 12 mm"
-            ],
-            [
-              "中轴",
-              "T47 · 29 mm"
-            ]
+            ["材质", "Toray T800"],
+            ["尾钩", "UDH"],
+            ["前叉", "碳纤维 · 100 × 12 mm"],
+            ["中轴", "T47 · 29 mm"]
           ]
         },
         {
@@ -2513,23 +1883,12 @@
           "title": "Shimano 105 Di2",
           "description": "电子变速与液压碟刹集成在同一对手变中。",
           "specs": [
-            [
-              "型号",
-              "ST-R7170"
-            ],
-            [
-              "变速",
-              "2 × 12 速"
-            ],
-            [
-              "夹器",
-              "BR-R7170"
-            ],
-            [
-              "碟片",
-              "前 160 / 后 140 mm"
-            ]
-          ]
+            ["型号", "ST-R7170"],
+            ["变速", "2 × 12 速"],
+            ["夹器", "BR-R7170"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "catalogIds": ["105-r7100"]
         },
         {
           "id": "crank",
@@ -2540,18 +1899,9 @@
           "title": "Branta 碳纤维功率曲柄",
           "description": "按车架尺寸配置不同长度，图片与数据采用页面注明的地区版本。",
           "specs": [
-            [
-              "曲柄",
-              "碳纤维"
-            ],
-            [
-              "轴心",
-              "29 mm 铝合金轴"
-            ],
-            [
-              "曲柄长度",
-              "XS/S 160 · M/L 165 · XL 170 mm"
-            ]
+            ["曲柄", "碳纤维"],
+            ["轴心", "29 mm 铝合金轴"],
+            ["曲柄长度", "XS/S 160 · M/L 165 · XL 170 mm"]
           ]
         },
         {
@@ -2563,18 +1913,9 @@
           "title": "Branta 52 / 36T",
           "description": "双盘配置，与 Shimano 12 速电子变速搭配。",
           "specs": [
-            [
-              "齿数",
-              "52 / 36T"
-            ],
-            [
-              "盘片",
-              "双盘"
-            ],
-            [
-              "链条",
-              "CN-M7100"
-            ]
+            ["齿数", "52 / 36T"],
+            ["盘片", "双盘"],
+            ["链条", "CN-M7100"]
           ]
         },
         {
@@ -2586,18 +1927,9 @@
           "title": "Shimano CS-R7101",
           "description": "11–34T 飞轮为这套整车提供较宽的齿比范围。",
           "specs": [
-            [
-              "齿比",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ],
-            [
-              "系列",
-              "Shimano 105"
-            ]
+            ["齿比", "11–34T"],
+            ["速别", "12 速"],
+            ["系列", "Shimano 105"]
           ]
         },
         {
@@ -2609,22 +1941,10 @@
           "title": "Branta 集成功率计",
           "description": "左右侧独立测量，支持 ANT+ 连接码表与 Apple Find My。",
           "specs": [
-            [
-              "安装",
-              "原厂曲柄集成"
-            ],
-            [
-              "测量",
-              "左右双边"
-            ],
-            [
-              "连接",
-              "ANT+ / 蓝牙（X-LAB App）"
-            ],
-            [
-              "查找",
-              "Apple Find My"
-            ]
+            ["安装", "原厂曲柄集成"],
+            ["测量", "左右双边"],
+            ["连接", "ANT+ / 蓝牙（X-LAB App）"],
+            ["查找", "Apple Find My"]
           ]
         },
         {
@@ -2636,18 +1956,9 @@
           "title": "Branta C45 UL",
           "description": "Branta 自有碳纤维轮组，三款 AD 整车采用不同轮组配置。",
           "specs": [
-            [
-              "车圈",
-              "碳纤维"
-            ],
-            [
-              "辐条",
-              "碳纤维"
-            ],
-            [
-              "型号",
-              "C45 UL"
-            ]
+            ["车圈", "碳纤维"],
+            ["辐条", "碳纤维"],
+            ["型号", "C45 UL"]
           ]
         },
         {
@@ -2659,18 +1970,9 @@
           "title": "Michelin Pro 5",
           "description": "轮胎型号与尺寸按对应地区整车配置列示。",
           "specs": [
-            [
-              "规格",
-              "700 × 28C"
-            ],
-            [
-              "最大胎宽",
-              "32C"
-            ],
-            [
-              "品牌",
-              "Michelin"
-            ]
+            ["规格", "700 × 28C"],
+            ["最大胎宽", "32C"],
+            ["品牌", "Michelin"]
           ]
         }
       ],
@@ -2749,7 +2051,29 @@
         "source": "https://xds.co/products/ad8",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "paints": [
+        {
+          "id": "starlight-blue-white",
+          "name": "Starlight Blue/White",
+          "hex": "#557891",
+          "image": "/bikes/xlab-ad8--starlight-blue-white.png",
+          "source": "https://xds.co/products/ad8",
+          "imageRatio": 1.65,
+          "imagePosition": "50% 40.19548872180451%",
+          "note": "官方涂装图；具体配置以所选版本参数为准。"
+        },
+        {
+          "id": "strata-grey-black",
+          "name": "Strata Grey/Black",
+          "hex": "#45484a",
+          "image": "/bikes/xlab-ad8--strata-grey-black.png",
+          "source": "https://xds.co/products/ad8",
+          "imageRatio": 1.65,
+          "imagePosition": "50% 40.19548872180451%",
+          "note": "官方涂装图；具体配置以所选版本参数为准。"
+        }
+      ]
     },
     {
       "id": "xlab-ad9",
@@ -2760,10 +2084,7 @@
       "edition": "美国版 · 车队涂装",
       "kind": "气动竞赛",
       "description": "来自喜德盛 X-LAB 的旗舰气动车。T1100 碳纤维、Dura-Ace Di2 与阿斯塔纳车队涂装，组成醒目的竞赛姿态。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/xlab-ad9.jpg",
       "imageCredit": "X-LAB / XDS",
       "imageTone": "dark",
@@ -2788,22 +2109,10 @@
           "title": "Toray T1100 气动车架",
           "description": "X-LAB AD 系列碳纤维车架，配一体式 Branta 碳纤维车把。",
           "specs": [
-            [
-              "材质",
-              "Toray T1100"
-            ],
-            [
-              "尾钩",
-              "UDH"
-            ],
-            [
-              "前叉",
-              "碳纤维 · 100 × 12 mm"
-            ],
-            [
-              "中轴",
-              "T47 · 29 mm"
-            ]
+            ["材质", "Toray T1100"],
+            ["尾钩", "UDH"],
+            ["前叉", "碳纤维 · 100 × 12 mm"],
+            ["中轴", "T47 · 29 mm"]
           ]
         },
         {
@@ -2815,23 +2124,12 @@
           "title": "Shimano Dura-Ace Di2",
           "description": "电子变速与液压碟刹集成在同一对手变中。",
           "specs": [
-            [
-              "型号",
-              "ST-R9270"
-            ],
-            [
-              "变速",
-              "2 × 12 速"
-            ],
-            [
-              "夹器",
-              "BR-R9270"
-            ],
-            [
-              "碟片",
-              "前 160 / 后 140 mm"
-            ]
-          ]
+            ["型号", "ST-R9270"],
+            ["变速", "2 × 12 速"],
+            ["夹器", "BR-R9270"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -2842,18 +2140,9 @@
           "title": "Branta 碳纤维功率曲柄",
           "description": "按车架尺寸配置不同长度，图片与数据采用页面注明的地区版本。",
           "specs": [
-            [
-              "曲柄",
-              "碳纤维"
-            ],
-            [
-              "轴心",
-              "29 mm 铝合金轴"
-            ],
-            [
-              "曲柄长度",
-              "XS/S 160 · M/L 165 · XL 170 mm"
-            ]
+            ["曲柄", "碳纤维"],
+            ["轴心", "29 mm 铝合金轴"],
+            ["曲柄长度", "XS/S 160 · M/L 165 · XL 170 mm"]
           ]
         },
         {
@@ -2865,18 +2154,9 @@
           "title": "Branta 52 / 36T",
           "description": "双盘配置，与 Shimano 12 速电子变速搭配。",
           "specs": [
-            [
-              "齿数",
-              "52 / 36T"
-            ],
-            [
-              "盘片",
-              "双盘"
-            ],
-            [
-              "链条",
-              "CN-M9100"
-            ]
+            ["齿数", "52 / 36T"],
+            ["盘片", "双盘"],
+            ["链条", "CN-M9100"]
           ]
         },
         {
@@ -2888,18 +2168,9 @@
           "title": "Shimano CS-R9200",
           "description": "11–34T 飞轮为这套整车提供较宽的齿比范围。",
           "specs": [
-            [
-              "齿比",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ],
-            [
-              "系列",
-              "Shimano Dura-Ace"
-            ]
+            ["齿比", "11–34T"],
+            ["速别", "12 速"],
+            ["系列", "Shimano Dura-Ace"]
           ]
         },
         {
@@ -2911,22 +2182,10 @@
           "title": "Branta 集成功率计",
           "description": "左右侧独立测量，支持 ANT+ 连接码表与 Apple Find My。",
           "specs": [
-            [
-              "安装",
-              "原厂曲柄集成"
-            ],
-            [
-              "测量",
-              "左右双边"
-            ],
-            [
-              "连接",
-              "ANT+ / 蓝牙（X-LAB App）"
-            ],
-            [
-              "查找",
-              "Apple Find My"
-            ]
+            ["安装", "原厂曲柄集成"],
+            ["测量", "左右双边"],
+            ["连接", "ANT+ / 蓝牙（X-LAB App）"],
+            ["查找", "Apple Find My"]
           ]
         },
         {
@@ -2938,22 +2197,10 @@
           "title": "Branta C50 ULR",
           "description": "Branta 自有碳纤维轮组，三款 AD 整车采用不同轮组配置。",
           "specs": [
-            [
-              "框高",
-              "50 mm"
-            ],
-            [
-              "辐条",
-              "碳纤维"
-            ],
-            [
-              "轴承",
-              "陶瓷轴承"
-            ],
-            [
-              "轮组标称重量",
-              "1,230 g"
-            ]
+            ["框高", "50 mm"],
+            ["辐条", "碳纤维"],
+            ["轴承", "陶瓷轴承"],
+            ["轮组标称重量", "1,230 g"]
           ]
         },
         {
@@ -2965,18 +2212,9 @@
           "title": "Michelin Pro 5",
           "description": "轮胎型号与尺寸按对应地区整车配置列示。",
           "specs": [
-            [
-              "规格",
-              "700 × 28C"
-            ],
-            [
-              "最大胎宽",
-              "32C"
-            ],
-            [
-              "品牌",
-              "Michelin"
-            ]
+            ["规格", "700 × 28C"],
+            ["最大胎宽", "32C"],
+            ["品牌", "Michelin"]
           ]
         }
       ],
@@ -3055,7 +2293,19 @@
         "source": "https://xds.co/products/ad9",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "paints": [
+        {
+          "id": "hawkeye-purple-black",
+          "name": "Hawkeye Purple/Black",
+          "hex": "#715784",
+          "image": "/bikes/xlab-ad9--hawkeye-purple-black.png",
+          "source": "https://xds.co/products/ad9",
+          "imageRatio": 1.65,
+          "imagePosition": "50% 40.19548872180451%",
+          "note": "官方涂装图；具体配置以所选版本参数为准。"
+        }
+      ]
     },
     {
       "id": "xlab-rs7",
@@ -3066,9 +2316,7 @@
       "edition": "美国版 · Angel",
       "kind": "全能公路",
       "description": "从日常训练到长距离公路骑行。RS7 采用更紧凑的车架比例，将机械 105、功率曲柄与碳轮组合在一起。",
-      "collections": [
-        "current"
-      ],
+      "collections": ["current"],
       "image": "/bikes/xlab-rs7.jpg",
       "imageCredit": "X-LAB / XDS",
       "imageTone": "dark",
@@ -3091,22 +2339,10 @@
           "title": "Toray T800 碳纤维车架",
           "description": "紧凑车架，配 T700 碳纤维前叉与 Branta 一体把。",
           "specs": [
-            [
-              "车架",
-              "Toray T800"
-            ],
-            [
-              "前叉",
-              "T700 · 100 × 12 mm"
-            ],
-            [
-              "中轴",
-              "BSA · 24 mm"
-            ],
-            [
-              "尾钩",
-              "非 UDH"
-            ]
+            ["车架", "Toray T800"],
+            ["前叉", "T700 · 100 × 12 mm"],
+            ["中轴", "BSA · 24 mm"],
+            ["尾钩", "非 UDH"]
           ],
           "x": 57,
           "y": 51.32
@@ -3118,22 +2354,10 @@
           "title": "Shimano 105 机械手变",
           "description": "机械变速，液压碟刹。",
           "specs": [
-            [
-              "手变",
-              "ST-R7120"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "夹器",
-              "BR-R7170"
-            ],
-            [
-              "碟片",
-              "前后 160 mm"
-            ]
+            ["手变", "ST-R7120"],
+            ["速别", "2 × 12 速"],
+            ["夹器", "BR-R7170"],
+            ["碟片", "前后 160 mm"]
           ],
           "x": 77,
           "y": 21.38
@@ -3145,18 +2369,9 @@
           "title": "Branta 铝合金功率曲柄",
           "description": "长度随尺码变化。",
           "specs": [
-            [
-              "曲柄",
-              "铝合金"
-            ],
-            [
-              "轴心",
-              "24 mm 钢轴"
-            ],
-            [
-              "长度",
-              "XS/S 165 · M/L 170 · XL/XXL 172.5 mm"
-            ]
+            ["曲柄", "铝合金"],
+            ["轴心", "24 mm 钢轴"],
+            ["长度", "XS/S 165 · M/L 170 · XL/XXL 172.5 mm"]
           ],
           "x": 51,
           "y": 75.56
@@ -3168,18 +2383,9 @@
           "title": "Branta 52 / 36T",
           "description": "兼顾平路与起伏路段的双盘。",
           "specs": [
-            [
-              "齿数",
-              "52 / 36T"
-            ],
-            [
-              "盘片",
-              "双盘"
-            ],
-            [
-              "链条",
-              "CN-M7100"
-            ]
+            ["齿数", "52 / 36T"],
+            ["盘片", "双盘"],
+            ["链条", "CN-M7100"]
           ],
           "x": 45,
           "y": 76.98
@@ -3191,18 +2397,9 @@
           "title": "Shimano CS-R7101",
           "description": "12 速 105 飞轮。",
           "specs": [
-            [
-              "齿比",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ],
-            [
-              "系列",
-              "Shimano 105"
-            ]
+            ["齿比", "11–34T"],
+            ["速别", "12 速"],
+            ["系列", "Shimano 105"]
           ],
           "x": 25,
           "y": 69.85
@@ -3214,18 +2411,9 @@
           "title": "Branta 集成功率计",
           "description": "原厂功率曲柄，支持连接码表。",
           "specs": [
-            [
-              "安装",
-              "曲柄集成"
-            ],
-            [
-              "连接",
-              "ANT+ / 蓝牙（X-LAB App）"
-            ],
-            [
-              "查找",
-              "Apple Find My"
-            ]
+            ["安装", "曲柄集成"],
+            ["连接", "ANT+ / 蓝牙（X-LAB App）"],
+            ["查找", "Apple Find My"]
           ],
           "x": 46,
           "y": 71.28
@@ -3237,18 +2425,9 @@
           "title": "Branta C50 Base",
           "description": "碳纤维轮圈搭配不锈钢辐条。",
           "specs": [
-            [
-              "框高",
-              "50 mm"
-            ],
-            [
-              "轮圈",
-              "碳纤维"
-            ],
-            [
-              "辐条",
-              "不锈钢"
-            ]
+            ["框高", "50 mm"],
+            ["轮圈", "碳纤维"],
+            ["辐条", "不锈钢"]
           ],
           "x": 87,
           "y": 69.85
@@ -3260,18 +2439,9 @@
           "title": "Branta R301",
           "description": "原厂 30C 轮胎。",
           "specs": [
-            [
-              "规格",
-              "700 × 30C"
-            ],
-            [
-              "胎体",
-              "60 TPI"
-            ],
-            [
-              "车架最大胎宽",
-              "32C"
-            ]
+            ["规格", "700 × 30C"],
+            ["胎体", "60 TPI"],
+            ["车架最大胎宽", "32C"]
           ],
           "x": 74,
           "y": 44.19
@@ -3364,7 +2534,19 @@
         "source": "https://xds.co/products/rs7",
         "limit": "未录入可与其他车型直接比较的风洞数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "paints": [
+        {
+          "id": "singularity-black",
+          "name": "Singularity Black",
+          "hex": "#222629",
+          "image": "/bikes/xlab-rs7--singularity-black.png",
+          "source": "https://xds.co/products/rs7",
+          "imageRatio": 1.65,
+          "imagePosition": "50% 40.19548872180451%",
+          "note": "官方涂装图；具体配置以所选版本参数为准。"
+        }
+      ]
     },
     {
       "id": "xlab-rt9",
@@ -3375,10 +2557,7 @@
       "edition": "美国版 · Shadowbox",
       "kind": "轻量爬坡",
       "description": "为山路减去负担。T1100 与 M40X 碳纤维车架、纤细管型与 27.2 mm 圆座管，呈现出不同于 AD 系列的轻量路线。",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/xlab-rt9.jpg",
       "imageCredit": "X-LAB / XDS",
       "imageTone": "dark",
@@ -3401,22 +2580,10 @@
           "title": "T1100 + M40X 轻量车架",
           "description": "纤细管型搭配圆座管，保留 UDH 尾钩。",
           "specs": [
-            [
-              "车架",
-              "Toray T1100 + M40X"
-            ],
-            [
-              "座管",
-              "27.2 mm 碳纤维"
-            ],
-            [
-              "中轴",
-              "BSA · 29 mm"
-            ],
-            [
-              "尾钩",
-              "UDH"
-            ]
+            ["车架", "Toray T1100 + M40X"],
+            ["座管", "27.2 mm 碳纤维"],
+            ["中轴", "BSA · 29 mm"],
+            ["尾钩", "UDH"]
           ],
           "x": 57,
           "y": 52.75
@@ -3428,21 +2595,13 @@
           "title": "Shimano Dura-Ace Di2",
           "description": "12 速电子变速与液压碟刹。",
           "specs": [
-            [
-              "手变",
-              "ST-R9270"
-            ],
-            [
-              "夹器",
-              "BR-R9270"
-            ],
-            [
-              "碟片",
-              "MT900 · 前 160 / 后 140 mm"
-            ]
+            ["手变", "ST-R9270"],
+            ["夹器", "BR-R9270"],
+            ["碟片", "MT900 · 前 160 / 后 140 mm"]
           ],
           "x": 77,
-          "y": 22.81
+          "y": 22.81,
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -3451,18 +2610,9 @@
           "title": "Branta 碳纤维功率曲柄",
           "description": "较短曲柄随尺码配置。",
           "specs": [
-            [
-              "材质",
-              "碳纤维"
-            ],
-            [
-              "轴心",
-              "29 mm 铝合金"
-            ],
-            [
-              "长度",
-              "XS/S 160 · M/L 165 mm"
-            ]
+            ["材质", "碳纤维"],
+            ["轴心", "29 mm 铝合金"],
+            ["长度", "XS/S 160 · M/L 165 mm"]
           ],
           "x": 52,
           "y": 76.98
@@ -3474,21 +2624,13 @@
           "title": "Branta 52 / 36T",
           "description": "与 Dura-Ace 12 速系统配合。",
           "specs": [
-            [
-              "齿数",
-              "52 / 36T"
-            ],
-            [
-              "链条",
-              "CN-M9100"
-            ],
-            [
-              "盘片",
-              "双盘"
-            ]
+            ["齿数", "52 / 36T"],
+            ["链条", "CN-M9100"],
+            ["盘片", "双盘"]
           ],
           "x": 46,
-          "y": 78.41
+          "y": 78.41,
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "cassette",
@@ -3497,14 +2639,8 @@
           "title": "Shimano CS-R9200",
           "description": "11–34T 飞轮覆盖起伏路段。",
           "specs": [
-            [
-              "齿比",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比", "11–34T"],
+            ["速别", "12 速"]
           ],
           "x": 26,
           "y": 69.85
@@ -3516,18 +2652,9 @@
           "title": "Branta 集成功率计",
           "description": "左右独立测量的功率曲柄。",
           "specs": [
-            [
-              "测量",
-              "左右双边"
-            ],
-            [
-              "连接",
-              "ANT+ / 蓝牙（X-LAB App）"
-            ],
-            [
-              "查找",
-              "Apple Find My"
-            ]
+            ["测量", "左右双边"],
+            ["连接", "ANT+ / 蓝牙（X-LAB App）"],
+            ["查找", "Apple Find My"]
           ],
           "x": 46.5,
           "y": 72.71
@@ -3539,22 +2666,10 @@
           "title": "Branta C50 ULR",
           "description": "碳纤维辐条与陶瓷轴承。",
           "specs": [
-            [
-              "框高",
-              "50 mm"
-            ],
-            [
-              "标称重量",
-              "1,230 g"
-            ],
-            [
-              "辐条",
-              "碳纤维"
-            ],
-            [
-              "轴承",
-              "陶瓷"
-            ]
+            ["框高", "50 mm"],
+            ["标称重量", "1,230 g"],
+            ["辐条", "碳纤维"],
+            ["轴承", "陶瓷"]
           ],
           "x": 87,
           "y": 71.28
@@ -3566,14 +2681,8 @@
           "title": "Michelin Pro 5",
           "description": "公路真空胎配置。",
           "specs": [
-            [
-              "规格",
-              "700 × 28C"
-            ],
-            [
-              "车架最大胎宽",
-              "30C"
-            ]
+            ["规格", "700 × 28C"],
+            ["车架最大胎宽", "30C"]
           ],
           "x": 74,
           "y": 45.62
@@ -3653,9 +2762,7 @@
       "edition": "法国版 · 8817922",
       "kind": "长途耐力",
       "description": "为长距离留出舒适空间。EDR CF 采用较高前端、27.2 mm 圆座管、下管储物舱与多处安装点，支持最大 38 mm 胎宽。",
-      "collections": [
-        "current"
-      ],
+      "collections": ["current"],
       "image": "/bikes/vanrysel-edr-cf.png",
       "imageCredit": "Decathlon / Van Rysel",
       "imageRatio": 1.65,
@@ -3677,26 +2784,11 @@
           "title": "Van Rysel EDR CF 碳纤维车架",
           "description": "耐力几何与下管储物舱，支持宽胎。",
           "specs": [
-            [
-              "标称车架重量",
-              "1,000 g · M 码"
-            ],
-            [
-              "前叉",
-              "全碳 · 标称 400 g"
-            ],
-            [
-              "座管",
-              "27.2 mm 碳纤维"
-            ],
-            [
-              "中轴",
-              "Press-Fit · SM-BB72-41B"
-            ],
-            [
-              "安装点",
-              "8 处"
-            ]
+            ["标称车架重量", "1,000 g · M 码"],
+            ["前叉", "全碳 · 标称 400 g"],
+            ["座管", "27.2 mm 碳纤维"],
+            ["中轴", "Press-Fit · SM-BB72-41B"],
+            ["安装点", "8 处"]
           ],
           "x": 58,
           "y": 42.9
@@ -3708,22 +2800,10 @@
           "title": "Shimano 105 机械手变",
           "description": "2×12 速机械变速，搭配液压碟刹。",
           "specs": [
-            [
-              "变速",
-              "2 × 12 速 · 机械"
-            ],
-            [
-              "手变具体型号",
-              "该页面未单列"
-            ],
-            [
-              "夹器",
-              "BR-R7170"
-            ],
-            [
-              "碟片",
-              "前后 160 mm"
-            ]
+            ["变速", "2 × 12 速 · 机械"],
+            ["手变具体型号", "该页面未单列"],
+            ["夹器", "BR-R7170"],
+            ["碟片", "前后 160 mm"]
           ],
           "x": 78,
           "y": 9.9
@@ -3735,14 +2815,8 @@
           "title": "Shimano 105 R7100",
           "description": "标准 105 曲柄，长度随尺码变化。",
           "specs": [
-            [
-              "型号",
-              "FC-R7100"
-            ],
-            [
-              "长度",
-              "XS 165 · S 170 · M 172.5 · L/XL 175 mm"
-            ]
+            ["型号", "FC-R7100"],
+            ["长度", "XS 165 · S 170 · M 172.5 · L/XL 175 mm"]
           ],
           "x": 51,
           "y": 74.25
@@ -3754,14 +2828,8 @@
           "title": "Shimano 105 50 / 34T",
           "description": "紧凑双盘适合起伏路线。",
           "specs": [
-            [
-              "齿数",
-              "50 / 34T"
-            ],
-            [
-              "链条",
-              "Shimano SLX · 12 速"
-            ]
+            ["齿数", "50 / 34T"],
+            ["链条", "Shimano SLX · 12 速"]
           ],
           "x": 44,
           "y": 70.95
@@ -3773,14 +2841,8 @@
           "title": "Shimano CS-R7101",
           "description": "11–36T 提供较轻爬坡档位。",
           "specs": [
-            [
-              "齿比",
-              "11–36T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比", "11–36T"],
+            ["速别", "12 速"]
           ],
           "x": 21,
           "y": 66.0
@@ -3792,14 +2854,8 @@
           "title": "未列出原厂功率计",
           "description": "官方配置为标准 105 曲柄，未列出功率测量模块。",
           "specs": [
-            [
-              "官方配置",
-              "未列功率计"
-            ],
-            [
-              "当前曲柄",
-              "Shimano 105 R7100"
-            ]
+            ["官方配置", "未列功率计"],
+            ["当前曲柄", "Shimano 105 R7100"]
           ],
           "x": 45,
           "y": 66.0
@@ -3811,22 +2867,10 @@
           "title": "Van Rysel VR35 Lite",
           "description": "35 mm 碳纤维轮圈，采用 Center Lock 碟刹接口。",
           "specs": [
-            [
-              "框高 / 内宽",
-              "35 / 22 mm"
-            ],
-            [
-              "辐条",
-              "前后各 24 根"
-            ],
-            [
-              "标称轮组重量",
-              "1,490 g"
-            ],
-            [
-              "轴规格",
-              "前 12×100 / 后 12×142 mm"
-            ]
+            ["框高 / 内宽", "35 / 22 mm"],
+            ["辐条", "前后各 24 根"],
+            ["标称轮组重量", "1,490 g"],
+            ["轴规格", "前 12×100 / 后 12×142 mm"]
           ],
           "x": 95,
           "y": 66.0
@@ -3838,18 +2882,9 @@
           "title": "Continental Grand Prix TR",
           "description": "该型号不是 GP5000，规格按对应整车列出。",
           "specs": [
-            [
-              "规格",
-              "700 × 28C"
-            ],
-            [
-              "系统",
-              "Tubeless Ready"
-            ],
-            [
-              "车架最大胎宽",
-              "38 mm"
-            ]
+            ["规格", "700 × 28C"],
+            ["系统", "Tubeless Ready"],
+            ["车架最大胎宽", "38 mm"]
           ],
           "x": 78,
           "y": 34.65
@@ -3947,10 +2982,7 @@
       "material": "Advanced 碳纤维",
       "groupset": "Force AXS E1",
       "build": "SRAM Force AXS E1",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/tcr-pro0.jpg",
       "imageCredit": "GIANT",
       "imageSource": "https://images2.giant-bicycles.com/b_white,c_pad,h_1250,q_90,w_2000/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg",
@@ -3967,18 +2999,9 @@
           "title": "Advanced-grade Composite",
           "description": "紧凑公路几何搭配可调高度的 Variant 座管；这款 Pro 并非 SL 的一体式座管车架。",
           "specs": [
-            [
-              "前叉",
-              "Advanced SL · OverDrive Aero"
-            ],
-            [
-              "桶轴",
-              "前 12 × 100 / 后 12 × 142 mm"
-            ],
-            [
-              "最大胎宽",
-              "33 mm"
-            ]
+            ["前叉", "Advanced SL · OverDrive Aero"],
+            ["桶轴", "前 12 × 100 / 后 12 × 142 mm"],
+            ["最大胎宽", "33 mm"]
           ],
           "x": 58,
           "y": 48
@@ -3990,18 +3013,9 @@
           "title": "SRAM Force AXS E1",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "AXS 无线电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "AXS 无线电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 77,
           "y": 22
@@ -4013,18 +3027,9 @@
           "title": "SRAM Force AXS E1",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "SRAM Force AXS E1"
-            ],
-            [
-              "曲柄长度",
-              "XS / S 165 · M / ML 170 · L / XL 172.5 mm"
-            ],
-            [
-              "五通",
-              "SRAM DUB 压入式"
-            ]
+            ["型号", "SRAM Force AXS E1"],
+            ["曲柄长度", "XS / S 165 · M / ML 170 · L / XL 172.5 mm"],
+            ["五通", "SRAM DUB 压入式"]
           ],
           "x": 52,
           "y": 68
@@ -4036,14 +3041,8 @@
           "title": "48 / 35T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "48 / 35T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "48 / 35T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 44,
           "y": 73
@@ -4055,14 +3054,8 @@
           "title": "SRAM Force E1 · 10–36T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "10–36T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "10–36T"],
+            ["速别", "12 速"]
           ],
           "x": 25,
           "y": 61
@@ -4074,14 +3067,8 @@
           "title": "SRAM 集成功率计",
           "description": "品牌配置表明确列出的原配功率计。",
           "specs": [
-            [
-              "原配状态",
-              "官网明确列出"
-            ],
-            [
-              "搭载曲柄",
-              "Force AXS E1"
-            ]
+            ["原配状态", "官网明确列出"],
+            ["搭载曲柄", "Force AXS E1"]
           ],
           "x": 47,
           "y": 65
@@ -4093,18 +3080,9 @@
           "title": "Giant SLR 0 40",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高",
-              "前后 40 mm"
-            ],
-            [
-              "辐条",
-              "Giant Aero Carbon"
-            ],
-            [
-              "后花鼓",
-              "40T 棘轮"
-            ]
+            ["框高", "前后 40 mm"],
+            ["辐条", "Giant Aero Carbon"],
+            ["后花鼓", "40T 棘轮"]
           ],
           "x": 80,
           "y": 77
@@ -4116,14 +3094,8 @@
           "title": "CADEX Road Race GC",
           "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
           "specs": [
-            [
-              "标称规格",
-              "700 × 30 mm"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "700 × 30 mm"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 87,
           "y": 49
@@ -4231,10 +3203,7 @@
       "material": "Advanced 碳纤维",
       "groupset": "Ultegra Di2",
       "build": "Shimano Ultegra Di2",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/defy-pro0.jpg",
       "imageCredit": "GIANT",
       "imageSource": "https://images2.giant-bicycles.com/b_white,c_pad,h_1250,q_90,w_2000/aln483imudq1em2hmdss/MY25DefyAdvancedPro0_ColorAInterstellar.jpg",
@@ -4251,18 +3220,9 @@
           "title": "Advanced-Grade Composite",
           "description": "以长途顺应性为目标的碳纤维车架，配 D-Fuse 把组与座管。胎宽上限的官网字段存在冲突，保留提示。",
           "specs": [
-            [
-              "座管",
-              "Giant D-Fuse SLR 碳纤维"
-            ],
-            [
-              "桶轴",
-              "前 12 × 100 / 后 12 × 142 mm"
-            ],
-            [
-              "最大胎宽",
-              "官网 38 / 40 mm 字段不一致，待核验"
-            ]
+            ["座管", "Giant D-Fuse SLR 碳纤维"],
+            ["桶轴", "前 12 × 100 / 后 12 × 142 mm"],
+            ["最大胎宽", "官网 38 / 40 mm 字段不一致，待核验"]
           ],
           "x": 58,
           "y": 48
@@ -4274,21 +3234,13 @@
           "title": "Shimano Ultegra Di2 ST-R8170",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 77,
-          "y": 22
+          "y": 22,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "crank",
@@ -4297,18 +3249,9 @@
           "title": "Shimano Ultegra",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "Shimano Ultegra"
-            ],
-            [
-              "曲柄长度",
-              "XS / S 170 · M / ML 172.5 · L / XL 175 mm"
-            ],
-            [
-              "五通",
-              "Shimano 压入式"
-            ]
+            ["型号", "Shimano Ultegra"],
+            ["曲柄长度", "XS / S 170 · M / ML 172.5 · L / XL 175 mm"],
+            ["五通", "Shimano 压入式"]
           ],
           "x": 52,
           "y": 68
@@ -4320,14 +3263,8 @@
           "title": "50 / 34T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "50 / 34T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "50 / 34T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 44,
           "y": 73
@@ -4339,17 +3276,12 @@
           "title": "Shimano Ultegra · 11–34T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "11–34T"],
+            ["速别", "12 速"]
           ],
           "x": 25,
-          "y": 61
+          "y": 61,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "power",
@@ -4358,14 +3290,8 @@
           "title": "Giant Power Pro",
           "description": "品牌配置表明确列出的原配功率计。",
           "specs": [
-            [
-              "原配状态",
-              "官网明确列出"
-            ],
-            [
-              "搭载曲柄",
-              "Shimano Ultegra"
-            ]
+            ["原配状态", "官网明确列出"],
+            ["搭载曲柄", "Shimano Ultegra"]
           ],
           "x": 47,
           "y": 65
@@ -4377,18 +3303,9 @@
           "title": "Giant SLR 1 36 Carbon Disc",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高",
-              "36 mm"
-            ],
-            [
-              "辐条",
-              "Sapim"
-            ],
-            [
-              "后花鼓",
-              "30T 棘轮"
-            ]
+            ["框高", "36 mm"],
+            ["辐条", "Sapim"],
+            ["后花鼓", "30T 棘轮"]
           ],
           "x": 80,
           "y": 77
@@ -4400,14 +3317,8 @@
           "title": "CADEX Classics",
           "description": "官网另标装配宽度 33.5 mm；标称宽度和实际装配宽度不同。",
           "specs": [
-            [
-              "标称规格",
-              "700 × 32C"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "700 × 32C"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 87,
           "y": 49
@@ -4515,10 +3426,7 @@
       "material": "CF SLX 碳纤维",
       "groupset": "Ultegra Di2",
       "build": "Shimano Ultegra Di2",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/ultimate-slx8.png",
       "imageCredit": "CANYON",
       "imageSource": "https://dma.canyon.com/image/upload/w_2000,c_fit/f_png/q_auto/v1778166635/2027_FULL_ultimate_cf-slx-8-di2_4372_R100_P08_zqiigh",
@@ -4535,22 +3443,10 @@
           "title": "Canyon Ultimate CF SLX",
           "description": "SLX 碳纤维车架采用内走线前端和独立碳纤维座管，轮廓比 Aeroad 更纤细。",
           "specs": [
-            [
-              "前叉",
-              "Canyon FK0146 CF"
-            ],
-            [
-              "最大胎宽",
-              "32 mm"
-            ],
-            [
-              "车架重量",
-              "940 g · 官网参考"
-            ],
-            [
-              "把组",
-              "CP0048 PACE T-Bar"
-            ]
+            ["前叉", "Canyon FK0146 CF"],
+            ["最大胎宽", "32 mm"],
+            ["车架重量", "940 g · 官网参考"],
+            ["把组", "CP0048 PACE T-Bar"]
           ],
           "x": 59,
           "y": 48
@@ -4562,21 +3458,13 @@
           "title": "Shimano Ultegra Di2 ST-R8170",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 77,
-          "y": 21
+          "y": 21,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "crank",
@@ -4585,21 +3473,13 @@
           "title": "Shimano Ultegra FC-R8100",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "Shimano Ultegra FC-R8100"
-            ],
-            [
-              "曲柄长度",
-              "2XS / XS 160 · S / M 165 · L–2XL 170 mm"
-            ],
-            [
-              "五通",
-              "Shimano BB72 · PF 86.5"
-            ]
+            ["型号", "Shimano Ultegra FC-R8100"],
+            ["曲柄长度", "2XS / XS 160 · S / M 165 · L–2XL 170 mm"],
+            ["五通", "Shimano BB72 · PF 86.5"]
           ],
           "x": 52,
-          "y": 73
+          "y": 73,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "chainrings",
@@ -4608,14 +3488,8 @@
           "title": "52 / 36T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "52 / 36T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 43,
           "y": 80
@@ -4627,14 +3501,8 @@
           "title": "Shimano CS-R8101 · 11–34T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "11–34T"],
+            ["速别", "12 速"]
           ],
           "x": 23,
           "y": 63
@@ -4646,14 +3514,8 @@
           "title": "4iiii Precision",
           "description": "品牌配置表明确列出的原配功率计。",
           "specs": [
-            [
-              "原配状态",
-              "官网明确列出"
-            ],
-            [
-              "搭载曲柄",
-              "Ultegra R8100"
-            ]
+            ["原配状态", "官网明确列出"],
+            ["搭载曲柄", "Ultegra R8100"]
           ],
           "x": 47,
           "y": 69
@@ -4665,18 +3527,9 @@
           "title": "DT Swiss ARC 1400 Dicut",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高",
-              "前后 38 mm"
-            ],
-            [
-              "内宽",
-              "20 mm"
-            ],
-            [
-              "轮圈材质",
-              "碳纤维"
-            ]
+            ["框高", "前后 38 mm"],
+            ["内宽", "20 mm"],
+            ["轮圈材质", "碳纤维"]
           ],
           "x": 81,
           "y": 78
@@ -4688,17 +3541,12 @@
           "title": "Continental GP 5000 S TR",
           "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
           "specs": [
-            [
-              "标称规格",
-              "28 mm"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "28 mm"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 89,
-          "y": 47
+          "y": 47,
+          "catalogIds": ["gp5000-str"]
         }
       ],
       "geometry": {
@@ -4798,7 +3646,17 @@
         "description": "轻量车架配合可调宽度、高度的 PACE 碳纤维把组；前端整合与骑手把位共同影响迎风面积。",
         "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html?dwvar_4372_pv_rahmenfarbe=R100_P08",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "paints": [
+        {
+          "id": "ultimate-alt",
+          "name": "Metallic Acid",
+          "hex": "#cedd43",
+          "image": "/bikes/ultimate-slx8--ultimate-alt.png",
+          "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html?dwvar_4372_pv_rahmenfarbe=R100_P09",
+          "imageRatio": 1.7777777777777777
+        }
+      ]
     },
     {
       "id": "endurace-slx8",
@@ -4815,10 +3673,7 @@
       "material": "CF SLX 碳纤维",
       "groupset": "Ultegra Di2",
       "build": "Shimano Ultegra Di2",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/endurace-slx8.png",
       "imageCredit": "CANYON",
       "imageSource": "https://dma.canyon.com/image/upload/w_2000,c_fit/f_png/q_auto/v1781600616/2027_FULL_endurace_cf-slx-8-di2_4432_R130_P02_zqw3jc",
@@ -4836,22 +3691,10 @@
           "title": "Canyon Endurace CF SLX",
           "description": "较高 Stack 与更宽轮胎空间面向长途公路。记录对应新款 4432，几何不混用旧款 4277。",
           "specs": [
-            [
-              "前叉",
-              "Canyon FK0165 CF Disc"
-            ],
-            [
-              "最大胎宽",
-              "38 mm"
-            ],
-            [
-              "座管",
-              "SP0093 VCLS Aero"
-            ],
-            [
-              "把组",
-              "CP0048 PACE T-Bar"
-            ]
+            ["前叉", "Canyon FK0165 CF Disc"],
+            ["最大胎宽", "38 mm"],
+            ["座管", "SP0093 VCLS Aero"],
+            ["把组", "CP0048 PACE T-Bar"]
           ],
           "x": 59,
           "y": 48
@@ -4863,21 +3706,13 @@
           "title": "Shimano Ultegra Di2 ST-R8170",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 77,
-          "y": 21
+          "y": 21,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "crank",
@@ -4886,21 +3721,13 @@
           "title": "Shimano Ultegra R8100",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "Shimano Ultegra R8100"
-            ],
-            [
-              "曲柄长度",
-              "2XS / XS 160 · S / M 165 · L–2XL 170 mm"
-            ],
-            [
-              "五通",
-              "Shimano BB72 · PF 86.5"
-            ]
+            ["型号", "Shimano Ultegra R8100"],
+            ["曲柄长度", "2XS / XS 160 · S / M 165 · L–2XL 170 mm"],
+            ["五通", "Shimano BB72 · PF 86.5"]
           ],
           "x": 52,
-          "y": 73
+          "y": 73,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "chainrings",
@@ -4909,14 +3736,8 @@
           "title": "50 / 34T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "50 / 34T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "50 / 34T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 43,
           "y": 80
@@ -4928,14 +3749,8 @@
           "title": "Shimano CS-R8101 · 11–34T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "11–34T"],
+            ["速别", "12 速"]
           ],
           "x": 23,
           "y": 63
@@ -4947,14 +3762,8 @@
           "title": "4iiii Precision 3+",
           "description": "品牌配置表明确列出的原配功率计。",
           "specs": [
-            [
-              "原配状态",
-              "官网明确列出"
-            ],
-            [
-              "搭载曲柄",
-              "Ultegra R8100"
-            ]
+            ["原配状态", "官网明确列出"],
+            ["搭载曲柄", "Ultegra R8100"]
           ],
           "x": 47,
           "y": 69
@@ -4966,18 +3775,9 @@
           "title": "DT Swiss ERC 1600 Dicut",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高",
-              "前后 35 mm"
-            ],
-            [
-              "内宽",
-              "22 mm"
-            ],
-            [
-              "轮圈材质",
-              "碳纤维"
-            ]
+            ["框高", "前后 35 mm"],
+            ["内宽", "22 mm"],
+            ["轮圈材质", "碳纤维"]
           ],
           "x": 81,
           "y": 78
@@ -4989,14 +3789,8 @@
           "title": "Schwalbe Pro One Evo",
           "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
           "specs": [
-            [
-              "标称规格",
-              "32 mm"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "32 mm"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 89,
           "y": 47
@@ -5099,7 +3893,17 @@
         "description": "PACE 前端和 VCLS Aero 座管兼顾气流与舒适性。图中较高的前端反映车架几何；实际姿势还由把组与垫圈决定。",
         "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html?dwvar_4432_pv_rahmenfarbe=R130_P02",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "paints": [
+        {
+          "id": "endurace-alt",
+          "name": "Crystal White",
+          "hex": "#f0efea",
+          "image": "/bikes/endurace-slx8--endurace-alt.png",
+          "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html?dwvar_4432_pv_rahmenfarbe=R130_P01",
+          "imageRatio": 1.7777777777777777
+        }
+      ]
     },
     {
       "id": "supersix-evo2",
@@ -5116,10 +3920,7 @@
       "material": "Gen 5 Carbon",
       "groupset": "Ultegra Di2",
       "build": "Shimano Ultegra Di2",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/supersix-evo2.png",
       "imageCredit": "Cannondale",
       "imageSource": "https://embed.widencdn.net/img/dorelrl/0evmpvnkut/2000px@1x/C26_C1106GU_SuperSix_EVO_2_TUB_PD.png",
@@ -5136,22 +3937,10 @@
           "title": "SuperSix EVO Carbon Gen 5",
           "description": "按尺码调整铺层的第五代碳纤维车架，采用内走线和下沉后上叉；几何来自 Gen 5 官方尺寸图。",
           "specs": [
-            [
-              "五通",
-              "BSA 68 mm 螺纹"
-            ],
-            [
-              "尾钩",
-              "UDH"
-            ],
-            [
-              "前叉舵管",
-              "Delta · 1⅛–1¼ 英寸"
-            ],
-            [
-              "最大胎宽",
-              "实测 32 mm"
-            ]
+            ["五通", "BSA 68 mm 螺纹"],
+            ["尾钩", "UDH"],
+            ["前叉舵管", "Delta · 1⅛–1¼ 英寸"],
+            ["最大胎宽", "实测 32 mm"]
           ],
           "x": 58,
           "y": 47
@@ -5163,21 +3952,13 @@
           "title": "Shimano Ultegra Di2 ST-R8170",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 82,
-          "y": 15
+          "y": 15,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "crank",
@@ -5186,21 +3967,13 @@
           "title": "Shimano Ultegra R8100",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "Shimano Ultegra R8100"
-            ],
-            [
-              "曲柄长度",
-              "44–50 165 · 52–56 170 · 58–61 172.5 mm"
-            ],
-            [
-              "五通",
-              "Shimano BB-RS500 · BSA 68"
-            ]
+            ["型号", "Shimano Ultegra R8100"],
+            ["曲柄长度", "44–50 165 · 52–56 170 · 58–61 172.5 mm"],
+            ["五通", "Shimano BB-RS500 · BSA 68"]
           ],
           "x": 53,
-          "y": 70
+          "y": 70,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "chainrings",
@@ -5209,14 +3982,8 @@
           "title": "52 / 36T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "52 / 36T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 44,
           "y": 77
@@ -5228,17 +3995,12 @@
           "title": "Shimano Ultegra R8100 · 11–30T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "11–30T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "11–30T"],
+            ["速别", "12 速"]
           ],
           "x": 19,
-          "y": 62
+          "y": 62,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "power",
@@ -5247,14 +4009,8 @@
           "title": "原配功率计未列明",
           "description": "品牌规格表未列出功率计，不将普通 Ultegra 曲柄当作功率曲柄。3D 不额外生成传感器。",
           "specs": [
-            [
-              "原配状态",
-              "规格表未列出"
-            ],
-            [
-              "已列曲柄",
-              "Shimano Ultegra R8100"
-            ]
+            ["原配状态", "规格表未列出"],
+            ["已列曲柄", "Shimano Ultegra R8100"]
           ],
           "x": 47,
           "y": 68
@@ -5266,18 +4022,9 @@
           "title": "DT Swiss ERC LOG 45",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高 / 内宽",
-              "45 / 22 mm"
-            ],
-            [
-              "花鼓",
-              "DT Swiss 370 · 后 LN Ratchet"
-            ],
-            [
-              "辐条数",
-              "24 孔"
-            ]
+            ["框高 / 内宽", "45 / 22 mm"],
+            ["花鼓", "DT Swiss 370 · 后 LN Ratchet"],
+            ["辐条数", "24 孔"]
           ],
           "x": 81,
           "y": 79
@@ -5289,14 +4036,8 @@
           "title": "Schwalbe One TLR",
           "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
           "specs": [
-            [
-              "标称规格",
-              "700 × 28C"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "700 × 28C"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 94,
           "y": 46
@@ -5428,9 +4169,7 @@
       "material": "SCULTURA CF3 V",
       "groupset": "Ultegra Di2",
       "build": "Shimano Ultegra Di2",
-      "collections": [
-        "classic"
-      ],
+      "collections": ["classic"],
       "image": "/bikes/scultura8000.jpg",
       "imageCredit": "美利达 MERIDA",
       "imageSource": "https://merida-cdn.m-c-g.net/merida-v2/crud-zoom-img/master/bikes/2025/SCULTURA_8000_whtred_MY25.tif?p1",
@@ -5448,22 +4187,10 @@
           "title": "SCULTURA CF3 V",
           "description": "第五代 CF3 碳纤维平台，使用细后上叉与圆形 S-Flex 座管，几何与同代 REACTO 相同。",
           "specs": [
-            [
-              "五通",
-              "Pressfit 86.5"
-            ],
-            [
-              "最大胎宽",
-              "30 mm"
-            ],
-            [
-              "座管",
-              "27.2 mm · S-Flex 碳纤维"
-            ],
-            [
-              "把组",
-              "MERIDA TEAM SL 一体把"
-            ]
+            ["五通", "Pressfit 86.5"],
+            ["最大胎宽", "30 mm"],
+            ["座管", "27.2 mm · S-Flex 碳纤维"],
+            ["把组", "MERIDA TEAM SL 一体把"]
           ],
           "x": 58,
           "y": 47
@@ -5475,21 +4202,13 @@
           "title": "Shimano Ultegra Di2 ST-R8170",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 82,
-          "y": 15
+          "y": 15,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "crank",
@@ -5498,18 +4217,9 @@
           "title": "Shimano Ultegra",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "Shimano Ultegra"
-            ],
-            [
-              "曲柄长度",
-              "3XS / XXS 165 · XS 170 · S / M / L 172.5 · XL 175 mm"
-            ],
-            [
-              "五通",
-              "Shimano SM-BB72-41B · PF 86.5"
-            ]
+            ["型号", "Shimano Ultegra"],
+            ["曲柄长度", "3XS / XXS 165 · XS 170 · S / M / L 172.5 · XL 175 mm"],
+            ["五通", "Shimano SM-BB72-41B · PF 86.5"]
           ],
           "x": 53,
           "y": 70
@@ -5521,14 +4231,8 @@
           "title": "52 / 36T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "52 / 36T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 44,
           "y": 77
@@ -5540,17 +4244,12 @@
           "title": "Shimano Ultegra R8100 · 11–30T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "11–30T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "11–30T"],
+            ["速别", "12 速"]
           ],
           "x": 19,
-          "y": 62
+          "y": 62,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "power",
@@ -5559,14 +4258,8 @@
           "title": "原配功率计未列明",
           "description": "品牌规格表未列出功率计，不将普通 Ultegra 曲柄当作功率曲柄。3D 不额外生成传感器。",
           "specs": [
-            [
-              "原配状态",
-              "规格表未列出"
-            ],
-            [
-              "已列曲柄",
-              "Shimano Ultegra"
-            ]
+            ["原配状态", "规格表未列出"],
+            ["已列曲柄", "Shimano Ultegra"]
           ],
           "x": 47,
           "y": 68
@@ -5578,18 +4271,9 @@
           "title": "Reynolds AR 46 DB",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高 / 内宽",
-              "46 / 21 mm"
-            ],
-            [
-              "轮圈材质",
-              "碳纤维"
-            ],
-            [
-              "真空胎",
-              "支持 · 附胎垫与气嘴"
-            ]
+            ["框高 / 内宽", "46 / 21 mm"],
+            ["轮圈材质", "碳纤维"],
+            ["真空胎", "支持 · 附胎垫与气嘴"]
           ],
           "x": 81,
           "y": 79
@@ -5601,17 +4285,12 @@
           "title": "Continental GP 5000 S TR",
           "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
           "specs": [
-            [
-              "标称规格",
-              "700 × 28C"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "700 × 28C"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 94,
-          "y": 46
+          "y": 46,
+          "catalogIds": ["gp5000-str"]
         }
       ],
       "geometry": {
@@ -5728,9 +4407,7 @@
       "material": "ENDURANCE CF3 II",
       "groupset": "Ultegra Di2",
       "build": "Shimano Ultegra Di2",
-      "collections": [
-        "classic"
-      ],
+      "collections": ["classic"],
       "image": "/bikes/scultura-endurance8000.jpg",
       "imageCredit": "美利达 MERIDA",
       "imageSource": "https://merida-cdn.m-c-g.net/merida-v2/crud-zoom-img/master/bikes/2025/SCULTURA_ENDURANCE_II_8000_slvblk_MY25.tif?p1",
@@ -5747,22 +4424,10 @@
           "title": "SCULTURA ENDURANCE CF3 II",
           "description": "以顺应性和稳定性为目标的 CF3 II 耐力车架，418 mm 后下叉与较高头管区分于竞赛版 SCULTURA。",
           "specs": [
-            [
-              "最大胎宽",
-              "35 mm · 带挡泥板 32 mm"
-            ],
-            [
-              "五通",
-              "BB86"
-            ],
-            [
-              "座管",
-              "27.2 mm · S-Flex 碳纤维"
-            ],
-            [
-              "前叉",
-              "SCULTURA ENDURANCE CF3 DISC"
-            ]
+            ["最大胎宽", "35 mm · 带挡泥板 32 mm"],
+            ["五通", "BB86"],
+            ["座管", "27.2 mm · S-Flex 碳纤维"],
+            ["前叉", "SCULTURA ENDURANCE CF3 DISC"]
           ],
           "x": 58,
           "y": 47
@@ -5774,21 +4439,13 @@
           "title": "Shimano Ultegra Di2 ST-R8170",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 82,
-          "y": 15
+          "y": 15,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "crank",
@@ -5797,18 +4454,9 @@
           "title": "Shimano Ultegra",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "Shimano Ultegra"
-            ],
-            [
-              "曲柄长度",
-              "XXS 165 · XS 170 · S / M / L 172.5 · XL 175 mm"
-            ],
-            [
-              "五通",
-              "Shimano SM-BB72-41B · PF 86.5"
-            ]
+            ["型号", "Shimano Ultegra"],
+            ["曲柄长度", "XXS 165 · XS 170 · S / M / L 172.5 · XL 175 mm"],
+            ["五通", "Shimano SM-BB72-41B · PF 86.5"]
           ],
           "x": 53,
           "y": 70
@@ -5820,14 +4468,8 @@
           "title": "50 / 34T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "50 / 34T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "50 / 34T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 44,
           "y": 77
@@ -5839,17 +4481,12 @@
           "title": "Shimano Ultegra R8100 · 11–34T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "11–34T"],
+            ["速别", "12 速"]
           ],
           "x": 19,
-          "y": 62
+          "y": 62,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "power",
@@ -5858,14 +4495,8 @@
           "title": "原配功率计未列明",
           "description": "品牌规格表未列出功率计，不将普通 Ultegra 曲柄当作功率曲柄。3D 不额外生成传感器。",
           "specs": [
-            [
-              "原配状态",
-              "规格表未列出"
-            ],
-            [
-              "已列曲柄",
-              "Shimano Ultegra"
-            ]
+            ["原配状态", "规格表未列出"],
+            ["已列曲柄", "Shimano Ultegra"]
           ],
           "x": 47,
           "y": 68
@@ -5877,18 +4508,9 @@
           "title": "Vision SC30 DB",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高 / 内宽",
-              "30 / 19 mm"
-            ],
-            [
-              "轮圈材质",
-              "碳纤维"
-            ],
-            [
-              "碟片安装",
-              "Center Lock"
-            ]
+            ["框高 / 内宽", "30 / 19 mm"],
+            ["轮圈材质", "碳纤维"],
+            ["碟片安装", "Center Lock"]
           ],
           "x": 81,
           "y": 79
@@ -5900,14 +4522,8 @@
           "title": "Continental GP 5000 AllSeason TR",
           "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
           "specs": [
-            [
-              "标称规格",
-              "700 × 32C"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "700 × 32C"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 94,
           "y": 46
@@ -6015,10 +4631,7 @@
       "material": "RCR PRO 碳纤维",
       "groupset": "Ultegra Di2",
       "build": "Shimano Ultegra Di2",
-      "collections": [
-        "current",
-        "popular"
-      ],
+      "collections": ["current", "popular"],
       "image": "/bikes/vanrysel-rcr-pro.jpg",
       "imageCredit": "迪卡侬 Van Rysel",
       "imageSource": "https://contents.mediadecathlon.com/p2694152/k%246272b558c283724ebf0f3e75953d292b/picture.jpg?f=2000x0&format=png",
@@ -6036,22 +4649,10 @@
           "title": "Van Rysel RCR PRO",
           "description": "超高模量碳纤维车架，管型与前叉由品牌和 ONERA 合作进行气动开发。裸碳版重量与涂装版可能不同。",
           "specs": [
-            [
-              "车架重量",
-              "790 g · M 码含涂装参考"
-            ],
-            [
-              "前叉重量",
-              "380 g · M 码含涂装参考"
-            ],
-            [
-              "最大胎宽",
-              "32 mm"
-            ],
-            [
-              "把组",
-              "DEDA Superzero RS / Superbox EVO"
-            ]
+            ["车架重量", "790 g · M 码含涂装参考"],
+            ["前叉重量", "380 g · M 码含涂装参考"],
+            ["最大胎宽", "32 mm"],
+            ["把组", "DEDA Superzero RS / Superbox EVO"]
           ],
           "x": 57,
           "y": 52
@@ -6063,21 +4664,13 @@
           "title": "Shimano Ultegra Di2 ST-R8170",
           "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
           "specs": [
-            [
-              "换挡",
-              "Di2 电子变速"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ],
-            [
-              "刹车",
-              "液压碟刹"
-            ]
+            ["换挡", "Di2 电子变速"],
+            ["速别", "2 × 12 速"],
+            ["刹车", "液压碟刹"]
           ],
           "x": 78,
-          "y": 23
+          "y": 23,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "crank",
@@ -6086,21 +4679,13 @@
           "title": "Shimano Ultegra R8100",
           "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
           "specs": [
-            [
-              "型号",
-              "Shimano Ultegra R8100"
-            ],
-            [
-              "曲柄长度",
-              "XS / S 170 · M 172.5 · L 175 mm"
-            ],
-            [
-              "五通",
-              "页面未明确列出五通规格"
-            ]
+            ["型号", "Shimano Ultegra R8100"],
+            ["曲柄长度", "XS / S 170 · M 172.5 · L 175 mm"],
+            ["五通", "页面未明确列出五通规格"]
           ],
           "x": 52,
-          "y": 75
+          "y": 75,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "chainrings",
@@ -6109,14 +4694,8 @@
           "title": "52 / 36T",
           "description": "对应所展示版本的原配双盘组合。",
           "specs": [
-            [
-              "大 / 小盘",
-              "52 / 36T"
-            ],
-            [
-              "速别",
-              "2 × 12 速"
-            ]
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12 速"]
           ],
           "x": 43,
           "y": 77
@@ -6128,17 +4707,12 @@
           "title": "Shimano Ultegra R8100 · 11–34T",
           "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
           "specs": [
-            [
-              "齿比范围",
-              "11–34T"
-            ],
-            [
-              "速别",
-              "12 速"
-            ]
+            ["齿比范围", "11–34T"],
+            ["速别", "12 速"]
           ],
           "x": 24,
-          "y": 65
+          "y": 65,
+          "catalogIds": ["ultegra-r8100"]
         },
         {
           "id": "power",
@@ -6147,14 +4721,8 @@
           "title": "Inpeak Powercrank-E Single",
           "description": "品牌配置表明确列出的原配功率计。",
           "specs": [
-            [
-              "测量位置",
-              "左曲柄"
-            ],
-            [
-              "原配状态",
-              "官网明确列出"
-            ]
+            ["测量位置", "左曲柄"],
+            ["原配状态", "官网明确列出"]
           ],
           "x": 46,
           "y": 71
@@ -6166,18 +4734,9 @@
           "title": "Swiss Side HADRON² 500 Classic",
           "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
           "specs": [
-            [
-              "框高 / 内宽",
-              "50 / 20 mm"
-            ],
-            [
-              "花鼓",
-              "Swiss Side 370"
-            ],
-            [
-              "轮组重量",
-              "官网 1530 / 1640 g 字段冲突，待核验"
-            ]
+            ["框高 / 内宽", "50 / 20 mm"],
+            ["花鼓", "Swiss Side 370"],
+            ["轮组重量", "官网 1530 / 1640 g 字段冲突，待核验"]
           ],
           "x": 82,
           "y": 77
@@ -6189,17 +4748,12 @@
           "title": "Continental GP 5000 S TR",
           "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
           "specs": [
-            [
-              "标称规格",
-              "700 × 28C"
-            ],
-            [
-              "结构",
-              "真空胎兼容"
-            ]
+            ["标称规格", "700 × 28C"],
+            ["结构", "真空胎兼容"]
           ],
           "x": 91,
-          "y": 56
+          "y": 56,
+          "catalogIds": ["gp5000-str"]
         }
       ],
       "geometry": {
@@ -6287,6 +4841,1746 @@
         "description": "品牌对车架和前叉开展风洞开发，介绍的主要偏航角范围为 −15° 至 +15°。这些设计信息不等于本网站获得了完整风洞数据。",
         "source": "https://www.decathlon.co.uk/p/road-bike-rcr-r-pro-shimano-ultegra-di2-with-power-sensor-raw-carbon/360908/c382c382m8929970",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "y1rs",
+      "brandId": "colnago",
+      "name": "Y1Rs",
+      "family": "Y1Rs",
+      "build": "Dura-Ace Di2 · ENVE SES 4.5",
+      "edition": "官网现行配置 · 2026 核对",
+      "kind": "气动竞赛",
+      "description": "鸥翼把组、前伸头管与双 Y 形后部，让 Y1Rs 拥有鲜明的轮廓。以高速竞赛为目标，也保留可更换的整车装配选项。",
+      "collections": ["current", "flagship", "pro"],
+      "image": "/bikes/y1rs--sdm5.jpg",
+      "imageCredit": "COLNAGO",
+      "imageRatio": 1.6,
+      "color": "SDM5 / UAE 黑白",
+      "colorHex": "#e6e5df",
+      "source": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "weight": "7.2 kg",
+      "weightNote": "官方 M 码 · Dura-Ace / ENVE · 不含脚踏",
+      "groupset": "Dura-Ace Di2",
+      "material": "Colnago Carbon",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 53,
+          "y": 46,
+          "title": "Colnago Y1Rs Carbon",
+          "description": "鸥翼把组、前伸头管与双 Y 形后部，让 Y1Rs 拥有鲜明的轮廓。以高速竞赛为目标，也保留可更换的整车装配选项。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["五通", "BSA 螺纹"],
+            ["标称最大胎宽", "32 mm"],
+            ["桶轴", "12 × 100 / 142 mm"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 62,
+          "y": 25,
+          "title": "Dura-Ace ST-R9270",
+          "description": "电子换挡与液压碟刹；此条目记录官网所列装车版本。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["系统", "Dura-Ace Di2"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 48,
+          "y": 67,
+          "title": "Dura-Ace R9200",
+          "description": "曲柄长度随尺码调整；请以官方所选尺码配置为准。",
+          "specs": [
+            ["结构", "Shimano 双盘曲柄"],
+            ["五通", "BSA 螺纹"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 44,
+          "y": 67,
+          "title": "52 / 36T",
+          "description": "双盘搭配 12 速飞轮，覆盖公路竞赛所需齿比。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 35,
+          "y": 57,
+          "title": "11–30T",
+          "description": "后飞轮与对应 Di2 后拨组成传动系统。",
+          "specs": [
+            ["齿数", "11–30T"],
+            ["片数", "12"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 46,
+          "y": 63,
+          "title": "官方未明确标配",
+          "description": "按当前零售规格记录，车队展示车可能有不同装配。",
+          "specs": [
+            ["配置状态", "未明确"],
+            ["测量结构", "以实际订单为准"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 74,
+          "y": 70,
+          "title": "ENVE SES 4.5",
+          "description": "按官网指定轮组选项记录，前后轮框高不同。",
+          "specs": [
+            ["框高", "前 50 / 后 56 mm"],
+            ["内宽", "25 mm"],
+            ["结构", "无钩 · 真空轮组"]
+          ],
+          "catalogIds": ["enve-ses45"]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 65,
+          "y": 37.8,
+          "title": "Pirelli P ZERO Race TLR",
+          "description": "胎宽为官方标称值，实际宽度会随轮圈内宽变化。",
+          "specs": [
+            ["尺寸", "700 × 28C"],
+            ["结构", "Tubeless Ready"]
+          ]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 495,
+            "reach": 368,
+            "headAngle": 70.8,
+            "seatAngle": 75,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 74,
+            "headTube": 88.5
+          },
+          {
+            "size": "S",
+            "stack": 520,
+            "reach": 377,
+            "headAngle": 71.9,
+            "seatAngle": 74.5,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 74,
+            "headTube": 108.5
+          },
+          {
+            "size": "M",
+            "stack": 540,
+            "reach": 386,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 126.5
+          },
+          {
+            "size": "L",
+            "stack": 565,
+            "reach": 395,
+            "headAngle": 73.5,
+            "seatAngle": 73.7,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 150.5
+          },
+          {
+            "size": "XL",
+            "stack": 590,
+            "reach": 404,
+            "headAngle": 73.5,
+            "seatAngle": 73,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 176.5
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike/technical-specifications/",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸单位 mm，角度单位 °。Stack / Reach 为车架参考值，不是实际手握位置。 官方网页未列轴距，示意位置按几何关系估计；不作为尺寸测量图。"
+      },
+      "aero": {
+        "title": "CC.Y1 鸥翼把组 · DEFY 双 Y 后部",
+        "description": "鸥翼把组、前伸头管与双 Y 形后部，让 Y1Rs 拥有鲜明的轮廓。以高速竞赛为目标，也保留可更换的整车装配选项。",
+        "source": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike",
+        "limit": "设计说明不等于跨品牌风阻排名；未录入统一骑手、速度、偏航角、轮胎与装配条件下的独立可比瓦数。"
+      },
+      "imageTone": "dark",
+      "imageNote": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+      "race": {
+        "label": "UAE · 环法赛场平台",
+        "note": "Colnago 官方报道确认车队使用该平台；图鉴记录零售配置，非车手赛日装配。",
+        "source": "https://www.colnago.com/en/news/tadej-pogacar-s-bikes-at-the-2026-tour-de-france"
+      },
+      "paints": [
+        {
+          "id": "ysww",
+          "name": "YSWW",
+          "hex": "#f2f3ee",
+          "image": "/bikes/y1rs--ysww.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike",
+          "imageRatio": 1.545595054095827,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 50,
+              "y": 47
+            },
+            "shifters": {
+              "x": 59,
+              "y": 25
+            },
+            "crank": {
+              "x": 44,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 41,
+              "y": 65
+            },
+            "cassette": {
+              "x": 32,
+              "y": 55
+            },
+            "power": {
+              "x": 42,
+              "y": 61
+            },
+            "wheels": {
+              "x": 72,
+              "y": 70
+            },
+            "tires": {
+              "x": 62.5,
+              "y": 39.5
+            }
+          }
+        },
+        {
+          "id": "ysbo",
+          "name": "YSBO",
+          "hex": "#65457a",
+          "image": "/bikes/y1rs--ysbo.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike",
+          "imageRatio": 1.545595054095827,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 50,
+              "y": 47
+            },
+            "shifters": {
+              "x": 59,
+              "y": 25
+            },
+            "crank": {
+              "x": 44,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 41,
+              "y": 65
+            },
+            "cassette": {
+              "x": 32,
+              "y": 55
+            },
+            "power": {
+              "x": 42,
+              "y": 61
+            },
+            "wheels": {
+              "x": 72,
+              "y": 70
+            },
+            "tires": {
+              "x": 62.5,
+              "y": 39.5
+            }
+          }
+        },
+        {
+          "id": "yswc",
+          "name": "YSWC",
+          "hex": "#eee9e2",
+          "image": "/bikes/y1rs--yswc.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike",
+          "imageRatio": 1.545595054095827,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 50,
+              "y": 47
+            },
+            "shifters": {
+              "x": 59,
+              "y": 25
+            },
+            "crank": {
+              "x": 44,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 41,
+              "y": 65
+            },
+            "cassette": {
+              "x": 32,
+              "y": 55
+            },
+            "power": {
+              "x": 42,
+              "y": 61
+            },
+            "wheels": {
+              "x": 72,
+              "y": 70
+            },
+            "tires": {
+              "x": 62.5,
+              "y": 39.5
+            }
+          }
+        },
+        {
+          "id": "ysbc",
+          "name": "YSBC",
+          "hex": "#29272c",
+          "image": "/bikes/y1rs--ysbc.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike",
+          "imageRatio": 1.545595054095827,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 50,
+              "y": 47
+            },
+            "shifters": {
+              "x": 59,
+              "y": 25
+            },
+            "crank": {
+              "x": 44,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 41,
+              "y": 65
+            },
+            "cassette": {
+              "x": 32,
+              "y": 55
+            },
+            "power": {
+              "x": 42,
+              "y": 61
+            },
+            "wheels": {
+              "x": 72,
+              "y": 70
+            },
+            "tires": {
+              "x": 62.5,
+              "y": 39.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "v5rs",
+      "brandId": "colnago",
+      "name": "V5Rs",
+      "family": "V5Rs",
+      "build": "Dura-Ace Di2 · ENVE SES 4.5",
+      "edition": "官网现行配置 · 2026 核对",
+      "kind": "轻量爬坡",
+      "description": "更细的管型与 CC.01 把组勾勒轻量竞赛车轮廓。685 g 是官方指定尺码裸车架重量，不代表整车重量。",
+      "collections": ["current", "flagship", "pro"],
+      "image": "/bikes/v5rs--sdm5.jpg",
+      "imageCredit": "COLNAGO",
+      "imageRatio": 1.6,
+      "color": "SDM5 / UAE 黑白",
+      "colorHex": "#e6e5df",
+      "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "裸车架 685 g · 485 码，不能代替整车重量",
+      "groupset": "Dura-Ace Di2",
+      "material": "Colnago Carbon",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 53,
+          "y": 46,
+          "title": "Colnago V5Rs Carbon",
+          "description": "更细的管型与 CC.01 把组勾勒轻量竞赛车轮廓。685 g 是官方指定尺码裸车架重量，不代表整车重量。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["五通", "BSA 螺纹"],
+            ["标称最大胎宽", "32 mm"],
+            ["桶轴", "12 × 100 / 142 mm"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 62,
+          "y": 25,
+          "title": "Dura-Ace ST-R9270",
+          "description": "电子换挡与液压碟刹；此条目记录官网所列装车版本。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["系统", "Dura-Ace Di2"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 48,
+          "y": 67,
+          "title": "Dura-Ace R9200",
+          "description": "曲柄长度随尺码调整；请以官方所选尺码配置为准。",
+          "specs": [
+            ["结构", "Shimano 双盘曲柄"],
+            ["五通", "BSA 螺纹"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 44,
+          "y": 67,
+          "title": "52 / 36T",
+          "description": "双盘搭配 12 速飞轮，覆盖公路竞赛所需齿比。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 35,
+          "y": 57,
+          "title": "11–30T",
+          "description": "后飞轮与对应 Di2 后拨组成传动系统。",
+          "specs": [
+            ["齿数", "11–30T"],
+            ["片数", "12"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 46,
+          "y": 63,
+          "title": "官方未明确标配",
+          "description": "按当前零售规格记录，车队展示车可能有不同装配。",
+          "specs": [
+            ["配置状态", "未明确"],
+            ["测量结构", "以实际订单为准"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 74,
+          "y": 70,
+          "title": "ENVE SES 4.5",
+          "description": "按官网指定轮组选项记录，前后轮框高不同。",
+          "specs": [
+            ["框高", "前 50 / 后 56 mm"],
+            ["内宽", "25 mm"],
+            ["结构", "无钩 · 真空轮组"]
+          ],
+          "catalogIds": ["enve-ses45"]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 65,
+          "y": 37.8,
+          "title": "Pirelli P ZERO Race TLR",
+          "description": "胎宽为官方标称值，实际宽度会随轮圈内宽变化。",
+          "specs": [
+            ["尺寸", "700 × 28C"],
+            ["结构", "Tubeless Ready"]
+          ]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "420",
+            "stack": 509,
+            "reach": 371,
+            "headAngle": 70.6,
+            "seatAngle": 75.5,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 74,
+            "headTube": 101
+          },
+          {
+            "size": "455",
+            "stack": 523,
+            "reach": 377,
+            "headAngle": 71.5,
+            "seatAngle": 75.3,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 74,
+            "headTube": 112
+          },
+          {
+            "size": "485",
+            "stack": 539,
+            "reach": 384,
+            "headAngle": 72.3,
+            "seatAngle": 74.8,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 127
+          },
+          {
+            "size": "510",
+            "stack": 557,
+            "reach": 390,
+            "headAngle": 72.5,
+            "seatAngle": 74.5,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 146
+          },
+          {
+            "size": "530",
+            "stack": 575,
+            "reach": 397,
+            "headAngle": 73,
+            "seatAngle": 73.8,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 162
+          },
+          {
+            "size": "550",
+            "stack": 593,
+            "reach": 404,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 181
+          },
+          {
+            "size": "570",
+            "stack": 612,
+            "reach": 411,
+            "headAngle": 73.5,
+            "seatAngle": 73.3,
+            "wheelbase": null,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 199
+          }
+        ],
+        "defaultSize": "485",
+        "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike/technical-specifications/",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸单位 mm，角度单位 °。Stack / Reach 为车架参考值，不是实际手握位置。 官方网页未列轴距，示意位置按几何关系估计；不作为尺寸测量图。"
+      },
+      "aero": {
+        "title": "纤细管型 · CC.01 一体把组",
+        "description": "更细的管型与 CC.01 把组勾勒轻量竞赛车轮廓。685 g 是官方指定尺码裸车架重量，不代表整车重量。",
+        "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike",
+        "limit": "设计说明不等于跨品牌风阻排名；未录入统一骑手、速度、偏航角、轮胎与装配条件下的独立可比瓦数。"
+      },
+      "imageTone": "dark",
+      "imageNote": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+      "race": {
+        "label": "UAE · 环法赛场平台",
+        "note": "Colnago 官方报道确认车队使用该平台；图鉴记录零售配置，非车手赛日装配。",
+        "source": "https://www.colnago.com/en-co/news/y1rs-or-v5rs-which-colnago-tadej-pogacar-will-ride-at-tour-de-france-2025"
+      },
+      "paints": [
+        {
+          "id": "sdm6",
+          "name": "SDM6",
+          "hex": "#edeeee",
+          "image": "/bikes/v5rs--sdm6.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike",
+          "imageRatio": 1.545595054095827,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 50,
+              "y": 47
+            },
+            "shifters": {
+              "x": 59,
+              "y": 25
+            },
+            "crank": {
+              "x": 44,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 41,
+              "y": 65
+            },
+            "cassette": {
+              "x": 32,
+              "y": 55
+            },
+            "power": {
+              "x": 42,
+              "y": 61
+            },
+            "wheels": {
+              "x": 72,
+              "y": 70
+            },
+            "tires": {
+              "x": 62.5,
+              "y": 39.5
+            }
+          }
+        },
+        {
+          "id": "vrwb",
+          "name": "VRWB",
+          "hex": "#dfe6e6",
+          "image": "/bikes/v5rs--vrwb.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike",
+          "imageRatio": 1.6,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 53,
+              "y": 46
+            },
+            "shifters": {
+              "x": 62,
+              "y": 25
+            },
+            "crank": {
+              "x": 48,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 67
+            },
+            "cassette": {
+              "x": 35,
+              "y": 57
+            },
+            "power": {
+              "x": 46,
+              "y": 63
+            },
+            "wheels": {
+              "x": 74,
+              "y": 70
+            },
+            "tires": {
+              "x": 65,
+              "y": 37.8
+            }
+          }
+        },
+        {
+          "id": "vrbk",
+          "name": "VRBK",
+          "hex": "#252525",
+          "image": "/bikes/v5rs--vrbk.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike",
+          "imageRatio": 1.6,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 53,
+              "y": 46
+            },
+            "shifters": {
+              "x": 62,
+              "y": 25
+            },
+            "crank": {
+              "x": 48,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 67
+            },
+            "cassette": {
+              "x": 35,
+              "y": 57
+            },
+            "power": {
+              "x": 46,
+              "y": 63
+            },
+            "wheels": {
+              "x": 74,
+              "y": 70
+            },
+            "tires": {
+              "x": 65,
+              "y": 37.8
+            }
+          }
+        },
+        {
+          "id": "stbu",
+          "name": "STBU",
+          "hex": "#18344b",
+          "image": "/bikes/v5rs--stbu.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike",
+          "imageRatio": 1.545595054095827,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 50,
+              "y": 47
+            },
+            "shifters": {
+              "x": 59,
+              "y": 25
+            },
+            "crank": {
+              "x": 44,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 41,
+              "y": 65
+            },
+            "cassette": {
+              "x": 32,
+              "y": 55
+            },
+            "power": {
+              "x": 42,
+              "y": 61
+            },
+            "wheels": {
+              "x": 72,
+              "y": 70
+            },
+            "tires": {
+              "x": 62.5,
+              "y": 39.5
+            }
+          }
+        },
+        {
+          "id": "vrwc",
+          "name": "VRWC",
+          "hex": "#eeeeea",
+          "image": "/bikes/v5rs--vrwc.jpg",
+          "source": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike",
+          "imageRatio": 1.6,
+          "imageTone": "dark",
+          "note": "官方涂装展示图；下方参数对应 Dura-Ace / ENVE 零售选项，照片中的轮胎、齿比和附件可能不同。",
+          "hotspots": {
+            "frame": {
+              "x": 53,
+              "y": 46
+            },
+            "shifters": {
+              "x": 62,
+              "y": 25
+            },
+            "crank": {
+              "x": 48,
+              "y": 67
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 67
+            },
+            "cassette": {
+              "x": 35,
+              "y": 57
+            },
+            "power": {
+              "x": 46,
+              "y": 63
+            },
+            "wheels": {
+              "x": 74,
+              "y": 70
+            },
+            "tires": {
+              "x": 65,
+              "y": 37.8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "teammachine-r01",
+      "brandId": "bmc",
+      "name": "Teammachine R 01 ONE",
+      "family": "Teammachine R 01",
+      "build": "SRAM RED AXS E1",
+      "edition": "官网现行配置 · 2026 核对",
+      "kind": "气动竞赛",
+      "description": "宽前叉、深截面下管和独特的水壶区，构成 BMC 与 Red Bull Advanced Technologies 合作开发的气动平台。",
+      "collections": ["current", "flagship", "pro"],
+      "image": "/bikes/teammachine-r01--default.jpg",
+      "imageCredit": "BMC",
+      "imageRatio": 1.7779632721202003,
+      "color": "Carbon / Neon Red",
+      "colorHex": "#202223",
+      "source": "https://us.bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-26a-000006",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "weight": "7.0 kg",
+      "weightNote": "官方展示配置 · 网页未注明称重尺码",
+      "groupset": "RED AXS E1",
+      "material": "01 Premium Carbon",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 48,
+          "title": "Teammachine R 01 Premium Carbon",
+          "description": "Aerocore 水壶区域与宽前叉共同参与气动设计。",
+          "specs": [
+            ["材料", "01 Premium Carbon"],
+            ["五通", "PressFit DUB"],
+            ["最大实测胎宽", "30 mm"],
+            ["把组", "ICS Carbon Aero"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 21,
+          "title": "SRAM RED AXS E1",
+          "description": "无线换挡与液压制动。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["碟片", "Paceline X 160 / 160 mm"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 50,
+          "y": 71,
+          "title": "SRAM RED FC-RED-P-E1",
+          "description": "DUB 曲柄与集成功率计。",
+          "specs": [
+            ["轴心", "DUB"],
+            ["结构", "碳纤维曲柄"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 43,
+          "y": 72,
+          "title": "RED 48 / 35T",
+          "description": "X-Range 双盘。",
+          "specs": [
+            ["齿数", "48 / 35T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "XG-1290 E1 10–33T",
+          "description": "配 RED AXS E1 后拨。",
+          "specs": [
+            ["齿数", "10–33T"],
+            ["塔基", "XDR"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 46,
+          "y": 65,
+          "title": "SRAM RED 集成功率计",
+          "description": "官方 FC-RED-P-E1 随车配置。",
+          "specs": [
+            ["位置", "牙盘"],
+            ["配置", "原配"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 84,
+          "y": 76,
+          "title": "DT Swiss ARC 1100 DICUT 65",
+          "description": "65 mm 气动轮组与 DT 180 花鼓。",
+          "specs": [
+            ["框高", "65 mm"],
+            ["花鼓", "180 DICUT · EXP 36"]
+          ],
+          "catalogIds": ["dt-arc1100-65"]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 80,
+          "y": 37,
+          "title": "Pirelli P ZERO Race TLR RS",
+          "description": "官方装车宽度为 26 mm；配件档案单独列 28 mm 重量。",
+          "specs": [
+            ["尺寸", "700 × 26C"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "catalogIds": ["pirelli-race-tlr-rs"]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "47",
+            "stack": 504,
+            "reach": 368,
+            "headAngle": 71.5,
+            "seatAngle": 74,
+            "wheelbase": 968,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 108,
+            "seatTube": 418
+          },
+          {
+            "size": "51",
+            "stack": 528,
+            "reach": 378,
+            "headAngle": 71.5,
+            "seatAngle": 74,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 133,
+            "seatTube": 463
+          },
+          {
+            "size": "54",
+            "stack": 548,
+            "reach": 387,
+            "headAngle": 72.3,
+            "seatAngle": 73.5,
+            "wheelbase": 989,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 149,
+            "seatTube": 499
+          },
+          {
+            "size": "56",
+            "stack": 563,
+            "reach": 393,
+            "headAngle": 72.3,
+            "seatAngle": 73.5,
+            "wheelbase": 999,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 165,
+            "seatTube": 519
+          },
+          {
+            "size": "58",
+            "stack": 582,
+            "reach": 402,
+            "headAngle": 72.3,
+            "seatAngle": 73,
+            "wheelbase": 1015,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 184,
+            "seatTube": 541
+          },
+          {
+            "size": "61",
+            "stack": 608,
+            "reach": 409,
+            "headAngle": 72.3,
+            "seatAngle": 73,
+            "wheelbase": 1030,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 211,
+            "seatTube": 570
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://us.bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-26a-000006",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸单位 mm，角度单位 °。Stack / Reach 为车架参考值，不是实际手握位置。"
+      },
+      "aero": {
+        "title": "宽前叉 · Aerocore 水壶区",
+        "description": "宽前叉、深截面下管和独特的水壶区，构成 BMC 与 Red Bull Advanced Technologies 合作开发的气动平台。",
+        "source": "https://us.bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-26a-000006",
+        "limit": "设计说明不等于跨品牌风阻排名；未录入统一骑手、速度、偏航角、轮胎与装配条件下的独立可比瓦数。"
+      },
+      "price": {
+        "label": "US$12,999",
+        "market": "美国官网展示价 · 26A Carbon/Neon Red 版本",
+        "source": "https://us.bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-26a-000006",
+        "checkedAt": "2026-09-20"
+      },
+      "race": {
+        "label": "Tudor · 2026 职业赛场",
+        "note": "BMC 官方 2026 赛季报道确认 Tudor 使用 Teammachine R 01 平台；零售 ONE 配置与车队装配可能不同。",
+        "source": "https://us.bmc-switzerland.com/blogs/news/ready-set-go-the-2026-season-starts-in-australia"
+      }
+    },
+    {
+      "id": "cervelo-r5",
+      "brandId": "cervelo",
+      "name": "R5 Red AXS",
+      "family": "R5",
+      "build": "SRAM RED AXS E1",
+      "edition": "官网现行配置 · 2026 核对",
+      "kind": "轻量爬坡",
+      "description": "纤细车架、低框 Reserve 轮组和紧凑的一体把组，以山地公路竞赛为设计重心。",
+      "collections": ["current", "flagship"],
+      "image": "/bikes/r5--fiveBlackBronze.png",
+      "imageCredit": "cervélo",
+      "imageRatio": 1.8416206261510129,
+      "color": "Five Black/Bronze",
+      "colorHex": "#34312b",
+      "source": "https://www.cervelo.com/en-US/bikes/r5",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "weight": "5.78 kg",
+      "weightNote": "官方配置表数值 · 未注明尺码及脚踏条件",
+      "groupset": "RED AXS E1",
+      "material": "Cervélo Carbon",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 48,
+          "title": "Cervélo R5 Carbon",
+          "description": "轻量爬坡车架配 HB18 一体把组。",
+          "specs": [
+            ["前叉", "R5 全碳纤维"],
+            ["五通", "BBright · SRAM DUB Ceramic"],
+            ["座管", "SP33 Carbon"],
+            ["把组", "HB18 Carbon"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 21,
+          "title": "SRAM RED AXS E1",
+          "description": "无线换挡与液压制动。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["碟片", "Paceline X 160 / 160 mm"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 50,
+          "y": 71,
+          "title": "SRAM RED AXS E1",
+          "description": "官方按尺码配 165–172.5 mm 曲柄。",
+          "specs": [
+            ["曲柄长度", "54 / 56 码：170 mm"],
+            ["轴心", "DUB"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 43,
+          "y": 72,
+          "title": "RED 48 / 35T",
+          "description": "X-Range 双盘。",
+          "specs": [
+            ["齿数", "48 / 35T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "XG-1290 E1 10–33T",
+          "description": "配 RED AXS E1 后拨。",
+          "specs": [
+            ["齿数", "10–33T"],
+            ["塔基", "XDR"]
+          ],
+          "catalogIds": ["sram-red-e1"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 46,
+          "y": 65,
+          "title": "SRAM RED 集成功率计",
+          "description": "官方 FC-RED-P-E1 随车配置。",
+          "specs": [
+            ["位置", "牙盘"],
+            ["配置", "原配"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 84,
+          "y": 76,
+          "title": "Reserve 34TA SL / 37TA SL",
+          "description": "低框轻量轮组配 DT Swiss 180 花鼓。",
+          "specs": [
+            ["框高", "前 34 / 后 37 mm"],
+            ["花鼓", "DT Swiss 180 · 24H"],
+            ["塔基", "XDR"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 80,
+          "y": 37,
+          "title": "Vittoria Corsa Pro Speed TLR",
+          "description": "竞赛取向的 Pro Speed，与普通 Corsa Pro 分开记录。",
+          "specs": [
+            ["尺寸", "700 × 26C"],
+            ["结构", "Tubeless Ready"]
+          ]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "48",
+            "stack": 496.1,
+            "reach": 368.7,
+            "headAngle": 71.0,
+            "seatAngle": 74.5,
+            "wheelbase": 976.8,
+            "chainstay": 410,
+            "bbDrop": 76.5,
+            "headTube": 89.6
+          },
+          {
+            "size": "51",
+            "stack": 520.2,
+            "reach": 376.5,
+            "headAngle": 72.0,
+            "seatAngle": 74.0,
+            "wheelbase": 977.6,
+            "chainstay": 410,
+            "bbDrop": 76.5,
+            "headTube": 109.3
+          },
+          {
+            "size": "54",
+            "stack": 544.6,
+            "reach": 383.3,
+            "headAngle": 73.0,
+            "seatAngle": 73.5,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 132
+          },
+          {
+            "size": "56",
+            "stack": 567.5,
+            "reach": 391.1,
+            "headAngle": 73.0,
+            "seatAngle": 73.0,
+            "wheelbase": 992.8,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 156
+          },
+          {
+            "size": "58",
+            "stack": 590.7,
+            "reach": 400.3,
+            "headAngle": 73.0,
+            "seatAngle": 73.0,
+            "wheelbase": 1010.3,
+            "chainstay": 410,
+            "bbDrop": 71.5,
+            "headTube": 182.8
+          },
+          {
+            "size": "61",
+            "stack": 610.7,
+            "reach": 408.3,
+            "headAngle": 73.0,
+            "seatAngle": 73.0,
+            "wheelbase": 1024.5,
+            "chainstay": 410,
+            "bbDrop": 71.5,
+            "headTube": 203.7
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cervelo.com/en-US/bikes/r5",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸单位 mm，角度单位 °。Stack / Reach 为车架参考值，不是实际手握位置。"
+      },
+      "aero": {
+        "title": "纤细后上叉 · 轻量前端",
+        "description": "纤细车架、低框 Reserve 轮组和紧凑的一体把组，以山地公路竞赛为设计重心。",
+        "source": "https://www.cervelo.com/en-US/bikes/r5",
+        "limit": "设计说明不等于跨品牌风阻排名；未录入统一骑手、速度、偏航角、轮胎与装配条件下的独立可比瓦数。"
+      },
+      "price": {
+        "label": "US$14,400",
+        "market": "美国官网标价 · Red AXS",
+        "source": "https://www.cervelo.com/en-US/bikes/r5",
+        "checkedAt": "2026-09-20"
+      }
+    },
+    {
+      "id": "cervelo-p5",
+      "brandId": "cervelo",
+      "name": "P5 Ultegra Di2",
+      "family": "P5",
+      "build": "Ultegra Di2 · TT controls",
+      "edition": "官网现行配置 · 2026 核对",
+      "kind": "TT 计时",
+      "description": "深截面车架、可调休息把和高框轮组，为计时与铁三骑姿服务。拟合时应查看托肘 Stack / Reach，不能只看公路车架尺寸。",
+      "collections": ["current", "flagship"],
+      "image": "/bikes/p5--fiveBlackBlack.png",
+      "imageCredit": "cervélo",
+      "imageRatio": 1.8416206261510129,
+      "color": "Five Black/Black",
+      "colorHex": "#34312b",
+      "source": "https://www.cervelo.com/en-US/bikes/p5",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "weight": "9.13 kg",
+      "weightNote": "官方配置表 · 未注明称重尺码及脚踏条件",
+      "groupset": "Ultegra Di2",
+      "material": "Cervélo Carbon",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 48,
+          "title": "Cervélo P5 Carbon",
+          "description": "深截面车架、Bayonet 前叉与 EX14 抬升结构。",
+          "specs": [
+            ["前叉", "全碳纤维 Bayonet"],
+            ["把组", "HB15 / EX14 / Profile Design 52ASC"],
+            ["座管", "SP23 Carbon"],
+            ["五通", "BBright · FSA 24 mm"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 29,
+          "title": "Dura-Ace R9180 / SW-R9160",
+          "description": "TT 基础把刹车手柄与休息把端按键，控制 R8150 前后拨。",
+          "specs": [
+            ["手柄", "R9180"],
+            ["把端按钮", "SW-R9160"],
+            ["后拨", "Ultegra R8150 · 12 速"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 50,
+          "y": 71,
+          "title": "Ultegra R8100",
+          "description": "曲柄长度随尺码调整；请以官方所选尺码配置为准。",
+          "specs": [
+            ["结构", "Shimano 双盘曲柄"],
+            ["五通", "BBright"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 43,
+          "y": 72,
+          "title": "52 / 36T",
+          "description": "双盘搭配 12 速飞轮，覆盖公路竞赛所需齿比。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "11–30T",
+          "description": "后飞轮与对应 Di2 后拨组成传动系统。",
+          "specs": [
+            ["齿数", "11–30T"],
+            ["片数", "12"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 46,
+          "y": 65,
+          "title": "4iiii Precision Pro GEN3+ Dual",
+          "description": "官方配置表列明的随车功率计。",
+          "specs": [
+            ["配置状态", "已列入随车配置"],
+            ["测量结构", "双边"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 84,
+          "y": 76,
+          "title": "Reserve 77TA / 88TA",
+          "description": "按官网指定轮组选项记录，前后轮框高不同。",
+          "specs": [
+            ["框高", "前 77 / 后 88 mm"],
+            ["花鼓", "DT Swiss 240"],
+            ["塔基", "HG"]
+          ],
+          "catalogIds": []
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 80,
+          "y": 37,
+          "title": "Vittoria Corsa Pro TLR G2.0",
+          "description": "胎宽为官方标称值，实际宽度会随轮圈内宽变化。",
+          "specs": [
+            ["尺寸", "700 × 29C"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "catalogIds": ["vittoria-corsa-pro"]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "48",
+            "stack": 461,
+            "reach": 389,
+            "headAngle": 71,
+            "seatAngle": 79,
+            "wheelbase": 975,
+            "chainstay": 405,
+            "bbDrop": 75,
+            "headTube": 58.5
+          },
+          {
+            "size": "51",
+            "stack": 482,
+            "reach": 406,
+            "headAngle": 72.5,
+            "seatAngle": 79,
+            "wheelbase": 976,
+            "chainstay": 405,
+            "bbDrop": 75,
+            "headTube": 70.7
+          },
+          {
+            "size": "54",
+            "stack": 498,
+            "reach": 420,
+            "headAngle": 72.5,
+            "seatAngle": 79,
+            "wheelbase": 995,
+            "chainstay": 405,
+            "bbDrop": 75,
+            "headTube": 88
+          },
+          {
+            "size": "56",
+            "stack": 516,
+            "reach": 433,
+            "headAngle": 72.5,
+            "seatAngle": 79,
+            "wheelbase": 1015,
+            "chainstay": 405,
+            "bbDrop": 75,
+            "headTube": 106.9
+          },
+          {
+            "size": "58",
+            "stack": 535,
+            "reach": 446,
+            "headAngle": 72.5,
+            "seatAngle": 79,
+            "wheelbase": 1033,
+            "chainstay": 405,
+            "bbDrop": 75,
+            "headTube": 126.8
+          },
+          {
+            "size": "61",
+            "stack": 556,
+            "reach": 455,
+            "headAngle": 72.4,
+            "seatAngle": 79,
+            "wheelbase": 1048,
+            "chainstay": 405,
+            "bbDrop": 74,
+            "headTube": 147.8
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cervelo.com/en-US/bikes/p5",
+        "sourceLabel": "厂商官方几何表",
+        "note": "Stack / Reach 为车架值。座管角按官方几何表使用的 79° 参考坐垫位置绘图，非唯一固定有效角；TT 选码另需查看官方托肘 Stack / Reach 范围。"
+      },
+      "aero": {
+        "title": "Bayonet 前叉 · 可调 TT 把组",
+        "description": "深截面车架、可调休息把和高框轮组，为计时与铁三骑姿服务。拟合时应查看托肘 Stack / Reach，不能只看公路车架尺寸。",
+        "source": "https://www.cervelo.com/en-US/bikes/p5",
+        "limit": "设计说明不等于跨品牌风阻排名；未录入统一骑手、速度、偏航角、轮胎与装配条件下的独立可比瓦数。"
+      },
+      "price": {
+        "label": "US$10,650",
+        "market": "美国官网标价 · Ultegra Di2",
+        "source": "https://www.cervelo.com/en-US/bikes/p5",
+        "checkedAt": "2026-09-20"
+      },
+      "paints": [
+        {
+          "id": "redHot",
+          "name": "Red Hot",
+          "hex": "#a83135",
+          "image": "/bikes/p5--redHot.png",
+          "source": "https://www.cervelo.com/en-US/bikes/p5",
+          "imageRatio": 1.8416206261510129
+        }
+      ]
+    },
+    {
+      "id": "speedmax-cfr-tt",
+      "brandId": "canyon",
+      "name": "Speedmax CFR TT",
+      "family": "Speedmax CFR TT",
+      "build": "Dura-Ace Di2 · 85 / DISC",
+      "edition": "官网现行配置 · 2026 核对",
+      "kind": "TT 计时",
+      "description": "平直上管、深截面座管、前 85 mm 轮与封闭后轮，组成鲜明的计时赛轮廓。官网标明此 TT 平台符合 UCI 规则。",
+      "collections": ["current", "flagship"],
+      "image": "/bikes/speedmax-cfr-tt--default.png",
+      "imageCredit": "CANYON",
+      "imageRatio": 1.7777777777777777,
+      "color": "Pro Black",
+      "colorHex": "#202223",
+      "source": "https://www.canyon.com/en-de/road-bikes/triathlon-bikes/speedmax/cfr/speedmax-cfr-tt/4254.html",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "weight": "8.8 kg",
+      "weightNote": "官方 M 码 · 具体装配与生产批次可能影响重量",
+      "groupset": "Dura-Ace Di2",
+      "material": "CFR Carbon",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 47,
+          "title": "Speedmax CFR TT Carbon",
+          "description": "专用于 UCI 计时赛的车架与前端，区别于带整合储物的铁三装配。",
+          "specs": [
+            ["车架标称重量", "1030 g · M 码"],
+            ["前叉", "FK0079 · 370 g"],
+            ["胎宽间隙", "30 mm"],
+            ["五通", "PF86.5"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 79,
+          "y": 29,
+          "title": "Dura-Ace TT R9160 / R9180",
+          "description": "基础把制动与延伸把端换挡，配合 V19 把立和 HB0054 基础把。",
+          "specs": [
+            ["变速", "R9160 TT 按键"],
+            ["刹车手柄", "R9180 液压"],
+            ["休息把", "Canyon Pro TT"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 50,
+          "y": 74,
+          "title": "Dura-Ace R9200",
+          "description": "曲柄长度随尺码调整；请以官方所选尺码配置为准。",
+          "specs": [
+            ["结构", "Shimano 双盘曲柄"],
+            ["五通", "PF86.5"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 43,
+          "y": 75,
+          "title": "54 / 40T",
+          "description": "双盘搭配 12 速飞轮，覆盖公路竞赛所需齿比。",
+          "specs": [
+            ["齿数", "54 / 40T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 25,
+          "y": 65,
+          "title": "11–30T",
+          "description": "后飞轮与对应 Di2 后拨组成传动系统。",
+          "specs": [
+            ["齿数", "11–30T"],
+            ["片数", "12"]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 46,
+          "y": 68,
+          "title": "Dura-Ace 双边功率计",
+          "description": "官方配置表列明的随车功率计。",
+          "specs": [
+            ["配置状态", "已列入随车配置"],
+            ["测量结构", "双边"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 20,
+          "y": 78,
+          "title": "DT Swiss ARC 1100 85 / DISC",
+          "description": "按官网指定轮组选项记录，前后轮框高不同。",
+          "specs": [
+            ["前框高", "85 mm"],
+            ["后轮", "ARC 1100 DISC 封闭轮"],
+            ["内宽", "前 22 / 后 20 mm"]
+          ],
+          "catalogIds": []
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 83,
+          "y": 44,
+          "title": "AERO 111 / GP5000 S TR",
+          "description": "胎宽为官方标称值，实际宽度会随轮圈内宽变化。",
+          "specs": [
+            ["尺寸", "前 26 / 后 28 mm"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "catalogIds": ["aero111", "gp5000-str"]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "S",
+            "stack": 472,
+            "reach": 417,
+            "headAngle": 73,
+            "seatAngle": 85.9,
+            "wheelbase": 988,
+            "chainstay": 420,
+            "bbDrop": 75,
+            "headTube": 65,
+            "seatTube": 518
+          },
+          {
+            "size": "M",
+            "stack": 496,
+            "reach": 435,
+            "headAngle": 73,
+            "seatAngle": 85.7,
+            "wheelbase": 1014,
+            "chainstay": 420,
+            "bbDrop": 75,
+            "headTube": 91,
+            "seatTube": 540
+          },
+          {
+            "size": "L",
+            "stack": 530,
+            "reach": 458,
+            "headAngle": 73,
+            "seatAngle": 85.5,
+            "wheelbase": 1047,
+            "chainstay": 420,
+            "bbDrop": 75,
+            "headTube": 126,
+            "seatTube": 570
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.canyon.com/en-de/road-bikes/triathlon-bikes/speedmax/cfr/speedmax-cfr-tt/4254.html",
+        "sourceLabel": "厂商官方几何表",
+        "note": "录入官方 S / M / L 尺码。XS 的轮径说明与表格存在差异，暂未纳入。座管角为官网参考值；实际 TT 拟合还要看托肘位置。"
+      },
+      "aero": {
+        "title": "平直上管 · TT 延伸把 · 后封闭轮",
+        "description": "平直上管、深截面座管、前 85 mm 轮与封闭后轮，组成鲜明的计时赛轮廓。官网标明此 TT 平台符合 UCI 规则。",
+        "source": "https://www.canyon.com/en-de/road-bikes/triathlon-bikes/speedmax/cfr/speedmax-cfr-tt/4254.html",
+        "limit": "设计说明不等于跨品牌风阻排名；未录入统一骑手、速度、偏航角、轮胎与装配条件下的独立可比瓦数。"
+      },
+      "price": {
+        "label": "€11,999",
+        "market": "德国官网含税标价 · CFR TT 4254",
+        "source": "https://www.canyon.com/en-de/road-bikes/triathlon-bikes/speedmax/cfr/speedmax-cfr-tt/4254.html",
+        "checkedAt": "2026-09-20"
       }
     }
   ]

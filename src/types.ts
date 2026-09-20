@@ -1,4 +1,4 @@
-export type Collection = 'all' | 'current' | 'classic' | 'popular';
+export type Collection = 'all' | 'current' | 'classic' | 'popular' | 'pro' | 'flagship';
 export type Component = {
   id: string;
   name: string;
@@ -8,6 +8,19 @@ export type Component = {
   specs: [string, string][];
   x: number;
   y: number;
+  catalogIds?: string[];
+};
+export type Paint = {
+  id: string;
+  name: string;
+  hex: string;
+  image: string;
+  source: string;
+  imageRatio: number;
+  imagePosition?: string;
+  imageTone?: 'dark';
+  note?: string;
+  hotspots?: Record<string, { x: number; y: number }>;
 };
 export type Brand = { id: string; name: string; country: string; founded: string };
 export type GeometrySize = {
@@ -41,6 +54,9 @@ export type Bike = {
   imagePosition?: string;
   color: string;
   colorHex: string;
+  paints?: Paint[];
+  race?: { label: string; note: string; source: string };
+  price?: { label: string; market: string; source: string; checkedAt: string };
   source: string;
   sourceLabel: string;
   checkedAt: string;
@@ -60,3 +76,28 @@ export type Bike = {
   aero: { title: string; description: string; source: string; limit: string };
 };
 export type Catalog = { updatedAt: string; brands: Brand[]; bikes: Bike[]; collectionNote: string };
+
+export type PartCategory = 'wheels' | 'groupsets' | 'tires';
+export type Product = {
+  id: string;
+  brandId: string;
+  name: string;
+  category: PartCategory;
+  era: string;
+  status: 'current' | 'classic';
+  tagline: string;
+  description: string;
+  image?: string;
+  specs: [string, string][];
+  highlights: { title: string; text: string }[];
+  compatibility: string;
+  tradeoff: string;
+  source: string;
+  sourceLabel: string;
+  checkedAt: string;
+};
+export type PartsCatalog = {
+  updatedAt: string;
+  brands: (Brand & { description: string; website: string })[];
+  products: Product[];
+};

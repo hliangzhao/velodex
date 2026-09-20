@@ -6,6 +6,9 @@ const catalogPath = new URL('./data/catalog.json', import.meta.url);
 export function loadCatalog() {
   return JSON.parse(readFileSync(catalogPath, 'utf8'));
 }
+export function loadParts() {
+  return JSON.parse(readFileSync(new URL('./data/parts.json', import.meta.url), 'utf8'));
+}
 export function createApp(catalog = loadCatalog(), { production = false } = {}) {
   const app = express();
   app.disable('x-powered-by');
@@ -16,13 +19,39 @@ export function createApp(catalog = loadCatalog(), { production = false } = {}) 
   app.get('/api/health', (_req, res) => res.json({ status: 'ok' }));
   app.get('/api/catalog', (_req, res) => res.json(catalog));
   app.get('/api/brands', (_req, res) => res.json(catalog.brands));
+  const parts = loadParts();
+  app.get('/api/parts', (req, res) => {
+    const { category, brand, q } = req.query;
+    if ([category, brand, q].some((value) => value !== undefined && typeof value !== 'string'))
+      return res.status(400).json({ error: '筛选参数必须是字符串' });
+    if (category && !['all', 'wheels', 'groupsets', 'tires'].includes(category))
+      return res.status(400).json({ error: '不支持的配件分类' });
+    const query = q?.trim().toLowerCase();
+    const products = parts.products.filter(
+      (p) =>
+        (!category || category === 'all' || p.category === category) &&
+        (!brand || brand === 'all' || p.brandId === brand) &&
+        (!query ||
+          `${p.name} ${p.brandId} ${parts.brands.find((b) => b.id === p.brandId)?.name}`
+            .toLowerCase()
+            .includes(query)),
+    );
+    res.json({ ...parts, products, total: products.length });
+  });
+  app.get('/api/parts/:id', (req, res) => {
+    const product = parts.products.find((p) => p.id === req.params.id);
+    return product ? res.json(product) : res.status(404).json({ error: '未找到配件' });
+  });
   app.get('/api/bikes', (req, res) => {
     const { brand, collection, kind, q } = req.query;
     if (
       [brand, collection, kind, q].some((value) => value !== undefined && typeof value !== 'string')
     )
       return res.status(400).json({ error: '筛选参数必须是字符串' });
-    if (collection && !['all', 'current', 'classic', 'popular'].includes(collection))
+    if (
+      collection &&
+      !['all', 'current', 'classic', 'popular', 'pro', 'flagship'].includes(collection)
+    )
       return res.status(400).json({ error: '不支持的车型分类' });
     const query = q?.trim().toLowerCase();
     const brandNames = new Map(catalog.brands.map((item) => [item.id, item.name]));

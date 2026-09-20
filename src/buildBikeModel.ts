@@ -147,6 +147,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
   const p: Profile = profiles[bike.id as keyof typeof profiles];
   if (!p) throw new Error(`No reconstructed profile for ${bike.id}`);
   const special = 'special' in p ? p.special : '';
+  const isTT = special === 'tt' || special === 'tt-disc';
   const group = new THREE.Group(),
     meshes: THREE.Mesh[] = [];
   const materials = new Map<string, THREE.MeshStandardMaterial>();
@@ -294,10 +295,23 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       [seat, topMid, topHead, downHead, bb],
       [p.topDepth / 1000, p.topDepth / 1000, p.headDepth / 1000, dt, p.seatDepth / 1000],
       [0.032, 0.033, 0.047, dw, p.seatWidth / 1000],
-      special === 'isoflow',
+      special === 'isoflow' || special === 'y1',
     ),
   );
 
+  if (special === 'y1') {
+    // The photo-derived DEFY junction bends toward the rear before joining the top tube.
+    const junction = stayJoin.clone().add(V(0.028, 0.005));
+    sweep([bb, bb.clone().lerp(junction, 0.65), junction], 0.046, 0.026, 'frame', carbon, 0.6);
+    sweep(
+      [junction, seat.clone().add(V(0.028, -0.015)), seat],
+      0.032,
+      0.024,
+      'frame',
+      carbon,
+      0.65,
+    );
+  }
   if (special === 'isoflow') {
     // Two side rails leave the seat-tube opening genuinely hollow in 3D.
     const lower = seat.clone().addScaledVector(sd, -0.125);
@@ -494,7 +508,20 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
         0.85,
         0.05,
       );
-    for (let i = 0; i < p.spokes; i++) {
+    const solidRear = special === 'tt-disc' && wheelIndex === 0;
+    if (solidRear) {
+      const cover = add(
+        new THREE.CylinderGeometry(0.306, 0.306, 0.017, 128),
+        'wheels',
+        '#33393e',
+        center,
+        0.44,
+        0.3,
+      );
+      cover.rotation.x = Math.PI / 2;
+      cover.userData.structure = 'rear-disc';
+    }
+    for (let i = 0; i < (solidRear ? 0 : p.spokes); i++) {
       const a = (i / p.spokes) * Math.PI * 2,
         sign = i % 2 ? 1 : -1,
         hubAngle = a + (i % 4 < 2 ? 0.33 : -0.33);
@@ -552,8 +579,13 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
   }
 
   const rings = bb.clone().add(V(0, 0, 0.054));
-  const bigTeeth =
-    bike.id === 'vanrysel-edr-cf' ? 50 : ['cervelo-s5', 'propel-sl0'].includes(bike.id) ? 54 : 52;
+  const bigTeeth = ['cervelo-r5', 'teammachine-r01'].includes(bike.id)
+    ? 48
+    : bike.id === 'vanrysel-edr-cf'
+      ? 50
+      : ['cervelo-s5', 'propel-sl0', 'speedmax-cfr-tt'].includes(bike.id)
+        ? 54
+        : 52;
   const bigR = (bigTeeth * 0.0127) / (2 * Math.PI),
     smallR = 0.071;
   cog(bigTeeth, bigR, bigR - 0.012, rings, 'chainrings', metal, 0.003);
@@ -650,65 +682,138 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
     );
   const bar = stemRoot.clone().add(V(0.1, 0.019));
   sweep([stemRoot, bar], special === 's5' ? 0.035 : 0.025, 0.032, 'shifters', dark, 0.5, 0.7);
-  // Aero top, compact drop and sculpted hood are separate geometries.
-  const barPath = [
-    bar.clone().add(V(0.02, -0.005, -0.19)),
-    bar.clone().add(V(0, 0, -0.12)),
-    bar,
-    bar.clone().add(V(0, 0, 0.12)),
-    bar.clone().add(V(0.02, -0.005, 0.19)),
-  ];
-  // A regular tube is appropriate here: unlike frame lofts the top runs across Z.
-  add(
-    new THREE.TubeGeometry(new THREE.CatmullRomCurve3(barPath), 36, 0.013, 12, false),
-    'shifters',
-    dark,
-  );
-  for (const sign of [-1, 1]) {
-    const z = sign * 0.19;
-    const points = [
-      bar.clone().add(V(0.02, -0.005, z)),
-      bar.clone().add(V(0.083, -0.024, z)),
-      bar.clone().add(V(0.103, -0.077, z)),
-      bar.clone().add(V(0.066, -0.125, z)),
-      bar.clone().add(V(-0.017, -0.13, z)),
+  if (isTT) {
+    // TT base bar, riser, elbow cups and extensions are distinct selectable surfaces.
+    const riserTop = bar.clone().add(V(-0.014, special === 'tt' ? 0.105 : 0.078));
+    sweep([bar, riserTop], 0.035, 0.055, 'shifters', carbon, 0.55);
+    for (const sign of [-1, 1]) {
+      const wing = bar.clone().add(V(0.012, -0.007, sign * 0.19));
+      const baseBar = add(
+        new THREE.TubeGeometry(
+          new THREE.CatmullRomCurve3([
+            bar,
+            bar.clone().add(V(-0.014, 0, sign * 0.1)),
+            wing,
+            wing.clone().add(V(0.07, 0.005)),
+          ]),
+          40,
+          0.012,
+          16,
+          false,
+        ),
+        'shifters',
+        dark,
+      );
+      baseBar.userData.structure = 'tt-basebar';
+      sweep(
+        [
+          wing.clone().add(V(0.069, 0.003)),
+          wing.clone().add(V(0.07, -0.055)),
+          wing.clone().add(V(0.04, -0.066)),
+        ],
+        0.009,
+        0.008,
+        'shifters',
+        dark,
+        0.8,
+      );
+      const elbow = riserTop.clone().add(V(-0.028, 0, sign * 0.073));
+      const pad = add(new THREE.BoxGeometry(0.095, 0.015, 0.07), 'shifters', rubber, elbow);
+      pad.userData.structure = 'tt-elbow-pad';
+      for (const side of [-1, 1]) {
+        sweep(
+          [
+            elbow.clone().add(V(-0.047, 0.007, side * 0.036)),
+            elbow.clone().add(V(0.043, 0.007, side * 0.036)),
+          ],
+          0.017,
+          0.004,
+          'shifters',
+          carbon,
+          0.8,
+        );
+      }
+      const tip = elbow.clone().add(V(0.27, 0.09));
+      const extension = add(
+        new THREE.TubeGeometry(
+          new THREE.CatmullRomCurve3([
+            elbow.clone().add(V(-0.015, -0.018)),
+            elbow.clone().add(V(0.115, -0.005)),
+            elbow.clone().add(V(0.21, 0.018)),
+            tip,
+          ]),
+          48,
+          0.011,
+          14,
+          false,
+        ),
+        'shifters',
+        dark,
+      );
+      extension.userData.structure = 'tt-extension';
+      add(new THREE.SphereGeometry(0.012, 12, 8), 'shifters', '#4b5155', tip);
+    }
+  } else {
+    // Aero top, compact drop and sculpted hood are separate geometries.
+    const barPath = [
+      bar.clone().add(V(0.02, -0.005, -0.19)),
+      bar.clone().add(V(special === 'y1' ? -0.02 : 0, special === 'y1' ? -0.024 : 0, -0.12)),
+      bar,
+      bar.clone().add(V(special === 'y1' ? -0.02 : 0, special === 'y1' ? -0.024 : 0, 0.12)),
+      bar.clone().add(V(0.02, -0.005, 0.19)),
     ];
+    // A regular tube is appropriate here: unlike frame lofts the top runs across Z.
     add(
-      new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points), 50, 0.0125, 12, false),
-      'shifters',
-      rubber,
-      V(0, 0),
-      0.85,
-      0.03,
-    );
-    const hood = points[1].clone();
-    sweep(
-      [
-        hood.clone().add(V(-0.03, 0.005)),
-        hood.clone().add(V(0.026, 0.021)),
-        hood.clone().add(V(0.045, 0.063)),
-      ],
-      0.028,
-      0.03,
-      'shifters',
-      rubber,
-      0.8,
-      0.72,
-    );
-    sweep(
-      [
-        hood.clone().add(V(0.044, 0.047)),
-        hood.clone().add(V(0.052, -0.006)),
-        hood.clone().add(V(0.052, -0.071)),
-        hood.clone().add(V(0.043, -0.084)),
-      ],
-      0.011,
-      0.007,
+      new THREE.TubeGeometry(new THREE.CatmullRomCurve3(barPath), 36, 0.013, 12, false),
       'shifters',
       dark,
-      0.8,
-      0.7,
     );
+    for (const sign of [-1, 1]) {
+      const z = sign * 0.19;
+      const points = [
+        bar.clone().add(V(0.02, -0.005, z)),
+        bar.clone().add(V(0.083, -0.024, z)),
+        bar.clone().add(V(0.103, -0.077, z)),
+        bar.clone().add(V(0.066, -0.125, z)),
+        bar.clone().add(V(-0.017, -0.13, z)),
+      ];
+      add(
+        new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points), 50, 0.0125, 12, false),
+        'shifters',
+        rubber,
+        V(0, 0),
+        0.85,
+        0.03,
+      );
+      const hood = points[1].clone();
+      sweep(
+        [
+          hood.clone().add(V(-0.03, 0.005)),
+          hood.clone().add(V(0.026, 0.021)),
+          hood.clone().add(V(0.045, 0.063)),
+        ],
+        0.028,
+        0.03,
+        'shifters',
+        rubber,
+        0.8,
+        0.72,
+      );
+      sweep(
+        [
+          hood.clone().add(V(0.044, 0.047)),
+          hood.clone().add(V(0.052, -0.006)),
+          hood.clone().add(V(0.052, -0.071)),
+          hood.clone().add(V(0.043, -0.084)),
+        ],
+        0.011,
+        0.007,
+        'shifters',
+        dark,
+        0.8,
+        0.7,
+      );
+    }
   }
   if (special === 'storage') {
     const a = bb.clone().lerp(downHead, 0.48),

@@ -1,0 +1,772 @@
+{
+  "updatedAt": "2026-09-20",
+  "brands": [
+    {
+      "id": "dt-swiss",
+      "name": "DT Swiss",
+      "country": "瑞士",
+      "founded": "",
+      "description": "以辐条、花鼓和轮组系统见长，ARC 系列侧重公路空气动力学。",
+      "website": "https://www.dtswiss.com"
+    },
+    {
+      "id": "zipp",
+      "name": "Zipp",
+      "country": "美国",
+      "founded": "",
+      "description": "SRAM 旗下轮组品牌，关注空气动力学与轮胎、轮圈组成的整套系统。",
+      "website": "https://www.sram.com/en/zipp"
+    },
+    {
+      "id": "enve",
+      "name": "ENVE",
+      "country": "美国",
+      "founded": "",
+      "description": "碳纤维轮组与车架制造商；SES 系列采用前后轮不同的截面设计。",
+      "website": "https://enve.com"
+    },
+    {
+      "id": "roval",
+      "name": "Roval",
+      "country": "美国",
+      "founded": "",
+      "description": "Specialized 旗下轮组品牌，Rapide 与 Alpinist 分别对应气动和轻量取向。",
+      "website": "https://www.specialized.com/us/en/roval"
+    },
+    {
+      "id": "shimano",
+      "name": "Shimano 禧玛诺",
+      "country": "日本",
+      "founded": "",
+      "description": "公路变速、制动与轮组制造商；从机械传动延伸到 Di2 电子系统。",
+      "website": "https://bike.shimano.com"
+    },
+    {
+      "id": "sram",
+      "name": "SRAM",
+      "country": "美国",
+      "founded": "",
+      "description": "AXS 平台覆盖无线变速与功率计，X-Range 采用小齿起步的公路齿比。",
+      "website": "https://www.sram.com"
+    },
+    {
+      "id": "campagnolo",
+      "name": "Campagnolo",
+      "country": "意大利",
+      "founded": "",
+      "description": "以公路套件和轮组为核心，Super Record 延续旗舰公路传动路线。",
+      "website": "https://www.campagnolo.com"
+    },
+    {
+      "id": "continental",
+      "name": "Continental 马牌",
+      "country": "德国",
+      "founded": "",
+      "description": "Grand Prix 系列覆盖公路竞赛和日常骑行；同时提供内胎与真空胎结构。",
+      "website": "https://www.continental-tires.com/products/bicycle/"
+    },
+    {
+      "id": "schwalbe",
+      "name": "Schwalbe 世文",
+      "country": "德国",
+      "founded": "",
+      "description": "自行车轮胎品牌，Pro One 是其高性能公路产品线。",
+      "website": "https://www.schwalbe.com"
+    },
+    {
+      "id": "vittoria",
+      "name": "Vittoria 维多利亚",
+      "country": "意大利",
+      "founded": "",
+      "description": "Corsa 系列以竞赛定位和高密度胎体著称，提供不同路况取向。",
+      "website": "https://vittoria.com"
+    },
+    {
+      "id": "pirelli",
+      "name": "Pirelli 倍耐力",
+      "country": "意大利",
+      "founded": "",
+      "description": "P ZERO 公路系列将胶料与胎体分层设计应用于竞赛轮胎。",
+      "website": "https://www.pirelli.com/tires/en-us/bike"
+    }
+  ],
+  "products": [
+    {
+      "id": "dt-arc1100-65",
+      "brandId": "dt-swiss",
+      "name": "ARC 1100 DICUT 65",
+      "category": "wheels",
+      "era": "第三代 · 22 mm 内宽",
+      "status": "current",
+      "tagline": "把气动轮组，作为一套系统来设计。",
+      "description": "65 mm 高框版本，采用有钩碳纤维轮圈、180 DICUT 花鼓与陶瓷轴承。本条目对应第三代 700C 规格。",
+      "specs": [
+        ["框高", "前 / 后 65 mm"],
+        ["内宽", "22 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["标称重量", "1520 g（前 707 / 后 813 g）"],
+        ["花鼓", "180 DICUT · Ratchet EXP 36"],
+        ["制动接口", "Center Lock"]
+      ],
+      "highlights": [
+        {
+          "title": "空气动力学",
+          "text": "与轮胎宽度共同设计的高框轮组，适合高速公路骑行。阻力随轮胎与偏航角变化。"
+        },
+        {
+          "title": "传动结构",
+          "text": "Ratchet EXP 36 棘轮与 SINC 陶瓷轴承；轴承类型不等于整车节省固定瓦数。"
+        },
+        {
+          "title": "重量口径",
+          "text": "录入裸轮组前后官方重量之和，未采用包含轮胎的 WTS 组合重量。"
+        }
+      ],
+      "compatibility": "12 × 100 / 142 mm 桶轴；选择 Shimano Road 或 XDR 塔基。轮胎尺寸须符合 DT Swiss 最新兼容表。",
+      "tradeoff": "65 mm 框高偏向高速气动，强侧风和较轻骑手需要结合操控感受选择。",
+      "source": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-db",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/dt-arc1100-65.jpg"
+    },
+    {
+      "id": "zipp-404-firecrest",
+      "brandId": "zipp",
+      "name": "404 Firecrest",
+      "category": "wheels",
+      "era": "WH-404-FTLD-B1",
+      "status": "current",
+      "tagline": "58 mm：长久以来的气动全能选择。",
+      "description": "本条目对应 58 mm、23 mm 内宽、ZR1 DB 花鼓版本。与早期有钩、圈刹 404 区分。",
+      "specs": [
+        ["框高", "前 / 后 58 mm"],
+        ["内宽", "23 mm"],
+        ["胎圈结构", "无钩 · 仅兼容认可的真空胎"],
+        ["标称重量", "1559 g（最轻 XDR 配置，不含胎垫气嘴）"],
+        ["花鼓", "ZR1 Disc Brake"],
+        ["制动接口", "Center Lock"]
+      ],
+      "highlights": [
+        {
+          "title": "系统效率",
+          "text": "TSE 设计同时考虑空气阻力、滚阻与路面振动，不能只以轮圈重量判断速度。"
+        },
+        {
+          "title": "定位",
+          "text": "58 mm 框高面向快速公路骑行，在气动与多用途之间取舍。"
+        },
+        {
+          "title": "版本辨识",
+          "text": "本页固定 B1 版本，避免把新旧 404 的重量和胎圈结构拼在一起。"
+        }
+      ],
+      "compatibility": "12 mm 桶轴；XDR 或 Shimano/SRAM Road 塔基。无钩轮圈只搭配 Zipp 认可尺寸的真空胎，即使使用内胎也一样。轮胎与轮圈取较低压力上限。",
+      "tradeoff": "无钩结构对轮胎型号、宽度和压力的要求更具体；选胎自由度与传统有钩轮圈不同。",
+      "source": "https://www.sram.com/en/zipp/models/wh-404-ftld-b1",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/zipp-404-firecrest.png"
+    },
+    {
+      "id": "zipp-303-firecrest",
+      "brandId": "zipp",
+      "name": "303 Firecrest",
+      "category": "wheels",
+      "era": "WH-303-FTLD-A1 · 经典档案",
+      "status": "classic",
+      "tagline": "宽轮圈时代的一款代表作。",
+      "description": "以 40 mm 框高和 25 mm 内宽，展示公路轮组从窄胎高压向较宽轮胎系统转变的思路。",
+      "specs": [
+        ["框高", "前 / 后 40 mm"],
+        ["内宽", "25 mm"],
+        ["胎圈结构", "无钩 · 仅兼容认可的真空胎"],
+        ["标称重量", "1408 g（XDR，不含胎垫气嘴）"],
+        ["花鼓", "ZR1 Disc Brake"],
+        ["制动接口", "Center Lock"]
+      ],
+      "highlights": [
+        {
+          "title": "较宽内宽",
+          "text": "为较宽轮胎提供支撑，实际胎宽也会变化；需同时检查车架净空。"
+        },
+        {
+          "title": "较低框高",
+          "text": "40 mm 定位多用途公路与起伏路面，空气动力学收益仍依赖整套装配。"
+        },
+        {
+          "title": "档案口径",
+          "text": "按官方 A1 服务档案记录，采用该页 1408 g 数值，不混用发布初期的其他重量。"
+        }
+      ],
+      "compatibility": "25 mm 内宽对轮胎的要求须按最新 Zipp/轮胎兼容表确认；一般采用 30 mm 或更宽，仅部分明确认可的 28 mm 可用。不得仅凭标称宽度判定。",
+      "tradeoff": "经典型号与后续 303 SW 并非同一产品；购买旧库存时核对具体型号与兼容文件。",
+      "source": "https://www.sram.com/en/service/models/wh-303-ftld-a1",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/zipp-303-firecrest.png"
+    },
+    {
+      "id": "enve-ses45",
+      "brandId": "enve",
+      "name": "SES 4.5 INNERDRIVE",
+      "category": "wheels",
+      "era": "INNERDRIVE Premium · 非 PRO",
+      "status": "current",
+      "tagline": "前后轮不同截面，为实际气流各司其职。",
+      "description": "SES 4.5 使用前 50、后 56 mm 框高和 25 mm 内宽。这里记录普通 SES 4.5，并非更轻的 PRO 版本。",
+      "specs": [
+        ["框高", "前 50 / 后 56 mm"],
+        ["内宽", "25 mm"],
+        ["胎圈结构", "无钩 · Tubeless Only"],
+        ["标称重量", "1493 g（详细表，含胎垫气嘴）"],
+        ["花鼓", "ENVE INNERDRIVE Premium"],
+        ["制动接口", "Center Lock"]
+      ],
+      "highlights": [
+        {
+          "title": "差异化截面",
+          "text": "前轮与后轮承担的气流环境不同，SES 用不同轮圈截面进行设计。"
+        },
+        {
+          "title": "宽胎系统",
+          "text": "25 mm 内宽需要与认可的真空胎配套，实际胎宽大于名义胎宽的情况很常见。"
+        },
+        {
+          "title": "重量边界",
+          "text": "官方概览与详细规格的重量口径有差异；这里固定采用前 690 / 后 803 g 的含附件表。"
+        }
+      ],
+      "compatibility": "12 × 100 / 142 mm；有 Shimano Road / XDR 等塔基选项。仅使用 ENVE 最新名单认可的真空胎与尺寸，压力取轮圈与外胎较低上限。",
+      "tradeoff": "轮胎、轮圈与压力必须成套选择；不同代花鼓及 PRO 版本不能直接套用本页重量。",
+      "source": "https://enve.com/products/ses-4-5",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/enve-ses45.jpg"
+    },
+    {
+      "id": "roval-rapide-clx3",
+      "brandId": "roval",
+      "name": "Rapide CLX III",
+      "category": "wheels",
+      "era": "第三代 · 官方独立轮组规格",
+      "status": "current",
+      "tagline": "前高后低，重新分配气动与重量。",
+      "description": "前轮 51 mm、后轮 48 mm（官网独立轮组页面口径），配有钩轮圈和 Roval by Arris 复合材料辐条。",
+      "specs": [
+        ["框高", "前 51 / 后 48 mm"],
+        ["内宽", "21 mm"],
+        ["胎圈结构", "有钩 · 支持真空 / 内胎"],
+        ["标称重量", "1305 g（含胎垫与气嘴）"],
+        ["花鼓", "Roval Low Flange · DT Ratchet EXP 36"],
+        ["制动接口", "Center Lock"]
+      ],
+      "highlights": [
+        {
+          "title": "气动分工",
+          "text": "更高的前轮负责主要气动设计，较低后轮控制重量。不能单靠框高计算节省瓦数。"
+        },
+        {
+          "title": "材料",
+          "text": "18 根前辐条、24 根后辐条，采用复合材料气动辐条和钛端头。"
+        },
+        {
+          "title": "重量口径",
+          "text": "官方前 600、后 705 g，包含气嘴与胎垫；整车页面有将后框高写作 48.5 mm 的口径。"
+        }
+      ],
+      "compatibility": "700C、12 × 100 / 142 mm、Center Lock；官方允许 24–38 mm 轮胎。XDR / HG 塔基按选项核对，设计参考胎宽为 28 mm。",
+      "tradeoff": "专用辐条需要对应维护配件；重量与不同轮组比较时应先统一附件口径。",
+      "source": "https://www.specialized.com/us/en/roval-rapide-clx-iii/p/1000256237",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/roval-rapide-clx3.webp"
+    },
+    {
+      "id": "shimano-c50",
+      "brandId": "shimano",
+      "name": "Dura-Ace C50 TL",
+      "category": "wheels",
+      "era": "WH-R9270-C50 · 9200 系列",
+      "status": "current",
+      "tagline": "50 mm 有钩轮圈，搭配旗舰传动平台。",
+      "description": "R9270 碟刹真空轮组以 50 mm 框高覆盖竞赛公路场景，保留有钩轮圈与 Shimano 系统接口。",
+      "specs": [
+        ["框高", "前 / 后 50 mm"],
+        ["内宽", "21 mm"],
+        ["胎圈结构", "有钩 · Tubeless"],
+        ["塔基", "HG spline L2 · 公路 12 速"],
+        ["轮径", "700C"],
+        ["制动接口", "Center Lock"]
+      ],
+      "highlights": [
+        {
+          "title": "全能框高",
+          "text": "50 mm 旨在覆盖多种公路赛场景；不同胎宽和路况会影响实际表现。"
+        },
+        {
+          "title": "直接啮合",
+          "text": "后花鼓采用 Direct Engagement 结构，区别于 Ultegra 同框高轮组。"
+        },
+        {
+          "title": "接口辨识",
+          "text": "Dura-Ace 的 L2 塔基并非 Ultegra C50 使用的兼容旧 11 速的 L 塔基。"
+        }
+      ],
+      "compatibility": "12 × 100 / 142 mm；R9270 的 HG spline L2 对应 Shimano 公路 12 速飞轮，不兼容旧 11 速飞轮。",
+      "tradeoff": "与 Ultegra C50 外观接近，但花鼓与塔基不同，替换旧轮组时需先确认飞轮接口。",
+      "source": "https://bike.shimano.com/products/components/pdp.P-WH-R9270-C50-TL-F.html",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "dura-ace-r9200",
+      "brandId": "shimano",
+      "name": "Dura-Ace R9200 Di2",
+      "category": "groupsets",
+      "era": "R9200 / R9250 / R9270 · 2 × 12",
+      "status": "current",
+      "tagline": "旗舰 Di2，从拨杆到传动的一整套协作。",
+      "description": "R9200 公路系统采用 12 速传动；碟刹手变与后拨无线通信，前后拨仍连接车内电池。",
+      "specs": [
+        ["速别", "2 × 12"],
+        ["操控", "Di2 电子 · 半无线架构"],
+        ["制动", "R9270 液压碟刹"],
+        ["牙盘选项", "50/34 · 52/36 · 54/40T"],
+        ["飞轮选项", "11–30 · 11–34T"],
+        ["功率计", "FC-R9200-P 为独立选项"]
+      ],
+      "highlights": [
+        {
+          "title": "换挡逻辑",
+          "text": "支持同步或半同步换挡；手动控制也保留，适应不同使用习惯。"
+        },
+        {
+          "title": "齿比设计",
+          "text": "HYPERGLIDE+ 飞轮与对应链条组成完整换挡系统。"
+        },
+        {
+          "title": "配置识别",
+          "text": "Di2 不等于自带功率计；整车可能搭配 Shimano 或第三方曲柄功率计。"
+        }
+      ],
+      "compatibility": "必须按 Shimano 兼容表匹配 SD300 电线、电池和 12 速部件。TT 按键可使用专门的有线组合，不能把公路半无线连接方式照搬到 TT。",
+      "tradeoff": "系统依赖电池与软件设置；维护和预算应按整套配置衡量。",
+      "source": "https://bike.shimano.com/en-SG/stories/article/science-of-speed.html",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "ultegra-r8100",
+      "brandId": "shimano",
+      "name": "Ultegra R8100 Di2",
+      "category": "groupsets",
+      "era": "R8100 / R8150 / R8170 · 2 × 12",
+      "status": "current",
+      "tagline": "把 12 速 Di2 带到更多公路车上。",
+      "description": "共享新一代 Di2 的半无线架构、HYPERGLIDE+ 传动和液压制动，材料与部件重量与 Dura-Ace 不同。",
+      "specs": [
+        ["速别", "2 × 12"],
+        ["操控", "Di2 电子 · 半无线架构"],
+        ["制动", "R8170 液压碟刹"],
+        ["牙盘选项", "50/34 · 52/36T"],
+        ["飞轮选项", "11–30 · 11–34T"],
+        ["后拨", "RD-R8150"]
+      ],
+      "highlights": [
+        {
+          "title": "架构",
+          "text": "后拨集成系统通信与充电接口，前后拨共用内部电池。"
+        },
+        {
+          "title": "常见齿比",
+          "text": "50/34 与 11–34 组合提供更低的爬坡挡；52/36 更偏竞赛使用。"
+        },
+        {
+          "title": "配置比较",
+          "text": "同属 12 速 Di2 并不表示所有零件重量与材料一致；本页不拼凑整套重量。"
+        }
+      ],
+      "compatibility": "12 速 Shimano 公路系统；使用正确的电池、电线和兼容固件。旧 11 速 Di2 不能直接按同名接口混搭。",
+      "tradeoff": "与旗舰相比主要取舍在材料、重量及选项；电变维护流程仍需掌握。",
+      "source": "https://bike.shimano.com/products/components/pdp.P-RD-R8150.html",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "105-r7100",
+      "brandId": "shimano",
+      "name": "105 R7100 Di2",
+      "category": "groupsets",
+      "era": "R7150 / R7170 · 电子版",
+      "status": "current",
+      "tagline": "保留双盘，让电子换挡更容易接近。",
+      "description": "这里展示 105 Di2。它与 R7100 机械 12 速是两种控制系统，名称相近但手变与拨链器不能互换。",
+      "specs": [
+        ["速别", "2 × 12"],
+        ["操控", "Di2 电子 · 半无线架构"],
+        ["制动", "R7170 液压碟刹"],
+        ["牙盘选项", "50/34 · 52/36T"],
+        ["飞轮选项", "11–34 · 11–36T"],
+        ["后拨", "RD-R7150"]
+      ],
+      "highlights": [
+        {
+          "title": "低速齿比",
+          "text": "更大的飞轮选项适合需要低爬坡挡的骑手，仍要结合牙盘选择。"
+        },
+        {
+          "title": "核心体验",
+          "text": "无线手变与车内电池连接的前后拨构成完整 Di2 系统。"
+        },
+        {
+          "title": "版本区别",
+          "text": "105 Di2 与 105 机械套件应分开核对；也不应将高等级手变的附加按键功能一概套入。"
+        }
+      ],
+      "compatibility": "核对 R7150 后拨的 12 速配置、电池和电线。105 机械变速后拨无法由 Di2 手变控制。",
+      "tradeoff": "价格与功能定位不同于 Ultegra；飞轮、额外按键和扩展接口需按具体零件确认。",
+      "source": "https://bike.shimano.com/stories/article/shimano-105-di2-it-is-a-new-day.html",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "sram-red-e1",
+      "brandId": "sram",
+      "name": "RED AXS E1",
+      "category": "groupsets",
+      "era": "E1 · 双盘公路 12 速",
+      "status": "current",
+      "tagline": "完全无线的换挡，重新设计的手变。",
+      "description": "双盘 RED AXS E1 是本条目的版本；与 RED XPLR 13 速单盘系统分开记录。",
+      "specs": [
+        ["速别", "2 × 12"],
+        ["操控", "AXS 无线电子"],
+        ["制动", "液压碟刹 · 独立握距 / 接触点调节"],
+        ["常见牙盘", "48/35 · 50/37T"],
+        ["常见飞轮", "10–28 · 10–33T"],
+        ["塔基 / 链条", "XDR / Road Flattop"]
+      ],
+      "highlights": [
+        {
+          "title": "手变人体工学",
+          "text": "官方强调单指制动，并增加可配置 Bonus Buttons；手感仍需结合手型体验。"
+        },
+        {
+          "title": "独立电池",
+          "text": "前后拨各使用可拆卸电池，换电方便；出发前需要检查两处电量。"
+        },
+        {
+          "title": "齿比思路",
+          "text": "X-Range 将 10T 起步飞轮与较小双盘配对，应看整体最高和最低齿比。"
+        }
+      ],
+      "compatibility": "12 速 Road Flattop 链条、对应双盘 AXS 前后拨和 XDR 塔基。不要与 RED XPLR 13 速仅凭品牌名称混搭。",
+      "tradeoff": "无线减少电线，却仍有电池、固件和专用传动部件；功率计并非所有曲柄版本标配。",
+      "source": "https://www.sram.com/en/sram/models/ed-red-e1",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/sram-red-e1.png"
+    },
+    {
+      "id": "super-record-13",
+      "brandId": "campagnolo",
+      "name": "Super Record 13",
+      "category": "groupsets",
+      "era": "Wireless · 双盘 13 速",
+      "status": "current",
+      "tagline": "多一片飞轮，延续意式公路传动。",
+      "description": "Super Record 13 无线双盘系统采用独立电池与 13 速链条、飞轮；应与此前 12 速 Wireless 分开辨认。",
+      "specs": [
+        ["速别", "2 × 13"],
+        ["操控", "Wireless 无线电子"],
+        ["制动", "液压碟刹"],
+        ["飞轮选项", "10–29 · 10–33 · 11–32 · 11–36T"],
+        ["塔基", "N3W"],
+        ["后拨容量", "41T · 最大飞轮 36T"]
+      ],
+      "highlights": [
+        {
+          "title": "挡位密度",
+          "text": "13 片飞轮提供更多齿数组合；是否更顺手取决于实际采用的飞轮排布。"
+        },
+        {
+          "title": "多种起步齿",
+          "text": "既有 10T 也有 11T 起步选项，适应不同牙盘和使用偏好。"
+        },
+        {
+          "title": "代际识别",
+          "text": "13 速专用链条和对应部件组成系统，不能沿用 12 速套件的兼容假设。"
+        }
+      ],
+      "compatibility": "匹配 Super Record 13 部件、对应 13 速链条及 N3W 塔基，并按官方兼容表确认牙盘与后拨组合。",
+      "tradeoff": "平台专用件较多，更换前应评估本地维护、耗材和塔基可用性。",
+      "source": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "dura-ace-r9100",
+      "brandId": "shimano",
+      "name": "Dura-Ace R9100 机械",
+      "category": "groupsets",
+      "era": "R9100 · 11 速经典档案",
+      "status": "classic",
+      "tagline": "在电子化之前，机械旗舰的答案。",
+      "description": "以机械拉线控制前后拨的 Dura-Ace R9100，是理解现代公路传动演变的一款代表。此处不包含 R9150 Di2。",
+      "specs": [
+        ["速别", "2 × 11"],
+        ["操控", "机械拉线"],
+        ["后拨", "RD-R9100-SS · SHADOW RD"],
+        ["制动版本", "R9100 圈刹 / R9120 液压碟刹"],
+        ["飞轮上限", "最大 30T（RD-R9100-SS）"],
+        ["电池", "换挡系统不需要"]
+      ],
+      "highlights": [
+        {
+          "title": "机械反馈",
+          "text": "拨杆行程直接驱动拉线；线管状态和张力调整对体验很重要。"
+        },
+        {
+          "title": "低位后拨",
+          "text": "SHADOW RD 采用较紧凑的后拨轮廓，改善传统机械结构的外侧突出。"
+        },
+        {
+          "title": "经典档案",
+          "text": "保留它是为了理解机械旗舰的结构与维护，不意味着仍作为最新一代销售。"
+        }
+      ],
+      "compatibility": "Shimano 11 速公路机械兼容体系；圈刹与液压手变需要各自匹配制动器。曲柄等旧件还应通过厂商序列号查询服务信息。",
+      "tradeoff": "没有充电需求，但拉线和线管需要保养；与 12 速 Di2 的升级不是简单更换后拨。",
+      "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "gp5000-str",
+      "brandId": "continental",
+      "name": "Grand Prix 5000 S TR",
+      "category": "tires",
+      "era": "S TR · 真空版",
+      "status": "current",
+      "tagline": "从竞赛到日常快骑的常见选择。",
+      "description": "GP5000 S TR 将 BlackChili 胶料、Vectran 防刺层与真空胎结构结合；与使用内胎的 GP5000 分开记录。",
+      "specs": [
+        ["结构", "Tubeless Ready"],
+        ["胶料", "BlackChili"],
+        ["防刺层", "Vectran Breaker"],
+        ["胎面技术", "Lazer Grip"],
+        ["常见规格", "700 × 25 / 28 / 30 / 32C"],
+        ["安装", "真空系统或匹配内胎"]
+      ],
+      "highlights": [
+        {
+          "title": "路感",
+          "text": "Active Comfort 技术面向振动管理；实际舒适度仍受胎压和轮圈内宽影响。"
+        },
+        {
+          "title": "用途",
+          "text": "公路竞赛取向，同时保留防刺结构，适合兼顾训练与比赛的装配。"
+        },
+        {
+          "title": "比较方法",
+          "text": "不引用跨胎压、轮圈和负载的瓦数排名；比较滚阻需统一测试条件。"
+        }
+      ],
+      "compatibility": "支持符合官方限制的有钩 / 无钩组合，胎宽与内宽须按 Continental 当前表确认。压力以轮圈和轮胎较低上限为准。",
+      "tradeoff": "真空安装需要密封液和定期维护；标称 28C 不保证所有轮圈上都正好是 28 mm。",
+      "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-s-tr/",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/gp5000-str.webp"
+    },
+    {
+      "id": "gp5000-clincher",
+      "brandId": "continental",
+      "name": "Grand Prix 5000",
+      "category": "tires",
+      "era": "折叠开口胎 · 内胎版",
+      "status": "current",
+      "tagline": "经典系列，保留熟悉的内胎装配。",
+      "description": "GP5000 的传统开口胎版本，采用 BlackChili、Vectran 与 Lazer Grip。名称中没有 S TR，结构也不同。",
+      "specs": [
+        ["结构", "折叠开口胎 · 需内胎"],
+        ["胶料", "BlackChili"],
+        ["防刺层", "Vectran Breaker"],
+        ["胎面技术", "Lazer Grip"],
+        ["常见规格", "700 × 23 / 25 / 28 / 32C"],
+        ["胎圈适配", "有钩轮圈"]
+      ],
+      "highlights": [
+        {
+          "title": "日常维护",
+          "text": "内胎装配流程熟悉，补胎和更换耗材直观。"
+        },
+        {
+          "title": "经典延续",
+          "text": "Grand Prix 系列中的主流公路产品，适合保留内胎系统的车轮。"
+        },
+        {
+          "title": "整套重量",
+          "text": "比较重量时需要把内胎计入，与真空组合比较还需计入胎垫、气嘴和密封液。"
+        }
+      ],
+      "compatibility": "需合适尺寸的内胎和有钩开口轮圈。此版本不是 TR，不能当作无钩真空胎安装。",
+      "tradeoff": "方便维护的同时，内胎材质、胎压与路况都会影响滚阻和夹胎风险。",
+      "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000/",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "aero111",
+      "brandId": "continental",
+      "name": "AERO 111",
+      "category": "tires",
+      "era": "公路前轮气动胎",
+      "status": "current",
+      "tagline": "轮胎表面的凹点，也参与气流控制。",
+      "description": "与 DT Swiss、Swiss Side 合作开发，使用胎面凹点影响前轮气流。定位为与轮组配套的气动前胎。",
+      "specs": [
+        ["结构", "Tubeless Ready"],
+        ["规格", "26–622 / 29–622"],
+        ["胶料", "BlackChili"],
+        ["防刺层", "Vectran Breaker"],
+        ["胎面设计", "48 个气动凹点"],
+        ["使用位置", "前轮"]
+      ],
+      "highlights": [
+        {
+          "title": "气流控制",
+          "text": "凹点设计帮助控制气流分离；效果依赖轮圈形状和偏航角。"
+        },
+        {
+          "title": "系统搭配",
+          "text": "前轮使用 AERO 111，后轮可按滚阻、耐用和轮圈匹配另选。"
+        },
+        {
+          "title": "数据边界",
+          "text": "官方风洞对比不能直接推成所有轮组和速度下的固定节省瓦数。"
+        }
+      ],
+      "compatibility": "按所选 26 / 29 mm 版本核对轮圈内宽和有钩 / 无钩压力限制；同时确认车架和前叉净空。",
+      "tradeoff": "气动收益具有轮组与工况依赖性，不能仅凭胎面凹点断言整车更快。",
+      "source": "https://www.continental-tires.com/products/bicycle/tires/aero-111/",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/aero111.png"
+    },
+    {
+      "id": "schwalbe-pro-one",
+      "brandId": "schwalbe",
+      "name": "Pro One TLE",
+      "category": "tires",
+      "era": "11653975 · 28-622 黑色",
+      "status": "current",
+      "tagline": "以柔顺胎体，连接人和路面。",
+      "description": "Super Race 胎体、ADDIX Race 胶料与 V-Guard 防刺层。本页固定 28-622 TLE 黑色版本。",
+      "specs": [
+        ["结构", "Tubeless Easy"],
+        ["规格", "28–622 · 700 × 28C"],
+        ["标称重量", "295 g / 条（11653975）"],
+        ["胎体密度", "127 EPI"],
+        ["胶料", "ADDIX Race"],
+        ["防护 / 胎体", "V-Guard / Super Race"]
+      ],
+      "highlights": [
+        {
+          "title": "胎体",
+          "text": "Super Race 是这款产品的结构重点，柔顺性需结合胎压体验。"
+        },
+        {
+          "title": "竞赛取向",
+          "text": "ADDIX Race 胶料与 V-Guard 防刺层服务于公路竞赛用途。"
+        },
+        {
+          "title": "版本辨识",
+          "text": "Pro One TLE、Tube Type 与 TT 版本并不相同，不能混用重量和安装方式。"
+        }
+      ],
+      "compatibility": "TLE 安装需要密封液；无钩兼容需同时核对轮圈名单、胎宽和压力，不以外胎上限单独决定。",
+      "tradeoff": "轻量竞赛胎仍需检查磨损和密封液；旧目录与当前 SKU 可能有不同重量。",
+      "source": "https://www.schwalbe.com/en/PRO-One-Tubeless-11653975",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/schwalbe-pro-one.png"
+    },
+    {
+      "id": "vittoria-corsa-pro",
+      "brandId": "vittoria",
+      "name": "Corsa Pro TLR",
+      "category": "tires",
+      "era": "棉质胎体 · Para 胎边",
+      "status": "current",
+      "tagline": "棉质胎体，是它鲜明的性格。",
+      "description": "Corsa Pro 采用 320 TPI 棉混纺胎体和 Graphene + Silica 胶料；电硫化工艺让胎面与胎体结合。",
+      "specs": [
+        ["结构", "Tubeless Ready"],
+        ["规格", "28–622 · 700 × 28C"],
+        ["标称重量", "280 g / 条（官方 Para 28C）"],
+        ["胎体密度", "320 TPI · 棉混纺"],
+        ["胶料", "Graphene + Silica"],
+        ["系列区别", "Pro / Pro Control / Pro Speed 分开"]
+      ],
+      "highlights": [
+        {
+          "title": "柔顺胎体",
+          "text": "棉混纺胎体是路感设计的核心；TPI 不能跨材料直接换算成滚阻高低。"
+        },
+        {
+          "title": "赛场定位",
+          "text": "面向公路竞赛的胎面和结构，实际抓地受路面、温度及胎压影响。"
+        },
+        {
+          "title": "规格区分",
+          "text": "28C、29C WR、30C 分别有不同重量与尺寸，整车可能使用其中不同版本。"
+        }
+      ],
+      "compatibility": "按 Vittoria 最新 ETRTO 对照表确认轮圈与无钩兼容性，尤其注意 24 / 26 mm 等较窄型号。",
+      "tradeoff": "棉质竞赛胎需要关注胎边状态与储存；不能把 Corsa Pro Speed 的轻量数据套用到普通 Pro。",
+      "source": "https://vittoria.com/products/corsa-pro-tubeless-ready",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/vittoria-corsa-pro.png"
+    },
+    {
+      "id": "pirelli-race-tlr-rs",
+      "brandId": "pirelli",
+      "name": "P ZERO Race TLR RS",
+      "category": "tires",
+      "era": "RS · SpeedCORE · 28-622",
+      "status": "current",
+      "tagline": "以竞赛为目标，优化胶料与胎体。",
+      "description": "意大利制造的 TLR RS 版本使用 SmartEVO² 胶料与 SpeedCORE 胎体结构。此页对应标准黑色 28-622。",
+      "specs": [
+        ["结构", "Tubeless Ready"],
+        ["规格", "28–622 · 700 × 28C"],
+        ["标称重量", "290 g / 条（28-622）"],
+        ["胎体密度", "120 TPI"],
+        ["胶料", "SmartEVO²"],
+        ["胎体技术", "SpeedCORE"]
+      ],
+      "highlights": [
+        {
+          "title": "胶料",
+          "text": "SmartEVO² 的取向是竞赛抓地与滚动表现；不将厂商配方描述当作独立实测排名。"
+        },
+        {
+          "title": "胎体",
+          "text": "SpeedCORE 在气密与柔顺之间设计，兼顾真空结构需求。"
+        },
+        {
+          "title": "型号区分",
+          "text": "TLR RS、Race TLR、Race RS 内胎版及 SL-R 属于不同产品，规格分别核对。"
+        }
+      ],
+      "compatibility": "按 Pirelli 官方轮圈兼容表确认尺寸；28-622 不代表任何内宽的无钩轮圈都可用。",
+      "tradeoff": "竞赛版本对路况、胎压和磨损更敏感，评价寿命应依据实际路面与骑行方式。",
+      "source": "https://www.pirelli.com/tires/en-us/bike/tires/catalogue/p-zero-race-tlr-rs",
+      "sourceLabel": "厂商官方产品／技术资料",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/pirelli-race-tlr-rs.jpg"
+    }
+  ]
+}
