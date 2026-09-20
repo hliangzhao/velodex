@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpLeft, ArrowUpRight } from 'lucide-react';
 import { useEffect, useState, type ReactNode } from 'react';
 import { useLibrary, CompareDock } from './Library';
 import { loadCatalog } from './catalog';
@@ -59,6 +59,9 @@ export function SiteFooter() {
         VÉLODEX
       </a>
       <span>献给每一个忍不住回头看车的人。</span>
+      <a className="academic-home-link" href="https://hliangzhao.me/">
+        <ArrowUpLeft size={15} aria-hidden="true" /> 返回学术主页
+      </a>
       <a href={`${base}?view=feedback`}>读者留言 ↗</a>
       <a href={`${base}?view=bikes`}>
         继续逛图鉴 <ArrowUpRight size={16} />

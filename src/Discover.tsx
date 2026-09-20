@@ -42,9 +42,12 @@ export default function Discover() {
       <CatalogContent>
         {(catalog) => {
           const feature = catalog.bikes.find((b) => b.id === 'sworks-venge')!;
-          const picks = ['cinelli-pressure2', 'camp-ace3', 'avail-advanced1', 'silex8000'].map(
-            (id) => catalog.bikes.find((b) => b.id === id)!,
-          );
+          const picks = [
+            'bianchi-specialissima-rc-tdf',
+            'bianchi-infinito-pro-roubaix',
+            'scott-foil-rc10',
+            'cube-agree-c62-race',
+          ].map((id) => catalog.bikes.find((b) => b.id === id)!);
           return (
             <>
               <div className="work-banner">

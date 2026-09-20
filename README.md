@@ -91,7 +91,7 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 本次补充 Cinelli 西耐力 Pressure II、CAMP 坎普 ACE III UT / SR9、Liv Avail Advanced 1、Giant Contend AR 1、Merida REACTO 8000 / SILEX 8000 与 Specialized Roubaix SL8 Sport。新增八款以照片和可核实几何为主，暂不提供近似整车 3D。坎普官网未给出完整几何表，显式保留缺项，仍可对比配置；整车标价按中国大陆官网记录。Cinelli 与 SILEX 的官方配图和文字配置差异在图片旁说明。
 
-目前收录 19 个品牌、49 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
+目前收录 21 个品牌、54 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
 
 新增 TCR Advanced Pro 0 AXS、Defy Advanced Pro 0、Ultimate CF SLX 8 Di2、Endurace CF SLX 8 Di2、Cannondale SuperSix EVO 2 Gen 5、美利达 SCULTURA 8000 / SCULTURA ENDURANCE 8000，以及迪卡侬 Van Rysel RCR-R Pro。新增项均有实拍、十一类部件记录、逐尺码几何和独立 3D 轮廓。
 
@@ -103,7 +103,7 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 ## 涂装与配件图鉴
 
-- 已收录 13 款车的多涂装，共 70 个整车外观条目。点击色块切换官方图片，`?bike=y1rs&paint=ysbo` 可直接分享，支持浏览器前进 / 后退。
+- 已收录 14 款车的多涂装，共 76 个整车外观条目。点击色块切换官方图片，`?bike=y1rs&paint=ysbo` 可直接分享，支持浏览器前进 / 后退。
 - 不同构图的涂装有独立热点；部分官方展示车的附件和齿比与所列零售选项不同，页面明确提示。
 - `?view=parts` 打开独立配件图鉴：14 个厂商、24 款轮组 / 变速系统 / 轮胎 / 车把 / 座管 / 坐垫。
 - 按类别、厂商、在售 / 经典、关键词筛选；查看参数、设计特点、适用场景与兼容性；同类最多三款并排比较。
@@ -137,6 +137,10 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 新增车型按已公开的齿数与速别生成传动：单盘不显示内盘和前拨，飞轮保留最大 / 最小齿与片数，中间齿数仍为外形插值。砾石模型增加宽胎肩部胎纹、外撇弯把、前叉 / 上管安装点与储物舱轮廓；Diverge 的 Future Shock 前端及第四代 SPARK 的外置前端单独表达。
 
 “车架几何”按尺码展示 Stack / Reach、角度、轴距等，并与 3D 联动。“空气动力学”说明各车的设计重点，附速度与 CdA 的风阻功率演示。该演示采用静止空气阻力公式，不是任何车型的实测风阻或跨品牌排名。
+
+本轮补充 Bianchi Oltre RC（YUB21）、Specialissima RC Tour de France（YWB9S）、Infinito PRO Paris–Roubaix（YVB9K）、SCOTT Foil RC 10（425341，含两款涂装）与 CUBE Agree C:62 Race（1132300）。每款含十一类部件记录和官方逐尺码几何；未公开整车重量的版本不填估算值，未补充未经核实的国内售价。Oltre 官方色选混用其他套件图片，因此仅展示已核实的 Dura-Ace 主图。新增车型暂未提供单车 3D。
+
+公共页脚提供返回 [学术主页](https://hliangzhao.me/) 的链接，桌面与移动端均可访问。
 
 ## 数据与版本
 

@@ -115,6 +115,18 @@
       "name": "CAMP 坎普",
       "country": "中国",
       "founded": ""
+    },
+    {
+      "id": "bianchi",
+      "name": "Bianchi 比安奇",
+      "country": "意大利",
+      "founded": "1885"
+    },
+    {
+      "id": "cube",
+      "name": "CUBE",
+      "country": "德国",
+      "founded": "1993"
     }
   ],
   "bikes": [
@@ -13677,6 +13689,1322 @@
         "checkedAt": "2026-09-20"
       },
       "imageSource": "https://www.campbicycle.com/cn/road-bike/sr9.html"
+    },
+    {
+      "id": "bianchi-oltre-rc",
+      "brandId": "bianchi",
+      "name": "Bianchi Oltre RC",
+      "family": "Oltre RC",
+      "build": "Dura-Ace Di2 · 4iiii 双边",
+      "edition": "国际官网 YUB21 配置",
+      "kind": "气动竞赛",
+      "description": "低矮的前端、深截面车架和前 50 / 后 65 mm 轮圈，让 Oltre RC 的气动取向一眼可见。本条目固定为 YUB21 的 Dura-Ace 配置，适合与其他世代的竞赛车比较几何和装配。",
+      "collections": ["current", "flagship"],
+      "image": "/bikes/bianchi-oltre-rc.jpg",
+      "imageCredit": "Bianchi 比安奇",
+      "imageRatio": 1.6188870151770658,
+      "color": "ZW · Carbon / Metallic Celeste",
+      "colorHex": "#4bbdb7",
+      "source": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-4/",
+      "imageSource": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-4/",
+      "sourceLabel": "厂商官方 · 国际官网 YUB21 配置",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "当前官方产品页未公布此配置的整车重量。",
+      "groupset": "Shimano Dura-Ace Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "47",
+            "seatTube": 450,
+            "chainstay": 410,
+            "bbDrop": 58,
+            "headTube": 83,
+            "seatAngle": 74.5,
+            "headAngle": 70.5,
+            "reach": 385,
+            "stack": 470,
+            "wheelbase": 982
+          },
+          {
+            "size": "50",
+            "seatTube": 480,
+            "chainstay": 410,
+            "bbDrop": 58,
+            "headTube": 88,
+            "seatAngle": 74.5,
+            "headAngle": 71.5,
+            "reach": 392,
+            "stack": 478,
+            "wheelbase": 983
+          },
+          {
+            "size": "53",
+            "seatTube": 510,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 103,
+            "seatAngle": 74,
+            "headAngle": 72,
+            "reach": 393,
+            "stack": 504,
+            "wheelbase": 984
+          },
+          {
+            "size": "55",
+            "seatTube": 530,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 118,
+            "seatAngle": 73.5,
+            "headAngle": 72.5,
+            "reach": 397,
+            "stack": 520,
+            "wheelbase": 988
+          },
+          {
+            "size": "57",
+            "seatTube": 550,
+            "chainstay": 412,
+            "bbDrop": 68,
+            "headTube": 133,
+            "seatAngle": 73.5,
+            "headAngle": 73,
+            "reach": 402,
+            "stack": 536,
+            "wheelbase": 996
+          },
+          {
+            "size": "59",
+            "seatTube": 570,
+            "chainstay": 412,
+            "bbDrop": 68,
+            "headTube": 153,
+            "seatAngle": 73,
+            "headAngle": 73,
+            "reach": 406,
+            "stack": 555,
+            "wheelbase": 1005
+          }
+        ],
+        "defaultSize": "55",
+        "source": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-4/",
+        "sourceLabel": "厂商官方 · 逐尺码几何表",
+        "note": "按 YUB21 页面 X / Y 列记录 Reach / Stack，保留原厂参考口径；不混用新一代 Oltre 的尺寸。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "深截面车架、低前端与前后差异框高是这台车的观察重点。这里保留官方几何数值；不根据外观替它估算 CdA。",
+        "source": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-4/",
+        "limit": "结构介绍不等于风洞结果；未录入相同骑手、速度、偏航角和装配条件下的跨车型风阻排名。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Oltre RC 碳纤维车架组",
+          "specs": [
+            ["五通", "PF86.5 × 41 mm"],
+            ["轴规格", "前 12 × 100 / 后 12 × 142 mm"],
+            ["布线", "内走线 · 仅电子变速"]
+          ],
+          "description": "深截面下管与降低的后上叉构成气动竞赛车轮廓。",
+          "x": 57,
+          "y": 48
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Dura-Ace Di2",
+          "specs": [
+            ["变速", "电子 2 × 12 速"],
+            ["制动", "BR-R9270 · 液压碟刹"],
+            ["碟片", "RT-CL900 · 前后 160 mm"]
+          ],
+          "description": "手变、夹器和碟片按 YUB21 官方清单记录。",
+          "x": 74,
+          "y": 24,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Dura-Ace FC-R9200",
+          "specs": [
+            ["结构", "Hollowtech II"],
+            ["功率", "4iiii Precision 3+ 双边"]
+          ],
+          "description": "曲柄长度随尺码变化，具体交付长度应按订单确认。",
+          "x": 50,
+          "y": 69,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Dura-Ace 52 / 36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "竞赛取向的双盘组合；与原配 11–30T 飞轮搭配。",
+          "x": 44,
+          "y": 68,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Dura-Ace CS-R9200",
+          "specs": [
+            ["齿数", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "description": "原配最大飞轮为 30T，不将其误记为 11–34T 配置。",
+          "x": 25,
+          "y": 61,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision 3+",
+          "specs": [
+            ["配置", "原配双边功率计"],
+            ["搭载", "Dura-Ace FC-R9200"]
+          ],
+          "description": "按官方配置表确认双边测量；照片不展示所有传感器位置。",
+          "x": 46,
+          "y": 63
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Reparto Corse Carbon SPB",
+          "specs": [
+            ["框高", "前 50 / 后 65 mm"],
+            ["内宽", "21 mm"],
+            ["轮组重量", "1520 g ± 5%（官方轮组口径）"]
+          ],
+          "description": "前后不同框高。官网后轮塔基文字与 Shimano 套件存在冲突，接口型号暂不收录。",
+          "x": 83,
+          "y": 79
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Pirelli P ZERO Race SL TLR",
+          "specs": [
+            ["尺寸", "28-622"],
+            ["胎体", "120 TPI · Tubeless Ready"]
+          ],
+          "description": "按此版本清单记录轮胎规格；气压需结合轮圈和载荷确定。",
+          "x": 84,
+          "y": 45
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Reparto Corse 碳纤维一体把",
+          "specs": [
+            ["Drop / Reach", "125 / 80 mm"],
+            ["把立 / 把宽", "随车架尺码配置"]
+          ],
+          "description": "一体式前端将把立与弯把连接为整体，换长度时需要核对整套尺寸。",
+          "x": 66,
+          "y": 23
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Oltre Full Carbon Aero",
+          "specs": [
+            ["后飘", "20 mm"],
+            ["长度", "280 / 300 / 350 mm，随尺码"]
+          ],
+          "description": "专用气动截面座管，不等同于通用圆管。",
+          "x": 37,
+          "y": 24
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Bianchi RC139 Carbon Air",
+          "specs": [
+            ["长 / 宽", "250 / 139 mm"],
+            ["导轨", "7 × 9.3 mm"],
+            ["重量", "168 g（官方坐垫口径）"]
+          ],
+          "description": "异形碳轨需匹配座管夹具。宽度是否合适仍取决于骑姿和身体支撑。",
+          "x": 35,
+          "y": 13
+        }
+      ],
+      "imageNote": "采用 YUB21 Dura-Ace 主图；官方颜色切换混入 YUB20 图片，因此仅展示已核实的 ZW 涂装。"
+    },
+    {
+      "id": "bianchi-specialissima-rc-tdf",
+      "brandId": "bianchi",
+      "name": "Bianchi Specialissima RC Tour de France",
+      "family": "Specialissima RC TDF",
+      "build": "Dura-Ace Di2 · 4iiii 双边",
+      "edition": "国际官网 YWB9S 限量版",
+      "kind": "轻量爬坡",
+      "description": "Specialissima 的轻量竞赛路线搭配 49 mm 轮圈、30 mm 轮胎和环法主题涂装。黄、白、绿与波点元素值得放大细看；它是官方限量零售车型，不代表车队比赛实装。",
+      "collections": ["current", "flagship"],
+      "image": "/bikes/bianchi-specialissima-rc-tdf.jpg",
+      "imageCredit": "Bianchi 比安奇",
+      "imageRatio": 1.4997070884592854,
+      "color": "TU · Tour de France",
+      "colorHex": "#f0d629",
+      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-tour-de-france/",
+      "imageSource": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-tour-de-france/",
+      "sourceLabel": "厂商官方 · 国际官网 YWB9S 限量版",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "当前官方产品页未公布此配置的整车重量。",
+      "groupset": "Shimano Dura-Ace Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "47",
+            "seatTube": 420,
+            "chainstay": 410,
+            "bbDrop": 58,
+            "headTube": 100,
+            "seatAngle": 74.5,
+            "headAngle": 70.5,
+            "reach": 379,
+            "stack": 486,
+            "wheelbase": 982
+          },
+          {
+            "size": "50",
+            "seatTube": 450,
+            "chainstay": 410,
+            "bbDrop": 58,
+            "headTube": 105,
+            "seatAngle": 74.5,
+            "headAngle": 71.5,
+            "reach": 386,
+            "stack": 494,
+            "wheelbase": 983
+          },
+          {
+            "size": "53",
+            "seatTube": 480,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 120,
+            "seatAngle": 74,
+            "headAngle": 72,
+            "reach": 387,
+            "stack": 520,
+            "wheelbase": 984
+          },
+          {
+            "size": "55",
+            "seatTube": 500,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 135,
+            "seatAngle": 73.5,
+            "headAngle": 72.5,
+            "reach": 391,
+            "stack": 536,
+            "wheelbase": 988
+          },
+          {
+            "size": "57",
+            "seatTube": 520,
+            "chainstay": 412,
+            "bbDrop": 68,
+            "headTube": 150,
+            "seatAngle": 73.5,
+            "headAngle": 73,
+            "reach": 397,
+            "stack": 552,
+            "wheelbase": 996
+          },
+          {
+            "size": "59",
+            "seatTube": 540,
+            "chainstay": 412,
+            "bbDrop": 68,
+            "headTube": 170,
+            "seatAngle": 73,
+            "headAngle": 73,
+            "reach": 400,
+            "stack": 571,
+            "wheelbase": 1005
+          }
+        ],
+        "defaultSize": "55",
+        "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-tour-de-france/",
+        "sourceLabel": "厂商官方 · 逐尺码几何表",
+        "note": "官方展示平台 47–59 几何；本限量整车配置表仅列 53 / 55 / 57 的曲柄和座管，几何尺码不代表该限量版均可购买。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "轻量竞赛车同样保留内走线与气动前端。将其与 Oltre RC 对照，可以观察前端高度、管型和轮组配置如何形成不同的取舍。",
+        "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-tour-de-france/",
+        "limit": "结构介绍不等于风洞结果；未录入相同骑手、速度、偏航角和装配条件下的跨车型风阻排名。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Specialissima RC 碳纤维车架组",
+          "specs": [
+            ["五通", "PF86.5 × 41 mm"],
+            ["尾钩", "UDH"],
+            ["前叉", "碳纤维 · Countervail"]
+          ],
+          "description": "以轻量竞赛为主线，配置表列出电子变速专用内走线。",
+          "x": 57,
+          "y": 46
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Dura-Ace ST-R9270",
+          "specs": [
+            ["变速", "Di2 · 2 × 12 速"],
+            ["碟片", "RT-CL900 · 前 160 / 后 140 mm"]
+          ],
+          "description": "后碟片尺寸与本次收录的 Oltre RC 不同。",
+          "x": 77,
+          "y": 24,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Dura-Ace FC-R9200",
+          "specs": [
+            ["53 / 55 码", "170 mm"],
+            ["57 码", "172.5 mm"]
+          ],
+          "description": "这里记录限量整车明确公布的曲柄长度，不外推其他尺码。",
+          "x": 51,
+          "y": 69,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Dura-Ace 52 / 36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "52 / 36T 配合 11–30T，提供密集的竞赛齿比选择。",
+          "x": 44,
+          "y": 67,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Dura-Ace CS-R9200",
+          "specs": [
+            ["齿数", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "description": "飞轮型号与齿数按 YWB9S 清单记录。",
+          "x": 25,
+          "y": 61,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision 3+",
+          "specs": [
+            ["配置", "原配双边"],
+            ["曲柄平台", "FC-R9200"]
+          ],
+          "description": "双边功率信息来自官方配置表。",
+          "x": 46,
+          "y": 63
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Bianchi RC 49R",
+          "specs": [
+            ["框高", "49 mm"],
+            ["轮圈规格", "25-622 · 碳纤维"],
+            ["接口", "HG11 · Tubeless Ready"]
+          ],
+          "description": "与前后不同框高的 Oltre SPB 轮组分开记录。",
+          "x": 84,
+          "y": 79
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP5000 S TR",
+          "specs": [
+            ["尺寸", "30-622"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "description": "30 mm 原配胎是该限量版的明确配置。",
+          "x": 87,
+          "y": 44
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Bianchi Reparto Corse 一体把",
+          "specs": [
+            ["Drop / Reach", "125 / 80 mm"],
+            ["系统", "Acros ICR 内走线"]
+          ],
+          "description": "把宽与把立长度随尺码改变，比较时还应结合手变安装位置。",
+          "x": 67,
+          "y": 23
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Specialissima Aero Carbon",
+          "specs": [
+            ["53 码", "300 mm / 0 mm 后飘"],
+            ["55 / 57 码", "350 mm / 20 mm 后飘"]
+          ],
+          "description": "不同尺码的原配后飘不同，不能只看车架座管角推断坐垫位置。",
+          "x": 38,
+          "y": 26
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Choice 140 Nack TDF",
+          "specs": [
+            ["版本", "White TDF"],
+            ["导轨", "Nack 碳轨"]
+          ],
+          "description": "白色坐垫与环法涂装相呼应；应核对碳轨夹具规格。",
+          "x": 36,
+          "y": 16
+        }
+      ]
+    },
+    {
+      "id": "bianchi-infinito-pro-roubaix",
+      "brandId": "bianchi",
+      "name": "Bianchi Infinito PRO Paris–Roubaix",
+      "family": "Infinito PRO Roubaix",
+      "build": "Ultegra Di2 · 4iiii 单边",
+      "edition": "国际官网 YVB9K 限量版",
+      "kind": "长途耐力",
+      "description": "把石板路主题带入耐力公路车：35 mm 原配胎、422 mm 后下叉和更高的前端，配合 Countervail 座管。与同品牌竞赛车对照，比单独看“舒适”标签更容易理解它的定位。",
+      "collections": ["current"],
+      "image": "/bikes/bianchi-infinito-pro-roubaix.jpg",
+      "imageCredit": "Bianchi 比安奇",
+      "imageRatio": 1.413919413919414,
+      "color": "P1 · Inferno Pavè",
+      "colorHex": "#9d263b",
+      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-paris-roubaix/",
+      "imageSource": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-paris-roubaix/",
+      "sourceLabel": "厂商官方 · 国际官网 YVB9K 限量版",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "当前官方产品页未公布此配置的整车重量。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "53",
+            "seatTube": 480,
+            "chainstay": 422,
+            "bbDrop": 73,
+            "headTube": 150,
+            "seatAngle": 74,
+            "headAngle": 71,
+            "reach": 373,
+            "stack": 566,
+            "wheelbase": 1002
+          },
+          {
+            "size": "55",
+            "seatTube": 500,
+            "chainstay": 422,
+            "bbDrop": 73,
+            "headTube": 165,
+            "seatAngle": 73.5,
+            "headAngle": 72,
+            "reach": 377,
+            "stack": 584,
+            "wheelbase": 1003
+          },
+          {
+            "size": "57",
+            "seatTube": 520,
+            "chainstay": 422,
+            "bbDrop": 73,
+            "headTube": 180,
+            "seatAngle": 73.5,
+            "headAngle": 72.5,
+            "reach": 382,
+            "stack": 600,
+            "wheelbase": 1008
+          }
+        ],
+        "defaultSize": "55",
+        "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-paris-roubaix/",
+        "sourceLabel": "厂商官方 · 逐尺码几何表",
+        "note": "按 YVB9K 巴黎—鲁贝限量版页面录入 53 / 55 / 57；X 为 Reach、Y 为 Stack。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "55 码官方 Stack / Reach 为 584 / 377 mm；更高的车架前端与 35 mm 原配胎服务耐力场景。气动把组并不会将它变成与 Oltre 相同的骑姿。",
+        "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-paris-roubaix/",
+        "limit": "结构介绍不等于风洞结果；未录入相同骑手、速度、偏航角和装配条件下的跨车型风阻排名。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Infinito PRO 碳纤维车架组",
+          "specs": [
+            ["五通", "PF86.5 × 41 mm"],
+            ["轮胎上限", "官方标称 40-622"],
+            ["接口", "UDH · 后轴 12 × 142 mm"]
+          ],
+          "description": "宽胎容纳空间并不等于可替代砾石车；用途与装配限制仍以原厂说明为准。",
+          "x": 55,
+          "y": 51
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra ST-R8170",
+          "specs": [
+            ["变速", "Di2 · 2 × 12 速"],
+            ["制动", "BR-R8170"],
+            ["碟片", "SRAM Paceline · 160 mm（官方列示）"]
+          ],
+          "description": "记录官方列出的混搭碟片。前拨一栏误列 RD 型号，本站不据此杜撰前拨编号。",
+          "x": 72,
+          "y": 26,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Ultegra FC-R8100",
+          "specs": [
+            ["53 / 55 码", "170 mm"],
+            ["57 码", "172.5 mm"]
+          ],
+          "description": "曲柄配有 4iiii 单边功率计。",
+          "x": 49,
+          "y": 69,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 50 / 34T",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "description": "与最大 34T 飞轮搭配时，最低齿比为 1:1。",
+          "x": 43,
+          "y": 68,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra CS-R8101",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "爬坡低档比 52 / 36 配 11–30 更轻，但仍应结合个人输出与路线选择。",
+          "x": 25,
+          "y": 62,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision 3+",
+          "specs": [
+            ["配置", "原配单边"],
+            ["曲柄", "FC-R8100"]
+          ],
+          "description": "单边测量与双边测量需要分开理解；不要将估算的另一侧当作独立测量。",
+          "x": 45,
+          "y": 65
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Bianchi Reparto Corse RC 49R",
+          "specs": [
+            ["框高", "49 mm"],
+            ["轮圈规格", "700 × 25c · 碳纤维"],
+            ["辐条 / 接口", "24 孔 · HG11 · Tubeless Ready"]
+          ],
+          "description": "49 mm 碳轮与 35 mm 轮胎共同构成这版的装配取向。",
+          "x": 83,
+          "y": 76
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Pirelli P ZERO Race TLR",
+          "specs": [
+            ["尺寸", "35-622"],
+            ["胎体", "120 TPI"]
+          ],
+          "description": "宽度提供胎压调整空间，实际宽度仍受轮圈与气压影响。",
+          "x": 83,
+          "y": 47
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Reparto Corse 碳纤维一体把",
+          "specs": [
+            ["Drop / Reach", "125 / 80 mm"],
+            ["53 / 55 码", "100 / 400 mm"],
+            ["57 码", "110 / 400 mm"]
+          ],
+          "description": "按官方把立长度 / 把宽记录，配合 Acros 内走线。",
+          "x": 64,
+          "y": 25
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Infinito Countervail Aero-flex",
+          "specs": [
+            ["材质 / 长度", "碳纤维 · 350 mm"],
+            ["后飘", "53 码 0 mm；55 / 57 码 20 mm"]
+          ],
+          "description": "座管的缓震设计和宽胎共同服务长距离骑行；不虚构减震效率百分比。",
+          "x": 36,
+          "y": 30
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Dimension R2 CPC",
+          "specs": [
+            ["长 / 宽", "245 / 143 mm"],
+            ["导轨", "碳纤维"],
+            ["重量", "145 g（官方坐垫口径）"]
+          ],
+          "description": "短鼻形状和表面 CPC 结构值得细看，是否适合仍需试坐。",
+          "x": 34,
+          "y": 21
+        }
+      ],
+      "imageNote": "巴黎—鲁贝主题限量零售配置；不将主题名称视为职业车队比赛用车证明。"
+    },
+    {
+      "id": "scott-foil-rc10",
+      "brandId": "scott",
+      "name": "SCOTT Foil RC 10",
+      "family": "Foil RC 10",
+      "build": "Ultegra Di2",
+      "edition": "全球官网 425341 配置",
+      "kind": "气动竞赛",
+      "description": "FOIL RC 的深截面车架搭配 60 mm 轮圈，Duncan SL Aero CFT 座管则在气动轮廓中加入舒适性设计。收录碳黑与紫粉两种涂装，可直接切换观察；本配置使用分体把立。",
+      "collections": ["current", "popular"],
+      "image": "/bikes/scott-foil-rc10.png",
+      "imageCredit": "SCOTT",
+      "imageRatio": 1.6666666666666667,
+      "color": "Carbon black",
+      "colorHex": "#373737",
+      "source": "https://www.scott-sports.com/global/en/product/scott-foil-rc-10-bike",
+      "imageSource": "https://www.scott-sports.com/global/en/product/scott-foil-rc-10-bike?article=4253413020002",
+      "sourceLabel": "厂商官方 · 全球官网 425341 配置",
+      "checkedAt": "2026-09-20",
+      "weight": "约 7.9 kg",
+      "weightNote": "官方近似整车重量；产品页未注明称重尺码及是否含脚踏。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS / 47",
+            "seatTube": 451.8,
+            "chainstay": 412,
+            "bbDrop": 70,
+            "headTube": 103,
+            "seatAngle": 74.5,
+            "headAngle": 70.5,
+            "reach": 380,
+            "stack": 505,
+            "wheelbase": 987.7
+          },
+          {
+            "size": "XS / 49",
+            "seatTube": 481.9,
+            "chainstay": 412,
+            "bbDrop": 70,
+            "headTube": 108,
+            "seatAngle": 74.5,
+            "headAngle": 71,
+            "reach": 388,
+            "stack": 511,
+            "wheelbase": 993.7
+          },
+          {
+            "size": "S / 52",
+            "seatTube": 502.4,
+            "chainstay": 412,
+            "bbDrop": 70,
+            "headTube": 121,
+            "seatAngle": 74,
+            "headAngle": 72,
+            "reach": 389,
+            "stack": 527,
+            "wheelbase": 990.7
+          },
+          {
+            "size": "M / 54",
+            "seatTube": 522.6,
+            "chainstay": 412,
+            "bbDrop": 70,
+            "headTube": 141,
+            "seatAngle": 73.6,
+            "headAngle": 72.5,
+            "reach": 389,
+            "stack": 548,
+            "wheelbase": 992.6
+          },
+          {
+            "size": "L / 56",
+            "seatTube": 542.4,
+            "chainstay": 412,
+            "bbDrop": 70,
+            "headTube": 161,
+            "seatAngle": 73.3,
+            "headAngle": 73,
+            "reach": 394.5,
+            "stack": 568,
+            "wheelbase": 999.9
+          },
+          {
+            "size": "XL / 58",
+            "seatTube": 559.8,
+            "chainstay": 412,
+            "bbDrop": 70,
+            "headTube": 181,
+            "seatAngle": 73,
+            "headAngle": 73.3,
+            "reach": 400,
+            "stack": 589,
+            "wheelbase": 1008.6
+          },
+          {
+            "size": "XXL / 61",
+            "seatTube": 572.4,
+            "chainstay": 412,
+            "bbDrop": 70,
+            "headTube": 199,
+            "seatAngle": 72.5,
+            "headAngle": 73.3,
+            "reach": 409,
+            "stack": 606,
+            "wheelbase": 1022.7
+          }
+        ],
+        "defaultSize": "M / 54",
+        "source": "https://www.scott-sports.com/global/en/product/scott-foil-rc-10-bike",
+        "sourceLabel": "厂商官方 · 逐尺码几何表",
+        "note": "来自 425341 产品页 Geometry；BB offset −70 mm 换记为五通下沉 70 mm。座管长度取五通中心至座管顶端。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "深截面前车架、降低的后上叉和 60 mm 轮圈构成气动取向；CFT 座管则体现舒适性方面的取舍。前端按真实分体把组记录。",
+        "source": "https://www.scott-sports.com/global/en/product/scott-foil-rc-10-bike",
+        "limit": "结构介绍不等于风洞结果；未录入相同骑手、速度、偏航角和装配条件下的跨车型风阻排名。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "FOIL RC Disc HMX",
+          "specs": [
+            ["车架 / 前叉", "HMX 碳纤维"],
+            ["布线", "全内走线"],
+            ["尾钩", "可更换式"]
+          ],
+          "description": "不同等级的 FOIL 可能采用不同铺层，本站固定记录 HMX 的 RC 10。",
+          "x": 57,
+          "y": 48
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra ST-R8170",
+          "specs": [
+            ["变速", "Di2 · 2 × 12 速"],
+            ["制动", "BR-R8170"],
+            ["碟片", "RT-CL800 · 前 160 / 后 140 mm"]
+          ],
+          "description": "电子变速与液压制动结合，按全球 425341 配置表记录。",
+          "x": 81,
+          "y": 16,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Ultegra FC-R8100",
+          "specs": [
+            ["结构", "Hollowtech II"],
+            ["中轴", "SM-BB71-41B"]
+          ],
+          "description": "官方配置未列功率传感器，普通 Ultegra 曲柄不自动代表带功率计。",
+          "x": 51,
+          "y": 73,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 52 / 36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "偏竞赛的双盘搭配 11–34T 后飞轮。",
+          "x": 43,
+          "y": 73,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra CS-R8100-12",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "按清单保留本型号，未与 CUBE 的 CS-R8101 混写。",
+          "x": 21,
+          "y": 64,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需核对曲柄或脚踏接口"]
+          ],
+          "description": "因此不在实车照片上显示虚构的功率计热点。",
+          "x": 45,
+          "y": 66
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Syncros Capital 1.0 60",
+          "specs": [
+            ["框高", "60 mm"],
+            ["辐条", "前后各 24 根"],
+            ["车轴", "Syncros SL Axle"]
+          ],
+          "description": "较深轮圈是本配置的明显特征；侧风操控不能仅由框高单一判断。",
+          "x": 91,
+          "y": 81
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Schwalbe PRO ONE Aero",
+          "specs": [
+            ["尺寸", "前后 700 × 28c"],
+            ["结构", "TL-Easy · 折叠胎"]
+          ],
+          "description": "前后轮均按官方 PRO ONE Aero 配置记录。",
+          "x": 92.5,
+          "y": 43
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Creston 1.0 Aero + Foil 1.5 Aero",
+          "specs": [
+            ["车把", "Syncros Creston 1.0 Aero"],
+            ["把立", "Syncros Foil 1.5 Aero"]
+          ],
+          "description": "外观看似一体，配置表实际列为独立车把与把立。",
+          "x": 70,
+          "y": 14
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Syncros Duncan SL Aero CFT",
+          "specs": [
+            ["型号", "Duncan SL Aero CFT"],
+            ["适配", "FOIL 专用气动截面"]
+          ],
+          "description": "座管结构是这台气动公路车的细节观察点，不能替换为普通圆座管。",
+          "x": 34,
+          "y": 19
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Syncros Belcarra V 2.0 NEO",
+          "specs": [
+            ["版本", "Cut Out"],
+            ["尺寸 / 重量", "本车配置页未公布"]
+          ],
+          "description": "中央开孔提供另一种支撑形状；舒适性取决于个人适配。",
+          "x": 33,
+          "y": 7
+        }
+      ],
+      "paints": [
+        {
+          "id": "violet-pink",
+          "name": "Violet pink / Carbon black",
+          "hex": "#cbb7d6",
+          "image": "/bikes/scott-foil-rc10-violet.png",
+          "imageRatio": 1.6666666666666667,
+          "source": "https://www.scott-sports.com/global/en/product/scott-foil-rc-10-bike?article=4253418353002"
+        }
+      ]
+    },
+    {
+      "id": "cube-agree-c62-race",
+      "brandId": "cube",
+      "name": "CUBE Agree C:62 Race",
+      "family": "Agree C:62 Race",
+      "build": "Ultegra Di2 · 4iiii 单边",
+      "edition": "德国官网 1132300 配置",
+      "kind": "全能公路",
+      "description": "兼顾气动轮廓与长距离场景的 C:62 碳纤维公路车：50 / 34T 双盘、11–34T 飞轮与 30 mm 原配胎，另有随车小型车架包。本条目锁定 1132300，避免把不同年份的同名配置混在一起。",
+      "collections": ["current"],
+      "image": "/bikes/cube-agree-c62-race.jpg",
+      "imageCredit": "CUBE",
+      "imageRatio": 1.6566005176876617,
+      "color": "Chromeblue / Liquidblue",
+      "colorHex": "#057eaa",
+      "source": "https://www.cube.eu/de-de/cube-agree-c-62-race-chromeblue-n-liquidblue/1132300",
+      "imageSource": "https://www.cube.eu/de-de/cube-agree-c-62-race-chromeblue-n-liquidblue/1132300",
+      "sourceLabel": "厂商官方 · 德国官网 1132300 配置",
+      "checkedAt": "2026-09-20",
+      "weight": "约 7.6 kg",
+      "weightNote": "德国官方产品页列示 7.6 kg；未注明称重尺码及脚踏口径。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "47",
+            "seatTube": 410,
+            "chainstay": 412,
+            "bbDrop": 73,
+            "headTube": 112,
+            "seatAngle": 74.6,
+            "headAngle": 71,
+            "reach": 376,
+            "stack": 513,
+            "wheelbase": 986
+          },
+          {
+            "size": "50",
+            "seatTube": 440,
+            "chainstay": 412,
+            "bbDrop": 73,
+            "headTube": 120,
+            "seatAngle": 74.6,
+            "headAngle": 71.5,
+            "reach": 378,
+            "stack": 523,
+            "wheelbase": 987
+          },
+          {
+            "size": "53",
+            "seatTube": 470,
+            "chainstay": 412,
+            "bbDrop": 73,
+            "headTube": 140,
+            "seatAngle": 74,
+            "headAngle": 72,
+            "reach": 383,
+            "stack": 544,
+            "wheelbase": 994
+          },
+          {
+            "size": "56",
+            "seatTube": 500,
+            "chainstay": 412,
+            "bbDrop": 71,
+            "headTube": 170,
+            "seatAngle": 73.5,
+            "headAngle": 72.5,
+            "reach": 391,
+            "stack": 572,
+            "wheelbase": 1007
+          },
+          {
+            "size": "58",
+            "seatTube": 520,
+            "chainstay": 412,
+            "bbDrop": 71,
+            "headTube": 190,
+            "seatAngle": 73,
+            "headAngle": 72.5,
+            "reach": 394,
+            "stack": 591,
+            "wheelbase": 1017
+          },
+          {
+            "size": "60",
+            "seatTube": 540,
+            "chainstay": 412,
+            "bbDrop": 69,
+            "headTube": 208,
+            "seatAngle": 72.5,
+            "headAngle": 72.5,
+            "reach": 399,
+            "stack": 606,
+            "wheelbase": 1027
+          },
+          {
+            "size": "62",
+            "seatTube": 560,
+            "chainstay": 412,
+            "bbDrop": 69,
+            "headTube": 231,
+            "seatAngle": 72.5,
+            "headAngle": 72.5,
+            "reach": 402,
+            "stack": 628,
+            "wheelbase": 1037
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.cube.eu/de-de/cube-agree-c-62-race-chromeblue-n-liquidblue/1132300",
+        "sourceLabel": "厂商官方 · 逐尺码几何表",
+        "note": "仅对应德国站产品编号 1132300 的几何与装配，不混用早期同名 Agree C:62 Race 的规格。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "前后 49 / 54 mm 轮圈与一体前端体现气动取向，紧凑齿比和 30 mm 轮胎又照顾长距离路线。56 码 Stack / Reach 为 572 / 391 mm，可在对比页直接观察。",
+        "source": "https://www.cube.eu/de-de/cube-agree-c-62-race-chromeblue-n-liquidblue/1132300",
+        "limit": "结构介绍不等于风洞结果；未录入相同骑手、速度、偏航角和装配条件下的跨车型风阻排名。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "C:62 Advanced Twin Mold",
+          "specs": [
+            ["轴规格", "前 12 × 100 / 后 12 × 142 mm"],
+            ["尾钩", "UDH"],
+            ["前叉", "CSL Evo Aero C:62"]
+          ],
+          "description": "车架有内走线、集成座管夹和储物包兼容设计。",
+          "x": 57,
+          "y": 44
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra ST-R8170",
+          "specs": [
+            ["变速", "Di2 · 2 × 12 速"],
+            ["制动", "BR-R8170 · 前后 160 mm 碟片"]
+          ],
+          "description": "前后碟片均为 160 mm，与部分竞赛车的 160 / 140 mm 组合不同。",
+          "x": 81,
+          "y": 12,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Ultegra FC-R8100",
+          "specs": [
+            ["结构", "Hollowtech II"],
+            ["中轴", "SM-BB71-41B · 86 mm Pressfit"]
+          ],
+          "description": "原配单边 4iiii Precision 3+，按产品号 1132300 记录。",
+          "x": 51,
+          "y": 72,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 50 / 34T",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "description": "紧凑双盘搭配 11–34T，最低齿比为 1:1。",
+          "x": 43,
+          "y": 70,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra CS-R8101",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "同名车型跨年可能换套件，以此产品编号清单为准。",
+          "x": 20,
+          "y": 62,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision 3+",
+          "specs": [
+            ["配置", "原配单边"],
+            ["曲柄平台", "Ultegra FC-R8100"]
+          ],
+          "description": "单边功率由一侧测量推算总输出；左右不对称时会影响估算。",
+          "x": 44,
+          "y": 65
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Newmen Streem A.49/54 Carbon",
+          "specs": [
+            ["框高", "前 49 / 后 54 mm"],
+            ["辐条", "前 21 / 后 24 根"],
+            ["接口", "Center Lock · Tubeless Ready"]
+          ],
+          "description": "官方清单给出前后不同框高和辐条数，不混用旧版 Streem 轮组。",
+          "x": 93,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP5000 S TR",
+          "specs": [
+            ["尺寸", "30-622"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "description": "采用配置表里的 S TR 版本，未将正文简称 GP5000 当作开口胎型号。",
+          "x": 93,
+          "y": 39
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "IC Aero Cockpit System",
+          "specs": [
+            ["走线", "Integrated Cable Routing"],
+            ["配套", "Aero Spacer / Garmin Mount Interface"]
+          ],
+          "description": "一体化气动前端；具体把宽、把立长度随车架尺码变化。",
+          "x": 70,
+          "y": 10
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Agree C:62 Aero",
+          "specs": [
+            ["设计", "Comfort Flex"],
+            ["夹具", "集成座管夹"]
+          ],
+          "description": "专用气动截面与舒适性设计并存，更换时需核对型号。",
+          "x": 34,
+          "y": 18
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "ACID Nuance SLT Carbon",
+          "specs": [
+            ["型号", "Nuance SLT Carbon"],
+            ["尺寸 / 重量", "本车配置页未公布"]
+          ],
+          "description": "以实际坐骨支撑和骑姿选择，不凭碳纤维名称判断舒适程度。",
+          "x": 33,
+          "y": 4
+        }
+      ]
     }
   ]
 }

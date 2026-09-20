@@ -937,6 +937,19 @@ footer > span {
   color: #88947d;
   letter-spacing: 1px;
 }
+footer .academic-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #61724f;
+}
+footer .academic-home-link:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 footer > a:last-child {
   font-size: 12px;
   display: flex;
