@@ -13,6 +13,7 @@ import {
   X,
 } from 'lucide-react';
 import type { Bike, Catalog, Collection } from './types';
+import { imageUrl, loadCatalog } from './catalog';
 
 import Engineering from './Engineering';
 const Bike3D = lazy(() => import('./Bike3D'));
@@ -42,13 +43,9 @@ function App() {
   const workbench = useRef<HTMLDivElement>(null);
   const load = () => {
     setError('');
-    fetch('/api/catalog')
-      .then((r) => {
-        if (!r.ok) throw new Error('无法读取车型资料');
-        return r.json();
-      })
+    loadCatalog()
       .then(setCatalog)
-      .catch(() => setError('暂时无法连接车型库，请确认本地服务已启动。'));
+      .catch(() => setError('暂时无法加载车型库，请稍后重试。'));
   };
   useEffect(load, []);
   useEffect(() => {
@@ -109,12 +106,10 @@ function App() {
     const url = new URL(location.href);
     url.searchParams.set('bike', item.id);
     history.pushState({}, '', url);
-    document
-      .getElementById('explorer')
-      ?.scrollIntoView({
-        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
-        block: 'start',
-      });
+    document.getElementById('explorer')?.scrollIntoView({
+      behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      block: 'start',
+    });
   };
   const filtered =
     catalog?.bikes.filter(
@@ -138,7 +133,7 @@ function App() {
         跳转到整车探索
       </a>
       <header className="site-header">
-        <a className="wordmark" href="/" aria-label="VÉLODEX 首页">
+        <a className="wordmark" href={import.meta.env.BASE_URL} aria-label="VÉLODEX 首页">
           <span className="logo-mark">V</span>VÉLODEX
         </a>
         <nav aria-label="主导航">
@@ -264,7 +259,7 @@ function App() {
                       >
                         <img
                           className="bike-photo"
-                          src={bike.image}
+                          src={imageUrl(bike.image)}
                           style={{ objectPosition: bike.imagePosition }}
                           alt={`${currentBrand?.name} ${bike.name} ${bike.color} 传动侧整车实拍`}
                           key={bike.id}
@@ -512,7 +507,7 @@ function App() {
         <a className="wordmark" href="#">
           VÉLODEX
         </a>
-        <span>献给每一个，忍不住回头看车的人。</span>
+        <span>献给每一个忍不住回头看车的人。</span>
         <a href="#explorer">
           回到整车探索 <ArrowUpRight size={16} />
         </a>
@@ -600,7 +595,7 @@ function BikeCard({
       </div>
       <div className="card-image">
         <img
-          src={bike.image}
+          src={imageUrl(bike.image)}
           style={{ objectPosition: bike.imagePosition }}
           alt={bike.name}
           loading="lazy"

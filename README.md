@@ -24,6 +24,21 @@ npm run format    # 整理源码格式
 
 生产服务可通过 `HOST`、`PORT` 环境变量配置。开发服务使用固定 API 端口 3001，与 Vite 代理对应。生产构建后的页面、字体和车型图片均从本地服务加载。
 
+## GitHub Pages
+
+网站入口：https://hliangzhao.github.io/velodex/ （GitHub 会按个人主页域名配置跳转。）
+
+推送到 `main` 后，`Deploy GitHub Pages` 工作流会运行测试、构建并自动发布，也可以在 Actions 中手动运行。Pages 设置的发布来源为 **GitHub Actions**。
+
+```sh
+npm run build:pages
+npm run preview:pages  # http://127.0.0.1:4173/velodex/
+```
+
+Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 打包为带内容哈希的静态资源，不需要运行 Express。图片、首页链接和 3D 模块使用正确的站点子路径；车型分享链接仍使用 `?bike=xlab-ad9`。本地开发及 `npm run build` / `npm start` 继续使用 Express API。
+
+更新车型数据后推送即可发布新版本。工作流从 Pages 配置读取站点路径；本地 Pages 预览默认使用 `/velodex/`，可通过 `PAGES_BASE_PATH` 覆盖。
+
 ## 功能
 
 - 真实整车图上的八类部件热点：车架、手变、曲柄、牙盘、飞轮、功率计、轮组、轮胎。
