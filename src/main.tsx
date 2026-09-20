@@ -11,6 +11,8 @@ import '@fontsource/barlow-condensed/latin-500.css';
 import '@fontsource/barlow-condensed/latin-600.css';
 import './styles.css';
 import './experience.css';
+const WorkshopPage = lazy(() => import('./WorkshopPage'));
+const FeedbackPage = lazy(() => import('./FeedbackPage'));
 const PartsPage = lazy(() => import('./PartsPage'));
 const ComparePage = lazy(() => import('./ComparePage'));
 const GaragePage = lazy(() => import('./GaragePage'));
@@ -18,7 +20,11 @@ const StoriesPage = lazy(() => import('./StoriesPage'));
 const params = new URLSearchParams(location.search);
 const view = params.get('view');
 const page =
-  view === 'parts' ? (
+  view === 'workshop' ? (
+    <WorkshopPage />
+  ) : view === 'feedback' ? (
+    <FeedbackPage />
+  ) : view === 'parts' ? (
     <PartsPage />
   ) : view === 'compare' ? (
     <ComparePage />

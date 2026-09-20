@@ -138,6 +138,9 @@ function Garage({ catalog }: { catalog: Catalog }) {
           />
         </div>
       </div>
+      <a className="text-link" href={`${base}?view=workshop&tool=build`}>
+        打开我的梦幻装车单 →
+      </a>
       <p className="garage-local-note">
         无需账号，数据保存在当前浏览器。换设备或清理浏览器前，请导出备份；导入会合并新收藏并保留已有笔记。
       </p>

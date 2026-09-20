@@ -91,6 +91,12 @@
       "name": "PARDUS 瑞豹",
       "country": "中国",
       "founded": ""
+    },
+    {
+      "id": "scott",
+      "name": "SCOTT",
+      "country": "瑞士",
+      "founded": "1958"
     }
   ],
   "bikes": [
@@ -8951,6 +8957,898 @@
       "colorHex": "#9b9f8f",
       "imageRatio": 1.6,
       "imageCredit": "GIANT 官方产品图片"
+    },
+    {
+      "id": "aethos-expert",
+      "brandId": "specialized",
+      "name": "Aethos Expert",
+      "family": "Aethos",
+      "edition": "2022 美版 · Ultegra Di2",
+      "kind": "轻量爬坡",
+      "description": "细圆管、传统把立与独立座管，把轻量公路车的经典轮廓留在碳纤维时代。",
+      "collections": ["classic"],
+      "source": "https://www.specialized.com/us/en/aethos-expert-shimano-ultegra-di2/p/199442",
+      "material": "FACT 10r 碳纤维",
+      "color": "Pine Green / White",
+      "colorHex": "#245d4c",
+      "weight": "未公布",
+      "weightNote": "所选 Expert 整车未公布称重；不可套用 S-Works 585 g 车架的宣传值。",
+      "build": "Shimano Ultegra Di2",
+      "groupset": "Shimano Ultegra Di2 2×12",
+      "sourceLabel": "官方整车配置",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "FACT 10r 碳纤维",
+          "description": "细圆管、传统把立与独立座管，把轻量公路车的经典轮廓留在碳纤维时代。",
+          "specs": [
+            ["车架等级", "FACT 10r"],
+            ["后轴", "12 × 142 mm"],
+            ["前轴", "12 × 100 mm"],
+            ["座管", "Roval Alpinist 碳纤维"]
+          ],
+          "x": 55,
+          "y": 45
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra R8170",
+          "description": "电子变速与液压制动。",
+          "specs": [
+            ["系统", "Di2 2 × 12"],
+            ["制动", "液压碟刹"]
+          ],
+          "x": 81,
+          "y": 10,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano FC-R8100",
+          "description": "普通曲柄配置，不等于带功率计版本。",
+          "specs": [
+            ["系列", "Ultegra"],
+            ["中轴", "BSA 螺纹"]
+          ],
+          "x": 49,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "双盘布局。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["速别", "12 速"]
+          ],
+          "x": 43,
+          "y": 70
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra",
+          "description": "按此地区整车配置表记录。",
+          "specs": [
+            ["范围", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "x": 20,
+          "y": 59
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "原配未列出",
+          "description": "配置表没有列出功率计型号。",
+          "specs": [
+            ["状态", "未列出"],
+            ["改装", "需单独确认接口与车架间隙"]
+          ],
+          "x": 43,
+          "y": 66
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "Roval C38",
+          "description": "配置以本页所选版本为准。",
+          "specs": [
+            ["框高", "38 mm"],
+            ["辐条", "官方未在整车页列出辐条数量"],
+            ["制动", "碟刹"]
+          ],
+          "x": 85,
+          "y": 81
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "S-Works Turbo",
+          "description": "原配轮胎规格；更宽胎的改装需另核验。",
+          "specs": [
+            ["规格", "700 × 26C"],
+            ["结构", "有内胎开口胎"]
+          ],
+          "x": 90,
+          "y": 49
+        }
+      ],
+      "image": "/bikes/aethos-expert.png",
+      "imageRatio": 1.530612244897959,
+      "imageCredit": "Specialized 官方产品图片",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "49",
+            "stack": 514,
+            "reach": 375,
+            "headTube": 109,
+            "headAngle": 71.75,
+            "bbDrop": 74,
+            "wheelbase": 973,
+            "seatTube": 431,
+            "seatAngle": 75.5,
+            "chainstay": 410
+          },
+          {
+            "size": "52",
+            "stack": 527,
+            "reach": 380,
+            "headTube": 120,
+            "headAngle": 72.5,
+            "bbDrop": 74,
+            "wheelbase": 975,
+            "seatTube": 462,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "54",
+            "stack": 544,
+            "reach": 384,
+            "headTube": 137,
+            "headAngle": 73,
+            "bbDrop": 72,
+            "wheelbase": 978,
+            "seatTube": 481,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "56",
+            "stack": 565,
+            "reach": 395,
+            "headTube": 157,
+            "headAngle": 73.5,
+            "bbDrop": 72,
+            "wheelbase": 991,
+            "seatTube": 504,
+            "seatAngle": 73.5,
+            "chainstay": 410
+          },
+          {
+            "size": "58",
+            "stack": 591,
+            "reach": 402,
+            "headTube": 184,
+            "headAngle": 73.5,
+            "bbDrop": 72,
+            "wheelbase": 1005,
+            "seatTube": 532,
+            "seatAngle": 73.5,
+            "chainstay": 410
+          },
+          {
+            "size": "61",
+            "stack": 612,
+            "reach": 408,
+            "headTube": 204,
+            "headAngle": 74,
+            "bbDrop": 72,
+            "wheelbase": 1012,
+            "seatTube": 567,
+            "seatAngle": 73,
+            "chainstay": 410
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.specialized.com/us/en/aethos-expert-shimano-ultegra-di2/p/199442",
+        "sourceLabel": "官方几何表 / 技术手册",
+        "note": "原厂尺寸表；整车零件长度随尺码变化，热点配置并不随几何尺码重配。"
+      },
+      "aero": {
+        "title": "从可观察的设计读起",
+        "description": "以轻量和骑行体验为设计重点；细管造型本身不能说明整车风阻。",
+        "source": "https://www.specialized.com/us/en/aethos-expert-shimano-ultegra-di2/p/199442",
+        "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
+      },
+      "imageNote": "官方存档展示图的零件外观可能与更新后的 Di2 配置表不同；参数以所选官方配置表为准。"
+    },
+    {
+      "id": "aethos2-expert",
+      "brandId": "specialized",
+      "name": "Aethos 2 Expert",
+      "family": "Aethos 2",
+      "edition": "美国官网 · Ultegra Di2",
+      "kind": "轻量爬坡",
+      "description": "更高的前端与隐藏走线，给 Aethos 的轻量路线加入新的姿态选择。",
+      "collections": ["current", "popular"],
+      "source": "https://www.specialized.com/us/en/aethos-2-expert-shimano-ultegra-di2/p/4294984?color=5472524-4294984",
+      "material": "FACT 10r 碳纤维",
+      "color": "Deep Marine",
+      "colorHex": "#233e63",
+      "weight": "7.27",
+      "weightNote": "官方 56 码整车标示；涂装、尺码和零件批次会影响实际重量。",
+      "build": "Shimano Ultegra Di2",
+      "groupset": "Shimano Ultegra Di2 2×12",
+      "sourceLabel": "官方整车配置",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "FACT 10r 碳纤维",
+          "description": "更高的前端与隐藏走线，给 Aethos 的轻量路线加入新的姿态选择。",
+          "specs": [
+            ["车架等级", "Aethos 2 FACT 10r"],
+            ["走线", "隐藏走线"],
+            ["前 / 后轴", "12 × 100 / 142 mm"],
+            ["座管", "Roval Alpinist 碳纤维"]
+          ],
+          "x": 55,
+          "y": 44
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra R8170",
+          "description": "电子变速与液压制动。",
+          "specs": [
+            ["系统", "Di2 2 × 12"],
+            ["制动", "液压碟刹"]
+          ],
+          "x": 76,
+          "y": 16,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano FC-R8100",
+          "description": "普通曲柄配置，不等于带功率计版本。",
+          "specs": [
+            ["系列", "Ultegra"],
+            ["中轴", "BSA 螺纹"]
+          ],
+          "x": 49,
+          "y": 71
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "双盘布局。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["速别", "12 速"]
+          ],
+          "x": 46,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra",
+          "description": "按此地区整车配置表记录。",
+          "specs": [
+            ["范围", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "x": 26,
+          "y": 62
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "原配未列出",
+          "description": "配置表没有列出功率计型号。",
+          "specs": [
+            ["状态", "未列出"],
+            ["改装", "需单独确认接口与车架间隙"]
+          ],
+          "x": 45,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "Roval C38",
+          "description": "配置以本页所选版本为准。",
+          "specs": [
+            ["框高", "38 mm"],
+            ["辐条", "官方未在整车页列出辐条数量"],
+            ["制动", "碟刹"]
+          ],
+          "x": 83,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "S-Works Turbo",
+          "description": "原配轮胎规格；更宽胎的改装需另核验。",
+          "specs": [
+            ["规格", "700 × 30C"],
+            ["结构", "有内胎开口胎"]
+          ],
+          "x": 88,
+          "y": 53
+        }
+      ],
+      "image": "/bikes/aethos2-expert.png",
+      "imageRatio": 1.7769002961500493,
+      "imageCredit": "Specialized 官方产品图片",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "49",
+            "stack": 522,
+            "reach": 373,
+            "headTube": 114,
+            "headAngle": 71.4,
+            "bbDrop": 76.5,
+            "wheelbase": 978,
+            "seatTube": 450,
+            "seatAngle": 75.5,
+            "chainstay": 410
+          },
+          {
+            "size": "52",
+            "stack": 538,
+            "reach": 377,
+            "headTube": 128,
+            "headAngle": 72.1,
+            "bbDrop": 76.5,
+            "wheelbase": 981,
+            "seatTube": 470,
+            "seatAngle": 74.5,
+            "chainstay": 410
+          },
+          {
+            "size": "54",
+            "stack": 559,
+            "reach": 384,
+            "headTube": 150,
+            "headAngle": 72.5,
+            "bbDrop": 75,
+            "wheelbase": 992,
+            "seatTube": 490,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "56",
+            "stack": 580,
+            "reach": 391,
+            "headTube": 169,
+            "headAngle": 73,
+            "bbDrop": 75,
+            "wheelbase": 998,
+            "seatTube": 510,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "58",
+            "stack": 606,
+            "reach": 398,
+            "headTube": 198,
+            "headAngle": 73,
+            "bbDrop": 73.5,
+            "wheelbase": 1013,
+            "seatTube": 535,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "61",
+            "stack": 627,
+            "reach": 404,
+            "headTube": 218,
+            "headAngle": 73.5,
+            "bbDrop": 73.5,
+            "wheelbase": 1020,
+            "seatTube": 570,
+            "seatAngle": 74,
+            "chainstay": 410
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.specialized.com/us/en/aethos-2-expert-shimano-ultegra-di2/p/4294984?color=5472524-4294984",
+        "sourceLabel": "官方几何表 / 技术手册",
+        "note": "原厂尺寸表；整车零件长度随尺码变化，热点配置并不随几何尺码重配。"
+      },
+      "aero": {
+        "title": "从可观察的设计读起",
+        "description": "这代整合了前端走线；车架姿态、轮胎和轮组仍需一起讨论，不以隐藏走线代替风洞数据。",
+        "source": "https://www.specialized.com/us/en/aethos-2-expert-shimano-ultegra-di2/p/4294984?color=5472524-4294984",
+        "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
+      }
+    },
+    {
+      "id": "scott-addict-rc10",
+      "brandId": "scott",
+      "name": "Addict RC 10",
+      "family": "Addict RC",
+      "edition": "英国官网 · 型号 423246",
+      "kind": "轻量爬坡",
+      "description": "低前端竞赛几何与一体把，把轻量平台的注意力放在爬坡和快速转向。",
+      "collections": ["current", "popular"],
+      "source": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-bike",
+      "material": "HMX 碳纤维",
+      "color": "Sunbeam Black",
+      "colorHex": "#333d41",
+      "weight": "约 7.0",
+      "weightNote": "官方近似整车重量，未注明称重尺码；不是跨车型同条件实测。",
+      "build": "Shimano Ultegra Di2",
+      "groupset": "Shimano Ultegra Di2 2×12",
+      "sourceLabel": "官方整车配置",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "HMX 碳纤维",
+          "description": "低前端竞赛几何与一体把，把轻量平台的注意力放在爬坡和快速转向。",
+          "specs": [
+            ["车架等级", "Addict RC HMX"],
+            ["中轴壳体", "41 × 86.5 mm"],
+            ["官方最大胎宽", "34 mm"],
+            ["把组", "Syncros IC-R100-SL 一体碳把"]
+          ],
+          "x": 57,
+          "y": 39.5
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra R8170",
+          "description": "电子变速与液压制动。",
+          "specs": [
+            ["系统", "Di2 2 × 12"],
+            ["制动", "液压碟刹"]
+          ],
+          "x": 80,
+          "y": 15.5,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano FC-R8100",
+          "description": "普通曲柄配置，不等于带功率计版本。",
+          "specs": [
+            ["系列", "Ultegra"],
+            ["中轴", "Shimano SM-BB71-41B"]
+          ],
+          "x": 50,
+          "y": 69.5
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "双盘布局。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["速别", "12 速"]
+          ],
+          "x": 45,
+          "y": 69.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra",
+          "description": "按此地区整车配置表记录。",
+          "specs": [
+            ["范围", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "x": 21,
+          "y": 59.0
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "原配未列出",
+          "description": "配置表没有列出功率计型号。",
+          "specs": [
+            ["状态", "未列出"],
+            ["改装", "需单独确认接口与车架间隙"]
+          ],
+          "x": 45,
+          "y": 65.0
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "Syncros Capital 1.0S 40",
+          "description": "配置以本页所选版本为准。",
+          "specs": [
+            ["框高", "40 mm"],
+            ["辐条", "前后各 24"],
+            ["制动", "碟刹"]
+          ],
+          "x": 86,
+          "y": 77.0
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Schwalbe ONE TLE Race-Guard",
+          "description": "原配轮胎规格；更宽胎的改装需另核验。",
+          "specs": [
+            ["规格", "700 × 30C"],
+            ["结构", "TLE 真空胎"]
+          ],
+          "x": 92,
+          "y": 51.5
+        }
+      ],
+      "image": "/bikes/scott-addict-rc10.png",
+      "imageRatio": 1.5,
+      "imageCredit": "SCOTT 官方产品图片",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "47",
+            "stack": 501,
+            "reach": 379,
+            "headTube": 90,
+            "headAngle": 71.3,
+            "bbDrop": 74,
+            "wheelbase": 977,
+            "seatTube": 420,
+            "seatAngle": 74.5,
+            "chainstay": 410
+          },
+          {
+            "size": "49",
+            "stack": 513,
+            "reach": 386,
+            "headTube": 100,
+            "headAngle": 71.8,
+            "bbDrop": 74,
+            "wheelbase": 983,
+            "seatTube": 440,
+            "seatAngle": 74.5,
+            "chainstay": 410
+          },
+          {
+            "size": "52",
+            "stack": 526,
+            "reach": 392,
+            "headTube": 113,
+            "headAngle": 72.3,
+            "bbDrop": 73,
+            "wheelbase": 989,
+            "seatTube": 460,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "54",
+            "stack": 543,
+            "reach": 395,
+            "headTube": 130,
+            "headAngle": 72.8,
+            "bbDrop": 72,
+            "wheelbase": 991,
+            "seatTube": 480,
+            "seatAngle": 73.6,
+            "chainstay": 410
+          },
+          {
+            "size": "56",
+            "stack": 565,
+            "reach": 403,
+            "headTube": 150,
+            "headAngle": 73.4,
+            "bbDrop": 72,
+            "wheelbase": 999,
+            "seatTube": 500,
+            "seatAngle": 73.3,
+            "chainstay": 410
+          },
+          {
+            "size": "58",
+            "stack": 584,
+            "reach": 406,
+            "headTube": 170,
+            "headAngle": 73.6,
+            "bbDrop": 72,
+            "wheelbase": 1006,
+            "seatTube": 520,
+            "seatAngle": 72.9,
+            "chainstay": 410
+          },
+          {
+            "size": "61",
+            "stack": 604,
+            "reach": 411,
+            "headTube": 190,
+            "headAngle": 73.8,
+            "bbDrop": 72,
+            "wheelbase": 1015,
+            "seatTube": 540,
+            "seatAngle": 72.5,
+            "chainstay": 410
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://asset-misc.scott-sports.com/Add/Addict_RC_Manual_A4_2025_Scott-Sports_EN_2194728_2.pdf",
+        "sourceLabel": "官方几何表 / 技术手册",
+        "note": "SCOTT 2025 Addict RC 技术手册第 3 页；保留毫米尺码名称，54 对应销售 M 码。"
+      },
+      "aero": {
+        "title": "从可观察的设计读起",
+        "description": "一体把与前端整合可从照片观察；官方未提供本配置可横向比较的风阻数字。",
+        "source": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-bike",
+        "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
+      }
+    },
+    {
+      "id": "allez-sprint-comp",
+      "brandId": "specialized",
+      "name": "Allez Sprint Comp",
+      "family": "Allez Sprint",
+      "edition": "官网存档 · 105 R7000 / 11 速",
+      "kind": "全能公路",
+      "description": "把铝合金焊接工艺放到聚光灯下：Smartweld、碳叉与赛车姿态，组成很有辨识度的竞赛铝架。",
+      "collections": ["classic"],
+      "source": "https://www.specialized.com/us/en/allez-sprint-comp/p/189818?color=308063-189818",
+      "material": "E5 铝合金 / 碳叉",
+      "color": "Gloss Oasis / Cool Grey",
+      "colorHex": "#74c8b7",
+      "weight": "未公布",
+      "weightNote": "官网未给出此整车版本重量。",
+      "build": "Shimano 105 R7000",
+      "groupset": "Shimano 105 R7000 2×11",
+      "sourceLabel": "官方整车配置",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "E5 铝合金 / 碳叉",
+          "description": "把铝合金焊接工艺放到聚光灯下：Smartweld、碳叉与赛车姿态，组成很有辨识度的竞赛铝架。",
+          "specs": [
+            ["材质", "E5 Premium 铝合金"],
+            ["工艺", "D’Aluisio Smartweld"],
+            ["前叉", "FACT 碳纤维"],
+            ["座管", "S-Works Tarmac 碳纤维"]
+          ],
+          "x": 55,
+          "y": 45
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "105 R7020",
+          "description": "机械变速与液压制动。",
+          "specs": [
+            ["系统", "机械 2 × 11"],
+            ["制动", "液压碟刹"]
+          ],
+          "x": 81,
+          "y": 10
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano FC-R7000",
+          "description": "普通曲柄配置，不等于带功率计版本。",
+          "specs": [
+            ["系列", "105"],
+            ["中轴", "BSA 螺纹"]
+          ],
+          "x": 49,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "双盘布局。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["速别", "11 速"]
+          ],
+          "x": 43,
+          "y": 70
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 105",
+          "description": "按此地区整车配置表记录。",
+          "specs": [
+            ["范围", "11–28T"],
+            ["速别", "11 速"]
+          ],
+          "x": 20,
+          "y": 59
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "原配未列出",
+          "description": "配置表没有列出功率计型号。",
+          "specs": [
+            ["状态", "未列出"],
+            ["改装", "需单独确认接口与车架间隙"]
+          ],
+          "x": 43,
+          "y": 66
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "DT Swiss R470 轮圈 / Specialized 花鼓",
+          "description": "配置以本页所选版本为准。",
+          "specs": [
+            ["轮圈", "R470 / 20 mm 内宽"],
+            ["花鼓", "Specialized / Center Lock"]
+          ],
+          "x": 85,
+          "y": 81
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Turbo Pro",
+          "description": "原配轮胎规格；更宽胎的改装需另核验。",
+          "specs": [
+            ["规格", "700 × 26C"],
+            ["结构", "有内胎开口胎"]
+          ],
+          "x": 90,
+          "y": 49
+        }
+      ],
+      "image": "/bikes/allez-sprint-comp.png",
+      "imageRatio": 1.6260162601626016,
+      "imageCredit": "Specialized 官方产品图片",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "49",
+            "stack": 508,
+            "reach": 378,
+            "headTube": 105,
+            "headAngle": 71.75,
+            "bbDrop": 74,
+            "wheelbase": 974,
+            "seatTube": 470,
+            "seatAngle": 75.5,
+            "chainstay": 410
+          },
+          {
+            "size": "52",
+            "stack": 520,
+            "reach": 383,
+            "headTube": 115,
+            "headAngle": 72.5,
+            "bbDrop": 74,
+            "wheelbase": 976,
+            "seatTube": 495,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "54",
+            "stack": 537,
+            "reach": 387,
+            "headTube": 133,
+            "headAngle": 73,
+            "bbDrop": 72,
+            "wheelbase": 979,
+            "seatTube": 510,
+            "seatAngle": 74,
+            "chainstay": 410
+          },
+          {
+            "size": "56",
+            "stack": 558,
+            "reach": 398,
+            "headTube": 153,
+            "headAngle": 73.5,
+            "bbDrop": 72,
+            "wheelbase": 992,
+            "seatTube": 530,
+            "seatAngle": 73.5,
+            "chainstay": 410
+          },
+          {
+            "size": "58",
+            "stack": 584,
+            "reach": 405,
+            "headTube": 180,
+            "headAngle": 73.5,
+            "bbDrop": 72,
+            "wheelbase": 1006,
+            "seatTube": 550,
+            "seatAngle": 73.5,
+            "chainstay": 410
+          },
+          {
+            "size": "61",
+            "stack": 605,
+            "reach": 411,
+            "headTube": 200,
+            "headAngle": 74,
+            "bbDrop": 72,
+            "wheelbase": 1013,
+            "seatTube": 570,
+            "seatAngle": 73,
+            "chainstay": 410
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.specialized.com/us/en/allez-sprint-comp/p/189818?color=308063-189818",
+        "sourceLabel": "官方几何表 / 技术手册",
+        "note": "原厂尺寸表；整车零件长度随尺码变化，热点配置并不随几何尺码重配。"
+      },
+      "aero": {
+        "title": "从可观察的设计读起",
+        "description": "官网以整合走线及管形讲述气动设计；本页保留可观察结构，不把品牌宣传的时间差换算成跨车型功率排名。",
+        "source": "https://www.specialized.com/us/en/allez-sprint-comp/p/189818?color=308063-189818",
+        "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
+      },
+      "imageNote": "官网存档标题年份与所附 2022 手册不同；本页按产品 ID 189818 与 105 R7000 配置归档，不推断首发年份。"
     }
   ]
 }

@@ -240,6 +240,12 @@ function App({ browse = false }: { browse?: boolean }) {
                   <div className="detail-actions">
                     <SaveButton bike={bike} paintId={paint.id} />
                     <CompareButton bike={bike} />
+                    <a
+                      className="quiet-action"
+                      href={`${base}?view=workshop&tool=build&platform=${bike.id}&paint=${paint.id}`}
+                    >
+                      用这台车开始装车 <ArrowUpRight size={15} />
+                    </a>
                     <a className="quiet-action" href={`${base}?view=compare`}>
                       打开对比台 <ArrowUpRight size={15} />
                     </a>

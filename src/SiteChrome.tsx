@@ -4,7 +4,8 @@ import { useLibrary, CompareDock } from './Library';
 import { loadCatalog } from './catalog';
 import type { Catalog } from './types';
 
-export type Page = 'discover' | 'bikes' | 'parts' | 'stories' | 'garage' | 'compare';
+export type Page =
+  'discover' | 'bikes' | 'parts' | 'stories' | 'garage' | 'compare' | 'workshop' | 'feedback';
 export const base = import.meta.env.BASE_URL;
 export function SiteHeader({ active }: { active: Page }) {
   const { library } = useLibrary();
@@ -22,6 +23,7 @@ export function SiteHeader({ active }: { active: Page }) {
             ['stories', '专题'],
             ['compare', '整车对比'],
             ['garage', '我的车库'],
+            ['workshop', '工坊'],
           ] as [Page, string][]
         ).map(([page, label]) => (
           <a
@@ -48,6 +50,7 @@ export function SiteFooter() {
         VÉLODEX
       </a>
       <span>献给每一个忍不住回头看车的人。</span>
+      <a href={`${base}?view=feedback`}>读者留言 ↗</a>
       <a href={`${base}?view=bikes`}>
         继续逛图鉴 <ArrowUpRight size={16} />
       </a>

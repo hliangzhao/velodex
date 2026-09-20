@@ -100,5 +100,100 @@
       }
     ],
     "closing": "三款车的尺码名称不能直接互换。对比工具允许分别选尺码，显示实际 Stack / Reach；选车仍需结合实际把位、身体条件与路线。"
+  },
+  {
+    "id": "aethos-and-addict",
+    "number": "04",
+    "tag": "LIGHTWEIGHT / 轻量的不同姿态",
+    "title": "轻量车，也有不同的坐标。",
+    "subtitle": "从两代 Aethos 到 Addict RC，先看把位，再看克数。",
+    "hero": "aethos2-expert",
+    "intro": "细管与浅框轮是熟悉的轻量车轮廓，但轮廓相似不等于姿态相同。把两代 Aethos 和 Addict RC 放到同一张几何图上，可以看到前端高度与前伸量的取舍。",
+    "compare": ["aethos-expert", "aethos2-expert", "scott-addict-rc10"],
+    "chapters": [
+      {
+        "bikeId": "aethos-expert",
+        "label": "AETHOS / 初代",
+        "title": "把经典轮廓留下来。",
+        "text": "传统把立、细圆管和 Roval Alpinist 座管，是这台 Expert 的观察起点。56 码 Stack / Reach 为 565 / 395 mm。这里收录 FACT 10r 整车，不把 S-Works 车架重量挪过来。",
+        "look": "看点：直连后上叉、前端走线、传统把立。"
+      },
+      {
+        "bikeId": "aethos2-expert",
+        "label": "AETHOS 2 / 第二代",
+        "title": "同样叫 56 码，前端变了。",
+        "text": "此版本 56 码 Stack / Reach 为 580 / 391 mm，相比收录的初代高 15 mm、短 4 mm；轴距由 991 增至 998 mm。把这些数字与隐藏走线、30C 原配胎放在一起看，比“更舒适”三个字更具体。",
+        "look": "看点：前端抬高、30C 原配胎、隐藏走线。"
+      },
+      {
+        "bikeId": "scott-addict-rc10",
+        "label": "SCOTT / ADDICT RC",
+        "title": "竞赛几何的另一条路线。",
+        "text": "Addict RC 的 54 码（销售 M 码）在技术手册中给出 543 / 395 mm 的 Stack / Reach；选择接近的 Reach 再观察 Stack，比直接把不同品牌的 M 码视作同一尺码更有意义。官方约 7 kg 的重量未注明尺码，不用它给三台车排减重名次。",
+        "look": "看点：一体把、下沉后上叉与低前端。"
+      }
+    ],
+    "closing": "几何描述车架，不等于最终把位。垫圈、把立、车把 Reach 与坐垫位置都会改变实际姿态；轮廓也不能替代刚性与舒适性实测。"
+  },
+  {
+    "id": "alloy-still-matters",
+    "number": "05",
+    "tag": "MATERIAL CULTURE / 材质观察",
+    "title": "铝架，值得自己的展墙。",
+    "subtitle": "焊接、管形和配置：材质标签之外还有很多看点。",
+    "hero": "allez-sprint-comp",
+    "intro": "从日常公路到竞赛，铝合金并不只扮演同一个角色。这里把 Allez Sprint、SUNPEED UNIVERSE 与 Tarmac SL7 并置，观察接头、前端整合和传动选择。",
+    "compare": ["allez-sprint-comp", "sunpeed-universe", "tarmac-sl7"],
+    "chapters": [
+      {
+        "bikeId": "allez-sprint-comp",
+        "label": "E5 / SMARTWELD",
+        "title": "看得见的接合工艺。",
+        "text": "Allez Sprint 的 E5 铝架保留明显的焊接与管形变化，配碳叉、碳座管及机械 105。放大下管、五通和头管，比较它与碳架连续曲面的不同；这不是仅看外观就能判断焊接质量的检查表。",
+        "look": "看点：头管与下管接头、五通区域、座管轮廓。"
+      },
+      {
+        "bikeId": "sunpeed-universe",
+        "label": "6069 / 日常公路",
+        "title": "同一种材质，也能换一种节奏。",
+        "text": "UNIVERSE 用 6069 铝架、碳叉、单盘 CUES 与 32C 胎组成日常公路配置。把它与 Allez Sprint 的双盘和竞技姿态对照，会发现“铝架”并不足以概括使用目标。",
+        "look": "看点：单盘传动、32C 原配胎与简洁前端。"
+      },
+      {
+        "bikeId": "tarmac-sl7",
+        "label": "CARBON / 对照观察",
+        "title": "相似的设计语言，不同的制造方式。",
+        "text": "SL7 与 Allez Sprint 都值得观察前端走线与后上叉连接位置。但相似轮廓不意味着相同的碳布、刚度或骑感；整车的轮组、轮胎和配置也不是材质差异本身。",
+        "look": "看点：连续曲面、前端过渡与后上叉位置。"
+      }
+    ],
+    "closing": "没有统一称重、轮胎与轮组配置时，不能把整车差异全部归因于铝或碳。存档车型的历史版本也不等于目前国内在售配置。"
+  },
+  {
+    "id": "against-the-clock",
+    "number": "06",
+    "tag": "TIME TRIAL / 与秒表独处",
+    "title": "TT 车，要多看一组坐标。",
+    "subtitle": "P5 与 Speedmax CFR TT：把注意力移到肘垫与伸展把。",
+    "hero": "cervelo-p5",
+    "intro": "计时车的前端不是普通弯把的另一种形状。肘垫位置、伸展把与底把一起决定支撑和操控；只比较车架 Stack / Reach，信息还不完整。",
+    "compare": ["cervelo-p5", "speedmax-cfr-tt"],
+    "chapters": [
+      {
+        "bikeId": "cervelo-p5",
+        "label": "CERVÉLO / P5",
+        "title": "先找支撑点，再看车架。",
+        "text": "从侧面照片找到肘垫与伸展把，再观察它们相对五通的位置。本图鉴的几何工具显示车架坐标，不自动推导肘垫 Pad X / Pad Y，也不把厂家提供的调节范围当成某位骑手的实际设定。",
+        "look": "看点：肘垫、伸展把与前端可调结构。"
+      },
+      {
+        "bikeId": "speedmax-cfr-tt",
+        "label": "CANYON / CFR TT",
+        "title": "同一家族，版本要读完整。",
+        "text": "这里选的是 CFR TT 配置。比较时保留 TT 后缀，按对应官方页面读车架、前端与轮组，避免拿其他 Speedmax 铁三版本的储物、补给设计或几何直接代替。",
+        "look": "看点：TT 版本标识、前端结构与整车配置。"
+      }
+    ],
+    "closing": "比赛适用性应以赛事规则与具体装车设定核对。此专题介绍观察方法，不提供姿态拟合或跨车型风阻排名。"
   }
 ]

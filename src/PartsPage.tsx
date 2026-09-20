@@ -251,6 +251,14 @@ export default function PartsPage() {
                       <ArrowUpRight size={15} />
                     </a>
                     <small className="part-date">资料核对 / {selected.checkedAt}</small>
+                    {selected.id !== 'aero111' && (
+                      <a
+                        className="source-link"
+                        href={`${base}?view=workshop&tool=build&part=${selected.id}`}
+                      >
+                        放入梦幻装车单 <ArrowUpRight size={15} />
+                      </a>
+                    )}
                   </div>
                 </div>
                 <div className="performance-notes">

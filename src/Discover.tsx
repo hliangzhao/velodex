@@ -6,11 +6,12 @@ import { comparisonSearch } from './experience';
 import BikeCard from './BikeCard';
 import stories from './data/stories.json';
 import { SaveButton } from './Library';
+import './workshop.css';
 
-export function StoryCards({ catalog }: { catalog: Catalog }) {
+export function StoryCards({ catalog, limit }: { catalog: Catalog; limit?: number }) {
   return (
     <div className="story-grid">
-      {stories.map((story) => {
+      {(limit ? stories.slice(-limit) : stories).map((story) => {
         const bike = catalog.bikes.find((b) => b.id === story.hero)!;
         return (
           <a className="story-card" href={`${base}?view=stories&story=${story.id}`} key={story.id}>
@@ -41,13 +42,21 @@ export default function Discover() {
         {(catalog) => {
           const feature = catalog.bikes.find((b) => b.id === 'sworks-venge')!;
           const picks = [
-            'winspace-slc5',
-            'pardus-spark-evo4',
-            'sunpeed-universe',
-            'revolt-advanced0',
+            'aethos-expert',
+            'aethos2-expert',
+            'scott-addict-rc10',
+            'allez-sprint-comp',
           ].map((id) => catalog.bikes.find((b) => b.id === id)!);
           return (
             <>
+              <div className="work-banner">
+                <div>
+                  <span className="eyebrow">NEW / 骑友工坊</span>
+                  <h2>你的梦幻装车单，值得一张海报。</h2>
+                  <p>选车型、配件与涂装，算齿比，拆开结构，把心动分享出去。</p>
+                </div>
+                <a href={`${base}?view=workshop`}>开始装车 ↗</a>
+              </div>
               <div className="discovery-overline">
                 <span>
                   <i /> A FIELD GUIDE TO ROAD OBSESSION
@@ -117,7 +126,7 @@ export default function Discover() {
                     全部专题 <ArrowUpRight size={17} />
                   </a>
                 </div>
-                <StoryCards catalog={catalog} />
+                <StoryCards catalog={catalog} limit={3} />
               </section>
               <section className="comparison-invite">
                 <div>

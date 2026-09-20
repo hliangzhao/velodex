@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-20",
+  "market": "中国大陆",
+  "currency": "CNY",
+  "frames": {
+    "tarmac-sl8": {
+      "amount": 38990,
+      "name": "S-Works Tarmac SL8 车架组",
+      "unit": "一套车架组",
+      "productId": "4221540",
+      "source": "https://www.specialized.com.cn/cn/zh/s-works-tarmac-sl8-frameset/p/4221540",
+      "note": "中国官网公开标价；适用商品 ID 4221540，不保证灵感图所示涂装有库存。盒内配件与实际订单以国内商品页为准。"
+    }
+  },
+  "parts": {},
+  "pending": {
+    "roval-rapide-clx3": {
+      "source": "https://www.specialized.com.cn/cn/zh/roval-rapide-clx-iii/p/1000256237",
+      "note": "官网公开页面显示起售价 ¥9,990，但未确认前后轮一对的完整标价，暂不填入轮组预算。"
+    }
+  }
+}

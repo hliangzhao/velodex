@@ -3,6 +3,10 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+  discussion_comment:
+    types: [created, edited, deleted]
+  discussion:
+    types: [edited, deleted]
   workflow_dispatch:
 
 permissions:
@@ -18,6 +22,7 @@ jobs:
     permissions:
       contents: read
       pages: read
+      discussions: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,6 +34,10 @@ jobs:
         uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm test
+      - name: Export public reader feedback
+        run: node scripts/export-feedback.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Build static website
         run: npm run build:pages
         env:

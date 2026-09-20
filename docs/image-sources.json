@@ -784,6 +784,58 @@
       "notes": "Drive side, faces right. Original official image; CSS presentation crop only.",
       "visualVerified": true,
       "reuse": "Official brand product image. No open reuse license is inferred."
+    },
+    {
+      "id": "aethos-expert",
+      "label": "Aethos Expert / 2022 美版 · Ultegra Di2",
+      "file": "public/bikes/aethos-expert.png",
+      "width": 1800,
+      "height": 1176,
+      "background": "transparent",
+      "imageUrl": "https://assets.specialized.com/i/specialized/97222-31_AETHOS-EXPERT-PNGRN-WHT_HERO1?fmt=png&w=1800",
+      "sourceUrl": "https://www.specialized.com/us/en/aethos-expert-shimano-ultegra-di2/p/199442",
+      "visualVerified": true,
+      "notes": "官方存档展示图的零件外观可能与更新后的 Di2 配置表不同；参数以所选官方配置表为准。",
+      "reuse": "Official product image; attribution is not a reuse license."
+    },
+    {
+      "id": "aethos2-expert",
+      "label": "Aethos 2 Expert / 美国官网 · Ultegra Di2",
+      "file": "public/bikes/aethos2-expert.png",
+      "width": 1800,
+      "height": 1013,
+      "background": "transparent",
+      "imageUrl": "https://assets.specialized.com/i/specialized/97227-33_AETHOS-EXPERT-DI2-METDPMRNBLU-RSSHM_HERO-PDP?fmt=png&w=1800",
+      "sourceUrl": "https://www.specialized.com/us/en/aethos-2-expert-shimano-ultegra-di2/p/4294984?color=5472524-4294984",
+      "visualVerified": true,
+      "notes": "Official drive-side product image.",
+      "reuse": "Official product image; attribution is not a reuse license."
+    },
+    {
+      "id": "scott-addict-rc10",
+      "label": "Addict RC 10 / 英国官网 · 型号 423246",
+      "file": "public/bikes/scott-addict-rc10.png",
+      "width": 2000,
+      "height": 2000,
+      "background": "transparent",
+      "imageUrl": "https://static.scott-sports.com/image/upload/t_assetformatzoom/v1778111426/2193638.png",
+      "sourceUrl": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-bike",
+      "visualVerified": true,
+      "notes": "Official drive-side product image.",
+      "reuse": "Official product image; attribution is not a reuse license."
+    },
+    {
+      "id": "allez-sprint-comp",
+      "label": "Allez Sprint Comp / 官网存档 · 105 R7000 / 11 速",
+      "file": "public/bikes/allez-sprint-comp.png",
+      "width": 1800,
+      "height": 1107,
+      "background": "transparent",
+      "imageUrl": "https://assets.specialized.com/i/specialized/90021-50_ALLEZ-SPRINT-COMP-OIS-CLGRY_HERO?fmt=png&w=1800",
+      "sourceUrl": "https://www.specialized.com/us/en/allez-sprint-comp/p/189818?color=308063-189818",
+      "visualVerified": true,
+      "notes": "官网存档标题年份与所附 2022 手册不同；本页按产品 ID 189818 与 105 R7000 配置归档，不推断首发年份。",
+      "reuse": "Official product image; attribution is not a reuse license."
     }
   ]
 }
