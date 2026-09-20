@@ -30,12 +30,13 @@ let source = readFileSync(path, 'utf8')
 const { outputText } = ts.transpileModule(source, {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
 });
-const { buildBikeModel } = await import(
+const { buildBikeModel, modelProfiles } = await import(
   `data:text/javascript;base64,${Buffer.from(outputText).toString('base64')}`
 );
 
 test('every model and frame-size extreme generates finite, raycastable geometry', () => {
   for (const bike of loadCatalog().bikes) {
+    if (!(bike.id in modelProfiles)) continue;
     const sizes = bike.geometry.sizes;
     for (const g of new Set([
       sizes[0],
@@ -68,7 +69,18 @@ test('every model and frame-size extreme generates finite, raycastable geometry'
         );
 
       assert.equal(parts.has('power'), bike.hasPowerMeter, `${bike.id}/power-meter equipment`);
-      for (const id of ['frame', 'shifters', 'crank', 'chainrings', 'cassette', 'wheels', 'tires'])
+      for (const id of [
+        'frame',
+        'handlebar',
+        'seatpost',
+        'saddle',
+        'shifters',
+        'crank',
+        'chainrings',
+        'cassette',
+        'wheels',
+        'tires',
+      ])
         assert.ok(parts.has(id), `${bike.id}/${id}`);
       for (const m of meshes) {
         for (const name of ['position', 'normal']) {

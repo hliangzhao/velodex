@@ -42,12 +42,9 @@ export default function Discover() {
       <CatalogContent>
         {(catalog) => {
           const feature = catalog.bikes.find((b) => b.id === 'sworks-venge')!;
-          const picks = [
-            'aethos-expert',
-            'aethos2-expert',
-            'scott-addict-rc10',
-            'allez-sprint-comp',
-          ].map((id) => catalog.bikes.find((b) => b.id === id)!);
+          const picks = ['cinelli-pressure2', 'camp-ace3', 'avail-advanced1', 'silex8000'].map(
+            (id) => catalog.bikes.find((b) => b.id === id)!,
+          );
           return (
             <>
               <div className="work-banner">
@@ -135,11 +132,11 @@ export default function Discover() {
                     <p>一个名字，跨过几个时代。</p>
                     <span>沿时间线看设计 →</span>
                   </a>
-                  <a href={`${base}?view=riders`}>
-                    <small>BUILT BY RIDERS</small>
-                    <h3>车友装车故事</h3>
-                    <p>从一张配置单，到真正骑它的人。</p>
-                    <span>阅读与投稿 →</span>
+                  <a href={`${base}?view=teams`}>
+                    <small>INSIDE THE PELOTON</small>
+                    <h3>从车队，认识赛车。</h3>
+                    <p>沿着职业赛场，找到值得细看的设计。</p>
+                    <span>走进车队档案 →</span>
                   </a>
                 </div>
               </section>

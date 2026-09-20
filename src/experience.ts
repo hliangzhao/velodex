@@ -68,7 +68,7 @@ export function mergeLibrary(current: Library, incoming: Library): Library {
   };
 }
 
-export function geometryFor(bike: Bike, size?: string): GeometrySize {
+export function geometryFor(bike: Bike, size?: string): GeometrySize | undefined {
   return (
     bike.geometry.sizes.find((g) => g.size === size) ||
     bike.geometry.sizes.find((g) => g.size === bike.geometry.defaultSize) ||
@@ -82,7 +82,7 @@ export function resolveComparison(entries: ComparisonEntry[], bikes: Bike[]) {
     const bike = bikes.find((b) => b.id === entry.bikeId);
     if (!bike || seen.has(bike.id) || seen.size >= 3) return [];
     seen.add(bike.id);
-    return [{ bikeId: bike.id, size: geometryFor(bike, entry.size).size }];
+    return [{ bikeId: bike.id, size: geometryFor(bike, entry.size)?.size || '' }];
   });
 }
 

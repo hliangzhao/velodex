@@ -15,7 +15,8 @@ import {
 
 const colors = ['#486528', '#bd562b', '#326c99'];
 const letters = ['A', 'B', 'C'];
-type Selection = { bike: Bike; geometry: GeometrySize };
+type Selection = { bike: Bike; geometry: GeometrySize | undefined };
+type MeasuredSelection = Selection & { geometry: GeometrySize };
 const delta = (value: number) => `${value > 0 ? '+' : ''}${Number(value.toFixed(2))}`;
 
 export default function ComparePage() {
@@ -42,6 +43,8 @@ function Comparison({ catalog }: { catalog: Catalog }) {
     const bike = catalog.bikes.find((b) => b.id === entry.bikeId)!;
     return { bike, geometry: geometryFor(bike, entry.size) };
   });
+  const measured = selected.filter((s): s is MeasuredSelection => !!s.geometry);
+  const completeGeometry = measured.length === selected.length;
   const update = (next: ComparisonEntry[]) => {
     setEntries(next);
     setComparison(next);
@@ -63,6 +66,9 @@ function Comparison({ catalog }: { catalog: Catalog }) {
   );
   const componentRows = [
     'frame',
+    'handlebar',
+    'seatpost',
+    'saddle',
     'shifters',
     'crank',
     'chainrings',
@@ -105,7 +111,8 @@ function Comparison({ catalog }: { catalog: Catalog }) {
   ).map(([key, label, unit]) => ({
     label,
     values: selected.map(
-      ({ geometry }) => `${geometry[key] ?? '未公布'}${geometry[key] == null ? '' : ` ${unit}`}`,
+      ({ geometry }) =>
+        `${geometry?.[key] ?? '未公布'}${geometry?.[key] == null ? '' : ` ${unit}`}`,
     ),
   }));
   return (
@@ -173,7 +180,8 @@ function Comparison({ catalog }: { catalog: Catalog }) {
                 车架尺码
                 <select
                   aria-label={`${bike.family} 车架尺码`}
-                  value={geometry.size}
+                  value={geometry?.size || ''}
+                  disabled={!geometry}
                   onChange={(e) =>
                     update(
                       entries.map((entry) =>
@@ -182,6 +190,7 @@ function Comparison({ catalog }: { catalog: Catalog }) {
                     )
                   }
                 >
+                  {!geometry && <option value="">几何未公开</option>}
                   {bike.geometry.sizes.map((g) => (
                     <option key={g.size} value={g.size}>
                       {g.size}
@@ -250,25 +259,31 @@ function Comparison({ catalog }: { catalog: Catalog }) {
           <p className="comparison-note">
             照片按版面适配，未进行实物比例标定。选尺码只更新车架几何；零件规格保留收录版本及其注明的参考尺码。尺码名称相同，不代表实际尺寸相同。
           </p>
-          <GeometryOverlay selected={selected} />
-          {selected.length > 1 && (
+          {completeGeometry ? (
+            <GeometryOverlay selected={measured} />
+          ) : (
+            <p className="comparison-note emphasis">
+              部分车型尚未公开完整几何，暂不绘制这组叠图。下方仍可对比整车配置，未公布的尺寸保留为空。
+            </p>
+          )}
+          {completeGeometry && measured.length > 1 && (
             <div className="geometry-deltas">
-              {selected.slice(1).map(({ bike, geometry }, i) => (
+              {measured.slice(1).map(({ bike, geometry }, i) => (
                 <div key={bike.id}>
                   <span style={{ color: colors[i + 1] }}>
                     {letters[i + 1]} − A / 相对 {selected[0].bike.family} ·{' '}
-                    {selected[0].geometry.size}
+                    {measured[0].geometry.size}
                   </span>
                   <h3>
                     {bike.family} · {geometry.size}
                   </h3>
                   <div>
                     <strong>
-                      {delta(geometry.stack - selected[0].geometry.stack)}
+                      {delta(geometry.stack - measured[0].geometry.stack)}
                       <small> mm Stack</small>
                     </strong>
                     <strong>
-                      {delta(geometry.reach - selected[0].geometry.reach)}
+                      {delta(geometry.reach - measured[0].geometry.reach)}
                       <small> mm Reach</small>
                     </strong>
                   </div>
@@ -369,7 +384,13 @@ function ComparisonTable({
             {selected.map(({ bike, geometry }, index) => (
               <th scope="col" key={bike.id}>
                 <span style={{ color: colors[index] }}>{letters[index]}</span> {bike.family}
-                <small>{title === '车架几何' ? `${geometry.size} 码` : '收录整车配置'}</small>
+                <small>
+                  {title === '车架几何'
+                    ? geometry
+                      ? `${geometry.size} 码`
+                      : '几何未公开'
+                    : '收录整车配置'}
+                </small>
               </th>
             ))}
           </tr>
@@ -398,7 +419,7 @@ function ComparisonTable({
   );
 }
 
-function GeometryOverlay({ selected }: { selected: Selection[] }) {
+function GeometryOverlay({ selected }: { selected: MeasuredSelection[] }) {
   const [hidden, setHidden] = useState<string[]>([]);
   const [front, setFront] = useState(false);
   const patternId = useId();

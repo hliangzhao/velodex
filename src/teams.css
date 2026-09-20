@@ -1,0 +1,285 @@
+.teams-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 58px 0 42px;
+  border-bottom: 1px solid var(--line);
+  gap: 25px;
+}
+.teams-hero h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.18;
+  letter-spacing: -2px;
+  margin: 20px 0;
+}
+.teams-hero h1 span {
+  color: #718d35;
+}
+.teams-hero p {
+  line-height: 1.9;
+  color: #687360;
+  margin: 0;
+}
+.teams-hero-number {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--line);
+  padding-left: 48px;
+  min-width: 230px;
+}
+.teams-hero-number strong {
+  font:
+    600 128px/0.95 'Barlow Condensed',
+    sans-serif;
+  color: #7b9056;
+  letter-spacing: -5px;
+}
+.teams-hero-number span {
+  font:
+    500 12px 'Barlow',
+    sans-serif;
+  letter-spacing: 1px;
+  margin-top: 18px;
+}
+.teams-hero-number small {
+  color: #7b866f;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.teams-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 0 15px;
+}
+.teams-filter > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.teams-filter button {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  font-size: 11px;
+}
+.teams-filter button[aria-pressed='true'] {
+  background: #253020;
+  color: #ecf1dc;
+  border-color: #253020;
+}
+.teams-scope {
+  max-width: 860px;
+  color: #6a7860;
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 8px 0 16px;
+}
+.teams-count {
+  font:
+    500 11px 'Barlow',
+    sans-serif;
+  letter-spacing: 1px;
+  color: #768768;
+  margin-bottom: 15px;
+}
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+.team-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--team-color);
+  background: #fafbf6;
+}
+.team-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 25px 0;
+  color: var(--team-color);
+  font:
+    600 11px 'Barlow',
+    sans-serif;
+  letter-spacing: 1.5px;
+}
+.team-card-top a {
+  padding: 5px;
+}
+.team-intro {
+  padding: 12px 25px 18px;
+  min-height: 135px;
+}
+.team-intro > small {
+  color: #708060;
+  font-size: 11px;
+}
+.team-intro h2 {
+  font:
+    600 clamp(24px, 2.5vw, 35px)/1.12 'Barlow Condensed',
+    sans-serif;
+  margin: 10px 0 8px;
+  overflow-wrap: anywhere;
+}
+.team-intro p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #66745b;
+  margin: 0;
+}
+.team-bike-photo {
+  display: block;
+  background: #fff;
+  padding: 15px 22px 12px;
+}
+.team-bike-photo img {
+  display: block;
+  width: 100%;
+  height: 245px;
+  object-fit: contain;
+}
+.team-bike-photo span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 10px;
+  color: #7a8570;
+  margin-top: 8px;
+}
+.team-body {
+  padding: 22px 25px;
+}
+.team-body > p {
+  min-height: 90px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #627456;
+  margin: 0 0 20px;
+}
+.team-body dl {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+.team-body dl > div {
+  display: grid;
+  grid-template-columns: 98px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+  line-height: 1.7;
+}
+.team-body dt {
+  color: #748367;
+}
+.team-body dd {
+  margin: 0;
+}
+.team-look {
+  padding: 23px 0;
+}
+.team-look .eyebrow {
+  font-size: 9px;
+  color: var(--team-color);
+}
+.team-look h3 {
+  font-size: 15px;
+  margin: 8px 0;
+}
+.team-look p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #65765a;
+  margin: 0;
+}
+.team-bike-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.team-bike-links > span {
+  width: 100%;
+  font-size: 10px;
+  color: #7c8a6f;
+  margin-bottom: 5px;
+}
+.team-bike-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid #d5ddc9;
+  font-size: 12px;
+}
+.team-bike-links a:hover {
+  background: #edf2df;
+}
+.team-compare {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.team-sources {
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+  padding-top: 15px;
+}
+.team-sources a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #748168;
+  font-size: 10px;
+  line-height: 1.8;
+}
+.team-footnote {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin: 30px 0 55px;
+  font-size: 11px;
+  color: #748367;
+  line-height: 1.9;
+}
+.team-footnote .text-link {
+  flex-shrink: 0;
+  font-size: 11px;
+}
+@media (max-width: 760px) {
+  .teams-hero {
+    padding: 32px 0;
+  }
+  .teams-hero-number {
+    display: none;
+  }
+  .teams-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .teams-filter {
+    gap: 14px;
+  }
+  .teams-filter .search {
+    width: 100%;
+  }
+  .team-bike-photo img {
+    height: 220px;
+  }
+  .team-intro,
+  .team-body > p {
+    min-height: 0;
+  }
+  .team-footnote {
+    display: block;
+  }
+  .team-footnote .text-link {
+    margin-top: 12px;
+  }
+  .team-intro h2 {
+    font-size: 31px;
+  }
+}

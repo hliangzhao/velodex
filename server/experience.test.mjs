@@ -28,6 +28,42 @@ const record = {
   note: '喜欢这个轮廓。',
 };
 
+test('bikes with unpublished geometry remain shareable and comparable without fabricated sizes', () => {
+  const bike = bikes.find((b) => b.id === 'camp-ace3');
+  assert.equal(geometryFor(bike), undefined);
+  const entries = [
+    { bikeId: bike.id, size: '' },
+    { bikeId: 'tarmac-sl8', size: '54' },
+  ];
+  assert.deepEqual(comparisonFromSearch(comparisonSearch(entries), bikes), entries);
+  assert.deepEqual(
+    parseLibrary(JSON.stringify({ ...emptyLibrary(), comparison: entries })).comparison,
+    entries,
+  );
+});
+
+test('team dossiers link verified brands, existing retail bikes and dated primary sources', () => {
+  const dossier = JSON.parse(
+    readFileSync(new URL('../src/data/teams.json', import.meta.url), 'utf8'),
+  );
+  const catalog = loadCatalog();
+  assert.equal(new Set(dossier.teams.map((t) => t.id)).size, dossier.teams.length);
+  for (const team of dossier.teams) {
+    assert.ok(
+      catalog.brands.some((b) => b.id === team.brandId),
+      team.id,
+    );
+    assert.ok(team.bikeIds.includes(team.heroBikeId), team.id);
+    for (const id of team.bikeIds)
+      assert.ok(
+        bikes.some((b) => b.id === id && b.brandId === team.brandId),
+        id,
+      );
+    assert.ok(team.sources.length && team.lookFor && team.equipment.length);
+    for (const source of team.sources) assert.equal(new URL(source.url).protocol, 'https:');
+  }
+});
+
 test('garage backup round-trips paints and notes, merges without overwriting and rejects invalid data', () => {
   const current = {
     ...emptyLibrary(),

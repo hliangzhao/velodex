@@ -34,6 +34,28 @@ const categories: {
     headline: '与公路的接触，只有这一点。',
     description: '胎体、胶料与实际胎宽影响滚阻、抓地和舒适度。轮胎与轮圈，要作为一套系统来选。',
   },
+  {
+    id: 'handlebars',
+    name: '车把',
+    en: 'COCKPITS',
+    headline: '双手之间，藏着骑姿。',
+    description:
+      '宽度、前伸、落差与外撇，一起决定握持位置。一体把还需要同时确定把立长度与走线兼容。',
+  },
+  {
+    id: 'seatposts',
+    name: '座管',
+    en: 'SEATPOSTS',
+    headline: '从坐垫，连接到车架。',
+    description: '先核对直径或专用截面，再看后飘、长度与坐垫导轨夹具。轻量并不能代替合适的尺寸。',
+  },
+  {
+    id: 'saddles',
+    name: '坐垫',
+    en: 'SADDLES',
+    headline: '坐得合适，才想骑得更远。',
+    description: '从宽度、曲面和骑姿开始，核对导轨与座管夹具，再比较材料和重量。',
+  },
 ];
 const base = import.meta.env.BASE_URL;
 
@@ -225,7 +247,15 @@ export default function PartsPage() {
                       )}
                     </div>
                     <small className="part-art-caption">
-                      {selected.image ? '官方产品图 · 代表部件' : '类别结构示意'}
+                      {selected.image
+                        ? selected.imageCaption || '官方产品图 · 代表部件'
+                        : '类别结构示意'}
+                      {selected.imageSource && (
+                        <a href={selected.imageSource} target="_blank" rel="noreferrer">
+                          {' '}
+                          图片来源 <ArrowUpRight size={12} />
+                        </a>
+                      )}
                     </small>
                     <span className="part-edition">
                       {selected.era} · {selected.status === 'classic' ? '经典档案' : '现行系列'}
@@ -251,14 +281,15 @@ export default function PartsPage() {
                       <ArrowUpRight size={15} />
                     </a>
                     <small className="part-date">资料核对 / {selected.checkedAt}</small>
-                    {selected.id !== 'aero111' && (
-                      <a
-                        className="source-link"
-                        href={`${base}?view=workshop&tool=build&part=${selected.id}`}
-                      >
-                        放入梦幻装车单 <ArrowUpRight size={15} />
-                      </a>
-                    )}
+                    {['wheels', 'groupsets', 'tires'].includes(selected.category) &&
+                      selected.id !== 'aero111' && (
+                        <a
+                          className="source-link"
+                          href={`${base}?view=workshop&tool=build&part=${selected.id}`}
+                        >
+                          放入梦幻装车单 <ArrowUpRight size={15} />
+                        </a>
+                      )}
                   </div>
                 </div>
                 <div className="performance-notes">
@@ -485,6 +516,31 @@ export default function PartsPage() {
 }
 
 function PartDrawing({ category }: { category: PartCategory }) {
+  if (category === 'handlebars' || category === 'seatposts')
+    return (
+      <svg viewBox="0 0 360 260" fill="none" aria-hidden="true">
+        <path
+          d={
+            category === 'handlebars'
+              ? 'M180 140V70 M78 180C20 180 35 105 80 105H280C325 105 340 180 282 180'
+              : 'M160 225L130 55H175 M110 43H185'
+          }
+          stroke="currentColor"
+          strokeWidth="8"
+          strokeLinecap="round"
+        />
+      </svg>
+    );
+  if (category === 'saddles')
+    return (
+      <svg viewBox="0 0 360 260" fill="none" aria-hidden="true">
+        <path
+          d="M85 125Q65 70 130 65Q172 70 185 96L288 118Q316 128 288 140H175Q80 160 85 125ZM118 157L226 157"
+          stroke="currentColor"
+          strokeWidth="6"
+        />
+      </svg>
+    );
   if (category === 'groupsets')
     return <Cog className="part-line-icon" strokeWidth={0.6} aria-hidden="true" />;
   if (category === 'tires')

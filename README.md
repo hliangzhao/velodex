@@ -68,7 +68,7 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 - **车架设计观察**：结构观察室默认展示破风、耐力、爬坡、砾石、TT 五类车架，可旋转、缩放、切换侧视 / 前视、点亮设计部位，并显示 Stack / Reach 标尺。以五通为同一原点进行同尺度叠影，附参考几何差值和可恢复组合的分享链接。几何分别参照 Aeroad CFR M、Defy ML、第一代 Aethos 56、Revolt M 短档及 P5 54；管型、曲面、安装点和 TT 把组是解释性建模，不是品牌 CAD，不可量取装配间隙或推算性能。样本尺码不等于相同适配，TT 车架坐标不替代托肘坐标。
 - **配件结构观察**：保留 Ratchet EXP 36 齿端面啮合与轮圈胎圈截面两个独立研究模型，可拖拽、缩放、点选、分解，支持动态啮合、隐藏外壳及截面正视。齿数、轮圈内宽与框高有官方依据；其余尺寸、制造细节和受力过程不作为原厂 CAD 或仿真数据。可用 `study=ratchet/rim` 直接打开对应主题。
 
-新增车型包括两代 Aethos Expert、SCOTT Addict RC 10 与 Allez Sprint Comp。每台均有版本说明、官方图、八类热点和逐尺码几何。
+新增车型包括两代 Aethos Expert、SCOTT Addict RC 10 与 Allez Sprint Comp。每台均有版本说明、官方图、十一类部件档案与照片热点和逐尺码几何。
 
 `?view=feedback` 是读者留言页，公开讨论保存在 [GitHub Discussions #1](https://github.com/hliangzhao/velodex/discussions/1)。读者可先在站内写草稿、复制，再登录 GitHub 粘贴发布。复制不等于提交；无前端令牌，不存储读者凭据。
 
@@ -79,25 +79,21 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 ## 车友装车故事
 
-`?view=riders` 提供故事列表、关键词筛选、独立故事链接，以及带实时预览的投稿草稿。装车单的“写下装车故事”仅带入车型和配置名称；预算、重量和备齐状态不带入。读者填写骑行场景、选择理由，并可补充升级与踩坑经历。
-
-- 点击“保存本机草稿”写入 `velodex.rider-story.v1`；草稿不会自动提交。勾选展示同意后生成可复制稿件，由读者在现有 Discussions #1 粘贴并发布，署名取自 GitHub 实际作者。
-- 读者可在 GitHub 编辑框的“实车照片”段落拖入照片，或在站内填已上传的 GitHub 图片地址。支持 GitHub 附件的 Markdown / HTML 图片写法，站内仅展示第一张受支持的 GitHub 托管图片；文本作为纯文本渲染。
-- `shared/rider-stories.mjs` 验证长度、必填内容、图片来源和展示同意标记；未同意、格式无效或被隐藏的主留言不进入故事列表。GitHub 编辑、删除或隐藏后，下一次成功部署更新快照；撤回展示可删除原留言的 `velodex-share:yes` 标记。
-- `node scripts/export-feedback.mjs` 同时导出普通留言及 `public/rider-stories.json`：扫描最近 100 条主留言中的故事，普通留言仍展示最近 50 条。没有真实来稿时展示空状态，不生成虚构骑友案例。Actions 权限仍为只读 `discussions: read`，前端无令牌。
-- Pages 读取静态故事快照；本地 Express 提供 `GET /api/rider-stories`，读取同一份公开快照。内容是骑友个人经验，不作为原厂性能或兼容性结论。
+该页面暂时下线，导航、投稿及装车单入口已撤下；已有本机草稿不会被删除。旧入口回到首页。保留实现供后续恢复，普通读者留言功能继续开放。
 
 ## 功能
 
-- 真实整车图上的八类部件热点：车架、手变、曲柄、牙盘、飞轮、功率计、轮组、轮胎。
+- 真实整车图上的十一类部件档案：车架、手变、曲柄、牙盘、飞轮、功率计、轮组、轮胎、车把、座管、坐垫。未核实的原配型号和尺寸保留缺项；无原配功率计时不显示功率计热点。
 - 对应车型的详细参数、完整配置弹窗、图片放大、隐藏热点欣赏整车。
 - 品牌与车型搜索、在售系列 / 经典存档 / 人气精选，以及气动、全能、爬坡、耐力、砾石及 TT 计时定位筛选。
 - `?bike=xlab-ad9` 等链接可直接分享车型，支持浏览器前进和后退。
 - 响应式桌面 / 平板 / 手机布局，键盘操作、弹窗焦点管理、减少动态效果偏好。
 
-目前收录 16 个品牌、41 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
+本次补充 Cinelli 西耐力 Pressure II、CAMP 坎普 ACE III UT / SR9、Liv Avail Advanced 1、Giant Contend AR 1、Merida REACTO 8000 / SILEX 8000 与 Specialized Roubaix SL8 Sport。新增八款以照片和可核实几何为主，暂不提供近似整车 3D。坎普官网未给出完整几何表，显式保留缺项，仍可对比配置；整车标价按中国大陆官网记录。Cinelli 与 SILEX 的官方配图和文字配置差异在图片旁说明。
 
-新增 TCR Advanced Pro 0 AXS、Defy Advanced Pro 0、Ultimate CF SLX 8 Di2、Endurace CF SLX 8 Di2、Cannondale SuperSix EVO 2 Gen 5、美利达 SCULTURA 8000 / SCULTURA ENDURANCE 8000，以及迪卡侬 Van Rysel RCR-R Pro。新增项均有实拍、八类部件记录、逐尺码几何和独立 3D 轮廓。
+目前收录 19 个品牌、49 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
+
+新增 TCR Advanced Pro 0 AXS、Defy Advanced Pro 0、Ultimate CF SLX 8 Di2、Endurace CF SLX 8 Di2、Cannondale SuperSix EVO 2 Gen 5、美利达 SCULTURA 8000 / SCULTURA ENDURANCE 8000，以及迪卡侬 Van Rysel RCR-R Pro。新增项均有实拍、十一类部件记录、逐尺码几何和独立 3D 轮廓。
 
 新增 Colnago Y1Rs / V5Rs、BMC Teammachine R 01 ONE、Cervélo R5 / P5 和 Canyon Speedmax CFR TT。职业赛场标签附官方车队报道，价格保留原币种和地区；零售配置与车手赛日配置分开说明。
 
@@ -107,13 +103,26 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 ## 涂装与配件图鉴
 
-- 已收录 12 款车的多涂装，共 61 个整车外观条目。点击色块切换官方图片，`?bike=y1rs&paint=ysbo` 可直接分享，支持浏览器前进 / 后退。
+- 已收录 13 款车的多涂装，共 70 个整车外观条目。点击色块切换官方图片，`?bike=y1rs&paint=ysbo` 可直接分享，支持浏览器前进 / 后退。
 - 不同构图的涂装有独立热点；部分官方展示车的附件和齿比与所列零售选项不同，页面明确提示。
-- `?view=parts` 打开独立配件图鉴：11 个厂商、18 款轮组 / 变速系统 / 轮胎。
+- `?view=parts` 打开独立配件图鉴：14 个厂商、24 款轮组 / 变速系统 / 轮胎 / 车把 / 座管 / 坐垫。
 - 按类别、厂商、在售 / 经典、关键词筛选；查看参数、设计特点、适用场景与兼容性；同类最多三款并排比较。
 - `?view=parts&product=zipp-303-firecrest` 支持产品直达；整车部件与对应配件系列双向链接。
 - 配件资料在 `server/data/parts.json`，Pages 与 Express 共用；性能介绍区分设计取向和实测，不虚构统一评分或跨品牌瓦数排名。
 - 有图片的产品使用厂商素材；无图时显示明确的类别图示，不将其作为准确产品外观。
+
+## 车队档案
+
+`?view=teams` 按 2026 赛季资料收录 UAE、Visma、XDS Astana、DECATHLON CMA CGM、Red Bull–BORA–hansgrohe 与 Tudor。支持中英文搜索、单队链接、品牌车型跳转和整车对比。合作信息注明官方来源，配图与链接明确标为零售图鉴延伸，不将零售配置当成比赛实装。
+
+## 功率与骑行分析
+
+`?view=workshop&tool=power` 提供功率、W/kg 和 FTP 知识，读取 GPX / TCX 或粘贴 XML。文件只保留在浏览器内存中，不上传、不持久化；最大 10 MB / 100,000 点。支持带时间戳的轨迹、常见功率扩展、TCX 距离及速度；没有时间的路线文件会提示无法分析。
+
+- 记录值：按时间加权的平均功率、机械功、功体比与最佳连续 20 分钟功率；零功率参与均值，缺失值不补零，长于 30 秒的缺口和轨迹分段不拼接。文件功率字段可能来自上游平台估算，不能仅凭字段判定有功率计。
+- 模型估算：人重、完整车重、额外携带物、CdA、Crr、空气密度、传动效率与等效迎风。使用阻力、坡度和加速度模型；海拔 / 速度作约 30 秒平滑。缺海拔默认留空，需明确选择平路假设才按平路算。
+- 显示数据覆盖率、CdA ±20% 敏感性、功率曲线和不含经纬度的 CSV。敏感性不是置信区间；未知风况、跟骑、刹车与 GPS 噪声使估算无法替代功率计。
+- FTP 可手动填写。只有用户确认记录包含规范 20 分钟全力测试、且功率来自功率计，才展示最佳 20 分钟 × 0.95 的经验估值；不从轨迹模型自动推算 FTP，也不生成 NP / IF / TSS。
 
 ## 车型 3D 与工程资料
 

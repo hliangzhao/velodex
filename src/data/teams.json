@@ -1,0 +1,147 @@
+{
+  "season": 2026,
+  "checkedAt": "2026-09-20",
+  "teams": [
+    {
+      "id": "uae",
+      "name": "UAE Team Emirates–XRG",
+      "alias": "阿联酋航空车队 波加查",
+      "short": "UAE",
+      "brandId": "colnago",
+      "accent": "#b84640",
+      "headline": "从 Y1Rs，看气动赛车的另一种轮廓。",
+      "description": "Colnago 的 2026 环法用车介绍列出 Pogačar 的 Y1Rs 公路车与 TT2 计时车，并给出了实际车手的装配。这里把职业赛场作为理解设计的入口。",
+      "equipment": [
+        ["整车合作", "Colnago"],
+        ["本期资料", "2026 环法 · Pogačar 的 Y1Rs / TT2"],
+        ["公开装配", "Y1Rs：Dura-Ace Di2、Carbon-Ti 盘片、ENVE SES 4.5 Pro"]
+      ],
+      "lookFor": "留意 Y1Rs 的双 Y 形接点与 CC.Y1 把组；对照 V5Rs，看同一品牌如何安排气动与轻量平台。",
+      "bikeIds": ["y1rs", "v5rs"],
+      "heroBikeId": "y1rs",
+      "sources": [
+        {
+          "label": "Colnago · 2026 环法用车",
+          "url": "https://www.colnago.com/en/news/tadej-pogacar-s-bikes-at-the-2026-tour-de-france"
+        }
+      ]
+    },
+    {
+      "id": "visma",
+      "name": "Team Visma | Lease a Bike",
+      "alias": "维斯玛 珍宝 温格高 范阿尔特",
+      "short": "VISMA",
+      "brandId": "cervelo",
+      "accent": "#928519",
+      "headline": "爬坡、冲刺、计时，三种不同答案。",
+      "description": "车队 2026 赛季发布页将 Cervélo R5、S5、P5 列为三个比赛平台。从它们的并存，可以理解职业车队怎样为赛道选择不同工具。",
+      "equipment": [
+        ["整车合作", "Cervélo"],
+        ["公路平台", "R5 / S5"],
+        ["计时平台", "P5"]
+      ],
+      "lookFor": "先看 R5 与 S5 的前端、下管与座管，再切换到 P5，观察托肘和延伸把带来的姿态变化。",
+      "bikeIds": ["cervelo-s5", "cervelo-r5", "cervelo-p5"],
+      "heroBikeId": "cervelo-s5",
+      "sources": [
+        { "label": "车队官方 · 2026 用车发布", "url": "https://2026.teamvismaleaseabike.com/" }
+      ]
+    },
+    {
+      "id": "xds-astana",
+      "name": "XDS Astana Team",
+      "alias": "喜德盛 阿斯塔纳",
+      "short": "XDS",
+      "brandId": "xds",
+      "accent": "#277d91",
+      "headline": "国产赛车，走进世界巡回赛。",
+      "description": "XDS 的官方资料以 X-LAB AD9 介绍阿斯塔纳车队的气动公路平台。职业车手会按赛道和个人需求装配，零售 AD9 的部件表需要单独阅读。",
+      "equipment": [
+        ["整车合作", "XDS / X-LAB"],
+        ["本期平台", "AD9"],
+        ["版本提醒", "零售整车与车队装配分别记录"]
+      ],
+      "lookFor": "沿着 AD7、AD8、AD9 的图鉴条目，比较不同版本的配置；车队选用并不代表所有零售级别有相同碳布或轮组。",
+      "bikeIds": ["xlab-ad9", "xlab-ad8", "xlab-ad7"],
+      "heroBikeId": "xlab-ad9",
+      "sources": [
+        {
+          "label": "XDS 官方 · 阿斯塔纳 AD9",
+          "url": "https://xds.co/en-intl/blogs/media-room/a-step-up-xds-astana-teams-x-lab-ad9-aero-road-bike"
+        }
+      ]
+    },
+    {
+      "id": "decathlon",
+      "name": "DECATHLON CMA CGM Team",
+      "alias": "迪卡侬 达飞 Van Rysel AG2R",
+      "short": "DECATHLON",
+      "brandId": "vanrysel",
+      "accent": "#3c59c7",
+      "headline": "从迪卡侬，看到职业装备体系。",
+      "description": "车队的 2026 赛季公告确认 Van Rysel 继续承担技术与装备合作，并宣布引入 SRAM 传动系统。图鉴中的 RCR Pro 是另一套已收录的零售配置。",
+      "equipment": [
+        ["整车合作", "Van Rysel"],
+        ["2026 传动合作", "SRAM"],
+        ["图鉴延伸", "RCR Pro 零售版；配置不等同车队用车"]
+      ],
+      "lookFor": "看同一品牌如何同时提供竞赛与耐力公路平台；RCR Pro 和 EDR CF 的几何差异比品牌标签更有信息量。",
+      "bikeIds": ["vanrysel-rcr-pro", "vanrysel-edr-cf"],
+      "heroBikeId": "vanrysel-rcr-pro",
+      "sources": [
+        {
+          "label": "车队官方 · 2026 赛季与合作伙伴",
+          "url": "https://decathloncmacgmteam.com/en/une-saison-2026-ambitieuse/"
+        }
+      ]
+    },
+    {
+      "id": "redbull-bora",
+      "name": "Red Bull–BORA–hansgrohe",
+      "alias": "红牛 博拉 汉斯格雅 闪电",
+      "short": "RED BULL",
+      "brandId": "specialized",
+      "accent": "#344d80",
+      "headline": "同一品牌，也有值得回看的世代。",
+      "description": "车队官方的 2026 赛季发布确认与 Specialized 的合作。沿着图鉴中的 Tarmac 和 Venge 回看，可以理解独立破风平台与全能竞赛车的发展路径。",
+      "equipment": [
+        ["整车合作", "Specialized"],
+        ["合作资料", "2026 赛季官方发布"],
+        ["图鉴延伸", "Tarmac / Venge 历代零售档案"]
+      ],
+      "lookFor": "将 SL6、Venge 与 SL8 放在一起看，观察管型、轮胎间隙和走线的变化。这里的历史车型不是 2026 车队现役清单。",
+      "bikeIds": ["tarmac-sl8", "sworks-venge", "tarmac-sl6"],
+      "heroBikeId": "tarmac-sl8",
+      "sources": [
+        {
+          "label": "车队官方 · 2026 赛季发布",
+          "url": "https://www.redbullborahansgrohe.com/en/news/flying-look-red-bull-bora-hansgrohe-takes-off-with-a-style-update"
+        }
+      ]
+    },
+    {
+      "id": "tudor",
+      "name": "Tudor Pro Cycling",
+      "alias": "帝舵 BMC",
+      "short": "TUDOR",
+      "brandId": "bmc",
+      "accent": "#a23e37",
+      "headline": "从前叉，到车架中的气流通道。",
+      "description": "BMC 的 2026 赛季揭幕资料确认 Tudor 使用 Teammachine R 01。它的前叉间距、下管和把组，是观察现代气动公路设计的好入口。",
+      "equipment": [
+        ["整车合作", "BMC"],
+        ["公开比赛平台", "Teammachine R 01"],
+        ["资料场景", "2026 环澳赛季揭幕"]
+      ],
+      "lookFor": "看 Halo 前叉怎样安排前轮周围的空间，再回到整车几何，区分表面造型与实际骑姿。",
+      "bikeIds": ["teammachine-r01"],
+      "heroBikeId": "teammachine-r01",
+      "sources": [
+        {
+          "label": "BMC 官方 · 2026 赛季揭幕",
+          "url": "https://us.bmc-switzerland.com/blogs/news/ready-set-go-the-2026-season-starts-in-australia"
+        }
+      ]
+    }
+  ]
+}

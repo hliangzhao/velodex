@@ -68,6 +68,7 @@ export type Bike = {
   material: string;
   components: Component[];
   geometry: {
+    status?: 'unavailable';
     sizes: GeometrySize[];
     defaultSize: string;
     source: string;
@@ -78,7 +79,8 @@ export type Bike = {
 };
 export type Catalog = { updatedAt: string; brands: Brand[]; bikes: Bike[]; collectionNote: string };
 
-export type PartCategory = 'wheels' | 'groupsets' | 'tires';
+export type PartCategory =
+  'wheels' | 'groupsets' | 'tires' | 'handlebars' | 'seatposts' | 'saddles';
 export type Product = {
   id: string;
   brandId: string;
@@ -89,6 +91,8 @@ export type Product = {
   tagline: string;
   description: string;
   image?: string;
+  imageCaption?: string;
+  imageSource?: string;
   specs: [string, string][];
   highlights: { title: string; text: string }[];
   compatibility: string;

@@ -2494,3 +2494,19 @@ footer > a:last-child {
     bottom: 15px;
   }
 }
+
+.geometry-unavailable {
+  padding: 40px;
+  border: 1px dashed var(--line);
+  background: #f0f4e9;
+}
+.geometry-unavailable h3 {
+  font-size: 23px;
+  margin: 14px 0;
+}
+.geometry-unavailable p {
+  max-width: 650px;
+  line-height: 1.9;
+  color: #718065;
+  font-size: 13px;
+}

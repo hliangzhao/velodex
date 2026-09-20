@@ -1,0 +1,344 @@
+.power-heading {
+  padding: 20px 0 28px;
+}
+.power-heading h2 {
+  font-size: 38px;
+  letter-spacing: -1px;
+  margin: 15px 0;
+}
+.power-heading p,
+.power-knowledge p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #6d7a61;
+}
+.power-knowledge {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.power-knowledge article {
+  border-top: 2px solid #8ca55a;
+  padding: 20px 5px;
+}
+.power-knowledge article > span {
+  font:
+    500 11px 'Barlow',
+    sans-serif;
+  color: #7f926b;
+  letter-spacing: 1px;
+}
+.power-knowledge h3 {
+  font-size: 20px;
+  margin: 14px 0 8px;
+}
+.power-knowledge a {
+  font-size: 10px;
+  color: #667e4c;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.power-upload {
+  margin-bottom: 28px;
+}
+.power-upload h3 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+.power-upload p {
+  max-width: 800px;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #6c7b5e;
+}
+.power-upload-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.power-upload .dark-button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.power-upload input[type='file'] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+}
+.power-upload .dark-button:focus-within {
+  outline: 2px solid #779740;
+  outline-offset: 3px;
+}
+.power-private {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+}
+.power-private svg {
+  flex-shrink: 0;
+}
+.power-paste {
+  margin-top: 18px;
+  font-size: 12px;
+  color: #6d7f5a;
+}
+.power-paste textarea {
+  display: block;
+  width: 100%;
+  height: 130px;
+  margin: 14px 0;
+  padding: 12px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  background: #fff;
+  font: 11px monospace;
+}
+.power-analysis-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.65fr);
+  gap: 24px;
+}
+.power-inputs h3,
+.power-results h3 {
+  font-size: 24px;
+  margin: 12px 0 18px;
+  overflow-wrap: anywhere;
+}
+.power-inputs > p,
+.power-results > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #6b7d5c;
+}
+.power-inputs a {
+  text-decoration: underline;
+}
+.power-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 19px 14px;
+  margin: 23px 0;
+}
+.power-fields label,
+.power-ftp {
+  font-size: 11px;
+  color: #526546;
+}
+.power-fields input,
+.power-ftp input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #cfd8c1;
+  background: #fff;
+  padding: 11px 10px;
+  margin: 8px 0;
+  font:
+    500 17px 'Barlow',
+    sans-serif;
+}
+.power-fields small {
+  display: block;
+  font-size: 10px;
+  color: #7a8970;
+  line-height: 1.8;
+}
+.power-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.power-check input {
+  margin: 5px 0 0;
+  flex-shrink: 0;
+  accent-color: #6f8d3c;
+}
+.power-ftp {
+  display: block;
+  margin-top: 25px;
+}
+.power-small {
+  font-size: 11px !important;
+  line-height: 1.9;
+  color: #768568;
+}
+.power-error {
+  color: #a13a2e !important;
+  font-size: 12px;
+}
+.power-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  margin: 23px 0;
+}
+.power-metrics > div {
+  padding: 18px;
+  border-bottom: 1px solid var(--line);
+  background: #f1f5e9;
+}
+.power-metrics > div:nth-child(odd) {
+  border-right: 1px solid var(--line);
+}
+.power-metrics > div:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+.power-metrics .estimated {
+  background: #f6f0e7;
+}
+.power-metrics small {
+  font-size: 10px;
+  color: #6c7b5f;
+}
+.power-metrics strong {
+  display: block;
+  font:
+    600 44px 'Barlow Condensed',
+    sans-serif;
+  margin: 7px 0;
+}
+.power-metrics strong span {
+  font-size: 15px;
+  color: #7c8a6c;
+}
+.power-metrics p {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #7a856e;
+  margin: 0;
+}
+.power-summary {
+  display: grid;
+  gap: 9px;
+  font-size: 11px;
+  color: #6c7c5c;
+  line-height: 1.8;
+}
+.power-notice {
+  background: #edf2df;
+  border-left: 2px solid #9bb562;
+  padding: 14px 17px;
+}
+.power-chart {
+  margin: 25px 0;
+}
+.power-chart > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.power-chart select {
+  font-size: 11px;
+  padding: 7px;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+.power-chart svg {
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+.power-chart text {
+  font:
+    11px 'Barlow',
+    sans-serif;
+  fill: #718362;
+}
+.power-chart > p {
+  font-size: 10px;
+  color: #7d8c70;
+}
+.ftp-estimate {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  margin: 20px 0;
+}
+.ftp-estimate p {
+  font-size: 12px;
+  line-height: 1.9;
+}
+.power-method {
+  margin: 28px 0 50px;
+  border: 1px solid var(--line);
+  padding: 22px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #6e7e61;
+}
+.power-method summary {
+  cursor: pointer;
+  color: #344b28;
+}
+.power-method a {
+  text-decoration: underline;
+}
+@media (max-width: 950px) {
+  .power-analysis-layout {
+    grid-template-columns: 1fr;
+  }
+  .power-fields {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .power-knowledge {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .power-knowledge article {
+    padding: 16px 0;
+  }
+  .power-heading h2 {
+    font-size: 30px;
+  }
+  .power-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .power-metrics strong {
+    font-size: 36px;
+  }
+  .power-metrics > div {
+    padding: 14px 12px;
+  }
+  .power-private {
+    align-items: flex-start;
+  }
+  .power-method {
+    padding: 17px;
+  }
+}
+.work-panel label.power-check {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+}
+.work-panel .power-fields label {
+  margin: 0;
+  gap: 4px;
+}
+.power-csv p {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #708262;
+}
+.power-csv textarea {
+  width: 100%;
+  height: 105px;
+  border: 1px solid var(--line);
+  padding: 10px;
+  font: 10px monospace;
+  resize: vertical;
+  box-sizing: border-box;
+}

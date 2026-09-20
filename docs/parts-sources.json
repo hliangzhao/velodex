@@ -88,6 +88,105 @@
       "width": 1000,
       "height": 1000,
       "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-s-tr/"
+    },
+    {
+      "id": "dura-ace-r9200",
+      "url": "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICComponent/cg3SHICRearDerailleur/cg4SHICRearDerailleurDi2spec/RD-R9250-shic219-primary_1.jpg",
+      "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9250.html",
+      "file": "/parts/dura-ace-r9200.jpg",
+      "width": 2632,
+      "height": 2632,
+      "note": "官方 RD-R9250 后拨图 · 系列代表部件，非整套套件"
+    },
+    {
+      "id": "ultegra-r8100",
+      "url": "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICComponent/cg3SHICRearDerailleur/cg4SHICRearDerailleurDi2spec/RD-R8150-primary_1.jpg",
+      "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R8150.html",
+      "file": "/parts/ultegra-r8100.jpg",
+      "width": 2632,
+      "height": 2632,
+      "note": "官方 RD-R8150 后拨图 · 系列代表部件，非整套套件"
+    },
+    {
+      "id": "105-r7100",
+      "url": "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICComponent/cg3SHICRearDerailleur/cg4SHICRearDerailleurDi2spec/RD-R7150-shic219-primary_2.jpg",
+      "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R7150.html",
+      "file": "/parts/105-r7100.jpg",
+      "width": 2632,
+      "height": 2632,
+      "note": "官方 RD-R7150 后拨图 · 系列代表部件，非整套套件"
+    },
+    {
+      "id": "super-record-13",
+      "url": "https://www.campagnolo.com/dw/image/v2/BJSG_PRD/on/demandware.static/-/Sites-cmp-master-catalog/default/dw273617d7/images/hi-res-1/CRDSUPERRECORD13.standard.1.H1.jpg?sw=885&q=85",
+      "source": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
+      "file": "/parts/super-record-13.jpg",
+      "width": 885,
+      "height": 885,
+      "note": "官方 Super Record 13 后拨图 · 系列代表部件，非整套套件"
+    },
+    {
+      "id": "dura-ace-r9100",
+      "url": "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICComponent/cg3SHICRearDerailleur/cg4SHICRearDerailleur/P-RD-R9100_14139_1.jpg",
+      "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html",
+      "file": "/parts/dura-ace-r9100.jpg",
+      "width": 2350,
+      "height": 2350,
+      "note": "官方 RD-R9100-SS 后拨图 · 系列代表部件，非整套套件"
+    },
+    {
+      "id": "roval-rapide-cockpit",
+      "url": "https://assets.specialized.com/i/specialized/21023-061_WHL_ROVAL-RAPIDE-RD-COCKPIT-CARB-BLK_HERO-SQUARE?fmt=webp&w=1000",
+      "source": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323",
+      "file": "/parts/roval-rapide-cockpit.webp",
+      "width": 1000,
+      "height": 1000,
+      "note": "官方产品图 · Rapide Cockpit"
+    },
+    {
+      "id": "pro-vibe-evo",
+      "url": "https://pro-bikegear.com/cdn/shop/files/prha0484-pro-vibe-evo-handlebar-2021-1.png?v=1781102888&width=1000",
+      "source": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar",
+      "file": "/parts/pro-vibe-evo.png",
+      "width": 524,
+      "height": 524,
+      "note": "官方产品图 · Vibe Evo"
+    },
+    {
+      "id": "roval-alpinist-seatpost",
+      "url": "https://assets.specialized.com/i/specialized/28121-370_CMPNT_ROVAL-ALPINIST-CARBON-POST-272-X-300MM_HERO-SQUARE?fmt=webp&w=1000",
+      "source": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098",
+      "file": "/parts/roval-alpinist-seatpost.webp",
+      "width": 1000,
+      "height": 1000,
+      "note": "官方产品图 · Alpinist Seatpost"
+    },
+    {
+      "id": "pro-vibe-seatpost",
+      "url": "https://pro-bikegear.com/cdn/shop/files/prsp0296_vibesportcarbonseatpost_png_3000x3000_001-ns.png?v=1781103990&width=1000",
+      "source": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost",
+      "file": "/parts/pro-vibe-seatpost.png",
+      "width": 1000,
+      "height": 1000,
+      "note": "官方产品图 · Vibe Carbon Seatpost"
+    },
+    {
+      "id": "power-expert",
+      "url": "https://assets.specialized.com/i/specialized/27116-150_SDDL_POWER-EXPERT_BLK_SIDE?fmt=webp&w=1000",
+      "source": "https://www.specialized.com/ph/en/power-expert/p/155978",
+      "file": "/parts/power-expert.webp",
+      "width": 1000,
+      "height": 319,
+      "note": "官方产品图 · Power Expert"
+    },
+    {
+      "id": "fizik-tempo-argo-r3",
+      "url": "https://www.fizik.com/cdn/shop/files/70E0S00A13A22_f70b8db0-3145-4536-a5ea-48a8b519c0b7.jpg?v=1751364311&width=1000",
+      "source": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
+      "file": "/parts/fizik-tempo-argo-r3.jpg",
+      "width": 1000,
+      "height": 1000,
+      "note": "官方产品图 · Tempo Argo R3"
     }
   ],
   "note": "Official manufacturer product images. Copyright retained by original owners. Single components illustrate their corresponding product family."

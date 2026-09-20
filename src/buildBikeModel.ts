@@ -224,13 +224,13 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
     [postStart, postMid, saddle],
     p.postDepth / 1000,
     p.postWidth / 1000,
-    'frame',
+    'seatpost',
     special === 'seatmast' ? carbon : dark,
     special === 'round' || special === 'storage' ? 1 : 0.7,
     0.88,
   );
   if (special === 'seatmast')
-    sweep([saddle.clone().addScaledVector(sd, -0.045), saddle], 0.041, 0.029, 'frame', dark, 0.7);
+    sweep([saddle.clone().addScaledVector(sd, -0.045), saddle], 0.041, 0.029, 'seatpost', dark, 0.7);
   if (special === 'round' || special === 'storage')
     sweep(
       [seat.clone().addScaledVector(sd, 0.008), seat.clone().addScaledVector(sd, 0.017)],
@@ -374,7 +374,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       bevelSegments: 3,
       curveSegments: 20,
     }),
-    'frame',
+    'saddle',
     dark,
     saddle.clone().add(V(0.014, 0.026)),
   );
@@ -388,7 +388,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       ],
       0.006,
       0.006,
-      'frame',
+      'saddle',
       metal,
       1,
     );
@@ -652,11 +652,11 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       0.8,
     );
   const bar = stemRoot.clone().add(V((p.stemLength ?? 100) / 1000, 0.019));
-  sweep([stemRoot, bar], special === 's5' ? 0.035 : 0.025, 0.032, 'shifters', dark, 0.5, 0.7);
+  sweep([stemRoot, bar], special === 's5' ? 0.035 : 0.025, 0.032, 'handlebar', dark, 0.5, 0.7);
   if (isTT) {
     // TT base bar, riser, elbow cups and extensions are distinct selectable surfaces.
     const riserTop = bar.clone().add(V(-0.014, special === 'tt' ? 0.105 : 0.078));
-    sweep([bar, riserTop], 0.035, 0.055, 'shifters', carbon, 0.55);
+    sweep([bar, riserTop], 0.035, 0.055, 'handlebar', carbon, 0.55);
     for (const sign of [-1, 1]) {
       const wing = bar.clone().add(V(0.012, -0.007, sign * 0.19));
       const baseBar = add(
@@ -672,7 +672,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
           16,
           false,
         ),
-        'shifters',
+        'handlebar',
         dark,
       );
       baseBar.userData.structure = 'tt-basebar';
@@ -689,7 +689,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
         0.8,
       );
       const elbow = riserTop.clone().add(V(-0.028, 0, sign * 0.073));
-      const pad = add(new THREE.BoxGeometry(0.095, 0.015, 0.07), 'shifters', rubber, elbow);
+      const pad = add(new THREE.BoxGeometry(0.095, 0.015, 0.07), 'handlebar', rubber, elbow);
       pad.userData.structure = 'tt-elbow-pad';
       for (const side of [-1, 1]) {
         sweep(
@@ -699,7 +699,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
           ],
           0.017,
           0.004,
-          'shifters',
+          'handlebar',
           carbon,
           0.8,
         );
@@ -718,7 +718,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
           14,
           false,
         ),
-        'shifters',
+        'handlebar',
         dark,
       );
       extension.userData.structure = 'tt-extension';
@@ -736,7 +736,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
     // A regular tube is appropriate here: unlike frame lofts the top runs across Z.
     add(
       new THREE.TubeGeometry(new THREE.CatmullRomCurve3(barPath), 36, 0.013, 12, false),
-      'shifters',
+      'handlebar',
       dark,
     );
     for (const sign of [-1, 1]) {
@@ -751,7 +751,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       ];
       add(
         new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points), 50, 0.0125, 12, false),
-        'shifters',
+        'handlebar',
         rubber,
         V(0, 0),
         0.85,

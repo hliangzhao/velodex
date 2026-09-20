@@ -33,7 +33,12 @@ export function createApp(catalog = loadCatalog(), { production = false } = {}) 
     const { category, brand, q } = req.query;
     if ([category, brand, q].some((value) => value !== undefined && typeof value !== 'string'))
       return res.status(400).json({ error: '筛选参数必须是字符串' });
-    if (category && !['all', 'wheels', 'groupsets', 'tires'].includes(category))
+    if (
+      category &&
+      !['all', 'wheels', 'groupsets', 'tires', 'handlebars', 'seatposts', 'saddles'].includes(
+        category,
+      )
+    )
       return res.status(400).json({ error: '不支持的配件分类' });
     const query = q?.trim().toLowerCase();
     const products = parts.products.filter(

@@ -11,7 +11,9 @@ test('parts and paint records resolve to sourced local assets and valid cross-li
       parts.brands.some((b) => b.id === p.brandId),
       p.id,
     );
-    assert.ok(['wheels', 'groupsets', 'tires'].includes(p.category));
+    assert.ok(
+      ['wheels', 'groupsets', 'tires', 'handlebars', 'seatposts', 'saddles'].includes(p.category),
+    );
     assert.equal(new URL(p.source).protocol, 'https:');
     assert.ok(
       p.specs.length >= 4 && p.highlights.length >= 2 && p.compatibility && p.tradeoff,
@@ -52,6 +54,13 @@ test('parts API filters safely, supports detail links and rejects malformed quer
   );
   assert.equal((await (await get('/api/parts?q=' + encodeURIComponent('马牌'))).json()).total, 3);
   assert.equal((await (await get('/api/parts/105-r7100')).json()).category, 'groupsets');
+  for (const category of ['handlebars', 'seatposts', 'saddles']) {
+    const response = await get(`/api/parts?category=${category}`);
+    assert.equal(response.status, 200);
+    const data = await response.json();
+    assert.ok(data.products.length >= 2);
+    assert.ok(data.products.every((p) => p.category === category && p.image));
+  }
   assert.equal((await get('/api/parts/missing')).status, 404);
   for (const query of [
     'category=bad',

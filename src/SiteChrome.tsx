@@ -13,7 +13,7 @@ export type Page =
   | 'compare'
   | 'workshop'
   | 'feedback'
-  | 'riders';
+  | 'teams';
 export const base = import.meta.env.BASE_URL;
 export function SiteHeader({ active }: { active: Page }) {
   const { library } = useLibrary();
@@ -29,7 +29,7 @@ export function SiteHeader({ active }: { active: Page }) {
             ['bikes', '整车图鉴'],
             ['parts', '配件图鉴'],
             ['stories', '专题'],
-            ['riders', '车友故事'],
+            ['teams', '车队'],
             ['compare', '整车对比'],
             ['garage', '我的车库'],
             ['workshop', '工坊'],

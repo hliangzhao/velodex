@@ -27,13 +27,17 @@ export default function GeometryDiagram({ g, bikeId }: { g: GeometrySize; bikeId
     x: g.wheelbase ? rear.x + g.wheelbase * scale : steeringX + 45 * scale,
     y: wheelY,
   };
-  const seatLength = g.seatTube ?? profile.seatLength + (g.stack - profile.referenceStack) * 0.95;
+  // The 2D dimensions remain available even when no approximate 3D profile exists.
+  // Unmeasured outline details are schematic, never exposed as catalog dimensions.
+  const seatLength =
+    g.seatTube ??
+    (profile ? profile.seatLength + (g.stack - profile.referenceStack) * 0.95 : g.stack * 0.87);
   const alongSeat = (length: number) =>
     shift(bb, -Math.cos(seatAngle) * length * scale, -Math.sin(seatAngle) * length * scale);
   const seatTop = alongSeat(seatLength);
-  const stayJoin = alongSeat(seatLength - profile.stayDrop);
+  const stayJoin = alongSeat(seatLength - (profile?.stayDrop ?? 0));
   const postTop = alongSeat(seatLength + 75);
-  const wheelRadius = (311 + profile.tire) * scale;
+  const wheelRadius = (311 + (profile?.tire ?? 28)) * scale;
   const reachY = headTop.y - 38;
   const stackX = Math.max(headBottom.x, headTop.x) + 68;
   const wheelbaseY = wheelY + wheelRadius + 32;

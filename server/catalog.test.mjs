@@ -4,10 +4,13 @@ import { existsSync } from 'node:fs';
 import { createApp, loadCatalog } from './app.mjs';
 
 const catalog = loadCatalog();
-test('every bike has its own eight component records, valid hotspots, sources and local image', () => {
+test('every bike has its own eleven component records, valid hotspots, sources and local image', () => {
   const ids = new Set();
   const required = [
     'frame',
+    'handlebar',
+    'seatpost',
+    'saddle',
     'shifters',
     'crank',
     'chainrings',
@@ -53,7 +56,7 @@ test('catalog API filters and returns correct records without exposing arbitrary
   const endurance = await (await get('/api/bikes?kind=' + encodeURIComponent('长途耐力'))).json();
   assert.deepEqual(
     endurance.bikes.map((b) => b.id),
-    ['vanrysel-edr-cf', 'defy-pro0', 'endurace-slx8', 'scultura-endurance8000'],
+    catalog.bikes.filter((b) => b.kind === '长途耐力').map((b) => b.id),
   );
   assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent('喜德盛'))).json()).total, 5);
   const decathlon = await (await get('/api/bikes?q=' + encodeURIComponent('迪卡侬'))).json();
@@ -64,13 +67,13 @@ test('catalog API filters and returns correct records without exposing arbitrary
   const meridaArchive = await (await get('/api/bikes?brand=merida&collection=classic')).json();
   assert.deepEqual(
     meridaArchive.bikes.map((b) => b.id),
-    ['scultura8000', 'scultura-endurance8000'],
+    ['scultura8000', 'scultura-endurance8000', 'reacto8000', 'silex8000'],
   );
   assert.equal((await get('/api/bikes?kind=a&kind=b')).status, 400);
   const gravel = await (await get('/api/bikes?kind=' + encodeURIComponent('砾石公路'))).json();
   assert.deepEqual(
     gravel.bikes.map((b) => b.id),
-    ['diverge-comp-carbon', 'revolt-advanced0'],
+    ['diverge-comp-carbon', 'revolt-advanced0', 'silex8000'],
   );
   for (const name of ['银贝斯', '速比特', '瑞豹'])
     assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent(name))).json()).total, 2);
@@ -84,6 +87,11 @@ test('catalog API filters and returns correct records without exposing arbitrary
 test('frame sizes have valid reference dimensions and the expanded catalog spans road disciplines', () => {
   for (const bike of catalog.bikes) {
     const geometry = bike.geometry;
+    if (!geometry.sizes.length) {
+      assert.equal(geometry.status, 'unavailable', bike.id);
+      assert.ok(geometry.note && !geometry.defaultSize, bike.id);
+      continue;
+    }
     assert.ok(
       geometry.sizes.some((g) => g.size === geometry.defaultSize),
       bike.id,

@@ -97,6 +97,24 @@
       "name": "SCOTT",
       "country": "瑞士",
       "founded": "1958"
+    },
+    {
+      "id": "liv",
+      "name": "Liv 丽以芙",
+      "country": "中国台湾",
+      "founded": ""
+    },
+    {
+      "id": "cinelli",
+      "name": "Cinelli 西耐力",
+      "country": "意大利",
+      "founded": ""
+    },
+    {
+      "id": "camp",
+      "name": "CAMP 坎普",
+      "country": "中国",
+      "founded": ""
     }
   ],
   "bikes": [
@@ -243,6 +261,46 @@
             ["型号", "Turbo TLR Race"],
             ["出厂内胎", "700 × 20/28 mm"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 25,
+          "title": "Roval Rapide Cockpit",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "碳纤维一体把组"],
+            ["尺寸", "宽度与把立长度随车架尺码变化"]
+          ],
+          "catalogIds": ["roval-rapide-cockpit"]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "S-Works Tarmac SL8",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "FACT 碳纤维"],
+            ["后飘", "15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "S-Works Power with Mirror",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "S-Works Power with Mirror"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -339,7 +397,21 @@
           "hex": "#8B9F96",
           "image": "/bikes/tarmac-sl8--fjord.png",
           "source": "https://www.specialized.com/us/en/s-works-tarmac-sl8-shimano-dura-ace-di2/p/4221553?color=5460166-4221553",
-          "imageRatio": 1.7777777777777777
+          "imageRatio": 1.7777777777777777,
+          "hotspots": {
+            "handlebar": {
+              "x": 69,
+              "y": 25
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         }
       ]
     },
@@ -484,6 +556,45 @@
             ["胎体密度", "170 TPI"],
             ["系统", "Tubeless Ready"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 74,
+          "y": 32,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Aeolus RSL, carbon rails, 145mm width",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Aeolus RSL, carbon rails, 145mm width"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -707,6 +818,45 @@
             ["轮径", "700c"]
           ],
           "catalogIds": ["gp5000-str", "aero111"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 70,
+          "y": 22,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Italia SLR Boost Superflow S saddle Carbon Rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Selle Italia SLR Boost Superflow S saddle Carbon Rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -941,6 +1091,45 @@
             ["官网宽度参考", "26.5 mm"],
             ["结构", "折叠真空胎"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 29,
+          "title": "Giant Contact SLR Aero",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["宽度", "XS/S 380；M/ML 400；L/XL 420 mm"],
+            ["用途", "气动公路"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Advanced SL 一体式座管",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "车架一体式设计"],
+            ["后飘", "−5 / +15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "CADEX AMP",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "CADEX AMP"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -1164,6 +1353,45 @@
             ["轮径", "700c"]
           ],
           "catalogIds": ["gp5000-str"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 72,
+          "y": 29,
+          "title": "MOST Talon Ultra Fast",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "一体把组"],
+            ["尺寸", "按整车尺码及选配核对"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Pinarello Aero Seatpost",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "专用气动座管"],
+            ["夹头", "3D 钛合金夹头"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Most Lynx Ultrafast Superflow L Carbon Large 145mm",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Most Lynx Ultrafast Superflow L Carbon Large 145mm"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -1330,6 +1558,45 @@
             ["轮胎型号", "待核验"],
             ["宽度", "待核验"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 68,
+          "y": 26,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -1550,6 +1817,45 @@
             ["胎体密度", "320 TPI"],
             ["内胎", "Turbo Ultralight"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 75,
+          "y": 19,
+          "title": "Roval Rapide Handlebar",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["把立", "Tarmac · 6°"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "S-Works Tarmac",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "FACT 碳纤维"],
+            ["后飘", "20 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Body Geometry S-Works Power, carbon fiber rails, carbon fiber base",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Body Geometry S-Works Power, carbon fiber rails, carbon fiber base"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -1785,6 +2091,45 @@
             ["胎体", "60 TPI"],
             ["品牌", "Branta"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 27.32,
+          "title": "Branta Carbon Integrated",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["结构", "一体车把 / 把立"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "XDS Carbon Aero",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["截面", "专用气动外形"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "imagePosition": "50% 33.58407079646021%",
@@ -1999,6 +2344,45 @@
             ["最大胎宽", "32C"],
             ["品牌", "Michelin"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 29.24,
+          "title": "Branta Carbon Integrated",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["结构", "一体车把 / 把立"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "XDS Carbon Aero",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["截面", "专用气动外形"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Italia SLR Boost, Carbon Rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Selle Italia SLR Boost, Carbon Rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "imagePosition": "50% 40.19548872180451%",
@@ -2086,7 +2470,21 @@
           "source": "https://xds.co/products/ad8",
           "imageRatio": 1.65,
           "imagePosition": "50% 40.19548872180451%",
-          "note": "官方涂装图；具体配置以所选版本参数为准。"
+          "note": "官方涂装图；具体配置以所选版本参数为准。",
+          "hotspots": {
+            "handlebar": {
+              "x": 67,
+              "y": 29.24
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         },
         {
           "id": "strata-grey-black",
@@ -2096,7 +2494,21 @@
           "source": "https://xds.co/products/ad8",
           "imageRatio": 1.65,
           "imagePosition": "50% 40.19548872180451%",
-          "note": "官方涂装图；具体配置以所选版本参数为准。"
+          "note": "官方涂装图；具体配置以所选版本参数为准。",
+          "hotspots": {
+            "handlebar": {
+              "x": 67,
+              "y": 29.24
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         }
       ]
     },
@@ -2241,6 +2653,45 @@
             ["最大胎宽", "32C"],
             ["品牌", "Michelin"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 68,
+          "y": 24.96,
+          "title": "Branta Carbon Integrated",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["结构", "一体车把 / 把立"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "XDS Carbon Aero",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["截面", "专用气动外形"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Nago R4 PAS, Carbon Rails (Team Replica)",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Prologo Nago R4 PAS, Carbon Rails (Team Replica)"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "imagePosition": "50% 40.19548872180451%",
@@ -2328,7 +2779,21 @@
           "source": "https://xds.co/products/ad9",
           "imageRatio": 1.65,
           "imagePosition": "50% 40.19548872180451%",
-          "note": "官方涂装图；具体配置以所选版本参数为准。"
+          "note": "官方涂装图；具体配置以所选版本参数为准。",
+          "hotspots": {
+            "handlebar": {
+              "x": 68,
+              "y": 24.96
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         }
       ]
     },
@@ -2470,6 +2935,45 @@
           ],
           "x": 74,
           "y": 44.19
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 26.38,
+          "title": "Branta Carbon Integrated",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["结构", "一体车把 / 把立"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "XDS Carbon Aero",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["截面", "专用气动外形"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Branta R302, Steel Rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Branta R302, Steel Rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "imagePosition": "50% 40.19548872180451%",
@@ -2569,7 +3073,21 @@
           "source": "https://xds.co/products/rs7",
           "imageRatio": 1.65,
           "imagePosition": "50% 40.19548872180451%",
-          "note": "官方涂装图；具体配置以所选版本参数为准。"
+          "note": "官方涂装图；具体配置以所选版本参数为准。",
+          "hotspots": {
+            "handlebar": {
+              "x": 69,
+              "y": 26.38
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         }
       ]
     },
@@ -2710,6 +3228,45 @@
           ],
           "x": 74,
           "y": 45.62
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 27.81,
+          "title": "Branta Carbon Integrated",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["结构", "一体车把 / 把立"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "XDS Carbon",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["直径", "27.2 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Italia SLR Boost, Carbon Rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Selle Italia SLR Boost, Carbon Rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "imagePosition": "50% 40.19548872180451%",
@@ -2912,6 +3469,45 @@
           ],
           "x": 78,
           "y": 34.65
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 70,
+          "y": 14.9,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "imagePosition": "50% 55.84615384615385%",
@@ -3123,6 +3719,45 @@
           ],
           "x": 87,
           "y": 49
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 27,
+          "title": "Giant Contact SLR",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "分体车把"],
+            ["宽度", "随尺码变化，上把与下把宽度不同"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Giant Variant",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "复合材料"],
+            ["后飘", "−5 / +15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Giant Fleet SL",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Giant Fleet SL"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -3346,6 +3981,45 @@
           ],
           "x": 87,
           "y": 49
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 27,
+          "title": "Giant Contact SLR D-Fuse",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "D-Fuse 碳纤维车把"],
+            ["宽度", "上 / 下把：XS/S 400/420；M/ML 420/440；L/XL 440/460 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Giant D-Fuse SLR",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "复合材料"],
+            ["后飘", "−5 / +15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Giant Fleet SL",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Giant Fleet SL"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -3571,6 +4245,45 @@
           "x": 89,
           "y": 47,
           "catalogIds": ["gp5000-str"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 26,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Italia SLR Advan Saddle",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Selle Italia SLR Advan Saddle"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -3678,7 +4391,21 @@
           "hex": "#cedd43",
           "image": "/bikes/ultimate-slx8--ultimate-alt.png",
           "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html?dwvar_4372_pv_rahmenfarbe=R100_P09",
-          "imageRatio": 1.7777777777777777
+          "imageRatio": 1.7777777777777777,
+          "hotspots": {
+            "handlebar": {
+              "x": 69,
+              "y": 26
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         }
       ]
     },
@@ -3818,6 +4545,45 @@
           ],
           "x": 89,
           "y": 47
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 26,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Aliante R5",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Fizik Aliante R5"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -3925,7 +4691,21 @@
           "hex": "#f0efea",
           "image": "/bikes/endurace-slx8--endurace-alt.png",
           "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html?dwvar_4432_pv_rahmenfarbe=R130_P01",
-          "imageRatio": 1.7777777777777777
+          "imageRatio": 1.7777777777777777,
+          "hotspots": {
+            "handlebar": {
+              "x": 69,
+              "y": 26
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         }
       ]
     },
@@ -4065,6 +4845,45 @@
           ],
           "x": 94,
           "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 74,
+          "y": 20,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -4315,6 +5134,45 @@
           "x": 94,
           "y": 46,
           "catalogIds": ["gp5000-str"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 74,
+          "y": 20,
+          "title": "MERIDA TEAM SL 1P",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维一体把"],
+            ["宽度", "随尺码变化"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "MERIDA TEAM SL",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质 / 直径", "碳纤维 / 27.2 mm"],
+            ["后飘", "15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Scratch M5",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Prologo Scratch M5"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -4551,6 +5409,45 @@
           ],
           "x": 94,
           "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 74,
+          "y": 20,
+          "title": "MERIDA EXPERT SL II",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["把立", "EXPERT SL 2P II"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "MERIDA TEAM SL",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质 / 直径", "碳纤维 / 27.2 mm"],
+            ["后飘", "15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Scratch M5",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Prologo Scratch M5"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -4778,6 +5675,45 @@
           "x": 91,
           "y": 56,
           "catalogIds": ["gp5000-str"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 70,
+          "y": 28,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -5002,6 +5938,45 @@
             ["尺寸", "700 × 28C"],
             ["结构", "Tubeless Ready"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 54,
+          "y": 30,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -5122,6 +6097,18 @@
             "tires": {
               "x": 62.5,
               "y": 39.5
+            },
+            "handlebar": {
+              "x": 51,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         },
@@ -5166,6 +6153,18 @@
             "tires": {
               "x": 62.5,
               "y": 39.5
+            },
+            "handlebar": {
+              "x": 51,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         },
@@ -5210,6 +6209,18 @@
             "tires": {
               "x": 62.5,
               "y": 39.5
+            },
+            "handlebar": {
+              "x": 51,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         },
@@ -5254,6 +6265,18 @@
             "tires": {
               "x": 62.5,
               "y": 39.5
+            },
+            "handlebar": {
+              "x": 51,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         }
@@ -5394,6 +6417,45 @@
             ["尺寸", "700 × 28C"],
             ["结构", "Tubeless Ready"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 54,
+          "y": 30,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -5536,6 +6598,18 @@
             "tires": {
               "x": 62.5,
               "y": 39.5
+            },
+            "handlebar": {
+              "x": 51,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         },
@@ -5580,6 +6654,18 @@
             "tires": {
               "x": 65,
               "y": 37.8
+            },
+            "handlebar": {
+              "x": 54,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         },
@@ -5624,6 +6710,18 @@
             "tires": {
               "x": 65,
               "y": 37.8
+            },
+            "handlebar": {
+              "x": 54,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         },
@@ -5668,6 +6766,18 @@
             "tires": {
               "x": 62.5,
               "y": 39.5
+            },
+            "handlebar": {
+              "x": 51,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         },
@@ -5712,6 +6822,18 @@
             "tires": {
               "x": 65,
               "y": 37.8
+            },
+            "handlebar": {
+              "x": 54,
+              "y": 30
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         }
@@ -5852,6 +6974,46 @@
             ["结构", "Tubeless Ready"]
           ],
           "catalogIds": ["pirelli-race-tlr-rs"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 26,
+          "title": "BMC ICS Carbon Aero",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "碳纤维一体把"],
+            ["Drop / Reach", "135 / 77 mm"],
+            ["外撇", "12.5°"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Teammachine R 01 Premium Carbon",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["后飘", "10 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -6086,6 +7248,45 @@
             ["尺寸", "700 × 26C"],
             ["结构", "Tubeless Ready"]
           ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 26,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -6311,6 +7512,45 @@
             ["结构", "Tubeless Ready"]
           ],
           "catalogIds": ["vittoria-corsa-pro"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 34,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -6406,7 +7646,21 @@
           "hex": "#a83135",
           "image": "/bikes/p5--redHot.png",
           "source": "https://www.cervelo.com/en-US/bikes/p5",
-          "imageRatio": 1.8416206261510129
+          "imageRatio": 1.8416206261510129,
+          "hotspots": {
+            "handlebar": {
+              "x": 67,
+              "y": 34
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
+            }
+          }
         }
       ]
     },
@@ -6546,6 +7800,45 @@
             ["结构", "Tubeless Ready"]
           ],
           "catalogIds": ["aero111", "gp5000-str"]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 71,
+          "y": 34,
+          "title": "Canyon HB0054 Basebar",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["基把宽度", "390 mm"],
+            ["把立", "V19 Short · 65 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Canyon SP0048",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["截面", "气动外形"],
+            ["适配", "Speedmax 专用"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Transiro R1",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Fizik Transiro R1"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -6735,6 +8028,45 @@
           ],
           "x": 88.93,
           "y": 48.63
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67.71,
+          "y": 25.17,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -6857,6 +8189,18 @@
             "tires": {
               "x": 88.93,
               "y": 48.63
+            },
+            "handlebar": {
+              "x": 67.71,
+              "y": 25.17
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           },
           "note": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。"
@@ -6993,6 +8337,45 @@
           ],
           "x": 88.93,
           "y": 48.63
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67.71,
+          "y": 25.17,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -7115,6 +8498,18 @@
             "tires": {
               "x": 88.93,
               "y": 48.63
+            },
+            "handlebar": {
+              "x": 67.71,
+              "y": 25.17
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           },
           "note": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。"
@@ -7250,6 +8645,45 @@
           ],
           "x": 91.35,
           "y": 49.38
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 71.87,
+          "y": 23.41,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -7474,6 +8908,45 @@
           ],
           "x": 90.71,
           "y": 50.83
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 71.23,
+          "y": 30.64,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -7619,6 +9092,18 @@
             "tires": {
               "x": 90.71,
               "y": 50.83
+            },
+            "handlebar": {
+              "x": 71.23,
+              "y": 30.64
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 17
             }
           }
         }
@@ -7750,6 +9235,45 @@
           ],
           "x": 94.75,
           "y": 48.32
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69.88,
+          "y": 16.46,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -7970,6 +9494,45 @@
           ],
           "x": 95.25,
           "y": 50.23
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 70.0,
+          "y": 18.4,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -8190,6 +9753,45 @@
           ],
           "x": 96.06,
           "y": 48.16
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 73.0,
+          "y": 14.32,
+          "title": "S-Works Aerofly II",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["Drop / Reach", "130 / 80 mm"],
+            ["把立", "Venge 集成把立 · 6°"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "S-Works Venge",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "FACT 碳纤维"],
+            ["截面", "Venge 专用气动外形"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "S-Works Power, 143mm, carbon rails, carbon base, synthetic leather",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "S-Works Power, 143mm, carbon rails, carbon base, synthetic leather"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -8410,6 +10012,45 @@
           ],
           "x": 96.06,
           "y": 48.11
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 73.0,
+          "y": 14.31,
+          "title": "S-Works Short & Shallow",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["Drop", "125 mm"],
+            ["Reach", "75 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "S-Works Tarmac",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "FACT 碳纤维"],
+            ["后飘", "20 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Body Geometry S-Works Power, carbon fiber rails, carbon fiber base",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Body Geometry S-Works Power, carbon fiber rails, carbon fiber base"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -8643,6 +10284,45 @@
           ],
           "x": 90.19,
           "y": 50.17
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 65.06,
+          "y": 16.880000000000003,
+          "title": "Specialized Adventure Gear Hover",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["Drop / Reach", "103 / 70 mm"],
+            ["外撇", "12°"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Roval Terra Carbon",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["后飘", "20 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Body Geometry Power Sport, steel rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Body Geometry Power Sport, steel rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -8864,6 +10544,45 @@
           ],
           "x": 88.62,
           "y": 49.5
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 63.69,
+          "y": 21.9,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Giant Grit",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Giant Grit"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "geometry": {
@@ -9086,6 +10805,47 @@
           ],
           "x": 90,
           "y": 49
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 73,
+          "y": 15,
+          "title": "Specialized Expert Shallow Drop",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["Drop / Reach", "125 / 75 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Roval Alpinist",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["直径", "27.2 mm"]
+          ],
+          "catalogIds": ["roval-alpinist-seatpost"]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Body Geometry Power Expert",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Body Geometry Power Expert"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17,
+          "catalogIds": ["power-expert"]
         }
       ],
       "image": "/bikes/aethos-expert.png",
@@ -9307,6 +11067,47 @@
           ],
           "x": 88,
           "y": 53
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 68,
+          "y": 21,
+          "title": "Roval Alpinist",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["Drop / Reach", "125 / 75 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "Roval Alpinist",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["直径", "27.2 mm"]
+          ],
+          "catalogIds": ["roval-alpinist-seatpost"]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Body Geometry Power Expert, hollow Ti rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Body Geometry Power Expert, hollow Ti rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17,
+          "catalogIds": ["power-expert"]
         }
       ],
       "image": "/bikes/aethos2-expert.png",
@@ -9527,6 +11328,45 @@
           ],
           "x": 92,
           "y": 51.5
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 72,
+          "y": 20.5,
+          "title": "原厂车把 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "原厂座管 · 型号待补",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["配置记录", "当前收录版本的具体型号尚未核实"],
+            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "原厂坐垫 · 型号待补",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "原厂坐垫 · 型号待补"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "image": "/bikes/scott-addict-rc10.png",
@@ -9757,6 +11597,45 @@
           ],
           "x": 90,
           "y": 49
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 73,
+          "y": 15,
+          "title": "Specialized Shallow Drop",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "6061 铝合金"],
+            ["Drop / Reach", "125 / 70 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 26,
+          "title": "S-Works Tarmac",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "FACT 碳纤维"],
+            ["后飘", "20 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Body Geometry Power Sport, steel rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Body Geometry Power Sport, steel rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
         }
       ],
       "image": "/bikes/allez-sprint-comp.png",
@@ -9849,6 +11728,1955 @@
         "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
       },
       "imageNote": "官网存档标题年份与所附 2022 手册不同；本页按产品 ID 189818 与 105 R7000 配置归档，不推断首发年份。"
+    },
+    {
+      "id": "contend-ar1",
+      "brandId": "giant",
+      "name": "Giant Contend AR 1",
+      "family": "Contend AR 1",
+      "build": "Shimano 105 机械",
+      "edition": "2025 · 克罗地亚版",
+      "kind": "长途耐力",
+      "description": "一台把公路延伸到粗糙路面的铝架车。32c 原配胎、D-Fuse 座管与耐力几何，让通勤和周末长距离都成为它的使用场景。",
+      "collections": ["current"],
+      "image": "/bikes/contend-ar1.jpg",
+      "imageCredit": "GIANT",
+      "imageRatio": 1.6,
+      "color": "Frost Silver / 霜银",
+      "colorHex": "#8bafc3",
+      "source": "https://www.giant-bicycles.com/hr/contend-ar-1-2025",
+      "sourceLabel": "厂商官方 · Contend AR 1",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "官方未公布本收录配置的整车重量，不以车架重量代替。",
+      "groupset": "Shimano 105 机械",
+      "hasPowerMeter": false,
+      "material": "ALUXX 铝合金",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 45,
+          "title": "ALUXX 铝合金车架",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["前叉", "Advanced 复合材料"],
+            ["后轴", "12 × 142 mm"],
+            ["胎容", "最大 38 mm"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 17,
+          "title": "Shimano 105",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "机械 · 2 × 12 速"],
+            ["制动", "液压碟刹"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 69,
+          "title": "Shimano FC-RS520",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "双盘曲柄"],
+            ["长度", "随尺码变化"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 70,
+          "title": "50 / 34T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "Shimano 105 11–36T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["后拨", "Shimano 105 GS"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 47,
+          "y": 63,
+          "title": "未列为标配",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["后续选配", "需按曲柄、五通及脚踏接口确认"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 85,
+          "y": 79,
+          "title": "Giant P-R2 Disc",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["轮圈", "铝合金 · 25 mm 框高"],
+            ["辐条", "Sapim"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 83,
+          "y": 40,
+          "title": "Giant Gavia Fondo 2",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 32c"],
+            ["系统", "Tubeless · 出厂真空准备"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 23,
+          "title": "Giant D-Fuse SL",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["宽度", "XS/S 400；M/ML 420；L/XL 440 mm"],
+            ["把立", "Giant Contact"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 27,
+          "title": "Giant D-Fuse",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "复合材料"],
+            ["后飘", "14 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Giant Approach",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Giant Approach"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 539,
+            "reach": 371,
+            "headAngle": 71.5,
+            "seatAngle": 75,
+            "wheelbase": 994,
+            "chainstay": 422,
+            "bbDrop": 80,
+            "headTube": 115,
+            "seatTube": 410
+          },
+          {
+            "size": "S",
+            "stack": 559,
+            "reach": 375,
+            "headAngle": 71.8,
+            "seatAngle": 74,
+            "wheelbase": 1003,
+            "chainstay": 422,
+            "bbDrop": 80,
+            "headTube": 135,
+            "seatTube": 445
+          },
+          {
+            "size": "M",
+            "stack": 574,
+            "reach": 380,
+            "headAngle": 72,
+            "seatAngle": 73.5,
+            "wheelbase": 1011,
+            "chainstay": 422,
+            "bbDrop": 80,
+            "headTube": 150,
+            "seatTube": 480
+          },
+          {
+            "size": "ML",
+            "stack": 595,
+            "reach": 383,
+            "headAngle": 72.5,
+            "seatAngle": 73,
+            "wheelbase": 1015,
+            "chainstay": 422,
+            "bbDrop": 80,
+            "headTube": 170,
+            "seatTube": 515
+          },
+          {
+            "size": "L",
+            "stack": 614,
+            "reach": 392,
+            "headAngle": 72.5,
+            "seatAngle": 73,
+            "wheelbase": 1031,
+            "chainstay": 422,
+            "bbDrop": 80,
+            "headTube": 190,
+            "seatTube": 535
+          },
+          {
+            "size": "XL",
+            "stack": 638,
+            "reach": 400,
+            "headAngle": 72.5,
+            "seatAngle": 73,
+            "wheelbase": 1046,
+            "chainstay": 422,
+            "bbDrop": 80,
+            "headTube": 215,
+            "seatTube": 565
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.giant-bicycles.com/hr/contend-ar-1-2025",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸为 mm，角度为 °；Stack / Reach 是车架参考值，不等于实际握把位置。"
+      },
+      "aero": {
+        "title": "结构与骑行场景",
+        "description": "一台把公路延伸到粗糙路面的铝架车。32c 原配胎、D-Fuse 座管与耐力几何，让通勤和周末长距离都成为它的使用场景。",
+        "source": "https://www.giant-bicycles.com/hr/contend-ar-1-2025",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "imageSource": "https://www.giant-bicycles.com/hr/contend-ar-1-2025"
+    },
+    {
+      "id": "avail-advanced1",
+      "brandId": "liv",
+      "name": "Liv Avail Advanced 1",
+      "family": "Avail Advanced 1",
+      "build": "Shimano 105 Di2",
+      "edition": "2025 · 比利时版",
+      "kind": "长途耐力",
+      "description": "从女性骑行者的长距离需求出发，以耐力几何、D-Fuse 把组和座管搭配 105 Di2。它提供了竞赛几何之外的另一种公路选择。",
+      "collections": ["current"],
+      "image": "/bikes/avail-advanced1.jpg",
+      "imageCredit": "Liv 丽以芙",
+      "imageRatio": 1.6,
+      "color": "Mechanic Rose / 机械玫瑰",
+      "colorHex": "#80505a",
+      "source": "https://www.liv-cycling.com/fr-be/avail-advanced-1-2025",
+      "sourceLabel": "厂商官方 · Avail Advanced 1",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "官方未公布本收录配置的整车重量，不以车架重量代替。",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": false,
+      "material": "Advanced 复合材料",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 45,
+          "title": "Advanced 复合材料",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["前叉", "Advanced 复合材料"],
+            ["后轴", "12 × 142 mm"],
+            ["胎容", "规格表列最大 40 mm"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 17,
+          "title": "Shimano 105 Di2",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "电子 · 2 × 12 速"],
+            ["制动", "液压碟刹 · 前后 160 mm"]
+          ],
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 69,
+          "title": "Shimano 105",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["五通", "Shimano 压入式"],
+            ["长度", "XS 165；S/M 170；L 172.5 mm"]
+          ],
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 70,
+          "title": "50 / 34T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "Shimano 105 11–36T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["后拨", "Shimano 105 Di2"]
+          ],
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 47,
+          "y": 63,
+          "title": "未列为标配",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["后续选配", "需按曲柄、五通及脚踏接口确认"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 85,
+          "y": 79,
+          "title": "Giant P-R2 Disc",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["轮圈", "铝合金"],
+            ["辐条", "Sapim"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 83,
+          "y": 40,
+          "title": "Giant Gavia Fondo 1",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 32c"],
+            ["系统", "Tubeless · 折叠胎"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 23,
+          "title": "Liv Contact SL D-Fuse",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["夹径", "31.8 mm"],
+            ["宽度", "XS 380；S/M 400；L 420 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 27,
+          "title": "Giant D-Fuse",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "复合材料"],
+            ["后飘 / 长度", "14 / 350 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Liv Approach",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Liv Approach"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 528,
+            "reach": 373,
+            "headAngle": 71,
+            "seatAngle": 74.5,
+            "wheelbase": 995,
+            "chainstay": 420,
+            "bbDrop": 75,
+            "headTube": 125,
+            "seatTube": 405
+          },
+          {
+            "size": "S",
+            "stack": 547,
+            "reach": 373,
+            "headAngle": 71,
+            "seatAngle": 74.5,
+            "wheelbase": 1002,
+            "chainstay": 420,
+            "bbDrop": 73,
+            "headTube": 145,
+            "seatTube": 435
+          },
+          {
+            "size": "M",
+            "stack": 566,
+            "reach": 373,
+            "headAngle": 71,
+            "seatAngle": 74,
+            "wheelbase": 1007,
+            "chainstay": 420,
+            "bbDrop": 73,
+            "headTube": 165,
+            "seatTube": 465
+          },
+          {
+            "size": "L",
+            "stack": 589,
+            "reach": 381,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 1013,
+            "chainstay": 420,
+            "bbDrop": 73,
+            "headTube": 185,
+            "seatTube": 495
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.liv-cycling.com/fr-be/avail-advanced-1-2025",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸为 mm，角度为 °；Stack / Reach 是车架参考值，不等于实际握把位置。"
+      },
+      "aero": {
+        "title": "结构与骑行场景",
+        "description": "从女性骑行者的长距离需求出发，以耐力几何、D-Fuse 把组和座管搭配 105 Di2。它提供了竞赛几何之外的另一种公路选择。",
+        "source": "https://www.liv-cycling.com/fr-be/avail-advanced-1-2025",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "imageSource": "https://www.liv-cycling.com/fr-be/avail-advanced-1-2025"
+    },
+    {
+      "id": "reacto8000",
+      "brandId": "merida",
+      "name": "Merida REACTO 8000",
+      "family": "REACTO 8000",
+      "build": "Shimano Ultegra Di2",
+      "edition": "2025 · 官方存档",
+      "kind": "气动竞赛",
+      "description": "深截面管型、低位后上叉与一体把组构成 REACTO 鲜明的侧影。收录 2025 年 Ultegra Di2 与 Reynolds 60 mm 轮组版本。",
+      "collections": ["classic"],
+      "image": "/bikes/reacto8000.jpg",
+      "imageCredit": "美利达 MERIDA",
+      "imageRatio": 1.5903307888040712,
+      "color": "Gunmetal Grey / 枪灰银",
+      "colorHex": "#666965",
+      "source": "https://www.merida-bikes.com/en/bike/archive/4852-6486/reacto-8000",
+      "sourceLabel": "厂商官方 · REACTO 8000",
+      "checkedAt": "2026-09-20",
+      "weight": "8.0 kg",
+      "weightNote": "官方标称 · M 码；具体整车随装配及涂装变化",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": false,
+      "material": "REACTO CF3 IV 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 45,
+          "title": "REACTO CF3 IV",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "碳纤维车架 / 前叉"],
+            ["五通", "BB86.5"],
+            ["胎容", "最大 30c"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 17,
+          "title": "Shimano Ultegra R8170",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "Di2 · 2 × 12 速"],
+            ["制动", "液压碟刹"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 69,
+          "title": "Shimano Ultegra",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["五通", "SM-BB72-41B"],
+            ["结构", "双盘曲柄"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 70,
+          "title": "52 / 36T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "Shimano CS-R8100 11–30T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["后拨", "Ultegra R8150 Di2"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 47,
+          "y": 63,
+          "title": "未列为标配",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["后续选配", "需按曲柄、五通及脚踏接口确认"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 85,
+          "y": 79,
+          "title": "Reynolds AR 60 DB",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["框高", "60 mm"],
+            ["内宽", "21 mm"],
+            ["制动接口", "Center Lock"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 83,
+          "y": 40,
+          "title": "Continental GP5000 S TR",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 28c"],
+            ["系统", "Tubeless Ready"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 23,
+          "title": "Vision Metron 5D ACR EVO",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "碳纤维一体把"],
+            ["宽度", "3XS–S 380；M–XL 400 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 27,
+          "title": "MERIDA TEAM CW",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维气动座管"],
+            ["后飘", "15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Scratch M5",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Prologo Scratch M5"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "3XS",
+            "stack": 512,
+            "reach": 373,
+            "headAngle": 70.5,
+            "seatAngle": 75.5,
+            "wheelbase": 979,
+            "chainstay": 408,
+            "bbDrop": 70,
+            "headTube": 100,
+            "seatTube": 440
+          },
+          {
+            "size": "XXS",
+            "stack": 517,
+            "reach": 377,
+            "headAngle": 70.5,
+            "seatAngle": 74.5,
+            "wheelbase": 985,
+            "chainstay": 408,
+            "bbDrop": 70,
+            "headTube": 105,
+            "seatTube": 470
+          },
+          {
+            "size": "XS",
+            "stack": 529,
+            "reach": 384,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 983,
+            "chainstay": 408,
+            "bbDrop": 70,
+            "headTube": 112,
+            "seatTube": 500
+          },
+          {
+            "size": "S",
+            "stack": 542,
+            "reach": 390,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 990,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 128,
+            "seatTube": 520
+          },
+          {
+            "size": "M",
+            "stack": 557,
+            "reach": 395,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 990,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 140,
+            "seatTube": 540
+          },
+          {
+            "size": "L",
+            "stack": 571,
+            "reach": 400,
+            "headAngle": 73.5,
+            "seatAngle": 73,
+            "wheelbase": 999,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 155,
+            "seatTube": 560
+          },
+          {
+            "size": "XL",
+            "stack": 593,
+            "reach": 409,
+            "headAngle": 74,
+            "seatAngle": 73,
+            "wheelbase": 1010,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 176,
+            "seatTube": 590
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4852-6486/reacto-8000",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸为 mm，角度为 °；Stack / Reach 是车架参考值，不等于实际握把位置。"
+      },
+      "aero": {
+        "title": "气动与结构观察",
+        "description": "深截面管型、低位后上叉与一体把组构成 REACTO 鲜明的侧影。收录 2025 年 Ultegra Di2 与 Reynolds 60 mm 轮组版本。",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4852-6486/reacto-8000",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "imageSource": "https://www.merida-bikes.com/en/bike/archive/4852-6486/reacto-8000"
+    },
+    {
+      "id": "silex8000",
+      "brandId": "merida",
+      "name": "Merida SILEX 8000",
+      "family": "SILEX 8000",
+      "build": "Shimano GRX Di2",
+      "edition": "2025 · 官方存档",
+      "kind": "砾石公路",
+      "description": "69.5° 头管角、45c 砾石胎与 GRX Di2，把长距离探索放在设计中心。与同品牌 REACTO 对照，能看到公路与砾石平台截然不同的前端尺寸。",
+      "collections": ["classic"],
+      "image": "/bikes/silex8000.jpg",
+      "imageCredit": "美利达 MERIDA",
+      "imageRatio": 1.6297262059973925,
+      "color": "Low Key Green / 深绿金",
+      "colorHex": "#365745",
+      "source": "https://www.merida-bikes.com/en/bike/archive/4875/silex-8000",
+      "sourceLabel": "厂商官方 · SILEX 8000",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "官方未公布本收录配置的整车重量，不以车架重量代替。",
+      "groupset": "Shimano GRX Di2",
+      "hasPowerMeter": false,
+      "material": "SILEX CF2 II 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 45,
+          "title": "SILEX CF2 II",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "碳纤维车架 / 前叉"],
+            ["五通", "BSA 螺纹"],
+            ["车架胎容", "最大 45c"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 17,
+          "title": "Shimano GRX 825 Di2",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "电子 · 2 × 12 速"],
+            ["制动", "GRX 820 液压 · 前后 180 mm"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 69,
+          "title": "Shimano GRX 820",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["五通", "SM-BBR60"],
+            ["结构", "双盘曲柄"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 70,
+          "title": "48 / 31T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["大盘", "48T"],
+            ["小盘", "31T"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "Shimano CS-HG710 11–36T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["后拨", "GRX 825 Di2"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 47,
+          "y": 63,
+          "title": "未列为标配",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["后续选配", "需按曲柄、五通及脚踏接口确认"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 85,
+          "y": 79,
+          "title": "Easton EC70 AX",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["轮圈", "碳纤维"],
+            ["内宽", "24 mm"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 83,
+          "y": 40,
+          "title": "Maxxis Rambler",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 45c"],
+            ["系统", "TR / EXO · 折叠胎"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 23,
+          "title": "Easton EC70 AX",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["宽度", "XS/S 400；M 420；L/XL 440 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 38,
+          "y": 27,
+          "title": "MERIDA TEAM SL",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质 / 直径", "碳纤维 / 27.2 mm"],
+            ["后飘", "15 mm"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Scratch M5 AGX",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Prologo Scratch M5 AGX"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 17
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 549,
+            "reach": 378,
+            "headAngle": 69.5,
+            "seatAngle": 74.5,
+            "wheelbase": 1031,
+            "chainstay": 430,
+            "bbDrop": 75,
+            "headTube": 110,
+            "seatTube": 410
+          },
+          {
+            "size": "XS",
+            "stack": 570,
+            "reach": 392,
+            "headAngle": 69.5,
+            "seatAngle": 74.5,
+            "wheelbase": 1048,
+            "chainstay": 430,
+            "bbDrop": 75,
+            "headTube": 130,
+            "seatTube": 440
+          },
+          {
+            "size": "S",
+            "stack": 588,
+            "reach": 402,
+            "headAngle": 69.5,
+            "seatAngle": 74.5,
+            "wheelbase": 1065,
+            "chainstay": 430,
+            "bbDrop": 75,
+            "headTube": 150,
+            "seatTube": 470
+          },
+          {
+            "size": "M",
+            "stack": 607,
+            "reach": 412,
+            "headAngle": 69.5,
+            "seatAngle": 74.5,
+            "wheelbase": 1082,
+            "chainstay": 430,
+            "bbDrop": 75,
+            "headTube": 170,
+            "seatTube": 500
+          },
+          {
+            "size": "L",
+            "stack": 626,
+            "reach": 426,
+            "headAngle": 69.5,
+            "seatAngle": 74.5,
+            "wheelbase": 1104,
+            "chainstay": 430,
+            "bbDrop": 75,
+            "headTube": 190,
+            "seatTube": 530
+          },
+          {
+            "size": "XL",
+            "stack": 645,
+            "reach": 441,
+            "headAngle": 69.5,
+            "seatAngle": 74.5,
+            "wheelbase": 1126,
+            "chainstay": 430,
+            "bbDrop": 75,
+            "headTube": 210,
+            "seatTube": 560
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4875/silex-8000",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸为 mm，角度为 °；Stack / Reach 是车架参考值，不等于实际握把位置。"
+      },
+      "aero": {
+        "title": "结构与骑行场景",
+        "description": "69.5° 头管角、45c 砾石胎与 GRX Di2，把长距离探索放在设计中心。与同品牌 REACTO 对照，能看到公路与砾石平台截然不同的前端尺寸。",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4875/silex-8000",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "imageNote": "官方 2025 存档页面沿用 MY24 涂装参考图；参数按页面列示的 GRX 825 Di2 版本记录，图示部件可能不同。",
+      "imageSource": "https://www.merida-bikes.com/en/bike/archive/4875/silex-8000"
+    },
+    {
+      "id": "roubaix-sl8-sport",
+      "brandId": "specialized",
+      "name": "Specialized Roubaix SL8 Sport",
+      "family": "Roubaix SL8 Sport",
+      "build": "Shimano 105 机械",
+      "edition": "2026 · 美国版",
+      "kind": "长途耐力",
+      "description": "Future Shock 3.2 前端与 Pavé 座管，把路面的颠簸纳入整车设计。较高的车架堆高和 32c 轮胎，让长时间骑行成为这台车的主场。",
+      "collections": ["current"],
+      "image": "/bikes/roubaix-sl8-sport.webp",
+      "imageCredit": "Specialized",
+      "imageRatio": 1.7777777777777777,
+      "color": "Flo Red / Obsidian · 荧光红",
+      "colorHex": "#fa1238",
+      "source": "https://www.specialized.com/us/en/roubaix-sl8-sport-shimano-105/p/4221828",
+      "sourceLabel": "厂商官方 · Roubaix SL8 Sport",
+      "checkedAt": "2026-09-20",
+      "weight": "9.03 kg",
+      "weightNote": "官方标称 · 56 码；重量随尺码、涂装及部件变化",
+      "groupset": "Shimano 105 机械",
+      "hasPowerMeter": false,
+      "material": "FACT 10R 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 45,
+          "title": "Roubaix SL8 FACT 10R",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["前端", "Future Shock 3.2"],
+            ["五通", "BSA 螺纹"],
+            ["后轴", "12 × 142 mm"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 75,
+          "y": 17,
+          "title": "Shimano 105 R7120",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "机械 · 2 × 12 速"],
+            ["制动", "液压碟刹"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 69,
+          "title": "Shimano 105",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "12 速双盘曲柄"],
+            ["五通", "Shimano BSA"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 70,
+          "title": "50 / 34T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "Shimano 105 R7100 11–36T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["后拨", "Shimano 105 R7100"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 47,
+          "y": 63,
+          "title": "未列为标配",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["后续选配", "需按曲柄、五通及脚踏接口确认"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 85,
+          "y": 79,
+          "title": "DT Swiss G540 轮圈组",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["内宽", "24 mm"],
+            ["辐条数", "前后 24 根"],
+            ["花鼓", "Specialized 密封轴承"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 83,
+          "y": 40,
+          "title": "Specialized Mondo Endurance",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 32c"],
+            ["胶料", "GRIPTON T5"],
+            ["原配", "含内胎"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 67,
+          "y": 23,
+          "title": "Specialized Hover Comp",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["Drop / Reach", "125 / 75 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 37,
+          "y": 21,
+          "title": "S-Works Pavé",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "Pavé 座管"],
+            ["固定方式", "隐藏式下移座管夹"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Body Geometry Power Sport, steel rails",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Body Geometry Power Sport, steel rails"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 9
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "44",
+            "stack": 543,
+            "reach": 353,
+            "headAngle": 69.3,
+            "seatAngle": 75,
+            "wheelbase": 994,
+            "chainstay": 418,
+            "bbDrop": 80,
+            "headTube": 90,
+            "seatTube": 365
+          },
+          {
+            "size": "49",
+            "stack": 549,
+            "reach": 363,
+            "headAngle": 70.8,
+            "seatAngle": 74,
+            "wheelbase": 992,
+            "chainstay": 418,
+            "bbDrop": 80,
+            "headTube": 90,
+            "seatTube": 410
+          },
+          {
+            "size": "52",
+            "stack": 566,
+            "reach": 370,
+            "headAngle": 71.5,
+            "seatAngle": 74,
+            "wheelbase": 988,
+            "chainstay": 418,
+            "bbDrop": 80,
+            "headTube": 105,
+            "seatTube": 445
+          },
+          {
+            "size": "54",
+            "stack": 585,
+            "reach": 381,
+            "headAngle": 72.3,
+            "seatAngle": 74,
+            "wheelbase": 1005,
+            "chainstay": 420,
+            "bbDrop": 78,
+            "headTube": 122,
+            "seatTube": 465
+          },
+          {
+            "size": "56",
+            "stack": 605,
+            "reach": 389,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1012,
+            "chainstay": 420,
+            "bbDrop": 78,
+            "headTube": 140,
+            "seatTube": 485
+          },
+          {
+            "size": "58",
+            "stack": 630,
+            "reach": 397,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1031,
+            "chainstay": 423,
+            "bbDrop": 78,
+            "headTube": 168,
+            "seatTube": 505
+          },
+          {
+            "size": "61",
+            "stack": 665,
+            "reach": 403,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1042,
+            "chainstay": 423,
+            "bbDrop": 78,
+            "headTube": 202,
+            "seatTube": 545
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.specialized.com/us/en/roubaix-sl8-sport-shimano-105/p/4221828",
+        "sourceLabel": "厂商官方几何表",
+        "note": "尺寸为 mm，角度为 °；Stack / Reach 是车架参考值，不等于实际握把位置。"
+      },
+      "aero": {
+        "title": "结构与骑行场景",
+        "description": "Future Shock 3.2 前端与 Pavé 座管，把路面的颠簸纳入整车设计。较高的车架堆高和 32c 轮胎，让长时间骑行成为这台车的主场。",
+        "source": "https://www.specialized.com/us/en/roubaix-sl8-sport-shimano-105/p/4221828",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "imageSource": "https://www.specialized.com/us/en/roubaix-sl8-sport-shimano-105/p/4221828"
+    },
+    {
+      "id": "cinelli-pressure2",
+      "brandId": "cinelli",
+      "name": "Cinelli Pressure II Ultegra Di2",
+      "family": "Pressure II",
+      "build": "Shimano Ultegra Di2",
+      "edition": "官网现行涂装 · 全球版配置",
+      "kind": "气动竞赛",
+      "description": "西耐力的碳纤维破风平台，以深截面管型与 PRSR2 一体把延续鲜明的竞赛外观。收录搭配功率牙盘与 Columbus Cento 62C 轮组的 Ultegra Di2 版本。",
+      "collections": ["current"],
+      "image": "/bikes/cinelli-pressure2.png",
+      "imageCredit": "Cinelli 西耐力",
+      "imageRatio": 1.6,
+      "color": "Midnight Cadence / 午夜律动",
+      "colorHex": "#096784",
+      "source": "https://cinelli-milano.com/collections/pressure/products/pressure-ii-ultegra-disc-di2?variant=55868948414799",
+      "sourceLabel": "厂商官方 · Pressure II",
+      "checkedAt": "2026-09-20",
+      "weight": "未公布",
+      "weightNote": "官方未公布本收录配置的整车重量，不以车架重量代替。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": true,
+      "material": "T800 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 54,
+          "y": 43.6,
+          "title": "Pressure II T800",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "碳纤维单体车架"],
+            ["五通", "BB86.5 × 41 mm"],
+            ["胎容", "最大实测 32 mm"],
+            ["变速兼容", "仅电子变速"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 78,
+          "y": 16.4,
+          "title": "Shimano Ultegra Di2",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "电子 · 2 × 12 速"],
+            ["制动", "液压碟刹 · 160 / 140 mm"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 51,
+          "y": 69.2,
+          "title": "Shimano Ultegra 功率牙盘",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["原配", "功率测量版本"],
+            ["结构", "双盘曲柄"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 44,
+          "y": 69.2,
+          "title": "52 / 36T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 23,
+          "y": 62.8,
+          "title": "Shimano Ultegra 11–30T",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["链条", "Shimano M8100"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 46,
+          "y": 64.4,
+          "title": "Shimano Ultegra 功率牙盘",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["随车配置", "原配"],
+            ["测量", "按官方功率牙盘版本"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 87,
+          "y": 80.4,
+          "title": "Columbus Cento 62C",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["轮圈", "碳纤维"],
+            ["配置", "按全球官网 Ultegra 版本"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 86,
+          "y": 37.2,
+          "title": "Vittoria Zaffiro Pro",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 28c"],
+            ["用途", "公路"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 68,
+          "y": 18.0,
+          "title": "PRSR2 Integrated",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["结构", "一体把组"],
+            ["把立 × 把宽", "XS 90×370；S 100×390；M/L 110×390；XL 120×410 mm"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 35,
+          "y": 16.4,
+          "title": "Cinelli 原厂碳纤维座管",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["规格", "专用外形；夹持及插入量按原厂要求"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fi’zi:k Antares R7",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "Fi’zi:k Antares R7"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 34,
+          "y": 6.8
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 512,
+            "reach": 366,
+            "headAngle": 71,
+            "seatAngle": 73.5,
+            "wheelbase": 971,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 119,
+            "seatTube": 460
+          },
+          {
+            "size": "S",
+            "stack": 528,
+            "reach": 374,
+            "headAngle": 71.5,
+            "seatAngle": 73.5,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 134,
+            "seatTube": 490
+          },
+          {
+            "size": "M",
+            "stack": 539,
+            "reach": 385,
+            "headAngle": 72,
+            "seatAngle": 73.5,
+            "wheelbase": 990,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 144,
+            "seatTube": 520
+          },
+          {
+            "size": "L",
+            "stack": 560,
+            "reach": 394,
+            "headAngle": 72.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1000,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 164,
+            "seatTube": 550
+          },
+          {
+            "size": "XL",
+            "stack": 581,
+            "reach": 403,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1011,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 184,
+            "seatTube": 580
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://usa.cinelli-milano.com/products/pressure-ii-ultegra-disc-di2",
+        "sourceLabel": "Cinelli 美国官网 · Pressure II 尺寸图",
+        "note": "尺寸为 mm，角度为 °；Stack / Reach 是车架参考值，不等于实际握把位置。"
+      },
+      "aero": {
+        "title": "气动与结构观察",
+        "description": "西耐力的碳纤维破风平台，以深截面管型与 PRSR2 一体把延续鲜明的竞赛外观。收录搭配功率牙盘与 Columbus Cento 62C 轮组的 Ultegra Di2 版本。",
+        "source": "https://cinelli-milano.com/collections/pressure/products/pressure-ii-ultegra-disc-di2?variant=55868948414799",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "imageNote": "官网现行 Ultegra 涂装图展示 DT Swiss 轮组；当前文字配置表列 Columbus Cento62C 与功率牙盘。图片用于车架和涂装参考，所录参数按文字配置表，订车时需确认。",
+      "paints": [
+        {
+          "id": "silver",
+          "name": "Silver Pulse / 银白脉动",
+          "hex": "#e1e1dc",
+          "image": "/bikes/cinelli-pressure2--silver.png",
+          "imageRatio": 1.6,
+          "source": "https://cinelli-milano.com/collections/pressure/products/pressure-ii-ultegra-disc-di2?variant=55868948414799",
+          "note": "官网现行 Ultegra 涂装图展示 DT Swiss 轮组；当前文字配置表列 Columbus Cento62C 与功率牙盘。图片用于车架和涂装参考，所录参数按文字配置表，订车时需确认。"
+        }
+      ],
+      "imageSource": "https://cinelli-milano.com/collections/pressure/products/pressure-ii-ultegra-disc-di2?variant=55868948414799"
+    },
+    {
+      "id": "camp-ace3",
+      "brandId": "camp",
+      "name": "CAMP ACE III UT",
+      "family": "ACE III UT",
+      "build": "Shimano Ultegra Di2",
+      "edition": "中国大陆官网配置",
+      "kind": "气动竞赛",
+      "description": "坎普 ACE 系列的气动公路车型。较深的下管、气动座管和一体把组，搭配 Ultegra Di2 与 NOVATEC R5 PRO 碳轮。",
+      "collections": ["current"],
+      "image": "/bikes/camp-ace3.jpg",
+      "imageCredit": "CAMP 坎普",
+      "imageRatio": 1.6666666666666667,
+      "color": "GT 银",
+      "colorHex": "#b8b9b6",
+      "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html",
+      "sourceLabel": "厂商官方 · ACE III UT",
+      "checkedAt": "2026-09-20",
+      "weight": "约 7.1 kg",
+      "weightNote": "官方口径 · 小尺码；不含脚踏与小配件",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": false,
+      "material": "T800 + 沥青基 90T 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 45,
+          "title": "CAMP ACE III",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "官网标示 T800 + 沥青基 90T"],
+            ["前叉", "T800 碳纤维"],
+            ["标称尺码", "440 / 460 / 490 / 520 / 540"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 79,
+          "y": 12,
+          "title": "Shimano ST-R8170",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "Ultegra Di2 · 2 × 12 速"],
+            ["制动", "液压碟刹"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 72,
+          "title": "Shimano FC-R8100",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["系列", "Ultegra"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 70,
+          "title": "Ultegra 双盘",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["盘片", "双盘"],
+            ["齿数组合", "官网未公布"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "Shimano CS-R8100",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["齿比范围", "官网未公布"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 47,
+          "y": 63,
+          "title": "未列为标配",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["后续选配", "需按曲柄、五通及脚踏接口确认"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 85,
+          "y": 79,
+          "title": "NOVATEC R5 PRO",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["轮圈", "碳纤维"],
+            ["框高", "官网列示 50 mm；未逐一列出前后规格"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 85,
+          "y": 35,
+          "title": "Continental Grand Prix TR",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 30c"],
+            ["结构", "折叠胎"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 70,
+          "y": 19,
+          "title": "CAMP 一体车把",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["尺寸", "官网未公布"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 37,
+          "y": 22,
+          "title": "CAMP 气动座管",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["后飘 / 长度", "官网未公布"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "CAMP 3D 碳纤维坐垫",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "CAMP 3D 碳纤维坐垫"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 13
+        }
+      ],
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html",
+        "sourceLabel": "厂商官方几何表",
+        "note": "当前官网仅列出标称尺码，未找到完整的 Stack、Reach 与角度表，暂不提供几何叠图和整车 3D。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "气动与结构观察",
+        "description": "坎普 ACE 系列的气动公路车型。较深的下管、气动座管和一体把组，搭配 Ultegra Di2 与 NOVATEC R5 PRO 碳轮。",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "price": {
+        "label": "¥16,999",
+        "market": "中国大陆官方整车标价 · 非车架售价",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html",
+        "checkedAt": "2026-09-20"
+      },
+      "imageSource": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html"
+    },
+    {
+      "id": "camp-sr9",
+      "brandId": "camp",
+      "name": "CAMP SR9",
+      "family": "SR9",
+      "build": "Shimano Ultegra Di2",
+      "edition": "中国大陆官网配置",
+      "kind": "全能公路",
+      "description": "坎普的轻量全能公路选择，以纤细的后上叉、T47 五通及一体把组构成整车。官方小尺码重量约 6.8 kg，需留意它不含脚踏和小配件的称重口径。",
+      "collections": ["current"],
+      "image": "/bikes/camp-sr9.jpg",
+      "imageCredit": "CAMP 坎普",
+      "imageRatio": 1.6666666666666667,
+      "color": "官网展示涂装 / 蓝红彩绘",
+      "colorHex": "#35315b",
+      "source": "https://www.campbicycle.com/cn/road-bike/sr9.html",
+      "sourceLabel": "厂商官方 · SR9",
+      "checkedAt": "2026-09-20",
+      "weight": "约 6.8 kg",
+      "weightNote": "官方口径 · 小尺码；不含脚踏与小配件",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": false,
+      "material": "高模量碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 56,
+          "y": 45,
+          "title": "CAMP SR9",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "高模量碳纤维"],
+            ["五通", "T47"],
+            ["标称尺码", "460 / 490 / 520 / 540"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 79,
+          "y": 12,
+          "title": "Shimano ST-R8170",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["换挡", "Ultegra Di2 · 2 × 12 速"],
+            ["制动", "液压碟刹"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 72,
+          "title": "Shimano FC-R8100",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["系列", "Ultegra"],
+            ["五通", "T47"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 70,
+          "title": "Ultegra 双盘",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["盘片", "双盘"],
+            ["齿数组合", "官网未公布"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 26,
+          "y": 62,
+          "title": "Shimano CS-R8100",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["片数", "12 片"],
+            ["齿比范围", "官网未公布"]
+          ],
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 47,
+          "y": 63,
+          "title": "未列为标配",
+          "description": "功率计是否配备按收录版本记录。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["后续选配", "需按曲柄、五通及脚踏接口确认"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 85,
+          "y": 79,
+          "title": "NOVATEC R5 PRO",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["轮圈", "碳纤维 · 官网列示 50 mm"],
+            ["辐条", "SAPIM 扁辐条"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 85,
+          "y": 35,
+          "title": "Schwalbe Pro One",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["标称尺寸", "700 × 28c"],
+            ["原配", "棕边真空外胎 + TPU 内胎"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 70,
+          "y": 19,
+          "title": "CAMP 隐藏走线一体把",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["尺寸", "官网未公布"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 37,
+          "y": 22,
+          "title": "CAMP 气动座管",
+          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["后飘 / 长度", "官网未公布"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "CAMP 3D 碳纤维坐垫",
+          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "specs": [
+            ["原配型号", "CAMP 3D 碳纤维坐垫"],
+            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+          ],
+          "x": 36,
+          "y": 13
+        }
+      ],
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.campbicycle.com/cn/road-bike/sr9.html",
+        "sourceLabel": "厂商官方几何表",
+        "note": "当前官网仅列出标称尺码，未找到完整的 Stack、Reach 与角度表，暂不提供几何叠图和整车 3D。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行场景",
+        "description": "坎普的轻量全能公路选择，以纤细的后上叉、T47 五通及一体把组构成整车。官方小尺码重量约 6.8 kg，需留意它不含脚踏和小配件的称重口径。",
+        "source": "https://www.campbicycle.com/cn/road-bike/sr9.html",
+        "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
+      },
+      "price": {
+        "label": "¥18,999",
+        "market": "中国大陆官方整车标价 · 非车架售价",
+        "source": "https://www.campbicycle.com/cn/road-bike/sr9.html",
+        "checkedAt": "2026-09-20"
+      },
+      "imageSource": "https://www.campbicycle.com/cn/road-bike/sr9.html"
     }
   ]
 }

@@ -18,6 +18,7 @@ import { imageUrl, loadCatalog } from './catalog';
 import { paintsForBike } from './bikePaints';
 
 import Engineering from './Engineering';
+import modelProfiles from './data/model-profiles.json';
 import BikeCard from './BikeCard';
 import { SiteHeader, SiteFooter, base } from './SiteChrome';
 import { CompareButton, CompareDock, SaveButton } from './Library';
@@ -512,28 +513,28 @@ function App({ browse = false }: { browse?: boolean }) {
                     </div>
                   </div>
                 </section>
-                {geometry && (
-                  <Engineering bike={bike} geometry={geometry} onSize={setGeometrySize} />
+                <Engineering bike={bike} geometry={geometry} onSize={setGeometrySize} />
+                {geometry && bike.id in modelProfiles && (
+                  <details className="experimental-model">
+                    <summary>实验功能 / 近似 3D 结构示意</summary>
+                    <p>
+                      基于照片与几何的估算轮廓，适合辅助理解结构关系。管型、接点与部件表面不具备细节观察所需的精度。
+                    </p>
+                    <button
+                      className="outline-button"
+                      onClick={() => {
+                        setIs3D(true);
+                        document.getElementById('explorer')?.scrollIntoView({
+                          behavior: matchMedia('(prefers-reduced-motion: reduce)').matches
+                            ? 'instant'
+                            : 'smooth',
+                        });
+                      }}
+                    >
+                      在上方打开结构示意 <ArrowUpRight size={15} />
+                    </button>
+                  </details>
                 )}
-                <details className="experimental-model">
-                  <summary>实验功能 / 近似 3D 结构示意</summary>
-                  <p>
-                    基于照片与几何的估算轮廓，适合辅助理解结构关系。管型、接点与部件表面不具备细节观察所需的精度。
-                  </p>
-                  <button
-                    className="outline-button"
-                    onClick={() => {
-                      setIs3D(true);
-                      document.getElementById('explorer')?.scrollIntoView({
-                        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches
-                          ? 'instant'
-                          : 'smooth',
-                      });
-                    }}
-                  >
-                    在上方打开结构示意 <ArrowUpRight size={15} />
-                  </button>
-                </details>
                 <section id="bike-reading" className="bike-reading">
                   <span className="eyebrow">KEEP EXPLORING</span>
                   <h2>再多看一点。</h2>

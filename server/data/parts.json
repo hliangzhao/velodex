@@ -88,6 +88,30 @@
       "founded": "",
       "description": "P ZERO 公路系列将胶料与胎体分层设计应用于竞赛轮胎。",
       "website": "https://www.pirelli.com/tires/en-us/bike"
+    },
+    {
+      "id": "pro",
+      "name": "PRO",
+      "country": "荷兰",
+      "founded": "",
+      "description": "提供车把、把立、座管等接触点部件；Vibe 系列面向公路骑行的姿态调整与整合走线。",
+      "website": "https://pro-bikegear.com/"
+    },
+    {
+      "id": "specialized",
+      "name": "Specialized 闪电",
+      "country": "美国",
+      "founded": "1974",
+      "description": "Power 系列以短鼻和中央开孔形成鲜明轮廓，提供多种宽度、底壳与导轨版本。",
+      "website": "https://www.specialized.com/"
+    },
+    {
+      "id": "fizik",
+      "name": "Fizik",
+      "country": "意大利",
+      "founded": "",
+      "description": "提供公路、砾石与计时坐垫，按骑行场景区分不同形状、填充和导轨规格。",
+      "website": "https://www.fizik.com/"
     }
   ],
   "products": [
@@ -353,7 +377,10 @@
       "tradeoff": "系统依赖电池与软件设置；维护和预算应按整套配置衡量。",
       "source": "https://bike.shimano.com/en-SG/stories/article/science-of-speed.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "image": "/parts/dura-ace-r9200.jpg",
+      "imageCaption": "官方 RD-R9250 后拨图 · 系列代表部件，非整套套件",
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9250.html"
     },
     {
       "id": "ultegra-r8100",
@@ -390,7 +417,10 @@
       "tradeoff": "与旗舰相比主要取舍在材料、重量及选项；电变维护流程仍需掌握。",
       "source": "https://bike.shimano.com/products/components/pdp.P-RD-R8150.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "image": "/parts/ultegra-r8100.jpg",
+      "imageCaption": "官方 RD-R8150 后拨图 · 系列代表部件，非整套套件",
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R8150.html"
     },
     {
       "id": "105-r7100",
@@ -427,7 +457,10 @@
       "tradeoff": "价格与功能定位不同于 Ultegra；飞轮、额外按键和扩展接口需按具体零件确认。",
       "source": "https://bike.shimano.com/stories/article/shimano-105-di2-it-is-a-new-day.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "image": "/parts/105-r7100.jpg",
+      "imageCaption": "官方 RD-R7150 后拨图 · 系列代表部件，非整套套件",
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R7150.html"
     },
     {
       "id": "sram-red-e1",
@@ -502,7 +535,10 @@
       "tradeoff": "平台专用件较多，更换前应评估本地维护、耗材和塔基可用性。",
       "source": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "image": "/parts/super-record-13.jpg",
+      "imageCaption": "官方 Super Record 13 后拨图 · 系列代表部件，非整套套件",
+      "imageSource": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html"
     },
     {
       "id": "dura-ace-r9100",
@@ -539,7 +575,10 @@
       "tradeoff": "没有充电需求，但拉线和线管需要保养；与 12 速 Di2 的升级不是简单更换后拨。",
       "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "image": "/parts/dura-ace-r9100.jpg",
+      "imageCaption": "官方 RD-R9100-SS 后拨图 · 系列代表部件，非整套套件",
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html"
     },
     {
       "id": "gp5000-str",
@@ -767,6 +806,218 @@
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
       "image": "/parts/pirelli-race-tlr-rs.jpg"
+    },
+    {
+      "id": "roval-rapide-cockpit",
+      "brandId": "roval",
+      "name": "Rapide Cockpit",
+      "category": "handlebars",
+      "era": "官方现行产品页",
+      "status": "current",
+      "tagline": "把位与走线，一次确定。",
+      "description": "碳纤维一体车把与把立，收录美国官网的常规 4° 外撇版本；不要与 Rapide Cockpit II 或其他外撇版本混淆。",
+      "specs": [
+        ["材质", "高模量碳纤维"],
+        ["标称重量", "307 g · 400 × 100 mm"],
+        ["Reach", "75 mm"],
+        ["Drop", "127 mm · 按美国官网规格"],
+        ["舵管夹径", "1⅛ 英寸"],
+        ["外撇", "4°"]
+      ],
+      "highlights": [
+        {
+          "title": "先定尺寸",
+          "text": "一体把把立长度与把宽一起确定，不能像分体把一样只更换把立。"
+        },
+        {
+          "title": "看整套前端",
+          "text": "把组、垫圈与车架走线接口需要配套；重量只对应所注明的规格。"
+        }
+      ],
+      "compatibility": "需核对舵管、垫圈和油管走线；不支持夹装式休息把。",
+      "tradeoff": "适合已经明确把位、希望整合前端的公路骑手；更换尺寸和维护走线的成本较高。",
+      "source": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/roval-rapide-cockpit.webp",
+      "imageCaption": "官方产品图 · Rapide Cockpit",
+      "imageSource": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323"
+    },
+    {
+      "id": "pro-vibe-evo",
+      "brandId": "pro",
+      "name": "Vibe Evo",
+      "category": "handlebars",
+      "era": "官方现行产品页",
+      "status": "current",
+      "tagline": "一体把，也留出调整空间。",
+      "description": "T700 碳纤维一体把，结合可更换握把和角度垫片，提供多种宽度与把立长度。",
+      "specs": [
+        ["材质", "T700 碳纤维"],
+        ["把宽", "380 / 400 / 420 mm"],
+        ["把立长度", "95 / 105 / 115 / 125 mm"],
+        ["角度调整", "±2° 垫片"],
+        ["舵管适配", "1¼ 英寸；附垫套适配 1⅛ 英寸"]
+      ],
+      "highlights": [
+        {
+          "title": "握持表面",
+          "text": "可更换的上把握把是这个把组的特征，选购时留意耗材与附件供应。"
+        },
+        {
+          "title": "走线选择",
+          "text": "官方提供全内、半内与外走线方案，安装方式仍由车架和头碗决定。"
+        }
+      ],
+      "compatibility": "针对 Shimano Di2 与液压系统优化；安装前核对车架走线、垫套及舵管尺寸。",
+      "tradeoff": "适合希望把组整合、同时保留少量角度调整空间的用户。把宽与把立长度仍需提前确定。",
+      "source": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/pro-vibe-evo.png",
+      "imageCaption": "官方产品图 · Vibe Evo",
+      "imageSource": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar"
+    },
+    {
+      "id": "roval-alpinist-seatpost",
+      "brandId": "roval",
+      "name": "Alpinist Seatpost",
+      "category": "seatposts",
+      "era": "官方现行产品页",
+      "status": "current",
+      "tagline": "轻量，仍要把尺码写清楚。",
+      "description": "27.2 mm 圆截面碳纤维座管，采用双螺栓微调夹头；本条目记录 300 与 360 mm 长度版本。",
+      "specs": [
+        ["直径", "27.2 mm"],
+        ["材质", "碳纤维"],
+        ["长度", "300 / 360 mm"],
+        ["后飘", "12 mm"],
+        ["标称重量", "136 g · 27.2 × 300 mm"],
+        ["夹头", "双螺栓微调"]
+      ],
+      "highlights": [
+        {
+          "title": "重量有条件",
+          "text": "136 g 对应 300 mm 版本，不能直接套用到更长座管或不同夹具。"
+        },
+        {
+          "title": "后飘影响位置",
+          "text": "后飘改变坐垫可调区间，应结合坐垫导轨和骑姿确定。"
+        }
+      ],
+      "compatibility": "仅适配相应圆形座管孔；核对插入深度、最大外露量与坐垫导轨夹具。不能用于专用气动座管孔。",
+      "tradeoff": "适合兼容 27.2 mm 圆座管的轻量装车；先确认坐高和后飘是否合适。",
+      "source": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/roval-alpinist-seatpost.webp",
+      "imageCaption": "官方产品图 · Alpinist Seatpost",
+      "imageSource": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098"
+    },
+    {
+      "id": "pro-vibe-seatpost",
+      "brandId": "pro",
+      "name": "Vibe Carbon Seatpost",
+      "category": "seatposts",
+      "era": "官方现行产品页",
+      "status": "current",
+      "tagline": "用一个夹头，调整后飘。",
+      "description": "圆截面碳纤维座管，使用可翻转夹头，在 0 与 15 mm 后飘之间选择。",
+      "specs": [
+        ["材质", "碳纤维"],
+        ["直径", "27.2 / 31.6 mm"],
+        ["后飘", "0 / 15 mm · 翻转夹头"],
+        ["夹头", "双螺栓"],
+        ["电池整合", "兼容 Shimano Di2 内置电池安装"]
+      ],
+      "highlights": [
+        {
+          "title": "可选后飘",
+          "text": "调整夹头方向前需按安装说明操作，再重新核对坐垫位置。"
+        },
+        {
+          "title": "尺寸先行",
+          "text": "两种直径属于不同产品规格，不能直接互换到不匹配的车架上。"
+        }
+      ],
+      "compatibility": "确认车架孔径、插入深度、导轨夹具及 Di2 电池支架要求。专用异形座管平台不适用。",
+      "tradeoff": "适合圆座管车架，以及需要在 0 与 15 mm 后飘之间选择的装车方案。",
+      "source": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost",
+      "sourceLabel": "厂商官方产品与技术规格",
+      "checkedAt": "2026-09-20",
+      "image": "/parts/pro-vibe-seatpost.png",
+      "imageCaption": "官方产品图 · Vibe Carbon Seatpost",
+      "imageSource": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost"
+    },
+    {
+      "id": "power-expert",
+      "brandId": "specialized",
+      "name": "Power Expert",
+      "category": "saddles",
+      "era": "官方产品规格",
+      "status": "current",
+      "tagline": "坐得合适，才愿意骑得更远。",
+      "description": "短鼻、中央开孔与多种宽度组成 Power 系列的典型轮廓。Expert 使用中空钛轨；本条目重量按所链接区域官网的 143 mm 版本记录。",
+      "image": "/parts/power-expert.webp",
+      "imageCaption": "官方产品图 · Power Expert",
+      "imageSource": "https://www.specialized.com/ph/en/power-expert/p/155978",
+      "specs": [
+        ["底壳", "碳纤维增强"],
+        ["导轨", "中空钛合金"],
+        ["宽度", "130 / 143 / 155 / 168 mm"],
+        ["标称重量", "143 mm：229 g"],
+        ["填充", "Level 2 PU"]
+      ],
+      "highlights": [
+        {
+          "title": "先试形状",
+          "text": "宽度、曲面和支撑区域与骑姿一起影响感受，不能只按软硬或售价判断。"
+        },
+        {
+          "title": "再核对夹具",
+          "text": "座管夹具必须匹配导轨尺寸与材质，坐垫前后移动也应遵守导轨标线。"
+        }
+      ],
+      "compatibility": "装车前按原厂说明核对座管夹头、导轨尺寸和扭矩。",
+      "tradeoff": "适合程度需要实际骑行确认；同系列不同宽度或导轨版本不应混用重量数据。",
+      "source": "https://www.specialized.com/ph/en/power-expert/p/155978",
+      "sourceLabel": "厂商官方产品页",
+      "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "fizik-tempo-argo-r3",
+      "brandId": "fizik",
+      "name": "Tempo Argo R3",
+      "category": "saddles",
+      "era": "官方产品规格",
+      "status": "current",
+      "tagline": "坐得合适，才愿意骑得更远。",
+      "description": "面向耐力公路的短鼻坐垫，以中央开孔和 Type 2 泡棉填充提供支撑。150 与 160 mm 版本的重量分别列示。",
+      "image": "/parts/fizik-tempo-argo-r3.jpg",
+      "imageCaption": "官方产品图 · Tempo Argo R3",
+      "imageSource": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
+      "specs": [
+        ["底壳", "碳纤维增强尼龙 / Wingflex"],
+        ["导轨", "Kium · 7 × 7 mm"],
+        ["宽度", "150 / 160 mm"],
+        ["长度", "260 mm"],
+        ["标称重量", "150 mm：229 g；160 mm：235 g"]
+      ],
+      "highlights": [
+        {
+          "title": "先试形状",
+          "text": "宽度、曲面和支撑区域与骑姿一起影响感受，不能只按软硬或售价判断。"
+        },
+        {
+          "title": "再核对夹具",
+          "text": "座管夹具必须匹配导轨尺寸与材质，坐垫前后移动也应遵守导轨标线。"
+        }
+      ],
+      "compatibility": "装车前按原厂说明核对座管夹头、导轨尺寸和扭矩。",
+      "tradeoff": "适合程度需要实际骑行确认；同系列不同宽度或导轨版本不应混用重量数据。",
+      "source": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
+      "sourceLabel": "厂商官方产品页",
+      "checkedAt": "2026-09-20"
     }
   ]
 }

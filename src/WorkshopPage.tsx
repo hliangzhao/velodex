@@ -8,9 +8,11 @@ import { amount, fitCheck, gear, upgrade, wheelFit } from './workshop';
 import './workshop.css';
 const StructureLab = lazy(() => import('./StructureLab'));
 const InterfaceTool = lazy(() => import('./InterfaceTool'));
+const PowerLab = lazy(() => import('./PowerLab'));
 const tabs = [
   ['build', '梦幻装车单'],
   ['gears', '齿比计算器'],
+  ['power', '功率与骑行分析'],
   ['fit', '轮胎 × 轮圈'],
   ['interfaces', '装车接口核对'],
   ['upgrade', '升级前后'],
@@ -52,7 +54,11 @@ export default function WorkshopPage() {
           </a>
         ))}
       </nav>
-      {tool === 'interfaces' ? (
+      {tool === 'power' ? (
+        <Suspense fallback={<p>正在打开功率工作台…</p>}>
+          <PowerLab />
+        </Suspense>
+      ) : tool === 'interfaces' ? (
         <Suspense fallback={<p>正在准备接口核对…</p>}>
           <InterfaceTool />
         </Suspense>

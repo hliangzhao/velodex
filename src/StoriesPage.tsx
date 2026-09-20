@@ -100,12 +100,6 @@ export default function StoriesPage() {
                   <p>Tarmac、Madone、TCR：沿设计变化逐代看。</p>
                   <span>走进年代档案 →</span>
                 </a>
-                <a href={`${base}?view=riders`}>
-                  <small>BUILT BY RIDERS</small>
-                  <h2>车友装车故事</h2>
-                  <p>骑行场景、配置取舍，以及后来才知道的事。</p>
-                  <span>看看车与它的主人 →</span>
-                </a>
               </div>
               <StoryCards catalog={catalog} />
             </>

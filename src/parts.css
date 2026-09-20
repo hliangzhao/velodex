@@ -68,7 +68,7 @@
 }
 .parts-categories {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   border: 1px solid var(--line);
   margin-bottom: 48px;
 }
@@ -76,8 +76,8 @@
   display: flex;
   align-items: center;
   text-align: left;
-  gap: 16px;
-  padding: 23px 25px;
+  gap: 8px;
+  padding: 20px 13px;
   border-right: 1px solid var(--line);
 }
 .parts-categories button:last-child {
@@ -677,4 +677,20 @@
   color: #48502f;
   font-size: 12px;
   margin: 0 0 18px;
+}
+
+.part-art-caption a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 8px;
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .parts-categories {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .parts-categories button:nth-child(-n + 3) {
+    border-bottom: 1px solid var(--line);
+  }
 }

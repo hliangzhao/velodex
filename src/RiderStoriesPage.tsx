@@ -96,7 +96,7 @@ export default function RiderStoriesPage() {
     `${s.title} ${s.bike} ${s.author} ${s.scene}`.toLowerCase().includes(search.toLowerCase()),
   );
   return (
-    <PageFrame active="riders">
+    <PageFrame active="stories">
       <header className="page-heading">
         <span className="eyebrow">BUILT BY RIDERS / 车与它的主人</span>
         <h1>每一台车，都有自己的理由。</h1>

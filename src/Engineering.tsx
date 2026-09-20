@@ -9,14 +9,14 @@ export default function Engineering({
   onSize,
 }: {
   bike: Bike;
-  geometry: GeometrySize;
+  geometry?: GeometrySize;
   onSize: (size: string) => void;
 }) {
   const [tab, setTab] = useState('geometry');
   const [speed, setSpeed] = useState(35);
   const [cda, setCda] = useState(0.3);
   const power = 0.5 * 1.225 * cda * (speed / 3.6) ** 3;
-  const ratio = g.stack / g.reach;
+  const ratio = g ? g.stack / g.reach : 0;
   return (
     <section id="engineering" className="engineering" aria-label="车架几何与空气动力学">
       <div className="engineering-heading">
@@ -33,7 +33,16 @@ export default function Engineering({
           </button>
         </div>
       </div>
-      {tab === 'geometry' ? (
+      {tab === 'geometry' && !g ? (
+        <div className="geometry-unavailable">
+          <span className="eyebrow">GEOMETRY NOT PUBLISHED</span>
+          <h3>几何资料，等待原厂补全。</h3>
+          <p>{bike.geometry.note}</p>
+          <a className="source-link" href={bike.geometry.source} target="_blank" rel="noreferrer">
+            查看官方配置与尺码 <ArrowUpRight size={15} />
+          </a>
+        </div>
+      ) : tab === 'geometry' && g ? (
         <div className="geometry-layout">
           <div className="geometry-visual">
             <div className="geometry-kicker">
