@@ -594,7 +594,8 @@
             ["换挡", "Di2 电子变速"],
             ["速别", "2 × 12 速"],
             ["刹车", "双活塞液压碟刹"]
-          ]
+          ],
+          "catalogIds": ["dura-ace-r9200"]
         },
         {
           "id": "crank",
@@ -681,7 +682,7 @@
             ["后胎", "GP5000 S TR · 28 mm"],
             ["轮径", "700c"]
           ],
-          "catalogIds": ["gp5000-str"]
+          "catalogIds": ["gp5000-str", "aero111"]
         }
       ],
       "geometry": {
@@ -2629,8 +2630,7 @@
             ["盘片", "双盘"]
           ],
           "x": 46,
-          "y": 78.41,
-          "catalogIds": ["dura-ace-r9200"]
+          "y": 78.41
         },
         {
           "id": "cassette",
@@ -2845,7 +2845,7 @@
             ["速别", "12 速"]
           ],
           "x": 21,
-          "y": 66.0
+          "y": 66
         },
         {
           "id": "power",
@@ -2858,7 +2858,7 @@
             ["当前曲柄", "Shimano 105 R7100"]
           ],
           "x": 45,
-          "y": 66.0
+          "y": 66
         },
         {
           "id": "wheels",
@@ -2873,7 +2873,7 @@
             ["轴规格", "前 12×100 / 后 12×142 mm"]
           ],
           "x": 95,
-          "y": 66.0
+          "y": 66
         },
         {
           "id": "tires",
@@ -6070,7 +6070,7 @@
             "size": "48",
             "stack": 496.1,
             "reach": 368.7,
-            "headAngle": 71.0,
+            "headAngle": 71,
             "seatAngle": 74.5,
             "wheelbase": 976.8,
             "chainstay": 410,
@@ -6081,8 +6081,8 @@
             "size": "51",
             "stack": 520.2,
             "reach": 376.5,
-            "headAngle": 72.0,
-            "seatAngle": 74.0,
+            "headAngle": 72,
+            "seatAngle": 74,
             "wheelbase": 977.6,
             "chainstay": 410,
             "bbDrop": 76.5,
@@ -6092,7 +6092,7 @@
             "size": "54",
             "stack": 544.6,
             "reach": 383.3,
-            "headAngle": 73.0,
+            "headAngle": 73,
             "seatAngle": 73.5,
             "wheelbase": 978,
             "chainstay": 410,
@@ -6103,8 +6103,8 @@
             "size": "56",
             "stack": 567.5,
             "reach": 391.1,
-            "headAngle": 73.0,
-            "seatAngle": 73.0,
+            "headAngle": 73,
+            "seatAngle": 73,
             "wheelbase": 992.8,
             "chainstay": 410,
             "bbDrop": 74,
@@ -6114,8 +6114,8 @@
             "size": "58",
             "stack": 590.7,
             "reach": 400.3,
-            "headAngle": 73.0,
-            "seatAngle": 73.0,
+            "headAngle": 73,
+            "seatAngle": 73,
             "wheelbase": 1010.3,
             "chainstay": 410,
             "bbDrop": 71.5,
@@ -6125,8 +6125,8 @@
             "size": "61",
             "stack": 610.7,
             "reach": 408.3,
-            "headAngle": 73.0,
-            "seatAngle": 73.0,
+            "headAngle": 73,
+            "seatAngle": 73,
             "wheelbase": 1024.5,
             "chainstay": 410,
             "bbDrop": 71.5,
@@ -6202,8 +6202,7 @@
             ["手柄", "R9180"],
             ["把端按钮", "SW-R9160"],
             ["后拨", "Ultegra R8150 · 12 速"]
-          ],
-          "catalogIds": ["ultegra-r8100"]
+          ]
         },
         {
           "id": "crank",
@@ -6438,8 +6437,7 @@
             ["变速", "R9160 TT 按键"],
             ["刹车手柄", "R9180 液压"],
             ["休息把", "Canyon Pro TT"]
-          ],
-          "catalogIds": ["dura-ace-r9200"]
+          ]
         },
         {
           "id": "crank",
