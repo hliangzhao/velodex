@@ -531,8 +531,19 @@ export default function PowerLab() {
 }
 function PowerChart({ rows }: { rows: RideInterval[] }) {
   const [mode, setMode] = useState<'both' | 'measured' | 'estimated'>('both');
-  const available = rows.filter((r) => r.measured != null || r.estimated != null);
-  if (!available.length) return null;
+  const container = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(780);
+  const available = rows.some((r) => r.measured != null || r.estimated != null);
+  useEffect(() => {
+    if (!container.current) return;
+    const observer = new ResizeObserver(([entry]) =>
+      setWidth(Math.max(260, Math.round(entry.contentRect.width))),
+    );
+    observer.observe(container.current);
+    return () => observer.disconnect();
+  }, [available]);
+  if (!available) return null;
+  const right = width - 16;
   const from = rows[0].start,
     to = rows.at(-1)!.end;
   const max = rows.reduce((m, r) => Math.max(m, r.measured ?? 0, r.estimated ?? 0), 100) * 1.08;
@@ -551,13 +562,13 @@ function PowerChart({ rows }: { rows: RideInterval[] }) {
       const value =
         valid.reduce((n, p) => n + p[key]! * (p.end - p.start), 0) /
         valid.reduce((n, p) => n + p.end - p.start, 0);
-      d += `${!last || last.segment !== r.segment || r.start - last.end > 30 ? 'M' : 'L'}${(48 + ((r.end - from) / (to - from)) * 700).toFixed(1)},${(228 - (value / max) * 195).toFixed(1)} `;
+      d += `${!last || last.segment !== r.segment || r.start - last.end > 30 ? 'M' : 'L'}${(48 + ((r.end - from) / (to - from)) * (right - 48)).toFixed(1)},${(228 - (value / max) * 195).toFixed(1)} `;
       last = window.at(-1);
     }
     return d;
   };
   return (
-    <div className="power-chart">
+    <div className="power-chart" ref={container}>
       <div>
         <span>功率随时间</span>
         <label className="sr-only" htmlFor="power-chart-mode">
@@ -574,14 +585,14 @@ function PowerChart({ rows }: { rows: RideInterval[] }) {
         </select>
       </div>
       <svg
-        viewBox="0 0 780 275"
+        viewBox={`0 0 ${width} 275`}
         role="img"
         aria-label="功率时间曲线。实线为文件功率，虚线为模型估算。"
       >
-        <path d="M48 30V228H748" stroke="#b5c3a7" fill="none" />
+        <path d={`M48 30V228H${right}`} stroke="#b5c3a7" fill="none" />
         {[0, 0.5, 1].map((n) => (
           <g key={n}>
-            <path d={`M48 ${228 - n * 195}H748`} stroke="#dce4d4" />
+            <path d={`M48 ${228 - n * 195}H${right}`} stroke="#dce4d4" />
             <text x="39" y={232 - n * 195} textAnchor="end">
               {Math.round(max * n)}
             </text>
@@ -602,7 +613,7 @@ function PowerChart({ rows }: { rows: RideInterval[] }) {
         <text x="48" y="254">
           0 分
         </text>
-        <text x="748" y="254" textAnchor="end">
+        <text x={right} y="254" textAnchor="end">
           {fmt((to - from) / 60, 1)} 分
         </text>
         <text x="15" y="18">

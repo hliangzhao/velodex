@@ -238,7 +238,10 @@
   align-items: center;
   font-size: 12px;
 }
-.power-chart select {
+.work-panel .power-chart select {
+  width: auto;
+  max-width: 65%;
+  flex-shrink: 0;
   font-size: 11px;
   padding: 7px;
   border: 1px solid var(--line);
