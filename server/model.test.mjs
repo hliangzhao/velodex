@@ -38,6 +38,23 @@ test('every model and frame-size extreme generates finite, raycastable geometry'
       assert.equal(structures.has('tt-extension'), bike.kind === 'TT 计时', bike.id);
       assert.equal(structures.has('tt-elbow-pad'), bike.kind === 'TT 计时', bike.id);
       assert.equal(structures.has('rear-disc'), bike.id === 'speedmax-cfr-tt', bike.id);
+      const singleRing = ['sunpeed-universe', 'diverge-comp-carbon'].includes(bike.id);
+      assert.equal(structures.has('inner-chainring'), !singleRing, `${bike.id}/chainring-count`);
+      assert.equal(structures.has('front-derailleur'), !singleRing, `${bike.id}/front-derailleur`);
+      assert.equal(structures.has('gravel-tread'), bike.kind === '砾石公路', bike.id);
+      assert.equal(structures.has('future-shock'), bike.id === 'diverge-comp-carbon', bike.id);
+      if (bike.kind === '砾石公路') assert.ok(structures.has('fork-mount'), bike.id);
+      const cassetteSpeeds = {
+        'sworks-venge': 11,
+        'sunpeed-universe': 11,
+        'diverge-comp-carbon': 12,
+      };
+      if (bike.id in cassetteSpeeds)
+        assert.equal(
+          meshes.filter((m) => m.userData.structure === 'cassette-sprocket').length,
+          cassetteSpeeds[bike.id],
+          `${bike.id}/cassette-speeds`,
+        );
 
       assert.equal(parts.has('power'), bike.hasPowerMeter, `${bike.id}/power-meter equipment`);
       for (const id of ['frame', 'shifters', 'crank', 'chainrings', 'cassette', 'wheels', 'tires'])

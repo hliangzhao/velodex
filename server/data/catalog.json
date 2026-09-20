@@ -1,6 +1,6 @@
 {
   "updatedAt": "2026-09-20",
-  "collectionNote": "“人气精选”为编辑精选的代表性竞赛车型，不代表销量或实时热度排名。",
+  "collectionNote": "“人气精选”为编辑选集，涵盖公路竞赛与砾石探索，不代表销量或实时热度排名。",
   "brands": [
     {
       "id": "specialized",
@@ -73,6 +73,24 @@
       "name": "BMC",
       "country": "瑞士",
       "founded": "1994"
+    },
+    {
+      "id": "winspace",
+      "name": "WINSPACE 银贝斯",
+      "country": "中国",
+      "founded": "2008"
+    },
+    {
+      "id": "sunpeed",
+      "name": "SUNPEED 速比特",
+      "country": "中国",
+      "founded": "2012"
+    },
+    {
+      "id": "pardus",
+      "name": "PARDUS 瑞豹",
+      "country": "中国",
+      "founded": ""
     }
   ],
   "bikes": [
@@ -6580,6 +6598,2359 @@
         "source": "https://www.canyon.com/en-de/road-bikes/triathlon-bikes/speedmax/cfr/speedmax-cfr-tt/4254.html",
         "checkedAt": "2026-09-20"
       }
+    },
+    {
+      "id": "winspace-t1600",
+      "brandId": "winspace",
+      "name": "T1600",
+      "family": "T1600",
+      "build": "Dura-Ace Di2",
+      "edition": "全球官网整车配置 · 2026 核对",
+      "kind": "气动竞赛",
+      "description": "宽扁下管、低位后上叉与气动座管构成紧凑的竞赛轮廓。",
+      "collections": ["current", "popular"],
+      "source": "https://www.winspace.cc/products/t1600-dura-ace-di2",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "T1000 / T1100 + Kevlar",
+      "weight": "约 7.2 kg",
+      "weightNote": "M 码、不含脚踏；品牌标称。",
+      "groupset": "Dura-Ace Di2 2×12",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "WINSPACE T1600 碳纤维车架",
+          "description": "宽扁下管、低位后上叉与气动座管构成紧凑的竞赛轮廓。",
+          "specs": [
+            ["碳纤维", "T1000 / T1100 + Kevlar"],
+            ["中轴", "T47 螺纹"],
+            ["前叉", "全碳纤维"],
+            ["座管", "气动专用座管"]
+          ],
+          "x": 56.43,
+          "y": 48.86
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Dura-Ace Di2 R9270",
+          "description": "十二速电子变速，液压碟刹。",
+          "specs": [
+            ["手变", "ST-R9270"],
+            ["前 / 后拨", "FD-R9250 / RD-R9250"],
+            ["制动盘", "前 160 / 后 140 mm"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 75.71,
+          "y": 20.17
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano FC-R9200",
+          "description": "对应官网 Dura-Ace 整车配置，不以展示照片中的 Ultegra 曲柄替代。",
+          "specs": [
+            ["型号", "FC-R9200"],
+            ["结构", "双盘公路曲柄"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 52.64,
+          "y": 71.03
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T 双盘",
+          "description": "官网说明当前整车曲柄统一采用此齿比。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["传动", "2 × 12"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 45.93,
+          "y": 65.43
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R9200-12",
+          "description": "配套公路十二速飞轮。",
+          "specs": [
+            ["齿比", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 24.0,
+          "y": 59.6
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 46.43,
+          "y": 68.06
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "HYPER 3 D45",
+          "description": "采用官网 Build Specs 表；宣传图的轮组深度和型号可能不同。",
+          "specs": [
+            ["系列", "HYPER 3 D45"],
+            ["材质", "碳纤维"],
+            ["制动", "碟刹"]
+          ],
+          "x": 79.29,
+          "y": 84.29
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Michelin POWER CUP",
+          "description": "以官网配置表为准；胎侧颜色随供货变化。",
+          "specs": [
+            ["规格", "700 × 28C"],
+            ["型号", "POWER CUP"]
+          ],
+          "x": 88.93,
+          "y": 48.63
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 500,
+            "reach": 371,
+            "headAngle": 70.7,
+            "seatAngle": 74.8,
+            "wheelbase": 967,
+            "chainstay": 406,
+            "bbDrop": 72,
+            "headTube": 100,
+            "seatTube": 440
+          },
+          {
+            "size": "S",
+            "stack": 512,
+            "reach": 378,
+            "headAngle": 71.5,
+            "seatAngle": 74.3,
+            "wheelbase": 971,
+            "chainstay": 406,
+            "bbDrop": 72,
+            "headTube": 110,
+            "seatTube": 470
+          },
+          {
+            "size": "M",
+            "stack": 525,
+            "reach": 388,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 975,
+            "chainstay": 406,
+            "bbDrop": 72,
+            "headTube": 120,
+            "seatTube": 490
+          },
+          {
+            "size": "L",
+            "stack": 546,
+            "reach": 398,
+            "headAngle": 72.5,
+            "seatAngle": 73.8,
+            "wheelbase": 987,
+            "chainstay": 406,
+            "bbDrop": 72,
+            "headTube": 140,
+            "seatTube": 510
+          },
+          {
+            "size": "XL",
+            "stack": 566,
+            "reach": 413,
+            "headAngle": 72.9,
+            "seatAngle": 73.4,
+            "wheelbase": 1004,
+            "chainstay": 406,
+            "bbDrop": 72,
+            "headTube": 160,
+            "seatTube": 540
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.winspace.cc/products/t1600-dura-ace-di2",
+        "sourceLabel": "查看官方几何资料",
+        "note": "几何按所列版本的官方尺寸表录入；尺码名称不可跨品牌直接等同。"
+      },
+      "aero": {
+        "title": "轻量与迎风轮廓的取舍",
+        "description": "宽扁下管、低位后上叉与气动座管构成紧凑的竞赛轮廓。 官方宣传段与配置表的轮胎、轮组存在差异，本档案采用后者。",
+        "source": "https://www.winspace.cc/products/t1600-dura-ace-di2",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/winspace-t1600.webp",
+      "color": "Maglia Rosa Champion",
+      "colorHex": "#eabae0",
+      "imageRatio": 1.6,
+      "imageCredit": "WINSPACE 官方产品图片",
+      "imageNote": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。",
+      "paints": [
+        {
+          "id": "blacktail-yellow",
+          "name": "Blacktail Yellow",
+          "hex": "#edd21f",
+          "image": "/bikes/winspace-t1600-blacktail-yellow.webp",
+          "source": "https://www.winspace.cc/products/t1600-dura-ace-di2",
+          "imageRatio": 1.6,
+          "hotspots": {
+            "frame": {
+              "x": 56.43,
+              "y": 48.86
+            },
+            "shifters": {
+              "x": 75.71,
+              "y": 20.17
+            },
+            "crank": {
+              "x": 52.64,
+              "y": 71.03
+            },
+            "chainrings": {
+              "x": 45.93,
+              "y": 65.43
+            },
+            "cassette": {
+              "x": 24.0,
+              "y": 59.6
+            },
+            "power": {
+              "x": 46.43,
+              "y": 68.06
+            },
+            "wheels": {
+              "x": 79.29,
+              "y": 84.29
+            },
+            "tires": {
+              "x": 88.93,
+              "y": 48.63
+            }
+          },
+          "note": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。"
+        }
+      ]
+    },
+    {
+      "id": "winspace-slc5",
+      "brandId": "winspace",
+      "name": "SLC5.0",
+      "family": "SLC5.0",
+      "build": "Dura-Ace Di2",
+      "edition": "全球官网整车配置 · 2026 核对",
+      "kind": "轻量爬坡",
+      "description": "细上管、紧凑后组三角与较浅的零售轮组，体现轻量爬坡定位。",
+      "collections": ["current", "popular"],
+      "source": "https://www.winspace.cc/products/slc5-0-dura-ace-di2",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "T1100 / M65 / M46",
+      "weight": "约 6.9 kg",
+      "weightNote": "M 码、不含脚踏；品牌标称。",
+      "groupset": "Dura-Ace Di2 2×12",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "WINSPACE SLC5.0 碳纤维车架",
+          "description": "细上管、紧凑后组三角与较浅的零售轮组，体现轻量爬坡定位。",
+          "specs": [
+            ["碳纤维", "T1100 / M65 / M46"],
+            ["中轴", "BSA 68 mm 螺纹"],
+            ["前叉", "全碳纤维"],
+            ["座管", "配置表标注 27.2 mm；展示车外形不同"]
+          ],
+          "x": 56.43,
+          "y": 48.86
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Dura-Ace Di2 R9270",
+          "description": "十二速电子变速，液压碟刹。",
+          "specs": [
+            ["手变", "ST-R9270"],
+            ["前 / 后拨", "FD-R9250 / RD-R9250"],
+            ["制动盘", "前 160 / 后 140 mm"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 75.71,
+          "y": 20.17
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano FC-R9200",
+          "description": "对应官网 Dura-Ace 整车配置，不以展示照片中的 Ultegra 曲柄替代。",
+          "specs": [
+            ["型号", "FC-R9200"],
+            ["结构", "双盘公路曲柄"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 52.64,
+          "y": 71.03
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T 双盘",
+          "description": "官网说明当前整车曲柄统一采用此齿比。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["传动", "2 × 12"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 45.93,
+          "y": 65.43
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R9200-12",
+          "description": "配套公路十二速飞轮。",
+          "specs": [
+            ["齿比", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["dura-ace-r9200"],
+          "x": 24.0,
+          "y": 59.6
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 46.43,
+          "y": 68.06
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "HYPER 3 D33",
+          "description": "采用官网 Build Specs 表；宣传图的轮组深度和型号可能不同。",
+          "specs": [
+            ["系列", "HYPER 3 D33"],
+            ["材质", "碳纤维"],
+            ["制动", "碟刹"]
+          ],
+          "x": 79.29,
+          "y": 84.29
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Michelin POWER CUP",
+          "description": "以官网配置表为准；胎侧颜色随供货变化。",
+          "specs": [
+            ["规格", "700 × 28C"],
+            ["型号", "POWER CUP"]
+          ],
+          "x": 88.93,
+          "y": 48.63
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 509,
+            "reach": 371,
+            "headAngle": 70.8,
+            "seatAngle": 75,
+            "wheelbase": 974,
+            "chainstay": 406,
+            "bbDrop": 73,
+            "headTube": 108,
+            "seatTube": 440
+          },
+          {
+            "size": "S",
+            "stack": 520,
+            "reach": 377,
+            "headAngle": 71.4,
+            "seatAngle": 74.5,
+            "wheelbase": 978,
+            "chainstay": 406,
+            "bbDrop": 73,
+            "headTube": 118,
+            "seatTube": 460
+          },
+          {
+            "size": "M",
+            "stack": 536,
+            "reach": 386,
+            "headAngle": 72.1,
+            "seatAngle": 74.1,
+            "wheelbase": 983,
+            "chainstay": 406,
+            "bbDrop": 73,
+            "headTube": 130,
+            "seatTube": 480
+          },
+          {
+            "size": "L",
+            "stack": 556,
+            "reach": 394,
+            "headAngle": 72.4,
+            "seatAngle": 73.6,
+            "wheelbase": 994,
+            "chainstay": 406,
+            "bbDrop": 73,
+            "headTube": 150,
+            "seatTube": 510
+          },
+          {
+            "size": "XL",
+            "stack": 576,
+            "reach": 404,
+            "headAngle": 72.7,
+            "seatAngle": 73.1,
+            "wheelbase": 1007,
+            "chainstay": 406,
+            "bbDrop": 73,
+            "headTube": 170,
+            "seatTube": 540
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.winspace.cc/products/slc5-0-dura-ace-di2",
+        "sourceLabel": "查看官方几何资料",
+        "note": "几何按所列版本的官方尺寸表录入；尺码名称不可跨品牌直接等同。"
+      },
+      "aero": {
+        "title": "轻量与迎风轮廓的取舍",
+        "description": "细上管、紧凑后组三角与较浅的零售轮组，体现轻量爬坡定位。 气动表现仍受把位、轮胎和骑手姿态影响。",
+        "source": "https://www.winspace.cc/products/slc5-0-dura-ace-di2",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/winspace-slc5.webp",
+      "color": "Mirage",
+      "colorHex": "#735096",
+      "imageRatio": 1.6,
+      "imageCredit": "WINSPACE 官方产品图片",
+      "imageNote": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。",
+      "paints": [
+        {
+          "id": "blacktail-yellow",
+          "name": "Blacktail Yellow",
+          "hex": "#edd21f",
+          "image": "/bikes/winspace-slc5-blacktail-yellow.webp",
+          "source": "https://www.winspace.cc/products/slc5-0-dura-ace-di2",
+          "imageRatio": 1.6,
+          "hotspots": {
+            "frame": {
+              "x": 56.43,
+              "y": 48.86
+            },
+            "shifters": {
+              "x": 75.71,
+              "y": 20.17
+            },
+            "crank": {
+              "x": 52.64,
+              "y": 71.03
+            },
+            "chainrings": {
+              "x": 45.93,
+              "y": 65.43
+            },
+            "cassette": {
+              "x": 24.0,
+              "y": 59.6
+            },
+            "power": {
+              "x": 46.43,
+              "y": 68.06
+            },
+            "wheels": {
+              "x": 79.29,
+              "y": 84.29
+            },
+            "tires": {
+              "x": 88.93,
+              "y": 48.63
+            }
+          },
+          "note": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。"
+        }
+      ]
+    },
+    {
+      "id": "pardus-robin-evo",
+      "brandId": "pardus",
+      "name": "ROBIN EVO 知更鸟",
+      "family": "ROBIN EVO",
+      "build": "SRAM RED AXS E1",
+      "edition": "第三代 · 2024 RED E1 配置",
+      "kind": "全能公路",
+      "description": "瑞豹的轻量全能旗舰：细上管与下沉后上叉，配合 RED E1 和 Zipp 454 NSW。",
+      "collections": ["current", "popular", "flagship"],
+      "source": "https://www.parduscycle.com/Hightxq.aspx?t=1030&id=43618&pz=20616&color=20617&cc=20612",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "UHMS-EPS+ 碳纤维",
+      "weight": "710 g",
+      "weightNote": "官方 M 码车架标称；不代表整车重量。",
+      "groupset": "SRAM RED AXS E1",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "第三代 ROBIN EVO",
+          "description": "官方第三代页面标称 M 码车架 710 g；品牌首页旧世代的 750 g 不混用。",
+          "specs": [
+            ["材料", "T1100 / M40 碳纤维"],
+            ["车架工艺", "UHMS-EPS+"],
+            ["桶轴", "前 12×100 / 后 12×142 mm"],
+            ["把组", "MVMT M-SILVER B-TYPE 碳纤维"]
+          ],
+          "x": 57.42,
+          "y": 46.9
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "SRAM RED AXS E1",
+          "description": "无线电子变速搭配 RED 液压制动。",
+          "specs": [
+            ["手变", "ED-RED-E1"],
+            ["传动", "2 × 12 速"]
+          ],
+          "catalogIds": ["sram-red-e1"],
+          "x": 79.87,
+          "y": 18.41
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "SRAM RED FC-RED-E1",
+          "description": "DUB 轴心版本，配置表未列出功率型号。",
+          "specs": [
+            ["型号", "FC-RED-E1"],
+            ["轴心", "DUB"]
+          ],
+          "catalogIds": ["sram-red-e1"],
+          "x": 51.87,
+          "y": 71.47
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 37T",
+          "description": "比大齿盘竞赛配置更温和的双盘齿比。",
+          "specs": [
+            ["齿数", "50 / 37T"],
+            ["传动", "2 × 12"]
+          ],
+          "catalogIds": ["sram-red-e1"],
+          "x": 45.81,
+          "y": 69.61
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "SRAM XG-1290 E1",
+          "description": "十二速宽齿比公路飞轮。",
+          "specs": [
+            ["齿比", "10–36T"],
+            ["型号", "XG-1290 E1"]
+          ],
+          "catalogIds": ["sram-red-e1"],
+          "x": 23.48,
+          "y": 62.8
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 45.42,
+          "y": 71.26
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "Zipp 454 NSW",
+          "description": "波浪形轮圈是整车醒目的配置特征。",
+          "specs": [
+            ["型号", "454 NSW"],
+            ["材质", "碳纤维 / 碟刹"],
+            ["版本说明", "以此整车批次配置为准"]
+          ],
+          "x": 81.03,
+          "y": 86.95
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Michelin POWER CUP TLR",
+          "description": "真空胎配置。",
+          "specs": [
+            ["规格", "700 × 28C"],
+            ["结构", "TLR"]
+          ],
+          "x": 91.35,
+          "y": 49.38
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 475,
+            "reach": 358,
+            "headAngle": 70.5,
+            "seatAngle": 75.5,
+            "wheelbase": 956,
+            "chainstay": 410,
+            "bbDrop": 75,
+            "headTube": 71,
+            "seatTube": 432
+          },
+          {
+            "size": "XS",
+            "stack": 495,
+            "reach": 372,
+            "headAngle": 71,
+            "seatAngle": 75,
+            "wheelbase": 973,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 91,
+            "seatTube": 453
+          },
+          {
+            "size": "S",
+            "stack": 517,
+            "reach": 381,
+            "headAngle": 72.5,
+            "seatAngle": 74.5,
+            "wheelbase": 977,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 110,
+            "seatTube": 464
+          },
+          {
+            "size": "M",
+            "stack": 538,
+            "reach": 387,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 130,
+            "seatTube": 487
+          },
+          {
+            "size": "L",
+            "stack": 554,
+            "reach": 391,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 989,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 147,
+            "seatTube": 502
+          },
+          {
+            "size": "XL",
+            "stack": 574,
+            "reach": 400,
+            "headAngle": 73,
+            "seatAngle": 73,
+            "wheelbase": 1004,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 167,
+            "seatTube": 521
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.parduscycle.com/Hightxq.aspx?t=1030&id=43618&pz=20616&color=20617&cc=20612",
+        "sourceLabel": "查看官方几何资料",
+        "note": "几何按所列版本的官方尺寸表录入；尺码名称不可跨品牌直接等同。"
+      },
+      "aero": {
+        "title": "轻量全能的截面选择",
+        "description": "Kammtail 管型与内走线服务于高速骑行；车架重量属于单独口径，不能据此推算整车风阻。",
+        "source": "https://www.parduscycle.com/Hightxq.aspx?t=1030&id=43618&pz=20616&color=20617&cc=20612",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/pardus-robin-evo.jpg",
+      "color": "黑 / 橙标",
+      "colorHex": "#292927",
+      "imageRatio": 1.6,
+      "imageCredit": "PARDUS 官方产品图片",
+      "weightLabel": "车架重量"
+    },
+    {
+      "id": "pardus-spark-evo4",
+      "brandId": "pardus",
+      "name": "SPARK EVO Gen 4 星火",
+      "family": "SPARK EVO",
+      "build": "Ultegra Di2",
+      "edition": "第四代 · 官网 SPKG4 EVO",
+      "kind": "气动竞赛",
+      "description": "外置头管前叉与宽深截面下管，构成瑞豹第四代星火的鲜明轮廓。",
+      "collections": ["current", "popular"],
+      "source": "https://www.parduscycle.com/Hightxq.aspx?t=27444&id=43723&pz=20889&color=20917&cc=20896",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "UHMS-EPS+ 碳纤维",
+      "weight": "未公布",
+      "weightNote": "官网未给出所选配置的整车重量。",
+      "groupset": "Ultegra Di2 2×12",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "第四代 SPARK EVO",
+          "description": "外置头管前叉、电子变速专用内走线。",
+          "specs": [
+            ["工艺", "UHMS-EPS+"],
+            ["中轴", "T47 / 85.5 mm"],
+            ["胎容", "最大 32 mm"],
+            ["把组", "MVMT M-SILVER A-TYPE 碳纤维"]
+          ],
+          "x": 57.03,
+          "y": 48.55
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2",
+          "description": "十二速电子变速和液压碟刹。",
+          "specs": [
+            ["手变", "ST-R8170"],
+            ["前 / 后拨", "FD-R8150 / RD-R8150"]
+          ],
+          "catalogIds": ["ultegra-r8100"],
+          "x": 79.23,
+          "y": 25.64
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano FC-R8100",
+          "description": "所选版本为普通 Ultegra 曲柄。",
+          "specs": [
+            ["型号", "FC-R8100"],
+            ["轴心", "24 mm"]
+          ],
+          "catalogIds": ["ultegra-r8100"],
+          "x": 52.13,
+          "y": 75.19
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 34T",
+          "description": "官方整车配置表的压缩盘齿比。",
+          "specs": [
+            ["齿数", "50 / 34T"],
+            ["传动", "2 × 12"]
+          ],
+          "catalogIds": ["ultegra-r8100"],
+          "x": 45.29,
+          "y": 72.09
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R8100",
+          "description": "十二速公路飞轮。",
+          "specs": [
+            ["齿比", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "catalogIds": ["ultegra-r8100"],
+          "x": 23.74,
+          "y": 66.52
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 45.42,
+          "y": 72.71
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "MVMT M-SILVER R50",
+          "description": "五十毫米级碳轮配置。",
+          "specs": [
+            ["型号", "M-SILVER R50"],
+            ["材质", "碳纤维"],
+            ["制动", "碟刹"]
+          ],
+          "x": 82.58,
+          "y": 89.23
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Michelin POWER CUP TLR",
+          "description": "兼顾竞赛与日常训练的真空胎配置。",
+          "specs": [
+            ["规格", "700 × 28C"],
+            ["结构", "TLR"]
+          ],
+          "x": 90.71,
+          "y": 50.83
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 488,
+            "reach": 360,
+            "headAngle": 71,
+            "seatAngle": 73.5,
+            "wheelbase": 961.9,
+            "chainstay": 405,
+            "bbDrop": 75,
+            "headTube": 66.9,
+            "seatTube": 438.5
+          },
+          {
+            "size": "XS",
+            "stack": 505,
+            "reach": 370,
+            "headAngle": 71.5,
+            "seatAngle": 75,
+            "wheelbase": 969.6,
+            "chainstay": 405,
+            "bbDrop": 75,
+            "headTube": 81.8,
+            "seatTube": 455
+          },
+          {
+            "size": "S",
+            "stack": 518,
+            "reach": 378,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 975.6,
+            "chainstay": 405,
+            "bbDrop": 73,
+            "headTube": 94.7,
+            "seatTube": 467.8
+          },
+          {
+            "size": "M",
+            "stack": 534,
+            "reach": 385,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 980.8,
+            "chainstay": 405,
+            "bbDrop": 73,
+            "headTube": 109.1,
+            "seatTube": 482.3
+          },
+          {
+            "size": "L",
+            "stack": 548,
+            "reach": 395,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 988.1,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 123.9,
+            "seatTube": 496
+          },
+          {
+            "size": "XL",
+            "stack": 568,
+            "reach": 405,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 996.3,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 142.1,
+            "seatTube": 516.3
+          },
+          {
+            "size": "XXL",
+            "stack": 589,
+            "reach": 415,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1012.5,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 163.9,
+            "seatTube": 557
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.parduscycle.com/Hightxq.aspx?t=27444&id=43723&pz=20889&color=20917&cc=20896",
+        "sourceLabel": "查看官方几何资料",
+        "note": "按 SPKG4 EVO 官方表；XXS 座管角原表为 73.5°，保留原值。头管长度采用外置前端结构的原厂口径。"
+      },
+      "aero": {
+        "title": "外置前端与深截面",
+        "description": "第四代以外置头管前叉和全新前三角管型优化气流与操控刚性。厂商的代际刚性百分比不等于风阻收益。",
+        "source": "https://www.parduscycle.com/Hightxq.aspx?t=27444&id=43723&pz=20889&color=20917&cc=20896",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/pardus-spark-evo4.jpg",
+      "color": "极光渐变（官网色图）",
+      "colorHex": "#509aa1",
+      "imageRatio": 1.6,
+      "imageCredit": "PARDUS 官方产品图片",
+      "paints": [
+        {
+          "id": "black-white",
+          "name": "黑白渐变（官网色图）",
+          "hex": "#d9dddc",
+          "image": "/bikes/pardus-spark-evo4-black-white.jpg",
+          "source": "https://www.parduscycle.com/Hightxq.aspx?t=27444&id=43723&pz=20889&color=20917&cc=20896",
+          "imageRatio": 1.6,
+          "hotspots": {
+            "frame": {
+              "x": 57.03,
+              "y": 48.55
+            },
+            "shifters": {
+              "x": 79.23,
+              "y": 25.64
+            },
+            "crank": {
+              "x": 52.13,
+              "y": 75.19
+            },
+            "chainrings": {
+              "x": 45.29,
+              "y": 72.09
+            },
+            "cassette": {
+              "x": 23.74,
+              "y": 66.52
+            },
+            "power": {
+              "x": 45.42,
+              "y": 72.71
+            },
+            "wheels": {
+              "x": 82.58,
+              "y": 89.23
+            },
+            "tires": {
+              "x": 90.71,
+              "y": 50.83
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "sunpeed-mars-a-pro",
+      "brandId": "sunpeed",
+      "name": "MARS-A PRO 火星",
+      "family": "MARS-A",
+      "build": "L-TWOO HRD EMPIRE PRO",
+      "edition": "官网 MARS-A / PRO 配置表 · PRO 版本",
+      "kind": "全能公路",
+      "description": "铝合金车架搭配碳纤维前叉，把国产液压机械变速带入日常公路骑行。",
+      "collections": ["current"],
+      "source": "https://www.sunpeed.com/page75?product_id=220",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "铝合金",
+      "weight": "9.3 kg",
+      "weightNote": "官方 XS 码标称；非普通 MARS-A 的 9.8 kg。",
+      "groupset": "L-TWOO EMPIRE PRO 2×12",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "SUNPEED MARS-A 铝合金车架",
+          "description": "PRO 版配碳纤维前叉；普通 MARS-A 为铝叉，二者配置不同。",
+          "specs": [
+            ["车架", "超轻铝合金 / 全内走线"],
+            ["前叉", "高模量碳纤维"],
+            ["桶轴", "前 100×12 / 后 142×12 mm"],
+            ["座管", "27.2 × 350 mm 铝合金"]
+          ],
+          "x": 53.31,
+          "y": 50.89
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "L-TWOO HRD EMPIRE PRO",
+          "description": "顺泰十二速机械变速，液压碟刹。",
+          "specs": [
+            ["传动", "2 × 12 速"],
+            ["手变", "EMPIRE PRO 碳纤维版本"],
+            ["碟片", "Z8 / 160 mm"]
+          ],
+          "x": 77.88,
+          "y": 11.46
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "浩盟 RPP 中空曲柄",
+          "description": "PRO 配置表所列 RPP；普通版为 RPL。",
+          "specs": [
+            ["型号", "浩盟 RPP"],
+            ["中轴", "浩盟 BB68"]
+          ],
+          "x": 49.38,
+          "y": 72.73
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 34T",
+          "description": "压缩双盘。",
+          "specs": [
+            ["齿数", "50 / 34T"],
+            ["传动", "2 × 12"]
+          ],
+          "x": 44.0,
+          "y": 68.08
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "日晖十二速飞轮",
+          "description": "品牌配置表所列卡式飞轮。",
+          "specs": [
+            ["齿比", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "x": 20.62,
+          "y": 64.13
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 43.75,
+          "y": 69.57
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "ANV 铝合金轮组",
+          "description": "三十毫米轮圈，PRO 后花鼓为五培林版本。",
+          "specs": [
+            ["框高", "30 mm"],
+            ["辐条孔数", "24H"],
+            ["花鼓", "前 2 / 后 5 培林"]
+          ],
+          "x": 86.25,
+          "y": 85.57
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "朝阳公路胎",
+          "description": "原配钢丝胎口配置。",
+          "specs": [
+            ["规格", "700 × 28C"],
+            ["胎体", "30 TPI / F-V"]
+          ],
+          "x": 94.75,
+          "y": 48.32
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 512,
+            "reach": 365,
+            "headAngle": 70.4,
+            "seatAngle": 74,
+            "wheelbase": 975,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 120,
+            "seatTube": 420
+          },
+          {
+            "size": "S",
+            "stack": 518,
+            "reach": 369,
+            "headAngle": 70.6,
+            "seatAngle": 74,
+            "wheelbase": 979.1,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 125,
+            "seatTube": 450
+          },
+          {
+            "size": "M",
+            "stack": 537,
+            "reach": 376,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 140,
+            "seatTube": 480
+          },
+          {
+            "size": "L",
+            "stack": 551,
+            "reach": 376,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 985,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 155,
+            "seatTube": 510
+          },
+          {
+            "size": "XL",
+            "stack": 561,
+            "reach": 384,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 996,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 165,
+            "seatTube": 540
+          },
+          {
+            "size": "XXL",
+            "stack": 570,
+            "reach": 392,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 1007,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 175,
+            "seatTube": 570
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.sunpeed.com/page75?product_id=220",
+        "sourceLabel": "查看官方几何资料",
+        "note": "几何按所列版本的官方尺寸表录入；尺码名称不可跨品牌直接等同。"
+      },
+      "aero": {
+        "title": "实用铝车的内走线",
+        "description": "细后叉与内走线整理车身轮廓。没有公开统一风洞成绩；这台车的看点是铝架、碳叉与液压变速配置。",
+        "source": "https://www.sunpeed.com/page75?product_id=220",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/sunpeed-mars-a-pro.jpg",
+      "color": "酒红",
+      "colorHex": "#813742",
+      "imageRatio": 1.5810276679841897,
+      "imageCredit": "SUNPEED 官方产品图片",
+      "imageNote": "本档案选择 PRO 配置；同一官方产品页也列有普通 MARS-A，请按版本核对。"
+    },
+    {
+      "id": "sunpeed-universe",
+      "brandId": "sunpeed",
+      "name": "UNIVERSE 宇宙",
+      "family": "UNIVERSE",
+      "build": "Shimano CUES 1×11",
+      "edition": "2026 官网配置",
+      "kind": "全能公路",
+      "description": "6069 无缝铝合金车架、碳叉与 CUES 单盘传动，搭配 32C 轮胎，呈现更从容的公路骑行取向。",
+      "collections": ["current", "popular"],
+      "source": "https://www.sunpeed.com/page75?product_id=376",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "6069 铝合金",
+      "weight": "8.4 kg",
+      "weightNote": "官方 XS 码标称；各批次配置可能变化。",
+      "groupset": "Shimano CUES 1×11",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "6069 无缝铝合金车架",
+          "description": "全内走线、碳纤维前叉与圆座管。官方将其列为公路车，本档案不把 32C 胎直接等同于砾石认证。",
+          "specs": [
+            ["车架", "6069 无缝铝合金"],
+            ["前叉", "高模量碳纤维"],
+            ["中轴", "T47"],
+            ["座管", "ANV 碳纤维 27.2 mm"]
+          ],
+          "x": 54.19,
+          "y": 49.95
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano CUES U6030",
+          "description": "单盘十一速机械变速，CUES 液压碟刹。",
+          "specs": [
+            ["手变", "U6030 / 1×11"],
+            ["后拨", "U6020 / 11 速"]
+          ],
+          "x": 78.0,
+          "y": 13.4
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "驭勇 FC-XRV-C1",
+          "description": "DUB 轴心与 T47 中轴的原配组合。",
+          "specs": [
+            ["型号", "FC-XRV-C1"],
+            ["中轴", "驭勇 DUB / T47"]
+          ],
+          "x": 49.38,
+          "y": 70.57
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "48T 单盘",
+          "description": "没有前拨；以宽齿比飞轮覆盖速度范围。",
+          "specs": [
+            ["齿数", "48T"],
+            ["传动", "1 × 11"]
+          ],
+          "x": 43.75,
+          "y": 67.01
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "日晖十一速飞轮",
+          "description": "提供更大的低速齿比范围。",
+          "specs": [
+            ["齿比", "11–48T"],
+            ["速别", "11 速"]
+          ],
+          "x": 20.69,
+          "y": 62.14
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 43.75,
+          "y": 67.48
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "ANV / DR30 铝轮",
+          "description": "四培林桶轴花鼓与轻量铝合金轮圈。",
+          "specs": [
+            ["轮圈", "DR30 铝合金"],
+            ["花鼓", "ANV 四培林"],
+            ["辐条", "顺久"]
+          ],
+          "x": 86.12,
+          "y": 83.88
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "折叠公路胎 32C",
+          "description": "官网规格表未注明轮胎品牌，展示图可见的品牌不替代供货规格。",
+          "specs": [
+            ["规格", "700 × 32C"],
+            ["胎体", "60 TPI / 折叠胎"]
+          ],
+          "x": 95.25,
+          "y": 50.23
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 520,
+            "reach": 357,
+            "headAngle": 70,
+            "seatAngle": 73.5,
+            "wheelbase": 975,
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 115,
+            "seatTube": 410
+          },
+          {
+            "size": "S",
+            "stack": 529,
+            "reach": 358,
+            "headAngle": 70,
+            "seatAngle": 73.5,
+            "wheelbase": 980,
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 125,
+            "seatTube": 440
+          },
+          {
+            "size": "M",
+            "stack": 545,
+            "reach": 367,
+            "headAngle": 70.5,
+            "seatAngle": 73.5,
+            "wheelbase": 990,
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 140,
+            "seatTube": 470
+          },
+          {
+            "size": "L",
+            "stack": 561,
+            "reach": 376,
+            "headAngle": 71,
+            "seatAngle": 73.5,
+            "wheelbase": 1000,
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 155,
+            "seatTube": 500
+          },
+          {
+            "size": "XL",
+            "stack": 571,
+            "reach": 384,
+            "headAngle": 71,
+            "seatAngle": 73.5,
+            "wheelbase": 1012,
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 165,
+            "seatTube": 530
+          },
+          {
+            "size": "XXL",
+            "stack": 585,
+            "reach": 390,
+            "headAngle": 71,
+            "seatAngle": 73.5,
+            "wheelbase": 1022,
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 180,
+            "seatTube": 560
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.sunpeed.com/page75?product_id=376",
+        "sourceLabel": "查看官方几何资料",
+        "note": "几何按所列版本的官方尺寸表录入；尺码名称不可跨品牌直接等同。"
+      },
+      "aero": {
+        "title": "宽胎公路的综合取舍",
+        "description": "32C 原配胎强调适应性与舒适性。轮胎的气压、轮圈匹配与骑手姿态会共同影响滚阻和风阻。",
+        "source": "https://www.sunpeed.com/page75?product_id=376",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/sunpeed-universe.jpg",
+      "color": "粉紫渐变（官网色图）",
+      "colorHex": "#c898b3",
+      "imageRatio": 1.499531396438613,
+      "imageCredit": "SUNPEED 官方产品图片"
+    },
+    {
+      "id": "sworks-venge",
+      "brandId": "specialized",
+      "name": "S-Works Venge",
+      "family": "Venge",
+      "build": "Dura-Ace Di2",
+      "edition": "2019 官方存档",
+      "kind": "气动竞赛",
+      "description": "深框碳轮、Aerofly II 把组与专属气动管型，记录独立破风平台的经典时代。",
+      "collections": ["classic", "popular"],
+      "source": "https://www.specialized.com/us/en/s-works-venge/p/154588?color=255233-154588",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "FACT 11r 碳纤维",
+      "weight": "未公布",
+      "weightNote": "官网未给出所选配置的整车重量。",
+      "groupset": "Dura-Ace Di2 2×11",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Venge FACT 11r",
+          "description": "按所选官方存档配置呈现，不与后续世代拼接。",
+          "specs": [
+            ["车架", "FACT 11r"],
+            ["前叉", "全碳纤维 / 碟刹"],
+            ["桶轴", "前 12×100 / 后 12×142 mm"],
+            ["座管", "Venge 气动碳座管"]
+          ],
+          "x": 55.69,
+          "y": 50.31
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Dura-Ace Di2 R9170",
+          "description": "电子变速搭配液压碟刹，保留该年代的速别。",
+          "specs": [
+            ["速别", "2×11"],
+            ["版本", "ST-R9170 / FD、RD-R9150"]
+          ],
+          "x": 81.0,
+          "y": 9.32
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "S-Works Power Cranks",
+          "description": "原配功率曲柄。",
+          "specs": [
+            ["结构", "双边测量"],
+            ["中轴", "OSBB / CeramicSpeed"]
+          ],
+          "x": 51.06,
+          "y": 74.9
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "官方存档明确标出的齿比。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["传动", "2×11"]
+          ],
+          "x": 40.5,
+          "y": 78.2
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R9100",
+          "description": "对应整车年代的公路飞轮。",
+          "specs": [
+            ["齿比", "11–28T"],
+            ["速别", "11 速"]
+          ],
+          "x": 20.56,
+          "y": 63.93
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "S-Works 双边功率计",
+          "description": "原厂整车配置明确包含功率测量。",
+          "specs": [
+            ["原配", "有"],
+            ["精度", "品牌标称 ±1.5%"]
+          ],
+          "x": 44.0,
+          "y": 72.85
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "Roval CLX 64 Disc",
+          "description": "经典 Roval 碟刹碳轮，配 CeramicSpeed 轴承。",
+          "specs": [
+            ["框高", "64 mm"],
+            ["辐条数", "前 21 / 后 24"],
+            ["材质", "碳纤维"]
+          ],
+          "x": 87.38,
+          "y": 87.5
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "S-Works Turbo Cotton",
+          "description": "棉线胎体的经典竞赛开口胎配置。",
+          "specs": [
+            ["规格", "700 × 26C"],
+            ["胎体", "320 TPI"],
+            ["结构", "搭配内胎"]
+          ],
+          "x": 96.06,
+          "y": 48.16
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "49",
+            "stack": 504,
+            "reach": 378,
+            "headAngle": 71.75,
+            "seatAngle": 75.5,
+            "wheelbase": 972,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 104,
+            "seatTube": 455
+          },
+          {
+            "size": "52",
+            "stack": 517,
+            "reach": 383,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 975,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 115,
+            "seatTube": 480
+          },
+          {
+            "size": "54",
+            "stack": 534,
+            "reach": 387,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 133,
+            "seatTube": 495
+          },
+          {
+            "size": "56",
+            "stack": 555,
+            "reach": 398,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 991,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 153,
+            "seatTube": 518
+          },
+          {
+            "size": "58",
+            "stack": 581,
+            "reach": 405,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1005,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 180,
+            "seatTube": 537
+          },
+          {
+            "size": "61",
+            "stack": 602,
+            "reach": 411,
+            "headAngle": 74,
+            "seatAngle": 73,
+            "wheelbase": 1012,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 200,
+            "seatTube": 567
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.specialized.com/us/en/s-works-venge/p/154588?color=255233-154588",
+        "sourceLabel": "查看官方几何资料",
+        "note": "几何按所列版本的官方尺寸表录入；尺码名称不可跨品牌直接等同。"
+      },
+      "aero": {
+        "title": "独立气动车的经典轮廓",
+        "description": "Venge 以风洞验证的管型、气动把组与深框轮组组成高速系统。",
+        "source": "https://www.specialized.com/us/en/s-works-venge/p/154588?color=255233-154588",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/sworks-venge.webp",
+      "color": "Black / Silver Holographic",
+      "colorHex": "#303237",
+      "imageRatio": 1.639344262295082,
+      "imageCredit": "SPECIALIZED 官方产品图片"
+    },
+    {
+      "id": "tarmac-sl6",
+      "brandId": "specialized",
+      "name": "S-Works Tarmac SL6",
+      "family": "Tarmac SL6",
+      "build": "SRAM RED eTap AXS",
+      "edition": "2020 官方存档",
+      "kind": "轻量爬坡",
+      "description": "在全能赛车逐步融合气动之前，SL6 以轻量车架、下沉后叉与传统把立留下鲜明一代。",
+      "collections": ["classic", "popular"],
+      "source": "https://www.specialized.com/us/en/s-works-tarmac-disc--sram-etap/p/171346",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "FACT 12r 碳纤维",
+      "weight": "未公布",
+      "weightNote": "官网未给出所选配置的整车重量。",
+      "groupset": "RED eTap AXS 2×12",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Tarmac SL6 FACT 12r",
+          "description": "按所选官方存档配置呈现，不与后续世代拼接。",
+          "specs": [
+            ["车架", "FACT 12r"],
+            ["前叉", "全碳纤维 / 碟刹"],
+            ["桶轴", "前 12×100 / 后 12×142 mm"],
+            ["座管", "S-Works 碳座管 / 20 mm 后飘"]
+          ],
+          "x": 55.69,
+          "y": 50.26
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "SRAM RED eTap AXS",
+          "description": "电子变速搭配液压碟刹，保留该年代的速别。",
+          "specs": [
+            ["速别", "2×12"],
+            ["版本", "2020 原代 RED AXS，非 E1"]
+          ],
+          "x": 81.0,
+          "y": 9.31
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "SRAM RED AXS Power Meter",
+          "description": "原配功率曲柄。",
+          "specs": [
+            ["结构", "RED AXS 功率牙盘"],
+            ["中轴", "SRAM DUB BB30"]
+          ],
+          "x": 51.06,
+          "y": 74.82
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "RED AXS 双盘",
+          "description": "此官方页面未列出齿数，保留缺项，不用新款 RED E1 齿比替代。",
+          "specs": [
+            ["齿数", "官网未列出"],
+            ["传动", "2×12"]
+          ],
+          "x": 40.5,
+          "y": 78.2
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "SRAM XG-1290",
+          "description": "对应整车年代的公路飞轮。",
+          "specs": [
+            ["齿比", "10–33T"],
+            ["速别", "12 速"]
+          ],
+          "x": 20.56,
+          "y": 63.87
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "SRAM RED AXS 功率计",
+          "description": "原厂整车配置明确包含功率测量。",
+          "specs": [
+            ["原配", "有"],
+            ["精度", "本整车页面未列出"]
+          ],
+          "x": 44.0,
+          "y": 72.77
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "Roval CLX 50 Disc",
+          "description": "经典 Roval 碟刹碳轮，配 CeramicSpeed 轴承。",
+          "specs": [
+            ["框高", "50 mm"],
+            ["辐条数", "前 21 / 后 24"],
+            ["材质", "碳纤维"]
+          ],
+          "x": 87.38,
+          "y": 87.41
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "S-Works Turbo Cotton",
+          "description": "棉线胎体的经典竞赛开口胎配置。",
+          "specs": [
+            ["规格", "700 × 26C"],
+            ["胎体", "320 TPI"],
+            ["结构", "搭配内胎"]
+          ],
+          "x": 96.06,
+          "y": 48.11
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "44",
+            "stack": 500,
+            "reach": 365,
+            "headAngle": 70.5,
+            "seatAngle": 76,
+            "wheelbase": 969,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 105,
+            "seatTube": 400
+          },
+          {
+            "size": "49",
+            "stack": 514,
+            "reach": 375,
+            "headAngle": 71.75,
+            "seatAngle": 75.5,
+            "wheelbase": 973,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 115,
+            "seatTube": 431
+          },
+          {
+            "size": "52",
+            "stack": 527,
+            "reach": 380,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 975,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 126,
+            "seatTube": 462
+          },
+          {
+            "size": "54",
+            "stack": 544,
+            "reach": 384,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 143,
+            "seatTube": 481
+          },
+          {
+            "size": "56",
+            "stack": 565,
+            "reach": 395,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 990,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 163,
+            "seatTube": 501
+          },
+          {
+            "size": "58",
+            "stack": 591,
+            "reach": 402,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1005,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 190,
+            "seatTube": 522
+          },
+          {
+            "size": "61",
+            "stack": 612,
+            "reach": 408,
+            "headAngle": 74,
+            "seatAngle": 73,
+            "wheelbase": 1012,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 210,
+            "seatTube": 553
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.specialized.com/us/en/s-works-tarmac-disc--sram-etap/p/171346",
+        "sourceLabel": "查看官方几何资料",
+        "note": "几何按所列版本的官方尺寸表录入；尺码名称不可跨品牌直接等同。"
+      },
+      "aero": {
+        "title": "轻量平台中的气动细节",
+        "description": "SL6 的下沉后叉与管型设计兼顾气动与轻量；50 mm 碳轮属于此 RED AXS 整车的独立配置。",
+        "source": "https://www.specialized.com/us/en/s-works-tarmac-disc--sram-etap/p/171346",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/tarmac-sl6.webp",
+      "color": "Satin Carbon / Tarmac Black",
+      "colorHex": "#303237",
+      "imageRatio": 1.6376663254861823,
+      "imageCredit": "SPECIALIZED 官方产品图片"
+    },
+    {
+      "id": "diverge-comp-carbon",
+      "brandId": "specialized",
+      "name": "Diverge Comp Carbon",
+      "family": "Diverge",
+      "build": "SRAM Apex eTap AXS",
+      "edition": "2025 美版 · 产品 4223498",
+      "kind": "砾石公路",
+      "description": "用 Future Shock 2.0、SWAT 储物和 42C 胎，把公路之外的碎石与长距离探索带入图鉴。",
+      "collections": ["current", "popular"],
+      "source": "https://www.specialized.com/us/en/diverge-comp-carbon/p/4223498",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "FACT 9r 碳纤维",
+      "weight": "9.99 kg",
+      "weightNote": "官方 56 cm 整车标称。",
+      "groupset": "Apex / Eagle AXS 1×12",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Diverge FACT 9r / Future Shock 2.0",
+          "description": "头部减振与车架内储物面向混合路面；前叉本体为刚性碳叉。",
+          "specs": [
+            ["轮胎间隙", "700C 最大 47 mm / 650B 最大 2.1 英寸"],
+            ["储物", "SWAT 下管舱"],
+            ["安装点", "前叉 / 上管 / 货架"],
+            ["货架备注", "后货架需另购带安装点的座管夹"]
+          ],
+          "x": 54.5,
+          "y": 45.95
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "SRAM Apex AXS / X1 Eagle AXS",
+          "description": "弯把手变与 Eagle 后拨搭配，保留官网列出的混搭配置。",
+          "specs": [
+            ["手变", "Apex eTap AXS"],
+            ["后拨", "X1 Eagle AXS"],
+            ["制动", "Apex 液压碟刹"]
+          ],
+          "x": 73.06,
+          "y": 11.88
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "SRAM Apex DUB Wide",
+          "description": "单盘宽链线曲柄。",
+          "specs": [
+            ["型号", "Apex DUB Wide"],
+            ["中轴", "SRAM DUB BSA"]
+          ],
+          "x": 50.25,
+          "y": 70.81
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "40T 单盘",
+          "description": "省去前拨，配合大范围飞轮应对碎石爬坡。",
+          "specs": [
+            ["齿数", "40T"],
+            ["传动", "1 × 12"]
+          ],
+          "x": 44.38,
+          "y": 69.37
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "SRAM PG-1210",
+          "description": "Eagle 十二速飞轮。",
+          "specs": [
+            ["齿比", "11–50T"],
+            ["速别", "12 速"]
+          ],
+          "x": 26.12,
+          "y": 60.16
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 44.44,
+          "y": 69.37
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "DT Swiss G540 轮圈 / Specialized 花鼓",
+          "description": "铝合金真空兼容轮圈，强调宽胎支撑。",
+          "specs": [
+            ["内宽", "24 mm"],
+            ["辐条孔数", "24H"],
+            ["制动", "Center Lock 碟刹"]
+          ],
+          "x": 81.25,
+          "y": 82.91
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Pathfinder Pro 2BR",
+          "description": "中央滚动带与侧向胎纹兼顾铺装和碎石。",
+          "specs": [
+            ["规格", "700 × 42C"],
+            ["结构", "2Bliss Ready / 棕边"],
+            ["提示", "胎压与地面条件共同影响抓地"]
+          ],
+          "x": 90.19,
+          "y": 50.17
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "49",
+            "stack": 571,
+            "reach": 365,
+            "headAngle": 70,
+            "seatAngle": 74,
+            "wheelbase": 1019,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 99,
+            "seatTube": 390
+          },
+          {
+            "size": "52",
+            "stack": 577,
+            "reach": 374,
+            "headAngle": 70.5,
+            "seatAngle": 73.75,
+            "wheelbase": 1026,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 104,
+            "seatTube": 430
+          },
+          {
+            "size": "54",
+            "stack": 592,
+            "reach": 383,
+            "headAngle": 71.25,
+            "seatAngle": 73.5,
+            "wheelbase": 1032,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 116,
+            "seatTube": 470
+          },
+          {
+            "size": "56",
+            "stack": 610,
+            "reach": 392,
+            "headAngle": 71.75,
+            "seatAngle": 73.5,
+            "wheelbase": 1042,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 133,
+            "seatTube": 500
+          },
+          {
+            "size": "58",
+            "stack": 634,
+            "reach": 401,
+            "headAngle": 71.75,
+            "seatAngle": 73.5,
+            "wheelbase": 1059,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 159,
+            "seatTube": 530
+          },
+          {
+            "size": "61",
+            "stack": 659,
+            "reach": 410,
+            "headAngle": 71.75,
+            "seatAngle": 73.5,
+            "wheelbase": 1076,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 185,
+            "seatTube": 560
+          }
+        ],
+        "defaultSize": "56",
+        "source": "https://www.specialized.com/us/en/diverge-comp-carbon/p/4223498",
+        "sourceLabel": "查看官方几何资料",
+        "note": "官方 Stack 含该平台的前端结构口径；Future Shock 会影响最终把位，不能仅凭头管长度与普通公路架比较。"
+      },
+      "aero": {
+        "title": "在粗糙路面上分配速度",
+        "description": "较高前端、宽胎与外撇弯把优先考虑控制和持续骑行。空气阻力仍然重要，但这个页面没有统一条件的整车 CdA；碎石性能也不能只看风阻。",
+        "source": "https://www.specialized.com/us/en/diverge-comp-carbon/p/4223498",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/diverge-comp-carbon.webp",
+      "color": "Gloss Birch / White",
+      "colorHex": "#dfdfd1",
+      "imageRatio": 1.7758046614872365,
+      "imageCredit": "SPECIALIZED 官方产品图片"
+    },
+    {
+      "id": "revolt-advanced0",
+      "brandId": "giant",
+      "name": "Revolt Advanced 0",
+      "family": "Revolt",
+      "build": "Shimano GRX RX820",
+      "edition": "2025 英国版 · Flip Chip 短档",
+      "kind": "砾石公路",
+      "description": "碳纤维车架、D-Fuse 座管与可调后叉，把双盘 GRX 的节奏带到砾石路面。",
+      "collections": ["current", "popular"],
+      "source": "https://www.giant-bicycles.com/gb/revolt-advanced-0-2025",
+      "sourceLabel": "品牌官方配置与几何",
+      "checkedAt": "2026-09-20",
+      "material": "Advanced 碳纤维",
+      "weight": "未公布",
+      "weightNote": "官网未给出所选配置的整车重量。",
+      "groupset": "Shimano GRX 2×12",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Advanced 碳架 / Flip Chip",
+          "description": "后叉档位改变轴距与胎容；这里的几何和 3D 均使用短档。",
+          "specs": [
+            ["胎容", "短档 45 mm / 长档 53 mm"],
+            ["后下叉", "短档 425 / 长档 435 mm"],
+            ["储物", "下管储物舱与随车收纳包"],
+            ["座管", "D-Fuse SL 碳纤维"]
+          ],
+          "x": 54.06,
+          "y": 44.7
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano GRX RX820",
+          "description": "面向砾石的十二速机械双盘与液压碟刹。",
+          "specs": [
+            ["手变", "GRX RX820 / 2×12"],
+            ["前 / 后拨", "GRX RX820"],
+            ["碟片", "SM-RT70 / 前后 160 mm"]
+          ],
+          "x": 71.69,
+          "y": 16.9
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANKSET",
+          "title": "Shimano GRX RX820",
+          "description": "砾石双盘曲柄，M 码 172.5 mm。",
+          "specs": [
+            ["型号", "GRX RX820"],
+            ["中轴", "Shimano 压入式"]
+          ],
+          "x": 50.5,
+          "y": 66.1
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "48 / 31T",
+          "description": "小盘配合 36T 飞轮，用于更低速的爬升。",
+          "specs": [
+            ["齿数", "48 / 31T"],
+            ["传动", "2 × 12"]
+          ],
+          "x": 45.44,
+          "y": 65.2
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-HG710",
+          "description": "双盘 GRX 配套公路十二速飞轮。",
+          "specs": [
+            ["齿比", "11–36T"],
+            ["速别", "12 速"]
+          ],
+          "x": 26.12,
+          "y": 60.2
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "官网未列出功率计",
+          "description": "所选配置表没有列出功率传感器型号；不能把普通曲柄当成功率曲柄。",
+          "specs": [
+            ["原配状态", "未列出"],
+            ["升级提示", "需另核对曲柄、中轴与车架兼容性"]
+          ],
+          "x": 45.56,
+          "y": 66.3
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELS",
+          "title": "Giant CXR 2 Carbon Disc",
+          "description": "前后同框高的碳纤维砾石轮组。",
+          "specs": [
+            ["框高", "前 / 后 35 mm"],
+            ["辐条", "Sapim Sprint"],
+            ["制动", "Center Lock"]
+          ],
+          "x": 81.12,
+          "y": 78.8
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "CADEX GX",
+          "description": "英国版原配 40C 真空胎；不混入其他地区的 45C 配置。",
+          "specs": [
+            ["规格", "700 × 40C"],
+            ["结构", "Tubeless"],
+            ["交付", "官网标注已完成真空准备"]
+          ],
+          "x": 88.62,
+          "y": 49.5
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 556,
+            "reach": 381,
+            "headAngle": 70,
+            "seatAngle": 74,
+            "wheelbase": 1024,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 125,
+            "seatTube": 430
+          },
+          {
+            "size": "S",
+            "stack": 570,
+            "reach": 381,
+            "headAngle": 71,
+            "seatAngle": 73.5,
+            "wheelbase": 1020,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 135,
+            "seatTube": 450
+          },
+          {
+            "size": "M",
+            "stack": 586,
+            "reach": 387,
+            "headAngle": 71.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1026,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 150,
+            "seatTube": 470
+          },
+          {
+            "size": "M/L",
+            "stack": 602,
+            "reach": 391,
+            "headAngle": 72,
+            "seatAngle": 73,
+            "wheelbase": 1031,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 165,
+            "seatTube": 490
+          },
+          {
+            "size": "L",
+            "stack": 616,
+            "reach": 397,
+            "headAngle": 72,
+            "seatAngle": 73,
+            "wheelbase": 1041,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 180,
+            "seatTube": 510
+          },
+          {
+            "size": "XL",
+            "stack": 630,
+            "reach": 407,
+            "headAngle": 72,
+            "seatAngle": 73,
+            "wheelbase": 1056,
+            "chainstay": 425,
+            "bbDrop": 80,
+            "headTube": 195,
+            "seatTube": 530
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.giant-bicycles.com/gb/revolt-advanced-0-2025",
+        "sourceLabel": "查看官方几何资料",
+        "note": "使用英国官网 SHORT 短档列；长档后下叉与轴距各增加 10 mm，BB Drop 为 81 mm。XS 是原厂几何表尺寸，英国整车销售规格从 S 起。"
+      },
+      "aero": {
+        "title": "把路面适应性纳入设计",
+        "description": "D-Fuse 把组和座管、可调轴距、宽胎与下管储物共同服务混合路面。35 mm 碳轮属于此地区配置，不能由框高直接推断整车风阻。",
+        "source": "https://www.giant-bicycles.com/gb/revolt-advanced-0-2025",
+        "limit": "设计说明不等于同条件风洞比较。本图鉴不据此给出跨车型的瓦数排名。"
+      },
+      "image": "/bikes/revolt-advanced0.jpg",
+      "color": "Gloss Aurora Noise",
+      "colorHex": "#9b9f8f",
+      "imageRatio": 1.6,
+      "imageCredit": "GIANT 官方产品图片"
     }
   ]
 }

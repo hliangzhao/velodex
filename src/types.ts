@@ -61,6 +61,7 @@ export type Bike = {
   sourceLabel: string;
   checkedAt: string;
   weight: string;
+  weightLabel?: string;
   weightNote: string;
   groupset: string;
   hasPowerMeter: boolean;

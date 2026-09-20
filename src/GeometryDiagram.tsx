@@ -33,7 +33,7 @@ export default function GeometryDiagram({ g, bikeId }: { g: GeometrySize; bikeId
   const seatTop = alongSeat(seatLength);
   const stayJoin = alongSeat(seatLength - profile.stayDrop);
   const postTop = alongSeat(seatLength + 75);
-  const wheelRadius = 338 * scale;
+  const wheelRadius = (311 + profile.tire) * scale;
   const reachY = headTop.y - 38;
   const stackX = Math.max(headBottom.x, headTop.x) + 68;
   const wheelbaseY = wheelY + wheelRadius + 32;

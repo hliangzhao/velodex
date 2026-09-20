@@ -67,6 +67,13 @@ test('catalog API filters and returns correct records without exposing arbitrary
     ['scultura8000', 'scultura-endurance8000'],
   );
   assert.equal((await get('/api/bikes?kind=a&kind=b')).status, 400);
+  const gravel = await (await get('/api/bikes?kind=' + encodeURIComponent('砾石公路'))).json();
+  assert.deepEqual(
+    gravel.bikes.map((b) => b.id),
+    ['diverge-comp-carbon', 'revolt-advanced0'],
+  );
+  for (const name of ['银贝斯', '速比特', '瑞豹'])
+    assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent(name))).json()).total, 2);
   assert.equal((await get('/api/bikes?brand=a&brand=b')).status, 400);
   assert.equal((await get('/api/bikes/unknown')).status, 404);
   assert.equal((await get('/api/bikes/tarmac-sl8/components/missing')).status, 404);

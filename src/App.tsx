@@ -329,31 +329,33 @@ function App() {
                           fetchPriority="high"
                         />
                         {showPins &&
-                          bike.components.map((part, index) => (
-                            <button
-                              key={part.id}
-                              className={`hotspot ${component.id === part.id ? 'selected' : ''}`}
-                              style={{
-                                left: `${paint.hotspots?.[part.id]?.x ?? part.x}%`,
-                                top: `${paint.hotspots?.[part.id]?.y ?? part.y}%`,
-                              }}
-                              onClick={() => setComponentId(part.id)}
-                              aria-label={`查看${part.name}参数`}
-                              aria-pressed={component.id === part.id}
-                            >
-                              <span className="pin-core">
-                                {component.id === part.id ? (
-                                  <Minus size={12} />
-                                ) : (
-                                  <Plus size={12} />
-                                )}
-                              </span>
-                              <span className="pin-label">
-                                {part.name}
-                                <small>{String(index + 1).padStart(2, '0')}</small>
-                              </span>
-                            </button>
-                          ))}
+                          bike.components.map((part, index) =>
+                            part.id === 'power' && !bike.hasPowerMeter ? null : (
+                              <button
+                                key={part.id}
+                                className={`hotspot ${component.id === part.id ? 'selected' : ''}`}
+                                style={{
+                                  left: `${paint.hotspots?.[part.id]?.x ?? part.x}%`,
+                                  top: `${paint.hotspots?.[part.id]?.y ?? part.y}%`,
+                                }}
+                                onClick={() => setComponentId(part.id)}
+                                aria-label={`查看${part.name}参数`}
+                                aria-pressed={component.id === part.id}
+                              >
+                                <span className="pin-core">
+                                  {component.id === part.id ? (
+                                    <Minus size={12} />
+                                  ) : (
+                                    <Plus size={12} />
+                                  )}
+                                </span>
+                                <span className="pin-label">
+                                  {part.name}
+                                  <small>{String(index + 1).padStart(2, '0')}</small>
+                                </span>
+                              </button>
+                            ),
+                          )}
                       </div>
                     </div>
                   )}
@@ -458,7 +460,7 @@ function App() {
                   <p>{bike.description}</p>
                 </div>
                 <div className="summary-stat">
-                  <span>整车重量</span>
+                  <span>{bike.weightLabel || '整车重量'}</span>
                   <strong>{bike.weight}</strong>
                   <small>{bike.weightNote}</small>
                 </div>
@@ -470,7 +472,7 @@ function App() {
                 <div className="summary-stat">
                   <span>车架材质</span>
                   <strong>{bike.material}</strong>
-                  <small>碳纤维车架</small>
+                  <small>{bike.material.includes('铝') ? '铝合金车架' : '碳纤维车架'}</small>
                 </div>
               </div>
             </section>
@@ -494,7 +496,8 @@ function App() {
                   >
                     <span>{item.name}</span>
                     <small>
-                      {item.country} · {item.founded}
+                      {item.country}
+                      {item.founded && ` · ${item.founded}`}
                     </small>
                   </button>
                 ))}
@@ -520,11 +523,17 @@ function App() {
                 </label>
               </div>
               <div className="kind-filters" aria-label="车型定位">
-                {['all', '气动竞赛', '全能公路', '轻量爬坡', '长途耐力', 'TT 计时'].map((value) => (
-                  <button key={value} aria-pressed={kind === value} onClick={() => setKind(value)}>
-                    {value === 'all' ? '全部定位' : value}
-                  </button>
-                ))}
+                {['all', '气动竞赛', '全能公路', '轻量爬坡', '长途耐力', '砾石公路', 'TT 计时'].map(
+                  (value) => (
+                    <button
+                      key={value}
+                      aria-pressed={kind === value}
+                      onClick={() => setKind(value)}
+                    >
+                      {value === 'all' ? '全部定位' : value}
+                    </button>
+                  ),
+                )}
               </div>
               <div className="collection-filters">
                 <div className="collection-tabs" aria-label="车型分类">

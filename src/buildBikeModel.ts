@@ -5,7 +5,15 @@ import profiles from './data/model-profiles.json';
 
 // These are photo-derived surface estimates, not manufacturer CAD dimensions.
 export const modelProfiles = profiles;
-type Profile = (typeof profiles)[keyof typeof profiles];
+type Profile = (typeof profiles)[keyof typeof profiles] & {
+  chainringTeeth?: number[];
+  cassette?: { speeds: number; smallest: number; largest: number };
+  barFlare?: number;
+  stemLength?: number;
+  forkMounts?: boolean;
+  topTubeMounts?: boolean;
+  storage?: boolean;
+};
 const V = (x: number, y: number, z = 0) => new THREE.Vector3(x, y, z);
 type Section = [number, number, number]; // curve position, silhouette depth, lateral width (metres)
 
@@ -148,6 +156,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
   if (!p) throw new Error(`No reconstructed profile for ${bike.id}`);
   const special = 'special' in p ? p.special : '';
   const isTT = special === 'tt' || special === 'tt-disc';
+  const isGravel = bike.kind === '砾石公路';
   const group = new THREE.Group(),
     meshes: THREE.Mesh[] = [];
   const materials = new Map<string, THREE.MeshStandardMaterial>();
@@ -437,6 +446,52 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
   );
   rod(bb.clone().add(V(0, 0, -0.038)), bb.clone().add(V(0, 0, 0.038)), 0.029, 'frame', dark);
 
+  if (special === 'external-fork') {
+    const nose = sweep(
+      [hb.clone().add(V(0.037, -0.018)), ht.clone().add(V(0.037, -0.003))],
+      0.025,
+      0.033,
+      'frame',
+      carbon,
+      0.55,
+    );
+    nose.userData.structure = 'external-fork';
+  }
+  if (p.forkMounts) {
+    for (const sign of [-1, 1]) {
+      const crown = hb.clone().add(V(0, 0, sign * 0.032));
+      const axle = front.clone().add(V(0, 0, sign * 0.05));
+      for (const t of [0.32, 0.49, 0.66]) {
+        const boss = disk(
+          0.002,
+          0.005,
+          0.003,
+          crown
+            .clone()
+            .lerp(axle, t)
+            .add(V(0, 0, sign * 0.012)),
+          'frame',
+          dark,
+        );
+        boss.userData.structure = 'fork-mount';
+      }
+    }
+  }
+  if (p.topTubeMounts) {
+    for (const t of [0.72, 0.87]) {
+      const boss = add(
+        new THREE.CylinderGeometry(0.004, 0.004, 0.004, 10),
+        'frame',
+        dark,
+        seat
+          .clone()
+          .lerp(topHead, t)
+          .add(V(0, p.topDepth / 2000 + 0.003)),
+      );
+      boss.userData.structure = 'top-tube-mount';
+    }
+  }
+
   // Slim, shaped saddle shell; rails and clamp remain distinct from the frame.
   const saddleShape = new THREE.Shape();
   saddleShape.moveTo(-0.118, -0.052);
@@ -499,6 +554,34 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       0.82,
       0.02,
     );
+    if (isGravel) {
+      // Small shoulder knobs distinguish gravel tires without hundreds of draw calls.
+      const tread = new THREE.InstancedMesh(
+        new THREE.BoxGeometry(0.006, 0.003, 0.006),
+        new THREE.MeshStandardMaterial({ color: rubber, roughness: 0.95 }),
+        192,
+      );
+      const stamp = new THREE.Object3D();
+      for (let i = 0; i < 192; i++) {
+        const a = (Math.floor(i / 2) / 96) * Math.PI * 2;
+        stamp.position
+          .copy(center)
+          .add(
+            V(
+              Math.cos(a) * (wheelRadius - 0.003),
+              Math.sin(a) * (wheelRadius - 0.003),
+              (i % 2 ? 1 : -1) * tireWidth * 0.23,
+            ),
+          );
+        stamp.rotation.z = a - Math.PI / 2;
+        stamp.updateMatrix();
+        tread.setMatrixAt(i, stamp.matrix);
+      }
+      tread.userData.part = 'tires';
+      tread.userData.structure = 'gravel-tread';
+      group.add(tread);
+      meshes.push(tread);
+    }
     for (const side of [-1, 1])
       add(
         new THREE.TorusGeometry(0.314, 0.001, 5, 128),
@@ -579,17 +662,30 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
   }
 
   const rings = bb.clone().add(V(0, 0, 0.054));
-  const bigTeeth = ['cervelo-r5', 'teammachine-r01'].includes(bike.id)
-    ? 48
-    : bike.id === 'vanrysel-edr-cf'
-      ? 50
-      : ['cervelo-s5', 'propel-sl0', 'speedmax-cfr-tt'].includes(bike.id)
-        ? 54
-        : 52;
+  const bigTeeth =
+    p.chainringTeeth?.[0] ??
+    (['cervelo-r5', 'teammachine-r01'].includes(bike.id)
+      ? 48
+      : bike.id === 'vanrysel-edr-cf'
+        ? 50
+        : ['cervelo-s5', 'propel-sl0', 'speedmax-cfr-tt'].includes(bike.id)
+          ? 54
+          : 52);
+  const smallTeeth = p.chainringTeeth ? p.chainringTeeth[1] : 36;
   const bigR = (bigTeeth * 0.0127) / (2 * Math.PI),
-    smallR = 0.071;
-  cog(bigTeeth, bigR, bigR - 0.012, rings, 'chainrings', metal, 0.003);
-  cog(36, smallR, smallR - 0.009, rings.clone().add(V(0, 0, -0.008)), 'chainrings', dark, 0.002);
+    smallR = ((smallTeeth ?? 36) * 0.0127) / (2 * Math.PI);
+  cog(bigTeeth, bigR, bigR - 0.012, rings, 'chainrings', metal, 0.003).userData.structure =
+    'outer-chainring';
+  if (smallTeeth)
+    cog(
+      smallTeeth,
+      smallR,
+      smallR - 0.009,
+      rings.clone().add(V(0, 0, -0.008)),
+      'chainrings',
+      dark,
+      0.002,
+    ).userData.structure = 'inner-chainring';
   for (let i = 0; i < 4; i++) {
     const a = (i / 4) * Math.PI * 2 + 0.55;
     const end = rings
@@ -607,9 +703,13 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
   if (bike.hasPowerMeter)
     disk(0.007, 0.021, 0.005, rings.clone().add(V(0, 0, 0.035)), 'power', '#41474b');
   const cassetteCenter = rear.clone().add(V(0, 0, 0.042));
-  for (let i = 0; i < 12; i++) {
-    const teeth = Math.round(34 - ((34 - 11) * i) / 11);
-    cog(
+  const cassette = p.cassette ?? { speeds: 12, smallest: 11, largest: 34 };
+  for (let i = 0; i < cassette.speeds; i++) {
+    // End sprockets and speed count are published; intermediate spacing is illustrative.
+    const teeth = Math.round(
+      cassette.largest - ((cassette.largest - cassette.smallest) * i) / (cassette.speeds - 1),
+    );
+    const sprocket = cog(
       teeth,
       (teeth * 0.0127) / (2 * Math.PI),
       0.016,
@@ -618,6 +718,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       metal,
       0.0016,
     );
+    sprocket.userData.structure = 'cassette-sprocket';
   }
   const upper = rear.clone().add(V(0.026, -0.067, 0.078)),
     lower = rear.clone().add(V(0.04, -0.17, 0.078));
@@ -654,17 +755,22 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
   }
   group.add(chain);
   meshes.push(chain);
-  sweep(
-    [bb.clone().add(V(-0.015, 0.115, 0.042)), bb.clone().add(V(0.035, 0.1, 0.057))],
-    0.021,
-    0.016,
-    'shifters',
-    dark,
-    0.6,
-  );
+  if (smallTeeth)
+    sweep(
+      [bb.clone().add(V(-0.015, 0.115, 0.042)), bb.clone().add(V(0.035, 0.1, 0.057))],
+      0.021,
+      0.016,
+      'shifters',
+      dark,
+      0.6,
+    ).userData.structure = 'front-derailleur';
 
   const stemRoot = ht.clone().addScaledVector(headDirection, -p.spacer / 1000);
   sweep([ht, stemRoot], 0.043, 0.035, 'frame', dark, 0.8);
+  if (special === 'future-shock') {
+    const boot = sweep([ht, stemRoot], 0.047, 0.041, 'frame', rubber, 0.85);
+    boot.userData.structure = 'future-shock';
+  }
   for (let i = 1; i < 4; i++)
     sweep(
       [
@@ -680,7 +786,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       '#44484a',
       0.8,
     );
-  const bar = stemRoot.clone().add(V(0.1, 0.019));
+  const bar = stemRoot.clone().add(V((p.stemLength ?? 100) / 1000, 0.019));
   sweep([stemRoot, bar], special === 's5' ? 0.035 : 0.025, 0.032, 'shifters', dark, 0.5, 0.7);
   if (isTT) {
     // TT base bar, riser, elbow cups and extensions are distinct selectable surfaces.
@@ -770,12 +876,13 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
     );
     for (const sign of [-1, 1]) {
       const z = sign * 0.19;
+      const flare = Math.tan(((p.barFlare ?? 0) * Math.PI) / 180) * 0.13 * sign;
       const points = [
         bar.clone().add(V(0.02, -0.005, z)),
         bar.clone().add(V(0.083, -0.024, z)),
-        bar.clone().add(V(0.103, -0.077, z)),
-        bar.clone().add(V(0.066, -0.125, z)),
-        bar.clone().add(V(-0.017, -0.13, z)),
+        bar.clone().add(V(0.103, -0.077, z + flare * 0.5)),
+        bar.clone().add(V(0.066, -0.125, z + flare)),
+        bar.clone().add(V(-0.017, -0.13, z + flare)),
       ];
       add(
         new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points), 50, 0.0125, 12, false),
@@ -815,7 +922,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
       );
     }
   }
-  if (special === 'storage') {
+  if (special === 'storage' || p.storage) {
     const a = bb.clone().lerp(downHead, 0.48),
       b = bb.clone().lerp(downHead, 0.78);
     const normal = V(-(b.y - a.y), b.x - a.x).normalize();
