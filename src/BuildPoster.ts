@@ -1,12 +1,15 @@
 import { imageUrl } from './catalog';
 import { paintsForBike } from './bikePaints';
 import type { Bike, Product } from './types';
-import { slots, totals, type DreamBuild } from './workshop';
+import { slots, totals, weightReference, weightBreakdown, type DreamBuild } from './workshop';
 
 export function itemName(build: DreamBuild, slot: string, bike: Bike, products: Product[]) {
   const item = build.items[slot as keyof DreamBuild['items']];
   if (slot === 'frame') return `${bike.family} · 车架平台`;
-  return products.find((p) => p.id === item.choice)?.name || item.custom || '尚未选择';
+  const name = products.find((p) => p.id === item.choice)?.name || item.custom || '尚未选择';
+  return slot === 'tires' && weightReference(item)
+    ? `${name} · ${weightReference(item)!.label}`
+    : name;
 }
 export async function drawPoster(
   build: DreamBuild,
@@ -81,7 +84,9 @@ export async function drawPoster(
   const g = totals(build, 'grams'),
     p = totals(build, 'yuan');
   fitText(
-    `${g.known === g.total ? '清单重量' : '已填重量'} ${g.known ? (g.value / 1000).toFixed(2) + ' kg' : '待填写'}`,
+    g.known
+      ? `${g.known === g.total ? '清单估重' : '部件小计'} ${(g.value / 1000).toFixed(2)} kg`
+      : '重量暂不估算',
     90,
     1351,
     435,
@@ -96,11 +101,17 @@ export async function drawPoster(
   );
   c.font = '20px sans-serif';
   c.fillStyle = '#17392e';
-  c.fillText(`${g.known} / ${g.total} 项已填 · 非实车称重`, 90, 1387);
+  c.fillText(
+    g.known
+      ? `${g.known}/${g.total} 项 · 官方 ${weightBreakdown(build).official} / 自填 ${weightBreakdown(build).manual}`
+      : '不必知道每一克，先选喜欢的。',
+    90,
+    1387,
+  );
   c.fillText(`${p.known} / ${p.total} 项已填 · 用户预算`, 560, 1387);
   c.fillStyle = '#627068';
   c.font = '20px sans-serif';
-  c.fillText('配件与车架兼容性需另行核验；空白项目未计入。', 64, 1464);
+  c.fillText('非实车称重，未知项未计入；配件兼容性需另核对。', 64, 1464);
   c.fillText(`原图：${bike.imageCredit.slice(0, 65)}`, 64, 1500);
   c.fillStyle = '#17392e';
   c.font = '600 26px "Barlow", sans-serif';

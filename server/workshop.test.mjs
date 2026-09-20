@@ -37,6 +37,7 @@ test('dream build counts missing values without turning them into known zeroes a
     checked: true,
   };
   b.items.pedals.grams = '0';
+  b.items.pedals.weightMode = 'manual';
   assert.deepEqual(totals(b, 'grams'), { value: 1305, known: 2, total: 8 });
   assert.equal(totals(b, 'yuan').known, 0);
   const restored = decodeBuild(encodeBuild(b));
@@ -55,7 +56,10 @@ test('dream build counts missing values without turning them into known zeroes a
   assert.throws(() => decodeBuild('x'.repeat(14001)));
   assert.throws(() => decodeBuild('broken'));
   const complete = newBuild();
-  for (const [id] of slots) complete.items[id].grams = '100';
+  for (const [id] of slots) {
+    complete.items[id].grams = '100';
+    complete.items[id].weightMode = 'manual';
+  }
   assert.equal(totals(complete, 'grams').value, 800);
   assert.equal(totals(complete, 'grams').known, 8);
 });
@@ -127,4 +131,53 @@ test('structure studies contain finite surfaces and separate moving components t
         }
       });
     }
+});
+
+test('weight assistance applies sourced pair weights, preserves manual overrides and never forces missing values to zero', () => {
+  const { weightOf, defaultWeightVariant, weightBreakdown } = helpers;
+  const b = newBuild();
+  b.items.wheels.choice = 'roval-rapide-clx3';
+  b.items.tires.choice = 'vittoria-corsa-pro';
+  b.items.tires.weightVariant = defaultWeightVariant('vittoria-corsa-pro');
+  assert.equal(weightOf(b.items.tires).grams, 560);
+  assert.deepEqual(totals(b, 'grams'), { value: 1865, known: 2, total: 8 });
+  assert.deepEqual(weightBreakdown(b), { official: 2, manual: 0, skipped: 6 });
+  b.items.tires.weightVariant = '32-para';
+  assert.equal(weightOf(b.items.tires).grams, 610);
+  b.items.tires.grams = '635';
+  b.items.tires.weightMode = 'manual';
+  assert.equal(weightOf(b.items.tires).grams, 635);
+  b.items.tires.weightMode = 'skip';
+  assert.equal(weightOf(b.items.tires).grams, null);
+  assert.equal(totals(b, 'grams').known, 1);
+  const restored = decodeBuild(encodeBuild(b));
+  assert.equal(restored.items.tires.weightMode, 'skip');
+  assert.equal(restored.items.tires.grams, '635');
+  assert.equal(restored.items.tires.weightVariant, '32-para');
+  restored.items.tires.weightMode = 'auto';
+  assert.equal(weightOf(restored.items.tires).grams, 610);
+  restored.items.tires.weightVariant = 'not-a-verified-size';
+  assert.equal(weightOf(restored.items.tires).grams, null);
+  const legacy = newBuild();
+  for (const [s] of slots) {
+    delete legacy.items[s].weightMode;
+    delete legacy.items[s].weightVariant;
+  }
+  legacy.items.wheels.choice = 'roval-rapide-clx3';
+  legacy.items.wheels.grams = '1340';
+  legacy.items.tires.choice = 'vittoria-corsa-pro';
+  legacy.items.tires.grams = '630';
+  const migrated = parseBuild(legacy);
+  assert.equal(migrated.items.wheels.weightMode, 'manual');
+  assert.equal(weightOf(migrated.items.wheels).grams, 1340);
+  assert.equal(weightOf(migrated.items.tires).grams, 630);
+  assert.equal(weightOf(migrated.items.tires).reference, undefined);
+  migrated.items.tires.weightMode = 'auto';
+  assert.equal(weightOf(migrated.items.tires).grams, null);
+  assert.throws(() =>
+    parseBuild({
+      ...b,
+      items: { ...b.items, wheels: { ...b.items.wheels, weightMode: 'estimated' } },
+    }),
+  );
 });

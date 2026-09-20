@@ -6,6 +6,7 @@ import { paintsForBike } from './bikePaints';
 import { base } from './SiteChrome';
 import chinaPrices from './data/china-prices.json';
 import { drawPoster, itemName } from './BuildPoster';
+import WeightAssistant from './WeightAssistant';
 import {
   slots,
   newBuild,
@@ -13,7 +14,9 @@ import {
   parseBuild,
   encodeBuild,
   decodeBuild,
-  wheelFit,
+  defaultWeightVariant,
+  weightReferences,
+  weightBreakdown,
   fitCheck,
   type DreamBuild as Build,
   type Slot,
@@ -56,7 +59,9 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
           candidate.items[slot] = {
             choice: part.id,
             custom: '',
-            grams: wheelFit[part.id]?.grams ? String(wheelFit[part.id].grams) : '',
+            grams: '',
+            weightMode: 'auto',
+            weightVariant: defaultWeightVariant(part.id),
             yuan: '',
             checked: false,
           };
@@ -167,7 +172,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
       url.hash = `build=${encodeBuild(build)}`;
       setShareLink(url.href);
       await navigator.clipboard.writeText(url.href);
-      setMessage('配置链接已复制。链接包含名称、配件、填写的重量和预算，不包含备件勾选进度。');
+      setMessage('配置链接已复制。链接包含配件规格、重量方式、自填值和预算，不包含备齐进度。');
     } catch {
       setMessage('无法自动复制，可在下方选中并复制链接；如未生成链接，请先检查数值。');
     }
@@ -190,7 +195,17 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
       ...b,
       bikeId: next.id,
       paintId: 'default',
-      items: { ...b.items, frame: { ...b.items.frame, grams: '', yuan: '', checked: false } },
+      items: {
+        ...b.items,
+        frame: {
+          ...b.items.frame,
+          grams: '',
+          yuan: '',
+          checked: false,
+          weightMode: 'auto',
+          weightVariant: '',
+        },
+      },
     }));
   return (
     <div className="dream-layout">
@@ -262,8 +277,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
           <span className="eyebrow">02 / 配件与备件清单</span>
           <h2>一件一件，选成自己的样子。</h2>
           <p className="work-note">
-            重量填该行总重，轮组、轮胎和脚踏均按一对。前后不同型号的轮胎可选择“自定义”并填写两条型号。价格优先参考中国大陆官方售价，并保留来源日期；未核验的项目由你填写人民币预算。0
-            表示明确不计入，留空表示未知。请按下列范围避免重复计算。
+            只选喜欢的配置，也能保存、分享和生成海报。预算与重量都可跳过。轮组、轮胎和脚踏按一对选配；重量助手会自动采用已核验资料，想调整时再展开。价格仍优先采用中国大陆官方售价。
           </p>
           <div className="build-items">
             {slots.map(([slot, label, scope]) => (
@@ -289,11 +303,12 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                       aria-label={`${label}型号`}
                       value={build.items[slot].choice}
                       onChange={(e) => {
-                        const metadata = wheelFit[e.target.value];
                         update(slot, {
                           choice: e.target.value,
                           custom: '',
-                          grams: metadata?.grams ? String(metadata.grams) : '',
+                          grams: '',
+                          weightMode: 'auto',
+                          weightVariant: defaultWeightVariant(e.target.value),
                           yuan: '',
                           checked: false,
                         });
@@ -308,6 +323,41 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                     </select>
                   </label>
                 ) : null}
+                {slot === 'tires' && weightReferences[build.items[slot].choice]?.length > 0 && (
+                  <label>
+                    轮胎规格（前后相同）
+                    <select
+                      aria-label="轮胎规格"
+                      value={
+                        weightReferences[build.items[slot].choice].some(
+                          (r) => r.id === build.items[slot].weightVariant,
+                        )
+                          ? build.items[slot].weightVariant
+                          : ''
+                      }
+                      onChange={(e) =>
+                        update(slot, {
+                          weightVariant: e.target.value,
+                          grams: '',
+                          weightMode: 'auto',
+                          checked: false,
+                        })
+                      }
+                    >
+                      <option value="" disabled>
+                        未指定规格 · 请选择
+                      </option>
+                      {weightReferences[build.items[slot].choice].map((r) => (
+                        <option key={r.id} value={r.id}>
+                          {r.label}
+                        </option>
+                      ))}
+                    </select>
+                    <small>
+                      规格对应官方重量资料；更换规格后重新采用参考值。前后不同请用自定义。
+                    </small>
+                  </label>
+                )}
                 {slot !== 'frame' && !build.items[slot].choice && (
                   <input
                     aria-label={`${label}自定义名称`}
@@ -354,48 +404,23 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                     )}
                   </small>
                 )}
-                <div className="form-pair">
-                  <label>
-                    {label}重量 / g
-                    <input
-                      type="number"
-                      min="0"
-                      max="10000000"
-                      step="0.1"
-                      placeholder="未知"
-                      value={build.items[slot].grams}
-                      onChange={(e) => update(slot, { grams: e.target.value })}
-                    />
-                  </label>
-                  <label>
-                    {label}预算 / ¥
-                    <input
-                      type="number"
-                      min="0"
-                      max="10000000"
-                      step="0.01"
-                      placeholder="待询价"
-                      value={build.items[slot].yuan}
-                      onChange={(e) => update(slot, { yuan: e.target.value })}
-                    />
-                  </label>
-                </div>
-                {slot === 'wheels' && wheelFit[build.items[slot].choice]?.weightNote && (
-                  <small>
-                    {wheelFit[build.items[slot].choice].weightNote}；可改成实测值。
-                    <a
-                      href={parts.products.find((p) => p.id === build.items[slot].choice)?.source}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      原厂数据 ↗
-                    </a>
-                  </small>
-                )}
+                <label>
+                  {label}预算 / ¥ <span className="optional-label">选填</span>
+                  <input
+                    type="number"
+                    min="0"
+                    max="10000000"
+                    step="0.01"
+                    placeholder="暂不填也没关系"
+                    value={build.items[slot].yuan}
+                    onChange={(e) => update(slot, { yuan: e.target.value })}
+                  />
+                </label>
               </div>
             ))}
           </div>
         </section>
+        <WeightAssistant build={build} update={update} />
       </div>
       <aside className="build-preview">
         <div className="dream-card">
@@ -426,7 +451,8 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                 <small> kg</small>
               </strong>
               <span>
-                {g.known === g.total ? '清单估重' : '已填重量'} · {g.known}/{g.total} 项
+                {g.known === g.total ? '清单估重' : g.known ? '已知部件小计' : '暂不估重'} ·{' '}
+                {g.known}/{g.total} 项
               </span>
             </div>
             <div>
@@ -438,7 +464,9 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
             </div>
           </div>
           <p className="work-note">
-            清单估重不等于实车称重。部分项目尚未填写时，不显示整车总重或总价。
+            {g.known
+              ? `${weightBreakdown(build).official} 项官方参考，${weightBreakdown(build).manual} 项已保存 / 自填；${g.total - g.known} 项未计重。小计不代表整车重量。`
+              : '先选喜欢的配置，不必知道每一克。缺少重量和预算也能生成海报。'}
           </p>
         </div>
         <div className={`fit-result ${fit.level}`}>
@@ -507,7 +535,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                     {metric === 'grams' ? '重量' : '预算'}：
                     {complete
                       ? `${b.value - a.value > 0 ? '+' : ''}${(b.value - a.value).toFixed(1)} ${metric === 'grams' ? 'g' : '元'}`
-                      : 'A 或 B 尚有空白，补齐后才能比较完整方案。'}
+                      : '仅展示配置变化；重量或预算不完整时，不推算整车差额。'}
                   </p>
                 );
               })}

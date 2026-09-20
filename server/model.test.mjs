@@ -5,8 +5,19 @@ import ts from 'typescript';
 import { loadCatalog } from './app.mjs';
 
 // Exercise actual mesh generation without a browser/WebGL context.
+const surfaceCode = ts.transpileModule(
+  readFileSync(new URL('../src/frameSurfaces.ts', import.meta.url), 'utf8')
+    .replace("from 'three'", `from '${import.meta.resolve('three')}'`)
+    .replace(
+      "from 'three/addons/utils/BufferGeometryUtils.js'",
+      `from '${import.meta.resolve('three/addons/utils/BufferGeometryUtils.js')}'`,
+    ),
+  { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } },
+).outputText;
+const surfaceURL = `data:text/javascript;base64,${Buffer.from(surfaceCode).toString('base64')}`;
 const path = new URL('../src/buildBikeModel.ts', import.meta.url);
 let source = readFileSync(path, 'utf8')
+  .replace("from './frameSurfaces'", `from '${surfaceURL}'`)
   .replace("from 'three'", `from '${import.meta.resolve('three')}'`)
   .replace(
     "from 'three/addons/utils/BufferGeometryUtils.js'",

@@ -1,0 +1,278 @@
+[
+  {
+    "id": "aero",
+    "label": "破风",
+    "english": "AERO",
+    "bikeId": "aeroad-cfr",
+    "size": "M",
+    "title": "让管型参与气流设计。",
+    "summary": "深一些的管型、紧凑的后上叉接点，把车架当作整体气动系统的一部分。它仍要兼顾重量、刚度与操控。",
+    "question": "把视角从正侧面转到前方：管子的“深”与“宽”是一回事吗？",
+    "features": [
+      ["tubes", "看管型", "对比侧面深度与横向宽度。深管型只是设计线索，外形本身不能给出节省瓦数。"],
+      ["front", "看前端", "头管、前叉和把组一起面对来流。此处保留框架关系，不模拟线缆和气流。"],
+      ["rear", "看后上叉", "下移的后上叉接点是一个常见设计选择；不能只凭接点高低推断舒适性。"]
+    ],
+    "shape": {
+      "down": 75,
+      "downWidth": 43,
+      "top": 35,
+      "head": 65,
+      "seat": 58,
+      "seatWidth": 29,
+      "post": 45,
+      "postWidth": 24,
+      "stayDrop": 80,
+      "stay": 17,
+      "fork": 50,
+      "forkWidth": 19,
+      "tire": 28
+    },
+    "geometry": {
+      "size": "M",
+      "stack": 560,
+      "reach": 393,
+      "headAngle": 73.25,
+      "seatAngle": 73.5,
+      "wheelbase": 988,
+      "chainstay": 410,
+      "bbDrop": 70,
+      "headTube": 142,
+      "seatTube": 531
+    },
+    "reference": "Aeroad CFR · M",
+    "source": "https://www.canyon.com/en-gb/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
+    "sourceNote": "尺寸单位为 mm，角度单位为 °。Stack / Reach 均为车架参考值，不代表手握位置。",
+    "checkedAt": "2026-09-20",
+    "seatTubeEstimated": false
+  },
+  {
+    "id": "endurance",
+    "label": "耐力",
+    "english": "ENDURANCE",
+    "bikeId": "defy-pro0",
+    "size": "ML",
+    "title": "长途骑行，从前端与接点看起。",
+    "summary": "相对更直立的车架前端、座管与后上叉的组合，是耐力设计的重要线索。舒适性还取决于轮胎、胎压、铺层和骑姿。",
+    "question": "开启叠影，看头管上端在哪里；再观察座管露出与后上叉的连接。",
+    "features": [
+      [
+        "front",
+        "看前端",
+        "本例使用 Defy ML 的车架坐标。Stack 与 Reach 描述前端位置，实际手位还受垫圈、把立与车把影响。"
+      ],
+      [
+        "rear",
+        "看后上叉与座管",
+        "细长的结构与座管设计服务于顺应性目标，但形状不等于弹性系数；这里不画夸张的受力变形。"
+      ],
+      ["clearance", "看轮胎空间", "用轮胎参照环理解前叉与后叉周围的空间；它不是安装兼容量规。"]
+    ],
+    "shape": {
+      "down": 54,
+      "downWidth": 37,
+      "top": 29,
+      "head": 50,
+      "seat": 35,
+      "seatWidth": 29,
+      "post": 28,
+      "postWidth": 26,
+      "stayDrop": 54,
+      "stay": 12,
+      "fork": 37,
+      "forkWidth": 18,
+      "tire": 32
+    },
+    "geometry": {
+      "size": "ML",
+      "stack": 577,
+      "reach": 384,
+      "headAngle": 72.5,
+      "seatAngle": 73,
+      "wheelbase": 1010,
+      "chainstay": 420,
+      "bbDrop": 70,
+      "headTube": 175,
+      "seatTube": 515
+    },
+    "reference": "Defy Advanced Pro 0 · ML",
+    "source": "https://www.giant-bicycles.com/us/defy-advanced-pro-0-2025",
+    "sourceNote": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。",
+    "checkedAt": "2026-09-20",
+    "seatTubeEstimated": false,
+    "readingSource": "https://www.giant-bicycles.com/gb/defy-advanced-pro-0"
+  },
+  {
+    "id": "climbing",
+    "label": "爬坡",
+    "english": "CLIMBING",
+    "bikeId": "aethos-expert",
+    "size": "56",
+    "title": "轻量设计，藏在简洁的轮廓里。",
+    "summary": "以 Aethos 的尺寸关系为参照，观察更纤细的管型、前后叉与传统主三角。轻量也来自材料和制造，不能仅由粗细判断。",
+    "question": "与破风类型叠影：相近的前端坐标，是否一定意味着相似的管型？",
+    "features": [
+      [
+        "tubes",
+        "看主三角",
+        "用较接近圆形的管段表达这类设计的取向。模型没有碳纤维铺层，因此不能推算重量与刚度。"
+      ],
+      [
+        "rear",
+        "看接点",
+        "观察后上叉、座管和上管的相对位置。爬坡取向并不要求所有车型使用同一种后上叉结构。"
+      ],
+      ["front", "看前叉", "细长前叉在保持结构需求的同时控制体积。真实外形请结合原厂照片阅读。"]
+    ],
+    "shape": {
+      "down": 43,
+      "downWidth": 36,
+      "top": 28,
+      "head": 44,
+      "seat": 32,
+      "seatWidth": 30,
+      "post": 27.2,
+      "postWidth": 27.2,
+      "stayDrop": 22,
+      "stay": 12,
+      "fork": 30,
+      "forkWidth": 17,
+      "tire": 28
+    },
+    "geometry": {
+      "size": "56",
+      "stack": 565,
+      "reach": 395,
+      "headTube": 157,
+      "headAngle": 73.5,
+      "bbDrop": 72,
+      "wheelbase": 991,
+      "seatTube": 504,
+      "seatAngle": 73.5,
+      "chainstay": 410
+    },
+    "reference": "Aethos · 56",
+    "source": "https://www.specialized.com/us/en/aethos-expert-shimano-ultegra-di2/p/199442",
+    "sourceNote": "原厂尺寸表；整车零件长度随尺码变化，热点配置并不随几何尺码重配。",
+    "checkedAt": "2026-09-20",
+    "seatTubeEstimated": false
+  },
+  {
+    "id": "gravel",
+    "label": "砾石",
+    "english": "GRAVEL",
+    "bikeId": "revolt-advanced0",
+    "size": "M",
+    "title": "把空间，留给更宽的路。",
+    "summary": "更宽的胎隙、更长的后下叉，以及可扩展的携行空间，构成砾石设计的观察重点。竞赛砾石与旅行砾石也有不同取舍。",
+    "question": "切到前视，看前叉如何为宽胎让位；再点亮安装点。",
+    "features": [
+      [
+        "clearance",
+        "看胎隙",
+        "参考环按 40 mm 示意胎宽绘制，仅用于观察空间。本例几何采用 Revolt 的短档，不能拿模型量出最大胎容。"
+      ],
+      [
+        "rear",
+        "看后下叉",
+        "Revolt M 短档后下叉 425 mm、轴距 1026 mm。长档会改变这些值；本示例不混用两个档位。"
+      ],
+      [
+        "mounts",
+        "看携行位置",
+        "安装座用来说明砾石车常见的扩展思路，数量与位置是类别示意，不代表这台参考整车的原配安装点。"
+      ]
+    ],
+    "shape": {
+      "down": 60,
+      "downWidth": 42,
+      "top": 34,
+      "head": 53,
+      "seat": 37,
+      "seatWidth": 30,
+      "post": 30,
+      "postWidth": 28,
+      "stayDrop": 56,
+      "stay": 15,
+      "fork": 39,
+      "forkWidth": 21,
+      "tire": 40
+    },
+    "geometry": {
+      "size": "M",
+      "stack": 586,
+      "reach": 387,
+      "headAngle": 71.5,
+      "seatAngle": 73.5,
+      "wheelbase": 1026,
+      "chainstay": 425,
+      "bbDrop": 80,
+      "headTube": 150,
+      "seatTube": 470
+    },
+    "reference": "Revolt · M",
+    "source": "https://www.giant-bicycles.com/gb/revolt-advanced-0-2025",
+    "sourceNote": "使用英国官网 SHORT 短档列；长档后下叉与轴距各增加 10 mm，BB Drop 为 81 mm。XS 是原厂几何表尺寸，英国整车销售规格从 S 起。",
+    "checkedAt": "2026-09-20",
+    "seatTubeEstimated": false
+  },
+  {
+    "id": "tt",
+    "label": "TT",
+    "english": "TIME TRIAL",
+    "bikeId": "cervelo-p5",
+    "size": "54",
+    "title": "围绕计时姿态，组织整副车架。",
+    "summary": "深管型、较陡的有效座管参考角与托肘前端，让人车系统围绕持续计时姿态展开。车架 Stack / Reach 不能替代托肘坐标。",
+    "question": "点亮托肘前端：头管上端与手臂支撑点，为什么不能混为一个坐标？",
+    "features": [
+      [
+        "cockpit",
+        "看托肘支撑",
+        "托肘垫与延伸把保留为观察上下文；长度和高度是示意值，不提供 Pad X / Y 拟合建议。"
+      ],
+      [
+        "tubes",
+        "看深管型",
+        "更深的下管和座管强化气动设计取向。是否更快需要指定速度、偏航角和骑手姿态下的测试。"
+      ],
+      [
+        "front",
+        "看车架前端",
+        "本例采用 P5 54 的车架坐标。有效座管角采用官方 79° 参考位置；坐垫可调，不是一个固定骑姿。"
+      ]
+    ],
+    "shape": {
+      "down": 93,
+      "downWidth": 43,
+      "top": 45,
+      "head": 82,
+      "seat": 85,
+      "seatWidth": 29,
+      "post": 60,
+      "postWidth": 25,
+      "stayDrop": 120,
+      "stay": 24,
+      "fork": 60,
+      "forkWidth": 19,
+      "tire": 28
+    },
+    "geometry": {
+      "size": "54",
+      "stack": 498,
+      "reach": 420,
+      "headAngle": 72.5,
+      "seatAngle": 79,
+      "wheelbase": 995,
+      "chainstay": 405,
+      "bbDrop": 75,
+      "headTube": 88,
+      "seatTube": 510
+    },
+    "reference": "P5 · 54",
+    "source": "https://www.cervelo.com/en-US/bikes/p5",
+    "sourceNote": "Stack / Reach 为车架值。座管角按官方几何表使用的 79° 参考坐垫位置绘图，非唯一固定有效角；TT 选码另需查看官方托肘 Stack / Reach 范围。",
+    "checkedAt": "2026-09-20",
+    "seatTubeEstimated": true
+  }
+]

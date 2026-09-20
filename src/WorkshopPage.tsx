@@ -270,7 +270,7 @@ function FitTool({ parts }: { parts: PartsCatalog }) {
         <p className="work-note">
           胎宽由你填写，不表示所选型号一定提供这一规格。此工具识别部分明确冲突，不替代两家厂商的兼容清单。
         </p>
-        <a className="text-link" href={`${base}?view=workshop&tool=structures`}>
+        <a className="text-link" href={`${base}?view=workshop&tool=structures&study=rim`}>
           到结构观察室看胎圈截面 →
         </a>
       </section>

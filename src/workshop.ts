@@ -15,6 +15,8 @@ export type BuildItem = {
   grams: string;
   yuan: string;
   checked: boolean;
+  weightMode?: 'auto' | 'manual' | 'skip';
+  weightVariant?: string;
 };
 export type DreamBuild = {
   version: 1;
@@ -30,7 +32,18 @@ export function newBuild(bikeId = 'tarmac-sl8'): DreamBuild {
     bikeId,
     paintId: 'default',
     items: Object.fromEntries(
-      slots.map(([id]) => [id, { choice: '', custom: '', grams: '', yuan: '', checked: false }]),
+      slots.map(([id]) => [
+        id,
+        {
+          choice: '',
+          custom: '',
+          grams: '',
+          yuan: '',
+          checked: false,
+          weightMode: 'auto',
+          weightVariant: '',
+        },
+      ]),
     ) as DreamBuild['items'],
   };
 }
@@ -40,7 +53,9 @@ export function amount(value: string): number | null {
   return Number.isFinite(n) && n >= 0 && n <= 10000000 ? n : null;
 }
 export function totals(build: DreamBuild, key: 'grams' | 'yuan') {
-  const numbers = slots.map(([slot]) => amount(build.items[slot][key]));
+  const numbers = slots.map(([slot]) =>
+    key === 'grams' ? weightOf(build.items[slot]).grams : amount(build.items[slot][key]),
+  );
   return {
     value: numbers.reduce<number>((sum, n) => sum + (n ?? 0), 0),
     known: numbers.filter((n) => n !== null).length,
@@ -71,6 +86,8 @@ export function parseBuild(value: unknown): DreamBuild {
       !text(i.grams, 16) ||
       !text(i.yuan, 16) ||
       typeof i.checked !== 'boolean' ||
+      (i.weightMode !== undefined && !['auto', 'manual', 'skip'].includes(i.weightMode)) ||
+      (i.weightVariant !== undefined && !text(i.weightVariant, 80)) ||
       (i.grams.trim() !== '' && amount(i.grams) === null) ||
       (i.yuan.trim() !== '' && amount(i.yuan) === null)
     )
@@ -81,6 +98,8 @@ export function parseBuild(value: unknown): DreamBuild {
       grams: i.grams,
       yuan: i.yuan,
       checked: i.checked,
+      weightMode: i.weightMode ?? (i.grams.trim() ? 'manual' : 'auto'),
+      weightVariant: i.weightVariant || '',
     };
   }
   return result;
@@ -166,6 +185,127 @@ export const wheelFit: Record<string, WheelFit> = {
   },
   'shimano-c50': { inner: 21, hookless: false, freehubs: ['HG L2'] },
 };
+export type WeightReference = {
+  id: string;
+  label: string;
+  grams: number;
+  note: string;
+  source: string;
+  checkedAt: string;
+};
+const wheelSources: Record<string, string> = {
+  'dt-arc1100-65': 'https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-db',
+  'zipp-404-firecrest': 'https://www.sram.com/en/zipp/models/wh-404-ftld-b1',
+  'zipp-303-firecrest': 'https://www.sram.com/en/service/models/wh-303-ftld-a1',
+  'enve-ses45': 'https://enve.com/products/ses-4-5',
+  'roval-rapide-clx3': 'https://www.specialized.com/us/en/roval-rapide-clx-iii/p/1000256237',
+};
+const tireReference = (
+  id: string,
+  label: string,
+  each: number,
+  source: string,
+): WeightReference => ({
+  id,
+  label,
+  grams: each * 2,
+  source,
+  checkedAt: '2026-09-20',
+  note: `官方单条 ${each} g × 2；仅含两条外胎，不含内胎、密封液、胎垫或阀嘴。`,
+});
+export const weightReferences: Record<string, WeightReference[]> = {
+  ...Object.fromEntries(
+    Object.entries(wheelFit)
+      .filter(([, w]) => w.grams)
+      .map(([id, w]) => [
+        id,
+        [
+          {
+            id: 'default',
+            label: '前后轮一对',
+            grams: w.grams!,
+            note: w.weightNote!,
+            source: wheelSources[id],
+            checkedAt: '2026-09-20',
+          },
+        ],
+      ]),
+  ),
+  'schwalbe-pro-one': [
+    tireReference(
+      '28-black',
+      '28-622 黑色 · 11653975 · 两条',
+      295,
+      'https://www.schwalbe.com/en/PRO-One-Tubeless-11653975',
+    ),
+  ],
+  'vittoria-corsa-pro': [
+    [24, 245],
+    [26, 260],
+    [28, 280],
+    [29, 290],
+    [30, 285],
+    [32, 305],
+  ].map(([width, grams]) =>
+    tireReference(
+      `${width}-para`,
+      `${width}-622${width === 29 ? ' WR' : ''} Para · 两条`,
+      grams,
+      'https://vittoria.com/products/corsa-pro-tubeless-ready',
+    ),
+  ),
+  'pirelli-race-tlr-rs': [
+    [26, 270],
+    [28, 290],
+    [30, 310],
+    [32, 340],
+    [35, 370],
+  ].map(([width, grams]) =>
+    tireReference(
+      `${width}-black`,
+      `${width}-622 标准黑色 · 两条`,
+      grams,
+      'https://www.pirelli.com/tires/en-us/bike/tires/catalogue/p-zero-race-tlr-rs',
+    ),
+  ),
+};
+export function defaultWeightVariant(choice: string) {
+  const refs = weightReferences[choice] || [];
+  return (refs.find((r) => r.id.startsWith('28-')) || refs[0])?.id || '';
+}
+export function weightReference(item: BuildItem) {
+  const refs = weightReferences[item.choice] || [];
+  // Older tire selections did not record width or casing; never infer a SKU on migration.
+  const id = item.weightVariant || (wheelFit[item.choice] ? 'default' : '');
+  return refs.find((r) => r.id === id);
+}
+export function weightOf(item: BuildItem): {
+  grams: number | null;
+  origin: 'official' | 'manual' | 'unknown' | 'skip';
+  reference?: WeightReference;
+} {
+  const mode = item.weightMode ?? (item.grams.trim() ? 'manual' : 'auto');
+  const reference = weightReference(item);
+  if (mode === 'skip') return { grams: null, origin: 'skip', reference };
+  if (mode === 'manual')
+    return {
+      grams: amount(item.grams),
+      origin: amount(item.grams) === null ? 'unknown' : 'manual',
+      reference,
+    };
+  return reference
+    ? { grams: reference.grams, origin: 'official', reference }
+    : { grams: null, origin: 'unknown' };
+}
+export function weightBreakdown(build: DreamBuild) {
+  const weights = slots.map(([s]) => weightOf(build.items[s]));
+  return {
+    official: weights.filter((w) => w.origin === 'official').length,
+    manual: weights.filter((w) => w.origin === 'manual').length,
+    skipped: weights.filter((w) => w.grams === null).length,
+  };
+}
+
 export function fitCheck(wheelId: string, tireId: string) {
   const wheel = wheelFit[wheelId];
   if (!wheel || !tireId)

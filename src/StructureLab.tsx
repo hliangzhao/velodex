@@ -3,18 +3,19 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { buildStructure, type Study } from './buildStructure';
+import FrameLab from './FrameLab';
 const sources = {
   ratchet: 'https://www.dtswiss.com/en/wheels/wheels-technology/ratchet-exp-technology',
   rim: 'https://www.sram.com/en/service/models/wh-303-ftld-a1',
 };
-export default function StructureLab() {
-  const [study, setStudy] = useState<Study>('ratchet'),
-    [explode, setExplode] = useState(0.65),
+function ComponentLab({ initial }: { initial: Study }) {
+  const [study, setStudy] = useState<Study>(initial),
+    [explode, setExplode] = useState(initial === 'rim' ? 0.15 : 0.65),
     [hooked, setHooked] = useState(false),
     [cutaway, setCutaway] = useState(false),
     [frontView, setFrontView] = useState(false),
     [motion, setMotion] = useState<'paused' | 'drive' | 'coast'>('paused'),
-    [selected, setSelected] = useState('moving'),
+    [selected, setSelected] = useState(initial === 'rim' ? 'rim' : 'moving'),
     [reset, setReset] = useState(0),
     [error, setError] = useState(false);
   const host = useRef<HTMLDivElement>(null);
@@ -208,35 +209,6 @@ export default function StructureLab() {
         ];
   return (
     <>
-      <div className="work-actions">
-        <button
-          className={`light-button ${study === 'ratchet' ? 'selected' : ''}`}
-          aria-pressed={study === 'ratchet'}
-          onClick={() => {
-            setStudy('ratchet');
-            setCutaway(false);
-            setFrontView(false);
-            setSelected('moving');
-            setExplode(0.65);
-            setMotion('paused');
-          }}
-        >
-          01 · Ratchet EXP 啮合
-        </button>
-        <button
-          className={`light-button ${study === 'rim' ? 'selected' : ''}`}
-          aria-pressed={study === 'rim'}
-          onClick={() => {
-            setStudy('rim');
-            setCutaway(false);
-            setSelected('rim');
-            setExplode(0.15);
-            setMotion('paused');
-          }}
-        >
-          02 · 胎圈与轮圈截面
-        </button>
-      </div>
       <div className="lab-grid">
         <div className="lab-stage">
           <div ref={host} style={{ width: '100%', height: '100%' }} />
@@ -367,6 +339,33 @@ export default function StructureLab() {
           核对官方资料 ↗
         </a>
       </div>
+    </>
+  );
+}
+
+export default function StructureLab() {
+  const requested = new URLSearchParams(location.search).get('study');
+  const [section, setSection] = useState(
+    requested === 'ratchet' || requested === 'rim' ? requested : 'frames',
+  );
+  return (
+    <>
+      <nav className="structure-sections" aria-label="结构研究主题">
+        {[
+          ['frames', '01 / 车架设计'],
+          ['ratchet', '02 / 端面齿啮合'],
+          ['rim', '03 / 胎圈与轮圈'],
+        ].map(([id, label]) => (
+          <button key={id} aria-pressed={section === id} onClick={() => setSection(id)}>
+            {label}
+          </button>
+        ))}
+      </nav>
+      {section === 'frames' ? (
+        <FrameLab />
+      ) : (
+        <ComponentLab key={section} initial={section as Study} />
+      )}
     </>
   );
 }
