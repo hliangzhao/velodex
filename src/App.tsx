@@ -117,7 +117,9 @@ function App() {
         (brand === 'all' || b.brandId === brand) &&
         (kind === 'all' || b.kind === kind) &&
         (collection === 'all' || b.collections.includes(collection)) &&
-        `${b.name} ${b.brandId} ${b.build}`.toLowerCase().includes(query.trim().toLowerCase()),
+        `${b.name} ${b.brandId} ${catalog.brands.find((item) => item.id === b.brandId)?.name ?? ''} ${b.build}`
+          .toLowerCase()
+          .includes(query.trim().toLowerCase()),
     ) || [];
   const currentBrand = catalog?.brands.find((b) => b.id === bike?.brandId);
   const partIndex = bike?.components.findIndex((c) => c.id === component?.id) || 0;

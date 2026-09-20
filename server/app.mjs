@@ -25,12 +25,16 @@ export function createApp(catalog = loadCatalog(), { production = false } = {}) 
     if (collection && !['all', 'current', 'classic', 'popular'].includes(collection))
       return res.status(400).json({ error: '不支持的车型分类' });
     const query = q?.trim().toLowerCase();
+    const brandNames = new Map(catalog.brands.map((item) => [item.id, item.name]));
     const bikes = catalog.bikes.filter(
       (bike) =>
         (!brand || bike.brandId === brand) &&
         (!kind || kind === 'all' || bike.kind === kind) &&
         (!collection || collection === 'all' || bike.collections.includes(collection)) &&
-        (!query || `${bike.name} ${bike.brandId} ${bike.build}`.toLowerCase().includes(query)),
+        (!query ||
+          `${bike.name} ${bike.brandId} ${brandNames.get(bike.brandId) ?? ''} ${bike.build}`
+            .toLowerCase()
+            .includes(query)),
     );
     res.json({ bikes, total: bikes.length });
   });

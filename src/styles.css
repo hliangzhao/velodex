@@ -2170,8 +2170,11 @@ footer > a:last-child {
 .brand-vanrysel span {
   font-size: 17px;
 }
+.brand-merida span {
+  font-size: 19px;
+}
 .brand-list {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 @media (max-width: 1100px) {
   .view-mode {
@@ -2223,7 +2226,7 @@ footer > a:last-child {
     padding: 25px;
   }
   .brand-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .kind-filters {
     gap: 17px;

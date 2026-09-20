@@ -16,7 +16,7 @@ npm run dev
 - 退出：Ctrl+C
 
 ```sh
-npm test          # HTTP API、数据完整性、13 款车默认及极端尺码的 3D 网格检查
+npm test          # HTTP API、数据完整性、21 款车默认及极端尺码的 3D 网格检查
 npm run build     # TypeScript 检查与生产构建
 npm start         # Express 同时提供前端与 API，默认 127.0.0.1:3001
 npm run format    # 整理源码格式
@@ -26,7 +26,7 @@ npm run format    # 整理源码格式
 
 ## GitHub Pages
 
-网站入口：https://hliangzhao.github.io/velodex/ （GitHub 会按个人主页域名配置跳转。）
+网站入口：https://hliangzhao.me/velodex/ 。学术主页中英文页脚的小自行车图标可直接进入。
 
 推送到 `main` 后，`Deploy GitHub Pages` 工作流会运行测试、构建并自动发布，也可以在 Actions 中手动运行。Pages 设置的发布来源为 **GitHub Actions**。
 
@@ -47,7 +47,9 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 打包为�
 - `?bike=xlab-ad9` 等链接可直接分享车型，支持浏览器前进和后退。
 - 响应式桌面 / 平板 / 手机布局，键盘操作、弹窗焦点管理、减少动态效果偏好。
 
-首批收录 8 个品牌、13 款车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
+目前收录 10 个品牌、21 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
+
+新增 TCR Advanced Pro 0 AXS、Defy Advanced Pro 0、Ultimate CF SLX 8 Di2、Endurace CF SLX 8 Di2、Cannondale SuperSix EVO 2 Gen 5、美利达 SCULTURA 8000 / SCULTURA ENDURANCE 8000，以及迪卡侬 Van Rysel RCR-R Pro。新增项均有实拍、八类部件记录、逐尺码几何和独立 3D 轮廓。
 
 ## 车型 3D 与工程资料
 
@@ -70,6 +72,10 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 打包为�
 - AD7 为巴西官方展示的 105 Di2 / Branta 铝合金功率曲柄版本；AD8、AD9 为美国官方配置。它们不等同于中国大陆在售配置。
 - Madone 使用 2025 年同代官方涂装图，参数参考 Trek 官方 2026 年 ML 码资料，页面有提示。
 - RS7、RT9 为美国版本；迪卡侬 EDR CF 为法国 8817922 机械 105 / VR35 Lite 配置，非早期 EDR 同名车架。EDR 几何采用品牌尺寸图的媒体转载，并在页面注明。
+- 新增美利达两款为 2025 国际版官方存档；SCULTURA 8000 使用 Reynolds AR 46，与瑞士 CH 版的 Vision 配置不同。
+- Endurace 为产品 4432（官网核对时标注 Coming soon），不混用旧款 4277 几何；Ultimate 为 4372。Canyon 的整车重量从官网磅值换算。
+- RCR-R Pro 为英国 8929970 配置；几何采用 2024 RCR 官方手册第 9 页。官网轮组重量有冲突，未擅自选取。
+- 未明确列出原配功率计的车型，3D 不额外生成传感器；仍可通过部件档案查看说明。
 - SL7 的官方牙盘字段存在冲突，保留“待核验”，未推测齿数。
 - “在售系列”表示地区品牌网站仍有产品展示，不表示实时库存；“人气精选”是编辑选集，不是销量榜。
 - 重量按官网所给尺寸与口径展示，不宜直接当作严格同条件对比。

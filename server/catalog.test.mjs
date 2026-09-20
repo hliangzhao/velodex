@@ -53,10 +53,19 @@ test('catalog API filters and returns correct records without exposing arbitrary
   const endurance = await (await get('/api/bikes?kind=' + encodeURIComponent('长途耐力'))).json();
   assert.deepEqual(
     endurance.bikes.map((b) => b.id),
-    ['vanrysel-edr-cf'],
+    ['vanrysel-edr-cf', 'defy-pro0', 'endurace-slx8', 'scultura-endurance8000'],
   );
   assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent('喜德盛'))).json()).total, 5);
-  assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent('迪卡侬'))).json()).total, 1);
+  const decathlon = await (await get('/api/bikes?q=' + encodeURIComponent('迪卡侬'))).json();
+  assert.deepEqual(
+    decathlon.bikes.map((b) => b.id),
+    ['vanrysel-edr-cf', 'vanrysel-rcr-pro'],
+  );
+  const meridaArchive = await (await get('/api/bikes?brand=merida&collection=classic')).json();
+  assert.deepEqual(
+    meridaArchive.bikes.map((b) => b.id),
+    ['scultura8000', 'scultura-endurance8000'],
+  );
   assert.equal((await get('/api/bikes?kind=a&kind=b')).status, 400);
   assert.equal((await get('/api/bikes?brand=a&brand=b')).status, 400);
   assert.equal((await get('/api/bikes/unknown')).status, 404);

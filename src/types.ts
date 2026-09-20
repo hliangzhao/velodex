@@ -47,6 +47,7 @@ export type Bike = {
   weight: string;
   weightNote: string;
   groupset: string;
+  hasPowerMeter: boolean;
   material: string;
   components: Component[];
   geometry: {

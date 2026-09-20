@@ -49,6 +49,18 @@
       "name": "迪卡侬 Van Rysel",
       "country": "法国",
       "founded": "2019"
+    },
+    {
+      "id": "cannondale",
+      "name": "Cannondale",
+      "country": "美国",
+      "founded": "1971"
+    },
+    {
+      "id": "merida",
+      "name": "美利达 MERIDA",
+      "country": "中国台湾",
+      "founded": "1972"
     }
   ],
   "bikes": [
@@ -364,7 +376,8 @@
         "description": "头管前缘与细长座管的设计面向迎风阻力优化；车架、把组与骑手姿态共同影响结果。",
         "source": "https://www.specialized.com/us/en/s-works-tarmac-sl8-shimano-dura-ace-di2/p/4221553?color=5460152-4221553",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "madone-slr9",
@@ -665,7 +678,8 @@
         "description": "管型、IsoFlow 与气动水壶按整车系统设计。测试中的水壶、骑手和把位配置会改变最终阻力。",
         "source": "https://www.trekbikes.com/gb/en_GB/madone/",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": false
     },
     {
       "id": "aeroad-cfr",
@@ -976,7 +990,8 @@
         "description": "第四代 Aeroad 使用气动前叉与可调 PACE 把组。窄把位会改变骑手迎风姿态，不能只看车架单独的阻力。",
         "source": "https://www.canyon.com/en-gb/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "propel-sl0",
@@ -1280,7 +1295,8 @@
         "description": "官方介绍以 CFD 和动态风洞测试优化截尾翼型管材与 Contact SLR Aero 把组，关注不同偏航角的表现。",
         "source": "https://www.giant-bicycles.com/gb/propel-advanced-sl-0--dura-ace-",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": false
     },
     {
       "id": "dogma-f",
@@ -1521,7 +1537,8 @@
         "description": "新一代 Onda 前叉、下管与全内走线前端共同构成整车外形。具体风阻仍取决于骑手与整车测试设置。",
         "source": "https://pinarello.com/uk/en/bikes/road/competition/new-dogma-f/new-dogma-f-dura-ace-di2",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": false
     },
     {
       "id": "cervelo-s5",
@@ -1821,7 +1838,8 @@
         "description": "S5 与 Reserve 57|64 Turbulent Aero 轮组协同开发。轮胎、轮圈与前叉附近的流场相互影响。",
         "source": "https://www.cervelo.com/en-US/bikes/s5",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "tarmac-sl7",
@@ -2131,7 +2149,8 @@
         "description": "内走线、Rapide 碳把与深框轮组构成这代 SL7 的竞赛配置。这里保留当年整车，不将后继世代的提升数字套用到它。",
         "source": "https://www.specialized.com/us/en/s-works-tarmac-sl7-sram-red-etap-axs/p/199464?color=323320-199464",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "xlab-ad7",
@@ -2427,7 +2446,8 @@
         "description": "气动车架、整合式 Branta 碳把与碳轮是巴西 AD7 的设计重点。该产品页未给出可复现的定量风阻测试。",
         "source": "https://xlabbikes.com.br/ad7/",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "xlab-ad8",
@@ -2728,7 +2748,8 @@
         "description": "官方介绍 AD8 沿用 AD9 的气动设计理念，以 T800 碳纤维车架搭配一体把；不能据此假设不同整车配置的风阻完全相同。",
         "source": "https://xds.co/products/ad8",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "xlab-ad9",
@@ -3033,7 +3054,8 @@
         "description": "官方介绍经过 Silverstone 风洞与 CFD 开发。这里不将未完整披露测试配置的性能宣传当作跨品牌排名。",
         "source": "https://xds.co/products/ad9",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "xlab-rs7",
@@ -3341,7 +3363,8 @@
         "description": "RS7 的官方定位强调均衡几何与多用途骑行。与 AD 系列相比，实拍可见更纤细的管型；这不等于可量化的风阻差值。",
         "source": "https://xds.co/products/rs7",
         "limit": "未录入可与其他车型直接比较的风洞数据。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "xlab-rt9",
@@ -3618,7 +3641,8 @@
         "description": "RT9 以轻量车架与圆座管为特征，官方重点强调低重量。整车爬坡表现还取决于总质量、坡度、轮胎和骑手输出。",
         "source": "https://xds.co/products/rt9",
         "limit": "没有录入 RT9 相对 AD 系列的可比风阻数据。轻量与气动不能用外形直接换算。"
-      }
+      },
+      "hasPowerMeter": true
     },
     {
       "id": "vanrysel-edr-cf",
@@ -3905,6 +3929,2364 @@
         "description": "EDR CF 的设计重点是耐力几何、宽胎兼容与储物便利。35 mm 碳轮较浅，不能仅凭框高推断整车风阻。",
         "source": "https://www.decathlonpro.fr/edr-cf2-toolbox-105-12s-id-8817922.html",
         "limit": "未录入原厂 CdA 或跨车型风洞测试。较直立的骑姿通常会改变迎风面积，具体幅度需实际测量。"
+      },
+      "hasPowerMeter": false
+    },
+    {
+      "id": "tcr-pro0",
+      "brandId": "giant",
+      "name": "TCR Advanced Pro 0 AXS",
+      "family": "TCR Advanced Pro 0",
+      "edition": "2026 · 美国版",
+      "kind": "轻量爬坡",
+      "description": "紧凑三角、倾斜上管与较高的后上叉接点，是 TCR 鲜明的轮廓。40 mm 轮组与 Force AXS，面向起伏赛道上的加速与爬升。",
+      "color": "Carbon / 碳黑",
+      "colorHex": "#333638",
+      "weight": "未公布",
+      "weightNote": "此地区官网未提供整车重量",
+      "material": "Advanced 碳纤维",
+      "groupset": "Force AXS E1",
+      "build": "SRAM Force AXS E1",
+      "collections": [
+        "current",
+        "popular"
+      ],
+      "image": "/bikes/tcr-pro0.jpg",
+      "imageCredit": "GIANT",
+      "imageSource": "https://images2.giant-bicycles.com/b_white,c_pad,h_1250,q_90,w_2000/jtismbbz7rrw6bsjelem/MY26TCRAdvancedPro0-AXS_ColorACarbon.jpg",
+      "imageRatio": 1.6,
+      "source": "https://www.giant-bicycles.com/us/tcr-advanced-pro-0--axs-",
+      "sourceLabel": "GIANT 官方 · 2026 · 美国版",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Advanced-grade Composite",
+          "description": "紧凑公路几何搭配可调高度的 Variant 座管；这款 Pro 并非 SL 的一体式座管车架。",
+          "specs": [
+            [
+              "前叉",
+              "Advanced SL · OverDrive Aero"
+            ],
+            [
+              "桶轴",
+              "前 12 × 100 / 后 12 × 142 mm"
+            ],
+            [
+              "最大胎宽",
+              "33 mm"
+            ]
+          ],
+          "x": 58,
+          "y": 48
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "SRAM Force AXS E1",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "AXS 无线电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 77,
+          "y": 22
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "SRAM Force AXS E1",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "SRAM Force AXS E1"
+            ],
+            [
+              "曲柄长度",
+              "XS / S 165 · M / ML 170 · L / XL 172.5 mm"
+            ],
+            [
+              "五通",
+              "SRAM DUB 压入式"
+            ]
+          ],
+          "x": 52,
+          "y": 68
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "48 / 35T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "48 / 35T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 44,
+          "y": 73
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "SRAM Force E1 · 10–36T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "10–36T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 25,
+          "y": 61
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "SRAM 集成功率计",
+          "description": "品牌配置表明确列出的原配功率计。",
+          "specs": [
+            [
+              "原配状态",
+              "官网明确列出"
+            ],
+            [
+              "搭载曲柄",
+              "Force AXS E1"
+            ]
+          ],
+          "x": 47,
+          "y": 65
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Giant SLR 0 40",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高",
+              "前后 40 mm"
+            ],
+            [
+              "辐条",
+              "Giant Aero Carbon"
+            ],
+            [
+              "后花鼓",
+              "40T 棘轮"
+            ]
+          ],
+          "x": 80,
+          "y": 77
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "CADEX Road Race GC",
+          "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
+          "specs": [
+            [
+              "标称规格",
+              "700 × 30 mm"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 87,
+          "y": 49
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 517,
+            "reach": 376,
+            "headAngle": 71,
+            "seatAngle": 74.5,
+            "wheelbase": 976,
+            "chainstay": 405,
+            "bbDrop": 72,
+            "headTube": 120,
+            "seatTube": 425
+          },
+          {
+            "size": "S",
+            "stack": 528,
+            "reach": 383,
+            "headAngle": 72.3,
+            "seatAngle": 74,
+            "wheelbase": 977,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 130,
+            "seatTube": 445
+          },
+          {
+            "size": "M",
+            "stack": 545,
+            "reach": 388,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 980,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 145,
+            "seatTube": 470
+          },
+          {
+            "size": "ML",
+            "stack": 562,
+            "reach": 393,
+            "headAngle": 73,
+            "seatAngle": 73,
+            "wheelbase": 991,
+            "chainstay": 405,
+            "bbDrop": 67,
+            "headTube": 165,
+            "seatTube": 500
+          },
+          {
+            "size": "L",
+            "stack": 581,
+            "reach": 402,
+            "headAngle": 73,
+            "seatAngle": 73,
+            "wheelbase": 1006,
+            "chainstay": 405,
+            "bbDrop": 67,
+            "headTube": 185,
+            "seatTube": 530
+          },
+          {
+            "size": "XL",
+            "stack": 596,
+            "reach": 412,
+            "headAngle": 73,
+            "seatAngle": 72.5,
+            "wheelbase": 1020,
+            "chainstay": 405,
+            "bbDrop": 67,
+            "headTube": 200,
+            "seatTube": 560
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.giant-bicycles.com/us/tcr-advanced-pro-0--axs-",
+        "sourceLabel": "GIANT 官方 · 对应产品几何",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。"
+      },
+      "aero": {
+        "title": "紧凑车架与截尾椭圆管型",
+        "description": "前端采用 OverDrive Aero 内走线，管型由 CFD 与风洞开发。紧凑车架保留轻量取向，也将空气动力学纳入整体设计。",
+        "source": "https://www.giant-bicycles.com/us/tcr-advanced-pro-0--axs-",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "defy-pro0",
+      "brandId": "giant",
+      "name": "Defy Advanced Pro 0",
+      "family": "Defy Advanced Pro 0",
+      "edition": "2025 · 美国版",
+      "kind": "长途耐力",
+      "description": "细后上叉、D-Fuse 座管与 32C 外胎，让长距离骑行成为主角。相较 TCR，Defy 用更舒展的几何迎接粗糙路面与漫长的一天。",
+      "color": "Interstellar / 星际",
+      "colorHex": "#74758f",
+      "weight": "7.48 kg",
+      "weightNote": "官方标称 · S 码 · 美国版",
+      "material": "Advanced 碳纤维",
+      "groupset": "Ultegra Di2",
+      "build": "Shimano Ultegra Di2",
+      "collections": [
+        "current",
+        "popular"
+      ],
+      "image": "/bikes/defy-pro0.jpg",
+      "imageCredit": "GIANT",
+      "imageSource": "https://images2.giant-bicycles.com/b_white,c_pad,h_1250,q_90,w_2000/aln483imudq1em2hmdss/MY25DefyAdvancedPro0_ColorAInterstellar.jpg",
+      "imageRatio": 1.6,
+      "source": "https://www.giant-bicycles.com/us/defy-advanced-pro-0-2025",
+      "sourceLabel": "GIANT 官方 · 2025 · 美国版",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Advanced-Grade Composite",
+          "description": "以长途顺应性为目标的碳纤维车架，配 D-Fuse 把组与座管。胎宽上限的官网字段存在冲突，保留提示。",
+          "specs": [
+            [
+              "座管",
+              "Giant D-Fuse SLR 碳纤维"
+            ],
+            [
+              "桶轴",
+              "前 12 × 100 / 后 12 × 142 mm"
+            ],
+            [
+              "最大胎宽",
+              "官网 38 / 40 mm 字段不一致，待核验"
+            ]
+          ],
+          "x": 58,
+          "y": 48
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "Di2 电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 77,
+          "y": 22
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "Shimano Ultegra"
+            ],
+            [
+              "曲柄长度",
+              "XS / S 170 · M / ML 172.5 · L / XL 175 mm"
+            ],
+            [
+              "五通",
+              "Shimano 压入式"
+            ]
+          ],
+          "x": 52,
+          "y": 68
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 34T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "50 / 34T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 44,
+          "y": 73
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra · 11–34T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "11–34T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 25,
+          "y": 61
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "Giant Power Pro",
+          "description": "品牌配置表明确列出的原配功率计。",
+          "specs": [
+            [
+              "原配状态",
+              "官网明确列出"
+            ],
+            [
+              "搭载曲柄",
+              "Shimano Ultegra"
+            ]
+          ],
+          "x": 47,
+          "y": 65
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Giant SLR 1 36 Carbon Disc",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高",
+              "36 mm"
+            ],
+            [
+              "辐条",
+              "Sapim"
+            ],
+            [
+              "后花鼓",
+              "30T 棘轮"
+            ]
+          ],
+          "x": 80,
+          "y": 77
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "CADEX Classics",
+          "description": "官网另标装配宽度 33.5 mm；标称宽度和实际装配宽度不同。",
+          "specs": [
+            [
+              "标称规格",
+              "700 × 32C"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 87,
+          "y": 49
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 527,
+            "reach": 369,
+            "headAngle": 70.5,
+            "seatAngle": 74.5,
+            "wheelbase": 995,
+            "chainstay": 420,
+            "bbDrop": 75,
+            "headTube": 125,
+            "seatTube": 410
+          },
+          {
+            "size": "S",
+            "stack": 541,
+            "reach": 375,
+            "headAngle": 71.8,
+            "seatAngle": 74,
+            "wheelbase": 994,
+            "chainstay": 420,
+            "bbDrop": 75,
+            "headTube": 135,
+            "seatTube": 445
+          },
+          {
+            "size": "M",
+            "stack": 558,
+            "reach": 380,
+            "headAngle": 72.5,
+            "seatAngle": 73.5,
+            "wheelbase": 998,
+            "chainstay": 420,
+            "bbDrop": 75,
+            "headTube": 150,
+            "seatTube": 480
+          },
+          {
+            "size": "ML",
+            "stack": 577,
+            "reach": 384,
+            "headAngle": 72.5,
+            "seatAngle": 73,
+            "wheelbase": 1010,
+            "chainstay": 420,
+            "bbDrop": 70,
+            "headTube": 175,
+            "seatTube": 515
+          },
+          {
+            "size": "L",
+            "stack": 596,
+            "reach": 393,
+            "headAngle": 72.5,
+            "seatAngle": 73,
+            "wheelbase": 1025,
+            "chainstay": 420,
+            "bbDrop": 70,
+            "headTube": 195,
+            "seatTube": 535
+          },
+          {
+            "size": "XL",
+            "stack": 615,
+            "reach": 402,
+            "headAngle": 72.5,
+            "seatAngle": 73,
+            "wheelbase": 1040,
+            "chainstay": 420,
+            "bbDrop": 70,
+            "headTube": 215,
+            "seatTube": 565
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.giant-bicycles.com/us/defy-advanced-pro-0-2025",
+        "sourceLabel": "GIANT 官方 · 对应产品几何",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。"
+      },
+      "aero": {
+        "title": "耐力优先的整合前端",
+        "description": "OverDrive Aero 使管线沿前端整合；D-Fuse 把组和座管的重点是吸收振动。舒适取向不等于具有某个固定的风阻数值。",
+        "source": "https://www.giant-bicycles.com/us/defy-advanced-pro-0-2025",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "ultimate-slx8",
+      "brandId": "canyon",
+      "name": "Ultimate CF SLX 8 Di2",
+      "family": "Ultimate CF SLX 8",
+      "edition": "美国版 · 产品 4372",
+      "kind": "轻量爬坡",
+      "description": "细长座管与利落的前三角，延续 Ultimate 的轻量竞赛取向。38 mm 碳轮、Ultegra Di2 与可调 PACE 把组，组成一台山路与平路兼顾的赛车。",
+      "color": "Metallic Black / 金属黑",
+      "colorHex": "#353638",
+      "weight": "约 7.10 kg",
+      "weightNote": "官网 15.66 lb 换算 · M 码标准配置",
+      "material": "CF SLX 碳纤维",
+      "groupset": "Ultegra Di2",
+      "build": "Shimano Ultegra Di2",
+      "collections": [
+        "current",
+        "popular"
+      ],
+      "image": "/bikes/ultimate-slx8.png",
+      "imageCredit": "CANYON",
+      "imageSource": "https://dma.canyon.com/image/upload/w_2000,c_fit/f_png/q_auto/v1778166635/2027_FULL_ultimate_cf-slx-8-di2_4372_R100_P08_zqiigh",
+      "imageRatio": 1.7777777777777777,
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html?dwvar_4372_pv_rahmenfarbe=R100_P08",
+      "sourceLabel": "CANYON 官方 · 美国版 · 产品 4372",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": true,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Canyon Ultimate CF SLX",
+          "description": "SLX 碳纤维车架采用内走线前端和独立碳纤维座管，轮廓比 Aeroad 更纤细。",
+          "specs": [
+            [
+              "前叉",
+              "Canyon FK0146 CF"
+            ],
+            [
+              "最大胎宽",
+              "32 mm"
+            ],
+            [
+              "车架重量",
+              "940 g · 官网参考"
+            ],
+            [
+              "把组",
+              "CP0048 PACE T-Bar"
+            ]
+          ],
+          "x": 59,
+          "y": 48
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "Di2 电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 77,
+          "y": 21
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra FC-R8100",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "Shimano Ultegra FC-R8100"
+            ],
+            [
+              "曲柄长度",
+              "2XS / XS 160 · S / M 165 · L–2XL 170 mm"
+            ],
+            [
+              "五通",
+              "Shimano BB72 · PF 86.5"
+            ]
+          ],
+          "x": 52,
+          "y": 73
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "52 / 36T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 43,
+          "y": 80
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R8101 · 11–34T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "11–34T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 23,
+          "y": 63
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision",
+          "description": "品牌配置表明确列出的原配功率计。",
+          "specs": [
+            [
+              "原配状态",
+              "官网明确列出"
+            ],
+            [
+              "搭载曲柄",
+              "Ultegra R8100"
+            ]
+          ],
+          "x": 47,
+          "y": 69
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss ARC 1400 Dicut",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高",
+              "前后 38 mm"
+            ],
+            [
+              "内宽",
+              "20 mm"
+            ],
+            [
+              "轮圈材质",
+              "碳纤维"
+            ]
+          ],
+          "x": 81,
+          "y": 78
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP 5000 S TR",
+          "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
+          "specs": [
+            [
+              "标称规格",
+              "28 mm"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 89,
+          "y": 47
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "2XS",
+            "stack": 498,
+            "reach": 372,
+            "headAngle": 70,
+            "seatAngle": 73.5,
+            "wheelbase": 975,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 88,
+            "seatTube": 420
+          },
+          {
+            "size": "XS",
+            "stack": 520,
+            "reach": 378,
+            "headAngle": 71.2,
+            "seatAngle": 73.5,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 107,
+            "seatTube": 450
+          },
+          {
+            "size": "S",
+            "stack": 539,
+            "reach": 390,
+            "headAngle": 72.8,
+            "seatAngle": 73.5,
+            "wheelbase": 982,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 121,
+            "seatTube": 480
+          },
+          {
+            "size": "M",
+            "stack": 560,
+            "reach": 393,
+            "headAngle": 73.25,
+            "seatAngle": 73.5,
+            "wheelbase": 988,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 142,
+            "seatTube": 510
+          },
+          {
+            "size": "L",
+            "stack": 580,
+            "reach": 401,
+            "headAngle": 73.3,
+            "seatAngle": 73.5,
+            "wheelbase": 1003,
+            "chainstay": 413,
+            "bbDrop": 73,
+            "headTube": 162,
+            "seatTube": 540
+          },
+          {
+            "size": "XL",
+            "stack": 606,
+            "reach": 419,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1029,
+            "chainstay": 415,
+            "bbDrop": 73,
+            "headTube": 188,
+            "seatTube": 570
+          },
+          {
+            "size": "2XL",
+            "stack": 624,
+            "reach": 429,
+            "headAngle": 73.8,
+            "seatAngle": 73.5,
+            "wheelbase": 1042,
+            "chainstay": 415,
+            "bbDrop": 73,
+            "headTube": 206,
+            "seatTube": 600
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html?dwvar_4372_pv_rahmenfarbe=R100_P08",
+        "sourceLabel": "CANYON 官方 · 对应产品几何",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。"
+      },
+      "aero": {
+        "title": "纤细管型与 PACE 把组",
+        "description": "轻量车架配合可调宽度、高度的 PACE 碳纤维把组；前端整合与骑手把位共同影响迎风面积。",
+        "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html?dwvar_4372_pv_rahmenfarbe=R100_P08",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "endurace-slx8",
+      "brandId": "canyon",
+      "name": "Endurace CF SLX 8 Di2",
+      "family": "Endurace CF SLX 8",
+      "edition": "美国版 · 产品 4432",
+      "kind": "长途耐力",
+      "description": "高前端、VCLS Aero 座管和宽胎空间，把速度延伸到更长的路线。较低框高的 ERC 轮组与 32 mm 外胎，是这台耐力车的日常搭配。",
+      "color": "Champagne / 香槟",
+      "colorHex": "#c5bca7",
+      "weight": "约 8.10 kg",
+      "weightNote": "官网 17.86 lb 换算 · M 码标准配置",
+      "material": "CF SLX 碳纤维",
+      "groupset": "Ultegra Di2",
+      "build": "Shimano Ultegra Di2",
+      "collections": [
+        "current",
+        "popular"
+      ],
+      "image": "/bikes/endurace-slx8.png",
+      "imageCredit": "CANYON",
+      "imageSource": "https://dma.canyon.com/image/upload/w_2000,c_fit/f_png/q_auto/v1781600616/2027_FULL_endurace_cf-slx-8-di2_4432_R130_P02_zqw3jc",
+      "imageRatio": 1.7777777777777777,
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html?dwvar_4432_pv_rahmenfarbe=R130_P02",
+      "sourceLabel": "CANYON 官方 · 美国版 · 产品 4432",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": true,
+      "imageNote": "产品 4432 美国官网展示版本；核对时标注 Coming soon，不代表即时库存。",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Canyon Endurace CF SLX",
+          "description": "较高 Stack 与更宽轮胎空间面向长途公路。记录对应新款 4432，几何不混用旧款 4277。",
+          "specs": [
+            [
+              "前叉",
+              "Canyon FK0165 CF Disc"
+            ],
+            [
+              "最大胎宽",
+              "38 mm"
+            ],
+            [
+              "座管",
+              "SP0093 VCLS Aero"
+            ],
+            [
+              "把组",
+              "CP0048 PACE T-Bar"
+            ]
+          ],
+          "x": 59,
+          "y": 48
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "Di2 电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 77,
+          "y": 21
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra R8100",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "Shimano Ultegra R8100"
+            ],
+            [
+              "曲柄长度",
+              "2XS / XS 160 · S / M 165 · L–2XL 170 mm"
+            ],
+            [
+              "五通",
+              "Shimano BB72 · PF 86.5"
+            ]
+          ],
+          "x": 52,
+          "y": 73
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 34T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "50 / 34T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 43,
+          "y": 80
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R8101 · 11–34T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "11–34T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 23,
+          "y": 63
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision 3+",
+          "description": "品牌配置表明确列出的原配功率计。",
+          "specs": [
+            [
+              "原配状态",
+              "官网明确列出"
+            ],
+            [
+              "搭载曲柄",
+              "Ultegra R8100"
+            ]
+          ],
+          "x": 47,
+          "y": 69
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss ERC 1600 Dicut",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高",
+              "前后 35 mm"
+            ],
+            [
+              "内宽",
+              "22 mm"
+            ],
+            [
+              "轮圈材质",
+              "碳纤维"
+            ]
+          ],
+          "x": 81,
+          "y": 78
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Schwalbe Pro One Evo",
+          "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
+          "specs": [
+            [
+              "标称规格",
+              "32 mm"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 89,
+          "y": 47
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "2XS",
+            "stack": 524,
+            "reach": 378,
+            "headAngle": 70.3,
+            "seatAngle": 73.5,
+            "wheelbase": 999,
+            "chainstay": 418,
+            "bbDrop": 74,
+            "headTube": 103,
+            "seatTube": 432
+          },
+          {
+            "size": "XS",
+            "stack": 545,
+            "reach": 383,
+            "headAngle": 71,
+            "seatAngle": 73.5,
+            "wheelbase": 1005,
+            "chainstay": 418,
+            "bbDrop": 74,
+            "headTube": 123,
+            "seatTube": 462
+          },
+          {
+            "size": "S",
+            "stack": 565,
+            "reach": 386,
+            "headAngle": 71.8,
+            "seatAngle": 73.5,
+            "wheelbase": 1008,
+            "chainstay": 418,
+            "bbDrop": 74,
+            "headTube": 141,
+            "seatTube": 492
+          },
+          {
+            "size": "M",
+            "stack": 586,
+            "reach": 388,
+            "headAngle": 72.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1009,
+            "chainstay": 418,
+            "bbDrop": 74,
+            "headTube": 161,
+            "seatTube": 522
+          },
+          {
+            "size": "L",
+            "stack": 608,
+            "reach": 397,
+            "headAngle": 72.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1025,
+            "chainstay": 418,
+            "bbDrop": 74,
+            "headTube": 183,
+            "seatTube": 552
+          },
+          {
+            "size": "XL",
+            "stack": 633,
+            "reach": 405,
+            "headAngle": 72.8,
+            "seatAngle": 73.5,
+            "wheelbase": 1039,
+            "chainstay": 418,
+            "bbDrop": 74,
+            "headTube": 208,
+            "seatTube": 582
+          },
+          {
+            "size": "2XL",
+            "stack": 652,
+            "reach": 415,
+            "headAngle": 72.8,
+            "seatAngle": 73.5,
+            "wheelbase": 1054,
+            "chainstay": 418,
+            "bbDrop": 74,
+            "headTube": 229,
+            "seatTube": 612
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html?dwvar_4432_pv_rahmenfarbe=R130_P02",
+        "sourceLabel": "CANYON 官方 · 对应产品几何",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。"
+      },
+      "aero": {
+        "title": "耐力几何中的气动整合",
+        "description": "PACE 前端和 VCLS Aero 座管兼顾气流与舒适性。图中较高的前端反映车架几何；实际姿势还由把组与垫圈决定。",
+        "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html?dwvar_4432_pv_rahmenfarbe=R130_P02",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "supersix-evo2",
+      "brandId": "cannondale",
+      "name": "SuperSix EVO 2",
+      "family": "SuperSix EVO 2",
+      "edition": "2026 · Gen 5 · 美国版",
+      "kind": "全能公路",
+      "description": "第五代 SuperSix EVO 用下沉后上叉、平直细上管和更低前端，延续轻量全能赛车的路线。宽下管、Delta 前叉舵管与 45 mm 碳轮构成这一代的轮廓。",
+      "color": "TUB / 蓝灰",
+      "colorHex": "#648397",
+      "weight": "未公布",
+      "weightNote": "此产品页未列整车重量；不以车架重量替代",
+      "material": "Gen 5 Carbon",
+      "groupset": "Ultegra Di2",
+      "build": "Shimano Ultegra Di2",
+      "collections": [
+        "current",
+        "popular"
+      ],
+      "image": "/bikes/supersix-evo2.png",
+      "imageCredit": "Cannondale",
+      "imageSource": "https://embed.widencdn.net/img/dorelrl/0evmpvnkut/2000px@1x/C26_C1106GU_SuperSix_EVO_2_TUB_PD.png",
+      "imageRatio": 1.6611295681063123,
+      "source": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-2",
+      "sourceLabel": "Cannondale 官方 · 2026 · Gen 5 · 美国版",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "SuperSix EVO Carbon Gen 5",
+          "description": "按尺码调整铺层的第五代碳纤维车架，采用内走线和下沉后上叉；几何来自 Gen 5 官方尺寸图。",
+          "specs": [
+            [
+              "五通",
+              "BSA 68 mm 螺纹"
+            ],
+            [
+              "尾钩",
+              "UDH"
+            ],
+            [
+              "前叉舵管",
+              "Delta · 1⅛–1¼ 英寸"
+            ],
+            [
+              "最大胎宽",
+              "实测 32 mm"
+            ]
+          ],
+          "x": 58,
+          "y": 47
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "Di2 电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 82,
+          "y": 15
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra R8100",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "Shimano Ultegra R8100"
+            ],
+            [
+              "曲柄长度",
+              "44–50 165 · 52–56 170 · 58–61 172.5 mm"
+            ],
+            [
+              "五通",
+              "Shimano BB-RS500 · BSA 68"
+            ]
+          ],
+          "x": 53,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "52 / 36T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 44,
+          "y": 77
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra R8100 · 11–30T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "11–30T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 19,
+          "y": 62
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "原配功率计未列明",
+          "description": "品牌规格表未列出功率计，不将普通 Ultegra 曲柄当作功率曲柄。3D 不额外生成传感器。",
+          "specs": [
+            [
+              "原配状态",
+              "规格表未列出"
+            ],
+            [
+              "已列曲柄",
+              "Shimano Ultegra R8100"
+            ]
+          ],
+          "x": 47,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss ERC LOG 45",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高 / 内宽",
+              "45 / 22 mm"
+            ],
+            [
+              "花鼓",
+              "DT Swiss 370 · 后 LN Ratchet"
+            ],
+            [
+              "辐条数",
+              "24 孔"
+            ]
+          ],
+          "x": 81,
+          "y": 79
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Schwalbe One TLR",
+          "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
+          "specs": [
+            [
+              "标称规格",
+              "700 × 28C"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 94,
+          "y": 46
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "44",
+            "stack": 495,
+            "reach": 373,
+            "headAngle": 70.9,
+            "seatAngle": 74.5,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 89,
+            "seatTube": 400
+          },
+          {
+            "size": "48",
+            "stack": 508,
+            "reach": 376,
+            "headAngle": 71.2,
+            "seatAngle": 74,
+            "wheelbase": 985,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 101,
+            "seatTube": 429
+          },
+          {
+            "size": "50",
+            "stack": 520,
+            "reach": 379,
+            "headAngle": 71.2,
+            "seatAngle": 74,
+            "wheelbase": 993,
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 114,
+            "seatTube": 448
+          },
+          {
+            "size": "52",
+            "stack": 532,
+            "reach": 383,
+            "headAngle": 71.2,
+            "seatAngle": 74,
+            "wheelbase": 1002,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 130,
+            "seatTube": 467
+          },
+          {
+            "size": "54",
+            "stack": 545,
+            "reach": 387,
+            "headAngle": 71.2,
+            "seatAngle": 74,
+            "wheelbase": 1010,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 143,
+            "seatTube": 490
+          },
+          {
+            "size": "56",
+            "stack": 565,
+            "reach": 393,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 995,
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 154,
+            "seatTube": 510
+          },
+          {
+            "size": "58",
+            "stack": 585,
+            "reach": 398,
+            "headAngle": 73,
+            "seatAngle": 73,
+            "wheelbase": 1007,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 178,
+            "seatTube": 532
+          },
+          {
+            "size": "61",
+            "stack": 615,
+            "reach": 406,
+            "headAngle": 73,
+            "seatAngle": 72.5,
+            "wheelbase": 1024,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 209,
+            "seatTube": 570
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cannondale.com/-/media/images/my26/bikes/road/race/s6-evo/pdps/c26_supersixevo_geotable.ashx?h=2992&hash=B4D6B9AA45728C454510950C9FFF3C54&iar=0&w=2000",
+        "sourceLabel": "Cannondale 官方 · Gen 5 尺寸图",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。 原尺寸图以 cm 列出的长度已换算为 mm。"
+      },
+      "aero": {
+        "title": "Delta 前端与按需管型",
+        "description": "Delta 舵管收拢前端管线，车架各段按结构和气动需求分别塑形。品牌描述采用 CFD 与风洞开发，这里不把营销比较当作跨车型实测排名。",
+        "source": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-2",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "scultura8000",
+      "brandId": "merida",
+      "name": "SCULTURA 8000",
+      "family": "SCULTURA 8000",
+      "edition": "2025 · 国际版存档",
+      "kind": "轻量爬坡",
+      "description": "第五代 SCULTURA 把细座管、下沉后上叉和圆形座杆组合在一起。CF3 车架与 Reynolds 46 mm 碳轮，呈现美利达轻量竞赛车的代表轮廓。",
+      "color": "White / Red · 白红",
+      "colorHex": "#ecece5",
+      "weight": "7.6 kg",
+      "weightNote": "官方约重 · M 码 · 国际版",
+      "material": "SCULTURA CF3 V",
+      "groupset": "Ultegra Di2",
+      "build": "Shimano Ultegra Di2",
+      "collections": [
+        "classic"
+      ],
+      "image": "/bikes/scultura8000.jpg",
+      "imageCredit": "美利达 MERIDA",
+      "imageSource": "https://merida-cdn.m-c-g.net/merida-v2/crud-zoom-img/master/bikes/2025/SCULTURA_8000_whtred_MY25.tif?p1",
+      "imageRatio": 1.595405232929164,
+      "source": "https://www.merida-bikes.com/en/bike/archive/4860/scultura-8000",
+      "sourceLabel": "美利达 MERIDA 官方 · 2025 · 国际版存档",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": false,
+      "imageNote": "国际版 2025 配置：Reynolds AR 46、52/36T、11–30T；不混用瑞士 CH 版的 Vision 轮组配置。官网已归档。",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "SCULTURA CF3 V",
+          "description": "第五代 CF3 碳纤维平台，使用细后上叉与圆形 S-Flex 座管，几何与同代 REACTO 相同。",
+          "specs": [
+            [
+              "五通",
+              "Pressfit 86.5"
+            ],
+            [
+              "最大胎宽",
+              "30 mm"
+            ],
+            [
+              "座管",
+              "27.2 mm · S-Flex 碳纤维"
+            ],
+            [
+              "把组",
+              "MERIDA TEAM SL 一体把"
+            ]
+          ],
+          "x": 58,
+          "y": 47
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "Di2 电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 82,
+          "y": 15
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "Shimano Ultegra"
+            ],
+            [
+              "曲柄长度",
+              "3XS / XXS 165 · XS 170 · S / M / L 172.5 · XL 175 mm"
+            ],
+            [
+              "五通",
+              "Shimano SM-BB72-41B · PF 86.5"
+            ]
+          ],
+          "x": 53,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "52 / 36T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 44,
+          "y": 77
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra R8100 · 11–30T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "11–30T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 19,
+          "y": 62
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "原配功率计未列明",
+          "description": "品牌规格表未列出功率计，不将普通 Ultegra 曲柄当作功率曲柄。3D 不额外生成传感器。",
+          "specs": [
+            [
+              "原配状态",
+              "规格表未列出"
+            ],
+            [
+              "已列曲柄",
+              "Shimano Ultegra"
+            ]
+          ],
+          "x": 47,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Reynolds AR 46 DB",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高 / 内宽",
+              "46 / 21 mm"
+            ],
+            [
+              "轮圈材质",
+              "碳纤维"
+            ],
+            [
+              "真空胎",
+              "支持 · 附胎垫与气嘴"
+            ]
+          ],
+          "x": 81,
+          "y": 79
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP 5000 S TR",
+          "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
+          "specs": [
+            [
+              "标称规格",
+              "700 × 28C"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 94,
+          "y": 46
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "3XS",
+            "stack": 512,
+            "reach": 373,
+            "headAngle": 70.5,
+            "seatAngle": 75.5,
+            "wheelbase": 979,
+            "chainstay": 408,
+            "bbDrop": 70,
+            "headTube": 100,
+            "seatTube": 400
+          },
+          {
+            "size": "XXS",
+            "stack": 517,
+            "reach": 377,
+            "headAngle": 70.5,
+            "seatAngle": 74.5,
+            "wheelbase": 985,
+            "chainstay": 408,
+            "bbDrop": 70,
+            "headTube": 105,
+            "seatTube": 435
+          },
+          {
+            "size": "XS",
+            "stack": 529,
+            "reach": 383,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 982,
+            "chainstay": 408,
+            "bbDrop": 70,
+            "headTube": 112,
+            "seatTube": 458
+          },
+          {
+            "size": "S",
+            "stack": 542,
+            "reach": 390,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 989,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 128,
+            "seatTube": 481
+          },
+          {
+            "size": "M",
+            "stack": 557,
+            "reach": 395,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 990,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 140,
+            "seatTube": 501
+          },
+          {
+            "size": "L",
+            "stack": 571,
+            "reach": 400,
+            "headAngle": 73.5,
+            "seatAngle": 73,
+            "wheelbase": 1000,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 155,
+            "seatTube": 521
+          },
+          {
+            "size": "XL",
+            "stack": 593,
+            "reach": 409,
+            "headAngle": 74,
+            "seatAngle": 73,
+            "wheelbase": 1010,
+            "chainstay": 408,
+            "bbDrop": 66,
+            "headTube": 176,
+            "seatTube": 550
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4860/scultura-8000",
+        "sourceLabel": "美利达 MERIDA 官方 · 对应产品几何",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。"
+      },
+      "aero": {
+        "title": "NACA FASTBACK 截尾管型",
+        "description": "SCULTURA 在轻量框架上整合截尾管型与 WIRE PORT 内走线前端；圆形细座管与纤细后上叉保留了舒适性设计。",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4860/scultura-8000",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "scultura-endurance8000",
+      "brandId": "merida",
+      "name": "SCULTURA ENDURANCE 8000",
+      "family": "SCULTURA Endurance 8000",
+      "edition": "2025 · 国际版存档",
+      "kind": "长途耐力",
+      "description": "同样叫 SCULTURA，这台 ENDURANCE 却有更高的头管、更长的后下叉和 32C 宽胎。纤细的高位后上叉与圆座管，为长距离公路提供另一种姿态。",
+      "color": "Silk Dark Silver / Black · 深银黑",
+      "colorHex": "#656c70",
+      "weight": "8.4 kg",
+      "weightNote": "官方约重 · M 码 · 国际版",
+      "material": "ENDURANCE CF3 II",
+      "groupset": "Ultegra Di2",
+      "build": "Shimano Ultegra Di2",
+      "collections": [
+        "classic"
+      ],
+      "image": "/bikes/scultura-endurance8000.jpg",
+      "imageCredit": "美利达 MERIDA",
+      "imageSource": "https://merida-cdn.m-c-g.net/merida-v2/crud-zoom-img/master/bikes/2025/SCULTURA_ENDURANCE_II_8000_slvblk_MY25.tif?p1",
+      "imageRatio": 1.5625,
+      "source": "https://www.merida-bikes.com/en/bike/archive/4866-6500/scultura-endurance-8000",
+      "sourceLabel": "美利达 MERIDA 官方 · 2025 · 国际版存档",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": false,
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "SCULTURA ENDURANCE CF3 II",
+          "description": "以顺应性和稳定性为目标的 CF3 II 耐力车架，418 mm 后下叉与较高头管区分于竞赛版 SCULTURA。",
+          "specs": [
+            [
+              "最大胎宽",
+              "35 mm · 带挡泥板 32 mm"
+            ],
+            [
+              "五通",
+              "BB86"
+            ],
+            [
+              "座管",
+              "27.2 mm · S-Flex 碳纤维"
+            ],
+            [
+              "前叉",
+              "SCULTURA ENDURANCE CF3 DISC"
+            ]
+          ],
+          "x": 58,
+          "y": 47
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "Di2 电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 82,
+          "y": 15
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "Shimano Ultegra"
+            ],
+            [
+              "曲柄长度",
+              "XXS 165 · XS 170 · S / M / L 172.5 · XL 175 mm"
+            ],
+            [
+              "五通",
+              "Shimano SM-BB72-41B · PF 86.5"
+            ]
+          ],
+          "x": 53,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 34T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "50 / 34T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 44,
+          "y": 77
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra R8100 · 11–34T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "11–34T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 19,
+          "y": 62
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "原配功率计未列明",
+          "description": "品牌规格表未列出功率计，不将普通 Ultegra 曲柄当作功率曲柄。3D 不额外生成传感器。",
+          "specs": [
+            [
+              "原配状态",
+              "规格表未列出"
+            ],
+            [
+              "已列曲柄",
+              "Shimano Ultegra"
+            ]
+          ],
+          "x": 47,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Vision SC30 DB",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高 / 内宽",
+              "30 / 19 mm"
+            ],
+            [
+              "轮圈材质",
+              "碳纤维"
+            ],
+            [
+              "碟片安装",
+              "Center Lock"
+            ]
+          ],
+          "x": 81,
+          "y": 79
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP 5000 AllSeason TR",
+          "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
+          "specs": [
+            [
+              "标称规格",
+              "700 × 32C"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 94,
+          "y": 46
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 539,
+            "reach": 360,
+            "headAngle": 70.5,
+            "seatAngle": 74,
+            "wheelbase": 992,
+            "chainstay": 418,
+            "bbDrop": 66,
+            "headTube": 140,
+            "seatTube": 440
+          },
+          {
+            "size": "XS",
+            "stack": 552,
+            "reach": 366,
+            "headAngle": 71,
+            "seatAngle": 74,
+            "wheelbase": 997,
+            "chainstay": 418,
+            "bbDrop": 66,
+            "headTube": 152,
+            "seatTube": 470
+          },
+          {
+            "size": "S",
+            "stack": 565,
+            "reach": 376,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 1001,
+            "chainstay": 418,
+            "bbDrop": 66,
+            "headTube": 161,
+            "seatTube": 490
+          },
+          {
+            "size": "M",
+            "stack": 584,
+            "reach": 380,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1001,
+            "chainstay": 418,
+            "bbDrop": 66,
+            "headTube": 177,
+            "seatTube": 510
+          },
+          {
+            "size": "L",
+            "stack": 603,
+            "reach": 389,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1017,
+            "chainstay": 418,
+            "bbDrop": 66,
+            "headTube": 197,
+            "seatTube": 530
+          },
+          {
+            "size": "XL",
+            "stack": 629,
+            "reach": 397,
+            "headAngle": 73.5,
+            "seatAngle": 73.5,
+            "wheelbase": 1026,
+            "chainstay": 418,
+            "bbDrop": 66,
+            "headTube": 222,
+            "seatTube": 560
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4866-6500/scultura-endurance-8000",
+        "sourceLabel": "美利达 MERIDA 官方 · 对应产品几何",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。"
+      },
+      "aero": {
+        "title": "舒适性优先的细管型",
+        "description": "较细后上叉与 S-Flex 座管强调顺应性，WIRE PORT 收纳前端线管。宽胎和较高把位应结合实际骑姿理解，不能只看车架外观推断阻力。",
+        "source": "https://www.merida-bikes.com/en/bike/archive/4866-6500/scultura-endurance-8000",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      }
+    },
+    {
+      "id": "vanrysel-rcr-pro",
+      "brandId": "vanrysel",
+      "name": "Van Rysel RCR-R Pro",
+      "family": "RCR-R Pro",
+      "edition": "英国版 · 产品 8929970",
+      "kind": "全能公路",
+      "description": "迪卡侬的竞赛旗舰路线：扁平上管、宽下管与下沉后上叉，配 Ultegra Di2 和 Swiss Side 50 mm 碳轮。裸碳涂装保留了车架本来的纹理。",
+      "color": "Raw Carbon / 裸碳黑",
+      "colorHex": "#3d3e3b",
+      "weight": "7.35 kg",
+      "weightNote": "官网详细说明 · M 码真空胎配置；摘要四舍五入为 7.3 kg",
+      "material": "RCR PRO 碳纤维",
+      "groupset": "Ultegra Di2",
+      "build": "Shimano Ultegra Di2",
+      "collections": [
+        "current",
+        "popular"
+      ],
+      "image": "/bikes/vanrysel-rcr-pro.jpg",
+      "imageCredit": "迪卡侬 Van Rysel",
+      "imageSource": "https://contents.mediadecathlon.com/p2694152/k%246272b558c283724ebf0f3e75953d292b/picture.jpg?f=2000x0&format=png",
+      "imageRatio": 1.6,
+      "source": "https://www.decathlon.co.uk/p/road-bike-rcr-r-pro-shimano-ultegra-di2-with-power-sensor-raw-carbon/360908/c382c382m8929970",
+      "sourceLabel": "迪卡侬 Van Rysel 官方 · 英国版 · 产品 8929970",
+      "checkedAt": "2026-09-20",
+      "hasPowerMeter": true,
+      "imagePosition": "50% 55%",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Van Rysel RCR PRO",
+          "description": "超高模量碳纤维车架，管型与前叉由品牌和 ONERA 合作进行气动开发。裸碳版重量与涂装版可能不同。",
+          "specs": [
+            [
+              "车架重量",
+              "790 g · M 码含涂装参考"
+            ],
+            [
+              "前叉重量",
+              "380 g · M 码含涂装参考"
+            ],
+            [
+              "最大胎宽",
+              "32 mm"
+            ],
+            [
+              "把组",
+              "DEDA Superzero RS / Superbox EVO"
+            ]
+          ],
+          "x": 57,
+          "y": 52
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压制动集成于手变中，手握位置同时影响姿态和迎风面积。",
+          "specs": [
+            [
+              "换挡",
+              "Di2 电子变速"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ],
+            [
+              "刹车",
+              "液压碟刹"
+            ]
+          ],
+          "x": 78,
+          "y": 23
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra R8100",
+          "description": "曲柄长度按这款整车的地区配置与尺码列出；不以统一长度替代所有尺码。",
+          "specs": [
+            [
+              "型号",
+              "Shimano Ultegra R8100"
+            ],
+            [
+              "曲柄长度",
+              "XS / S 170 · M 172.5 · L 175 mm"
+            ],
+            [
+              "五通",
+              "页面未明确列出五通规格"
+            ]
+          ],
+          "x": 52,
+          "y": 75
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "对应所展示版本的原配双盘组合。",
+          "specs": [
+            [
+              "大 / 小盘",
+              "52 / 36T"
+            ],
+            [
+              "速别",
+              "2 × 12 速"
+            ]
+          ],
+          "x": 43,
+          "y": 77
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra R8100 · 11–34T",
+          "description": "与原配后拨搭配的十二速飞轮。不同整车版本可能使用不同齿比。",
+          "specs": [
+            [
+              "齿比范围",
+              "11–34T"
+            ],
+            [
+              "速别",
+              "12 速"
+            ]
+          ],
+          "x": 24,
+          "y": 65
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "Inpeak Powercrank-E Single",
+          "description": "品牌配置表明确列出的原配功率计。",
+          "specs": [
+            [
+              "测量位置",
+              "左曲柄"
+            ],
+            [
+              "原配状态",
+              "官网明确列出"
+            ]
+          ],
+          "x": 46,
+          "y": 71
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Swiss Side HADRON² 500 Classic",
+          "description": "轮组资料对应所展示的具体地区和配置，框高也用于该车的近似 3D 轮廓。",
+          "specs": [
+            [
+              "框高 / 内宽",
+              "50 / 20 mm"
+            ],
+            [
+              "花鼓",
+              "Swiss Side 370"
+            ],
+            [
+              "轮组重量",
+              "官网 1530 / 1640 g 字段冲突，待核验"
+            ]
+          ],
+          "x": 82,
+          "y": 77
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP 5000 S TR",
+          "description": "原配公路外胎；标称宽度并不等于不同轮圈、胎压下的实测宽度。",
+          "specs": [
+            [
+              "标称规格",
+              "700 × 28C"
+            ],
+            [
+              "结构",
+              "真空胎兼容"
+            ]
+          ],
+          "x": 91,
+          "y": 56
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 508,
+            "reach": 379,
+            "headAngle": 71,
+            "seatAngle": 75.5,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 109,
+            "seatTube": 456
+          },
+          {
+            "size": "XS",
+            "stack": 514,
+            "reach": 382,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 982,
+            "chainstay": 410,
+            "bbDrop": 70,
+            "headTube": 114,
+            "seatTube": 466
+          },
+          {
+            "size": "S",
+            "stack": 530,
+            "reach": 386,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 131,
+            "seatTube": 476
+          },
+          {
+            "size": "M",
+            "stack": 542,
+            "reach": 389,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 985,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 147,
+            "seatTube": 486
+          },
+          {
+            "size": "L",
+            "stack": 571,
+            "reach": 396,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1001,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 174,
+            "seatTube": 512
+          },
+          {
+            "size": "XL",
+            "stack": 595,
+            "reach": 404,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1016,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 199,
+            "seatTube": 546
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://cdn.decathlon-share.com/product-user-guide/80e0138bf955c/20240223-usg-van-rysel-rcr.pdf",
+        "sourceLabel": "Van Rysel 官方 · 2024 RCR 手册第 9 页",
+        "note": "尺寸单位为 mm，角度单位为 °。Stack / Reach 为车架参考值，不代表手握位置。 RCR 家族几何取自 2024 官方手册；管型表面按所展示 RCR-R Pro 实拍近似。"
+      },
+      "aero": {
+        "title": "与 ONERA 合作的气动开发",
+        "description": "品牌对车架和前叉开展风洞开发，介绍的主要偏航角范围为 −15° 至 +15°。这些设计信息不等于本网站获得了完整风洞数据。",
+        "source": "https://www.decathlon.co.uk/p/road-bike-rcr-r-pro-shimano-ultegra-di2-with-power-sensor-raw-carbon/360908/c382c382m8929970",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
       }
     }
   ]

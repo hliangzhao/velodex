@@ -572,7 +572,7 @@ export function buildBikeModel(bike: Bike, g: GeometrySize) {
     sweep([root, root.clone().lerp(tip, 0.4), tip], 0.032, 0.017, 'crank', dark, 0.6, 0.65);
     disk(0.005, 0.009, 0.004, tip.clone().add(V(0, 0, side * 0.012)), 'crank', metal);
   }
-  if (bike.id !== 'vanrysel-edr-cf')
+  if (bike.hasPowerMeter)
     disk(0.007, 0.021, 0.005, rings.clone().add(V(0, 0, 0.035)), 'power', '#41474b');
   const cassetteCenter = rear.clone().add(V(0, 0, 0.042));
   for (let i = 0; i < 12; i++) {
