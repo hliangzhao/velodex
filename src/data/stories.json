@@ -1,0 +1,104 @@
+[
+  {
+    "id": "tarmac-generations",
+    "number": "01",
+    "tag": "THE ARCHIVE / 世代档案",
+    "title": "三代 Tarmac，同一个问题。",
+    "subtitle": "一台全能赛车，怎样在轻量与气动之间寻找答案？",
+    "hero": "tarmac-sl6",
+    "intro": "把 SL6、SL7、SL8 放在一起，最有意思的未必是重量数字。顺着车把、头管、座管看过去，会发现整合的方式在变；再打开几何表，又会发现有些东西被保留下来。这份选集从已收录的三个整车版本出发，读它们的外观与配置。",
+    "compare": ["tarmac-sl6", "tarmac-sl7", "tarmac-sl8"],
+    "chapters": [
+      {
+        "bikeId": "tarmac-sl6",
+        "label": "SL6 / 2020 存档配置",
+        "title": "先看把立，再看轮廓。",
+        "text": "这台 SL6 仍能清楚辨认车把与传统把立的分工，细上管与下沉后上叉构成利落的侧影。放大官方照片，沿前端走线看一圈，再与后来两代对照，比一句“更一体化”具体得多。",
+        "look": "看点：传统把立、下沉后上叉、原代 RED AXS。"
+      },
+      {
+        "bikeId": "tarmac-sl7",
+        "label": "SL7 / 2022 存档配置",
+        "title": "全能平台里的气动思路。",
+        "text": "SL7 把轻量与气动放到同一平台。观察前端走线和车架的过渡，再读它与 SL6 的几何：本图鉴收录的 56 码，Stack 从 565 mm 变为 555 mm，Reach 从 395 mm 变为 398 mm。差异可以量出来，实际把位还要结合把立和垫圈。",
+        "look": "看点：前端整合，以及相同尺码名称背后的尺寸变化。"
+      },
+      {
+        "bikeId": "tarmac-sl8",
+        "label": "SL8 / 图鉴收录配置",
+        "title": "变化，集中在值得看的地方。",
+        "text": "SL8 的前伸头管鼻锥和细座管，是值得放大看的两处。官方将鼻锥设计称为 Speed Sniffer；官方表中 56 码 Stack / Reach 为 565 / 395 mm，与收录的 SL6 相同，但两者头管长度分别为 157 / 163 mm。同样的 Stack / Reach，也可以对应不同的前端结构。",
+        "look": "看点：头管前缘、座管轮廓，以及 Stack / Reach 与头管长度的关系。"
+      }
+    ],
+    "closing": "这里的年份指收录整车的版本，并非车架首次发布年份。几何对比可复查；风阻、刚性与舒适度则需要同条件测试，不能从照片得出高下。"
+  },
+  {
+    "id": "made-in-china",
+    "number": "02",
+    "tag": "LOCAL PERSPECTIVES / 国产观察",
+    "title": "国产公路车，不只有一种答案。",
+    "subtitle": "从深截面竞赛轮廓，到轻量平台，再到日常铝架。",
+    "hero": "winspace-t1600",
+    "intro": "把国产品牌放进同一个展厅，不必急着排出名次。气动、轻量和日常使用，本来就在回答不同的问题。先看平台选择了什么，再看这个地区版本具体配了什么，能比单看品牌或碳布代号读到更多。",
+    "compare": ["winspace-t1600", "winspace-slc5", "sunpeed-universe"],
+    "chapters": [
+      {
+        "bikeId": "winspace-t1600",
+        "label": "WINSPACE / 银贝斯",
+        "title": "用同品牌的两条路线练习观察。",
+        "text": "T1600 的宽扁下管、低位后上叉和气动座管，与 SLC5.0 的细上管和轻量取向形成直观对照。在整车对比里同时选 M 码，还能看到两者前端高度的差异。官方展示图可能使用不同配置，配件请对照整车配置表。",
+        "look": "看点：T1600 与 SLC5.0 的下管、座管和前端高度。"
+      },
+      {
+        "bikeId": "pardus-spark-evo4",
+        "label": "PARDUS / 瑞豹",
+        "title": "一个前端，就足够有辨识度。",
+        "text": "第四代 SPARK EVO 把外置前端与宽深截面下管组合在一起。这是一处适合用真实照片观察的结构：从头管前缘看到前叉，辨认它与常见公路车前端的差别。照片能帮助认识外形，不能替代结构图或实测。",
+        "look": "看点：外置头管前叉、前端轮廓与下管截面。"
+      },
+      {
+        "bikeId": "sunpeed-universe",
+        "label": "SUNPEED / 速比特",
+        "title": "也给日常骑行留一面展墙。",
+        "text": "UNIVERSE 选择 6069 铝合金车架、碳叉、CUES 单盘与 32C 轮胎。没有前拨的传动布局、材质和轮胎选择，都能成为观察的起点。它按官方公路车型收录；宽胎本身并不等于砾石用途认证。",
+        "look": "看点：铝合金车架、单盘布局与日常公路配置。"
+      }
+    ],
+    "closing": "图鉴还收录喜德盛 X-LAB 的 AD、RS、RT 系列。不同地区的零售版本各有配置，展厅中的比较保留版本与来源，不将它们视作同一市场的报价单。"
+  },
+  {
+    "id": "roads-less-raced",
+    "number": "03",
+    "tag": "BEYOND RACING / 公路之外",
+    "title": "把路线拉长，把路面放宽。",
+    "subtitle": "耐力与砾石车的细节，往往比竞技标签更有趣。",
+    "hero": "diverge-comp-carbon",
+    "intro": "当路线不以终点线为目的，前端高度、轮胎、储物和安装点，就会进入视野。耐力公路与砾石车并没有一条只靠胎宽就能划出的边界。读懂一台车，要把几何、传动和官方使用范围放在一起看。",
+    "compare": ["vanrysel-edr-cf", "diverge-comp-carbon", "revolt-advanced0"],
+    "chapters": [
+      {
+        "bikeId": "vanrysel-edr-cf",
+        "label": "VAN RYSEL / 迪卡侬",
+        "title": "耐力车的另一种实用主义。",
+        "text": "这台法国版 EDR CF 带有下管储物舱、多处安装点和 27.2 mm 圆座管，官方资料给出最大 38 mm 胎宽。把注意力从最高阶套件移开，看看骑长途时会用到的这些细节，能读出它的定位。",
+        "look": "看点：下管储物、安装点与轮胎空间。"
+      },
+      {
+        "bikeId": "diverge-comp-carbon",
+        "label": "SPECIALIZED / DIVERGE",
+        "title": "把舒适结构放到前端。",
+        "text": "收录的 2025 美版 Diverge 使用 Future Shock 2.0、SWAT 储物和 42C 原配胎，搭配 Apex / X1 Eagle AXS 单盘传动。注意把立下方的结构，再看看下管与宽胎，理解这套配置是怎样围绕长距离探索组合起来的。",
+        "look": "看点：Future Shock 前端、SWAT 储物与单盘。"
+      },
+      {
+        "bikeId": "revolt-advanced0",
+        "label": "GIANT / REVOLT",
+        "title": "后轴位置，也是设计的一部分。",
+        "text": "Revolt 的后叉 Flip Chip 可切换长短档，改变轴距和轮胎空间。本图鉴的 2025 英国版统一记录短档几何，配 GRX RX820 双盘与 40C 轮胎。对比时先确认档位和市场版本，再讨论几毫米的差异。",
+        "look": "看点：后叉 Flip Chip、D-Fuse 座管与双盘 GRX。"
+      }
+    ],
+    "closing": "三款车的尺码名称不能直接互换。对比工具允许分别选尺码，显示实际 Stack / Reach；选车仍需结合实际把位、身体条件与路线。"
+  }
+]

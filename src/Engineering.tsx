@@ -18,7 +18,7 @@ export default function Engineering({
   const power = 0.5 * 1.225 * cda * (speed / 3.6) ** 3;
   const ratio = g.stack / g.reach;
   return (
-    <section className="engineering" aria-label="车架几何与空气动力学">
+    <section id="engineering" className="engineering" aria-label="车架几何与空气动力学">
       <div className="engineering-heading">
         <div>
           <span className="eyebrow">BEYOND THE SILHOUETTE</span>

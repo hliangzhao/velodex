@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowUpRight, Check, CircleDot, Cog, Search, X } from 'lucid
 import type { PartsCatalog, PartCategory, Product } from './types';
 import { imageUrl, loadCatalog, loadParts } from './catalog';
 import './parts.css';
+import { SiteHeader, SiteFooter } from './SiteChrome';
 
 const categories: {
   id: PartCategory;
@@ -147,22 +148,7 @@ export default function PartsPage() {
       <a className="skip-link" href="#parts-list">
         跳转到配件列表
       </a>
-      <header className="site-header">
-        <a className="wordmark" href={base}>
-          <span className="logo-mark">V</span>VÉLODEX
-        </a>
-        <nav aria-label="主导航">
-          <a href={base}>整车探索</a>
-          <a href={`${base}#collection`}>车型图鉴</a>
-          <a href={`${base}#brands`}>品牌索引</a>
-          <a className="active" href={`${base}?view=parts`}>
-            配件图鉴
-          </a>
-        </nav>
-        <span className="header-caption">
-          THE COMPONENT INDEX<span>好车，藏在每一处细节里。</span>
-        </span>
-      </header>
+      <SiteHeader active="parts" />
       <main className="parts-page">
         <div className="parts-hero">
           <div>
@@ -485,16 +471,7 @@ export default function PartsPage() {
           </>
         )}
       </main>
-      <footer>
-        <a className="wordmark" href={base}>
-          VÉLODEX
-        </a>
-        <span>献给每一个忍不住回头看车的人。</span>
-        <a href={base}>
-          <ArrowLeft size={16} />
-          回到整车探索
-        </a>
-      </footer>
+      <SiteFooter />
     </>
   );
 }
