@@ -920,8 +920,9 @@ main {
 }
 footer {
   border-top: 1px solid var(--line);
-  padding: 29px 4.2% 32px;
+  padding: 29px 4.2% 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -937,24 +938,25 @@ footer > span {
   color: #88947d;
   letter-spacing: 1px;
 }
-footer .academic-home-link {
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 24px;
+}
+footer .footer-links a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   font-size: 12px;
+  padding: 5px 0;
   white-space: nowrap;
   color: #61724f;
 }
-footer .academic-home-link:hover {
+footer .footer-links a:hover {
   color: var(--ink);
   text-decoration: underline;
   text-underline-offset: 4px;
-}
-footer > a:last-child {
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
 .load-state {
   min-height: 70vh;
@@ -1394,8 +1396,9 @@ footer > a:last-child {
   footer > span {
     font-size: 11px;
   }
-  footer > a:last-child {
-    display: none;
+  footer .footer-links {
+    width: 100%;
+    gap: 10px 20px;
   }
   .workbench.is-expanded {
     inset: 10px;
