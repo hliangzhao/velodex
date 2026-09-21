@@ -17,6 +17,7 @@ export type Paint = {
   image: string;
   source: string;
   imageRatio: number;
+  imageFit?: 'cover';
   imagePosition?: string;
   imageTone?: 'dark';
   note?: string;
@@ -51,6 +52,7 @@ export type Bike = {
   imageCredit: string;
   imageNote?: string;
   imageRatio: number;
+  imageFit?: 'cover';
   imageSource?: string;
   imageTone?: 'dark';
   imagePosition?: string;
@@ -72,6 +74,7 @@ export type Bike = {
   geometry: {
     status?: 'unavailable';
     sizes: GeometrySize[];
+    publishedSizes?: (Pick<GeometrySize, 'size' | 'stack' | 'reach'> & Partial<GeometrySize>)[];
     defaultSize: string;
     source: string;
     sourceLabel: string;

@@ -73,7 +73,13 @@ test('catalog API filters and returns correct records without exposing arbitrary
   const gravel = await (await get('/api/bikes?kind=' + encodeURIComponent('砾石公路'))).json();
   assert.deepEqual(
     gravel.bikes.map((b) => b.id),
-    ['diverge-comp-carbon', 'revolt-advanced0', 'silex8000', 'topstone-carbon2-lefty'],
+    [
+      'diverge-comp-carbon',
+      'revolt-advanced0',
+      'silex8000',
+      'topstone-carbon2-lefty',
+      'nuroad-c62-race',
+    ],
   );
   for (const name of ['银贝斯', '速比特', '瑞豹'])
     assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent(name))).json()).total, 2);
@@ -87,6 +93,22 @@ test('catalog API filters and returns correct records without exposing arbitrary
 test('frame sizes have valid reference dimensions and the expanded catalog spans road disciplines', () => {
   for (const bike of catalog.bikes) {
     const geometry = bike.geometry;
+    if (geometry.publishedSizes) {
+      assert.equal(geometry.status, 'unavailable', bike.id);
+      assert.equal(geometry.sizes.length, 0, bike.id);
+      assert.ok(geometry.publishedSizes.length > 0, bike.id);
+      assert.equal(
+        new Set(geometry.publishedSizes.map((g) => g.size)).size,
+        geometry.publishedSizes.length,
+      );
+      for (const g of geometry.publishedSizes) {
+        assert.ok(g.stack > 400 && g.stack < 750 && g.reach > 300 && g.reach < 500, bike.id);
+        for (const [key, value] of Object.entries(g)) {
+          if (key !== 'size' && value !== null)
+            assert.ok(Number.isFinite(value) && value > 0, `${bike.id}/${key}`);
+        }
+      }
+    }
     if (!geometry.sizes.length) {
       assert.equal(geometry.status, 'unavailable', bike.id);
       assert.ok(geometry.note && !geometry.defaultSize, bike.id);

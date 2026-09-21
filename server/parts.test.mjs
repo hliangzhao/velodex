@@ -70,6 +70,9 @@ test('parts API filters safely, supports detail links and rejects malformed quer
   ])
     assert.equal((await get(`/api/parts?${query}`)).status, 400, query);
   const tt = await (await get('/api/bikes?kind=' + encodeURIComponent('TT 计时'))).json();
-  assert.equal(tt.total, 2);
+  assert.deepEqual(
+    tt.bikes.map((bike) => bike.id),
+    ['cervelo-p5', 'speedmax-cfr-tt', 'trinity-advanced-sl2'],
+  );
   assert.ok((await (await get('/api/bikes?collection=pro')).json()).bikes.every((b) => b.race));
 });

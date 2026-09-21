@@ -20,7 +20,10 @@ export default function BikeCard({ bike }: { bike: Bike }) {
         <div className={`card-image ${bike.imageTone === 'dark' ? 'card-photo-dark' : ''}`}>
           <img
             src={imageUrl(bike.image)}
-            style={{ objectPosition: bike.imagePosition }}
+            style={{
+              objectPosition: bike.imagePosition,
+              transform: bike.imageFit === 'cover' ? 'scale(1.35)' : undefined,
+            }}
             alt={bike.name}
             loading="lazy"
           />

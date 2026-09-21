@@ -9,6 +9,7 @@ export function paintsForBike(bike: Bike): Paint[] {
       image: bike.image,
       source: bike.imageSource || bike.source,
       imageRatio: bike.imageRatio,
+      imageFit: bike.imageFit,
       imagePosition: bike.imagePosition,
       imageTone: bike.imageTone,
       note: bike.imageNote,

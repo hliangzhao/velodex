@@ -2516,6 +2516,34 @@ footer .footer-links a:hover {
   border: 1px dashed var(--line);
   background: #f0f4e9;
 }
+.published-geometry {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 24px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.published-geometry table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.published-geometry caption {
+  text-align: left;
+  padding: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.published-geometry th,
+.published-geometry td {
+  padding: 11px 14px;
+  text-align: left;
+  white-space: nowrap;
+  border-top: 1px solid var(--line);
+}
+.published-geometry thead {
+  background: #f0f2e9;
+}
 .geometry-unavailable h3 {
   font-size: 23px;
   margin: 14px 0;

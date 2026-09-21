@@ -356,7 +356,10 @@ function App({ browse = false }: { browse?: boolean }) {
                             <img
                               className="bike-photo"
                               src={imageUrl(paint.image)}
-                              style={{ objectPosition: paint.imagePosition }}
+                              style={{
+                                objectPosition: paint.imagePosition,
+                                objectFit: paint.imageFit,
+                              }}
                               alt={`${currentBrand?.name} ${bike.name} ${paint.name} 官方整车图片`}
                               key={`${bike.id}-${paint.id}`}
                               fetchPriority="high"

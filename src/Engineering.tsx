@@ -35,9 +35,63 @@ export default function Engineering({
       </div>
       {tab === 'geometry' && !g ? (
         <div className="geometry-unavailable">
-          <span className="eyebrow">GEOMETRY NOT PUBLISHED</span>
-          <h3>几何资料，等待原厂补全。</h3>
+          <span className="eyebrow">
+            {bike.geometry.publishedSizes?.length
+              ? 'PUBLISHED DIMENSIONS'
+              : 'GEOMETRY NOT PUBLISHED'}
+          </span>
+          <h3>
+            {bike.geometry.publishedSizes?.length
+              ? '已公布的尺寸，先如实呈现。'
+              : '几何资料，等待原厂补全。'}
+          </h3>
           <p>{bike.geometry.note}</p>
+          {!!bike.geometry.publishedSizes?.length && (
+            <div
+              className="published-geometry"
+              role="region"
+              aria-label="原厂已公布的部分几何尺寸"
+              tabIndex={0}
+            >
+              <table>
+                <caption>原厂尺寸 · mm / °；— 表示未公布，暂不生成等比例车架轮廓</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">尺码</th>
+                    <th scope="col">Stack</th>
+                    <th scope="col">Reach</th>
+                    <th scope="col">头管角</th>
+                    <th scope="col">座管角</th>
+                    <th scope="col">轴距</th>
+                    <th scope="col">后下叉</th>
+                    <th scope="col">BB Drop</th>
+                    <th scope="col">头管长</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {bike.geometry.publishedSizes.map((size) => (
+                    <tr key={size.size}>
+                      <th scope="row">{size.size}</th>
+                      {(
+                        [
+                          'stack',
+                          'reach',
+                          'headAngle',
+                          'seatAngle',
+                          'wheelbase',
+                          'chainstay',
+                          'bbDrop',
+                          'headTube',
+                        ] as const
+                      ).map((key) => (
+                        <td key={key}>{size[key] ?? '—'}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
           <a className="source-link" href={bike.geometry.source} target="_blank" rel="noreferrer">
             查看官方配置与尺码 <ArrowUpRight size={15} />
           </a>

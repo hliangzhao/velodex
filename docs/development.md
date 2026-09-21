@@ -66,6 +66,10 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 `modelYear` 只填写有依据的车型年；未知时使用 `null`，并在 `yearNote` 记录年份依据或冲突。不要以 `checkedAt` 或官网核对年份代替车型年。
 
+几何数据不完整时，可在 `geometry.publishedSizes` 保存原厂已经公布的尺寸，并保留 `status: unavailable`、空 `sizes` 与空 `defaultSize`。详情页展示带缺项标记的参数表；这类记录不参与需要完整尺寸的轮廓叠影。缺少头管长度的 OSTRO VAM、缺少五通下沉量的 Rapida 均按此方式处理，不补估计值。
+
+2026-09-21 新增批次的配置边界：LOOK 795 Blade RS 2 为官方 Archive / R50D 版本；Trinity Advanced SL 2 为英国 2025 年款，轮组名称与官网框高括注冲突，框高留待核对；Langma Advanced 1 为荷兰 2026 Pro Compact；Nuroad C:62 Race 固定产品编号 1136500；OSTRO VAM 的 900 g 是车架重量；Rapida E7695IA 主图显示 Rubino 胎，文字配置列 Zaffiro Pro V，已注明差异。国内官方价格未核验的车型不填入人民币价格。
+
 | 资料                | 维护位置                                                         |
 | ------------------- | ---------------------------------------------------------------- |
 | 整车 / 配件         | `server/data/catalog.json` / `server/data/parts.json`            |

@@ -127,6 +127,24 @@
       "name": "CUBE",
       "country": "德国",
       "founded": "1993"
+    },
+    {
+      "id": "look",
+      "name": "LOOK",
+      "country": "法国",
+      "founded": "1951"
+    },
+    {
+      "id": "factor",
+      "name": "Factor",
+      "country": "英国起源 · 中国台湾制造",
+      "founded": "2016 · 现公司"
+    },
+    {
+      "id": "wilier",
+      "name": "Wilier Triestina 威廉",
+      "country": "意大利",
+      "founded": "1906"
     }
   ],
   "bikes": [
@@ -16426,6 +16444,1517 @@
         "limit": "结构与用途说明不等于风阻测量，不根据外观推算 CdA 或进行跨车型瓦数排名。"
       },
       "imageNote": "对应 Ultegra 官方主图。Caledonia-5 图为 Sandstone，页面摘要默认色为 Five Black；配置属于同一 Ultegra 版本。"
+    },
+    {
+      "id": "look-795-blade-rs2",
+      "brandId": "look",
+      "name": "LOOK 795 Blade RS 2 Ultegra Di2",
+      "family": "795 Blade RS 2",
+      "build": "Ultegra Di2 · LOOK R50D",
+      "edition": "法国官网 Archive · Proteam Black · SKU 29332",
+      "modelYear": null,
+      "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片目录或核对日期代替车型年。",
+      "kind": "气动竞赛",
+      "description": "LOOK 的竞赛车代表作，以低前端、气动管型和独立的 Aero Combo 把横／把立呈现竞赛取向。收录官方归档的 RS 2 Ultegra 版本，可与更新一代、不同轮组版本明确区分。",
+      "collections": ["classic"],
+      "image": "/bikes/look-795-blade-rs2.jpg",
+      "imageCredit": "LOOK",
+      "imageSource": "https://www.lookcycle.com/fr-fr/produits/bikes/road-bikes/archive/795-blade-rs-proteam-black-ultegra",
+      "imageRatio": 1.5,
+      "color": "Proteam Black Glossy",
+      "colorHex": "#262628",
+      "source": "https://www.lookcycle.com/fr-fr/produits/bikes/road-bikes/archive/795-blade-rs-proteam-black-ultegra",
+      "sourceLabel": "厂商官方 · 法国官网 Archive · Proteam Black · SKU 29332",
+      "checkedAt": "2026-09-21",
+      "weight": "7.5 kg",
+      "weightNote": "官方配置表：M 码；页面宣传中的 7 kg 并非本条 Ultegra 整车重量，脚踏等称重口径未说明。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "795 Blade RS 2 碳纤维车架组",
+          "specs": [
+            ["五通／中轴", "T47 · PRAXIS"],
+            ["贯通轴螺纹", "M12 × 1.5"]
+          ],
+          "description": "保留 RS 2 代际与原厂归档信息，不套用更早的 BB386 版本。",
+          "x": 54,
+          "y": 54.5
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra Di2 R8170",
+          "specs": [
+            ["速别", "2×12 速电子变速"],
+            ["刹车", "Ultegra R8170 液压碟刹"]
+          ],
+          "description": "前后拨为 R8150 系列。",
+          "x": 77.5,
+          "y": 19.25
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Ultegra R8100",
+          "specs": [
+            ["系统", "Shimano 12 速双盘"],
+            ["曲柄长度", "此产品页未列出"]
+          ],
+          "description": "长度保留未公布，不按习惯从尺码推断。",
+          "x": 50.5,
+          "y": 69.35
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 52/36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "此归档配置使用中紧凑齿比。",
+          "x": 44,
+          "y": 72.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra R8101",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "原配链条 Shimano M8100。",
+          "x": 23.8,
+          "y": 62.0
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未标配功率计",
+          "specs": [
+            ["配置表", "R8100 普通曲柄"],
+            ["功率测量", "原厂整车表未列"]
+          ],
+          "description": "外形相近的功率版本不能视为本车标配。",
+          "x": 45,
+          "y": 66.5
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "LOOK R50D Carbon",
+          "specs": [
+            ["轮圈", "碳纤维"],
+            ["制动", "碟刹"]
+          ],
+          "description": "对应 R50D 整车；不借用同系列 Fulcrum 版本数据。",
+          "x": 90,
+          "y": 72.5
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP 5000 TLR",
+          "specs": [
+            ["标称宽度", "28 mm"],
+            ["版本", "原厂配置表记作 TLR"]
+          ],
+          "description": "官网未在此条明确写出 S TR 后缀，保留其原始型号表述。",
+          "x": 79,
+          "y": 39.5
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "LOOK Aero Combo",
+          "specs": [
+            ["把横", "Aero Combo Handlebars"],
+            ["把立", "Aero Combo Stem"]
+          ],
+          "description": "独立把横与把立构成配套气动座舱。",
+          "x": 71,
+          "y": 22.1
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "LOOK Aero Post 4 Carbon",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["类型", "RS 2 专用气动座管"]
+          ],
+          "description": "更换时需确认专用截面与夹具。",
+          "x": 36,
+          "y": 21.5
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "LOOK Shortfit Dynamic 2.0",
+          "specs": [
+            ["制造合作", "by SAN MARCO"],
+            ["系列", "Shortfit Dynamic 2.0"]
+          ],
+          "description": "坐垫独立列出，便于读者比较接触部件。",
+          "x": 33,
+          "y": 11.0
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 486.2,
+            "reach": 361.3,
+            "headAngle": 70.7,
+            "seatAngle": 75,
+            "wheelbase": null,
+            "chainstay": 410,
+            "bbDrop": 75.5,
+            "headTube": 77.9,
+            "seatTube": 463
+          },
+          {
+            "size": "XS",
+            "stack": 501.2,
+            "reach": 371.3,
+            "headAngle": 71.8,
+            "seatAngle": 74.5,
+            "wheelbase": null,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 90.4,
+            "seatTube": 479.6
+          },
+          {
+            "size": "S",
+            "stack": 525.2,
+            "reach": 381.3,
+            "headAngle": 71.8,
+            "seatAngle": 74.5,
+            "wheelbase": null,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 115.6,
+            "seatTube": 504.4
+          },
+          {
+            "size": "M",
+            "stack": 549.2,
+            "reach": 391.2,
+            "headAngle": 73,
+            "seatAngle": 74.5,
+            "wheelbase": null,
+            "chainstay": 410,
+            "bbDrop": 70.5,
+            "headTube": 136.7,
+            "seatTube": 529.9
+          },
+          {
+            "size": "L",
+            "stack": 573.2,
+            "reach": 401.2,
+            "headAngle": 73,
+            "seatAngle": 74.5,
+            "wheelbase": null,
+            "chainstay": 410,
+            "bbDrop": 70.5,
+            "headTube": 161.8,
+            "seatTube": 554.8
+          },
+          {
+            "size": "XL",
+            "stack": 597.2,
+            "reach": 411.2,
+            "headAngle": 73,
+            "seatAngle": 74.5,
+            "wheelbase": null,
+            "chainstay": 410,
+            "bbDrop": 68,
+            "headTube": 189.5,
+            "seatTube": 579.7
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.lookcycle.com/fr-fr/produits/bikes/road-bikes/archive/795-blade-rs-proteam-black-ultegra",
+        "sourceLabel": "原厂产品页 · 对应版本几何表",
+        "note": "对应官方 RS 2 表。HAV 为五通下沉量；官网未列总轴距，不由 Front Center 反推为官方尺寸。"
+      },
+      "aero": {
+        "title": "管型与把组一起设计",
+        "description": "LOOK 说明其在风洞中同时开发车架与配套部件。Aero Combo 把组、专用气动座管与管型共同组成整车设计。",
+        "source": "https://www.lookcycle.com/fr-fr/produits/bikes/road-bikes/archive/795-blade-rs-proteam-black-ultegra",
+        "limit": "未录入跨品牌节省瓦数；管型照片不能反推出整车 CdA。"
+      },
+      "imageNote": "官方 Proteam Black / R50D 图；页面还展示 White 配色，本条不混用白色图片。",
+      "imageFit": "cover"
+    },
+    {
+      "id": "trinity-advanced-sl2",
+      "brandId": "giant",
+      "name": "Giant Trinity Advanced SL 2",
+      "family": "Trinity Advanced SL 2",
+      "build": "Rival AXS · 原配轴心功率计",
+      "edition": "2025 · 英国版",
+      "modelYear": 2025,
+      "yearNote": "车型年份来自原厂对应地区产品页。",
+      "kind": "TT 计时",
+      "description": "碟刹新一代 Trinity 将 TT 与铁三的把位需求放到同一平台。照片为带补给系统的整车，托肘坐标、延伸把与座管调节，比单看车架 Stack / Reach 更关键。",
+      "collections": ["current"],
+      "image": "/bikes/trinity-advanced-sl2.jpg",
+      "imageCredit": "GIANT",
+      "imageSource": "https://www.giant-bicycles.com/gb/trinity-advanced-sl-2-2025",
+      "imageRatio": 1.5,
+      "color": "Carbon / Blue Dragonfly",
+      "colorHex": "#376176",
+      "source": "https://www.giant-bicycles.com/gb/trinity-advanced-sl-2-2025",
+      "sourceLabel": "厂商官方 · 2025 · 英国版",
+      "checkedAt": "2026-09-21",
+      "weight": "未公布",
+      "weightNote": "Giant 未给固定整车重量，建议按尺码、补给系统与附件实际称重。",
+      "groupset": "SRAM Rival AXS",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Advanced SL 级碳纤维车架组",
+          "specs": [
+            ["轴制式", "前 12×100 / 后 12×142 mm"],
+            ["胎宽空间", "原厂最大 30 mm"],
+            ["五通", "SRAM DUB 压入式"]
+          ],
+          "description": "原厂列车架符合 UCI TT 要求；整车附件和姿势仍需对应赛事设置。",
+          "x": 53,
+          "y": 60
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "SRAM eTap Clics / Blips",
+          "specs": [
+            ["延伸把", "eTap Clics"],
+            ["基把", "eTap Blips"],
+            ["制动", "S-900 Aero 液压 · 前 160 / 后 140 mm"]
+          ],
+          "description": "两个握持位置分别设置变速按钮；前后拨为 Rival AXS。",
+          "x": 84,
+          "y": 9
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "SRAM Rival AXS",
+          "specs": [
+            ["长度", "XS 160 / S 165 / M 170 / L 172.5 mm"],
+            ["中轴", "DUB Press Fit"]
+          ],
+          "description": "曲柄原配轴心功率计，不与普通 Rival 曲柄混淆。",
+          "x": 48.6,
+          "y": 72
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Rival 48/35T",
+          "specs": [
+            ["大盘", "48T"],
+            ["小盘", "35T"]
+          ],
+          "description": "双盘配合宽范围十二速飞轮。",
+          "x": 42.2,
+          "y": 72.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "SRAM Rival 12 速",
+          "specs": [
+            ["齿数", "10–36T"],
+            ["链条", "SRAM Force D1"]
+          ],
+          "description": "按英国版整车配置保留齿比。",
+          "x": 24.4,
+          "y": 68
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "SRAM Rival 轴心功率计",
+          "specs": [
+            ["位置", "曲柄轴心"],
+            ["配置", "原厂整车标配"]
+          ],
+          "description": "以英国版配置表的 with spindle power meter 为依据。",
+          "x": 45,
+          "y": 70.5
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Giant SLR 2 50 WheelSystem",
+          "specs": [
+            ["制动接口", "Center Lock"],
+            ["后花鼓", "30T 棘轮"],
+            ["框高", "原厂名称与括注冲突，待核对"]
+          ],
+          "description": "同一配置行名称写 SLR 2 50、前后括注写 40 mm；保留轮组名称，不据此给出确定框高。",
+          "x": 88.4,
+          "y": 73.5
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "CADEX Aero Tubeless",
+          "specs": [
+            ["标称尺寸", "700×25c"],
+            ["原厂括注", "26.5 mm 实际装配宽度"]
+          ],
+          "description": "标称胎宽与指定组合实测宽度不是同一数值；官网注明真空胎安装。",
+          "x": 79,
+          "y": 45.8
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "AeroDrive / Sync TT 座舱",
+          "specs": [
+            ["调节", "10° / 15° 延伸把楔块"],
+            ["M 码 TRI Pad Stack", "672–752 mm"],
+            ["M 码 TT Pad Stack", "624–704 mm"]
+          ],
+          "description": "需要把托肘堆高与前伸和车架几何分开阅读。",
+          "x": 68.4,
+          "y": 33
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Trinity Composite",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["结构", "Trinity 专用座管"]
+          ],
+          "description": "原厂说明夹头有四个偏移位置，51 mm 调节范围。",
+          "x": 37.5,
+          "y": 26.5
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Giant Contact SL Tri",
+          "specs": [
+            ["用途", "铁三 / 计时坐姿"],
+            ["配置", "英国版原配"]
+          ],
+          "description": "坐垫型号不直接决定个人能否舒适保持低姿势。",
+          "x": 38,
+          "y": 15.5
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 490,
+            "reach": 397,
+            "headAngle": 72,
+            "seatAngle": 77,
+            "wheelbase": 974,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 85,
+            "seatTube": 477
+          },
+          {
+            "size": "S",
+            "stack": 513,
+            "reach": 412,
+            "headAngle": 73,
+            "seatAngle": 77,
+            "wheelbase": 988,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 105,
+            "seatTube": 508
+          },
+          {
+            "size": "M",
+            "stack": 532,
+            "reach": 432,
+            "headAngle": 73,
+            "seatAngle": 77,
+            "wheelbase": 1013,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 125,
+            "seatTube": 538
+          },
+          {
+            "size": "L",
+            "stack": 551,
+            "reach": 452,
+            "headAngle": 73,
+            "seatAngle": 77,
+            "wheelbase": 1039,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 145,
+            "seatTube": 565
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.giant-bicycles.com/gb/trinity-advanced-sl-2-2025",
+        "sourceLabel": "原厂产品页 · 对应版本几何表",
+        "note": "车架几何不等于托肘坐标。原厂另列 TRI 与 TT Pad Stack 范围；图示配置带补给装置，具体赛事应按相应把位与规则配置。"
+      },
+      "aero": {
+        "title": "把位、补给与车身共同作用",
+        "description": "AeroVault 将储物和补水整合到车架周围；AeroDrive 座舱提供延伸把角度与托肘调节。比较时需固定骑姿和补给附件。",
+        "source": "https://www.giant-bicycles.com/gb/trinity-advanced-sl-2-2025",
+        "limit": "不将减重、刚重比或舒适性宣传换算成节省功率；本页不提供个人 TT 姿势适配结论。"
+      }
+    },
+    {
+      "id": "langma-advanced1",
+      "brandId": "liv",
+      "name": "Liv Langma Advanced 1",
+      "family": "Langma Advanced 1",
+      "build": "105 Di2 · Pro Compact",
+      "edition": "2026 · 荷兰版 Pro Compact",
+      "modelYear": 2026,
+      "yearNote": "车型年份来自原厂对应地区产品页。",
+      "kind": "轻量爬坡",
+      "description": "Langma 为女性竞赛车补上另一种选择：紧凑车架配较短曲柄，XS 与 S 都使用 165 mm。可以与 Avail 耐力平台对照几何，而不只按品牌或涂装区分用途。",
+      "collections": ["current"],
+      "image": "/bikes/langma-advanced1.jpg",
+      "imageCredit": "Liv 丽以芙",
+      "imageSource": "https://www.liv-cycling.com/nl/langma-advanced-1--pro-compact-",
+      "imageRatio": 1.5,
+      "color": "Meteorite Mist",
+      "colorHex": "#67616f",
+      "source": "https://www.liv-cycling.com/nl/langma-advanced-1--pro-compact-",
+      "sourceLabel": "厂商官方 · 2026 · 荷兰版 Pro Compact",
+      "checkedAt": "2026-09-21",
+      "weight": "未公布",
+      "weightNote": "荷兰官网重量栏为空；不借用 Advanced Pro 或 SL 等级的整车重量。",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Advanced 级碳纤维车架",
+          "specs": [
+            ["前叉", "全碳 OverDrive 转向管"],
+            ["轴制式", "前 12×100 / 后 12×142 mm"],
+            ["胎宽空间", "33 mm"]
+          ],
+          "description": "与 Advanced Pro / SL 材料等级分别记录。",
+          "x": 55,
+          "y": 47
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano 105 Di2",
+          "specs": [
+            ["速别", "2×12 速"],
+            ["碟片", "SM-RT64 · 前 160 / 后 140 mm"]
+          ],
+          "description": "前后拨均为 R7150。",
+          "x": 75.5,
+          "y": 20
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano 105",
+          "specs": [
+            ["XS / S", "165 mm"],
+            ["M / L", "170 / 172.5 mm"]
+          ],
+          "description": "按区域官网列出的长度记录。",
+          "x": 51.5,
+          "y": 66.8
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "105 Pro Compact 52/36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "Pro Compact 指此整车配置，不是 Advanced Pro 车架等级。",
+          "x": 43.2,
+          "y": 69
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 105 12 速",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["链条", "KMC X12L-1"]
+          ],
+          "description": "原配链条按整车表，不自动替换为套件同品牌。",
+          "x": 25.3,
+          "y": 60.3
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未标配功率计",
+          "specs": [
+            ["原厂配置", "普通 Shimano 105 曲柄"],
+            ["测量设备", "此版未列出"]
+          ],
+          "description": "不把其他 Langma 配置的功率计计入本车。",
+          "x": 45,
+          "y": 65
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Giant P-R1",
+          "specs": [
+            ["前 / 后框高", "30 / 30 mm"],
+            ["辐条", "不锈钢"],
+            ["轮轴", "12 mm 贯通轴"]
+          ],
+          "description": "这一配置使用 P-R1，不是 SLR 碳轮版。",
+          "x": 88.1,
+          "y": 73
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Giant Gavia Course 0",
+          "specs": [
+            ["尺寸", "700×28c"],
+            ["结构", "折叠 · Tubeless"]
+          ],
+          "description": "原厂说明整车已作真空胎准备。",
+          "x": 79.1,
+          "y": 37.8
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Liv Contact / Giant Contact AeroLight",
+          "specs": [
+            ["把宽 XS–L", "360 / 380 / 400 / 420 mm"],
+            ["把立 XS–L", "80 / 90 / 100 / 110 mm"]
+          ],
+          "description": "把横与把立为分体组件。",
+          "x": 69,
+          "y": 23
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Giant Variant Composite",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["偏移", "−5 / +15 mm"]
+          ],
+          "description": "原厂给出两种偏移位置，实际应与坐垫设定共同核对。",
+          "x": 36.8,
+          "y": 24.5
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Liv Approach",
+          "specs": [
+            ["产品", "Approach 坐垫"],
+            ["版本", "荷兰官网 Advanced 1 原配"]
+          ],
+          "description": "官网未列此整车坐垫的单件重量与宽度。",
+          "x": 35.5,
+          "y": 13
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 517,
+            "reach": 370,
+            "headAngle": 71,
+            "seatAngle": 75,
+            "wheelbase": 973,
+            "chainstay": 405,
+            "bbDrop": 72,
+            "headTube": 120,
+            "seatTube": 420
+          },
+          {
+            "size": "S",
+            "stack": 532,
+            "reach": 377,
+            "headAngle": 72,
+            "seatAngle": 74.5,
+            "wheelbase": 977,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 135,
+            "seatTube": 450
+          },
+          {
+            "size": "M",
+            "stack": 553,
+            "reach": 382,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 984,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 155,
+            "seatTube": 480
+          },
+          {
+            "size": "L",
+            "stack": 572,
+            "reach": 386,
+            "headAngle": 72.5,
+            "seatAngle": 73.5,
+            "wheelbase": 994,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "headTube": 175,
+            "seatTube": 510
+          }
+        ],
+        "defaultSize": "S",
+        "source": "https://www.liv-cycling.com/nl/langma-advanced-1--pro-compact-",
+        "sourceLabel": "原厂产品页 · 对应版本几何表",
+        "note": "仅收录此地区尺码表中的 XS–L。配置文字提及 XXS，但该地区未提供其完整几何，不跨地区补填。"
+      },
+      "aero": {
+        "title": "爬坡取向也考虑气流",
+        "description": "Langma 以截尾椭圆管型兼顾结构需求与气流表现，Contact AeroLight 把立为分体座舱的一部分。",
+        "source": "https://www.liv-cycling.com/nl/langma-advanced-1--pro-compact-",
+        "limit": "未给此 Advanced 1 整车录入节省瓦数；不能套用 Advanced SL 或不同轮组配置的宣传结果。"
+      }
+    },
+    {
+      "id": "nuroad-c62-race",
+      "brandId": "cube",
+      "name": "CUBE Nuroad C:62 Race",
+      "family": "Nuroad C:62 Race",
+      "build": "GRX Di2 2×12 · 4iiii 单边",
+      "edition": "德国官网 · 1136500",
+      "modelYear": null,
+      "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片目录或核对日期代替车型年。",
+      "kind": "砾石公路",
+      "description": "一台同时考虑速度、装载和长距离的碳纤维砾石车：45 mm 原配胎、GRX 双盘和功率计，为平路快骑与陡坡提供另一种组合。与公路耐力车比较时，别忽略它的轴距和后下叉。",
+      "collections": ["current"],
+      "image": "/bikes/nuroad-c62-race.jpg",
+      "imageCredit": "CUBE",
+      "imageSource": "https://www.cube.eu/de-de/cube-nuroad-c-62-race-jungali-n-black/1136500",
+      "imageRatio": 1.6985138004246285,
+      "color": "jungali’n’black",
+      "colorHex": "#416f6c",
+      "source": "https://www.cube.eu/de-de/cube-nuroad-c-62-race-jungali-n-black/1136500",
+      "sourceLabel": "厂商官方 · 德国官网 · 1136500",
+      "checkedAt": "2026-09-21",
+      "weight": "8.3 kg",
+      "weightNote": "德国官方产品页标注整车重量；未在该重量栏说明尺码、脚踏及附件计入范围。",
+      "groupset": "Shimano GRX Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "C:62 Advanced Twin Mold",
+          "specs": [
+            ["后端", "12×142 mm · UDH"],
+            ["前叉", "C:62 全碳 · 12×100 mm"],
+            ["安装点", "挡泥板、货架及前叉低位货架"]
+          ],
+          "description": "车架称重约 1150 g（中码）与整车 8.3 kg 分开记录。",
+          "x": 55,
+          "y": 47.5
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "GRX Di2 ST-RX825",
+          "specs": [
+            ["速别", "2×12 速电子变速"],
+            ["制动", "GRX BR-RX820 · 前后 160 mm"]
+          ],
+          "description": "前后拨为 RX825 系列。",
+          "x": 80,
+          "y": 9
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "GRX FC-RX820-2",
+          "specs": [
+            ["长度 XS–XL", "165 / 165 / 170 / 170 / 172.5 mm"],
+            ["五通", "SM-BB71-41B · 86 mm 压入式"]
+          ],
+          "description": "原配曲柄结合 4iiii 单边传感器。",
+          "x": 50,
+          "y": 70.8
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "GRX 48/31T",
+          "specs": [
+            ["大盘", "48T"],
+            ["小盘", "31T"]
+          ],
+          "description": "配合 11–34T，最低齿比为 31/34；胎周不同，不能直接等同公路车速度。",
+          "x": 43,
+          "y": 75
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra CS-R8101",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "GRX 整车使用 Ultegra 飞轮是原厂指定组合。",
+          "x": 20.5,
+          "y": 61
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision 3+",
+          "specs": [
+            ["测量", "单边"],
+            ["配置", "原厂 FC-RX820-2 曲柄版本"]
+          ],
+          "description": "单边功率估算与双边独立测量分开标注。",
+          "x": 44,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Newmen Advanced SL X.R.36",
+          "specs": [
+            ["轮圈", "碳纤维 · Tubeless Ready"],
+            ["辐条", "前后各 24 根"],
+            ["接口", "Center Lock · 12×100 / 12×142 mm"]
+          ],
+          "description": "按配置表的完整型号保留 SL 后缀。",
+          "x": 93,
+          "y": 77
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Schwalbe G-One RS Pro",
+          "specs": [
+            ["原配规格", "45-622 · TLR"],
+            ["车架空间", "无挡泥板 50 mm；带挡泥板 45 mm"]
+          ],
+          "description": "最大空间是整车框架条件，不代表任意轮圈配任意同标称胎宽均通过。",
+          "x": 82.5,
+          "y": 29.5
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "IC Aero Cockpit System",
+          "specs": [
+            ["结构", "一体碳纤维把组 · 内走线"],
+            ["把宽 XS–XL", "400 / 400 / 400 / 420 / 420 mm"],
+            ["把立长度 XS–XL", "90 / 90 / 100 / 100 / 110 mm"]
+          ],
+          "description": "带 Garmin 码表座接口。",
+          "x": 72,
+          "y": 11
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Newmen Advanced Carbon",
+          "specs": [
+            ["直径", "27.2 mm"],
+            ["长度", "XS/S 350 mm；M/L/XL 400 mm"]
+          ],
+          "description": "圆形座管与气动专用座管的更换条件不同。",
+          "x": 36.1,
+          "y": 16
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "ACID Nuance SLT X Carbon",
+          "specs": [
+            ["产品", "Nuance SLT X Carbon"],
+            ["配置", "1136500 原厂坐垫"]
+          ],
+          "description": "此整车页未给坐垫独立重量，留待单品资料核验。",
+          "x": 34,
+          "y": 3
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 520,
+            "reach": 388,
+            "headAngle": 69,
+            "seatAngle": 75.5,
+            "wheelbase": 1043,
+            "chainstay": 440,
+            "bbDrop": 70,
+            "headTube": 102,
+            "seatTube": 430
+          },
+          {
+            "size": "S",
+            "stack": 544,
+            "reach": 388,
+            "headAngle": 70,
+            "seatAngle": 74.7,
+            "wheelbase": 1044,
+            "chainstay": 440,
+            "bbDrop": 70,
+            "headTube": 124,
+            "seatTube": 460
+          },
+          {
+            "size": "M",
+            "stack": 579,
+            "reach": 393,
+            "headAngle": 71.5,
+            "seatAngle": 73.9,
+            "wheelbase": 1046,
+            "chainstay": 440,
+            "bbDrop": 70,
+            "headTube": 155,
+            "seatTube": 490
+          },
+          {
+            "size": "L",
+            "stack": 599,
+            "reach": 392,
+            "headAngle": 72,
+            "seatAngle": 73,
+            "wheelbase": 1048,
+            "chainstay": 442,
+            "bbDrop": 70,
+            "headTube": 174,
+            "seatTube": 510
+          },
+          {
+            "size": "XL",
+            "stack": 623,
+            "reach": 402,
+            "headAngle": 72.5,
+            "seatAngle": 73,
+            "wheelbase": 1060,
+            "chainstay": 442,
+            "bbDrop": 70,
+            "headTube": 197,
+            "seatTube": 540
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.cube.eu/de-de/cube-nuroad-c-62-race-jungali-n-black/1136500",
+        "sourceLabel": "原厂产品页 · 对应版本几何表",
+        "note": "对应产品编号 1136500。几何与此前矿物蓝配色版本分开核对；官网未在产品页明确车型年。"
+      },
+      "aero": {
+        "title": "砾石竞速里的气动座舱",
+        "description": "IC Aero 一体碳把与半隐藏走线减少外露部件，45 mm 轮胎则兼顾非铺装路面的体积需求。",
+        "source": "https://www.cube.eu/de-de/cube-nuroad-c-62-race-jungali-n-black/1136500",
+        "limit": "没有可用于本配置的统一风洞对比数据；宽胎、胎压和路面变化不能仅用公路 CdA 解释。"
+      }
+    },
+    {
+      "id": "factor-ostro-vam-ultegra",
+      "brandId": "factor",
+      "name": "Factor OSTRO VAM Ultegra",
+      "family": "OSTRO VAM v2",
+      "build": "Ultegra Di2 · Black Inc 48|58",
+      "edition": "全球官网配置器 · v2 / Icon Blue",
+      "modelYear": null,
+      "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片目录或核对日期代替车型年。",
+      "kind": "气动竞赛",
+      "description": "OSTRO VAM 将浅一些的前轮与更深的后轮配在同一台气动竞赛车上。收录第二代 Icon Blue / Ultegra 版本，适合观察宽叉腿、专用座管和一体把之间的设计关系。",
+      "collections": ["current"],
+      "image": "/bikes/factor-ostro-vam-ultegra.png",
+      "imageCredit": "Factor",
+      "imageSource": "https://factorbikes.com/bike-builder/ostro-vam-shimano-ultegra",
+      "imageRatio": 1.5,
+      "color": "Icon Blue",
+      "colorHex": "#1b9ad7",
+      "source": "https://factorbikes.com/bike-builder/ostro-vam-shimano-ultegra",
+      "sourceLabel": "厂商官方 · 全球官网配置器 · v2 / Icon Blue",
+      "checkedAt": "2026-09-21",
+      "weight": "900 g",
+      "weightNote": "官方 Frame Specs 的车架重量；未列称重尺码或附件口径，不是 Ultegra 整车重量。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "OSTRO VAM v2 碳纤维车架组",
+          "specs": [
+            ["材料", "TeXtreme / Toray / Nippon Graphite"],
+            ["前叉", "OSTRO Wide Stance"],
+            ["五通", "CeramicSpeed T47A"],
+            ["胎宽空间", "实测最大 32 mm"]
+          ],
+          "description": "配置器只说明电子变速兼容；车架重量与整车重量独立标注。",
+          "x": 55.5,
+          "y": 53.0
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 8100 系列",
+          "specs": [
+            ["变速", "2×12 速"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "description": "本条采用官网 Ultegra 构建，未混用 SRAM 配置。",
+          "x": 82.5,
+          "y": 20.0
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra 双盘曲柄",
+          "specs": [
+            ["盘片", "52/36T"],
+            ["曲柄长度", "按订购配置，页面未固定"]
+          ],
+          "description": "不依据宣传图推断全部尺码的曲柄长度。",
+          "x": 51.5,
+          "y": 74.0
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 52/36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "依照此配置器的 Groupset Specs。",
+          "x": 45,
+          "y": 78.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra 12 速飞轮",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "此当前普通涂装版本为 11–34T，不沿用 L39ion 特别版的 11–30T。",
+          "x": 23,
+          "y": 65.75
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未标配功率计",
+          "specs": [
+            ["配置表", "Ultegra 构建未列功率计"],
+            ["外观图", "普通 Ultegra 曲柄"]
+          ],
+          "description": "SRAM with Power Meter 构建是单独选项，不能移用到本车。",
+          "x": 45,
+          "y": 71.0
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Black Inc 48|58",
+          "specs": [
+            ["前 / 后框高", "48 / 58 mm"],
+            ["尺寸", "700c"],
+            ["原配配色", "Black"]
+          ],
+          "description": "前后不同框高，配对记录。",
+          "x": 92,
+          "y": 78.5
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "官方图示 Goodyear Eagle F1 R",
+          "specs": [
+            ["图示品牌型号", "Goodyear Eagle F1 R"],
+            ["标称胎宽", "配置器文字未列出"]
+          ],
+          "description": "型号取自官方照片胎侧文字；图示不构成固定交付规格，保留胎宽未核验。",
+          "x": 80,
+          "y": 40.25
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Black Inc Integrated Aero Barstem",
+          "specs": [
+            ["Reach / Drop", "80 / 120 mm"],
+            ["尺寸", "多种把宽与把立长度可选"]
+          ],
+          "description": "不把配置器默认车架尺寸对应为唯一把宽。",
+          "x": 71,
+          "y": 23.75
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "OSTRO VAM 专用座管",
+          "specs": [
+            ["偏移选项", "0 / 20 mm"],
+            ["轨道夹具兼容", "7×7 / 7×9 mm"]
+          ],
+          "description": "后飘量和夹头规格在订购时分别核对。",
+          "x": 36.5,
+          "y": 23.0
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "坐垫型号未在配置表固定",
+          "specs": [
+            ["官方照片", "可见 SLR 系列标识"],
+            ["实际型号与尺寸", "以订单配置为准"]
+          ],
+          "description": "不从外形补写完整型号、宽度、重量或碳轨规格。",
+          "x": 35,
+          "y": 14.75
+        }
+      ],
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://factorbikes.com/bike-builder/ostro-vam-shimano-ultegra",
+        "sourceLabel": "原厂产品页 · 对应版本几何表",
+        "note": "原厂已提供下列七个尺码的数据，但未列头管长度。保留已公布尺寸；尺寸不全时暂不加入等比例轮廓叠影。",
+        "status": "unavailable",
+        "publishedSizes": [
+          {
+            "size": "45",
+            "stack": 502,
+            "reach": 360,
+            "headAngle": 71.1,
+            "seatAngle": 75.5,
+            "wheelbase": 970,
+            "chainstay": 405,
+            "bbDrop": 72,
+            "seatTube": 432
+          },
+          {
+            "size": "49",
+            "stack": 503,
+            "reach": 370,
+            "headAngle": 71.1,
+            "seatAngle": 74.5,
+            "wheelbase": 969,
+            "chainstay": 405,
+            "bbDrop": 72,
+            "seatTube": 454
+          },
+          {
+            "size": "52",
+            "stack": 523,
+            "reach": 376,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 971,
+            "chainstay": 405,
+            "bbDrop": 72,
+            "seatTube": 483
+          },
+          {
+            "size": "54",
+            "stack": 542,
+            "reach": 384,
+            "headAngle": 72.5,
+            "seatAngle": 74,
+            "wheelbase": 985,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "seatTube": 502
+          },
+          {
+            "size": "56",
+            "stack": 565,
+            "reach": 392,
+            "headAngle": 73.3,
+            "seatAngle": 73.5,
+            "wheelbase": 987,
+            "chainstay": 405,
+            "bbDrop": 70,
+            "seatTube": 524
+          },
+          {
+            "size": "58",
+            "stack": 587,
+            "reach": 401,
+            "headAngle": 73.3,
+            "seatAngle": 73.5,
+            "wheelbase": 1006,
+            "chainstay": 408,
+            "bbDrop": 70,
+            "seatTube": 531
+          },
+          {
+            "size": "61",
+            "stack": 611,
+            "reach": 409,
+            "headAngle": 73.3,
+            "seatAngle": 73.5,
+            "wheelbase": 1022,
+            "chainstay": 410,
+            "bbDrop": 70,
+            "seatTube": 554
+          }
+        ]
+      },
+      "aero": {
+        "title": "前后轮与宽叉腿的整体设计",
+        "description": "原厂配置组合 Black Inc 48|58 轮组、OSTRO Wide Stance 前叉及 Integrated Aero Barstem，把气动设计延伸到整车部件。",
+        "source": "https://factorbikes.com/bike-builder/ostro-vam-shimano-ultegra",
+        "limit": "配置器没有足够信息推算这台整车或骑手的 CdA；不同轮组、轮胎与骑姿的结果不可直接移用。"
+      },
+      "imageNote": "官方 Icon Blue / Ultegra / Black Inc 48|58 示意；轮胎与坐垫未在文字配置中固定，相关条目明确区分图示和交付规格。",
+      "weightLabel": "车架重量",
+      "imageFit": "cover"
+    },
+    {
+      "id": "wilier-rapida-105di2",
+      "brandId": "wilier",
+      "name": "Wilier Rapida 105 Di2",
+      "family": "Rapida 105 Di2",
+      "build": "105 Di2 · Miche Asfalto 45",
+      "edition": "美国官网 · E7695IA",
+      "modelYear": null,
+      "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片目录或核对日期代替车型年。",
+      "kind": "全能公路",
+      "description": "Rapida 把一体碳把、气动座管与较大的胎宽空间带入 Wilier 的入门碳纤维竞赛平台。保留 105 Di2 碳轮版本，可与同页机械 105 / Reflex DX 版本分开比较。",
+      "collections": ["current"],
+      "image": "/bikes/wilier-rapida-105di2.jpg",
+      "imageCredit": "Wilier Triestina 威廉",
+      "imageSource": "https://usa.wilier.com/products/rapida",
+      "imageRatio": 1.637852593266606,
+      "color": "Midday Orange",
+      "colorHex": "#fb6a0d",
+      "source": "https://usa.wilier.com/products/rapida",
+      "sourceLabel": "厂商官方 · 美国官网 · E7695IA",
+      "checkedAt": "2026-09-21",
+      "weight": "8.2 kg ±5%",
+      "weightNote": "官方 E7695IA 整车配置表数值；页面未注明称重尺码、脚踏与附件口径。",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Rapida NH-MOD 碳纤维车架组",
+          "specs": [
+            ["前叉", "NH-MOD 全碳"],
+            ["五通", "Press Fit 86.5×41 mm"],
+            ["胎宽空间", "最大 36 mm"]
+          ],
+          "description": "可支持单盘与双盘；这条记录固定双盘 E7695IA。",
+          "x": 57,
+          "y": 47
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "105 Di2 ST-R7170",
+          "specs": [
+            ["变速", "2×12 速电子变速"],
+            ["刹车", "BR-R7170"],
+            ["碟片", "SM-RT70 · 前 160 / 后 140 mm"]
+          ],
+          "description": "前后拨均为 R7150 系列。",
+          "x": 80.5,
+          "y": 9.5
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "105 FC-R7100",
+          "specs": [
+            ["系统", "Shimano 12 速"],
+            ["曲柄长度", "本页未列出"]
+          ],
+          "description": "保留普通曲柄配置，不假设有功率计。",
+          "x": 50,
+          "y": 74
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "105 50/34T",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "description": "紧凑双盘搭配 11–34T 飞轮。",
+          "x": 41,
+          "y": 78
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "105 CS-R7100-12",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "原厂配置表链条记作 CN-M7100。",
+          "x": 19.2,
+          "y": 63.8
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未标配功率计",
+          "specs": [
+            ["配置表", "FC-R7100 普通曲柄"],
+            ["测量设备", "E7695IA 未列出"]
+          ],
+          "description": "功率设备作为后续升级项单独核对。",
+          "x": 44,
+          "y": 72
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Miche Asfalto 45 Carbon",
+          "specs": [
+            ["轮圈", "碳纤维 · 45 mm"],
+            ["版本", "E7695IA 原配"]
+          ],
+          "description": "不同于同页机械 105 版本的 Miche Reflex DX。",
+          "x": 94.5,
+          "y": 78
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Zaffiro Pro V",
+          "specs": [
+            ["原厂配置表", "700×32c"],
+            ["官方主图", "胎侧为 Rubino，存在差异"]
+          ],
+          "description": "规格以 E7695IA 文字表为准，图片仅用于认识外观，不把图示胎替换成正式配置。",
+          "x": 83,
+          "y": 33
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Wilier Z Bar",
+          "specs": [
+            ["结构", "一体碳纤维 · 全内走线"],
+            ["官方重量", "360 g ±5%"]
+          ],
+          "description": "把组单件重量不代表整车；页面未注明对应尺寸。",
+          "x": 71,
+          "y": 13
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Wilier Filante SL Carbon",
+          "specs": [
+            ["偏移", "后飘 15 mm"],
+            ["结构", "专用气动截面"]
+          ],
+          "description": "这是原厂列出的座管型号，不表示整台车属于 Filante SL。",
+          "x": 33.5,
+          "y": 17
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Dimension RS Steel",
+          "specs": [
+            ["宽度", "145 mm"],
+            ["版本", "Steel · 黑色"]
+          ],
+          "description": "不套用同名碳轨坐垫的重量。",
+          "x": 33,
+          "y": 3
+        }
+      ],
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://usa.wilier.com/products/rapida",
+        "sourceLabel": "原厂产品页 · 对应版本几何表",
+        "note": "原厂六个尺码表中的 cm 已换算为 mm。五通下沉未公布，保留已知数据，暂不据不完整尺寸生成车架轮廓。",
+        "status": "unavailable",
+        "publishedSizes": [
+          {
+            "size": "XS",
+            "stack": 520,
+            "reach": 372,
+            "headAngle": 70.5,
+            "seatAngle": 75.5,
+            "wheelbase": 981,
+            "chainstay": 410,
+            "headTube": 108,
+            "seatTube": 430
+          },
+          {
+            "size": "S",
+            "stack": 538,
+            "reach": 378,
+            "headAngle": 71.3,
+            "seatAngle": 75,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "headTube": 125,
+            "seatTube": 460
+          },
+          {
+            "size": "M",
+            "stack": 556,
+            "reach": 384.5,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 994,
+            "chainstay": 412,
+            "headTube": 143,
+            "seatTube": 490
+          },
+          {
+            "size": "L",
+            "stack": 574,
+            "reach": 390,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 1006,
+            "chainstay": 412,
+            "headTube": 162,
+            "seatTube": 520
+          },
+          {
+            "size": "XL",
+            "stack": 592,
+            "reach": 396,
+            "headAngle": 72,
+            "seatAngle": 73,
+            "wheelbase": 1021,
+            "chainstay": 411,
+            "headTube": 183,
+            "seatTube": 550
+          },
+          {
+            "size": "XXL",
+            "stack": 610,
+            "reach": 402,
+            "headAngle": 72,
+            "seatAngle": 73,
+            "wheelbase": 1033,
+            "chainstay": 411,
+            "headTube": 202,
+            "seatTube": 580
+          }
+        ]
+      },
+      "aero": {
+        "title": "气动管型与日常公路兼容",
+        "description": "原厂以 NACA 管型、专用碳座管和 Z Bar 内走线座舱描述 Rapida 的设计；最大 36 mm 胎宽空间保留了路面选择余地。",
+        "source": "https://usa.wilier.com/products/rapida",
+        "limit": "不将“同类气动设计”解释为与 Filante SLR ID2 相同的风阻或刚度，也不直接将 36 mm 空间视为砾石用途认证。"
+      },
+      "imageNote": "官方主图配 Miche Asfalto 45，但胎侧显示 Rubino；E7695IA 配置表列 Zaffiro Pro V 32c。轮胎参数以文字表为准。"
     }
   ]
 }
