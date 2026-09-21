@@ -1,0 +1,116 @@
+.catalog-order {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+.catalog-order > div {
+  display: flex;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.catalog-order button {
+  padding: 11px 20px;
+  font-size: 13px;
+}
+.catalog-order button[aria-pressed='true'] {
+  background: #293526;
+  color: #fff;
+}
+.catalog-order label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #627056;
+}
+.catalog-order select {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 10px;
+  color: inherit;
+}
+.catalog-order > span {
+  margin-left: auto;
+  font-size: 12px;
+  color: #627056;
+}
+.catalog-year-note {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #727968;
+  max-width: 830px;
+  margin: 15px 0 25px;
+}
+.catalog-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+.catalog-jumps a {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid var(--line);
+  padding: 7px 8px;
+  font-size: 12px;
+}
+.catalog-jumps small {
+  color: #7b856f;
+}
+.catalog-group {
+  scroll-margin-top: 100px;
+  margin: 0 0 48px;
+}
+.catalog-group > header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 0 18px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.catalog-group h2 {
+  font-size: 28px;
+  margin: 6px 0 0;
+  letter-spacing: -0.6px;
+}
+.catalog-group > header > span {
+  font-size: 12px;
+  color: #718065;
+  white-space: nowrap;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.model-year {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 3px 6px;
+  border: 1px solid #d9dece;
+  white-space: nowrap;
+  color: #536146;
+}
+@media (max-width: 600px) {
+  .catalog-order {
+    gap: 12px;
+  }
+  .catalog-order > span {
+    width: 100%;
+    margin: 0;
+  }
+  .catalog-group h2 {
+    font-size: 23px;
+  }
+  .catalog-jumps {
+    gap: 5px;
+  }
+  .card-footer {
+    align-items: flex-start;
+  }
+}

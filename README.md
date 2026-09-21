@@ -91,7 +91,7 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 本次补充 Cinelli 西耐力 Pressure II、CAMP 坎普 ACE III UT / SR9、Liv Avail Advanced 1、Giant Contend AR 1、Merida REACTO 8000 / SILEX 8000 与 Specialized Roubaix SL8 Sport。新增八款以照片和可核实几何为主，暂不提供近似整车 3D。坎普官网未给出完整几何表，显式保留缺项，仍可对比配置；整车标价按中国大陆官网记录。Cinelli 与 SILEX 的官方配图和文字配置差异在图片旁说明。
 
-目前收录 21 个品牌、54 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
+目前收录 21 个品牌、59 款车型。首批车型：Specialized Tarmac SL8 / SL7、Trek Madone SLR 9 Gen 8、Canyon Aeroad CFR、Giant Propel Advanced SL 0、Pinarello Dogma F、Cervélo S5，喜德盛 X-LAB AD7 / AD8 / AD9 / RS7 / RT9，以及迪卡侬 Van Rysel EDR CF。
 
 新增 TCR Advanced Pro 0 AXS、Defy Advanced Pro 0、Ultimate CF SLX 8 Di2、Endurace CF SLX 8 Di2、Cannondale SuperSix EVO 2 Gen 5、美利达 SCULTURA 8000 / SCULTURA ENDURANCE 8000，以及迪卡侬 Van Rysel RCR-R Pro。新增项均有实拍、十一类部件记录、逐尺码几何和独立 3D 轮廓。
 
@@ -103,7 +103,7 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 ## 涂装与配件图鉴
 
-- 已收录 14 款车的多涂装，共 76 个整车外观条目。点击色块切换官方图片，`?bike=y1rs&paint=ysbo` 可直接分享，支持浏览器前进 / 后退。
+- 已收录 14 款车的多涂装，共 81 个整车外观条目。点击色块切换官方图片，`?bike=y1rs&paint=ysbo` 可直接分享，支持浏览器前进 / 后退。
 - 不同构图的涂装有独立热点；部分官方展示车的附件和齿比与所列零售选项不同，页面明确提示。
 - `?view=parts` 打开独立配件图鉴：14 个厂商、24 款轮组 / 变速系统 / 轮胎 / 车把 / 座管 / 坐垫。
 - 按类别、厂商、在售 / 经典、关键词筛选；查看参数、设计特点、适用场景与兼容性；同类最多三款并排比较。
@@ -111,9 +111,21 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 - 配件资料在 `server/data/parts.json`，Pages 与 Express 共用；性能介绍区分设计取向和实测，不虚构统一评分或跨品牌瓦数排名。
 - 有图片的产品使用厂商素材；无图时显示明确的类别图示，不将其作为准确产品外观。
 
-## 车队档案
+## 品牌与年份浏览
 
-`?view=teams` 按 2026 赛季资料收录 UAE、Visma、XDS Astana、DECATHLON CMA CGM、Red Bull–BORA–hansgrohe 与 Tudor。支持中英文搜索、单队链接、品牌车型跳转和整车对比。合作信息注明官方来源，配图与链接明确标为零售图鉴延伸，不将零售配置当成比赛实装。
+整车图鉴默认按品牌分组，同品牌内按已核实车型年倒序排列；可切换为按年份分组，并与品牌、骑行定位、收录类别和搜索联合筛选。没有可靠车型年的版本列入“年份未标注”，不会用 `checkedAt` 或“2026 核对”代替车型年。
+
+本轮补充 Cannondale CAAD13 105、Synapse Carbon 2、Topstone Carbon 2 Lefty，以及 Cervélo Soloist / Caledonia-5 Ultegra Di2，共五款。均附十一类部件、原厂图片和完整尺码几何。CAAD13 图片轮圈与文字清单的差异、Topstone 年份线索冲突、Synapse 坐垫型号差异均在条目中说明；国内官方售价未经核实的车型不填估算价格。
+
+经典世代谱补齐九个原先缺图的 Madone / TCR 节点；历史图片与同代零售参考图区分标注，前后代对照也展示图片。
+
+## 车队与车手
+
+`?view=teams` 按 2026 赛季资料收录 UAE、Visma、XDS Astana、DECATHLON CMA CGM、Red Bull–BORA–hansgrohe 与 Tudor，新增 Lidl–Trek、Alpecin–Premier Tech、EF Education–EasyPost、Netcompany INEOS（原 INEOS Grenadiers），共十支车队。支持中英文搜索、单队链接、品牌车型跳转和整车对比。合作信息注明官方来源，配图与链接明确标为零售图鉴延伸，不将零售配置当成比赛实装。
+
+`?view=riders` 新增车手焦点：波加查、温格高、埃费内普尔、范德普尔、范阿尔特、佩德森、米兰和塞克萨斯。支持姓名、车队、比赛特点筛选和独立链接（如 `?view=riders&rider=remco`），关联车队与图鉴，近期记录注明事件日期和官方来源。属于编辑精选，不是实时热度榜。
+
+车手照片使用逐张核实的 CC BY 4.0、CC BY-SA 4.0 或 CC0 素材，图旁展示摄影者、原图、许可与拍摄年份；等比缩小和 JPEG 压缩已注明，照片各自保留原许可。完整记录见 `docs/rider-photo-licenses.json`。非营利及注明来源不自动构成图片使用许可，品牌产品图的来源记录也不表示已取得开放授权。
 
 ## 功率与骑行分析
 

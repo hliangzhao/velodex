@@ -18,11 +18,14 @@ const ComparePage = lazy(() => import('./ComparePage'));
 const GaragePage = lazy(() => import('./GaragePage'));
 const StoriesPage = lazy(() => import('./StoriesPage'));
 const TeamsPage = lazy(() => import('./TeamsPage'));
+const RidersPage = lazy(() => import('./RidersPage'));
 const GenerationsPage = lazy(() => import('./GenerationsPage'));
 const params = new URLSearchParams(location.search);
 const view = params.get('view');
 const page =
-  view === 'teams' ? (
+  view === 'riders' ? (
+    <RidersPage />
+  ) : view === 'teams' ? (
     <TeamsPage />
   ) : view === 'generations' ? (
     <GenerationsPage />

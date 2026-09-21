@@ -5,6 +5,8 @@ import { imageUrl } from './catalog';
 import { comparisonSearch } from './experience';
 import type { Catalog } from './types';
 import dossier from './data/teams.json';
+import riderDossier from './data/riders.json';
+import PelotonNav from './PelotonNav';
 import './teams.css';
 
 export default function TeamsPage() {
@@ -47,6 +49,7 @@ function Teams({ catalog }: { catalog: Catalog }) {
   });
   return (
     <>
+      <PelotonNav active="teams" />
       <header className="teams-hero">
         <div>
           <span className="eyebrow">INSIDE THE PELOTON / {dossier.season}</span>
@@ -62,8 +65,8 @@ function Teams({ catalog }: { catalog: Catalog }) {
           </p>
         </div>
         <div className="teams-hero-number">
-          <strong>06</strong>
-          <span>TEAMS / 本期六支车队</span>
+          <strong>{String(dossier.teams.length).padStart(2, '0')}</strong>
+          <span>TEAMS / 本期 {dossier.teams.length} 支车队</span>
           <small>资料核对 {dossier.checkedAt}</small>
         </div>
       </header>
@@ -166,6 +169,18 @@ function Teams({ catalog }: { catalog: Catalog }) {
                     </a>
                   ))}
                 </div>
+                {riderDossier.riders.some((r) => r.teamId === t.id) && (
+                  <div className="team-riders">
+                    <span>认识车手</span>
+                    {riderDossier.riders
+                      .filter((r) => r.teamId === t.id)
+                      .map((r) => (
+                        <a key={r.id} href={`${base}?view=riders&rider=${r.id}`}>
+                          {r.name} ↗
+                        </a>
+                      ))}
+                  </div>
+                )}
               </div>
             </article>
           );

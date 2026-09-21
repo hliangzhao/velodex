@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20",
+  "updatedAt": "2026-09-21",
   "collectionNote": "“人气精选”为编辑选集，涵盖公路竞赛与砾石探索，不代表销量或实时热度排名。",
   "brands": [
     {
@@ -425,7 +425,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": 2026,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "madone-slr9",
@@ -689,7 +691,9 @@
         "source": "https://www.trekbikes.com/gb/en_GB/madone/",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": false
+      "hasPowerMeter": false,
+      "modelYear": 2025,
+      "yearNote": "对应原厂 MY25 产品编号 46707 与存档配置，非 Gen 8 发布年份。"
     },
     {
       "id": "aeroad-cfr",
@@ -962,7 +966,9 @@
         "source": "https://www.canyon.com/en-gb/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "modelYear": 2026,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "propel-sl0",
@@ -1224,7 +1230,9 @@
         "source": "https://www.giant-bicycles.com/gb/propel-advanced-sl-0--dura-ace-",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": false
+      "hasPowerMeter": false,
+      "modelYear": 2026,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "dogma-f",
@@ -1431,7 +1439,9 @@
         "source": "https://pinarello.com/uk/en/bikes/road/competition/new-dogma-f/new-dogma-f-dura-ace-di2",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": false
+      "hasPowerMeter": false,
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "cervelo-s5",
@@ -1691,7 +1701,9 @@
         "source": "https://www.cervelo.com/en-US/bikes/s5",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "tarmac-sl7",
@@ -1961,7 +1973,9 @@
         "source": "https://www.specialized.com/us/en/s-works-tarmac-sl7-sram-red-etap-axs/p/199464?color=323320-199464",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "modelYear": 2022,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "xlab-ad7",
@@ -2214,7 +2228,9 @@
         "source": "https://xlabbikes.com.br/ad7/",
         "limit": "尚未录入与其他车型在相同骑手、速度、偏航角、轮胎及装配条件下的可比风阻数据。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "xlab-ad8",
@@ -2522,7 +2538,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "xlab-ad9",
@@ -2807,7 +2825,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "xlab-rs7",
@@ -3101,7 +3121,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "xlab-rt9",
@@ -3344,7 +3366,9 @@
         "source": "https://xds.co/products/rt9",
         "limit": "没有录入 RT9 相对 AD 系列的可比风阻数据。轻量与气动不能用外形直接换算。"
       },
-      "hasPowerMeter": true
+      "hasPowerMeter": true,
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "vanrysel-edr-cf",
@@ -3597,7 +3621,9 @@
         "source": "https://www.decathlonpro.fr/edr-cf2-toolbox-105-12s-id-8817922.html",
         "limit": "未录入原厂 CdA 或跨车型风洞测试。较直立的骑姿通常会改变迎风面积，具体幅度需实际测量。"
       },
-      "hasPowerMeter": false
+      "hasPowerMeter": false,
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "tcr-pro0",
@@ -3857,7 +3883,9 @@
         "description": "前端采用 OverDrive Aero 内走线，管型由 CFD 与风洞开发。紧凑车架保留轻量取向，也将空气动力学纳入整体设计。",
         "source": "https://www.giant-bicycles.com/us/tcr-advanced-pro-0--axs-",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "modelYear": 2026,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "defy-pro0",
@@ -4119,7 +4147,9 @@
         "description": "OverDrive Aero 使管线沿前端整合；D-Fuse 把组和座管的重点是吸收振动。舒适取向不等于具有某个固定的风阻数值。",
         "source": "https://www.giant-bicycles.com/us/defy-advanced-pro-0-2025",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "modelYear": 2025,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "ultimate-slx8",
@@ -4419,7 +4449,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "endurace-slx8",
@@ -4719,7 +4751,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "supersix-evo2",
@@ -5007,7 +5041,9 @@
         "description": "Delta 舵管收拢前端管线，车架各段按结构和气动需求分别塑形。品牌描述采用 CFD 与风洞开发，这里不把营销比较当作跨车型实测排名。",
         "source": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-2",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "modelYear": 2026,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "scultura8000",
@@ -5284,7 +5320,9 @@
         "description": "SCULTURA 在轻量框架上整合截尾管型与 WIRE PORT 内走线前端；圆形细座管与纤细后上叉保留了舒适性设计。",
         "source": "https://www.merida-bikes.com/en/bike/archive/4860/scultura-8000",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "modelYear": 2025,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "scultura-endurance8000",
@@ -5547,7 +5585,9 @@
         "description": "较细后上叉与 S-Flex 座管强调顺应性，WIRE PORT 收纳前端线管。宽胎和较高把位应结合实际骑姿理解，不能只看车架外观推断阻力。",
         "source": "https://www.merida-bikes.com/en/bike/archive/4866-6500/scultura-endurance-8000",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "modelYear": 2025,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "vanrysel-rcr-pro",
@@ -5813,7 +5853,9 @@
         "description": "品牌对车架和前叉开展风洞开发，介绍的主要偏航角范围为 −15° 至 +15°。这些设计信息不等于本网站获得了完整风洞数据。",
         "source": "https://www.decathlon.co.uk/p/road-bike-rcr-r-pro-shimano-ultegra-di2-with-power-sensor-raw-carbon/360908/c382c382m8929970",
         "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
-      }
+      },
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "y1rs",
@@ -6292,7 +6334,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "v5rs",
@@ -6849,7 +6893,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "teammachine-r01",
@@ -7124,7 +7170,9 @@
         "label": "Tudor · 2026 职业赛场",
         "note": "BMC 官方 2026 赛季报道确认 Tudor 使用 Teammachine R 01 平台；零售 ONE 配置与车队装配可能不同。",
         "source": "https://us.bmc-switzerland.com/blogs/news/ready-set-go-the-2026-season-starts-in-australia"
-      }
+      },
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "cervelo-r5",
@@ -7386,7 +7434,9 @@
         "market": "美国官网标价 · Red AXS",
         "source": "https://www.cervelo.com/en-US/bikes/r5",
         "checkedAt": "2026-09-20"
-      }
+      },
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "cervelo-p5",
@@ -7674,7 +7724,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "speedmax-cfr-tt",
@@ -7908,7 +7960,9 @@
         "market": "德国官网含税标价 · CFR TT 4254",
         "source": "https://www.canyon.com/en-de/road-bikes/triathlon-bikes/speedmax/cfr/speedmax-cfr-tt/4254.html",
         "checkedAt": "2026-09-20"
-      }
+      },
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "winspace-t1600",
@@ -8217,7 +8271,9 @@
           },
           "note": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。"
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "winspace-slc5",
@@ -8526,7 +8582,9 @@
           },
           "note": "官网使用跨配置展示图，照片中的套件、轮组和轮胎与此 Dura-Ace 零售版本可能不同；参数以 Build Specs 表为准。"
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "pardus-robin-evo",
@@ -8789,7 +8847,9 @@
       "colorHex": "#292927",
       "imageRatio": 1.6,
       "imageCredit": "PARDUS 官方产品图片",
-      "weightLabel": "车架重量"
+      "weightLabel": "车架重量",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "pardus-spark-evo4",
@@ -9119,7 +9179,9 @@
             }
           }
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "sunpeed-mars-a-pro",
@@ -9379,7 +9441,9 @@
       "colorHex": "#813742",
       "imageRatio": 1.5810276679841897,
       "imageCredit": "SUNPEED 官方产品图片",
-      "imageNote": "本档案选择 PRO 配置；同一官方产品页也列有普通 MARS-A，请按版本核对。"
+      "imageNote": "本档案选择 PRO 配置；同一官方产品页也列有普通 MARS-A，请按版本核对。",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "sunpeed-universe",
@@ -9637,7 +9701,9 @@
       "color": "粉紫渐变（官网色图）",
       "colorHex": "#c898b3",
       "imageRatio": 1.499531396438613,
-      "imageCredit": "SUNPEED 官方产品图片"
+      "imageCredit": "SUNPEED 官方产品图片",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "sworks-venge",
@@ -9896,7 +9962,9 @@
       "color": "Black / Silver Holographic",
       "colorHex": "#303237",
       "imageRatio": 1.639344262295082,
-      "imageCredit": "SPECIALIZED 官方产品图片"
+      "imageCredit": "SPECIALIZED 官方产品图片",
+      "modelYear": 2019,
+      "yearNote": "取自已收录的官方年份版本；不以资料核对日期代替。"
     },
     {
       "id": "tarmac-sl6",
@@ -10167,7 +10235,9 @@
       "color": "Satin Carbon / Tarmac Black",
       "colorHex": "#303237",
       "imageRatio": 1.6376663254861823,
-      "imageCredit": "SPECIALIZED 官方产品图片"
+      "imageCredit": "SPECIALIZED 官方产品图片",
+      "modelYear": 2020,
+      "yearNote": "取自已收录的官方年份版本；不以资料核对日期代替。"
     },
     {
       "id": "diverge-comp-carbon",
@@ -10427,7 +10497,9 @@
       "color": "Gloss Birch / White",
       "colorHex": "#dfdfd1",
       "imageRatio": 1.7758046614872365,
-      "imageCredit": "SPECIALIZED 官方产品图片"
+      "imageCredit": "SPECIALIZED 官方产品图片",
+      "modelYear": 2025,
+      "yearNote": "取自已收录的官方年份版本；不以资料核对日期代替。"
     },
     {
       "id": "revolt-advanced0",
@@ -10687,7 +10759,9 @@
       "color": "Gloss Aurora Noise",
       "colorHex": "#9b9f8f",
       "imageRatio": 1.6,
-      "imageCredit": "GIANT 官方产品图片"
+      "imageCredit": "GIANT 官方产品图片",
+      "modelYear": 2025,
+      "yearNote": "取自已收录的官方年份版本；不以资料核对日期代替。"
     },
     {
       "id": "aethos-expert",
@@ -10949,7 +11023,9 @@
         "source": "https://www.specialized.com/us/en/aethos-expert-shimano-ultegra-di2/p/199442",
         "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
       },
-      "imageNote": "官方存档展示图的零件外观可能与更新后的 Di2 配置表不同；参数以所选官方配置表为准。"
+      "imageNote": "官方存档展示图的零件外观可能与更新后的 Di2 配置表不同；参数以所选官方配置表为准。",
+      "modelYear": 2022,
+      "yearNote": "取自已收录的官方年份版本；不以资料核对日期代替。"
     },
     {
       "id": "aethos2-expert",
@@ -11210,7 +11286,9 @@
         "description": "这代整合了前端走线；车架姿态、轮胎和轮组仍需一起讨论，不以隐藏走线代替风洞数据。",
         "source": "https://www.specialized.com/us/en/aethos-2-expert-shimano-ultegra-di2/p/4294984?color=5472524-4294984",
         "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
-      }
+      },
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "scott-addict-rc10",
@@ -11481,7 +11559,9 @@
         "description": "一体把与前端整合可从照片观察；官方未提供本配置可横向比较的风阻数字。",
         "source": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-bike",
         "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
-      }
+      },
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "allez-sprint-comp",
@@ -11739,7 +11819,9 @@
         "source": "https://www.specialized.com/us/en/allez-sprint-comp/p/189818?color=308063-189818",
         "limit": "图片和产品介绍不等于同条件的风阻、刚性或舒适性测试。"
       },
-      "imageNote": "官网存档标题年份与所附 2022 手册不同；本页按产品 ID 189818 与 105 R7000 配置归档，不推断首发年份。"
+      "imageNote": "官网存档标题年份与所附 2022 手册不同；本页按产品 ID 189818 与 105 R7000 配置归档，不推断首发年份。",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "contend-ar1",
@@ -11996,7 +12078,9 @@
         "source": "https://www.giant-bicycles.com/hr/contend-ar-1-2025",
         "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
       },
-      "imageSource": "https://www.giant-bicycles.com/hr/contend-ar-1-2025"
+      "imageSource": "https://www.giant-bicycles.com/hr/contend-ar-1-2025",
+      "modelYear": 2025,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "avail-advanced1",
@@ -12233,7 +12317,9 @@
         "source": "https://www.liv-cycling.com/fr-be/avail-advanced-1-2025",
         "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
       },
-      "imageSource": "https://www.liv-cycling.com/fr-be/avail-advanced-1-2025"
+      "imageSource": "https://www.liv-cycling.com/fr-be/avail-advanced-1-2025",
+      "modelYear": 2025,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "reacto8000",
@@ -12507,7 +12593,9 @@
         "source": "https://www.merida-bikes.com/en/bike/archive/4852-6486/reacto-8000",
         "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
       },
-      "imageSource": "https://www.merida-bikes.com/en/bike/archive/4852-6486/reacto-8000"
+      "imageSource": "https://www.merida-bikes.com/en/bike/archive/4852-6486/reacto-8000",
+      "modelYear": 2025,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "silex8000",
@@ -12765,7 +12853,9 @@
         "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
       },
       "imageNote": "官方 2025 存档页面沿用 MY24 涂装参考图；参数按页面列示的 GRX 825 Di2 版本记录，图示部件可能不同。",
-      "imageSource": "https://www.merida-bikes.com/en/bike/archive/4875/silex-8000"
+      "imageSource": "https://www.merida-bikes.com/en/bike/archive/4875/silex-8000",
+      "modelYear": 2025,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "roubaix-sl8-sport",
@@ -13036,7 +13126,9 @@
         "source": "https://www.specialized.com/us/en/roubaix-sl8-sport-shimano-105/p/4221828",
         "limit": "未录入同一骑手、速度、偏航角及装配条件下的跨车型风阻对比数据。"
       },
-      "imageSource": "https://www.specialized.com/us/en/roubaix-sl8-sport-shimano-105/p/4221828"
+      "imageSource": "https://www.specialized.com/us/en/roubaix-sl8-sport-shimano-105/p/4221828",
+      "modelYear": 2026,
+      "yearNote": "车型年取自该配置的官方版本资料；不是首次发布年份。"
     },
     {
       "id": "cinelli-pressure2",
@@ -13298,7 +13390,9 @@
           "note": "官网现行 Ultegra 涂装图展示 DT Swiss 轮组；当前文字配置表列 Columbus Cento62C 与功率牙盘。图片用于车架和涂装参考，所录参数按文字配置表，订车时需确认。"
         }
       ],
-      "imageSource": "https://cinelli-milano.com/collections/pressure/products/pressure-ii-ultegra-disc-di2?variant=55868948414799"
+      "imageSource": "https://cinelli-milano.com/collections/pressure/products/pressure-ii-ultegra-disc-di2?variant=55868948414799",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "camp-ace3",
@@ -13493,7 +13587,9 @@
         "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html",
         "checkedAt": "2026-09-20"
       },
-      "imageSource": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html"
+      "imageSource": "https://www.campbicycle.com/cn/road-bike/ace-iii-ut.html",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "camp-sr9",
@@ -13688,7 +13784,9 @@
         "source": "https://www.campbicycle.com/cn/road-bike/sr9.html",
         "checkedAt": "2026-09-20"
       },
-      "imageSource": "https://www.campbicycle.com/cn/road-bike/sr9.html"
+      "imageSource": "https://www.campbicycle.com/cn/road-bike/sr9.html",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "bianchi-oltre-rc",
@@ -13953,7 +14051,9 @@
           "y": 13
         }
       ],
-      "imageNote": "采用 YUB21 Dura-Ace 主图；官方颜色切换混入 YUB20 图片，因此仅展示已核实的 ZW 涂装。"
+      "imageNote": "采用 YUB21 Dura-Ace 主图；官方颜色切换混入 YUB20 图片，因此仅展示已核实的 ZW 涂装。",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "bianchi-specialissima-rc-tdf",
@@ -14215,7 +14315,9 @@
           "x": 36,
           "y": 16
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "bianchi-infinito-pro-roubaix",
@@ -14445,7 +14547,9 @@
           "y": 21
         }
       ],
-      "imageNote": "巴黎—鲁贝主题限量零售配置；不将主题名称视为职业车队比赛用车证明。"
+      "imageNote": "巴黎—鲁贝主题限量零售配置；不将主题名称视为职业车队比赛用车证明。",
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "scott-foil-rc10",
@@ -14730,7 +14834,9 @@
           "imageRatio": 1.6666666666666667,
           "source": "https://www.scott-sports.com/global/en/product/scott-foil-rc-10-bike?article=4253418353002"
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
     },
     {
       "id": "cube-agree-c62-race",
@@ -15004,7 +15110,1322 @@
           "x": 33,
           "y": 4
         }
-      ]
+      ],
+      "modelYear": null,
+      "yearNote": "原厂资料未明确对应配置的车型年；不以资料核对年份代替。"
+    },
+    {
+      "id": "caad13-105",
+      "brandId": "cannondale",
+      "name": "Cannondale CAAD13 105",
+      "family": "CAAD13 105",
+      "build": "Shimano 105 机械 12 速",
+      "edition": "国际官网 C13403U · 12 速配置",
+      "modelYear": 2023,
+      "yearNote": "官方产品元数据 7799-COLL2023 与 C23 主图；记录 2023 系列的现行 12 速配置。",
+      "kind": "全能公路",
+      "description": "CAAD 系列的铝架竞赛路线，配合降低的后上叉、碳纤维前叉与 50/34 紧凑双盘。适合对照碳架，看材料、轮组与整车定位怎样影响选择。",
+      "collections": ["current", "classic"],
+      "image": "/bikes/caad.png",
+      "imageCredit": "Cannondale",
+      "imageSource": "https://www.cannondale.com/en/bikes/road/race/caad13/caad13-105",
+      "imageRatio": 1.6433853738701725,
+      "color": "Matte Black",
+      "colorHex": "#272b28",
+      "source": "https://www.cannondale.com/en/bikes/road/race/caad13/caad13-105",
+      "sourceLabel": "厂商官方 · 国际官网 C13403U · 12 速配置",
+      "checkedAt": "2026-09-21",
+      "weight": "未公布",
+      "weightNote": "对应官方整车配置未列重量，不以车架重量代替整车重量。",
+      "groupset": "Shimano 105 机械 12 速",
+      "hasPowerMeter": false,
+      "material": "铝合金",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "SmartForm C1 Premium 铝合金",
+          "specs": [
+            ["前叉", "全碳纤维 CAAD13 SAVE"],
+            ["五通", "BB30a"],
+            ["轴规格", "前 12×100 / 后 12×142 mm"]
+          ],
+          "description": "保留铝合金主车架与碳前叉的材料区别。",
+          "x": 55,
+          "y": 43
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano 105 机械 12 速",
+          "specs": [
+            ["变速", "2×12 速 · 机械拉线"],
+            ["制动", "105 7170 液压碟刹 · 160/160 mm"]
+          ],
+          "description": "不是 105 Di2 电变配置。",
+          "x": 81,
+          "y": 6.6
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano 105 R7100",
+          "specs": [
+            ["结构", "双盘曲柄"],
+            ["中轴", "FSA BB30 Bearing / EL213"]
+          ],
+          "description": "曲柄与车架五通需通过对应中轴配合。",
+          "x": 50,
+          "y": 75.9
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "105 50/34T",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "description": "紧凑双盘搭配最大 36T 飞轮。",
+          "x": 43.6,
+          "y": 81.2
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "105 12 速飞轮",
+          "specs": [
+            ["齿数", "11–36T"],
+            ["速别", "12 速"]
+          ],
+          "description": "最低齿比为 34/36，低于 1:1。",
+          "x": 19.5,
+          "y": 63.3
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未配功率计",
+          "specs": [
+            ["原配", "官方清单未列功率计"],
+            ["测量数据", "需要另配传感器"]
+          ],
+          "description": "不把普通 105 曲柄当成功率曲柄。",
+          "x": 47,
+          "y": 66
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss R470 DB",
+          "specs": [
+            ["轮圈", "铝合金 · 28 孔"],
+            ["花鼓", "Formula CL-712 / RXC-400"]
+          ],
+          "description": "产品主图轮圈字样与清单不同，规格以文字清单为准。",
+          "x": 93.5,
+          "y": 90.4
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Zaffiro Pro Slick",
+          "specs": [
+            ["尺寸", "700×25c"],
+            ["胎压", "按轮胎与轮圈原厂限制选择"]
+          ],
+          "description": "本条目保留此版本原配宽度。",
+          "x": 92,
+          "y": 42
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Cannondale 3 Compact",
+          "specs": [
+            ["材料", "6061 铝合金"],
+            ["把立", "Cannondale 3 · 31.8 mm · 7°"]
+          ],
+          "description": "分体把立让长度调整更直接。",
+          "x": 73.5,
+          "y": 10.5
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "HollowGram 27 KNØT",
+          "specs": [
+            ["材料", "铝合金"],
+            ["长度 / 后飘", "330 / 15 mm"]
+          ],
+          "description": "KNØT 截面应使用对应夹具。",
+          "x": 33.5,
+          "y": 15.6
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Aliante Delta",
+          "specs": [
+            ["导轨", "S-alloy"],
+            ["宽度 / 重量", "该整车明细未完整公布"]
+          ],
+          "description": "曲面坐垫，舒适程度仍需结合实际骑姿。",
+          "x": 31,
+          "y": 4
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "44",
+            "seatTube": 404,
+            "chainstay": 408,
+            "bbDrop": 79,
+            "headTube": 94,
+            "seatAngle": 74.5,
+            "headAngle": 70.9,
+            "reach": 370,
+            "stack": 505,
+            "wheelbase": 976
+          },
+          {
+            "size": "48",
+            "seatTube": 442,
+            "chainstay": 408,
+            "bbDrop": 74,
+            "headTube": 114,
+            "seatAngle": 74.3,
+            "headAngle": 71.2,
+            "reach": 374,
+            "stack": 520,
+            "wheelbase": 985
+          },
+          {
+            "size": "51",
+            "seatTube": 481,
+            "chainstay": 408,
+            "bbDrop": 74,
+            "headTube": 130,
+            "seatAngle": 74.1,
+            "headAngle": 71.2,
+            "reach": 378,
+            "stack": 535,
+            "wheelbase": 994
+          },
+          {
+            "size": "54",
+            "seatTube": 519,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 154,
+            "seatAngle": 73.7,
+            "headAngle": 71.2,
+            "reach": 384,
+            "stack": 555,
+            "wheelbase": 1008
+          },
+          {
+            "size": "56",
+            "seatTube": 540,
+            "chainstay": 408,
+            "bbDrop": 72,
+            "headTube": 164,
+            "seatAngle": 73.3,
+            "headAngle": 73,
+            "reach": 389,
+            "stack": 575,
+            "wheelbase": 992
+          },
+          {
+            "size": "58",
+            "seatTube": 562,
+            "chainstay": 408,
+            "bbDrop": 69,
+            "headTube": 188,
+            "seatAngle": 72.9,
+            "headAngle": 73,
+            "reach": 395,
+            "stack": 595,
+            "wheelbase": 1005
+          },
+          {
+            "size": "60",
+            "seatTube": 583,
+            "chainstay": 408,
+            "bbDrop": 69,
+            "headTube": 209,
+            "seatAngle": 72.5,
+            "headAngle": 73,
+            "reach": 400,
+            "stack": 615,
+            "wheelbase": 1016
+          },
+          {
+            "size": "62",
+            "seatTube": 604,
+            "chainstay": 408,
+            "bbDrop": 69,
+            "headTube": 230,
+            "seatAngle": 72.1,
+            "headAngle": 73,
+            "reach": 406,
+            "stack": 635,
+            "wheelbase": 1028
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cannondale.com/en/bikes/road/race/caad13/caad13-105",
+        "sourceLabel": "原厂产品页 · 逐尺码几何表",
+        "note": "按对应平台官方几何录入，长度统一为 mm、角度为 °；尺码表不代表当前库存。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "CAAD 系列的铝架竞赛路线，配合降低的后上叉、碳纤维前叉与 50/34 紧凑双盘。适合对照碳架，看材料、轮组与整车定位怎样影响选择。",
+        "source": "https://www.cannondale.com/en/bikes/road/race/caad13/caad13-105",
+        "limit": "结构与用途说明不等于风阻测量，不根据外观推算 CdA 或进行跨车型瓦数排名。"
+      },
+      "imageNote": "原厂 C13403U 主图轮圈可见 R460 标识，但现行文字配置列 R470；图片仅作外观参考，规格按文字记录。"
+    },
+    {
+      "id": "synapse-carbon2",
+      "brandId": "cannondale",
+      "name": "Cannondale Synapse Carbon 2",
+      "family": "Synapse Carbon 2",
+      "build": "Shimano Ultegra Di2",
+      "edition": "2025 · 美国版 C12205U",
+      "modelYear": 2025,
+      "yearNote": "官方产品元数据 4668-COLL2025 与 C25 主图，对应 C12205U。",
+      "kind": "长途耐力",
+      "description": "Synapse 将长距离舒适、32 mm 原配胎与下管储物整合在一起。几何随尺码改变后下叉长度，兼顾不同身高骑手的车身比例。",
+      "collections": ["current"],
+      "image": "/bikes/synapse2.png",
+      "imageCredit": "Cannondale",
+      "imageSource": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-2",
+      "imageRatio": 1.7226528854435832,
+      "color": "Grey",
+      "colorHex": "#909994",
+      "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-2",
+      "sourceLabel": "厂商官方 · 2025 · 美国版 C12205U",
+      "checkedAt": "2026-09-21",
+      "weight": "未公布",
+      "weightNote": "对应官方整车配置未列重量，不以车架重量代替整车重量。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Synapse Carbon",
+          "specs": [
+            ["五通", "BSA 68 mm"],
+            ["尾钩", "UDH"],
+            ["储物", "下管 StashPort"]
+          ],
+          "description": "兼容 SmartSense Gen 2 不代表本配置已安装灯光与雷达。",
+          "x": 55,
+          "y": 47.4
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra ST-R8170",
+          "specs": [
+            ["变速", "Di2 · 2×12 速"],
+            ["碟片", "CL800 · 160/160 mm"]
+          ],
+          "description": "无线手变搭配电子前后拨。",
+          "x": 80.5,
+          "y": 5.6
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Ultegra FC-R8100",
+          "specs": [
+            ["长度", "165–175 mm，随尺码"],
+            ["中轴", "Shimano BSA 68"]
+          ],
+          "description": "54/56 码为 172.5 mm，按官方尺码装配。",
+          "x": 50,
+          "y": 74.5
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 50/34T",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "description": "配合 11–34T 飞轮获得 1:1 最低齿比。",
+          "x": 44,
+          "y": 81.4
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra 12 速",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "适合以稳定节奏完成长距离起伏路线。",
+          "x": 19,
+          "y": 63.7
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未配功率计",
+          "specs": [
+            ["原配", "官方清单未列功率计"],
+            ["测量数据", "需要另配传感器"]
+          ],
+          "description": "普通 R8100 不等同于带测量单元的 R8100-P。",
+          "x": 47,
+          "y": 67
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss ERC LOG 45",
+          "specs": [
+            ["框高 / 内宽", "45 / 22 mm"],
+            ["花鼓", "DT Swiss 370 · 后轮 LN Ratchet"],
+            ["辐条数", "24 孔"]
+          ],
+          "description": "碳轮圈为 Tubeless Ready，轮胎结构需另行核对。",
+          "x": 92.5,
+          "y": 88.7
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Rubino Pro IV",
+          "specs": [
+            ["尺寸", "700×32c"],
+            ["胎压", "按轮胎与轮圈原厂限制选择"]
+          ],
+          "description": "按整车清单保留具体版本，不自动标成真空胎。",
+          "x": 92,
+          "y": 42
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Vision Trimax Aero Alloy",
+          "specs": [
+            ["把宽", "400 mm（44–51）/ 420 mm（54–61）"],
+            ["把立", "Cannondale C1 Conceal 铝合金"]
+          ],
+          "description": "分体式铝把，走线经把立区域隐藏。",
+          "x": 73,
+          "y": 9.4
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "C1 Aero 27 Carbon",
+          "specs": [
+            ["长度", "330 mm"],
+            ["后飘", "0 mm（44–48）/ 15 mm（51–61）"]
+          ],
+          "description": "专用座管可配合 SmartSense 系统。",
+          "x": 33.4,
+          "y": 14.9
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Vento Argo X5",
+          "specs": [
+            ["宽度", "140 mm"],
+            ["宽度 / 重量", "该整车明细未完整公布"]
+          ],
+          "description": "官网正文写 R5、明细写 X5；这里以配置明细为准，保留这个差异。",
+          "x": 30.5,
+          "y": 2.3
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "44",
+            "seatTube": 407,
+            "chainstay": 425,
+            "bbDrop": 75,
+            "headTube": 91,
+            "seatAngle": 73,
+            "headAngle": 69.8,
+            "reach": 366,
+            "stack": 510,
+            "wheelbase": 1003
+          },
+          {
+            "size": "48",
+            "seatTube": 407,
+            "chainstay": 425,
+            "bbDrop": 75,
+            "headTube": 108,
+            "seatAngle": 73,
+            "headAngle": 70.9,
+            "reach": 371,
+            "stack": 530,
+            "wheelbase": 1005
+          },
+          {
+            "size": "51",
+            "seatTube": 443,
+            "chainstay": 425,
+            "bbDrop": 75,
+            "headTube": 127,
+            "seatAngle": 73,
+            "headAngle": 71.3,
+            "reach": 376,
+            "stack": 550,
+            "wheelbase": 1013
+          },
+          {
+            "size": "54",
+            "seatTube": 480,
+            "chainstay": 425,
+            "bbDrop": 73,
+            "headTube": 150,
+            "seatAngle": 73,
+            "headAngle": 71.3,
+            "reach": 381,
+            "stack": 570,
+            "wheelbase": 1026
+          },
+          {
+            "size": "56",
+            "seatTube": 520,
+            "chainstay": 430,
+            "bbDrop": 73,
+            "headTube": 171,
+            "seatAngle": 73,
+            "headAngle": 71.3,
+            "reach": 387,
+            "stack": 590,
+            "wheelbase": 1044
+          },
+          {
+            "size": "58",
+            "seatTube": 550,
+            "chainstay": 430,
+            "bbDrop": 70,
+            "headTube": 196,
+            "seatAngle": 73,
+            "headAngle": 71.3,
+            "reach": 393,
+            "stack": 610,
+            "wheelbase": 1058
+          },
+          {
+            "size": "61",
+            "seatTube": 590,
+            "chainstay": 430,
+            "bbDrop": 70,
+            "headTube": 227,
+            "seatAngle": 73,
+            "headAngle": 71.3,
+            "reach": 402,
+            "stack": 640,
+            "wheelbase": 1077
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-2",
+        "sourceLabel": "原厂产品页 · 逐尺码几何表",
+        "note": "按对应平台官方几何录入，长度统一为 mm、角度为 °；尺码表不代表当前库存。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "Synapse 将长距离舒适、32 mm 原配胎与下管储物整合在一起。几何随尺码改变后下叉长度，兼顾不同身高骑手的车身比例。",
+        "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-2",
+        "limit": "结构与用途说明不等于风阻测量，不根据外观推算 CdA 或进行跨车型瓦数排名。"
+      }
+    },
+    {
+      "id": "topstone-carbon2-lefty",
+      "brandId": "cannondale",
+      "name": "Cannondale Topstone Carbon 2 Lefty",
+      "family": "Topstone Carbon 2 Lefty",
+      "build": "Shimano GRX 机械 12 速",
+      "edition": "美国官网 C15203U · Lefty 700c",
+      "modelYear": null,
+      "yearNote": "官方页面未明确此配置的车型年，保留产品编号。",
+      "kind": "砾石公路",
+      "description": "单边 Lefty Oliver 前叉提供 30 mm 行程，后端采用 Kingpin 结构，再配升降座管与 44 mm 轮胎。这是一种明显偏向崎岖路线的砾石车选择。",
+      "collections": ["current"],
+      "image": "/bikes/topstone.png",
+      "imageCredit": "Cannondale",
+      "imageSource": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-2-lefty",
+      "imageRatio": 1.6877637130801688,
+      "color": "Chalk / Coffee",
+      "colorHex": "#765749",
+      "source": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-2-lefty",
+      "sourceLabel": "厂商官方 · 美国官网 C15203U · Lefty 700c",
+      "checkedAt": "2026-09-21",
+      "weight": "未公布",
+      "weightNote": "对应官方整车配置未列重量，不以车架重量代替整车重量。",
+      "groupset": "Shimano GRX 机械 12 速",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Topstone Carbon / Kingpin",
+          "specs": [
+            ["前叉", "Lefty Oliver · 30 mm 行程 · 可锁止"],
+            ["五通", "BSA 68 mm"],
+            ["后轴", "12×142 mm"]
+          ],
+          "description": "Kingpin 利用后端结构顺应路面；本车并非普通刚性前叉公路车。",
+          "x": 55,
+          "y": 47.3
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano GRX 820",
+          "specs": [
+            ["变速", "机械 1×12 速"],
+            ["制动", "液压碟刹 · 160/160 mm"],
+            ["功能", "手变整合升降座管控制"]
+          ],
+          "description": "后拨为 GRX 822 Shadow RD+。",
+          "x": 78.5,
+          "y": 6.2
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano GRX 610",
+          "specs": [
+            ["配置", "单盘曲柄"],
+            ["中轴", "Shimano BSA 68"]
+          ],
+          "description": "不将 GRX 820 手变级别套用到曲柄型号。",
+          "x": 50,
+          "y": 73.4
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "GRX 40T 单盘",
+          "specs": [
+            ["齿数", "40T"],
+            ["配置", "单盘 · 无前拨"]
+          ],
+          "description": "简化前端传动，没有前拨。",
+          "x": 43.5,
+          "y": 79.3
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano SLX M7100",
+          "specs": [
+            ["齿数", "10–45T"],
+            ["速别", "12 速"]
+          ],
+          "description": "公路手变与山地飞轮的明确原配混搭。",
+          "x": 18.5,
+          "y": 64
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未配功率计",
+          "specs": [
+            ["原配", "官方清单未列功率计"],
+            ["测量数据", "需要另配传感器"]
+          ],
+          "description": "功率计升级需要另外检查曲柄与五通空间。",
+          "x": 46,
+          "y": 66
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss G 540",
+          "specs": [
+            ["内宽", "24 mm · 28 孔"],
+            ["前花鼓", "Lefty 50 · 6 孔碟片"],
+            ["后花鼓", "Shimano TC500 · Center Lock"]
+          ],
+          "description": "Lefty 前轮接口是专用结构，不能直接替换常规 12×100 mm 前轮。",
+          "x": 93.5,
+          "y": 87.3
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Mezcal",
+          "specs": [
+            ["尺寸", "700×44c"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "description": "胎纹与宽度面向碎石和非铺装路线。",
+          "x": 93,
+          "y": 41.8
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Cannondale 2 ShortDrop",
+          "specs": [
+            ["材料", "7050 铝合金"],
+            ["外撇", "12°"]
+          ],
+          "description": "外撇下把增大崎岖路面操控空间。",
+          "x": 72,
+          "y": 9.6
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Cannondale DownLow",
+          "specs": [
+            ["直径", "27.2 mm"],
+            ["行程", "60 / 80 / 100 mm，随尺码"]
+          ],
+          "description": "升降座管让骑手在复杂路面更容易调整身体位置。",
+          "x": 34,
+          "y": 18
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Terra Argo X5",
+          "specs": [
+            ["导轨", "S-alloy"],
+            ["宽度 / 重量", "该整车明细未完整公布"]
+          ],
+          "description": "砾石取向的短鼻坐垫。",
+          "x": 30.5,
+          "y": 2.3
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "seatTube": 410,
+            "chainstay": 420,
+            "bbDrop": 69,
+            "headTube": 105,
+            "seatAngle": 72.4,
+            "headAngle": 69.3,
+            "reach": 361,
+            "stack": 539,
+            "wheelbase": 1012
+          },
+          {
+            "size": "SM",
+            "seatTube": 458,
+            "chainstay": 420,
+            "bbDrop": 64,
+            "headTube": 123,
+            "seatAngle": 72.4,
+            "headAngle": 70.3,
+            "reach": 367,
+            "stack": 555,
+            "wheelbase": 1016
+          },
+          {
+            "size": "MD",
+            "seatTube": 505,
+            "chainstay": 420,
+            "bbDrop": 61,
+            "headTube": 150,
+            "seatAngle": 72.4,
+            "headAngle": 70.5,
+            "reach": 373,
+            "stack": 579,
+            "wheelbase": 1030
+          },
+          {
+            "size": "LG",
+            "seatTube": 553,
+            "chainstay": 420,
+            "bbDrop": 61,
+            "headTube": 177,
+            "seatAngle": 72.4,
+            "headAngle": 70.5,
+            "reach": 379,
+            "stack": 605,
+            "wheelbase": 1046
+          },
+          {
+            "size": "XL",
+            "seatTube": 590,
+            "chainstay": 420,
+            "bbDrop": 59,
+            "headTube": 205,
+            "seatAngle": 72.4,
+            "headAngle": 70.5,
+            "reach": 386,
+            "stack": 629,
+            "wheelbase": 1062
+          }
+        ],
+        "defaultSize": "MD",
+        "source": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-2-lefty",
+        "sourceLabel": "原厂产品页 · 逐尺码几何表",
+        "note": "采用 Topstone Carbon Lefty 700c 专用几何，不混用刚性前叉版本。座管角录入原厂有效角 72.4°，不是弯曲座管的实际管段角。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "单边 Lefty Oliver 前叉提供 30 mm 行程，后端采用 Kingpin 结构，再配升降座管与 44 mm 轮胎。这是一种明显偏向崎岖路线的砾石车选择。",
+        "source": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-2-lefty",
+        "limit": "结构与用途说明不等于风阻测量，不根据外观推算 CdA 或进行跨车型瓦数排名。"
+      },
+      "imageNote": "官方 C15203U 页面所用 C24 主图；页面内部 collection ID 为 2023，年份线索冲突，车型年暂不归类。"
+    },
+    {
+      "id": "cervelo-soloist",
+      "brandId": "cervelo",
+      "name": "Cervélo Soloist Ultegra Di2",
+      "family": "Soloist Ultegra Di2",
+      "build": "Shimano Ultegra Di2 · 4iiii 双边",
+      "edition": "美国官网 0M0STBUI1C",
+      "modelYear": null,
+      "yearNote": "官方页面未明确此配置的车型年，保留产品编号。",
+      "kind": "全能公路",
+      "description": "Soloist 将气动轮廓、一体碳把与日常竞赛取向组合起来。此条目固定为 0M0STBUI1C 的 Ultegra 配置，避免与旧款分体把版本混淆。",
+      "collections": ["current"],
+      "image": "/bikes/soloist.png",
+      "imageCredit": "Cervélo",
+      "imageSource": "https://www.cervelo.com/en-US/bikes/soloist",
+      "imageRatio": 1.8416206261510129,
+      "color": "Black Magic",
+      "colorHex": "#293532",
+      "source": "https://www.cervelo.com/en-US/bikes/soloist",
+      "sourceLabel": "厂商官方 · 美国官网 0M0STBUI1C",
+      "checkedAt": "2026-09-21",
+      "weight": "约 7.17 kg",
+      "weightNote": "官方整车配置表数值；页面未说明称重尺码、脚踏和附件口径。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Soloist 碳纤维车架组",
+          "specs": [
+            ["前叉", "全碳纤维"],
+            ["中轴", "FSA, T47 BBright for 24mm spindle"]
+          ],
+          "description": "两个平台的五通与车身几何分别记录，不因品牌相同而假定所有接口一致。",
+          "x": 53.7,
+          "y": 51.6
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra ST-R8170",
+          "specs": [
+            ["变速", "Di2 · 2×12 速"],
+            ["碟片", "Shimano CL800 Center Lock"]
+          ],
+          "description": "前后拨均为 R8150 系列。",
+          "x": 75,
+          "y": 16.6
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Ultegra FC-R8100",
+          "specs": [
+            ["曲柄长度", "160–172.5 mm，随尺码"],
+            ["54 / 56 码", "170 mm"]
+          ],
+          "description": "注意此配置较短的原配曲柄，不从车架尺码套用习惯值。",
+          "x": 50,
+          "y": 71
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 52/36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "中紧凑双盘搭配 11–34T 飞轮。",
+          "x": 43.5,
+          "y": 76.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra R8100",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "原配链条为 Shimano M8100。",
+          "x": 25.8,
+          "y": 61.4
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision Pro GEN3+",
+          "specs": [
+            ["测量", "双边"],
+            ["配置", "官方原配"]
+          ],
+          "description": "左右侧均有测量单元，和单边推算方案分开记录。",
+          "x": 46,
+          "y": 66.6
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Reserve 42 / 49 TA",
+          "specs": [
+            ["前 / 后框高", "42 / 49 mm"],
+            ["花鼓", "DT Swiss 350"],
+            ["规格", "24 孔 · Tubeless Compatible"]
+          ],
+          "description": "前后不同框高，不能仅看前轮推断整套轮组。",
+          "x": 84.5,
+          "y": 75.9
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Corsa N.EXT TLR G2.0",
+          "specs": [
+            ["尺寸", "700×29c"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "description": "轮胎宽度以此具体整车版本为准。",
+          "x": 84,
+          "y": 43.7
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Cervélo HB18 Carbon",
+          "specs": [
+            ["结构", "一体碳纤维把组"],
+            ["54 码", "400 mm 把宽 / 100 mm 把立"]
+          ],
+          "description": "其他尺码长度不同，调整需核对完整把组。",
+          "x": 69.5,
+          "y": 18.7
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Cervélo SP27 Carbon",
+          "specs": [
+            ["后飘", "全尺码 0 mm"],
+            ["材料", "碳纤维"]
+          ],
+          "description": "专用碳座管，配件互换需核对截面和锁紧结构。",
+          "x": 37.2,
+          "y": 21.2
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Arione R3",
+          "specs": [
+            ["版本", "官方 Ultegra 整车清单"],
+            ["宽度 / 重量", "该整车明细未完整公布"]
+          ],
+          "description": "具体坐垫型号不能用同系列 RED 配置代替。",
+          "x": 35.5,
+          "y": 9.1
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "48",
+            "chainstay": 410,
+            "bbDrop": 77,
+            "headTube": 89.6,
+            "seatAngle": 74.5,
+            "headAngle": 71,
+            "reach": 368.7,
+            "stack": 496.1,
+            "wheelbase": 976.8
+          },
+          {
+            "size": "51",
+            "chainstay": 410,
+            "bbDrop": 77,
+            "headTube": 109.3,
+            "seatAngle": 74,
+            "headAngle": 72,
+            "reach": 376.5,
+            "stack": 520.2,
+            "wheelbase": 977.6
+          },
+          {
+            "size": "54",
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 132,
+            "seatAngle": 73.5,
+            "headAngle": 73,
+            "reach": 383.3,
+            "stack": 544.6,
+            "wheelbase": 978
+          },
+          {
+            "size": "56",
+            "chainstay": 410,
+            "bbDrop": 74,
+            "headTube": 156,
+            "seatAngle": 73,
+            "headAngle": 73,
+            "reach": 391.1,
+            "stack": 567.5,
+            "wheelbase": 992.8
+          },
+          {
+            "size": "58",
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 182.8,
+            "seatAngle": 73,
+            "headAngle": 73,
+            "reach": 400.3,
+            "stack": 590.7,
+            "wheelbase": 1010.3
+          },
+          {
+            "size": "61",
+            "chainstay": 410,
+            "bbDrop": 72,
+            "headTube": 203.7,
+            "seatAngle": 73,
+            "headAngle": 73,
+            "reach": 408.3,
+            "stack": 610.7,
+            "wheelbase": 1024.5
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cervelo.com/en-US/bikes/soloist",
+        "sourceLabel": "原厂产品页 · 逐尺码几何表",
+        "note": "按对应平台官方几何录入，长度统一为 mm、角度为 °；尺码表不代表当前库存。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "Soloist 将气动轮廓、一体碳把与日常竞赛取向组合起来。此条目固定为 0M0STBUI1C 的 Ultegra 配置，避免与旧款分体把版本混淆。",
+        "source": "https://www.cervelo.com/en-US/bikes/soloist",
+        "limit": "结构与用途说明不等于风阻测量，不根据外观推算 CdA 或进行跨车型瓦数排名。"
+      }
+    },
+    {
+      "id": "cervelo-caledonia5",
+      "brandId": "cervelo",
+      "name": "Cervélo Caledonia-5 Ultegra Di2",
+      "family": "Caledonia-5 Ultegra Di2",
+      "build": "Shimano Ultegra Di2 · 4iiii 双边",
+      "edition": "美国官网 0M0CFBUI1C",
+      "modelYear": null,
+      "yearNote": "官方页面未明确此配置的车型年，保留产品编号。",
+      "kind": "长途耐力",
+      "description": "更高的前端、415 mm 后下叉与车架内储物，是 Caledonia-5 的长距离取向。与 Soloist 对照相同尺码，比单看两车相似的气动外观更容易看出差别。",
+      "collections": ["current"],
+      "image": "/bikes/caledonia.png",
+      "imageCredit": "Cervélo",
+      "imageSource": "https://www.cervelo.com/en-US/bikes/caledonia-5",
+      "imageRatio": 1.8416206261510129,
+      "color": "Sandstone",
+      "colorHex": "#cbc2b4",
+      "source": "https://www.cervelo.com/en-US/bikes/caledonia-5",
+      "sourceLabel": "厂商官方 · 美国官网 0M0CFBUI1C",
+      "checkedAt": "2026-09-21",
+      "weight": "约 7.38 kg",
+      "weightNote": "官方整车配置表数值；页面未说明称重尺码、脚踏和附件口径。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Caledonia-5 碳纤维车架组",
+          "specs": [
+            ["前叉", "全碳纤维"],
+            ["中轴", "FSA, BBright thread together for 24mm spindle"]
+          ],
+          "description": "两个平台的五通与车身几何分别记录，不因品牌相同而假定所有接口一致。",
+          "x": 53.7,
+          "y": 51.6
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Ultegra ST-R8170",
+          "specs": [
+            ["变速", "Di2 · 2×12 速"],
+            ["碟片", "Shimano CL800 Center Lock"]
+          ],
+          "description": "前后拨均为 R8150 系列。",
+          "x": 74,
+          "y": 14
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Ultegra FC-R8100",
+          "specs": [
+            ["曲柄长度", "160–172.5 mm，随尺码"],
+            ["54 / 56 码", "170 mm"]
+          ],
+          "description": "注意此配置较短的原配曲柄，不从车架尺码套用习惯值。",
+          "x": 50,
+          "y": 70.5
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Ultegra 52/36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "中紧凑双盘搭配 11–34T 飞轮。",
+          "x": 43.5,
+          "y": 76.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Ultegra R8100",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "原配链条为 Shimano M8100。",
+          "x": 25.8,
+          "y": 61.4
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision Pro GEN3+",
+          "specs": [
+            ["测量", "双边"],
+            ["配置", "官方原配"]
+          ],
+          "description": "左右侧均有测量单元，和单边推算方案分开记录。",
+          "x": 45.5,
+          "y": 66
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Reserve 42 / 49 TA",
+          "specs": [
+            ["前 / 后框高", "42 / 49 mm"],
+            ["花鼓", "DT Swiss 350"],
+            ["规格", "24 孔 · Tubeless Compatible"]
+          ],
+          "description": "前后不同框高，不能仅看前轮推断整套轮组。",
+          "x": 84.5,
+          "y": 75.9
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Corsa N.EXT TLR G2.0",
+          "specs": [
+            ["尺寸", "700×32c"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "description": "轮胎宽度以此具体整车版本为准。",
+          "x": 84,
+          "y": 43.7
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Cervélo HB18 Carbon",
+          "specs": [
+            ["结构", "一体碳纤维把组"],
+            ["54 码", "400 mm 把宽 / 100 mm 把立"]
+          ],
+          "description": "其他尺码长度不同，调整需核对完整把组。",
+          "x": 69,
+          "y": 16.5
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Cervélo SP33 Carbon",
+          "specs": [
+            ["后飘", "48–56：0 mm；58–61：15 mm"],
+            ["材料", "碳纤维"]
+          ],
+          "description": "专用碳座管，配件互换需核对截面和锁紧结构。",
+          "x": 37,
+          "y": 21.2
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Nago R4 PAS Tirox Lightweight",
+          "specs": [
+            ["版本", "官方 Ultegra 整车清单"],
+            ["宽度 / 重量", "该整车明细未完整公布"]
+          ],
+          "description": "具体坐垫型号不能用同系列 RED 配置代替。",
+          "x": 35.5,
+          "y": 9.5
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "48",
+            "chainstay": 415,
+            "bbDrop": 76.5,
+            "headTube": 89.5,
+            "seatAngle": 74.5,
+            "headAngle": 70.5,
+            "reach": 360,
+            "stack": 505,
+            "wheelbase": 983.3
+          },
+          {
+            "size": "51",
+            "chainstay": 415,
+            "bbDrop": 76.5,
+            "headTube": 110.3,
+            "seatAngle": 74,
+            "headAngle": 71.5,
+            "reach": 369,
+            "stack": 530,
+            "wheelbase": 985.6
+          },
+          {
+            "size": "54",
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 136.3,
+            "seatAngle": 73.5,
+            "headAngle": 72,
+            "reach": 378,
+            "stack": 555,
+            "wheelbase": 996.3
+          },
+          {
+            "size": "56",
+            "chainstay": 415,
+            "bbDrop": 74,
+            "headTube": 162.6,
+            "seatAngle": 73,
+            "headAngle": 72,
+            "reach": 387,
+            "stack": 580,
+            "wheelbase": 1013.4
+          },
+          {
+            "size": "58",
+            "chainstay": 415,
+            "bbDrop": 71.5,
+            "headTube": 191.5,
+            "seatAngle": 73,
+            "headAngle": 72,
+            "reach": 396,
+            "stack": 605,
+            "wheelbase": 1031.8
+          },
+          {
+            "size": "61",
+            "chainstay": 415,
+            "bbDrop": 71.5,
+            "headTube": 217.8,
+            "seatAngle": 73,
+            "headAngle": 72,
+            "reach": 405,
+            "stack": 630,
+            "wheelbase": 1048.9
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cervelo.com/en-US/bikes/caledonia-5",
+        "sourceLabel": "原厂产品页 · 逐尺码几何表",
+        "note": "按对应平台官方几何录入，长度统一为 mm、角度为 °；尺码表不代表当前库存。"
+      },
+      "aero": {
+        "title": "设计重点与使用场景",
+        "description": "更高的前端、415 mm 后下叉与车架内储物，是 Caledonia-5 的长距离取向。与 Soloist 对照相同尺码，比单看两车相似的气动外观更容易看出差别。",
+        "source": "https://www.cervelo.com/en-US/bikes/caledonia-5",
+        "limit": "结构与用途说明不等于风阻测量，不根据外观推算 CdA 或进行跨车型瓦数排名。"
+      },
+      "imageNote": "对应 Ultegra 官方主图。Caledonia-5 图为 Sandstone，页面摘要默认色为 Five Black；配置属于同一 Ultegra 版本。"
     }
   ]
 }

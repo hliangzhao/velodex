@@ -137,9 +137,9 @@ export default function Discover() {
                   </a>
                   <a href={`${base}?view=teams`}>
                     <small>INSIDE THE PELOTON</small>
-                    <h3>从车队，认识赛车。</h3>
-                    <p>沿着职业赛场，找到值得细看的设计。</p>
-                    <span>走进车队档案 →</span>
+                    <h3>从车手，认识赛车。</h3>
+                    <p>从人物到车队，沿着职业赛场看器材。</p>
+                    <span>走进车队与车手 →</span>
                   </a>
                 </div>
               </section>

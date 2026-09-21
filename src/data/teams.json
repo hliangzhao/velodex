@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "checkedAt": "2026-09-20",
+  "checkedAt": "2026-09-21",
   "teams": [
     {
       "id": "uae",
@@ -44,7 +44,10 @@
       "bikeIds": ["cervelo-s5", "cervelo-r5", "cervelo-p5"],
       "heroBikeId": "cervelo-s5",
       "sources": [
-        { "label": "车队官方 · 2026 用车发布", "url": "https://2026.teamvismaleaseabike.com/" }
+        {
+          "label": "车队官方 · 2026 用车发布",
+          "url": "https://2026.teamvismaleaseabike.com/"
+        }
       ]
     },
     {
@@ -140,6 +143,118 @@
         {
           "label": "BMC 官方 · 2026 赛季揭幕",
           "url": "https://us.bmc-switzerland.com/blogs/news/ready-set-go-the-2026-season-starts-in-australia"
+        }
+      ]
+    },
+    {
+      "id": "lidl-trek",
+      "name": "Lidl–Trek",
+      "alias": "利多 崔克 佩德森 米兰 Mads Pedersen Jonathan Milan",
+      "short": "LIDL–TREK",
+      "brandId": "trek",
+      "accent": "#397d9c",
+      "headline": "一台 Madone，连接古典赛与冲刺。",
+      "description": "Trek 与 Lidl 的合作覆盖男子、女子和发展车队。本期以男子公路队为入口，沿着 Madone 看竞赛车如何兼顾冲刺、爬坡与操控。",
+      "equipment": [
+        ["整车合作", "Trek"],
+        ["图鉴平台", "Madone Gen 8"],
+        ["观察人物", "Mads Pedersen / Jonathan Milan"]
+      ],
+      "lookFor": "Pedersen 参与 Madone Gen 8 测试的官方故事，展示职业车手怎样给出操控反馈。几何、胎宽与把组同样值得看。",
+      "bikeIds": ["madone-slr9"],
+      "heroBikeId": "madone-slr9",
+      "sources": [
+        {
+          "label": "Trek · 2026 赛季队服与车队",
+          "url": "https://racing.trekbikes.com/stories/lidl-trek/the-latest-version-of-an-icon-lidl-treks-2026-kit-is-here"
+        },
+        {
+          "label": "Trek · Madone 开发与车手反馈",
+          "url": "https://racing.trekbikes.com/stories/lidl-trek/madone-gen-8-development-engineering-testing"
+        }
+      ]
+    },
+    {
+      "id": "alpecin",
+      "name": "Alpecin–Premier Tech",
+      "alias": "欧倍青 范德普尔 飞利浦森 Mathieu van der Poel Jasper Philipsen",
+      "short": "ALPECIN",
+      "brandId": "canyon",
+      "accent": "#435b96",
+      "headline": "从越野根基，看到古典赛的速度。",
+      "description": "2026 官方名单列出范德普尔与菲利普森；Canyon 是车队主要合作伙伴。图鉴以 Aeroad 为入口，连接古典赛、公路冲刺与器材选择。",
+      "equipment": [
+        ["整车合作", "Canyon"],
+        ["合作伙伴", "Shimano / Pirelli / Selle Italia"],
+        ["赛季名称", "2026 · Alpecin–Premier Tech"]
+      ],
+      "lookFor": "气动车同样会出现在石板路上。先看轮胎、前端和骑手姿态，不把“气动”简单理解成只适合平整公路。",
+      "bikeIds": ["aeroad-cfr", "ultimate-slx8", "speedmax-cfr-tt"],
+      "heroBikeId": "aeroad-cfr",
+      "sources": [
+        {
+          "label": "车队官方 · 2026 名单",
+          "url": "https://www.alpecin-premiertech.com/world-tour-team/"
+        },
+        {
+          "label": "车队官方 · 主要合作伙伴",
+          "url": "https://www.alpecin-premiertech.com/main-partners/"
+        },
+        {
+          "label": "车队官方 · 器材合作伙伴",
+          "url": "https://www.alpecin-premiertech.com/official-partners/"
+        }
+      ]
+    },
+    {
+      "id": "ef",
+      "name": "EF Education–EasyPost",
+      "alias": "英孚 EF Cannondale Ben Healy 理查德 卡拉帕斯",
+      "short": "EF",
+      "brandId": "cannondale",
+      "accent": "#c94e8c",
+      "headline": "用醒目的粉色，认识 SuperSix。",
+      "description": "EF 的官方 2026 器材介绍展示了 Alex Baudin 的 LAB71 SuperSix EVO。本站以同系 EVO 零售车连接图鉴，另延伸到 Cannondale 的铝架、耐力与砾石路线。",
+      "equipment": [
+        ["整车合作", "Cannondale"],
+        ["赛场参考", "2026 LAB71 SuperSix EVO"],
+        ["图鉴版本", "SuperSix EVO 2，不等于 LAB71"]
+      ],
+      "lookFor": "相同家族名称不代表相同碳布、重量和轮组。对照车队实装与零售版本，留意车架等级和装配口径。",
+      "bikeIds": ["supersix-evo2", "caad13-105", "synapse-carbon2", "topstone-carbon2-lefty"],
+      "heroBikeId": "supersix-evo2",
+      "sources": [
+        {
+          "label": "EF 官方 · 2026 LAB71 车手装配",
+          "url": "https://www.efprocycling.com/racing/bike-check-what-makes-alex-baudin-s-2026-lab71-supersix-evo-cannondale-s-fastest-race-bike-yet/"
+        }
+      ]
+    },
+    {
+      "id": "ineos",
+      "name": "Netcompany INEOS Cycling Team",
+      "alias": "英力士 掷弹兵 Pinarello 皮纳瑞罗 INEOS Grenadiers",
+      "short": "NETCOMPANY INEOS",
+      "brandId": "pinarello",
+      "accent": "#ba533b",
+      "headline": "一段长期合作，一条鲜明轮廓。",
+      "description": "2026 环意起，车队以 Netcompany INEOS Cycling Team 的名称参赛。Pinarello 与其长期合作于 2025 年再延长三年；Dogma F 是认识这段关系与赛车设计的入口。",
+      "equipment": [
+        ["整车合作", "Pinarello"],
+        ["赛季内更名", "2026 环意起 · 原 INEOS Grenadiers"],
+        ["图鉴平台", "Dogma F · M40X 世代"]
+      ],
+      "lookFor": "把 ONDA 前叉的轮廓与车架几何分开观察；造型识别度并不能替代对尺码和骑姿的判断。",
+      "bikeIds": ["dogma-f"],
+      "heroBikeId": "dogma-f",
+      "sources": [
+        {
+          "label": "车队官方 · 2026 更名与新合作",
+          "url": "https://netcompanyineos.com/partners/netcompany/"
+        },
+        {
+          "label": "Pinarello 官方 · 三年续约",
+          "url": "https://pinarello.com/uk/en/news/three-more"
         }
       ]
     }

@@ -12,6 +12,37 @@ export default function GenerationsPage() {
     </PageFrame>
   );
 }
+function GenerationPhoto({
+  node,
+  catalog,
+}: {
+  node: (typeof generations)[number]['nodes'][number];
+  catalog: Catalog;
+}) {
+  const bike = catalog.bikes.find((b) => b.id === node.bikeId);
+  const src = node.image || bike?.image;
+  if (!src) return null;
+  return (
+    <figure className={`generation-photo ${node.image ? 'archive-photo' : ''}`}>
+      <a
+        href={node.imageSource || bike?.imageSource || node.source}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`${node.name} 图片原始出处`}
+      >
+        <img
+          src={imageUrl(src)}
+          alt={node.image ? `${node.name} · ${node.imageCaption}` : `${bike!.name} 同代图鉴参考车`}
+          loading="lazy"
+        />
+      </a>
+      <figcaption>
+        {node.imageCaption ||
+          `同代图鉴参考图 · ${bike!.edition} · ${bike!.imageCredit}。图中涂装与配置年份不一定等于本节点年份。`}
+      </figcaption>
+    </figure>
+  );
+}
 function Generations({ catalog }: { catalog: Catalog }) {
   const query = new URLSearchParams(location.search),
     initial = generations.find((g) => g.id === query.get('family')) || generations[0];
@@ -88,32 +119,7 @@ function Generations({ catalog }: { catalog: Catalog }) {
       </nav>
       <div className="generation-focus">
         <div className="generation-visual">
-          {bike ? (
-            <>
-              <img src={imageUrl(bike.image)} alt={`${bike.name} 同代图鉴参考车`} />
-              <p>
-                同代图鉴参考图 · {bike.edition} · {bike.imageCredit}
-                <br />
-                图中涂装与配置年份不一定等于本节点年份。
-              </p>
-            </>
-          ) : (
-            <div className="generation-type-art">
-              <small>ARCHIVE / {node.basis}</small>
-              <strong>{node.year}</strong>
-              <span>
-                {family.short} · {node.name}
-              </span>
-              <p>
-                从原厂历史资料认识这一代。
-                <br />
-                本站暂未收录对应整车照片。
-              </p>
-              <a href={node.source} target="_blank" rel="noreferrer">
-                看原厂历史图与资料 ↗
-              </a>
-            </div>
-          )}
+          <GenerationPhoto node={node} catalog={catalog} />
         </div>
         <article className="generation-copy">
           <span className="eyebrow">
@@ -171,6 +177,7 @@ function Generations({ catalog }: { catalog: Catalog }) {
                     {n.year} · {n.basis}
                   </span>
                   <h3>{n.name}</h3>
+                  <GenerationPhoto node={n} catalog={catalog} />
                   <p>{n.change}</p>
                   <small>观察重点</small>
                   <p>{n.look}</p>
@@ -202,7 +209,7 @@ function Generations({ catalog }: { catalog: Catalog }) {
         </button>
       </div>
       <p className="work-note">
-        资料整理：2026-09-20。照片使用现有图鉴同代车型，历史节点没有照片时不以新款代替。发布年份、车型年与涂装年份分别注明。
+        资料整理：2026-09-21。历史节点使用品牌官方档案照片，其余节点使用图鉴中的同代车型，图片说明中标注出处与对应版本。发布年份、车型年与涂装年份分别注明。
       </p>
     </>
   );

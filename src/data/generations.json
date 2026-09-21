@@ -17,7 +17,10 @@
         "change": "轻量车架与相对独立的前端部件。",
         "look": "先看后上叉接点，再看把立与头管的关系。",
         "source": "https://www.specialized.com/th/en/bike-archive",
-        "bikeId": "tarmac-sl6"
+        "bikeId": "tarmac-sl6",
+        "image": "",
+        "imageCaption": "",
+        "imageSource": ""
       },
       {
         "id": "sl7",
@@ -29,7 +32,10 @@
         "change": "前端走线和气动管型成为整车设计的重要部分。",
         "look": "观察把立下方走线，以及座管和后轮之间的关系。",
         "source": "https://www.specialized.com/us/en/s-works-tarmac-sl7-sram-red-etap-axs/p/175312",
-        "bikeId": "tarmac-sl7"
+        "bikeId": "tarmac-sl7",
+        "image": "",
+        "imageCaption": "",
+        "imageSource": ""
       },
       {
         "id": "sl8",
@@ -41,7 +47,10 @@
         "change": "进一步分配前端气动与后端轻量的设计任务。",
         "look": "转到正侧面，看头管前伸与细座管的对照。",
         "source": "https://www.specialized-onlinestore.jp/shop/t/t1784/",
-        "bikeId": "tarmac-sl8"
+        "bikeId": "tarmac-sl8",
+        "image": "",
+        "imageCaption": "",
+        "imageSource": ""
       }
     ]
   },
@@ -63,7 +72,10 @@
         "change": "气动与轻量共同进入开发视野。",
         "look": "留意早期管型上的气动延伸。",
         "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/madone-gen1.jpg",
+        "imageCaption": "Trek 原厂世代参考图 · 2003 节点；非当前零售配置。",
+        "imageSource": "https://www.trekbikes.com/us/en_US/trek-madone-generations/"
       },
       {
         "id": "gen4",
@@ -75,7 +87,10 @@
         "change": "空气动力学重新成为重点。",
         "look": "截尾轮廓与直接安装制动器。",
         "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/madone-gen4.jpg",
+        "imageCaption": "Trek 原厂世代参考图 · 2012 节点；非当前零售配置。",
+        "imageSource": "https://www.trekbikes.com/us/en_US/trek-madone-generations/"
       },
       {
         "id": "gen5",
@@ -87,7 +102,10 @@
         "change": "专用气动平台与轻量 Émonda 分工。",
         "look": "前端整合与座管连接结构。",
         "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/madone-gen5.jpg",
+        "imageCaption": "Trek 原厂世代参考图 · 2015 节点；非当前零售配置。",
+        "imageSource": "https://www.trekbikes.com/us/en_US/trek-madone-generations/"
       },
       {
         "id": "gen6",
@@ -99,7 +117,10 @@
         "change": "调节范围成为设计的一部分。",
         "look": "上管 IsoSpeed 与可调把组。",
         "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/madone-gen6.jpg",
+        "imageCaption": "Trek 原厂世代参考图 · 2018 节点；非当前零售配置。",
+        "imageSource": "https://www.trekbikes.com/us/en_US/trek-madone-generations/"
       },
       {
         "id": "gen7",
@@ -111,7 +132,10 @@
         "change": "后端连接方式发生明显变化。",
         "look": "先找座管下方的镂空。",
         "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/madone-gen7.jpg",
+        "imageCaption": "Trek 原厂世代参考图 · 2022 节点；非当前零售配置。",
+        "imageSource": "https://www.trekbikes.com/us/en_US/trek-madone-generations/"
       },
       {
         "id": "gen8",
@@ -123,7 +147,10 @@
         "change": "竞赛平台重新同时面向冲刺与爬坡。",
         "look": "保留 IsoFlow，观察管型如何收细。",
         "source": "https://www.trekbikes.com/us/en_US/trek-madone-generations/",
-        "bikeId": "madone-slr9"
+        "bikeId": "madone-slr9",
+        "image": "",
+        "imageCaption": "",
+        "imageSource": ""
       }
     ]
   },
@@ -145,7 +172,10 @@
         "change": "改变传统公路车的比例安排。",
         "look": "倾斜上管与较小的后三角。",
         "source": "https://www.giant-bicycles.com/global/tcr",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/tcr-gen1.jpg",
+        "imageCaption": "Giant 原厂历史赛场照片 · 1997 节点；非当前零售配置。",
+        "imageSource": "https://www.giant-bicycles.com/global/tcr"
       },
       {
         "id": "gen2",
@@ -157,7 +187,10 @@
         "change": "核心车架材料改变。",
         "look": "材料变化，不等于单凭照片能判断重量。",
         "source": "https://www.giant-bicycles.com/global/tcr",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/tcr-gen2.jpg",
+        "imageCaption": "Giant 原厂历史赛场照片 · 2002 节点；非当前零售配置。",
+        "imageSource": "https://www.giant-bicycles.com/global/tcr"
       },
       {
         "id": "gen4",
@@ -169,7 +202,10 @@
         "change": "座管开始成为车架整体的一部分。",
         "look": "区分一体座管与可抽出的独立座管。",
         "source": "https://www.giant-bicycles.com/global/tcr",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/tcr-gen4.jpg",
+        "imageCaption": "Giant 原厂历史赛场照片 · 2005 节点；非当前零售配置。",
+        "imageSource": "https://www.giant-bicycles.com/global/tcr"
       },
       {
         "id": "gen9",
@@ -181,7 +217,10 @@
         "change": "在既有竞赛平台上推进效率设计。",
         "look": "观察管型轮廓，不由外观估算风阻。",
         "source": "https://www.giant-bicycles.com/global/tcr",
-        "bikeId": ""
+        "bikeId": "",
+        "image": "/generations/tcr-gen9.jpg",
+        "imageCaption": "Giant 原厂历史赛场照片 · 2020 节点；非当前零售配置。",
+        "imageSource": "https://www.giant-bicycles.com/global/tcr"
       },
       {
         "id": "gen10",
@@ -193,7 +232,10 @@
         "change": "前端部件作为系统一起设计。",
         "look": "D 形转向管、垫圈和把立之间的关系。",
         "source": "https://www.giant-bicycles.com/global/tcr",
-        "bikeId": "tcr-pro0"
+        "bikeId": "tcr-pro0",
+        "image": "",
+        "imageCaption": "",
+        "imageSource": ""
       }
     ]
   }

@@ -3,6 +3,7 @@ import type { Bike } from './types';
 import { imageUrl } from './catalog';
 import { CompareButton, SaveButton } from './Library';
 import { base } from './SiteChrome';
+import { yearLabel } from './catalogBrowse';
 
 export default function BikeCard({ bike }: { bike: Bike }) {
   return (
@@ -34,6 +35,9 @@ export default function BikeCard({ bike }: { bike: Bike }) {
           </span>
         </div>
         <div className="card-footer">
+          <b className="model-year" title={bike.yearNote}>
+            {yearLabel(bike)}
+          </b>
           <span>{bike.edition}</span>
         </div>
       </a>

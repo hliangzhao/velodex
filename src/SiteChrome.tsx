@@ -29,7 +29,7 @@ export function SiteHeader({ active }: { active: Page }) {
             ['bikes', '整车图鉴'],
             ['parts', '配件图鉴'],
             ['stories', '专题'],
-            ['teams', '车队'],
+            ['teams', '车队与车手'],
             ['compare', '整车对比'],
             ['garage', '我的车库'],
             ['workshop', '工坊'],

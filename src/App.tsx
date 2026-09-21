@@ -20,6 +20,8 @@ import { paintsForBike } from './bikePaints';
 import Engineering from './Engineering';
 import modelProfiles from './data/model-profiles.json';
 import BikeCard from './BikeCard';
+import { filterBikes, groupBikes } from './catalogBrowse';
+import './catalog-browse.css';
 import { SiteHeader, SiteFooter, base } from './SiteChrome';
 import { CompareButton, CompareDock, SaveButton } from './Library';
 import PhotoViewer from './PhotoViewer';
@@ -54,6 +56,8 @@ function App({ browse = false }: { browse?: boolean }) {
   const [is3D, setIs3D] = useState(false);
   const [geometrySize, setGeometrySize] = useState('');
   const [kind, setKind] = useState('all');
+  const [year, setYear] = useState('all');
+  const [groupMode, setGroupMode] = useState<'brand' | 'year'>('brand');
   const [expanded, setExpanded] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const workbench = useRef<HTMLDivElement>(null);
@@ -155,16 +159,13 @@ function App({ browse = false }: { browse?: boolean }) {
     history.pushState({}, '', url);
     currentSearch.current = url.search;
   };
-  const filtered =
-    catalog?.bikes.filter(
-      (b) =>
-        (brand === 'all' || b.brandId === brand) &&
-        (kind === 'all' || b.kind === kind) &&
-        (collection === 'all' || b.collections.includes(collection)) &&
-        `${b.name} ${b.brandId} ${catalog.brands.find((item) => item.id === b.brandId)?.name ?? ''} ${b.build}`
-          .toLowerCase()
-          .includes(query.trim().toLowerCase()),
-    ) || [];
+  const filtered = catalog
+    ? filterBikes(catalog.bikes, catalog.brands, { brand, year, kind, collection, query })
+    : [];
+  const groups = catalog ? groupBikes(filtered, catalog.brands, groupMode) : [];
+  const years = [
+    ...new Set(catalog?.bikes.map((b) => b.modelYear).filter((y): y is number => y != null)),
+  ].sort((a, b) => b - a);
   const currentBrand = catalog?.brands.find((b) => b.id === bike?.brandId);
   const partIndex = bike?.components.findIndex((c) => c.id === component?.id) || 0;
   const step = (direction: number) => {
@@ -568,7 +569,7 @@ function App({ browse = false }: { browse?: boolean }) {
                     THE COLLECTION / {catalog.bikes.length} ROAD MACHINES
                   </span>
                   <h1>各有性格，都值得看。</h1>
-                  <p>按品牌、世代或骑行方式，找到让你停留的那台车。</p>
+                  <p>按品牌与年份整理，再用骑行方式缩小范围。找到让你停留的那台车。</p>
                 </header>
                 <details
                   className="brand-directory"
@@ -682,10 +683,70 @@ function App({ browse = false }: { browse?: boolean }) {
                               : '保留经典世代的当年配置，感受公路车设计的演进。'}
                     </p>
                   )}
+                  <div className="catalog-order">
+                    <div role="group" aria-label="图鉴排列方式">
+                      <button
+                        aria-pressed={groupMode === 'brand'}
+                        onClick={() => setGroupMode('brand')}
+                      >
+                        按品牌
+                      </button>
+                      <button
+                        aria-pressed={groupMode === 'year'}
+                        onClick={() => setGroupMode('year')}
+                      >
+                        按年份
+                      </button>
+                    </div>
+                    <label>
+                      车型年份
+                      <select value={year} onChange={(e) => setYear(e.target.value)}>
+                        <option value="all">所有年份</option>
+                        {years.map((y) => (
+                          <option key={y} value={y}>
+                            {y} 年
+                          </option>
+                        ))}
+                        <option value="unknown">年份未标注</option>
+                      </select>
+                    </label>
+                    <span role="status">
+                      {filtered.length} 款车型 · {groups.length} 个分组
+                    </span>
+                  </div>
+                  <p className="catalog-year-note">
+                    年份指收录配置的车型年，不代表该车系首次发布的年份。原厂未明确年份的版本单独列出；核对日期不作为车型年。
+                  </p>
                   {filtered.length ? (
-                    <div className="bike-grid">
-                      {filtered.map((item) => (
-                        <BikeCard key={item.id} bike={item} />
+                    <div className="catalog-groups">
+                      <nav className="catalog-jumps" aria-label="跳转到图鉴分组">
+                        {groups.map((group) => (
+                          <a key={group.id} href={`#catalog-${groupMode}-${group.id}`}>
+                            {group.title}
+                            <small>{group.bikes.length}</small>
+                          </a>
+                        ))}
+                      </nav>
+                      {groups.map((group) => (
+                        <section
+                          className="catalog-group"
+                          key={group.id}
+                          id={`catalog-${groupMode}-${group.id}`}
+                          aria-label={group.title}
+                        >
+                          <header>
+                            <div>
+                              <span className="eyebrow">{group.subtitle}</span>
+                              <h2>{group.title}</h2>
+                            </div>
+                            <span>{String(group.bikes.length).padStart(2, '0')} 款车型</span>
+                          </header>
+                          <div className="bike-grid">
+                            {group.bikes.map((item) => (
+                              <BikeCard key={item.id} bike={item} />
+                            ))}
+                          </div>
+                        </section>
                       ))}
                     </div>
                   ) : (
@@ -698,6 +759,7 @@ function App({ browse = false }: { browse?: boolean }) {
                           setQuery('');
                           setBrand('all');
                           setKind('all');
+                          setYear('all');
                           setCollection('all');
                         }}
                       >

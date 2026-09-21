@@ -73,7 +73,7 @@ test('catalog API filters and returns correct records without exposing arbitrary
   const gravel = await (await get('/api/bikes?kind=' + encodeURIComponent('砾石公路'))).json();
   assert.deepEqual(
     gravel.bikes.map((b) => b.id),
-    ['diverge-comp-carbon', 'revolt-advanced0', 'silex8000'],
+    ['diverge-comp-carbon', 'revolt-advanced0', 'silex8000', 'topstone-carbon2-lefty'],
   );
   for (const name of ['银贝斯', '速比特', '瑞豹'])
     assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent(name))).json()).total, 2);

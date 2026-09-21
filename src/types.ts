@@ -42,6 +42,8 @@ export type Bike = {
   family: string;
   build: string;
   edition: string;
+  modelYear: number | null;
+  yearNote?: string;
   kind: string;
   description: string;
   collections: Collection[];

@@ -1,0 +1,239 @@
+.riders-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 44px 0 32px;
+  border-bottom: 1px solid var(--line);
+}
+.riders-hero h1 {
+  font-size: clamp(36px, 4.6vw, 62px);
+  letter-spacing: -2px;
+  line-height: 1.23;
+  margin: 20px 0;
+}
+.riders-hero h1 span {
+  color: #818e47;
+}
+.riders-hero p {
+  color: #69765c;
+  line-height: 1.9;
+}
+.riders-hero-index {
+  display: grid;
+  padding-left: 36px;
+  border-left: 1px solid var(--line);
+  min-width: 220px;
+  gap: 12px;
+}
+.riders-hero-index strong {
+  font:
+    600 120px/0.95 'Barlow Condensed',
+    sans-serif;
+  color: #899563;
+}
+.riders-hero-index span {
+  font-size: 13px;
+}
+.riders-hero-index small {
+  font-size: 11px;
+  color: #738166;
+}
+.riders-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin: 28px 0 10px;
+}
+.riders-filters > label:not(.search) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #58654b;
+}
+.riders-filters select {
+  border: 1px solid var(--line);
+  padding: 10px;
+  background: transparent;
+  color: inherit;
+  max-width: 260px;
+}
+.riders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.rider-card {
+  border: 1px solid var(--line);
+  background: #fbfcf6;
+  min-width: 0;
+}
+.rider-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.rider-portrait {
+  margin: 0;
+}
+.rider-portrait > a {
+  display: block;
+  background: #e9ecdf;
+  height: 310px;
+}
+.rider-portrait img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.rider-portrait figcaption {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #647158;
+  padding: 12px 20px;
+  min-height: 58px;
+  border-bottom: 1px solid var(--line);
+}
+.rider-portrait figcaption a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.rider-copy {
+  padding: 24px 22px;
+}
+.rider-english {
+  font:
+    600 26px/1.1 'Barlow Condensed',
+    sans-serif;
+  letter-spacing: 0.3px;
+}
+.rider-copy h2 {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  margin: 7px 0 10px;
+}
+.rider-team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #657152;
+  font-size: 11px;
+}
+.rider-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 18px 0 25px;
+}
+.rider-tags span {
+  font-size: 10px;
+  border: 1px solid #d9dfcb;
+  padding: 4px 7px;
+}
+.rider-copy h3 {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+.rider-copy p {
+  font-size: 12px;
+  line-height: 1.95;
+  color: #66715e;
+  margin: 8px 0;
+}
+.rider-watch {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+.rider-copy small {
+  font-size: 10px;
+  color: #58664a;
+  letter-spacing: 0.4px;
+}
+.rider-recent {
+  padding: 17px 0;
+}
+.rider-recent a {
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.rider-bikes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 24px;
+}
+.rider-bikes small {
+  width: 100%;
+  padding-bottom: 4px;
+}
+.rider-bikes a {
+  font-size: 11px;
+  padding: 7px 9px;
+  background: #eef0e6;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.rider-license {
+  border-top: 1px solid var(--line);
+  margin-top: 24px;
+  padding-top: 15px;
+  font-size: 10px;
+  color: #738164;
+}
+.rider-license summary {
+  cursor: pointer;
+}
+.rider-license p {
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1050px) {
+  .riders-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .riders-grid {
+    grid-template-columns: 1fr;
+  }
+  .riders-hero {
+    align-items: start;
+  }
+  .riders-hero-index {
+    min-width: 0;
+    padding-left: 16px;
+  }
+  .riders-hero-index strong {
+    font-size: 65px;
+  }
+  .riders-hero-index span {
+    font-size: 10px;
+    max-width: 64px;
+    line-height: 1.8;
+  }
+  .riders-hero-index small {
+    display: none;
+  }
+  .riders-hero h1 {
+    font-size: 32px;
+    letter-spacing: -1.5px;
+  }
+  .rider-portrait > a {
+    height: 340px;
+  }
+  .riders-filters > label {
+    max-width: 100%;
+  }
+  .riders-filters select {
+    max-width: 240px;
+  }
+}

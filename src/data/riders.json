@@ -1,0 +1,255 @@
+{
+  "season": 2026,
+  "checkedAt": "2026-09-21",
+  "scope": "本期精选男子职业公路车手，以长期影响力、比赛风格与近期官方报道为入口，不是实时热度榜或实力排名。",
+  "riders": [
+    {
+      "id": "pogacar",
+      "name": "塔代伊·波加查",
+      "english": "Tadej Pogačar",
+      "country": "斯洛文尼亚",
+      "teamId": "uae",
+      "tags": ["总成绩", "古典赛"],
+      "title": "从长坡，到远距离进攻。",
+      "intro": "把大环赛总成绩与单日赛进攻放在同一份履历里的代表车手。认识他，是理解现代公路赛全能性的一个入口。",
+      "watch": "观察进攻发起的位置、队友的控场以及坡顶后如何延续速度；别只盯最后一次冲刺。",
+      "recent": {
+        "text": "2026-09-05：车队宣布续约至 2032 年，并确认其本赛季不再参赛。",
+        "date": "2026-09-05",
+        "source": "https://www.uaeteamemirates.com/uae-team-emirates-xrg-announces-contract-extension-tadej-pogacar-2032/"
+      },
+      "profile": "https://www.uaeteamemirates.com/rider/tadej-pogacar/",
+      "bikeIds": ["y1rs", "v5rs"],
+      "photo": {
+        "image": "/riders/pogacar.jpg",
+        "title": "EURO2025, Tadej Pogačar.jpg",
+        "author": "Remije1",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:EURO2025,_Tadej_Poga%C4%8Dar.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/3/3e/EURO2025%2C_Tadej_Poga%C4%8Dar.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 欧洲锦标赛 · 历史照片"
+      },
+      "aliases": ["Pogacar", "Pogi"]
+    },
+    {
+      "id": "jonas",
+      "name": "约纳斯·温格高",
+      "english": "Jonas Vingegaard",
+      "country": "丹麦",
+      "teamId": "visma",
+      "tags": ["总成绩", "爬坡"],
+      "title": "漫长山路中的节奏。",
+      "intro": "2022、2023 环法冠军，2025 环西冠军。长距离爬坡、连续山地日和团队战术，是观看他比赛时的主线。",
+      "watch": "看高山赛段如何分配体力，以及队友何时提速、何时交接；单段功率不能解释整场比赛。",
+      "recent": {
+        "text": "2026-05-31：车队历史页记录其夺得环意，完成三大环赛总冠军履历。",
+        "date": "2026-05-31",
+        "source": "https://www.teamvismaleaseabike.com/history/"
+      },
+      "profile": "https://www.teamvismaleaseabike.com/team/jonas-vingegaard/",
+      "bikeIds": ["cervelo-r5", "cervelo-s5", "cervelo-p5"],
+      "photo": {
+        "image": "/riders/jonas.jpg",
+        "title": "Jonas Vingegaard - Vuelta a España 2025.jpg",
+        "author": "PB84",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Jonas_Vingegaard_-_Vuelta_a_Espa%C3%B1a_2025.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/8/87/Jonas_Vingegaard_-_Vuelta_a_Espa%C3%B1a_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 环西 · 历史照片"
+      },
+      "aliases": []
+    },
+    {
+      "id": "remco",
+      "name": "雷姆科·埃费内普尔",
+      "english": "Remco Evenepoel",
+      "country": "比利时",
+      "teamId": "redbull-bora",
+      "tags": ["计时", "总成绩", "单日赛"],
+      "title": "把速度，维持得更久。",
+      "intro": "计时赛姿态与持续高速进攻是鲜明的观察线索。2026 赛季效力 Red Bull–BORA–hansgrohe；历史照片中的服装不代表当前车队。",
+      "watch": "留意低风阻姿态能否稳定维持，以及独自进攻时的节奏安排；没有测量数据，不从姿态反推他的 CdA 或 FTP。",
+      "recent": {
+        "text": "2026-09-11：车队记录其赢得魁北克大奖赛。",
+        "date": "2026-09-11",
+        "source": "https://www.redbullborahansgrohe.com/en/news/remco-evenepoel-wins-the-grand-prix-cycliste-de-quebec"
+      },
+      "profile": "https://www.redbullborahansgrohe.com/en/news/remco-evenepoel-wins-the-grand-prix-cycliste-de-quebec",
+      "bikeIds": ["tarmac-sl8"],
+      "photo": {
+        "image": "/riders/remco.jpg",
+        "title": "EURO2025, Remco Evenepoel.jpg",
+        "author": "Remije1",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:EURO2025,_Remco_Evenepoel.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/6/64/EURO2025%2C_Remco_Evenepoel.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 欧洲锦标赛 · 比利时国家队服"
+      },
+      "aliases": ["艾菲", "爱妃", "埃菲"]
+    },
+    {
+      "id": "mvdp",
+      "name": "马蒂厄·范德普尔",
+      "english": "Mathieu van der Poel",
+      "country": "荷兰",
+      "teamId": "alpecin",
+      "tags": ["古典赛", "越野"],
+      "title": "把操控，变成进攻。",
+      "intro": "从公路越野跨到古典赛的标志性人物。2026 官方名单列于 Alpecin–Premier Tech，适合从他认识短坡进攻和复杂路面的操控。",
+      "watch": "留意弯前选线、石板路位置与短坡上的加速时机；这些细节不只由平均功率决定。",
+      "recent": {
+        "text": "2026 赛季观察：车队官方现役名单与器材合作已核对。",
+        "date": "2026-09-21",
+        "source": "https://www.alpecin-premiertech.com/world-tour-team/"
+      },
+      "profile": "https://www.alpecin-premiertech.com/world-tour-team/",
+      "bikeIds": ["aeroad-cfr"],
+      "photo": {
+        "image": "/riders/mvdp.jpg",
+        "title": "Cyclocross Lievin 2025 - Mathieu van der Poel.jpg",
+        "author": "Rz98",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Cyclocross_Lievin_2025_-_Mathieu_van_der_Poel.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/14/Cyclocross_Lievin_2025_-_Mathieu_van_der_Poel.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 公路越野世锦赛 · 历史照片"
+      },
+      "aliases": []
+    },
+    {
+      "id": "wout",
+      "name": "沃特·范阿尔特",
+      "english": "Wout van Aert",
+      "country": "比利时",
+      "teamId": "visma",
+      "tags": ["古典赛", "冲刺", "全能"],
+      "title": "一场比赛，不止一种角色。",
+      "intro": "可以承担进攻、冲刺和团队任务的全能车手。看他在不同赛段切换角色，是理解公路赛团队分工的好方法。",
+      "watch": "观察带队追击、送队友进关键位置和自己争胜之间的选择，而不只看个人名次。",
+      "recent": {
+        "text": "2026 春季：车队官方战报记录其巴黎—鲁贝胜利。",
+        "date": "2026-04-12",
+        "source": "https://www.teamvismaleaseabike.com/race-report/news/van-aert-puts-crown-on-spring-classics-campaign-with-paris-roubaix-victory/"
+      },
+      "profile": "https://www.teamvismaleaseabike.com/team/wout-van-aert/",
+      "bikeIds": ["cervelo-s5", "cervelo-r5"],
+      "photo": {
+        "image": "/riders/wout.jpg",
+        "title": "Tour de France 2025 - Wout van Aert N17.jpg",
+        "author": "Renhour48",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Tour_de_France_2025_-_Wout_van_Aert_N17.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tour_de_France_2025_-_Wout_van_Aert_N17.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 环法 · 历史照片"
+      },
+      "aliases": []
+    },
+    {
+      "id": "mads",
+      "name": "马斯·佩德森",
+      "english": "Mads Pedersen",
+      "country": "丹麦",
+      "teamId": "lidl-trek",
+      "tags": ["古典赛", "冲刺"],
+      "title": "长距离之后，仍然有速度。",
+      "intro": "古典赛与艰苦赛段终点的常见争胜者。Trek 的开发故事还记录了他参与 Madone Gen 8 测试、反馈操控感受的一面。",
+      "watch": "把最后一公里放回整场比赛：经过多少爬坡、拉扯与消耗，冲刺时机就会有不同含义。",
+      "recent": {
+        "text": "2026-03-21：Lidl-Trek 的米兰—圣雷莫总结记录其第四名。",
+        "date": "2026-03-21",
+        "source": "https://racing.trekbikes.com/stories/lidl-trek/lidl-treks-milano-sanremo-round-up"
+      },
+      "profile": "https://racing.trekbikes.com/stories/lidl-trek/madone-gen-8-development-engineering-testing",
+      "bikeIds": ["madone-slr9"],
+      "photo": {
+        "image": "/riders/mads.jpg",
+        "title": "Mads Pedersen (2025-05-14).jpeg",
+        "author": "Mfran22",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Mads_Pedersen_(2025-05-14).jpeg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/a/af/Mads_Pedersen_%282025-05-14%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 环意第 5 赛段 · 历史照片"
+      },
+      "aliases": []
+    },
+    {
+      "id": "milan",
+      "name": "乔纳森·米兰",
+      "english": "Jonathan Milan",
+      "country": "意大利",
+      "teamId": "lidl-trek",
+      "tags": ["冲刺"],
+      "title": "冲线前的速度，也来自队友。",
+      "intro": "当代集体冲刺的代表车手之一。冲刺火车、卡位和最后数秒的加速，构成了他的比赛观察入口。",
+      "watch": "从终点前五公里开始看：队友怎样保持位置、最后领冲何时结束、他选择哪一侧开冲。",
+      "recent": {
+        "text": "2026-08-19：车队战报记录其赢得 Renewi Tour 首赛段。",
+        "date": "2026-08-19",
+        "source": "https://racing.trekbikes.com/stories/lidl-trek/milan-renewi-1"
+      },
+      "profile": "https://racing.trekbikes.com/stories/lidl-trek/milan-renewi-1",
+      "bikeIds": ["madone-slr9"],
+      "photo": {
+        "image": "/riders/milan.jpg",
+        "title": "TDF25-E08-24 Jonathan Milan.jpg",
+        "author": "MFonzatti",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:TDF25-E08-24_Jonathan_Milan.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/4/4c/TDF25-E08-24_Jonathan_Milan.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 环法第 8 赛段 · 出发前"
+      },
+      "aliases": []
+    },
+    {
+      "id": "seixas",
+      "name": "保罗·塞克萨斯",
+      "english": "Paul Seixas",
+      "country": "法国",
+      "teamId": "decathlon",
+      "tags": ["新生代", "总成绩"],
+      "title": "新一代，正在写自己的篇章。",
+      "intro": "2025 年转入职业赛场的法国车手。通过他的成长，可以观察年轻总成绩车手怎样逐步适应世界巡回赛。",
+      "watch": "留意连续比赛日的恢复、山地队友协作和节奏稳定性，避免把单次亮眼表现直接等同长期上限。",
+      "recent": {
+        "text": "2026-07-26：车队环法总结记录其总成绩第四名。",
+        "date": "2026-07-26",
+        "source": "https://decathloncmacgmteam.com/en/tour-de-france-2026-objectifs-atteints-pour-lequipe-decathlon-cma-cgm/"
+      },
+      "profile": "https://decathloncmacgmteam.com/en/equipe-world-tour/paul-seixas/",
+      "bikeIds": ["vanrysel-rcr-pro"],
+      "photo": {
+        "image": "/riders/seixas.jpg",
+        "title": "EURO2025, Paul Seixas.jpg",
+        "author": "Remije1",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:EURO2025,_Paul_Seixas.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/e/e5/EURO2025%2C_Paul_Seixas.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "year": 2025,
+        "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
+        "caption": "2025 欧洲锦标赛 · 法国国家队服"
+      },
+      "aliases": []
+    }
+  ]
+}
