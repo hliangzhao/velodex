@@ -849,6 +849,7 @@ main {
 .card-image {
   height: 147px;
   display: grid;
+  grid-template-rows: minmax(0, 1fr);
   place-items: center;
   margin: 8px -8px 3px;
   overflow: hidden;
@@ -856,6 +857,7 @@ main {
 .card-image img {
   width: 100%;
   height: 100%;
+  min-height: 0;
   object-fit: contain;
   mix-blend-mode: multiply;
 }
