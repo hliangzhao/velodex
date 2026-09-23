@@ -43,12 +43,9 @@ export default function Discover() {
       <CatalogContent>
         {(catalog) => {
           const feature = catalog.bikes.find((b) => b.id === 'sworks-venge')!;
-          const picks = [
-            'bmc-roadmachine-five',
-            'bmc-teammachine-slr01-two',
-            'cannondale-superx3',
-            'canyon-grail-cf7',
-          ].map((id) => catalog.bikes.find((b) => b.id === id)!);
+          const picks = ['xds-rs8-cn', 'xds-ad7-cn-2026', 'camp-ace-qed', 'camp-gx700'].map((id) =>
+            catalog.bikes.find((b) => b.id === id)!,
+          );
           return (
             <>
               <div className="work-banner">

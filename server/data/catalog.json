@@ -19014,6 +19014,3169 @@
         "limit": "页面的设计说明不构成与其他车型的统一风洞对比；较宽轮胎的阻力还受胎压、路面和速度影响。"
       },
       "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片文件名或核对日期代替车型年。"
+    },
+    {
+      "id": "xds-rs8-cn",
+      "brandId": "xds",
+      "name": "X-LAB RS8",
+      "family": "RS8",
+      "build": "Shimano 105 Di2",
+      "edition": "中国大陆官网配置",
+      "modelYear": null,
+      "kind": "全能公路",
+      "description": "RS 系列的 T800 碳架版本，采用 105 Di2、BRANTA C45 UL 碳轮和 28C 胎。官网将其定位为全能公路车，可结合五个尺码的几何数据，与 AD 系列比较骑姿。",
+      "collections": ["current"],
+      "image": "/bikes/xds-rs8-cn-1.png",
+      "imageCredit": "喜德盛 XDS",
+      "imageNote": "喜德盛中国官网 RS8 的三款涂装，配 Shimano 105 Di2 与 BRANTA C45 UL；与海外 RS7 分开收录。",
+      "imageRatio": 1.7142857142857142,
+      "imageSource": "https://www.xidesheng.com/goods/1880059951851864065/buy",
+      "color": "唐三彩",
+      "colorHex": "#ea9b28",
+      "source": "https://www.xidesheng.com/goods/1880059951851864065/detail",
+      "sourceLabel": "中国官网 · RS8",
+      "checkedAt": "2026-09-23",
+      "weight": "约 7.4 kg",
+      "weightNote": "官方口径 · M 码；不含脚踏，涂装可能影响重量",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": false,
+      "material": "T800 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "X-LAB RS8 车架组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["车架", "X-LAB RS8碳纤维车架"],
+            ["前叉", "碳纤维前叉 12x100mm桶轴 平装碟刹"],
+            ["尺码", "XS / S / M / L / XL"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "X-LAB 碳纤维一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["规格", "X-LAB碳纤维一体把 xs/380*80 s/380*100 m/400*100 l/400*120 xl/420*120"],
+            ["把带", "木乃伊硅胶贴合EVA 2400mm*30mm"]
+          ],
+          "x": 68,
+          "y": 13
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "碳纤维直头座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["长度", "300 mm"],
+            ["后飘", "直头"]
+          ],
+          "x": 34,
+          "y": 19
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Italia SLR Boost",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["导轨", "碳弓"],
+            ["尺寸", "145 × 248 mm"]
+          ],
+          "x": 34,
+          "y": 6
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano ST-R7170",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "Di2 · 2 × 12 速"],
+            ["制动", "液压碟刹"],
+            ["碟片", "SHIMANO SM-RT70 前160MM 后140MM"]
+          ],
+          "x": 77,
+          "y": 12,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano FC-R7100",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["中轴", "SHIMANO SM-BBR60"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 51,
+          "y": 70,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "105 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿数", "50 / 34T"],
+            ["后端速别", "12 速"]
+          ],
+          "x": 43,
+          "y": 72,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R7101",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿比范围", "11–34T"],
+            ["片数", "12 片"]
+          ],
+          "x": 22,
+          "y": 63,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需按曲柄、五通及脚踏接口确认"]
+          ],
+          "x": 46,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "BRANTA C45 UL",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["前轮", "Branta C45 UL Branta培林花鼓 21mm内宽 29mm外宽 中央锁死碟刹座"],
+            ["后轮", "Branta C45 UL Branta培林花鼓 21mm内宽 29mm外宽 中央锁死碟刹座"]
+          ],
+          "x": 89,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "MAXXIS HYPR / ZK",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 28C"],
+            ["结构", "开口折叠胎"]
+          ],
+          "x": 87,
+          "y": 37
+        }
+      ],
+      "price": {
+        "label": "¥21,980",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.xidesheng.com/goods/1880059951851864065/buy",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "xds-rs8-cn-2",
+          "name": "环湖蓝",
+          "hex": "#4bb4d7",
+          "image": "/bikes/xds-rs8-cn-2.webp",
+          "source": "https://www.xidesheng.com/goods/1880059951851864065/buy",
+          "imageRatio": 1.7142857142857142,
+          "note": "喜德盛中国官网 RS8 的三款涂装，配 Shimano 105 Di2 与 BRANTA C45 UL；与海外 RS7 分开收录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 68,
+              "y": 13
+            },
+            "seatpost": {
+              "x": 34,
+              "y": 19
+            },
+            "saddle": {
+              "x": 34,
+              "y": 6
+            },
+            "shifters": {
+              "x": 77,
+              "y": 12
+            },
+            "crank": {
+              "x": 51,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 43,
+              "y": 72
+            },
+            "cassette": {
+              "x": 22,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 68
+            },
+            "wheels": {
+              "x": 89,
+              "y": 80
+            },
+            "tires": {
+              "x": 87,
+              "y": 37
+            }
+          }
+        },
+        {
+          "id": "xds-rs8-cn-3",
+          "name": "黑武士",
+          "hex": "#282a2c",
+          "image": "/bikes/xds-rs8-cn-3.webp",
+          "source": "https://www.xidesheng.com/goods/1880059951851864065/buy",
+          "imageRatio": 1.7142857142857142,
+          "note": "喜德盛中国官网 RS8 的三款涂装，配 Shimano 105 Di2 与 BRANTA C45 UL；与海外 RS7 分开收录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 68,
+              "y": 13
+            },
+            "seatpost": {
+              "x": 34,
+              "y": 19
+            },
+            "saddle": {
+              "x": 34,
+              "y": 6
+            },
+            "shifters": {
+              "x": 77,
+              "y": 12
+            },
+            "crank": {
+              "x": 51,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 43,
+              "y": 72
+            },
+            "cassette": {
+              "x": 22,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 68
+            },
+            "wheels": {
+              "x": 89,
+              "y": 80
+            },
+            "tires": {
+              "x": 87,
+              "y": 37
+            }
+          }
+        }
+      ],
+      "yearNote": "原厂未明确车型年；不以网页上传或核对日期代替。",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 508.0,
+            "reach": 360.0,
+            "headAngle": 70.8,
+            "seatAngle": 74.4,
+            "wheelbase": 966.3,
+            "chainstay": 408.0,
+            "bbDrop": 72.0,
+            "headTube": 104.0,
+            "seatTube": 440.0
+          },
+          {
+            "size": "S",
+            "stack": 525.0,
+            "reach": 370.0,
+            "headAngle": 71.5,
+            "seatAngle": 74.0,
+            "wheelbase": 977.6,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 119.0,
+            "seatTube": 460.0
+          },
+          {
+            "size": "M",
+            "stack": 544.0,
+            "reach": 380.0,
+            "headAngle": 72.0,
+            "seatAngle": 73.6,
+            "wheelbase": 982.1,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 135.0,
+            "seatTube": 480.0
+          },
+          {
+            "size": "L",
+            "stack": 564.0,
+            "reach": 390.0,
+            "headAngle": 72.25,
+            "seatAngle": 73.5,
+            "wheelbase": 991.3,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 153.0,
+            "seatTube": 505.0
+          },
+          {
+            "size": "XL",
+            "stack": 587.0,
+            "reach": 400.0,
+            "headAngle": 73.4,
+            "seatAngle": 73.5,
+            "wheelbase": 1002.0,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 175.0,
+            "seatTube": 530.0
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.xidesheng.com/goods/1880059951851864065/detail",
+        "sourceLabel": "喜德盛中国官网 · RS 几何表",
+        "note": "按该产品详情页关联的官方几何表记录，尺寸单位为 mm、角度为 °。身高建议不能代替个人适配。"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "RS 系列的 T800 碳架版本，采用 105 Di2、BRANTA C45 UL 碳轮和 28C 胎。官网将其定位为全能公路车，可结合五个尺码的几何数据，与 AD 系列比较骑姿。",
+        "source": "https://www.xidesheng.com/goods/1880059951851864065/detail",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "xds-rs9-cn",
+      "brandId": "xds",
+      "name": "X-LAB RS9",
+      "family": "RS9",
+      "build": "Shimano Dura-Ace Di2",
+      "edition": "中国大陆官网配置",
+      "modelYear": null,
+      "kind": "全能公路",
+      "description": "RS 系列的 T1100 碳架版本，搭配 Dura-Ace Di2 和 Vision Metron 45 SL。与 RS8 使用官网同一套 RS 几何表，差异主要体现在车架材料与整车配置。",
+      "collections": ["current", "flagship"],
+      "image": "/bikes/xds-rs9-cn-1.webp",
+      "imageCredit": "喜德盛 XDS",
+      "imageNote": "喜德盛中国官网 RS9，配 Dura-Ace Di2 与 Vision Metron 45 SL。图中为 Schwalbe 轮胎，当前配置表列 MAXXIS；轮胎参数按配置表记录，购买时需核对批次。",
+      "imageRatio": 1.7142857142857142,
+      "imageSource": "https://www.xidesheng.com/goods/1891777277617856514/buy",
+      "color": "唐三彩",
+      "colorHex": "#ea9b28",
+      "source": "https://www.xidesheng.com/goods/1891777277617856514/detail",
+      "sourceLabel": "中国官网 · RS9",
+      "checkedAt": "2026-09-23",
+      "weight": "约 7.0 kg",
+      "weightNote": "官方口径 · L 码；不含脚踏，涂装可能影响重量",
+      "groupset": "Shimano Dura-Ace Di2",
+      "hasPowerMeter": false,
+      "material": "T1100 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "X-LAB RS9 车架组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["车架", "X-LAB RS9碳纤维车架 东丽T1100"],
+            ["前叉", "碳纤维前叉 12x100mm桶轴 平装碟刹"],
+            ["尺码", "XS / S / M / L / XL"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "X-LAB 碳纤维一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["规格", "X-LAB碳纤维一体把 xs/380*80 s/380*100 m/400*100 l/400*120 xl/420*120"],
+            ["把带", "木乃伊硅胶贴合EVA 2400mm*30mm"]
+          ],
+          "x": 67,
+          "y": 10
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "碳纤维直头座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["长度", "300 mm"],
+            ["后飘", "直头"]
+          ],
+          "x": 34,
+          "y": 19
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Italia SLR Boost",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["导轨", "碳弓"],
+            ["尺寸", "145 × 248 mm"]
+          ],
+          "x": 34,
+          "y": 6
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano ST-R9270",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "Di2 · 2 × 12 速"],
+            ["制动", "液压碟刹"],
+            ["碟片", "SHIMANO RT-MT900 前160MM 后140MM"]
+          ],
+          "x": 77,
+          "y": 9,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano FC-R9200",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["中轴", "SHIMANO BB-R9100"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 51,
+          "y": 70,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Dura-Ace 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿数", "52 / 36T"],
+            ["后端速别", "12 速"]
+          ],
+          "x": 43,
+          "y": 72,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R9200",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿比范围", "11–34T"],
+            ["片数", "12 片"]
+          ],
+          "x": 22,
+          "y": 63,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需按曲柄、五通及脚踏接口确认"]
+          ],
+          "x": 46,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Vision Metron 45 SL",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["前轮", "Vision Metron 45 SL Vision培林花鼓 21mm内宽 31.1mm外宽 中央锁死碟刹座"],
+            ["后轮", "Vision Metron 45 SL Vision培林花鼓 21mm内宽 31.1mm外宽 中央锁死碟刹座"]
+          ],
+          "x": 89,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "MAXXIS HYPR / ZK",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 28C"],
+            ["结构", "开口折叠胎"]
+          ],
+          "x": 87,
+          "y": 37
+        }
+      ],
+      "price": {
+        "label": "¥49,980",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.xidesheng.com/goods/1891777277617856514/buy",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "xds-rs9-cn-2",
+          "name": "环湖蓝",
+          "hex": "#4bb4d7",
+          "image": "/bikes/xds-rs9-cn-2.webp",
+          "source": "https://www.xidesheng.com/goods/1891777277617856514/buy",
+          "imageRatio": 1.7142857142857142,
+          "note": "喜德盛中国官网 RS9，配 Dura-Ace Di2 与 Vision Metron 45 SL。图中为 Schwalbe 轮胎，当前配置表列 MAXXIS；轮胎参数按配置表记录，购买时需核对批次。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 67,
+              "y": 10
+            },
+            "seatpost": {
+              "x": 34,
+              "y": 19
+            },
+            "saddle": {
+              "x": 34,
+              "y": 6
+            },
+            "shifters": {
+              "x": 77,
+              "y": 9
+            },
+            "crank": {
+              "x": 51,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 43,
+              "y": 72
+            },
+            "cassette": {
+              "x": 22,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 68
+            },
+            "wheels": {
+              "x": 89,
+              "y": 80
+            },
+            "tires": {
+              "x": 87,
+              "y": 37
+            }
+          }
+        },
+        {
+          "id": "xds-rs9-cn-3",
+          "name": "黑武士",
+          "hex": "#282a2c",
+          "image": "/bikes/xds-rs9-cn-3.webp",
+          "source": "https://www.xidesheng.com/goods/1891777277617856514/buy",
+          "imageRatio": 1.7142857142857142,
+          "note": "喜德盛中国官网 RS9，配 Dura-Ace Di2 与 Vision Metron 45 SL。图中为 Schwalbe 轮胎，当前配置表列 MAXXIS；轮胎参数按配置表记录，购买时需核对批次。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 67,
+              "y": 10
+            },
+            "seatpost": {
+              "x": 34,
+              "y": 19
+            },
+            "saddle": {
+              "x": 34,
+              "y": 6
+            },
+            "shifters": {
+              "x": 77,
+              "y": 9
+            },
+            "crank": {
+              "x": 51,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 43,
+              "y": 72
+            },
+            "cassette": {
+              "x": 22,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 68
+            },
+            "wheels": {
+              "x": 89,
+              "y": 80
+            },
+            "tires": {
+              "x": 87,
+              "y": 37
+            }
+          }
+        }
+      ],
+      "yearNote": "原厂未明确车型年；不以网页上传或核对日期代替。",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 508.0,
+            "reach": 360.0,
+            "headAngle": 70.8,
+            "seatAngle": 74.4,
+            "wheelbase": 966.3,
+            "chainstay": 408.0,
+            "bbDrop": 72.0,
+            "headTube": 104.0,
+            "seatTube": 440.0
+          },
+          {
+            "size": "S",
+            "stack": 525.0,
+            "reach": 370.0,
+            "headAngle": 71.5,
+            "seatAngle": 74.0,
+            "wheelbase": 977.6,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 119.0,
+            "seatTube": 460.0
+          },
+          {
+            "size": "M",
+            "stack": 544.0,
+            "reach": 380.0,
+            "headAngle": 72.0,
+            "seatAngle": 73.6,
+            "wheelbase": 982.1,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 135.0,
+            "seatTube": 480.0
+          },
+          {
+            "size": "L",
+            "stack": 564.0,
+            "reach": 390.0,
+            "headAngle": 72.25,
+            "seatAngle": 73.5,
+            "wheelbase": 991.3,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 153.0,
+            "seatTube": 505.0
+          },
+          {
+            "size": "XL",
+            "stack": 587.0,
+            "reach": 400.0,
+            "headAngle": 73.4,
+            "seatAngle": 73.5,
+            "wheelbase": 1002.0,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 175.0,
+            "seatTube": 530.0
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.xidesheng.com/goods/1891777277617856514/detail",
+        "sourceLabel": "喜德盛中国官网 · RS 几何表",
+        "note": "按该产品详情页关联的官方几何表记录，尺寸单位为 mm、角度为 °。身高建议不能代替个人适配。"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "RS 系列的 T1100 碳架版本，搭配 Dura-Ace Di2 和 Vision Metron 45 SL。与 RS8 使用官网同一套 RS 几何表，差异主要体现在车架材料与整车配置。",
+        "source": "https://www.xidesheng.com/goods/1891777277617856514/detail",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "xds-ad7-cn-2026",
+      "brandId": "xds",
+      "name": "喜德盛 AD7",
+      "family": "AD7",
+      "build": "Shimano 105 Di2",
+      "edition": "中国大陆官网配置",
+      "modelYear": 2026,
+      "kind": "气动竞赛",
+      "description": "2026 年国内版 AD7 使用 T700 与 T800 碳纤维车架，配 105 Di2、BRANTA C45 SL 碳轮和碳纤维一体把。白粉、合金和暮光三款涂装分别保留官方图片。",
+      "collections": ["current"],
+      "image": "/bikes/xds-ad7-cn-1.png",
+      "imageCredit": "喜德盛 XDS",
+      "imageNote": "2026 年中国大陆版 AD7，配 105 Di2 与 BRANTA C45 SL。白粉为官方渲染图，合金与暮光为官方实拍；实拍可见的坐垫、CST 轮胎与当前配置表不同，部件参数按配置表记录。",
+      "imageRatio": 1.6543951915852741,
+      "imageSource": "https://www.xidesheng.com/goods/2030931384538648577/buy",
+      "color": "白粉",
+      "colorHex": "#e72879",
+      "source": "https://www.xidesheng.com/goods/2030931384538648577/detail",
+      "sourceLabel": "中国官网 · AD7",
+      "checkedAt": "2026-09-23",
+      "weight": "约 8.11 kg",
+      "weightNote": "官方口径 · M 码；不含脚踏，涂装可能影响重量",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": false,
+      "material": "T700 + T800 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "喜德盛 AD7 车架组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["车架", "AD7 碳纤维车架 T700+T800"],
+            ["前叉", "碳纤维前叉 12x100mm 筒轴 平装碟刹"],
+            ["尺码", "XS / S / M / L / XL"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "X-LAB 碳纤维一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["规格", "碳纤维一体把 xs/360*90 s/360*100 m/380*110 l/380*120 xl/400*130"],
+            ["把带", "PO-GEL- 03"]
+          ],
+          "x": 70,
+          "y": 16
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "碳纤维直头座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["长度", "310 mm"],
+            ["后飘", "直头"]
+          ],
+          "x": 35,
+          "y": 17
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Royal F208URN",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["导轨", "锰弓"],
+            ["尺寸", "官网未公布"]
+          ],
+          "x": 33,
+          "y": 3
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano ST-R7170",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "Di2 · 2 × 12 速"],
+            ["制动", "液压碟刹"],
+            ["碟片", "SHIMANO SM-RT70 160MM"]
+          ],
+          "x": 81,
+          "y": 14,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano FC-R7100",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["中轴", "BBT47 86-24"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 51,
+          "y": 72,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "105 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿数", "50 / 34T"],
+            ["后端速别", "12 速"]
+          ],
+          "x": 44,
+          "y": 75,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R7101",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿比范围", "11–34T"],
+            ["片数", "12 片"]
+          ],
+          "x": 22,
+          "y": 65,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需按曲柄、五通及脚踏接口确认"]
+          ],
+          "x": 46,
+          "y": 70
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "BRANTA C45 SL",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["前轮", "BRANTA C45 SL"],
+            ["后轮", "BRANTA C45 SL"]
+          ],
+          "x": 91,
+          "y": 81
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "BRANTA R630F",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 30C · 60 TPI"],
+            ["结构", "开口折叠胎"]
+          ],
+          "x": 89,
+          "y": 39
+        }
+      ],
+      "price": {
+        "label": "¥13,980",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.xidesheng.com/goods/2030931384538648577/buy",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "xds-ad7-cn-2",
+          "name": "合金",
+          "hex": "#9aaa43",
+          "image": "/bikes/xds-ad7-cn-2.png",
+          "source": "https://www.xidesheng.com/goods/2030931384538648577/buy",
+          "imageRatio": 1.7145833333333333,
+          "note": "2026 年中国大陆版 AD7，配 105 Di2 与 BRANTA C45 SL。白粉为官方渲染图，合金与暮光为官方实拍；实拍可见的坐垫、CST 轮胎与当前配置表不同，部件参数按配置表记录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 68,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 35,
+              "y": 20
+            },
+            "saddle": {
+              "x": 34,
+              "y": 7
+            },
+            "shifters": {
+              "x": 77,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 73
+            },
+            "chainrings": {
+              "x": 43,
+              "y": 74
+            },
+            "cassette": {
+              "x": 23,
+              "y": 64
+            },
+            "power": {
+              "x": 46,
+              "y": 71
+            },
+            "wheels": {
+              "x": 89,
+              "y": 80
+            },
+            "tires": {
+              "x": 87,
+              "y": 38
+            }
+          }
+        },
+        {
+          "id": "xds-ad7-cn-3",
+          "name": "暮光",
+          "hex": "#34516d",
+          "image": "/bikes/xds-ad7-cn-3.png",
+          "source": "https://www.xidesheng.com/goods/2030931384538648577/buy",
+          "imageRatio": 1.7145833333333333,
+          "note": "2026 年中国大陆版 AD7，配 105 Di2 与 BRANTA C45 SL。白粉为官方渲染图，合金与暮光为官方实拍；实拍可见的坐垫、CST 轮胎与当前配置表不同，部件参数按配置表记录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 68,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 35,
+              "y": 20
+            },
+            "saddle": {
+              "x": 34,
+              "y": 7
+            },
+            "shifters": {
+              "x": 77,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 73
+            },
+            "chainrings": {
+              "x": 43,
+              "y": 74
+            },
+            "cassette": {
+              "x": 23,
+              "y": 64
+            },
+            "power": {
+              "x": 46,
+              "y": 71
+            },
+            "wheels": {
+              "x": 89,
+              "y": 80
+            },
+            "tires": {
+              "x": 87,
+              "y": 38
+            }
+          }
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 510.0,
+            "reach": 368.0,
+            "headAngle": 70.7,
+            "seatAngle": 75.1,
+            "wheelbase": 975.0,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 105.0,
+            "seatTube": 470.0
+          },
+          {
+            "size": "S",
+            "stack": 525.0,
+            "reach": 376.0,
+            "headAngle": 71.5,
+            "seatAngle": 74.5,
+            "wheelbase": 977.0,
+            "chainstay": 410.0,
+            "bbDrop": 72.0,
+            "headTube": 118.0,
+            "seatTube": 495.0
+          },
+          {
+            "size": "M",
+            "stack": 540.0,
+            "reach": 387.0,
+            "headAngle": 72.5,
+            "seatAngle": 74.0,
+            "wheelbase": 982.0,
+            "chainstay": 410.0,
+            "bbDrop": 70.0,
+            "headTube": 130.0,
+            "seatTube": 520.0
+          },
+          {
+            "size": "L",
+            "stack": 558.0,
+            "reach": 395.0,
+            "headAngle": 73.0,
+            "seatAngle": 73.5,
+            "wheelbase": 992.0,
+            "chainstay": 410.0,
+            "bbDrop": 70.0,
+            "headTube": 148.0,
+            "seatTube": 540.0
+          },
+          {
+            "size": "XL",
+            "stack": 580.0,
+            "reach": 405.0,
+            "headAngle": 73.2,
+            "seatAngle": 73.2,
+            "wheelbase": 1007.0,
+            "chainstay": 410.0,
+            "bbDrop": 70.0,
+            "headTube": 171.0,
+            "seatTube": 565.0
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.xidesheng.com/goods/2030931384538648577/detail",
+        "sourceLabel": "喜德盛中国官网 · AD7 几何表",
+        "note": "按该产品详情页关联的官方几何表记录，尺寸单位为 mm、角度为 °。身高建议不能代替个人适配。"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "2026 年国内版 AD7 使用 T700 与 T800 碳纤维车架，配 105 Di2、BRANTA C45 SL 碳轮和碳纤维一体把。白粉、合金和暮光三款涂装分别保留官方图片。",
+        "source": "https://www.xidesheng.com/goods/2030931384538648577/detail",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "xds-ad350-2026",
+      "brandId": "xds",
+      "name": "喜德盛 AD350",
+      "family": "AD350",
+      "build": "L-TWOO RX 2 × 12",
+      "edition": "中国大陆官网配置",
+      "modelYear": 2026,
+      "kind": "全能公路",
+      "description": "2026 年 AD350 采用 X6 二代 SLR 铝架、碳叉和碳座管，传动改为 L-TWOO RX 双盘 12 速。松烟灰、天青白与星云白三款涂装均有官方整车图。",
+      "collections": ["current"],
+      "image": "/bikes/xds-ad350-cn-1.png",
+      "imageCredit": "喜德盛 XDS",
+      "imageNote": "2026 年中国大陆版 AD350。官网列 RX 双盘 24 速，但齿盘栏只写 48T，未确认完整盘片齿数；功率计栏保留官网标注并提示核对。",
+      "imageRatio": 1.7145833333333333,
+      "imageSource": "https://www.xidesheng.com/goods/2056272417912729602/buy",
+      "color": "松烟灰",
+      "colorHex": "#656970",
+      "source": "https://www.xidesheng.com/goods/2056272417912729602/detail",
+      "sourceLabel": "中国官网 · AD350",
+      "checkedAt": "2026-09-23",
+      "weight": "未公布",
+      "weightNote": "官网未提供可核对的整车重量",
+      "groupset": "L-TWOO RX 2 × 12",
+      "hasPowerMeter": false,
+      "material": "X6 二代 SLR 铝合金",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "喜德盛 AD350 车架组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "X6 二代 SLR 铝合金"],
+            ["前叉", "碳纤维"],
+            ["走线", "全内走线"],
+            ["标称尺码", "420 / 450 / 480 / 510 / 540"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "BRANTA 铝合金一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["宽度 / 把立长度", "官网未公布"]
+          ],
+          "x": 67,
+          "y": 16
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "BRANTA 碳纤维座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["规格", "Branta碳纤维，气动型座管"]
+          ],
+          "x": 36,
+          "y": 22
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "BRANTA 公路运动坐垫",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["原配", "Branta 公路车运动座垫"],
+            ["尺寸 / 导轨", "官网未公布"]
+          ],
+          "x": 35,
+          "y": 9
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "L-TWOO RX",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "2*12-speed，24速"],
+            ["制动", "L-TWOO 油压碟刹"],
+            ["碟片", "160mm"]
+          ],
+          "x": 77,
+          "y": 13
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "BRANTA 铝合金一体曲柄",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["中轴", "牙纹式中轴"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 50,
+          "y": 72
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "BRANTA 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿数组合", "待核对；官网双盘描述与 48T 单一数值未对应"],
+            ["后端速别", "12 速"]
+          ],
+          "x": 44,
+          "y": 75
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "12 速卡式飞轮",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿比范围", "11–34T"],
+            ["具体型号", "官网未公布"]
+          ],
+          "x": 23,
+          "y": 63
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "BRANTA 功率齿盘 · 待核对",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["官网标注", "齿盘栏注明功率计一体齿盘"],
+            ["核对说明", "该栏齿数与双盘描述冲突；是否原配、测量位置及型号需向门店确认"]
+          ],
+          "x": 46,
+          "y": 70
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "BRANTA 铝合金轮组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["花鼓", "培林花鼓"],
+            ["固定方式", "官网未公布"]
+          ],
+          "x": 88,
+          "y": 81
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "700C 公路胎",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 30C"],
+            ["具体型号", "官网未公布"]
+          ],
+          "x": 87,
+          "y": 39
+        }
+      ],
+      "price": {
+        "label": "¥3,998",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.xidesheng.com/goods/2056272417912729602/buy",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "xds-ad350-cn-2",
+          "name": "天青白",
+          "hex": "#b4dcdd",
+          "image": "/bikes/xds-ad350-cn-2.png",
+          "source": "https://www.xidesheng.com/goods/2056272417912729602/buy",
+          "imageRatio": 1.7145833333333333,
+          "note": "2026 年中国大陆版 AD350。官网列 RX 双盘 24 速，但齿盘栏只写 48T，未确认完整盘片齿数；功率计栏保留官网标注并提示核对。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 67,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 22
+            },
+            "saddle": {
+              "x": 35,
+              "y": 9
+            },
+            "shifters": {
+              "x": 77,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 72
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 75
+            },
+            "cassette": {
+              "x": 23,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 70
+            },
+            "wheels": {
+              "x": 88,
+              "y": 81
+            },
+            "tires": {
+              "x": 87,
+              "y": 39
+            }
+          }
+        },
+        {
+          "id": "xds-ad350-cn-3",
+          "name": "星云白",
+          "hex": "#e2e3e5",
+          "image": "/bikes/xds-ad350-cn-3.png",
+          "source": "https://www.xidesheng.com/goods/2056272417912729602/buy",
+          "imageRatio": 1.7145833333333333,
+          "note": "2026 年中国大陆版 AD350。官网列 RX 双盘 24 速，但齿盘栏只写 48T，未确认完整盘片齿数；功率计栏保留官网标注并提示核对。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 67,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 22
+            },
+            "saddle": {
+              "x": 35,
+              "y": 9
+            },
+            "shifters": {
+              "x": 77,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 72
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 75
+            },
+            "cassette": {
+              "x": 23,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 70
+            },
+            "wheels": {
+              "x": 88,
+              "y": 81
+            },
+            "tires": {
+              "x": 87,
+              "y": 39
+            }
+          }
+        }
+      ],
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.xidesheng.com/goods/2056272417912729602/detail",
+        "sourceLabel": "中国官网几何资料",
+        "note": "官网未提供完整几何尺寸，暂不提供几何叠图；不使用其他地区或其他型号的尺寸代替。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "2026 年 AD350 采用 X6 二代 SLR 铝架、碳叉和碳座管，传动改为 L-TWOO RX 双盘 12 速。松烟灰、天青白与星云白三款涂装均有官方整车图。",
+        "source": "https://www.xidesheng.com/goods/2056272417912729602/detail",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "xds-ad600-2026",
+      "brandId": "xds",
+      "name": "喜德盛 AD600",
+      "family": "AD600",
+      "build": "Shimano 105 Di2",
+      "edition": "中国大陆官网配置",
+      "modelYear": 2026,
+      "kind": "全能公路",
+      "description": "AD600 将 105 Di2 与铝合金车架组合，配碳纤维前叉、碳座管和 30C 轮胎。适合与同品牌碳架电变车型比较整车配置和预算分配。",
+      "collections": ["current"],
+      "image": "/bikes/xds-ad600-cn-1.png",
+      "imageCredit": "喜德盛 XDS",
+      "imageNote": "2026 年中国大陆版 AD600，按中国官网 105 Di2 整车配置记录。",
+      "imageRatio": 1.7145833333333333,
+      "imageSource": "https://www.xidesheng.com/goods/2056273069653045250/buy",
+      "color": "乌梅子酱",
+      "colorHex": "#974f6d",
+      "source": "https://www.xidesheng.com/goods/2056273069653045250/detail",
+      "sourceLabel": "中国官网 · AD600",
+      "checkedAt": "2026-09-23",
+      "weight": "未公布",
+      "weightNote": "官网未提供可核对的整车重量",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": false,
+      "material": "X6 铝合金",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "喜德盛 AD600 车架组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "X6 铝合金"],
+            ["前叉", "碳纤维"],
+            ["走线", "全内走线"],
+            ["标称尺码", "420 / 450 / 480 / 510 / 540"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "BRANTA 铝合金一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["宽度 / 把立长度", "官网未公布"]
+          ],
+          "x": 67,
+          "y": 16
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "BRANTA 碳纤维座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["规格", "Branta碳纤维座管"]
+          ],
+          "x": 36,
+          "y": 22
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "BRANTA 公路运动坐垫",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["原配", "Branta 公路车运动座垫"],
+            ["尺寸 / 导轨", "官网未公布"]
+          ],
+          "x": 35,
+          "y": 9
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano 105 Di2",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "2*12-speed，24速，DI2"],
+            ["制动", "SHIMANO 105 油压碟刹"],
+            ["碟片", "SHIMANO 中锁型碟片160mm"]
+          ],
+          "x": 77,
+          "y": 13,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano 105 一体曲柄",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["中轴", "牙纹式中轴"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 50,
+          "y": 72,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Shimano 105 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿数组合", "50 / 34T"],
+            ["后端速别", "12 速"]
+          ],
+          "x": 44,
+          "y": 75,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 105 12 速飞轮",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿比范围", "11–34T"],
+            ["具体型号", "官网未公布"]
+          ],
+          "x": 23,
+          "y": 63,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "功率计未确认为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["官网描述", "兼容原厂功率计"],
+            ["配置表", "未列功率计型号；兼容不等于随车配备"]
+          ],
+          "x": 46,
+          "y": 70
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "BRANTA 铝合金轮组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["花鼓", "培林花鼓"],
+            ["固定方式", "桶轴"]
+          ],
+          "x": 88,
+          "y": 81
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "700C 公路胎",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 30C"],
+            ["具体型号", "官网未公布"]
+          ],
+          "x": 87,
+          "y": 39
+        }
+      ],
+      "price": {
+        "label": "¥6,999",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.xidesheng.com/goods/2056273069653045250/buy",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "xds-ad600-cn-2",
+          "name": "岩银灰",
+          "hex": "#aaa69f",
+          "image": "/bikes/xds-ad600-cn-2.png",
+          "source": "https://www.xidesheng.com/goods/2056273069653045250/buy",
+          "imageRatio": 1.7145833333333333,
+          "note": "2026 年中国大陆版 AD600，按中国官网 105 Di2 整车配置记录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 67,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 22
+            },
+            "saddle": {
+              "x": 35,
+              "y": 9
+            },
+            "shifters": {
+              "x": 77,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 72
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 75
+            },
+            "cassette": {
+              "x": 23,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 70
+            },
+            "wheels": {
+              "x": 88,
+              "y": 81
+            },
+            "tires": {
+              "x": 87,
+              "y": 39
+            }
+          }
+        }
+      ],
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.xidesheng.com/goods/2056273069653045250/detail",
+        "sourceLabel": "中国官网几何资料",
+        "note": "官网未提供完整几何尺寸，暂不提供几何叠图；不使用其他地区或其他型号的尺寸代替。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "AD600 将 105 Di2 与铝合金车架组合，配碳纤维前叉、碳座管和 30C 轮胎。适合与同品牌碳架电变车型比较整车配置和预算分配。",
+        "source": "https://www.xidesheng.com/goods/2056273069653045250/detail",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "xds-gt8-2026",
+      "brandId": "xds",
+      "name": "X-LAB GT8",
+      "family": "GT8",
+      "build": "Shimano GRX Di2 1 × 12",
+      "edition": "中国大陆官网配置",
+      "modelYear": 2026,
+      "kind": "砾石公路",
+      "description": "GT8 是 X-LAB 的碳纤维砾石车型，配 45C Continental Terra Trail、GRX Di2 单盘系统和 BRANTA C45 GT 碳轮。车架提供储物结构，兼容 UDH 尾钩。",
+      "collections": ["current"],
+      "image": "/bikes/xds-gt8-cn-1.png",
+      "imageCredit": "喜德盛 XDS",
+      "imageNote": "2026 年中国大陆官网 GT8，配 GRX Di2 与 BRANTA 功率曲柄；官网条目挂接的几何表标为“国际版”，暂不作为国内版实测尺寸录入。",
+      "imageRatio": 1.7145833333333333,
+      "imageSource": "https://www.xidesheng.com/goods/2044591829417873410/buy",
+      "color": "爆推黑",
+      "colorHex": "#252729",
+      "source": "https://www.xidesheng.com/goods/2044591829417873410/detail",
+      "sourceLabel": "中国官网 · GT8",
+      "checkedAt": "2026-09-23",
+      "weight": "约 8.78 kg",
+      "weightNote": "官方口径 · M 码；不含脚踏，涂装可能影响重量",
+      "groupset": "Shimano GRX Di2 1 × 12",
+      "hasPowerMeter": true,
+      "material": "T800 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "X-LAB GT8 车架组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["尾钩", "兼容 UDH"],
+            ["前叉", "碳纤维 · 12 × 100 mm 桶轴"],
+            ["中轴", "BBT47 86-24"]
+          ],
+          "x": 55,
+          "y": 47
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "BRANTA 砾石把组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["车把", "碳纤维外扩弯把"],
+            ["把立", "碳纤维分体把立"]
+          ],
+          "x": 67,
+          "y": 16
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "BRANTA 碳纤维座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["直径", "27.2 mm"],
+            ["材质", "碳纤维"]
+          ],
+          "x": 36,
+          "y": 23
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Royal 坐垫",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["品牌", "Selle Royal"],
+            ["具体型号 / 尺寸", "官网未公布"]
+          ],
+          "x": 34,
+          "y": 10
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano GRX ST-RX717",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "Di2 · 1 × 12 速"],
+            ["后拨", "RD-RX717"],
+            ["制动", "BR-RX715 · 前后 160 mm 碟片"]
+          ],
+          "x": 76,
+          "y": 13
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "BRANTA 铝合金功率曲柄",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["轴心", "24 mm 钢轴"],
+            ["中轴", "BBT47 86-24"]
+          ],
+          "x": 50,
+          "y": 73
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "BRANTA 单盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿数", "40T"],
+            ["齿形", "正负齿"]
+          ],
+          "x": 43,
+          "y": 75
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-M6100-12",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["片数", "12 片"],
+            ["齿比范围", "10–51T"]
+          ],
+          "x": 22,
+          "y": 62
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "BRANTA 功率曲柄",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官网列为原配"],
+            ["测量位置 / 精度", "官网未进一步公布"]
+          ],
+          "x": 46,
+          "y": 71
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "BRANTA C45 GT",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["轮圈", "碳纤维"],
+            ["辐条", "不锈钢"],
+            ["碟片接口", "中锁；官网塔基描述与飞轮有冲突，暂不录入塔基规格"]
+          ],
+          "x": 88,
+          "y": 82
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental Terra Trail",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 45C"],
+            ["结构", "开口折叠胎；官网列随车内胎"]
+          ],
+          "x": 87,
+          "y": 39
+        }
+      ],
+      "price": {
+        "label": "¥21,980",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.xidesheng.com/goods/2044591829417873410/buy",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "xds-gt8-cn-2",
+          "name": "尾流蓝银",
+          "hex": "#254fbb",
+          "image": "/bikes/xds-gt8-cn-2.png",
+          "source": "https://www.xidesheng.com/goods/2044591829417873410/buy",
+          "imageRatio": 1.7145833333333333,
+          "note": "2026 年中国大陆官网 GT8，配 GRX Di2 与 BRANTA 功率曲柄；官网条目挂接的几何表标为“国际版”，暂不作为国内版实测尺寸录入。",
+          "hotspots": {
+            "frame": {
+              "x": 55,
+              "y": 47
+            },
+            "handlebar": {
+              "x": 67,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 23
+            },
+            "saddle": {
+              "x": 34,
+              "y": 10
+            },
+            "shifters": {
+              "x": 76,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 73
+            },
+            "chainrings": {
+              "x": 43,
+              "y": 75
+            },
+            "cassette": {
+              "x": 22,
+              "y": 62
+            },
+            "power": {
+              "x": 46,
+              "y": 71
+            },
+            "wheels": {
+              "x": 88,
+              "y": 82
+            },
+            "tires": {
+              "x": 87,
+              "y": 39
+            }
+          }
+        }
+      ],
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.xidesheng.com/goods/2044591829417873410/detail",
+        "sourceLabel": "中国官网几何资料",
+        "note": "中国官网此条目关联的几何表标为“X-LAB GT8【国际版】”。国内版本的尺寸对应关系未明确，暂不录入几何叠图。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "GT8 是 X-LAB 的碳纤维砾石车型，配 45C Continental Terra Trail、GRX Di2 单盘系统和 BRANTA C45 GT 碳轮。车架提供储物结构，兼容 UDH 尾钩。",
+        "source": "https://www.xidesheng.com/goods/2044591829417873410/detail",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "camp-ace3-105",
+      "brandId": "camp",
+      "name": "CAMP ACE III 105",
+      "family": "ACE III 105",
+      "build": "Shimano 105 Di2",
+      "edition": "中国大陆官网配置",
+      "modelYear": null,
+      "kind": "气动竞赛",
+      "description": "ACE 第三代的 105 Di2 版本，采用 T800 碳纤维车架、T47 五通和 NOVATEC R5 50 mm 碳轮。可与已收录的 ACE III UT 比较套件和轮组配置。",
+      "collections": ["current"],
+      "image": "/bikes/camp-ace105-1.jpg",
+      "imageCredit": "CAMP 坎普",
+      "imageNote": "CAMP 中国官网 ACE III 105 珍珠白，105 Di2 与 NOVATEC R5 碳轮；独立于 ACE III UT 条目。",
+      "imageRatio": 1.6666666666666667,
+      "imageSource": "https://www.campbicycle.com/cn/road-bike/ace-iii-105.html",
+      "color": "珍珠白",
+      "colorHex": "#e9e6e1",
+      "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-105.html",
+      "sourceLabel": "中国官网 · ACE III 105",
+      "checkedAt": "2026-09-23",
+      "weight": "约 7.1 kg",
+      "weightNote": "官方口径 · 小尺码；不含脚踏与小配件",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": false,
+      "material": "T800 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "CAMP ACE III",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["前叉", "T800 碳纤维桶轴"],
+            ["五通", "T47"],
+            ["尺码", "440 / 460 / 490 / 520 / 540"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "T800 碳纤维一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["宽度 / 把立长度", "官网未公布"]
+          ],
+          "x": 69,
+          "y": 15
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "T800 气动座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["长度 / 后飘", "官网未公布"]
+          ],
+          "x": 36,
+          "y": 21
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Royal 坐垫",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["官网标注", "SR 人体工学坐垫"],
+            ["具体型号 / 导轨", "官网未公布"]
+          ],
+          "x": 35,
+          "y": 12
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano ST-R7170",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "105 Di2 · 2 × 12 速"],
+            ["制动", "液压碟刹"],
+            ["前后拨", "FD-R7150 / RD-R7150"]
+          ],
+          "x": 80,
+          "y": 13,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano FC-R7100",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["系列", "105"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 50,
+          "y": 70,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Shimano 105 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["结构", "双盘"],
+            ["齿数组合", "官网未公布"]
+          ],
+          "x": 44,
+          "y": 72,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-R7100",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["片数", "12 片"],
+            ["齿比范围", "官网未公布"]
+          ],
+          "x": 23,
+          "y": 62,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需按曲柄、五通及脚踏接口确认"]
+          ],
+          "x": 46,
+          "y": 69
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "NOVATEC R5",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["框高", "50 mm"]
+          ],
+          "x": 88,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental Grand Prix TR",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 30C"],
+            ["结构", "折叠胎"]
+          ],
+          "x": 86,
+          "y": 36
+        }
+      ],
+      "price": {
+        "label": "¥12,999",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-105.html",
+        "checkedAt": "2026-09-23"
+      },
+      "yearNote": "原厂未明确车型年；不以网页上传或核对日期代替。",
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-105.html",
+        "sourceLabel": "中国官网几何资料",
+        "note": "官网未提供完整几何尺寸，暂不提供几何叠图；不使用其他地区或其他型号的尺寸代替。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "ACE 第三代的 105 Di2 版本，采用 T800 碳纤维车架、T47 五通和 NOVATEC R5 50 mm 碳轮。可与已收录的 ACE III UT 比较套件和轮组配置。",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-iii-105.html",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "camp-ace-qed",
+      "brandId": "camp",
+      "name": "CAMP ACE QED",
+      "family": "ACE QED",
+      "build": "迈金 QED 2 × 12",
+      "edition": "中国大陆官网配置",
+      "modelYear": null,
+      "kind": "气动竞赛",
+      "description": "ACE QED 使用迈金电子变速、T800 碳架和 50 mm 碳轮，搭配碳纤维一体把。四款官方涂装提供了从珍珠白、水泥灰到坎普黄、星黛紫的选择。",
+      "collections": ["current"],
+      "image": "/bikes/camp-qed-1.jpg",
+      "imageCredit": "CAMP 坎普",
+      "imageNote": "CAMP 中国官网 ACE QED 的四款涂装。图片可见 Grand Prix 轮胎，配置表列 Ultra Sport；轮胎参数按配置表记录。",
+      "imageRatio": 1.6666666666666667,
+      "imageSource": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+      "color": "珍珠白",
+      "colorHex": "#e9e6e1",
+      "source": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+      "sourceLabel": "中国官网 · ACE QED",
+      "checkedAt": "2026-09-23",
+      "weight": "约 8.7 kg",
+      "weightNote": "官方口径 · 小尺码；不含脚踏与小配件",
+      "groupset": "迈金 QED 2 × 12",
+      "hasPowerMeter": false,
+      "material": "T800 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "CAMP ACE QED",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["前叉", "T800 碳纤维桶轴"],
+            ["尺码", "440 / 460 / 490 / 520 / 540"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "CAMP 碳纤维一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T700 + T800 碳纤维"],
+            ["宽度 / 把立长度", "官网未公布"]
+          ],
+          "x": 69,
+          "y": 15
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "CAMP 气动座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T700 + T800 碳纤维"],
+            ["长度 / 后飘", "官网未公布"]
+          ],
+          "x": 36,
+          "y": 21
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Royal 坐垫",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["官网标注", "SR 人体工学坐垫"],
+            ["具体型号 / 导轨", "官网未公布"]
+          ],
+          "x": 35,
+          "y": 10
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "迈金 QED",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "电子变速 · 2 × 12 速"],
+            ["制动", "QED 液压碟刹"]
+          ],
+          "x": 80,
+          "y": 13
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "铝合金中空一体曲柄",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 50,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 34T 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "x": 44,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 105 飞轮",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["后端速别", "12 速"],
+            ["型号 / 齿数范围", "官网未公布"]
+          ],
+          "x": 23,
+          "y": 62
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需按曲柄、五通及脚踏接口确认"]
+          ],
+          "x": 46,
+          "y": 69
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "50 mm 碳纤维轮组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["框高", "50 mm"],
+            ["花鼓", "前二后四培林；具体型号未公布"]
+          ],
+          "x": 88,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental Ultra Sport",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 28C"],
+            ["资料差异", "当前配置表列 Ultra Sport；官方照片可见 Grand Prix 标识"]
+          ],
+          "x": 86,
+          "y": 36
+        }
+      ],
+      "price": {
+        "label": "¥8,999",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "camp-qed-2",
+          "name": "坎普黄",
+          "hex": "#efb01d",
+          "image": "/bikes/camp-qed-2.jpg",
+          "source": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 ACE QED 的四款涂装。图片可见 Grand Prix 轮胎，配置表列 Ultra Sport；轮胎参数按配置表记录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 69,
+              "y": 15
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 21
+            },
+            "saddle": {
+              "x": 35,
+              "y": 10
+            },
+            "shifters": {
+              "x": 80,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 23,
+              "y": 62
+            },
+            "power": {
+              "x": 46,
+              "y": 69
+            },
+            "wheels": {
+              "x": 88,
+              "y": 80
+            },
+            "tires": {
+              "x": 86,
+              "y": 36
+            }
+          }
+        },
+        {
+          "id": "camp-qed-3",
+          "name": "水泥灰",
+          "hex": "#999ba0",
+          "image": "/bikes/camp-qed-3.jpg",
+          "source": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 ACE QED 的四款涂装。图片可见 Grand Prix 轮胎，配置表列 Ultra Sport；轮胎参数按配置表记录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 69,
+              "y": 15
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 21
+            },
+            "saddle": {
+              "x": 35,
+              "y": 10
+            },
+            "shifters": {
+              "x": 80,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 23,
+              "y": 62
+            },
+            "power": {
+              "x": 46,
+              "y": 69
+            },
+            "wheels": {
+              "x": 88,
+              "y": 80
+            },
+            "tires": {
+              "x": 86,
+              "y": 36
+            }
+          }
+        },
+        {
+          "id": "camp-qed-4",
+          "name": "星黛紫",
+          "hex": "#a48dc1",
+          "image": "/bikes/camp-qed-4.jpg",
+          "source": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 ACE QED 的四款涂装。图片可见 Grand Prix 轮胎，配置表列 Ultra Sport；轮胎参数按配置表记录。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 69,
+              "y": 15
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 21
+            },
+            "saddle": {
+              "x": 35,
+              "y": 10
+            },
+            "shifters": {
+              "x": 80,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 23,
+              "y": 62
+            },
+            "power": {
+              "x": 46,
+              "y": 69
+            },
+            "wheels": {
+              "x": 88,
+              "y": 80
+            },
+            "tires": {
+              "x": 86,
+              "y": 36
+            }
+          }
+        }
+      ],
+      "yearNote": "原厂未明确车型年；不以网页上传或核对日期代替。",
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+        "sourceLabel": "中国官网几何资料",
+        "note": "官网未提供完整几何尺寸，暂不提供几何叠图；不使用其他地区或其他型号的尺寸代替。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "ACE QED 使用迈金电子变速、T800 碳架和 50 mm 碳轮，搭配碳纤维一体把。四款官方涂装提供了从珍珠白、水泥灰到坎普黄、星黛紫的选择。",
+        "source": "https://www.campbicycle.com/cn/road-bike/ace-qed.html",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "camp-sr5-ets",
+      "brandId": "camp",
+      "name": "CAMP SR5 ETS",
+      "family": "SR5 ETS",
+      "build": "迈金电变 · 官网标注 PES",
+      "edition": "中国大陆官网配置",
+      "modelYear": null,
+      "kind": "全能公路",
+      "description": "SR5 ETS 使用铝架、T700 碳叉和 T800 碳纤维一体把，配双盘电子变速、液压碟刹及 30C 轮胎。官网提供天空蓝、钢琴白和电光白三款涂装。",
+      "collections": ["current"],
+      "image": "/bikes/camp-sr5ets-1.jpg",
+      "imageCredit": "CAMP 坎普",
+      "imageNote": "CAMP 中国官网 SR5 ETS 三款涂装；电光白原图文件名含 RADON，但页面标注及车架上的 SR5 标识一致。套件按官网 PES 命名记录，不据此推断独立零售套件型号。",
+      "imageRatio": 1.6666666666666667,
+      "imageSource": "https://www.campbicycle.com/cn/road-bike/sr-ets.html",
+      "color": "天空蓝",
+      "colorHex": "#92bce7",
+      "source": "https://www.campbicycle.com/cn/road-bike/sr-ets.html",
+      "sourceLabel": "中国官网 · SR5 ETS",
+      "checkedAt": "2026-09-23",
+      "weight": "约 9.5 kg",
+      "weightNote": "官方口径 · 小尺码；不含脚踏与小配件",
+      "groupset": "迈金电变 · 官网标注 PES",
+      "hasPowerMeter": false,
+      "material": "铝合金",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "CAMP SR5 ETS",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["车架", "铝合金内走线桶轴"],
+            ["前叉", "T700 碳纤维桶轴"],
+            ["尺码", "460 / 490 / 510 / 530"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "T800 碳纤维一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T800 碳纤维"],
+            ["宽度 / 把立长度", "官网未公布"]
+          ],
+          "x": 69,
+          "y": 15
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "铝合金座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["直径 / 后飘", "官网未公布"]
+          ],
+          "x": 36,
+          "y": 21
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "CAMP 原配坐垫",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["官网标注", "人体工学坐垫"],
+            ["具体型号 / 尺寸", "官网未公布"]
+          ],
+          "x": 35,
+          "y": 12
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "迈金电变 · 官网标注 PES",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["速别", "2 × 12 速"],
+            ["制动", "液压碟刹"],
+            ["命名依据", "保留 CAMP 配置表命名，购买时核对实车套件型号"]
+          ],
+          "x": 80,
+          "y": 13
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "驭勇 PRF 一体曲柄",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 50,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "50 / 34T 双盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "x": 44,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano R7100",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿比范围", "11–34T"],
+            ["片数", "12 片"]
+          ],
+          "x": 23,
+          "y": 62
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需按曲柄、五通及脚踏接口确认"]
+          ],
+          "x": 46,
+          "y": 69
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "LUCE 30 mm 铝圈轮组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质 / 框高", "铝合金 · 30 mm"],
+            ["花鼓", "前二后四培林 · 中锁"]
+          ],
+          "x": 88,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "朝阳公路胎",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 30C"],
+            ["胎体", "60 TPI"]
+          ],
+          "x": 86,
+          "y": 36
+        }
+      ],
+      "price": {
+        "label": "¥4,999",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.campbicycle.com/cn/road-bike/sr-ets.html",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "camp-sr5ets-2",
+          "name": "钢琴白",
+          "hex": "#eeeeeb",
+          "image": "/bikes/camp-sr5ets-2.jpg",
+          "source": "https://www.campbicycle.com/cn/road-bike/sr-ets.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 SR5 ETS 三款涂装；电光白原图文件名含 RADON，但页面标注及车架上的 SR5 标识一致。套件按官网 PES 命名记录，不据此推断独立零售套件型号。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 69,
+              "y": 15
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 21
+            },
+            "saddle": {
+              "x": 35,
+              "y": 12
+            },
+            "shifters": {
+              "x": 80,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 23,
+              "y": 62
+            },
+            "power": {
+              "x": 46,
+              "y": 69
+            },
+            "wheels": {
+              "x": 88,
+              "y": 80
+            },
+            "tires": {
+              "x": 86,
+              "y": 36
+            }
+          }
+        },
+        {
+          "id": "camp-sr5ets-3",
+          "name": "电光白",
+          "hex": "#e8ded0",
+          "image": "/bikes/camp-sr5ets-3.jpg",
+          "source": "https://www.campbicycle.com/cn/road-bike/sr-ets.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 SR5 ETS 三款涂装；电光白原图文件名含 RADON，但页面标注及车架上的 SR5 标识一致。套件按官网 PES 命名记录，不据此推断独立零售套件型号。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 69,
+              "y": 15
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 21
+            },
+            "saddle": {
+              "x": 35,
+              "y": 12
+            },
+            "shifters": {
+              "x": 80,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 23,
+              "y": 62
+            },
+            "power": {
+              "x": 46,
+              "y": 69
+            },
+            "wheels": {
+              "x": 88,
+              "y": 80
+            },
+            "tires": {
+              "x": 86,
+              "y": 36
+            }
+          }
+        }
+      ],
+      "yearNote": "原厂未明确车型年；不以网页上传或核对日期代替。",
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.campbicycle.com/cn/road-bike/sr-ets.html",
+        "sourceLabel": "中国官网几何资料",
+        "note": "官网未提供完整几何尺寸，暂不提供几何叠图；不使用其他地区或其他型号的尺寸代替。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "SR5 ETS 使用铝架、T700 碳叉和 T800 碳纤维一体把，配双盘电子变速、液压碟刹及 30C 轮胎。官网提供天空蓝、钢琴白和电光白三款涂装。",
+        "source": "https://www.campbicycle.com/cn/road-bike/sr-ets.html",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
+    },
+    {
+      "id": "camp-gx700",
+      "brandId": "camp",
+      "name": "CAMP GX700",
+      "family": "GX700",
+      "build": "Shimano GRX 1 × 12",
+      "edition": "中国大陆官网配置",
+      "modelYear": null,
+      "kind": "砾石公路",
+      "description": "GX700 采用 T800 碳架、GRX 机械单盘传动和 10–51T 飞轮，原配 45C 砾石胎。前叉与车架的安装孔位可在官方照片中放大查看。",
+      "collections": ["current"],
+      "image": "/bikes/camp-gx700-1.jpg",
+      "imageCredit": "CAMP 坎普",
+      "imageNote": "CAMP 中国官网 GX700 的四款涂装。官方单盘 12 速资料中的齿盘齿数与单盘描述冲突，暂不录入齿数；照片上的轮胎品牌仅用于观察，不替代官方配置清单。",
+      "imageRatio": 1.6666666666666667,
+      "imageSource": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+      "color": "彩墨青",
+      "colorHex": "#a4d5bd",
+      "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+      "sourceLabel": "中国官网 · GX700",
+      "checkedAt": "2026-09-23",
+      "weight": "约 10.2 kg",
+      "weightNote": "官方口径 · 小尺码；不含脚踏与小配件",
+      "groupset": "Shimano GRX 1 × 12",
+      "hasPowerMeter": false,
+      "material": "T800 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "CAMP GX700",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["车架", "T800 碳纤维桶轴"],
+            ["前叉", "T800 碳纤维桶轴"],
+            ["尺码", "450 / 480 / 510"]
+          ],
+          "x": 56,
+          "y": 46
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "CAMP 碳纤维一体把",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T700 + T800 碳纤维"],
+            ["宽度 / 外扩角", "官网未公布"]
+          ],
+          "x": 66,
+          "y": 16
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "CAMP 碳纤维座管",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "T700 + T800 碳纤维"],
+            ["直径 / 后飘", "官网未公布"]
+          ],
+          "x": 37,
+          "y": 23
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Royal 坐垫",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["官网标注", "SR 人体工学坐垫"],
+            ["具体型号 / 尺寸", "官网未公布"]
+          ],
+          "x": 35,
+          "y": 13
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano GRX ST-RX820",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["换挡", "机械 · 1 × 12 速"],
+            ["后拨", "RD-RX822"],
+            ["制动", "液压碟刹"]
+          ],
+          "x": 76,
+          "y": 13
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano GRX FC-RX610",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["型号依据", "CAMP 官方配置表"],
+            ["曲柄长度", "官网未公布"]
+          ],
+          "x": 50,
+          "y": 70
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "GRX 单盘",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["结构", "官网标注 1 × 12，且未配前拨"],
+            ["齿数", "暂不录入；官网齿盘栏的 26–36T 与单盘描述冲突"]
+          ],
+          "x": 44,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano CS-M6100",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["齿比范围", "10–51T"],
+            ["片数", "12 片"]
+          ],
+          "x": 24,
+          "y": 63
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未列为标配",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["配置", "官方清单未列功率计"],
+            ["选配", "需按曲柄、五通及脚踏接口确认"]
+          ],
+          "x": 46,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "CAMP 铝合金砾石轮组",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["材质", "铝合金"],
+            ["花鼓", "前二后四培林"]
+          ],
+          "x": 88,
+          "y": 81
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "45C 砾石肤边胎",
+          "description": "按中国官网所列整车配置记录；批次差异见图片说明。",
+          "specs": [
+            ["标称尺寸", "700 × 45C"],
+            ["具体型号", "配置表未列品牌型号；照片可见 MAXXIS Reaver"]
+          ],
+          "x": 86,
+          "y": 35
+        }
+      ],
+      "price": {
+        "label": "¥9,999",
+        "market": "中国大陆官方整车标价 · 非车架售价，库存与成交价以门店为准",
+        "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+        "checkedAt": "2026-09-23"
+      },
+      "paints": [
+        {
+          "id": "camp-gx700-2",
+          "name": "暗夜黑",
+          "hex": "#252627",
+          "image": "/bikes/camp-gx700-2.jpg",
+          "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 GX700 的四款涂装。官方单盘 12 速资料中的齿盘齿数与单盘描述冲突，暂不录入齿数；照片上的轮胎品牌仅用于观察，不替代官方配置清单。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 66,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 37,
+              "y": 23
+            },
+            "saddle": {
+              "x": 35,
+              "y": 13
+            },
+            "shifters": {
+              "x": 76,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 24,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 68
+            },
+            "wheels": {
+              "x": 88,
+              "y": 81
+            },
+            "tires": {
+              "x": 86,
+              "y": 35
+            }
+          }
+        },
+        {
+          "id": "camp-gx700-3",
+          "name": "云烟灰",
+          "hex": "#acadb5",
+          "image": "/bikes/camp-gx700-3.jpg",
+          "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 GX700 的四款涂装。官方单盘 12 速资料中的齿盘齿数与单盘描述冲突，暂不录入齿数；照片上的轮胎品牌仅用于观察，不替代官方配置清单。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 66,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 38,
+              "y": 26
+            },
+            "saddle": {
+              "x": 36,
+              "y": 16
+            },
+            "shifters": {
+              "x": 76,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 24,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 68
+            },
+            "wheels": {
+              "x": 88,
+              "y": 81
+            },
+            "tires": {
+              "x": 86,
+              "y": 35
+            }
+          }
+        },
+        {
+          "id": "camp-gx700-4",
+          "name": "香槟金",
+          "hex": "#b8a99b",
+          "image": "/bikes/camp-gx700-4.jpg",
+          "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+          "imageRatio": 1.6666666666666667,
+          "note": "CAMP 中国官网 GX700 的四款涂装。官方单盘 12 速资料中的齿盘齿数与单盘描述冲突，暂不录入齿数；照片上的轮胎品牌仅用于观察，不替代官方配置清单。",
+          "hotspots": {
+            "frame": {
+              "x": 56,
+              "y": 46
+            },
+            "handlebar": {
+              "x": 66,
+              "y": 16
+            },
+            "seatpost": {
+              "x": 37,
+              "y": 23
+            },
+            "saddle": {
+              "x": 35,
+              "y": 13
+            },
+            "shifters": {
+              "x": 76,
+              "y": 13
+            },
+            "crank": {
+              "x": 50,
+              "y": 70
+            },
+            "chainrings": {
+              "x": 44,
+              "y": 72
+            },
+            "cassette": {
+              "x": 24,
+              "y": 63
+            },
+            "power": {
+              "x": 46,
+              "y": 68
+            },
+            "wheels": {
+              "x": 88,
+              "y": 81
+            },
+            "tires": {
+              "x": 86,
+              "y": 35
+            }
+          }
+        }
+      ],
+      "yearNote": "原厂未明确车型年；不以网页上传或核对日期代替。",
+      "geometry": {
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+        "sourceLabel": "中国官网几何资料",
+        "note": "官网未提供完整几何尺寸，暂不提供几何叠图；不使用其他地区或其他型号的尺寸代替。",
+        "status": "unavailable"
+      },
+      "aero": {
+        "title": "结构与骑行定位",
+        "description": "GX700 采用 T800 碳架、GRX 机械单盘传动和 10–51T 飞轮，原配 45C 砾石胎。前叉与车架的安装孔位可在官方照片中放大查看。",
+        "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
+        "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
+      }
     }
   ]
 }

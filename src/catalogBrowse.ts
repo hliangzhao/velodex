@@ -18,7 +18,7 @@ export function filterBikes(bikes: Bike[], brands: Brand[], filters: CatalogFilt
         (filters.year === 'unknown' ? !bike.modelYear : String(bike.modelYear) === filters.year)) &&
       (filters.kind === 'all' || bike.kind === filters.kind) &&
       (filters.collection === 'all' || bike.collections.includes(filters.collection)) &&
-      `${bike.name} ${bike.brandId} ${brands.find((b) => b.id === bike.brandId)?.name ?? ''} ${bike.build} ${bike.modelYear ?? ''}`
+      `${bike.name} ${bike.brandId} ${brands.find((b) => b.id === bike.brandId)?.name ?? ''} ${bike.build} ${bike.modelYear ?? ''} ${bike.edition} ${bike.color} ${(bike.paints ?? []).map((paint) => paint.name).join(' ')}`
         .toLowerCase()
         .includes(query),
   );

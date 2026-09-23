@@ -58,7 +58,30 @@ test('catalog API filters and returns correct records without exposing arbitrary
     endurance.bikes.map((b) => b.id),
     catalog.bikes.filter((b) => b.kind === '长途耐力').map((b) => b.id),
   );
-  assert.equal((await (await get('/api/bikes?q=' + encodeURIComponent('喜德盛'))).json()).total, 5);
+  const xds = await (await get('/api/bikes?q=' + encodeURIComponent('喜德盛'))).json();
+  assert.deepEqual(
+    xds.bikes.map((b) => b.id),
+    catalog.bikes.filter((b) => b.brandId === 'xds').map((b) => b.id),
+  );
+  const mainland = await (
+    await get('/api/bikes?brand=xds&q=' + encodeURIComponent('中国大陆'))
+  ).json();
+  assert.deepEqual(
+    mainland.bikes.map((b) => b.id),
+    [
+      'xds-rs8-cn',
+      'xds-rs9-cn',
+      'xds-ad7-cn-2026',
+      'xds-ad350-2026',
+      'xds-ad600-2026',
+      'xds-gt8-2026',
+    ],
+  );
+  const paint = await (await get('/api/bikes?q=' + encodeURIComponent('环湖蓝'))).json();
+  assert.deepEqual(
+    paint.bikes.map((b) => b.id),
+    ['xds-rs8-cn', 'xds-rs9-cn'],
+  );
   const decathlon = await (await get('/api/bikes?q=' + encodeURIComponent('迪卡侬'))).json();
   assert.deepEqual(
     decathlon.bikes.map((b) => b.id),
@@ -81,6 +104,8 @@ test('catalog API filters and returns correct records without exposing arbitrary
       'nuroad-c62-race',
       'cannondale-superx3',
       'canyon-grail-cf7',
+      'xds-gt8-2026',
+      'camp-gx700',
     ],
   );
   for (const name of ['银贝斯', '速比特', '瑞豹'])

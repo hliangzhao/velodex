@@ -75,7 +75,7 @@ export function createApp(catalog = loadCatalog(), { production = false } = {}) 
         (!kind || kind === 'all' || bike.kind === kind) &&
         (!collection || collection === 'all' || bike.collections.includes(collection)) &&
         (!query ||
-          `${bike.name} ${bike.brandId} ${brandNames.get(bike.brandId) ?? ''} ${bike.build}`
+          `${bike.name} ${bike.brandId} ${brandNames.get(bike.brandId) ?? ''} ${bike.build} ${bike.modelYear ?? ''} ${bike.edition} ${bike.color} ${(bike.paints ?? []).map((paint) => paint.name).join(' ')}`
             .toLowerCase()
             .includes(query)),
     );

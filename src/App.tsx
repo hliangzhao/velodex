@@ -624,8 +624,8 @@ function App({ browse = false }: { browse?: boolean }) {
                         type="search"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
-                        placeholder="搜索品牌、车型"
-                        aria-label="搜索品牌或车型"
+                        placeholder="品牌、车型、地区、涂装"
+                        aria-label="搜索品牌、车型、地区或涂装"
                       />
                     </label>
                   </div>

@@ -12,6 +12,27 @@ const { filterBikes, groupBikes, yearLabel } = await import(
   `data:text/javascript;base64,${Buffer.from(code).toString('base64')}`
 );
 const all = { brand: 'all', year: 'all', kind: 'all', collection: 'all', query: '' };
+test('search includes market editions and both default and alternative paint names', () => {
+  const base = catalog.bikes[0];
+  const domestic = {
+    ...base,
+    id: 'domestic',
+    edition: '中国大陆官网配置',
+    color: '珍珠白',
+    paints: [{ name: '环湖蓝' }],
+  };
+  const overseas = { ...base, id: 'overseas', edition: '美国版', color: '黑色', paints: [] };
+  for (const query of ['中国大陆', '珍珠白', ' 环湖蓝 ']) {
+    assert.deepEqual(
+      filterBikes([domestic, overseas], catalog.brands, { ...all, query }).map((b) => b.id),
+      ['domestic'],
+    );
+  }
+  assert.equal(
+    filterBikes([domestic], catalog.brands, { ...all, query: '环湖蓝', year: '1980' }).length,
+    0,
+  );
+});
 test('catalog groups keep every bike exactly once and sort known model years before undated builds', () => {
   for (const mode of ['brand', 'year']) {
     const groups = groupBikes(catalog.bikes, catalog.brands, mode);
