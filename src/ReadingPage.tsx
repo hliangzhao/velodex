@@ -83,14 +83,12 @@ function ReadingIndex({ catalog, missing }: { catalog: Catalog; missing: boolean
         <div>
           <span className="eyebrow">RACE NOTES & THE SCIENCE OF CYCLING</span>
           <h1>
-            看懂选择，
+            赛场器材
             <br />
-            再多骑一程<span>。</span>
+            与骑行科学
           </h1>
           <p>
-            从职业赛场的一个细节，追到背后的原理。
-            <br />
-            读真实的器材档案，也动手试一次风阻与齿比。
+            从有出处的比赛配置和技术资料出发，了解空气动力学、齿比与轮胎等原理，也可以通过交互工具验证计算。
           </p>
         </div>
         <div className="reading-count">
@@ -99,7 +97,7 @@ function ReadingIndex({ catalog, missing }: { catalog: Catalog; missing: boolean
             {articles.filter((a) => a.kind === 'race').length} 篇赛场拆解 /{' '}
             {articles.filter((a) => a.kind === 'science').length} 篇科普
           </span>
-          <small>每篇附来源、适用条件与延伸入口</small>
+          <small>每篇附来源、适用条件与相关工具</small>
         </div>
       </header>
       {missing && (
@@ -320,7 +318,7 @@ function Article({ article, catalog }: { article: ReadingArticle; catalog: Catal
         </aside>
         <article className="reading-body">
           <div className="reading-takeaway">
-            <span className="eyebrow">先记住这一点</span>
+            <span className="eyebrow">内容提要</span>
             <p>{article.takeaway}</p>
           </div>
           {article.sections.map((s, i) => (
@@ -365,8 +363,8 @@ function Article({ article, catalog }: { article: ReadingArticle; catalog: Catal
           </p>
           <QuickCheck quiz={article.quiz} />
           <section className="reading-next">
-            <span className="eyebrow">从阅读到动手</span>
-            <h2>把这个问题，带回自己的车。</h2>
+            <span className="eyebrow">计算与对照</span>
+            <h2>相关工具与图鉴</h2>
             {article.actions.map((action) => (
               <a className="dark-button" href={`${base}${action.search}`} key={action.search}>
                 {action.label}
@@ -432,7 +430,7 @@ function Article({ article, catalog }: { article: ReadingArticle; catalog: Catal
       </div>
       <section className="reading-related">
         <div className="editorial-heading">
-          <h2>沿着好奇，继续读。</h2>
+          <h2>相关阅读</h2>
           <a href={`${base}?view=learn`} className="text-link">
             全部读本 <ArrowUpRight size={16} />
           </a>

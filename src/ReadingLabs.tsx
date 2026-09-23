@@ -115,7 +115,7 @@ function GearLab() {
   ];
   return (
     <>
-      <h2>改变踏频，看看每挡能跑多快。</h2>
+      <h2>踏频与各挡位的理论速度</h2>
       <Slider label="踏频" value={cadence} unit="rpm" min={50} max={120} onChange={setCadence} />
       <p className="reading-table-hint">左右滑动表格，查看完整速度列 →</p>
       <div className="reading-table-wrap">

@@ -83,8 +83,8 @@ function Generations({ catalog }: { catalog: Catalog }) {
       </a>
       <header className="page-heading">
         <span className="eyebrow">THE FAMILY TREE / 经典车型世代谱</span>
-        <h1>熟悉的名字，变过多少次模样？</h1>
-        <p>沿着设计变化往回看。先认识一代车的选择，再把它放回自己的时代。</p>
+        <h1>经典车型的设计演变</h1>
+        <p>按年份回顾各代车型，比较管型、走线和几何的变化。</p>
       </header>
       <nav className="generation-families" aria-label="车型家族">
         {generations.map((f) => (

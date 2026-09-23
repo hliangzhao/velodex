@@ -5,7 +5,7 @@
     "english": "AERO",
     "bikeId": "aeroad-cfr",
     "size": "M",
-    "title": "让管型参与气流设计。",
+    "title": "气动管型与前端整合",
     "summary": "深一些的管型、紧凑的后上叉接点，把车架当作整体气动系统的一部分。它仍要兼顾重量、刚度与操控。",
     "question": "把视角从正侧面转到前方：管子的“深”与“宽”是一回事吗？",
     "features": [
@@ -52,7 +52,7 @@
     "english": "ENDURANCE",
     "bikeId": "defy-pro0",
     "size": "ML",
-    "title": "长途骑行，从前端与接点看起。",
+    "title": "耐力几何与接点设计",
     "summary": "相对更直立的车架前端、座管与后上叉的组合，是耐力设计的重要线索。舒适性还取决于轮胎、胎压、铺层和骑姿。",
     "question": "开启叠影，看头管上端在哪里；再观察座管露出与后上叉的连接。",
     "features": [
@@ -108,7 +108,7 @@
     "english": "CLIMBING",
     "bikeId": "aethos-expert",
     "size": "56",
-    "title": "轻量设计，藏在简洁的轮廓里。",
+    "title": "轻量车架的管型与接点",
     "summary": "以 Aethos 的尺寸关系为参照，观察更纤细的管型、前后叉与传统主三角。轻量也来自材料和制造，不能仅由粗细判断。",
     "question": "与破风类型叠影：相近的前端坐标，是否一定意味着相似的管型？",
     "features": [
@@ -163,7 +163,7 @@
     "english": "GRAVEL",
     "bikeId": "revolt-advanced0",
     "size": "M",
-    "title": "把空间，留给更宽的路。",
+    "title": "砾石车的轮胎空间与安装点",
     "summary": "更宽的胎隙、更长的后下叉，以及可扩展的携行空间，构成砾石设计的观察重点。竞赛砾石与旅行砾石也有不同取舍。",
     "question": "切到前视，看前叉如何为宽胎让位；再点亮安装点。",
     "features": [
@@ -222,7 +222,7 @@
     "english": "TIME TRIAL",
     "bikeId": "cervelo-p5",
     "size": "54",
-    "title": "围绕计时姿态，组织整副车架。",
+    "title": "TT 车的前端支撑与调节",
     "summary": "深管型、较陡的有效座管参考角与托肘前端，让人车系统围绕持续计时姿态展开。车架 Stack / Reach 不能替代托肘坐标。",
     "question": "点亮托肘前端：头管上端与手臂支撑点，为什么不能混为一个坐标？",
     "features": [

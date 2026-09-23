@@ -71,7 +71,7 @@ export default function InterfaceTool() {
     <>
       <header className="interface-heading">
         <span className="eyebrow">FIT TOGETHER / 从接口开始</span>
-        <h2>装得上，也要问清为什么。</h2>
+        <h2>装车接口核对</h2>
         <p>
           拿出产品规格，分别选择两侧接口。不确定的项目可以留空；先发现明确冲突，再追查需要垫圈、适配器或具体料号的地方。
         </p>
@@ -127,7 +127,7 @@ export default function InterfaceTool() {
             </section>
           ))}
           <section className="work-panel">
-            <h3>接下来，还要核对这些。</h3>
+            <h3>待核对项目</h3>
             <p>
               车架 /
               前叉夹器安装座、碟片直径与厚度、油管与接头、链线及后拨容量、电变协议、把组与碗组、座管，以及车架轮胎间隙。

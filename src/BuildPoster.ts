@@ -104,7 +104,7 @@ export async function drawPoster(
   c.fillText(
     g.known
       ? `${g.known}/${g.total} 项 · 官方 ${weightBreakdown(build).official} / 自填 ${weightBreakdown(build).manual}`
-      : '不必知道每一克，先选喜欢的。',
+      : '未填写重量的项目不计入小计',
     90,
     1387,
   );

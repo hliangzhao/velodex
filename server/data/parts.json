@@ -122,7 +122,7 @@
       "category": "wheels",
       "era": "第三代 · 22 mm 内宽",
       "status": "current",
-      "tagline": "把气动轮组，作为一套系统来设计。",
+      "tagline": "65 mm 有钩碳轮与 180 DICUT 花鼓",
       "description": "65 mm 高框版本，采用有钩碳纤维轮圈、180 DICUT 花鼓与陶瓷轴承。本条目对应第三代 700C 规格。",
       "specs": [
         ["框高", "前 / 后 65 mm"],
@@ -160,7 +160,7 @@
       "category": "wheels",
       "era": "WH-404-FTLD-B1",
       "status": "current",
-      "tagline": "58 mm：长久以来的气动全能选择。",
+      "tagline": "58 mm 框高的气动公路轮组",
       "description": "本条目对应 58 mm、23 mm 内宽、ZR1 DB 花鼓版本。与早期有钩、圈刹 404 区分。",
       "specs": [
         ["框高", "前 / 后 58 mm"],
@@ -198,7 +198,7 @@
       "category": "wheels",
       "era": "WH-303-FTLD-A1 · 经典档案",
       "status": "classic",
-      "tagline": "宽轮圈时代的一款代表作。",
+      "tagline": "40 mm 框高与 25 mm 内宽",
       "description": "以 40 mm 框高和 25 mm 内宽，展示公路轮组从窄胎高压向较宽轮胎系统转变的思路。",
       "specs": [
         ["框高", "前 / 后 40 mm"],
@@ -236,7 +236,7 @@
       "category": "wheels",
       "era": "INNERDRIVE Premium · 非 PRO",
       "status": "current",
-      "tagline": "前后轮不同截面，为实际气流各司其职。",
+      "tagline": "前后轮采用不同截面",
       "description": "SES 4.5 使用前 50、后 56 mm 框高和 25 mm 内宽。这里记录普通 SES 4.5，并非更轻的 PRO 版本。",
       "specs": [
         ["框高", "前 50 / 后 56 mm"],
@@ -274,7 +274,7 @@
       "category": "wheels",
       "era": "第三代 · 官方独立轮组规格",
       "status": "current",
-      "tagline": "前高后低，重新分配气动与重量。",
+      "tagline": "前 51 mm、后 48 mm 的有钩碳轮",
       "description": "前轮 51 mm、后轮 48 mm（官网独立轮组页面口径），配有钩轮圈和 Roval by Arris 复合材料辐条。",
       "specs": [
         ["框高", "前 51 / 后 48 mm"],
@@ -312,7 +312,7 @@
       "category": "wheels",
       "era": "WH-R9270-C50 · 9200 系列",
       "status": "current",
-      "tagline": "50 mm 有钩轮圈，搭配旗舰传动平台。",
+      "tagline": "50 mm 框高的 Shimano 旗舰轮组",
       "description": "R9270 碟刹真空轮组以 50 mm 框高覆盖竞赛公路场景，保留有钩轮圈与 Shimano 系统接口。",
       "specs": [
         ["框高", "前 / 后 50 mm"],
@@ -349,7 +349,7 @@
       "category": "groupsets",
       "era": "R9200 / R9250 / R9270 · 2 × 12",
       "status": "current",
-      "tagline": "旗舰 Di2，从拨杆到传动的一整套协作。",
+      "tagline": "12 速半无线旗舰 Di2 系统",
       "description": "R9200 公路系统采用 12 速传动；碟刹手变与后拨无线通信，前后拨仍连接车内电池。",
       "specs": [
         ["速别", "2 × 12"],
@@ -389,7 +389,7 @@
       "category": "groupsets",
       "era": "R8100 / R8150 / R8170 · 2 × 12",
       "status": "current",
-      "tagline": "把 12 速 Di2 带到更多公路车上。",
+      "tagline": "12 速半无线 Di2 系统",
       "description": "共享新一代 Di2 的半无线架构、HYPERGLIDE+ 传动和液压制动，材料与部件重量与 Dura-Ace 不同。",
       "specs": [
         ["速别", "2 × 12"],
@@ -429,7 +429,7 @@
       "category": "groupsets",
       "era": "R7150 / R7170 · 电子版",
       "status": "current",
-      "tagline": "保留双盘，让电子换挡更容易接近。",
+      "tagline": "105 系列的电子变速版本",
       "description": "这里展示 105 Di2。它与 R7100 机械 12 速是两种控制系统，名称相近但手变与拨链器不能互换。",
       "specs": [
         ["速别", "2 × 12"],
@@ -469,7 +469,7 @@
       "category": "groupsets",
       "era": "E1 · 双盘公路 12 速",
       "status": "current",
-      "tagline": "完全无线的换挡，重新设计的手变。",
+      "tagline": "RED AXS E1 双盘无线变速",
       "description": "双盘 RED AXS E1 是本条目的版本；与 RED XPLR 13 速单盘系统分开记录。",
       "specs": [
         ["速别", "2 × 12"],
@@ -507,7 +507,7 @@
       "category": "groupsets",
       "era": "Wireless · 双盘 13 速",
       "status": "current",
-      "tagline": "多一片飞轮，延续意式公路传动。",
+      "tagline": "13 速无线双盘系统",
       "description": "Super Record 13 无线双盘系统采用独立电池与 13 速链条、飞轮；应与此前 12 速 Wireless 分开辨认。",
       "specs": [
         ["速别", "2 × 13"],
@@ -547,7 +547,7 @@
       "category": "groupsets",
       "era": "R9100 · 11 速经典档案",
       "status": "classic",
-      "tagline": "在电子化之前，机械旗舰的答案。",
+      "tagline": "Dura-Ace 11 速机械变速",
       "description": "以机械拉线控制前后拨的 Dura-Ace R9100，是理解现代公路传动演变的一款代表。此处不包含 R9150 Di2。",
       "specs": [
         ["速别", "2 × 11"],
@@ -587,7 +587,7 @@
       "category": "tires",
       "era": "S TR · 真空版",
       "status": "current",
-      "tagline": "从竞赛到日常快骑的常见选择。",
+      "tagline": "带防刺层的竞赛真空胎",
       "description": "GP5000 S TR 将 BlackChili 胶料、Vectran 防刺层与真空胎结构结合；与使用内胎的 GP5000 分开记录。",
       "specs": [
         ["结构", "Tubeless Ready"],
@@ -625,7 +625,7 @@
       "category": "tires",
       "era": "折叠开口胎 · 内胎版",
       "status": "current",
-      "tagline": "经典系列，保留熟悉的内胎装配。",
+      "tagline": "使用内胎的 GP5000 开口胎",
       "description": "GP5000 的传统开口胎版本，采用 BlackChili、Vectran 与 Lazer Grip。名称中没有 S TR，结构也不同。",
       "specs": [
         ["结构", "折叠开口胎 · 需内胎"],
@@ -662,7 +662,7 @@
       "category": "tires",
       "era": "公路前轮气动胎",
       "status": "current",
-      "tagline": "轮胎表面的凹点，也参与气流控制。",
+      "tagline": "采用凹点胎面的气动前胎",
       "description": "与 DT Swiss、Swiss Side 合作开发，使用胎面凹点影响前轮气流。定位为与轮组配套的气动前胎。",
       "specs": [
         ["结构", "Tubeless Ready"],
@@ -700,7 +700,7 @@
       "category": "tires",
       "era": "11653975 · 28-622 黑色",
       "status": "current",
-      "tagline": "以柔顺胎体，连接人和路面。",
+      "tagline": "Super Race 胎体与 ADDIX Race 胶料",
       "description": "Super Race 胎体、ADDIX Race 胶料与 V-Guard 防刺层。本页固定 28-622 TLE 黑色版本。",
       "specs": [
         ["结构", "Tubeless Easy"],
@@ -738,7 +738,7 @@
       "category": "tires",
       "era": "棉质胎体 · Para 胎边",
       "status": "current",
-      "tagline": "棉质胎体，是它鲜明的性格。",
+      "tagline": "320 TPI 棉混纺胎体",
       "description": "Corsa Pro 采用 320 TPI 棉混纺胎体和 Graphene + Silica 胶料；电硫化工艺让胎面与胎体结合。",
       "specs": [
         ["结构", "Tubeless Ready"],
@@ -776,7 +776,7 @@
       "category": "tires",
       "era": "RS · SpeedCORE · 28-622",
       "status": "current",
-      "tagline": "以竞赛为目标，优化胶料与胎体。",
+      "tagline": "SmartEVO² 胶料与 SpeedCORE 结构",
       "description": "意大利制造的 TLR RS 版本使用 SmartEVO² 胶料与 SpeedCORE 胎体结构。此页对应标准黑色 28-622。",
       "specs": [
         ["结构", "Tubeless Ready"],
@@ -814,7 +814,7 @@
       "category": "handlebars",
       "era": "官方现行产品页",
       "status": "current",
-      "tagline": "把位与走线，一次确定。",
+      "tagline": "碳纤维一体把与内走线",
       "description": "碳纤维一体车把与把立，收录美国官网的常规 4° 外撇版本；不要与 Rapide Cockpit II 或其他外撇版本混淆。",
       "specs": [
         ["材质", "高模量碳纤维"],
@@ -850,7 +850,7 @@
       "category": "handlebars",
       "era": "官方现行产品页",
       "status": "current",
-      "tagline": "一体把，也留出调整空间。",
+      "tagline": "支持握把与角度调整的一体把",
       "description": "T700 碳纤维一体把，结合可更换握把和角度垫片，提供多种宽度与把立长度。",
       "specs": [
         ["材质", "T700 碳纤维"],
@@ -885,7 +885,7 @@
       "category": "seatposts",
       "era": "官方现行产品页",
       "status": "current",
-      "tagline": "轻量，仍要把尺码写清楚。",
+      "tagline": "27.2 mm 圆管与双螺栓夹头",
       "description": "27.2 mm 圆截面碳纤维座管，采用双螺栓微调夹头；本条目记录 300 与 360 mm 长度版本。",
       "specs": [
         ["直径", "27.2 mm"],
@@ -921,7 +921,7 @@
       "category": "seatposts",
       "era": "官方现行产品页",
       "status": "current",
-      "tagline": "用一个夹头，调整后飘。",
+      "tagline": "可切换 0 / 15 mm 后飘的夹头",
       "description": "圆截面碳纤维座管，使用可翻转夹头，在 0 与 15 mm 后飘之间选择。",
       "specs": [
         ["材质", "碳纤维"],
@@ -956,7 +956,7 @@
       "category": "saddles",
       "era": "官方产品规格",
       "status": "current",
-      "tagline": "坐得合适，才愿意骑得更远。",
+      "tagline": "短鼻开孔坐垫与中空钛轨",
       "description": "短鼻、中央开孔与多种宽度组成 Power 系列的典型轮廓。Expert 使用中空钛轨；本条目重量按所链接区域官网的 143 mm 版本记录。",
       "image": "/parts/power-expert.webp",
       "imageCaption": "官方产品图 · Power Expert",
@@ -991,7 +991,7 @@
       "category": "saddles",
       "era": "官方产品规格",
       "status": "current",
-      "tagline": "坐得合适，才愿意骑得更远。",
+      "tagline": "面向耐力公路的短鼻坐垫",
       "description": "面向耐力公路的短鼻坐垫，以中央开孔和 Type 2 泡棉填充提供支撑。150 与 160 mm 版本的重量分别列示。",
       "image": "/parts/fizik-tempo-argo-r3.jpg",
       "imageCaption": "官方产品图 · Tempo Argo R3",

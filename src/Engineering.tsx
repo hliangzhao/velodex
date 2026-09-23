@@ -22,7 +22,7 @@ export default function Engineering({
       <div className="engineering-heading">
         <div>
           <span className="eyebrow">BEYOND THE SILHOUETTE</span>
-          <h2>外形之外，读懂一台车。</h2>
+          <h2>车架几何与空气动力学</h2>
         </div>
         <div className="engineering-tabs">
           <button aria-pressed={tab === 'geometry'} onClick={() => setTab('geometry')}>
@@ -40,11 +40,7 @@ export default function Engineering({
               ? 'PUBLISHED DIMENSIONS'
               : 'GEOMETRY NOT PUBLISHED'}
           </span>
-          <h3>
-            {bike.geometry.publishedSizes?.length
-              ? '已公布的尺寸，先如实呈现。'
-              : '几何资料，等待原厂补全。'}
-          </h3>
+          <h3>{bike.geometry.publishedSizes?.length ? '已公布的几何数据' : '暂无完整几何数据'}</h3>
           <p>{bike.geometry.note}</p>
           {!!bike.geometry.publishedSizes?.length && (
             <div

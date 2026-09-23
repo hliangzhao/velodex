@@ -99,8 +99,8 @@ export default function RiderStoriesPage() {
     <PageFrame active="stories">
       <header className="page-heading">
         <span className="eyebrow">BUILT BY RIDERS / 车与它的主人</span>
-        <h1>每一台车，都有自己的理由。</h1>
-        <p>从为什么买下它，到后来改了什么。把参数表里没有的那部分，留在这里。</p>
+        <h1>车友的选车与骑行经历</h1>
+        <p>分享选车原因、改装经历和实际骑行感受。</p>
         <div className="work-actions">
           <a className="dark-button" href="#story-compose">
             写我的装车故事 ↗
@@ -199,9 +199,7 @@ export default function RiderStoriesPage() {
             ) : (
               <div className="rider-empty">
                 <span>THE FIRST CHAPTER</span>
-                <h3>
-                  {search ? '暂时没有符合条件的故事。' : '第一篇故事的位置，留给真正骑它的人。'}
-                </h3>
+                <h3>{search ? '暂无符合条件的故事' : '暂无车友故事'}</h3>
                 <p>
                   一张实车照片、一套配置、一个选择它的理由，就可以开始。升级和踩坑经历可以以后再补。
                 </p>
@@ -219,7 +217,7 @@ export default function RiderStoriesPage() {
       </section>
       <section id="story-compose" className="story-compose work-panel">
         <span className="eyebrow">YOUR BUILD, YOUR REASONS</span>
-        <h2>写下属于这台车的故事。</h2>
+        <h2>分享用车经历</h2>
         <p>
           先在这里整理并预览，再复制到 GitHub 留言区发布。草稿保存在本机；发布后会展示 GitHub 署名。
         </p>

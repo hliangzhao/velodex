@@ -286,8 +286,8 @@ export default function FrameLab() {
     <div className="frame-study">
       <div className="frame-intro">
         <span className="eyebrow">THE SOUL OF A BICYCLE</span>
-        <h2>车架，为什么长成这样？</h2>
-        <p>五种设计取向，同一个观察原点。先看轮廓，再读接点与几何。</p>
+        <h2>五类车架的结构特点</h2>
+        <p>旋转、缩放或叠加五类车架示意，比较管型、接点位置与几何。</p>
       </div>
       <div className="frame-types" role="group" aria-label="车架类型">
         {frameStudies.map((s, i) => (

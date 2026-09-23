@@ -173,8 +173,8 @@ export default function PowerLab() {
     <div className="power-lab">
       <header className="power-heading">
         <span className="eyebrow">POWER / UNDERSTAND THE EFFORT</span>
-        <h2>每一瓦，从哪里来？</h2>
-        <p>读懂功率，再把一次骑行放进模型里。文件功率记录与物理估算分别展示。</p>
+        <h2>功率与骑行表现</h2>
+        <p>导入骑行记录后，可查看文件中的功率数据，并用阻力模型估算不同条件下的功率需求。</p>
       </header>
       <div className="power-knowledge">
         <article>
@@ -187,7 +187,7 @@ export default function PowerLab() {
         </article>
         <article>
           <span>02 / W·KG⁻¹</span>
-          <h3>功体比，先说明分母</h3>
+          <h3>功体比的计算口径</h3>
           <p>
             通常指功率 ÷ 骑手体重。例如 250 W / 70 kg ≈ 3.57
             W/kg。爬坡模型还需计入车和行李；平路高速表现也受绝对功率与 CdA 影响。
@@ -212,7 +212,7 @@ export default function PowerLab() {
       <div className="power-upload work-panel">
         <div>
           <FileUp size={25} />
-          <h3>带来一次骑行。</h3>
+          <h3>导入骑行记录</h3>
           <p>
             GPX / TCX · 最大 10 MB · 100,000
             点。需要时间戳；路线文件常常没有时间。支持常见功率扩展、海拔、坐标与 TCX 距离记录。
@@ -291,7 +291,7 @@ export default function PowerLab() {
       <div className="power-analysis-layout">
         <section className="work-panel power-inputs">
           <span className="eyebrow">MODEL ASSUMPTIONS</span>
-          <h3>把假设写在前面。</h3>
+          <h3>功率估算参数</h3>
           <p>
             整车重量已含随车部件。若手头只有分件重量，可先用
             <a href={`${base}?view=workshop&tool=build`}>装车单</a>汇总。未核实的默认值都是示例。
@@ -337,7 +337,7 @@ export default function PowerLab() {
         </section>
         <section className="work-panel power-results" aria-live="polite">
           <span className="eyebrow">THE RIDE REPORT</span>
-          <h3>{name || '先读入记录，再看结果。'}</h3>
+          <h3>{name || '导入记录后查看分析'}</h3>
           {analysis?.error && (
             <p role="alert" className="power-error">
               {analysis.error}

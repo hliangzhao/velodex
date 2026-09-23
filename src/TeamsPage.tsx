@@ -54,15 +54,11 @@ function Teams({ catalog }: { catalog: Catalog }) {
         <div>
           <span className="eyebrow">INSIDE THE PELOTON / {dossier.season}</span>
           <h1>
-            跟着车队，
+            职业车队
             <br />
-            读懂赛车<span>。</span>
+            与赛场器材
           </h1>
-          <p>
-            一支车队，一条认识器材的路线。
-            <br />
-            从赛场上的合作关系，看到车架、配置和设计取舍。
-          </p>
+          <p>查看车队的用车平台、器材合作与公开装配资料，了解不同赛道上的配置选择。</p>
         </div>
         <div className="teams-hero-number">
           <strong>{String(dossier.teams.length).padStart(2, '0')}</strong>
@@ -141,7 +137,7 @@ function Teams({ catalog }: { catalog: Catalog }) {
                 </dl>
                 <div className="team-look">
                   <span className="eyebrow">WHAT TO LOOK FOR</span>
-                  <h3>值得细看的地方</h3>
+                  <h3>器材特点</h3>
                   <p>{t.lookFor}</p>
                 </div>
                 <div className="team-bike-links">

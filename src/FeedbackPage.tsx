@@ -100,8 +100,8 @@ export default function FeedbackPage() {
       <div className="work-heading">
         <div>
           <span className="eyebrow">THE GUESTBOOK / 骑友来信</span>
-          <h1>把下一次更新，交给好奇心。</h1>
-          <p>想看一台车、发现一个错误，或只是来聊聊自己的装车思路。</p>
+          <h1>读者留言与建议</h1>
+          <p>欢迎推荐车型、指出资料错误，或分享装车和工具使用建议。</p>
         </div>
         <a href={feedbackUrl} target="_blank" rel="noreferrer">
           完整留言区 <ExternalLink size={16} />
@@ -110,7 +110,7 @@ export default function FeedbackPage() {
       <div className="tool-layout">
         <section className="work-panel feedback-compose">
           <span className="eyebrow">LEAVE A NOTE</span>
-          <h2>给图鉴留一句话。</h2>
+          <h2>撰写留言</h2>
           <p>
             留言使用 GitHub Discussions 保存，登录 GitHub
             后即可公开发布。站内展示近期留言快照，新留言通常随网站自动发布更新；即时内容请打开完整讨论。
@@ -182,7 +182,7 @@ export default function FeedbackPage() {
                   ))}
                 </div>
               ) : (
-                <p>留言区刚刚打开。欢迎留下第一条建议，让这本图鉴继续长大。</p>
+                <p>暂无留言，欢迎提出建议。</p>
               )}
             </>
           )}

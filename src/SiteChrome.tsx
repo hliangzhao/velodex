@@ -47,7 +47,7 @@ export function SiteHeader({ active }: { active: Page }) {
         ))}
       </nav>
       <span className="header-caption">
-        FOR THE LOVE OF BIKES<span>每一台车，都值得多看一眼。</span>
+        FOR THE LOVE OF BIKES<span>公路车 · 器材 · 骑行</span>
       </span>
     </header>
   );

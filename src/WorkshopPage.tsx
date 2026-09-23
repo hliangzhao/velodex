@@ -36,8 +36,8 @@ export default function WorkshopPage() {
       <div className="work-heading">
         <div>
           <span className="eyebrow">THE WORKSHOP / 好奇心的工作台</span>
-          <h1>把喜欢，装成一台车。</h1>
-          <p>算一次齿比，拆开一个结构，为下一次骑行多想一点。</p>
+          <h1>装车与骑行工具</h1>
+          <p>选择配件、计算齿比与预算，核对装车接口，分析骑行数据。</p>
         </div>
         <a href={`${base}?view=feedback`}>
           给工坊提个建议 <ArrowUpRight size={16} />
@@ -56,7 +56,7 @@ export default function WorkshopPage() {
         ))}
       </nav>
       <a className="reading-work-link" href={`${base}?view=learn&category=science`}>
-        <span>先弄懂原理，再动手试算：风阻、齿比、胎压、功率与装车兼容。</span>
+        <span>科普与计算示例：风阻、齿比、胎压、功率及装车兼容。</span>
         <span>打开骑行科学读本 ↗</span>
       </a>
       {tool === 'power' ? (
@@ -251,8 +251,8 @@ function FitTool({ parts }: { parts: PartsCatalog }) {
   return (
     <div className="tool-layout">
       <section className="work-panel">
-        <span className="eyebrow">TIRE & RIM / 先核对，再装配</span>
-        <h2>胎圈与轮圈，要说同一种语言。</h2>
+        <span className="eyebrow">TIRE & RIM / 轮胎与轮圈</span>
+        <h2>轮胎与轮圈兼容性</h2>
         <label>
           轮组
           <select value={wheel} onChange={(e) => setWheel(e.target.value)}>
@@ -345,8 +345,8 @@ function UpgradeTool() {
     <div className="tool-layout">
       <section className="work-panel">
         <span className="eyebrow">BEFORE / AFTER</span>
-        <h2>这一次升级，具体改变了什么？</h2>
-        <p>先让两次称重包含同样的东西，再谈减重。预填数字仅为计算示例。</p>
+        <h2>升级前后的重量与支出</h2>
+        <p>请按相同范围记录升级前后的重量。预填数字仅为计算示例。</p>
         <label>
           比较范围
           <input value={scope} maxLength={150} onChange={(e) => setScope(e.target.value)} />

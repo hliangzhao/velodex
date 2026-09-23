@@ -70,6 +70,8 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 
 2026-09-21 新增批次的配置边界：LOOK 795 Blade RS 2 为官方 Archive / R50D 版本；Trinity Advanced SL 2 为英国 2025 年款，轮组名称与官网框高括注冲突，框高留待核对；Langma Advanced 1 为荷兰 2026 Pro Compact；Nuroad C:62 Race 固定产品编号 1136500；OSTRO VAM 的 900 g 是车架重量；Rapida E7695IA 主图显示 Rubino 胎，文字配置列 Zaffiro Pro V，已注明差异。国内官方价格未核验的车型不填入人民币价格。
 
+2026-09-23 新增批次：BMC Roadmachine FIVE 与 Teammachine SLR 01 TWO 为原厂明确标注的 2024 归档版本；SuperX 3 C17105U 与 Grail CF 7 产品 4508 未以素材文件名推断车型年。四款均记录完整逐尺码几何和官方图片。SuperX 46 码的 RX610 / 46–30T 单独注明；Roadmachine 双盘版受前拨限制为最大实测 34 mm，未套用车架 40 mm 上限。BMC SLR 01 的车把尺寸、轮胎结构描述及 SuperX 的飞轮型号存在原厂页面矛盾，保留原文含义和待核对说明，不自行补成确定参数。
+
 | 资料                | 维护位置                                                         |
 | ------------------- | ---------------------------------------------------------------- |
 | 整车 / 配件         | `server/data/catalog.json` / `server/data/parts.json`            |
@@ -147,7 +149,6 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 ## 旧功能状态
 
 车友装车故事暂时下线，导航、投稿和装车单入口均已撤下；旧链接回到首页，已有本机草稿不主动删除。保留实现供后续恢复，读者留言继续开放。
-
 
 ## 赛场拆解与骑行科学读本
 

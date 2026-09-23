@@ -1,5 +1,5 @@
 {
-  "checkedDate": "2026-09-21",
+  "checkedDate": "2026-09-23",
   "assets": [
     {
       "id": "tarmac-sl8",
@@ -1359,6 +1359,66 @@
       "visualVerified": true,
       "checkedAt": "2026-09-23",
       "reuse": "Official team editorial image. No explicit open reuse license found. Source attribution is documented; no permission or license is inferred."
+    },
+    {
+      "id": "bmc-roadmachine-five",
+      "label": "BMC Roadmachine FIVE / 2024 原厂归档 · Iron Grey / Brushed / Iron Grey / Brushed",
+      "file": "public/bikes/bmc-roadmachine-five.jpg",
+      "width": 2130,
+      "height": 1198,
+      "background": "white",
+      "imageUrl": "https://bmc-switzerland.com/cdn/shop/files/bmc-2024-roadmachine-five-road-bike-grey-1_a066ad2e-8120-48e6-b3c4-c0c7f3b8eec9.jpg?v=1757513313",
+      "sourceUrl": "https://bmc-switzerland.com/collections/bike-archive-road/products/roadmachine-five-bikes-bmc-24-10605-004",
+      "notes": "Official drive-side product image, faces right. Original image retained; component hotspots calibrated against the displayed photo.",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution does not imply permission.",
+      "configurationSource": "https://bmc-switzerland.com/collections/bike-archive-road/products/roadmachine-five-bikes-bmc-24-10605-004",
+      "configurationNote": "按对应原厂配置表记录，年份与官网未解决的规格差异在条目中注明。"
+    },
+    {
+      "id": "bmc-teammachine-slr01-two",
+      "label": "BMC Teammachine SLR 01 TWO / 2024 原厂归档 · Off-White / Black / Off-White / Black",
+      "file": "public/bikes/bmc-teammachine-slr01-two.jpg",
+      "width": 2130,
+      "height": 1198,
+      "background": "white",
+      "imageUrl": "https://bmc-switzerland.com/cdn/shop/files/bmc-2024-teammachine-slr-01-two-road-bike-white-1.jpg?v=1756366721",
+      "sourceUrl": "https://bmc-switzerland.com/collections/bike-archive-road/products/teammachine-slr-01-two-bikes-bmc-24-10608-004",
+      "notes": "Official drive-side product image, faces right. Original image retained; component hotspots calibrated against the displayed photo.",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution does not imply permission.",
+      "configurationSource": "https://bmc-switzerland.com/collections/bike-archive-road/products/teammachine-slr-01-two-bikes-bmc-24-10608-004",
+      "configurationNote": "按对应原厂配置表记录，年份与官网未解决的规格差异在条目中注明。"
+    },
+    {
+      "id": "cannondale-superx3",
+      "label": "Cannondale SuperX 3 / 丹麦官网 · C17105U / Raw",
+      "file": "public/bikes/cannondale-superx3.png",
+      "width": 2000,
+      "height": 1189,
+      "background": "transparent",
+      "imageUrl": "https://embed.widencdn.net/img/dorelrl/93ndvij8gv/2000px@1x/C25_C17105U_SuperX_Crb_3_RAW_PD.png",
+      "sourceUrl": "https://www.cannondale.com/en-dk/bikes/road/gravel/superx/superx-3-c17105u",
+      "notes": "Official drive-side product image, faces right. Original image retained; component hotspots calibrated against the displayed photo.",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution does not imply permission.",
+      "configurationSource": "https://www.cannondale.com/en-dk/bikes/road/gravel/superx/superx-3-c17105u",
+      "configurationNote": "按对应原厂配置表记录，年份与官网未解决的规格差异在条目中注明。"
+    },
+    {
+      "id": "canyon-grail-cf7",
+      "label": "Canyon Grail CF 7 / 美国官网 · 产品 4508 / Clean Slate",
+      "file": "public/bikes/canyon-grail-cf7.jpg",
+      "width": 1800,
+      "height": 1013,
+      "background": "white",
+      "imageUrl": "https://dma.canyon.com/image/upload/w_1800,c_fit/f_jpg/q_90/v1788242504/2027_FULL_grail_cf-7_4508_R139_P01_hctlvt",
+      "sourceUrl": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-7/4508.html",
+      "notes": "Official drive-side product image, faces right. Original image retained; component hotspots calibrated against the displayed photo.",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution does not imply permission.",
+      "configurationSource": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-7/4508.html",
+      "configurationNote": "按对应原厂配置表记录，年份与官网未解决的规格差异在条目中注明。"
     }
   ]
 }

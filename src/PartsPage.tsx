@@ -16,29 +16,28 @@ const categories: {
     id: 'wheels',
     name: '轮组',
     en: 'WHEELSETS',
-    headline: '每一次加速，从这里开始。',
-    description: '框高、内宽、花鼓与胎圈结构，一起决定轮组的性格。先看使用场景，再看重量。',
+    headline: '轮组结构与规格',
+    description: '框高、内宽、花鼓和胎圈结构影响轮组的性能与兼容性，选购时需要结合路况和轮胎规格。',
   },
   {
     id: 'groupsets',
     name: '变速系统',
     en: 'DRIVETRAINS',
-    headline: '把每一分力量，传递下去。',
-    description:
-      '从机械拉线到无线电变，从 11 速到 13 速。齿比、操控与兼容性，比单一等级更值得了解。',
+    headline: '变速与传动系统',
+    description: '比较机械与电子变速系统的速别、齿比、操控方式和部件兼容性。',
   },
   {
     id: 'tires',
     name: '轮胎',
     en: 'TIRES',
-    headline: '与公路的接触，只有这一点。',
-    description: '胎体、胶料与实际胎宽影响滚阻、抓地和舒适度。轮胎与轮圈，要作为一套系统来选。',
+    headline: '轮胎结构与选型',
+    description: '胎体、胶料和实际胎宽影响滚阻、抓地与舒适度。选胎时也要核对轮圈规格和胎压限制。',
   },
   {
     id: 'handlebars',
     name: '车把',
     en: 'COCKPITS',
-    headline: '双手之间，藏着骑姿。',
+    headline: '车把尺寸与握持位置',
     description:
       '宽度、前伸、落差与外撇，一起决定握持位置。一体把还需要同时确定把立长度与走线兼容。',
   },
@@ -46,14 +45,14 @@ const categories: {
     id: 'seatposts',
     name: '座管',
     en: 'SEATPOSTS',
-    headline: '从坐垫，连接到车架。',
+    headline: '座管尺寸与安装接口',
     description: '先核对直径或专用截面，再看后飘、长度与坐垫导轨夹具。轻量并不能代替合适的尺寸。',
   },
   {
     id: 'saddles',
     name: '坐垫',
     en: 'SADDLES',
-    headline: '坐得合适，才想骑得更远。',
+    headline: '坐垫形状与支撑',
     description: '从宽度、曲面和骑姿开始，核对导轨与座管夹具，再比较材料和重量。',
   },
 ];
@@ -176,15 +175,11 @@ export default function PartsPage() {
           <div>
             <span className="eyebrow">THE DETAILS MAKE THE DIFFERENCE</span>
             <h1>
-              每一处配置，
+              公路车配件
               <br />
-              都有来历<span>。</span>
+              规格与选型参考
             </h1>
-            <p>
-              认识那些塑造骑行体验的名字。
-              <br />
-              从经典到前沿，读懂每个选择。
-            </p>
+            <p>查看主要厂商的轮组、套件和接触点配件，比较规格、结构与适用场景。</p>
           </div>
           <div className="parts-hero-art" aria-hidden="true">
             <PartDrawing category={category} />
@@ -456,7 +451,7 @@ export default function PartsPage() {
               <section id="parts-comparison" className="parts-compare" aria-label="配件对比">
                 <div>
                   <span className="eyebrow">SIDE BY SIDE / {compare.length} OF 3</span>
-                  <h2>把差异，放在一起看。</h2>
+                  <h2>配件参数对比</h2>
                   <button onClick={() => setCompareIds([])}>
                     清空对比 <X size={15} />
                   </button>

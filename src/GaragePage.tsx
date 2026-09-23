@@ -59,8 +59,8 @@ function Garage({ catalog }: { catalog: Catalog }) {
       <header className="page-heading garage-heading">
         <div>
           <span className="eyebrow">A COLLECTION THAT FEELS LIKE YOU</span>
-          <h1>给心动，留个位置。</h1>
-          <p>一间小车库，收下你喜欢的每一款涂装。</p>
+          <h1>我的车库</h1>
+          <p>按涂装收藏车型，记录购车计划与使用感受。</p>
         </div>
         <div className="garage-count">
           <strong>{library.saved.length.toString().padStart(2, '0')}</strong>
@@ -266,7 +266,7 @@ function Garage({ catalog }: { catalog: Catalog }) {
                   <CompareButton bike={bike} />
                 </div>
                 <label className="garage-note-label">
-                  心动的理由
+                  收藏笔记
                   <textarea
                     aria-label={`${bike.family} 私人笔记`}
                     value={item.note}
@@ -285,8 +285,8 @@ function Garage({ catalog }: { catalog: Catalog }) {
         <div className="garage-empty">
           <Heart size={38} strokeWidth={1} />
           <span className="eyebrow">ROOM FOR YOUR NEXT OBSESSION</span>
-          <h2>{library.saved.length ? '这一栏，还空着。' : '第一台车，会是什么？'}</h2>
-          <p>在图鉴里点击“收藏”，把喜欢的涂装带回来。</p>
+          <h2>{library.saved.length ? '此分类暂无收藏' : '尚未收藏车型'}</h2>
+          <p>在整车图鉴中点击“收藏”，即可在这里查看所选车型和涂装。</p>
           <a className="dark-button" href={`${base}?view=bikes`}>
             去图鉴逛逛 <ArrowRight size={17} />
           </a>

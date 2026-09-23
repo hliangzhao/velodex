@@ -241,7 +241,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
               </button>
             )}
           </div>
-          <h2>先选一台，让心动有个轮廓。</h2>
+          <h2>选择参考车型</h2>
           <label>
             清单名称
             <input
@@ -281,7 +281,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
         </section>
         <section className="work-panel">
           <span className="eyebrow">02 / 配件与备件清单</span>
-          <h2>一件一件，选成自己的样子。</h2>
+          <h2>选择配件</h2>
           <p className="work-note">
             只选喜欢的配置，也能保存、分享和生成海报。预算与重量都可跳过。轮组、轮胎和脚踏按一对选配；重量助手会自动采用已核验资料，想调整时再展开。价格仍优先采用中国大陆官方售价。
           </p>
@@ -472,7 +472,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
           <p className="work-note">
             {g.known
               ? `${weightBreakdown(build).official} 项官方参考，${weightBreakdown(build).manual} 项已保存 / 自填；${g.total - g.known} 项未计重。小计不代表整车重量。`
-              : '先选喜欢的配置，不必知道每一克。缺少重量和预算也能生成海报。'}
+              : '重量与预算可以留空，不影响生成海报。'}
           </p>
         </div>
         <div className={`fit-result ${fit.level}`}>

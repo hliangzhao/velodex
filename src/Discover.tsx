@@ -44,18 +44,18 @@ export default function Discover() {
         {(catalog) => {
           const feature = catalog.bikes.find((b) => b.id === 'sworks-venge')!;
           const picks = [
-            'bianchi-specialissima-rc-tdf',
-            'bianchi-infinito-pro-roubaix',
-            'scott-foil-rc10',
-            'cube-agree-c62-race',
+            'bmc-roadmachine-five',
+            'bmc-teammachine-slr01-two',
+            'cannondale-superx3',
+            'canyon-grail-cf7',
           ].map((id) => catalog.bikes.find((b) => b.id === id)!);
           return (
             <>
               <div className="work-banner">
                 <div>
                   <span className="eyebrow">NEW / 骑友工坊</span>
-                  <h2>你的梦幻装车单，值得一张海报。</h2>
-                  <p>选车型、配件与涂装，算齿比，拆开结构，把心动分享出去。</p>
+                  <h2>制作你的梦幻装车单</h2>
+                  <p>选择车型、涂装和配件，记录预算与重量，生成可分享的装车海报。</p>
                 </div>
                 <a href={`${base}?view=workshop`}>开始装车 ↗</a>
               </div>
@@ -64,23 +64,19 @@ export default function Discover() {
                   <i /> A FIELD GUIDE TO ROAD OBSESSION
                 </span>
                 <span>
-                  {catalog.brands.length} 个品牌 / {catalog.bikes.length} 款车 / 无数种热爱
+                  {catalog.brands.length} 个品牌 / {catalog.bikes.length} 款车 / 持续更新
                 </span>
               </div>
               <section className="discovery-hero">
                 <div className="discovery-copy">
-                  <span className="eyebrow">骑行结束，好奇继续。</span>
+                  <span className="eyebrow">公路车与骑行资料</span>
                   <h1>
-                    总有一台车，
+                    发现喜欢的车
                     <br />
-                    让你多看一眼<span>。</span>
+                    了解背后的设计
                   </h1>
                   <p>
-                    看轮廓，也看门道。
-                    <br />
-                    从经典世代到新的设计，慢慢逛，仔细看，
-                    <br className="desktop-break" />
-                    留一间属于自己的车库。
+                    从经典车型到新款设计，查看整车照片与部件参数，比较车架几何，收藏你喜欢的车。
                   </p>
                   <a className="dark-button" href={`${base}?view=bikes`}>
                     进入整车图鉴 <ArrowRight size={18} />
@@ -93,7 +89,7 @@ export default function Discover() {
                     }}
                   >
                     <Shuffle size={15} />
-                    偶遇一台车
+                    随机看一款
                   </button>
                 </div>
                 <div className="discovery-machine">
@@ -111,8 +107,8 @@ export default function Discover() {
                   </a>
                   <div className="feature-caption">
                     <div>
-                      <span>本期驻足</span>
-                      <h2>独立破风平台的经典侧影。</h2>
+                      <span>本期精选</span>
+                      <h2>S-Works Venge：经典破风车</h2>
                     </div>
                     <SaveButton bike={feature} />
                   </div>
@@ -122,7 +118,7 @@ export default function Discover() {
                 <div className="editorial-heading">
                   <div>
                     <span className="eyebrow">CURATED CURIOSITY</span>
-                    <h2>从一个好奇开始。</h2>
+                    <h2>车型专题</h2>
                   </div>
                   <a className="text-link" href={`${base}?view=stories`}>
                     全部专题 <ArrowUpRight size={17} />
@@ -134,14 +130,14 @@ export default function Discover() {
                   <a href={`${base}?view=generations`}>
                     <small>THE FAMILY TREE</small>
                     <h3>经典车型世代谱</h3>
-                    <p>一个名字，跨过几个时代。</p>
+                    <p>回顾经典车系的设计变化。</p>
                     <span>沿时间线看设计 →</span>
                   </a>
                   <a href={`${base}?view=teams`}>
                     <small>INSIDE THE PELOTON</small>
-                    <h3>从车手，认识赛车。</h3>
-                    <p>从人物到车队，沿着职业赛场看器材。</p>
-                    <span>走进车队与车手 →</span>
+                    <h3>职业车队与车手</h3>
+                    <p>了解车手的比赛特点、车队用车与器材合作。</p>
+                    <span>查看车队与车手 →</span>
                   </a>
                 </div>
               </section>
@@ -149,11 +145,13 @@ export default function Discover() {
                 <div>
                   <span className="eyebrow">SAME SCALE. DIFFERENT INTENT.</span>
                   <h2>
-                    差几毫米，
+                    比较车架几何
                     <br />
-                    放在一起就看懂了。
+                    看清尺寸差异
                   </h2>
-                  <p>分别选尺码，让五通对齐。看看竞赛、耐力与砾石平台，怎样安排同一副三角。</p>
+                  <p>
+                    选择车型和尺码，以五通为原点叠加车架几何，比较竞赛、耐力与砾石车的尺寸差异。
+                  </p>
                   <a
                     className="acid-button"
                     href={`${base}${comparisonSearch(['tcr-pro0', 'defy-pro0', 'revolt-advanced0'].map((bikeId) => ({ bikeId, size: 'M' })))}`}
@@ -193,7 +191,7 @@ export default function Discover() {
                 <div className="editorial-heading">
                   <div>
                     <span className="eyebrow">MORE ROADS TO EXPLORE</span>
-                    <h2>展厅里的新面孔。</h2>
+                    <h2>新收录车型</h2>
                   </div>
                   <a className="text-link" href={`${base}?view=bikes`}>
                     浏览 {catalog.bikes.length} 款车 <ArrowUpRight size={17} />
@@ -207,10 +205,8 @@ export default function Discover() {
               </section>
               <section className="garage-invite">
                 <span className="eyebrow">YOUR OWN LITTLE COLLECTION</span>
-                <h2>喜欢的车，给它留个位置。</h2>
-                <p>
-                  收藏一款涂装，记下心动的原因。想拥有的、已经拥有的、只是喜欢的，都可以放进来。
-                </p>
+                <h2>收藏你喜欢的车</h2>
+                <p>在车库中按涂装收藏车型，区分已拥有和计划购入的车，也可以写下自己的使用感受。</p>
                 <a className="text-link" href={`${base}?view=garage`}>
                   打开我的车库 <ArrowRight size={17} />
                 </a>

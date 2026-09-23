@@ -222,7 +222,7 @@ function ComponentLab({ initial }: { initial: Study }) {
         <section className="work-panel lab-controls">
           <div>
             <span className="eyebrow">STRUCTURE STUDY / {study === 'ratchet' ? '01' : '02'}</span>
-            <h2>{study === 'ratchet' ? '啮合，发生在端面。' : '看见轮胎坐落的位置。'}</h2>
+            <h2>{study === 'ratchet' ? '端面齿啮合原理' : '轮胎与轮圈截面'}</h2>
             <label>
               结构分解 · {Math.round(explode * 100)}%
               <input

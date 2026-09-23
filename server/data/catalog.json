@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21",
+  "updatedAt": "2026-09-23",
   "collectionNote": "“人气精选”为编辑选集，涵盖公路竞赛与砾石探索，不代表销量或实时热度排名。",
   "brands": [
     {
@@ -156,7 +156,7 @@
       "build": "Shimano Dura-Ace Di2",
       "edition": "2026 · 美国版",
       "kind": "全能公路",
-      "description": "轻量与空气动力学，在同一台赛车上交汇。SL8 用纤细的后上叉与利落的前端，勾勒全能竞赛的轮廓。",
+      "description": "SL8 将轻量与气动设计结合在同一平台，采用前伸头管、细座管和下沉后上叉。可与 SL6、SL7 对照几何和前端结构。",
       "collections": ["current", "popular"],
       "image": "/bikes/tarmac-sl8.png",
       "imageCredit": "Specialized",
@@ -721,7 +721,7 @@
       "build": "Shimano Dura-Ace Di2",
       "edition": "2026 · 英国版 4039",
       "kind": "气动竞赛",
-      "description": "粗壮的气动管型与可调的 PACE 座舱，是这台德国赛车的鲜明标记。为高速巡航和冲刺而设计。",
+      "description": "Aeroad CFR 采用深截面气动管型和可调 PACE 座舱，面向高速公路竞赛。",
       "collections": ["current", "popular"],
       "image": "/bikes/aeroad-cfr.png",
       "imageCredit": "Canyon",
@@ -1260,7 +1260,7 @@
       "build": "Shimano Dura-Ace Di2 · Princeton",
       "edition": "M40X 世代 · 英国版",
       "kind": "全能公路",
-      "description": "曲线鲜明的 Onda 前叉，不对称的车架设计。Dogma F 用独特的意式轮廓，诠释自己的竞赛语言。",
+      "description": "Dogma F 采用 Onda 前叉和不对称车架，弯曲前叉与管型过渡是其主要外观特点。",
       "collections": ["current", "popular"],
       "image": "/bikes/dogma-f.png",
       "imageCredit": "Pinarello",
@@ -2003,7 +2003,7 @@
       "build": "Shimano 105 Di2",
       "edition": "巴西版 · 105 Di2",
       "kind": "气动竞赛",
-      "description": "喜德盛 X-LAB AD 家族的起点。碳纤维气动车架、电子变速与功率计，把训练需要的细节放进一台车。",
+      "description": "喜德盛 X-LAB AD 系列的碳纤维气动车，原配电子变速与功率计，适用于公路骑行和日常训练。",
       "collections": ["current", "popular"],
       "image": "/bikes/xlab-ad7.png",
       "imageCredit": "X-LAB 巴西官方",
@@ -2258,7 +2258,7 @@
       "build": "Shimano 105 Di2",
       "edition": "美国版 · 105 Di2",
       "kind": "气动竞赛",
-      "description": "以 T800 碳纤维构筑气动轮廓，搭配 Branta 碳纤维功率曲柄与轮组。从日常训练，到下一次冲线。",
+      "description": "AD8 使用 T800 碳纤维气动车架，配 Branta 碳纤维功率曲柄与碳轮。",
       "collections": ["current", "popular"],
       "image": "/bikes/xlab-ad8.jpg",
       "imageCredit": "X-LAB / XDS",
@@ -2568,7 +2568,7 @@
       "build": "Shimano Dura-Ace Di2",
       "edition": "美国版 · 车队涂装",
       "kind": "气动竞赛",
-      "description": "来自喜德盛 X-LAB 的旗舰气动车。T1100 碳纤维、Dura-Ace Di2 与阿斯塔纳车队涂装，组成醒目的竞赛姿态。",
+      "description": "喜德盛 X-LAB 的旗舰气动车，采用 T1100 碳纤维车架、Dura-Ace Di2 和阿斯塔纳车队主题涂装。",
       "collections": ["current", "popular"],
       "image": "/bikes/xlab-ad9.jpg",
       "imageCredit": "X-LAB / XDS",
@@ -2855,7 +2855,7 @@
       "build": "Shimano 105 机械变速",
       "edition": "美国版 · Angel",
       "kind": "全能公路",
-      "description": "从日常训练到长距离公路骑行。RS7 采用更紧凑的车架比例，将机械 105、功率曲柄与碳轮组合在一起。",
+      "description": "RS7 采用较紧凑的车架比例，配机械 105、功率曲柄和碳轮，可用于日常训练与长距离公路骑行。",
       "collections": ["current"],
       "image": "/bikes/xlab-rs7.jpg",
       "imageCredit": "X-LAB / XDS",
@@ -3151,7 +3151,7 @@
       "build": "Shimano Dura-Ace Di2",
       "edition": "美国版 · Shadowbox",
       "kind": "轻量爬坡",
-      "description": "为山路减去负担。T1100 与 M40X 碳纤维车架、纤细管型与 27.2 mm 圆座管，呈现出不同于 AD 系列的轻量路线。",
+      "description": "RT9 面向轻量爬坡，采用 T1100 与 M40X 碳纤维车架、纤细管型及 27.2 mm 圆座管，与 AD 系列的气动设计不同。",
       "collections": ["current", "popular"],
       "image": "/bikes/xlab-rt9.jpg",
       "imageCredit": "X-LAB / XDS",
@@ -3396,7 +3396,7 @@
       "build": "Shimano 105 · VR35 碳轮",
       "edition": "法国版 · 8817922",
       "kind": "长途耐力",
-      "description": "为长距离留出舒适空间。EDR CF 采用较高前端、27.2 mm 圆座管、下管储物舱与多处安装点，支持最大 38 mm 胎宽。",
+      "description": "EDR CF 采用较高前端和 27.2 mm 圆座管，配有下管储物舱与多处安装点，最大支持 38 mm 胎宽，面向长距离公路骑行。",
       "collections": ["current"],
       "image": "/bikes/vanrysel-edr-cf.png",
       "imageCredit": "Decathlon / Van Rysel",
@@ -3650,7 +3650,7 @@
       "family": "TCR Advanced Pro 0",
       "edition": "2026 · 美国版",
       "kind": "轻量爬坡",
-      "description": "紧凑三角、倾斜上管与较高的后上叉接点，是 TCR 鲜明的轮廓。40 mm 轮组与 Force AXS，面向起伏赛道上的加速与爬升。",
+      "description": "TCR 的紧凑三角、倾斜上管和较高后上叉接点具有鲜明辨识度。这一版本配 40 mm 碳轮和 Force AXS，面向全能公路竞赛。",
       "color": "Carbon / 碳黑",
       "colorHex": "#333638",
       "weight": "未公布",
@@ -3912,7 +3912,7 @@
       "family": "Defy Advanced Pro 0",
       "edition": "2025 · 美国版",
       "kind": "长途耐力",
-      "description": "细后上叉、D-Fuse 座管与 32C 外胎，让长距离骑行成为主角。相较 TCR，Defy 用更舒展的几何迎接粗糙路面与漫长的一天。",
+      "description": "Defy 配有 D-Fuse 座管、细后上叉和 32C 外胎，面向长距离公路骑行。可与同品牌 TCR 对照前端高度、伸展量和轴距。",
       "color": "Interstellar / 星际",
       "colorHex": "#74758f",
       "weight": "7.48 kg",
@@ -4478,7 +4478,7 @@
       "family": "Endurace CF SLX 8",
       "edition": "美国版 · 产品 4432",
       "kind": "长途耐力",
-      "description": "高前端、VCLS Aero 座管和宽胎空间，把速度延伸到更长的路线。较低框高的 ERC 轮组与 32 mm 外胎，是这台耐力车的日常搭配。",
+      "description": "Endurace 采用较高前端、VCLS Aero 座管和宽胎空间。这一版本配 ERC 轮组及 32 mm 外胎，兼顾长距离骑行与较粗糙路面。",
       "color": "Champagne / 香槟",
       "colorHex": "#c5bca7",
       "weight": "约 8.10 kg",
@@ -5349,7 +5349,7 @@
       "family": "SCULTURA Endurance 8000",
       "edition": "2025 · 国际版存档",
       "kind": "长途耐力",
-      "description": "同样叫 SCULTURA，这台 ENDURANCE 却有更高的头管、更长的后下叉和 32C 宽胎。纤细的高位后上叉与圆座管，为长距离公路提供另一种姿态。",
+      "description": "SCULTURA ENDURANCE 相比竞赛系列拥有更高头管、更长后下叉和 32C 原配胎，采用高位后上叉与圆座管，面向长距离公路。",
       "color": "Silk Dark Silver / Black · 深银黑",
       "colorHex": "#656c70",
       "weight": "8.4 kg",
@@ -9471,7 +9471,7 @@
       "build": "Shimano CUES 1×11",
       "edition": "2026 官网配置",
       "kind": "全能公路",
-      "description": "6069 无缝铝合金车架、碳叉与 CUES 单盘传动，搭配 32C 轮胎，呈现更从容的公路骑行取向。",
+      "description": "6069 无缝铝合金车架搭配碳叉、CUES 单盘传动与 32C 轮胎，定位日常公路骑行。",
       "collections": ["current", "popular"],
       "source": "https://www.sunpeed.com/page75?product_id=376",
       "sourceLabel": "品牌官方配置与几何",
@@ -9731,7 +9731,7 @@
       "build": "Dura-Ace Di2",
       "edition": "2019 官方存档",
       "kind": "气动竞赛",
-      "description": "深框碳轮、Aerofly II 把组与专属气动管型，记录独立破风平台的经典时代。",
+      "description": "Venge 是 Specialized 的独立气动竞赛平台，这一归档版本配深框碳轮和 Aerofly II 把组。",
       "collections": ["classic", "popular"],
       "source": "https://www.specialized.com/us/en/s-works-venge/p/154588?color=255233-154588",
       "sourceLabel": "品牌官方配置与几何",
@@ -9992,7 +9992,7 @@
       "build": "SRAM RED eTap AXS",
       "edition": "2020 官方存档",
       "kind": "轻量爬坡",
-      "description": "在全能赛车逐步融合气动之前，SL6 以轻量车架、下沉后叉与传统把立留下鲜明一代。",
+      "description": "SL6 保留轻量车架、下沉后上叉与传统把立，是观察 Tarmac 后续气动整合的一款历史参考。",
       "collections": ["classic", "popular"],
       "source": "https://www.specialized.com/us/en/s-works-tarmac-disc--sram-etap/p/171346",
       "sourceLabel": "品牌官方配置与几何",
@@ -10265,7 +10265,7 @@
       "build": "SRAM Apex eTap AXS",
       "edition": "2025 美版 · 产品 4223498",
       "kind": "砾石公路",
-      "description": "用 Future Shock 2.0、SWAT 储物和 42C 胎，把公路之外的碎石与长距离探索带入图鉴。",
+      "description": "Diverge 配有 Future Shock 2.0、SWAT 储物和 42C 原配胎，适合砾石与长距离骑行。",
       "collections": ["current", "popular"],
       "source": "https://www.specialized.com/us/en/diverge-comp-carbon/p/4223498",
       "sourceLabel": "品牌官方配置与几何",
@@ -10527,7 +10527,7 @@
       "build": "Shimano GRX RX820",
       "edition": "2025 英国版 · Flip Chip 短档",
       "kind": "砾石公路",
-      "description": "碳纤维车架、D-Fuse 座管与可调后叉，把双盘 GRX 的节奏带到砾石路面。",
+      "description": "Revolt 采用碳纤维车架、D-Fuse 座管与可调后叉，搭配 GRX 双盘传动，后轴位置可改变轴距和胎宽空间。",
       "collections": ["current", "popular"],
       "source": "https://www.giant-bicycles.com/gb/revolt-advanced-0-2025",
       "sourceLabel": "品牌官方配置与几何",
@@ -10788,7 +10788,7 @@
       "family": "Aethos",
       "edition": "2022 美版 · Ultegra Di2",
       "kind": "轻量爬坡",
-      "description": "细圆管、传统把立与独立座管，把轻量公路车的经典轮廓留在碳纤维时代。",
+      "description": "初代 Aethos 采用细圆管、传统把立和独立座管，强调轻量，保留相对传统的公路车结构。",
       "collections": ["classic"],
       "source": "https://www.specialized.com/us/en/aethos-expert-shimano-ultegra-di2/p/199442",
       "material": "FACT 10r 碳纤维",
@@ -11052,7 +11052,7 @@
       "family": "Aethos 2",
       "edition": "美国官网 · Ultegra Di2",
       "kind": "轻量爬坡",
-      "description": "更高的前端与隐藏走线，给 Aethos 的轻量路线加入新的姿态选择。",
+      "description": "第二代 Aethos 提高了前端高度并采用隐藏走线，可与初代比较几何、把位和配置变化。",
       "collections": ["current", "popular"],
       "source": "https://www.specialized.com/us/en/aethos-2-expert-shimano-ultegra-di2/p/4294984?color=5472524-4294984",
       "material": "FACT 10r 碳纤维",
@@ -11315,7 +11315,7 @@
       "family": "Addict RC",
       "edition": "英国官网 · 型号 423246",
       "kind": "轻量爬坡",
-      "description": "低前端竞赛几何与一体把，把轻量平台的注意力放在爬坡和快速转向。",
+      "description": "Addict RC 采用低前端竞赛几何与一体把，是 SCOTT 的轻量公路竞赛平台。",
       "collections": ["current", "popular"],
       "source": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-bike",
       "material": "HMX 碳纤维",
@@ -11588,7 +11588,7 @@
       "family": "Allez Sprint",
       "edition": "官网存档 · 105 R7000 / 11 速",
       "kind": "全能公路",
-      "description": "把铝合金焊接工艺放到聚光灯下：Smartweld、碳叉与赛车姿态，组成很有辨识度的竞赛铝架。",
+      "description": "Allez Sprint 将 Smartweld 焊接工艺用于竞赛铝架，搭配碳叉、碳座管和机械 105。",
       "collections": ["classic"],
       "source": "https://www.specialized.com/us/en/allez-sprint-comp/p/189818?color=308063-189818",
       "material": "E5 铝合金 / 碳叉",
@@ -11849,7 +11849,7 @@
       "build": "Shimano 105 机械",
       "edition": "2025 · 克罗地亚版",
       "kind": "长途耐力",
-      "description": "一台把公路延伸到粗糙路面的铝架车。32c 原配胎、D-Fuse 座管与耐力几何，让通勤和周末长距离都成为它的使用场景。",
+      "description": "Contend AR 使用铝合金车架、32c 原配胎与 D-Fuse 座管，耐力几何适用于通勤和周末长距离骑行。",
       "collections": ["current"],
       "image": "/bikes/contend-ar1.jpg",
       "imageCredit": "GIANT",
@@ -12108,7 +12108,7 @@
       "build": "Shimano 105 Di2",
       "edition": "2025 · 比利时版",
       "kind": "长途耐力",
-      "description": "从女性骑行者的长距离需求出发，以耐力几何、D-Fuse 把组和座管搭配 105 Di2。它提供了竞赛几何之外的另一种公路选择。",
+      "description": "Avail 为女性骑行者设计，采用耐力几何，配 D-Fuse 把组、座管和 105 Di2。可与 Langma 的竞赛几何对照。",
       "collections": ["current"],
       "image": "/bikes/avail-advanced1.jpg",
       "imageCredit": "Liv 丽以芙",
@@ -12623,7 +12623,7 @@
       "build": "Shimano GRX Di2",
       "edition": "2025 · 官方存档",
       "kind": "砾石公路",
-      "description": "69.5° 头管角、45c 砾石胎与 GRX Di2，把长距离探索放在设计中心。与同品牌 REACTO 对照，能看到公路与砾石平台截然不同的前端尺寸。",
+      "description": "SILEX 采用 69.5° 头管角、45c 砾石胎与 GRX Di2，面向长距离砾石骑行。与同品牌 REACTO 相比，前端尺寸和轴距明显不同。",
       "collections": ["classic"],
       "image": "/bikes/silex8000.jpg",
       "imageCredit": "美利达 MERIDA",
@@ -12883,7 +12883,7 @@
       "build": "Shimano 105 机械",
       "edition": "2026 · 美国版",
       "kind": "长途耐力",
-      "description": "Future Shock 3.2 前端与 Pavé 座管，把路面的颠簸纳入整车设计。较高的车架堆高和 32c 轮胎，让长时间骑行成为这台车的主场。",
+      "description": "Roubaix SL8 配有 Future Shock 3.2 前端、Pavé 座管和 32c 原配胎，结合较高车架堆高，面向长距离及粗糙路面骑行。",
       "collections": ["current"],
       "image": "/bikes/roubaix-sl8-sport.webp",
       "imageCredit": "Specialized",
@@ -13814,7 +13814,7 @@
       "build": "Dura-Ace Di2 · 4iiii 双边",
       "edition": "国际官网 YUB21 配置",
       "kind": "气动竞赛",
-      "description": "低矮的前端、深截面车架和前 50 / 后 65 mm 轮圈，让 Oltre RC 的气动取向一眼可见。本条目固定为 YUB21 的 Dura-Ace 配置，适合与其他世代的竞赛车比较几何和装配。",
+      "description": "Oltre RC 采用低前端、深截面车架与前 50 / 后 65 mm 轮圈，强调空气动力学。本条目为 YUB21 Dura-Ace 配置。",
       "collections": ["current", "flagship"],
       "image": "/bikes/bianchi-oltre-rc.jpg",
       "imageCredit": "Bianchi 比安奇",
@@ -14081,7 +14081,7 @@
       "build": "Dura-Ace Di2 · 4iiii 双边",
       "edition": "国际官网 YWB9S 限量版",
       "kind": "轻量爬坡",
-      "description": "Specialissima 的轻量竞赛路线搭配 49 mm 轮圈、30 mm 轮胎和环法主题涂装。黄、白、绿与波点元素值得放大细看；它是官方限量零售车型，不代表车队比赛实装。",
+      "description": "Specialissima 的轻量竞赛车架配 49 mm 轮圈、30 mm 轮胎和环法主题涂装。这是官方限量零售车型，黄、白、绿与波点元素不代表车队赛日装配。",
       "collections": ["current", "flagship"],
       "image": "/bikes/bianchi-specialissima-rc-tdf.jpg",
       "imageCredit": "Bianchi 比安奇",
@@ -14345,7 +14345,7 @@
       "build": "Ultegra Di2 · 4iiii 单边",
       "edition": "国际官网 YVB9K 限量版",
       "kind": "长途耐力",
-      "description": "把石板路主题带入耐力公路车：35 mm 原配胎、422 mm 后下叉和更高的前端，配合 Countervail 座管。与同品牌竞赛车对照，比单独看“舒适”标签更容易理解它的定位。",
+      "description": "Infinito Pro 的巴黎—鲁贝主题版本，配 35 mm 原配胎、422 mm 后下叉与 Countervail 座管，前端较高，定位耐力公路。",
       "collections": ["current"],
       "image": "/bikes/bianchi-infinito-pro-roubaix.jpg",
       "imageCredit": "Bianchi 比安奇",
@@ -15142,7 +15142,7 @@
       "modelYear": 2023,
       "yearNote": "官方产品元数据 7799-COLL2023 与 C23 主图；记录 2023 系列的现行 12 速配置。",
       "kind": "全能公路",
-      "description": "CAAD 系列的铝架竞赛路线，配合降低的后上叉、碳纤维前叉与 50/34 紧凑双盘。适合对照碳架，看材料、轮组与整车定位怎样影响选择。",
+      "description": "CAAD13 是 Cannondale 的铝合金竞赛公路车，采用下沉后上叉、碳纤维前叉与 50/34T 紧凑双盘。",
       "collections": ["current", "classic"],
       "image": "/bikes/caad.png",
       "imageCredit": "Cannondale",
@@ -16201,7 +16201,7 @@
       "modelYear": null,
       "yearNote": "官方页面未明确此配置的车型年，保留产品编号。",
       "kind": "长途耐力",
-      "description": "更高的前端、415 mm 后下叉与车架内储物，是 Caledonia-5 的长距离取向。与 Soloist 对照相同尺码，比单看两车相似的气动外观更容易看出差别。",
+      "description": "Caledonia-5 采用较高前端、415 mm 后下叉和车架内储物，面向长距离公路骑行。可与 Soloist 对照同尺码的几何和配置。",
       "collections": ["current"],
       "image": "/bikes/caledonia.png",
       "imageCredit": "Cervélo",
@@ -16953,7 +16953,7 @@
       "modelYear": 2026,
       "yearNote": "车型年份来自原厂对应地区产品页。",
       "kind": "轻量爬坡",
-      "description": "Langma 为女性竞赛车补上另一种选择：紧凑车架配较短曲柄，XS 与 S 都使用 165 mm。可以与 Avail 耐力平台对照几何，而不只按品牌或涂装区分用途。",
+      "description": "Langma 是 Liv 为女性骑行者设计的竞赛公路车，采用紧凑车架与较短曲柄，XS 和 S 码均为 165 mm。可与 Avail 耐力系列比较几何。",
       "collections": ["current"],
       "image": "/bikes/langma-advanced1.jpg",
       "imageCredit": "Liv 丽以芙",
@@ -17189,7 +17189,7 @@
       "modelYear": null,
       "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片目录或核对日期代替车型年。",
       "kind": "砾石公路",
-      "description": "一台同时考虑速度、装载和长距离的碳纤维砾石车：45 mm 原配胎、GRX 双盘和功率计，为平路快骑与陡坡提供另一种组合。与公路耐力车比较时，别忽略它的轴距和后下叉。",
+      "description": "Nuroad C:62 Race 配有 45 mm 原配胎、GRX 双盘和功率计，兼顾砾石骑行、装载与长距离需求。与耐力公路车比较时，应结合轴距和后下叉长度。",
       "collections": ["current"],
       "image": "/bikes/nuroad-c62-race.jpg",
       "imageCredit": "CUBE",
@@ -17955,6 +17955,1065 @@
         "limit": "不将“同类气动设计”解释为与 Filante SLR ID2 相同的风阻或刚度，也不直接将 36 mm 空间视为砾石用途认证。"
       },
       "imageNote": "官方主图配 Miche Asfalto 45，但胎侧显示 Rubino；E7695IA 配置表列 Zaffiro Pro V 32c。轮胎参数以文字表为准。"
+    },
+    {
+      "id": "bmc-roadmachine-five",
+      "brandId": "bmc",
+      "name": "BMC Roadmachine FIVE",
+      "family": "Roadmachine FIVE",
+      "build": "Shimano 105 · Mavic Open Disc",
+      "edition": "2024 原厂归档 · Iron Grey / Brushed",
+      "modelYear": 2024,
+      "kind": "长途耐力",
+      "description": "第三代 Roadmachine 的机械 105 版本，配有下管储物、D 形碳座管和挡泥板安装点。车架本身容许的胎宽大于这套双盘配置的限值，选胎时需要区分两者。",
+      "collections": ["classic"],
+      "image": "/bikes/bmc-roadmachine-five.jpg",
+      "imageCredit": "BMC",
+      "imageSource": "https://bmc-switzerland.com/collections/bike-archive-road/products/roadmachine-five-bikes-bmc-24-10605-004",
+      "imageRatio": 1.7779632721202003,
+      "color": "Iron Grey / Brushed",
+      "colorHex": "#7c7d79",
+      "source": "https://bmc-switzerland.com/collections/bike-archive-road/products/roadmachine-five-bikes-bmc-24-10605-004",
+      "sourceLabel": "厂商官方 · 2024 原厂归档 · Iron Grey / Brushed",
+      "checkedAt": "2026-09-23",
+      "weight": "8.8 kg",
+      "weightNote": "官网标注不含脚踏，未注明称重尺码。",
+      "groupset": "Shimano 105",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Roadmachine Carbon Gen 3",
+          "specs": [
+            ["五通", "PF86"],
+            ["轴制式", "前 12×100 / 后 12×142 mm"],
+            ["胎宽上限", "车架 40 mm；受前拨限制，本配置 34 mm 实测宽度"]
+          ],
+          "description": "TCC Endurance 结构，带下管储物舱和挡泥板安装点。",
+          "x": 56,
+          "y": 44
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano 105 ST-R7120",
+          "specs": [
+            ["变速", "2×12 速机械"],
+            ["制动", "BR-R7170 · 液压碟刹"],
+            ["碟片", "SM-RT70 · 前后 160 mm"]
+          ],
+          "description": "搭配 FD-R7100 前拨与 RD-R7100 后拨。",
+          "x": 80,
+          "y": 8
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano 105 FC-R7100",
+          "specs": [
+            ["曲柄长度", "47 / 51：170；54 / 56：172.5；58 / 61：175 mm"],
+            ["中轴", "PF86"]
+          ],
+          "description": "各尺码采用不同曲柄长度，按官方几何附表记录。",
+          "x": 51,
+          "y": 73
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Shimano 105 50/34T",
+          "specs": [
+            ["大盘", "50T"],
+            ["小盘", "34T"]
+          ],
+          "description": "紧凑双盘搭配 11–34T 飞轮，最低齿比为 1:1。",
+          "x": 45,
+          "y": 70.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 105 CS-R7101",
+          "specs": [
+            ["齿数", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "description": "原配链条为 Shimano CN-M6100。",
+          "x": 22,
+          "y": 63
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未标配功率计",
+          "specs": [
+            ["原配曲柄", "FC-R7100"],
+            ["功率设备", "官方配置表未列出"]
+          ],
+          "description": "后续加装需另行核对曲柄与车架间隙。",
+          "x": 46,
+          "y": 77
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Mavic Open Disc",
+          "specs": [
+            ["花鼓", "前 CL-712 / 后 RXC-1425"],
+            ["轮圈", "Tubetype · 内胎系统"]
+          ],
+          "description": "官网将轮圈和轮胎均标为内胎规格，不按真空套装介绍。",
+          "x": 94,
+          "y": 79
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Rubino IV G2.0",
+          "specs": [
+            ["标称胎宽", "30 mm"],
+            ["结构", "Tube only · 配内胎"]
+          ],
+          "description": "本配置的最大实测胎宽为 34 mm，不能直接采用车架 40 mm 的独立限值。",
+          "x": 84,
+          "y": 34
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "BMC RAB 03 / RSM 01",
+          "specs": [
+            ["车把", "Ergo Top · Compact Bend"],
+            ["Reach / Drop", "70 / 125 mm"],
+            ["宽度", "47–58：400 / 420 mm 依尺码；61：440 mm"]
+          ],
+          "description": "47 码宽 400 mm，51 至 58 码为 420 mm；把立长度随尺码变化。",
+          "x": 70,
+          "y": 12
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Roadmachine Carbon D-Shaped",
+          "specs": [
+            ["后飘", "15 mm"],
+            ["长度", "280 / 320 / 360 / 400 mm，随尺码变化"]
+          ],
+          "description": "兼容 D-Fender；专用 D 形截面不按通用圆座管替换。",
+          "x": 34.5,
+          "y": 16
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Taiga / Selle Royal SRX",
+          "specs": [
+            ["官方配置", "两种坐垫择一"],
+            ["具体随车版本", "以交付实物为准"]
+          ],
+          "description": "原厂表保留替代供货选项，未提供这两款的统一重量。",
+          "x": 34,
+          "y": 4
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "47",
+            "stack": 525,
+            "reach": 370,
+            "headAngle": 71.4,
+            "seatAngle": 74.2,
+            "wheelbase": 982,
+            "chainstay": 415,
+            "bbDrop": 75,
+            "headTube": 112,
+            "seatTube": 414
+          },
+          {
+            "size": "51",
+            "stack": 550,
+            "reach": 379,
+            "headAngle": 71.4,
+            "seatAngle": 74.2,
+            "wheelbase": 1000,
+            "chainstay": 415,
+            "bbDrop": 75,
+            "headTube": 138,
+            "seatTube": 461
+          },
+          {
+            "size": "54",
+            "stack": 570,
+            "reach": 383,
+            "headAngle": 72.2,
+            "seatAngle": 74.2,
+            "wheelbase": 997,
+            "chainstay": 415,
+            "bbDrop": 75,
+            "headTube": 154,
+            "seatTube": 488
+          },
+          {
+            "size": "56",
+            "stack": 595,
+            "reach": 388,
+            "headAngle": 72.2,
+            "seatAngle": 74.2,
+            "wheelbase": 1010,
+            "chainstay": 415,
+            "bbDrop": 75,
+            "headTube": 181,
+            "seatTube": 508
+          },
+          {
+            "size": "58",
+            "stack": 620,
+            "reach": 393,
+            "headAngle": 72.2,
+            "seatAngle": 74.2,
+            "wheelbase": 1023,
+            "chainstay": 415,
+            "bbDrop": 75,
+            "headTube": 207,
+            "seatTube": 529
+          },
+          {
+            "size": "61",
+            "stack": 645,
+            "reach": 398,
+            "headAngle": 72.2,
+            "seatAngle": 74.2,
+            "wheelbase": 1036,
+            "chainstay": 415,
+            "bbDrop": 75,
+            "headTube": 233,
+            "seatTube": 550
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://bmc-switzerland.com/collections/bike-archive-road/products/roadmachine-five-bikes-bmc-24-10605-004",
+        "sourceLabel": "原厂产品页 · 几何表",
+        "note": "尺寸单位为 mm，角度单位为 °。按所列配置和尺码记录，不代表最终把位。"
+      },
+      "aero": {
+        "title": "耐力几何与实用配置",
+        "description": "TCC Endurance 车架、D 形座管、储物舱与挡泥板安装点共同服务于长距离公路使用。",
+        "source": "https://bmc-switzerland.com/collections/bike-archive-road/products/roadmachine-five-bikes-bmc-24-10605-004",
+        "limit": "本页未提供可用于跨品牌比较的风阻数据；高前端与座管外形不能直接换算为舒适性。"
+      }
+    },
+    {
+      "id": "bmc-teammachine-slr01-two",
+      "brandId": "bmc",
+      "name": "BMC Teammachine SLR 01 TWO",
+      "family": "Teammachine SLR 01 TWO",
+      "build": "Dura-Ace Di2 · 4iiii 双边功率",
+      "edition": "2024 原厂归档 · Off-White / Black",
+      "modelYear": 2024,
+      "kind": "全能公路",
+      "description": "Teammachine SLR 01 的旗舰级装配，采用 ICS Carbon Evo 一体把、Aerocore 水壶架与 50 mm 碳轮。该归档配置配有 Dura-Ace Di2 和 4iiii 双边功率计，可与 Teammachine R 比较几何和结构。",
+      "collections": ["classic", "flagship"],
+      "image": "/bikes/bmc-teammachine-slr01-two.jpg",
+      "imageCredit": "BMC",
+      "imageSource": "https://bmc-switzerland.com/collections/bike-archive-road/products/teammachine-slr-01-two-bikes-bmc-24-10608-004",
+      "imageRatio": 1.7779632721202003,
+      "color": "Off-White / Black",
+      "colorHex": "#e6ecee",
+      "source": "https://bmc-switzerland.com/collections/bike-archive-road/products/teammachine-slr-01-two-bikes-bmc-24-10608-004",
+      "sourceLabel": "厂商官方 · 2024 原厂归档 · Off-White / Black",
+      "checkedAt": "2026-09-23",
+      "weight": "6.7 kg",
+      "weightNote": "官网标注不含脚踏，未注明称重尺码；不以页面物流重量作为整车重量。",
+      "groupset": "Shimano Dura-Ace Di2",
+      "hasPowerMeter": true,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Teammachine SLR 01 Premium Carbon",
+          "specs": [
+            ["结构", "Aerocore · TCC Race"],
+            ["五通", "PF86"],
+            ["最大实测胎宽", "30 mm"]
+          ],
+          "description": "前后贯通轴为 12×100 / 12×142 mm，采用隐藏走线与 Stealth Dropout。",
+          "x": 56,
+          "y": 44
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Dura-Ace Di2 ST-R9270",
+          "specs": [
+            ["变速", "2×12 速电子"],
+            ["制动", "BR-R9270"],
+            ["碟片", "RT-MT900 · 前 160 / 后 140 mm"]
+          ],
+          "description": "搭配 FD-R9250 前拨与 RD-R9250 后拨。",
+          "x": 80,
+          "y": 8
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Dura-Ace FC-R9200 / 4iiii",
+          "specs": [
+            ["曲柄长度", "47 / 51：170；54 / 56：172.5；58 / 61：175 mm"],
+            ["中轴", "PF86"]
+          ],
+          "description": "原厂配置表将 FC-R9200 曲柄与 4iiii 双边功率计分别列出。",
+          "x": 51,
+          "y": 73
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "Dura-Ace 52/36T",
+          "specs": [
+            ["大盘", "52T"],
+            ["小盘", "36T"]
+          ],
+          "description": "搭配 11–30T 飞轮。",
+          "x": 45,
+          "y": 70.5
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Dura-Ace CS-R9200",
+          "specs": [
+            ["齿数", "11–30T"],
+            ["速别", "12 速"]
+          ],
+          "description": "原配 CN-M9100 链条。",
+          "x": 22,
+          "y": 63
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "4iiii Precision Gen3+",
+          "specs": [
+            ["测量", "双边"],
+            ["安装", "曲柄式"]
+          ],
+          "description": "按 BMC 此版本官方配置记录，非 Shimano FC-R9200-P。",
+          "x": 46,
+          "y": 77
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss ARC 1100 DICUT 50",
+          "specs": [
+            ["框高", "50 mm"],
+            ["花鼓", "180 · Ratchet EXP 36"],
+            ["轴承", "SINC Ceramic"]
+          ],
+          "description": "这是 2024 整车归档版本，不套用图鉴中第三代 65 mm 独立轮组的参数。",
+          "x": 94,
+          "y": 79
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Pirelli P-Zero Race SL TLR",
+          "specs": [
+            ["标称胎宽", "26 mm"],
+            ["官方备注", "型号写 TLR，Tubeless Information 却写 Tubetype Tires"]
+          ],
+          "description": "官网两处对轮胎结构的描述不一致；实际真空使用能力需按交付胎侧及厂商兼容表核对。",
+          "x": 84,
+          "y": 34
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "ICS Carbon Evo",
+          "specs": [
+            ["结构", "全碳一体把"],
+            ["规格栏 Reach / Drop", "70 / 127 mm"],
+            ["外撇", "8°"]
+          ],
+          "description": "页面几何附表另列 68 / 128 mm，与规格栏不一致，订配时应核对具体把组版本。",
+          "x": 70,
+          "y": 12
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Teammachine SLR 01 D-Shaped",
+          "specs": [
+            ["材质", "Premium Carbon"],
+            ["后飘", "15 mm"],
+            ["长度", "47：330 mm；其余尺码：380 mm"]
+          ],
+          "description": "专用 D 形座管，与 Roadmachine 的同类名称不代表可互换。",
+          "x": 34.5,
+          "y": 16
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Vento Argo R1",
+          "specs": [
+            ["宽度", "140 mm"],
+            ["版本", "R1"]
+          ],
+          "description": "记录归档整车所列版本，不套用其他 Argo 宽度或等级的重量。",
+          "x": 34,
+          "y": 4
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "47",
+            "stack": 506,
+            "reach": 367,
+            "headAngle": 71.5,
+            "seatAngle": 73.5,
+            "wheelbase": 968,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 110,
+            "seatTube": 423
+          },
+          {
+            "size": "51",
+            "stack": 530,
+            "reach": 377,
+            "headAngle": 71.5,
+            "seatAngle": 73.5,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 130,
+            "seatTube": 468
+          },
+          {
+            "size": "54",
+            "stack": 550,
+            "reach": 386,
+            "headAngle": 72.3,
+            "seatAngle": 73.5,
+            "wheelbase": 989,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 145,
+            "seatTube": 504
+          },
+          {
+            "size": "56",
+            "stack": 565,
+            "reach": 392,
+            "headAngle": 72.3,
+            "seatAngle": 73.5,
+            "wheelbase": 1000,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 165,
+            "seatTube": 524
+          },
+          {
+            "size": "58",
+            "stack": 584,
+            "reach": 401,
+            "headAngle": 72.3,
+            "seatAngle": 73.5,
+            "wheelbase": 1015,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 184,
+            "seatTube": 545
+          },
+          {
+            "size": "61",
+            "stack": 608,
+            "reach": 409,
+            "headAngle": 72.3,
+            "seatAngle": 73.5,
+            "wheelbase": 1030,
+            "chainstay": 410,
+            "bbDrop": 69,
+            "headTube": 210,
+            "seatTube": 574
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://bmc-switzerland.com/collections/bike-archive-road/products/teammachine-slr-01-two-bikes-bmc-24-10608-004",
+        "sourceLabel": "原厂产品页 · 几何表",
+        "note": "尺寸单位为 mm，角度单位为 °。按所列配置和尺码记录，不代表最终把位。"
+      },
+      "aero": {
+        "title": "Aerocore 与前端整合",
+        "description": "Aerocore 水壶架、ICS 隐藏走线和一体把将接触气流的部件纳入车架设计。",
+        "source": "https://bmc-switzerland.com/collections/bike-archive-road/products/teammachine-slr-01-two-bikes-bmc-24-10608-004",
+        "limit": "原厂归档未提供本配置在统一条件下的省瓦值，不能据外形或重量判断它与 Teammachine R 的风阻高低。"
+      }
+    },
+    {
+      "id": "cannondale-superx3",
+      "brandId": "cannondale",
+      "name": "Cannondale SuperX 3",
+      "family": "SuperX 3",
+      "build": "GRX RX820 · DT Swiss G1800",
+      "edition": "丹麦官网 · C17105U",
+      "modelYear": null,
+      "kind": "砾石公路",
+      "description": "采用竞赛几何的双盘砾石车，配有 GRX 机械变速、DT Swiss 铝轮和 40 mm 轮胎。46 码使用更短曲柄与 46/30T 牙盘，其余尺码为 48/31T，选车时需按尺码核对。",
+      "collections": ["current"],
+      "image": "/bikes/cannondale-superx3.png",
+      "imageCredit": "Cannondale",
+      "imageSource": "https://www.cannondale.com/en-dk/bikes/road/gravel/superx/superx-3-c17105u",
+      "imageRatio": 1.682085786375105,
+      "color": "Raw",
+      "colorHex": "#55524f",
+      "source": "https://www.cannondale.com/en-dk/bikes/road/gravel/superx/superx-3-c17105u",
+      "sourceLabel": "厂商官方 · 丹麦官网 · C17105U",
+      "checkedAt": "2026-09-23",
+      "weight": "未公布",
+      "weightNote": "所引配置页未给出整车重量，不以其他等级的实测值替代。",
+      "groupset": "Shimano GRX RX820",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "SuperX Carbon",
+          "specs": [
+            ["五通", "BSA 68 mm 螺纹"],
+            ["后拨尾钩", "UDH"],
+            ["胎宽空间", "后 48 mm / 前 51 mm，按原厂间隙条件"]
+          ],
+          "description": "Proportional Response 碳纤维结构；前后贯通轴 12×100 / 12×142 mm。",
+          "x": 57,
+          "y": 45
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano GRX RX820",
+          "specs": [
+            ["变速", "2×12 速机械"],
+            ["制动", "GRX RX820 液压"],
+            ["碟片", "CL800 · 前后 160 mm"]
+          ],
+          "description": "搭配 GRX 820 前拨与 Shadow RD+ 后拨。",
+          "x": 81,
+          "y": 9
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "GRX RX820 / RX610",
+          "specs": [
+            ["46 码", "RX610 · 165 mm"],
+            ["51 / 54–56 / 58–61 码", "RX820 · 170 / 172.5 / 175 mm"]
+          ],
+          "description": "小尺码曲柄型号不同，不能将 RX820 参数直接用于所有尺码。",
+          "x": 50,
+          "y": 74
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "GRX 双盘",
+          "specs": [
+            ["46 码", "46/30T"],
+            ["51–61 码", "48/31T"]
+          ],
+          "description": "两种牙盘均搭配官网所列的 11–36T 飞轮。",
+          "x": 44,
+          "y": 72.8
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 12 速 11–36T",
+          "specs": [
+            ["齿数", "11–36T"],
+            ["原文型号", "Shimano 105 7100"]
+          ],
+          "description": "官网将 105 7100 与 11–36T 并列，准确零件编号待核对；齿数按配置表记录。",
+          "x": 20,
+          "y": 65
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未标配功率计",
+          "specs": [
+            ["原配曲柄", "GRX RX820 / RX610"],
+            ["功率设备", "官方配置表未列出"]
+          ],
+          "description": "本条目不使用其他 SuperX 等级的功率设备配置。",
+          "x": 44,
+          "y": 74
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "DT Swiss G1800 Spline",
+          "specs": [
+            ["框高 / 内宽", "25 / 24 mm"],
+            ["花鼓", "370 · 后轮 LN Ratchet"],
+            ["轮圈", "24 孔 · Tubeless Ready"]
+          ],
+          "description": "前后采用 Center Lock 碟片接口。",
+          "x": 94,
+          "y": 80
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Vittoria Terreno T50",
+          "specs": [
+            ["规格", "700×40c"],
+            ["结构", "Tubeless Ready"]
+          ],
+          "description": "原配 40 mm；最大间隙声明需按安装后的实测胎宽核对。",
+          "x": 81,
+          "y": 33
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Cannondale C2 / C1 Conceal",
+          "specs": [
+            ["把横", "7050 铝合金 · Compact"],
+            ["宽度", "46–51：400；54–61：420 mm"],
+            ["把立", "31.8 mm 夹径 · −6°"]
+          ],
+          "description": "分体把组；把立为 90 / 100 / 110 mm，随尺码变化。",
+          "x": 70,
+          "y": 12
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Cannondale C1 Aero 27 Carbon",
+          "specs": [
+            ["后飘", "46：0 mm；51–61：15 mm"],
+            ["兼容", "SmartSense"]
+          ],
+          "description": "与普通 27.2 mm 圆座管不同，名称中的 27 不能作为通用夹径使用。",
+          "x": 33,
+          "y": 17
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Prologo Dimension AGX STN",
+          "specs": [
+            ["系列", "AGX 砾石"],
+            ["导轨版本", "STN"]
+          ],
+          "description": "官网未提供该配置坐垫的独立重量。",
+          "x": 31,
+          "y": 2.5
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "46",
+            "stack": 515,
+            "reach": 365,
+            "headAngle": 70,
+            "seatAngle": 74.3,
+            "wheelbase": 998,
+            "chainstay": 422,
+            "bbDrop": 77,
+            "headTube": 86,
+            "seatTube": 449
+          },
+          {
+            "size": "51",
+            "stack": 535,
+            "reach": 371,
+            "headAngle": 71,
+            "seatAngle": 74.3,
+            "wheelbase": 1005,
+            "chainstay": 422,
+            "bbDrop": 72,
+            "headTube": 108,
+            "seatTube": 488
+          },
+          {
+            "size": "54",
+            "stack": 555,
+            "reach": 378,
+            "headAngle": 71,
+            "seatAngle": 73.7,
+            "wheelbase": 1020,
+            "chainstay": 422,
+            "bbDrop": 69,
+            "headTube": 132,
+            "seatTube": 524
+          },
+          {
+            "size": "56",
+            "stack": 575,
+            "reach": 385,
+            "headAngle": 71,
+            "seatAngle": 73.3,
+            "wheelbase": 1034,
+            "chainstay": 422,
+            "bbDrop": 69,
+            "headTube": 153,
+            "seatTube": 546
+          },
+          {
+            "size": "58",
+            "stack": 595,
+            "reach": 392,
+            "headAngle": 71,
+            "seatAngle": 72.9,
+            "wheelbase": 1049,
+            "chainstay": 422,
+            "bbDrop": 67,
+            "headTube": 177,
+            "seatTube": 566
+          },
+          {
+            "size": "61",
+            "stack": 615,
+            "reach": 398,
+            "headAngle": 71,
+            "seatAngle": 72.3,
+            "wheelbase": 1062,
+            "chainstay": 422,
+            "bbDrop": 67,
+            "headTube": 198,
+            "seatTube": 589
+          }
+        ],
+        "defaultSize": "54",
+        "source": "https://www.cannondale.com/-/media/images/my25/bikes/road/gravel/superx/pdps/c25_superx_geo_table_v2.ashx?h=2693&iar=0&w=1800&hash=28FEC21405072D0F13D8A8A00BD0B6C1",
+        "sourceLabel": "原厂产品页 · 几何表",
+        "note": "原厂 SuperX 几何图表以 cm 标注，已换算为 mm。46 码的曲柄和牙盘与其余尺码不同。"
+      },
+      "aero": {
+        "title": "砾石竞赛的前端与轮胎空间",
+        "description": "Delta 舵管、内部走线和专用气动座管构成整合前端，同时为较宽砾石胎保留空间。",
+        "source": "https://www.cannondale.com/en-dk/bikes/road/gravel/superx/superx-3-c17105u",
+        "limit": "48 / 51 mm 为厂商按每侧至少 4 mm 间隙说明的前后限值，不代表任意标称胎宽都可直接安装；本页不据管型推算省瓦值。"
+      },
+      "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片文件名或核对日期代替车型年。"
+    },
+    {
+      "id": "canyon-grail-cf7",
+      "brandId": "canyon",
+      "name": "Canyon Grail CF 7",
+      "family": "Grail CF 7",
+      "build": "GRX 1×12 · Newmen G.34",
+      "edition": "美国官网 · 产品 4508",
+      "modelYear": null,
+      "kind": "砾石公路",
+      "description": "Grail CF 7 采用 40T 单盘、10–45T 飞轮和 45 mm 轮胎，搭配碳轮与一体把。435 mm 后下叉和较长轴距适合与双盘 SuperX 对照，了解砾石竞赛车的不同几何与传动方案。",
+      "collections": ["current"],
+      "image": "/bikes/canyon-grail-cf7.jpg",
+      "imageCredit": "Canyon",
+      "imageSource": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-7/4508.html",
+      "imageRatio": 1.7769002961500493,
+      "color": "Clean Slate",
+      "colorHex": "#929b90",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-7/4508.html",
+      "sourceLabel": "厂商官方 · 美国官网 · 产品 4508",
+      "checkedAt": "2026-09-23",
+      "weight": "约 9.22 kg",
+      "weightNote": "美国官网标注 M 码 20.33 lb，按 1 lb = 0.45359237 kg 换算；页面未交代脚踏与附件称重范围。",
+      "groupset": "Shimano GRX 1×12",
+      "hasPowerMeter": false,
+      "material": "碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "Canyon Grail CF SL",
+          "specs": [
+            ["轴制式", "前 12×100 / 后 12×142 mm"],
+            ["前叉", "FK0155 Carbon"],
+            ["厂商胎宽声明", "最大 57 mm"]
+          ],
+          "description": "对应产品 4508，不能与旧版同名 Grail CF 7 混用几何和配置。",
+          "x": 57,
+          "y": 43
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano GRX RX610",
+          "specs": [
+            ["变速", "1×12 速机械"],
+            ["后拨", "GRX RX822 短腿"],
+            ["制动", "液压碟刹"]
+          ],
+          "description": "单盘系统无前拨；飞轮使用 Micro Spline 接口。",
+          "x": 76,
+          "y": 13
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano GRX FC-RX610",
+          "specs": [
+            ["长度", "2XS–M：165；L–2XL：170 mm"],
+            ["中轴", "BB-RS500 · PF86"]
+          ],
+          "description": "曲柄长度按页面各尺码配置表记录。",
+          "x": 50,
+          "y": 73
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "GRX 40T 单盘",
+          "specs": [
+            ["齿数", "40T"],
+            ["速别", "1×12"]
+          ],
+          "description": "全尺码均为 40T，最低齿比为 40/45，约 0.89。",
+          "x": 44.8,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano SLX CS-M7100",
+          "specs": [
+            ["齿数", "10–45T"],
+            ["塔基", "Micro Spline"]
+          ],
+          "description": "搭配 Shimano Deore CN-M6100 链条。",
+          "x": 22,
+          "y": 65
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "未标配功率计",
+          "specs": [
+            ["原配曲柄", "FC-RX610"],
+            ["功率设备", "官方配置表未列出"]
+          ],
+          "description": "不从骑行速度或车型等级推定实测功率。",
+          "x": 44,
+          "y": 71
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Newmen Advanced G.34",
+          "specs": [
+            ["材质 / 框高", "碳纤维 / 34 mm"],
+            ["内宽", "25 mm"],
+            ["碟片接口", "Center Lock"]
+          ],
+          "description": "这套轮组属于产品 4508 的原厂配置。",
+          "x": 91,
+          "y": 82
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Schwalbe G-One R Performance",
+          "specs": [
+            ["宽度", "45 mm"],
+            ["结构", "TLE 真空胎"]
+          ],
+          "description": "原配 45 mm 与厂商最大胎宽声明分别记录。",
+          "x": 80,
+          "y": 34
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "Canyon CP0039",
+          "specs": [
+            ["结构", "碳纤维一体把"],
+            ["外撇 / 后掠", "16° / 5°"],
+            ["M 码", "70 mm 把立 / 420 mm 把宽"]
+          ],
+          "description": "把立长度与把宽随尺码变化；一体结构更换时需要一并核对。",
+          "x": 67,
+          "y": 16
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "Canyon SP0093 VCLS Aero",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["官方单件重量", "197 g"],
+            ["长度", "310 mm"]
+          ],
+          "description": "单件重量不能直接作为其他座管版本或整车重量。",
+          "x": 35.5,
+          "y": 17
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Selle Royal SRX",
+          "specs": [
+            ["宽度", "148 mm"],
+            ["官方单件重量", "296 g"]
+          ],
+          "description": "按 Canyon 所列随车坐垫记录。",
+          "x": 35,
+          "y": 4.5
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "2XS",
+            "stack": 525,
+            "reach": 372,
+            "headAngle": 68.5,
+            "seatAngle": 74.1,
+            "wheelbase": 1034,
+            "chainstay": 435,
+            "bbDrop": 75,
+            "headTube": 98,
+            "seatTube": 432
+          },
+          {
+            "size": "XS",
+            "stack": 537,
+            "reach": 385,
+            "headAngle": 70,
+            "seatAngle": 73.6,
+            "wheelbase": 1037,
+            "chainstay": 435,
+            "bbDrop": 75,
+            "headTube": 103,
+            "seatTube": 462
+          },
+          {
+            "size": "S",
+            "stack": 558,
+            "reach": 394,
+            "headAngle": 71.5,
+            "seatAngle": 73.9,
+            "wheelbase": 1039,
+            "chainstay": 435,
+            "bbDrop": 75,
+            "headTube": 120,
+            "seatTube": 492
+          },
+          {
+            "size": "M",
+            "stack": 575,
+            "reach": 411,
+            "headAngle": 71.5,
+            "seatAngle": 73.8,
+            "wheelbase": 1062,
+            "chainstay": 435,
+            "bbDrop": 75,
+            "headTube": 138,
+            "seatTube": 522
+          },
+          {
+            "size": "L",
+            "stack": 598,
+            "reach": 427,
+            "headAngle": 71.5,
+            "seatAngle": 73.8,
+            "wheelbase": 1085,
+            "chainstay": 435,
+            "bbDrop": 75,
+            "headTube": 162,
+            "seatTube": 552
+          },
+          {
+            "size": "XL",
+            "stack": 618,
+            "reach": 435,
+            "headAngle": 71.8,
+            "seatAngle": 73.8,
+            "wheelbase": 1097,
+            "chainstay": 435,
+            "bbDrop": 75,
+            "headTube": 182,
+            "seatTube": 582
+          },
+          {
+            "size": "2XL",
+            "stack": 640,
+            "reach": 454,
+            "headAngle": 71.8,
+            "seatAngle": 73.8,
+            "wheelbase": 1123,
+            "chainstay": 435,
+            "bbDrop": 75,
+            "headTube": 205,
+            "seatTube": 612
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-7/4508.html",
+        "sourceLabel": "原厂产品页 · 几何表",
+        "note": "尺寸单位为 mm，角度单位为 °。按所列配置和尺码记录，不代表最终把位。"
+      },
+      "aero": {
+        "title": "一体把与 VCLS Aero 座管",
+        "description": "一体碳把与 VCLS Aero 座管将砾石竞赛所需的握持、顺应性和气动外形结合在同一平台。",
+        "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-7/4508.html",
+        "limit": "页面的设计说明不构成与其他车型的统一风洞对比；较宽轮胎的阻力还受胎压、路面和速度影响。"
+      },
+      "yearNote": "官网未明确此配置的车型年，按产品版本归档；不以图片文件名或核对日期代替车型年。"
     }
   ]
 }

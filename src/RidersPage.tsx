@@ -64,15 +64,15 @@ function Riders({ catalog }: { catalog: Catalog }) {
         <div>
           <span className="eyebrow">RIDERS IN FOCUS / {dossier.season}</span>
           <h1>
-            让赛车有故事的，
+            职业车手
             <br />
-            是骑车的人<span>。</span>
+            与他们的比赛
           </h1>
-          <p>认识一个人，也多一种看比赛的方式。</p>
+          <p>了解车手的比赛特点、职业经历与近期动态。</p>
         </div>
         <div className="riders-hero-index">
           <strong>{String(dossier.riders.length).padStart(2, '0')}</strong>
-          <span>个名字，许多种骑法</span>
+          <span>位职业车手</span>
           <small>资料核对 {dossier.checkedAt}</small>
         </div>
       </header>
@@ -178,7 +178,7 @@ function Riders({ catalog }: { catalog: Catalog }) {
                 <h3>{r.title}</h3>
                 <p>{r.intro}</p>
                 <div className="rider-watch">
-                  <small>下次看比赛，留意这一点</small>
+                  <small>比赛观察</small>
                   <p>{r.watch}</p>
                 </div>
                 <div className="rider-recent">

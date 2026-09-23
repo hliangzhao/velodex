@@ -76,7 +76,7 @@ export default function StoriesPage() {
                 })}
               </div>
               <div className="story-end">
-                <h2>把这几台车，放到一起看。</h2>
+                <h2>对比本专题车型</h2>
                 <p>{story.closing}</p>
                 <a
                   className="dark-button"
@@ -90,8 +90,8 @@ export default function StoriesPage() {
             <>
               <header className="page-heading">
                 <span className="eyebrow">THE READING ROOM</span>
-                <h1>车有参数，也有性格。</h1>
-                <p>沿着一个细节、一段世代、或一种骑行方式，重新认识那些熟悉的名字。</p>
+                <h1>车型与器材专题</h1>
+                <p>比较不同车型的结构、配置与几何，了解经典车系的演变和各类公路车的设计特点。</p>
                 {storyId && <p role="status">这篇专题暂未收录，可以从下面的选集继续阅读。</p>}
               </header>
               <div className="reading-paths">
@@ -100,7 +100,7 @@ export default function StoriesPage() {
                   <small>THE FAMILY TREE</small>
                   <h2>经典车型世代谱</h2>
                   <p>Tarmac、Madone、TCR：沿设计变化逐代看。</p>
-                  <span>走进年代档案 →</span>
+                  <span>查看世代档案 →</span>
                 </a>
               </div>
               <StoryCards catalog={catalog} />

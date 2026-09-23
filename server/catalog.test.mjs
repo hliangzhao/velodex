@@ -79,6 +79,8 @@ test('catalog API filters and returns correct records without exposing arbitrary
       'silex8000',
       'topstone-carbon2-lefty',
       'nuroad-c62-race',
+      'cannondale-superx3',
+      'canyon-grail-cf7',
     ],
   );
   for (const name of ['银贝斯', '速比特', '瑞豹'])

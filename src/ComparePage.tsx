@@ -120,7 +120,7 @@ function Comparison({ catalog }: { catalog: Catalog }) {
       <header className="page-heading compare-heading">
         <div>
           <span className="eyebrow">THE COMPARISON DESK</span>
-          <h1>让差异，有据可看。</h1>
+          <h1>整车参数与几何对比</h1>
           <p>最多三款，分别选尺码。照片看外观，等比例几何看尺寸。</p>
         </div>
         <button
@@ -212,7 +212,7 @@ function Comparison({ catalog }: { catalog: Catalog }) {
         {entries.length < 3 && (
           <div className="compare-add">
             <Plus size={28} strokeWidth={1} />
-            <h2>{entries.length ? '再多看一台。' : '从一台熟悉的车开始。'}</h2>
+            <h2>{entries.length ? '添加对比车型' : '选择对比车型'}</h2>
             <p>搜索品牌或车型，加入对比。</p>
             <input
               type="search"
@@ -298,7 +298,7 @@ function Comparison({ catalog }: { catalog: Catalog }) {
             </p>
           )}
           <div className="comparison-table-heading">
-            <h2>把参数放在一起。</h2>
+            <h2>配置参数对比</h2>
             <label>
               <input
                 type="checkbox"
@@ -433,7 +433,7 @@ function GeometryOverlay({ selected }: { selected: MeasuredSelection[] }) {
       <div className="overlay-heading">
         <div>
           <span className="eyebrow">GEOMETRY OVERLAY</span>
-          <h2>同一个五通，不同的姿态。</h2>
+          <h2>车架几何叠加</h2>
         </div>
         <button className="outline-button" aria-pressed={front} onClick={() => setFront(!front)}>
           {front ? '查看全部尺寸' : '放大前端差异'}

@@ -541,7 +541,7 @@ function App({ browse = false }: { browse?: boolean }) {
                 )}
                 <section id="bike-reading" className="bike-reading">
                   <span className="eyebrow">KEEP EXPLORING</span>
-                  <h2>再多看一点。</h2>
+                  <h2>查看部件与设计</h2>
                   <div>
                     {stories
                       .filter(
@@ -558,7 +558,7 @@ function App({ browse = false }: { browse?: boolean }) {
                       ))}
                     <a href={`${base}?view=bikes`}>
                       <span>整车图鉴</span>
-                      <strong>下一台，换一种性格。</strong>
+                      <strong>浏览更多车型</strong>
                       <ArrowUpRight size={18} />
                     </a>
                   </div>
@@ -571,7 +571,7 @@ function App({ browse = false }: { browse?: boolean }) {
                   <span className="eyebrow">
                     THE COLLECTION / {catalog.bikes.length} ROAD MACHINES
                   </span>
-                  <h1>各有性格，都值得看。</h1>
+                  <h1>同品牌车型</h1>
                   <p>按品牌与年份整理，再用骑行方式缩小范围。找到让你停留的那台车。</p>
                 </header>
                 <details
@@ -584,7 +584,7 @@ function App({ browse = false }: { browse?: boolean }) {
                   <section id="brands" className="brand-section" aria-label="品牌索引">
                     <div className="brand-intro">
                       <span className="eyebrow">THE MAKERS</span>
-                      <h2>不同基因，同样热爱。</h2>
+                      <h2>其他品牌</h2>
                     </div>
                     <div className="brand-list">
                       {catalog.brands.map((item) => (
@@ -615,7 +615,7 @@ function App({ browse = false }: { browse?: boolean }) {
                     <div>
                       <span className="eyebrow">FIND YOUR NEXT OBSESSION</span>
                       <h2>
-                        公路，千种可能<span>({String(filtered.length).padStart(2, '0')})</span>
+                        整车图鉴<span>({String(filtered.length).padStart(2, '0')})</span>
                       </h2>
                     </div>
                     <label className="search">

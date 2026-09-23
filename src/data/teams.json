@@ -9,8 +9,8 @@
       "short": "UAE",
       "brandId": "colnago",
       "accent": "#b84640",
-      "headline": "从 Y1Rs，看气动赛车的另一种轮廓。",
-      "description": "Colnago 的 2026 环法用车介绍列出 Pogačar 的 Y1Rs 公路车与 TT2 计时车，并给出了实际车手的装配。这里把职业赛场作为理解设计的入口。",
+      "headline": "Y1Rs 与 TT2 的环法配置",
+      "description": "Colnago 的 2026 环法用车介绍列出 Pogačar 的 Y1Rs 公路车与 TT2 计时车，并给出了实际车手的装配。资料中可查到车架、传动和轮组的具体搭配。",
       "equipment": [
         ["整车合作", "Colnago"],
         ["本期资料", "2026 环法 · Pogačar 的 Y1Rs / TT2"],
@@ -33,8 +33,8 @@
       "short": "VISMA",
       "brandId": "cervelo",
       "accent": "#928519",
-      "headline": "爬坡、冲刺、计时，三种不同答案。",
-      "description": "车队 2026 赛季发布页将 Cervélo R5、S5、P5 列为三个比赛平台。从它们的并存，可以理解职业车队怎样为赛道选择不同工具。",
+      "headline": "R5、S5 与 P5 的分工",
+      "description": "车队 2026 赛季发布页将 Cervélo R5、S5、P5 列为三个比赛平台。三个平台分别覆盖爬坡、气动公路和计时比赛需求。",
       "equipment": [
         ["整车合作", "Cervélo"],
         ["公路平台", "R5 / S5"],
@@ -57,7 +57,7 @@
       "short": "XDS",
       "brandId": "xds",
       "accent": "#277d91",
-      "headline": "国产赛车，走进世界巡回赛。",
+      "headline": "阿斯塔纳的 X-LAB AD9",
       "description": "XDS 的官方资料以 X-LAB AD9 介绍阿斯塔纳车队的气动公路平台。职业车手会按赛道和个人需求装配，零售 AD9 的部件表需要单独阅读。",
       "equipment": [
         ["整车合作", "XDS / X-LAB"],
@@ -81,7 +81,7 @@
       "short": "DECATHLON",
       "brandId": "vanrysel",
       "accent": "#3c59c7",
-      "headline": "从迪卡侬，看到职业装备体系。",
+      "headline": "Van Rysel 与车队装备合作",
       "description": "车队的 2026 赛季公告确认 Van Rysel 继续承担技术与装备合作，并宣布引入 SRAM 传动系统。图鉴中的 RCR Pro 是另一套已收录的零售配置。",
       "equipment": [
         ["整车合作", "Van Rysel"],
@@ -105,7 +105,7 @@
       "short": "RED BULL",
       "brandId": "specialized",
       "accent": "#344d80",
-      "headline": "同一品牌，也有值得回看的世代。",
+      "headline": "Specialized 的竞赛车系",
       "description": "车队官方的 2026 赛季发布确认与 Specialized 的合作。沿着图鉴中的 Tarmac 和 Venge 回看，可以理解独立破风平台与全能竞赛车的发展路径。",
       "equipment": [
         ["整车合作", "Specialized"],
@@ -129,7 +129,7 @@
       "short": "TUDOR",
       "brandId": "bmc",
       "accent": "#a23e37",
-      "headline": "从前叉，到车架中的气流通道。",
+      "headline": "BMC 的前叉与气流通道设计",
       "description": "BMC 的 2026 赛季揭幕资料确认 Tudor 使用 Teammachine R 01。它的前叉间距、下管和把组，是观察现代气动公路设计的好入口。",
       "equipment": [
         ["整车合作", "BMC"],
@@ -153,7 +153,7 @@
       "short": "LIDL–TREK",
       "brandId": "trek",
       "accent": "#397d9c",
-      "headline": "一台 Madone，连接古典赛与冲刺。",
+      "headline": "Madone 的古典赛与冲刺应用",
       "description": "Trek 与 Lidl 的合作覆盖男子、女子和发展车队。本期以男子公路队为入口，沿着 Madone 看竞赛车如何兼顾冲刺、爬坡与操控。",
       "equipment": [
         ["整车合作", "Trek"],
@@ -181,7 +181,7 @@
       "short": "ALPECIN",
       "brandId": "canyon",
       "accent": "#435b96",
-      "headline": "从越野根基，看到古典赛的速度。",
+      "headline": "Aeroad 在古典赛中的应用",
       "description": "2026 官方名单列出范德普尔与菲利普森；Canyon 是车队主要合作伙伴。图鉴以 Aeroad 为入口，连接古典赛、公路冲刺与器材选择。",
       "equipment": [
         ["整车合作", "Canyon"],
@@ -213,7 +213,7 @@
       "short": "EF",
       "brandId": "cannondale",
       "accent": "#c94e8c",
-      "headline": "用醒目的粉色，认识 SuperSix。",
+      "headline": "EF 的 SuperSix EVO",
       "description": "EF 的官方 2026 器材介绍展示了 Alex Baudin 的 LAB71 SuperSix EVO。本站以同系 EVO 零售车连接图鉴，另延伸到 Cannondale 的铝架、耐力与砾石路线。",
       "equipment": [
         ["整车合作", "Cannondale"],
@@ -237,7 +237,7 @@
       "short": "NETCOMPANY INEOS",
       "brandId": "pinarello",
       "accent": "#ba533b",
-      "headline": "一段长期合作，一条鲜明轮廓。",
+      "headline": "INEOS 与 Pinarello 的合作",
       "description": "2026 环意起，车队以 Netcompany INEOS Cycling Team 的名称参赛。Pinarello 与其长期合作于 2025 年再延长三年；Dogma F 是认识这段关系与赛车设计的入口。",
       "equipment": [
         ["整车合作", "Pinarello"],
