@@ -147,3 +147,12 @@ Pages 构建输出到 `dist-pages/`，将 `server/data/catalog.json` 与 `server
 ## 旧功能状态
 
 车友装车故事暂时下线，导航、投稿和装车单入口均已撤下；旧链接回到首页，已有本机草稿不主动删除。保留实现供后续恢复，读者留言继续开放。
+
+
+## 赛场拆解与骑行科学读本
+
+入口 `?view=learn`，可加 `category=race|science`、`topic`、`q` 筛选；`article=<id>` 打开永久文章地址。入口位于发现页、专题、职业赛场导航与工坊，沿用静态专题数据方式，本地与 Pages 模式共用 `src/data/reading.json`。
+
+每篇文章必须保留核对日期、章节级 `sourceIds`、适用边界、相关车型 / 配件与延伸文章 ID。赛场文章按具体比赛年份记录，不把零售图片与当下图鉴参数当作历史赛日装配；`heroCaption` 说明参考图范围，独立配图记录在 `docs/image-sources.json`。官方配置、厂家说明、编辑推导分别标注，未知参数不补猜。
+
+`src/reading.ts` 维护教学模型：正面逆风阻力使用相对空气速度平方，再乘地速得到轮端功率；坡度通过 `atan(grade / 100)` 转换为坡角，重力与滚阻分别计算。`ReadingLabs.tsx` 公开固定空气密度、滚阻与适用条件。齿比演示复用工坊 `gear()`。`server/reading.test.mjs` 验证单位、无风立方关系、逆风与地速区别、坡度转换和内容引用 / 链接完整性。

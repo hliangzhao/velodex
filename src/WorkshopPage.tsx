@@ -6,6 +6,7 @@ import type { PartsCatalog } from './types';
 import DreamBuild from './DreamBuild';
 import { amount, fitCheck, gear, upgrade, wheelFit } from './workshop';
 import './workshop.css';
+import './reading.css';
 const StructureLab = lazy(() => import('./StructureLab'));
 const InterfaceTool = lazy(() => import('./InterfaceTool'));
 const PowerLab = lazy(() => import('./PowerLab'));
@@ -54,6 +55,10 @@ export default function WorkshopPage() {
           </a>
         ))}
       </nav>
+      <a className="reading-work-link" href={`${base}?view=learn&category=science`}>
+        <span>先弄懂原理，再动手试算：风阻、齿比、胎压、功率与装车兼容。</span>
+        <span>打开骑行科学读本 ↗</span>
+      </a>
       {tool === 'power' ? (
         <Suspense fallback={<p>正在打开功率工作台…</p>}>
           <PowerLab />

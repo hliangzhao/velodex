@@ -1,0 +1,857 @@
+{
+  "sources": [
+    {
+      "id": "canyon-roubaix",
+      "title": "Canyon · 2025 巴黎—鲁贝赛后工程回顾",
+      "publisher": "Canyon",
+      "url": "https://media-centre.canyon.com/en-INT/248930-paris-roubaix-three-peat-for-mathieu-van-der-poel-and-the-canyon-aeroad/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "sram-tour",
+      "title": "SRAM · 温格高 2023 环法配置回顾",
+      "publisher": "SRAM",
+      "url": "https://www.sram.com/en/life/stories/jonas-vingegaard-tour-de-france-2023",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "cervelo-giro",
+      "title": "Cervélo · 2023 三大环赛档案",
+      "publisher": "Cervélo",
+      "url": "https://grand-slam.cervelo.com/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "trek-roubaix",
+      "title": "Trek · Deignan 2021 鲁贝冠军车完整配置",
+      "publisher": "Trek Race Shop",
+      "url": "https://racing.trekbikes.com/stories/equipment/a-history-making-bike",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "nasa-drag",
+      "title": "NASA · 阻力方程",
+      "publisher": "NASA Glenn Research Center",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/drag-equation/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "martin-model",
+      "title": "Martin 等 · 公路骑行功率数学模型验证（1998）",
+      "publisher": "Journal of Applied Biomechanics",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28121252/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "dt-aero",
+      "title": "DT Swiss · Aero+：偏航角、阻力与转向力矩",
+      "publisher": "DT Swiss",
+      "url": "https://www.dtswiss.com/en/wheels/wheels-technology/aero-plus-technology",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "sram-gears",
+      "title": "SRAM · X-Range 齿比范围与挡位间隔",
+      "publisher": "SRAM",
+      "url": "https://www.sram.com/en/life/stories/x-range-gearing",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "schwalbe-rolling",
+      "title": "Schwalbe · 滚动阻力的影响因素",
+      "publisher": "Schwalbe",
+      "url": "https://www.schwalbe.com/en/technology-faq/rolling-resistance/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "schwalbe-pressure",
+      "title": "Schwalbe · 轮胎气压与载荷",
+      "publisher": "Schwalbe",
+      "url": "https://www.schwalbe.com/en/technology-faq/tire-pressure/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "schwalbe-hookless",
+      "title": "Schwalbe · 无钩轮圈的使用条件",
+      "publisher": "Schwalbe",
+      "url": "https://www.schwalbe.com/en/technology-faq/hookless/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "canyon-geometry",
+      "title": "Canyon · 车架几何与实际握位",
+      "publisher": "Canyon",
+      "url": "https://www.canyon.com/en-nl/blog-content/road-cycling-news/road-bike-geometry-explained/b19102022.html",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "sram-power",
+      "title": "SRAM · 集成功率计与单侧测量",
+      "publisher": "SRAM",
+      "url": "https://www.sram.com/en/life/stories/integrated-power",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "tp-ftp",
+      "title": "TrainingPeaks · FTP 与临界功率的区别",
+      "publisher": "TrainingPeaks",
+      "url": "https://www.trainingpeaks.com/coach-blog/ftp-vs-critical-power/",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "shimano-compatible",
+      "title": "SHIMANO · 后拨与飞轮齿数兼容表",
+      "publisher": "SHIMANO",
+      "url": "https://productinfo.shimano.com/en/compatibility/C-254",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "sram-manual",
+      "title": "SRAM · Road AXS / XPLR AXS 用户手册",
+      "publisher": "SRAM",
+      "url": "https://docs.sram.com/s/RoadAXSandXPLRAXSUserManual.html",
+      "checkedAt": "2026-09-23"
+    },
+    {
+      "id": "schwalbe-dimensions",
+      "title": "Schwalbe · 实际胎宽与轮周",
+      "publisher": "Schwalbe",
+      "url": "https://www.schwalbe.com/en/technology-faq/tire-dimensions/",
+      "checkedAt": "2026-09-23"
+    }
+  ],
+  "articles": [
+    {
+      "id": "vingegaard-tour-2023",
+      "kind": "race",
+      "topic": "drivetrain",
+      "kicker": "2023 TOUR DE FRANCE",
+      "title": "同一届环法，为什么要准备四套齿比？",
+      "dek": "温格高的 S5、R5 与计时车：把赛段问题放在配置清单前面。",
+      "takeaway": "单盘与双盘是赛段选择；最低挡位和挡位间隔，比盘片看起来有多大更值得看。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "race",
+          "title": "先看官方记录",
+          "paragraphs": [
+            "SRAM 的赛后回顾列出了三类车、四种齿比组合。这里记录的是 2023 年比赛配置，不能套用到今天图鉴中的零售整车。"
+          ],
+          "sourceIds": ["sram-tour"],
+          "label": "赛场已确认",
+          "rows": [
+            ["S5 · 许多平路 / 起伏赛段", "单盘 52T × 10–36T"],
+            ["R5 · 山地赛段", "52/39T × 10–33T 或 10–36T"],
+            ["计时车", "56/43T × 10–33T"]
+          ]
+        },
+        {
+          "id": "range",
+          "title": "52 × 36，并不等于 39 × 36",
+          "paragraphs": [
+            "直接相除，前者最低齿比约 1.44，后者约 1.08。同一踏频、同一轮周下，前者前进得更快，也意味着面对相同速度的陡坡时需要更低踏频。两种配置有不同的低速工作区间。"
+          ],
+          "sourceIds": [],
+          "label": "编辑算例",
+          "formula": "最低齿比 = 最小牙盘 ÷ 最大飞轮"
+        },
+        {
+          "id": "decision",
+          "title": "把选择还原成一条路线",
+          "paragraphs": [
+            "单盘减少前拨操作，但可用范围与挡位间隔仍受飞轮限制。爬坡双盘提供另一组更轻的挡位；计时配置则服务于另一种速度与姿态。不能把其中一种配置孤立地叫作“最强”。",
+            "给自己选齿比时，先看常爬坡段的速度、希望保持的踏频，以及长距离后是否仍踩得动，再看高速端是否够用。"
+          ],
+          "sourceIds": [],
+          "label": "编辑解读"
+        }
+      ],
+      "heroBikeId": "cervelo-s5",
+      "heroCaption": "图鉴中的 S5 零售版参考图；并非温格高 2023 年赛日整车。",
+      "bikeIds": ["cervelo-s5", "cervelo-r5", "cervelo-p5"],
+      "productIds": [],
+      "relatedIds": ["gearing-cadence", "roglic-lussari-2023", "lightweight-aero"],
+      "actions": [
+        {
+          "label": "用自己的轮周算一次",
+          "search": "?view=workshop&tool=gears"
+        }
+      ],
+      "boundary": "原厂回顾未逐一列出每个赛段的全部部件；这里不补猜轮胎气压、轮高或整车重量。",
+      "quiz": {
+        "question": "想比较两套配置的爬坡低挡，先看哪一项？",
+        "options": ["只看大盘有多少齿", "最小牙盘与最大飞轮的比值", "套件的零售价格"],
+        "answer": 1,
+        "explanation": "最低齿比决定同一轮周与踏频下的最低理论速度；还要结合骑手能力与坡度。"
+      }
+    },
+    {
+      "id": "roubaix-aeroad-2025",
+      "kind": "race",
+      "topic": "frame",
+      "kicker": "2025 PARIS–ROUBAIX",
+      "title": "破风车在石头路上，先要解决什么？",
+      "dek": "范德普尔与第四代 Aeroad：从鲁贝看车架、碗组和连接处的可靠性。",
+      "takeaway": "一台快车必须能保持工作状态。路面的连续冲击，让连接、密封和耐久成为赛场器材的一部分。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "race",
+          "title": "车架之外，也看连接处",
+          "paragraphs": [
+            "Canyon 赛后确认：范德普尔骑第四代 Aeroad CFR 赢得 2025 年巴黎—鲁贝。品牌工程师谈到连续冲击对车架与夹持连接的负荷，以及碗组间隙等需要关注的细节。"
+          ],
+          "sourceIds": ["canyon-roubaix"],
+          "label": "赛场已确认"
+        },
+        {
+          "id": "development",
+          "title": "把一次恶劣比赛变成设计输入",
+          "paragraphs": [
+            "官方回顾还把 2021 年湿冷鲁贝经历，与后续前叉和碗组设计改进联系起来。这是品牌给出的开发说明，并不是在相同条件下对所有车型做出的独立耐久排名。"
+          ],
+          "sourceIds": ["canyon-roubaix"],
+          "label": "原厂开发说明"
+        },
+        {
+          "id": "lesson",
+          "title": "“破风”并没有排除其他任务",
+          "paragraphs": [
+            "管型处理气流，轮胎和车架容纳路面变化，连接与轴承则需要持续正常工作。这些任务同时存在。只凭车架外形，无法推导它在某条石头路上的整体表现。",
+            "对普通骑行，更实用的迁移是核对胎宽与间隙、检查碗组状态，并按具体部件手册维护连接。比赛冠军也不能成为超出厂家使用条件的理由。"
+          ],
+          "sourceIds": [],
+          "label": "编辑解读"
+        }
+      ],
+      "heroBikeId": "aeroad-cfr",
+      "heroCaption": "图鉴中的 Aeroad CFR 零售版参考图；赛日涂装、尺码和部件可能不同。",
+      "bikeIds": ["aeroad-cfr", "endurace-slx8"],
+      "productIds": [],
+      "relatedIds": ["tires-pressure", "geometry-contact", "wheels-crosswind"],
+      "actions": [
+        {
+          "label": "观察不同车架的取舍",
+          "search": "?view=workshop&tool=structures"
+        }
+      ],
+      "boundary": "本篇官方工程回顾未提供完整赛日胎压与轮胎规格，因此不根据零售车照片倒推。",
+      "quiz": {
+        "question": "从这次鲁贝案例中，能直接得到什么结论？",
+        "options": [
+          "所有破风架都更耐颠簸",
+          "范德普尔的胎压适用于所有骑手",
+          "连接、碗组和耐久同样是比赛器材的关键"
+        ],
+        "answer": 2,
+        "explanation": "案例揭示需要解决的问题；它没有建立跨品牌性能排名，也没有公布可照搬的胎压。"
+      }
+    },
+    {
+      "id": "roglic-lussari-2023",
+      "kind": "race",
+      "topic": "drivetrain",
+      "kicker": "2023 GIRO · STAGE 20",
+      "title": "环意决战里，为什么出现了砾石飞轮？",
+      "dek": "罗格利奇的 Monte Lussari 计时赛：从 P5 到 R5，最低挡位来到 1:1。",
+      "takeaway": "赛场会为路线改变配置；适合陡坡的低齿比，不是能力不足的标记。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "race",
+          "title": "用车与齿比，都跟着地形变",
+          "paragraphs": [
+            "Cervélo 的 2023 年环意回顾记录了决胜计时赛中的 P5 / R5 换车，以及 R5 搭配 SRAM XPLR 10–44T 飞轮和单盘，实现 1:1 最低齿比。"
+          ],
+          "sourceIds": ["cervelo-giro"],
+          "label": "赛场已确认",
+          "rows": [
+            ["计时赛平台切换", "P5 → R5"],
+            ["爬坡车飞轮", "SRAM XPLR 10–44T"],
+            ["官方描述的最低挡位", "1:1"]
+          ]
+        },
+        {
+          "id": "math",
+          "title": "1:1 是什么感觉？",
+          "paragraphs": [
+            "它意味着曲柄转一圈，后轮转一圈。假设轮周 2.13 米，70 rpm 对应约 8.95 km/h；这是传动几何算例，不是罗格利奇的实测速度。轮周、踏频和坡度不同，体验也会不同。"
+          ],
+          "sourceIds": [],
+          "label": "编辑算例",
+          "formula": "速度（km/h）= 齿比 × 轮周（m）× 踏频 × 0.06"
+        },
+        {
+          "id": "transfer",
+          "title": "值得学的是选择逻辑",
+          "paragraphs": [
+            "长陡坡会把速度压低。更轻的挡位能在相同速度下保留较高踏频，帮助骑手选择自己可持续的输出方式。是否换车还需要计算停车与换车的时间成本，不能只算重量。",
+            "比赛中的特殊搭配也不是零件通用证明。后拨最大飞轮、总容量、链条、牙盘与塔基仍应按具体代际核对。"
+          ],
+          "sourceIds": [],
+          "label": "编辑解读"
+        }
+      ],
+      "heroBikeId": "cervelo-r5",
+      "heroCaption": "图鉴中的 R5 零售版参考图；本图不是 2023 年 10–44T 单盘赛日装配。",
+      "bikeIds": ["cervelo-r5", "cervelo-p5"],
+      "productIds": [],
+      "relatedIds": ["gearing-cadence", "drivetrain-compatibility", "lightweight-aero"],
+      "actions": [
+        {
+          "label": "试算 1:1 的踏频与速度",
+          "search": "?view=workshop&tool=gears"
+        },
+        {
+          "label": "核对装车接口",
+          "search": "?view=workshop&tool=interfaces"
+        }
+      ],
+      "boundary": "这里只采用品牌明确记录的配置；不从最低齿比推断整车重量、胎压或功率。",
+      "quiz": {
+        "question": "同一速度和轮周下，换成更小的齿比会怎样？",
+        "options": ["所需踏频更高", "所需踏频更低", "空气阻力自动消失"],
+        "answer": 0,
+        "explanation": "更小的齿比让每圈曲柄的前进距离更短；维持同一速度，需要转得更快。"
+      }
+    },
+    {
+      "id": "deignan-roubaix-2021",
+      "kind": "race",
+      "topic": "rolling",
+      "kicker": "2021 PARIS–ROUBAIX FEMMES",
+      "title": "鲁贝冠军车，为什么用了砾石版轮组？",
+      "dek": "Lizzie Deignan 的 Domane SLR：单盘、30 mm 真空胎，以及为颠簸准备的小细节。",
+      "takeaway": "比赛配置是一个系统：轮圈、轮胎、操作位置和熟悉的接触点，一起服务于路面。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "race",
+          "title": "这台车留下了完整的赛后档案",
+          "paragraphs": [
+            "Trek 公布了首届女子巴黎—鲁贝冠军车的配置：54 cm Domane SLR、宽轮廓的 Bontrager RSL 37v 砾石版轮组，以及 30 mm Pirelli P Zero 真空胎和胎内嵌件。"
+          ],
+          "sourceIds": ["trek-roubaix"],
+          "label": "赛场已确认",
+          "rows": [
+            ["传动", "50T 单盘 × 10–33T"],
+            ["轮胎系统", "30 mm 真空胎 + 胎内嵌件"],
+            ["操作", "RED eTap AXS 与 Blips 辅助按钮"]
+          ]
+        },
+        {
+          "id": "contact",
+          "title": "熟悉的接触点，也是配置选择",
+          "paragraphs": [
+            "官方记录还提到，最后一次勘路后，Deignan 要求换回自己已经骑习惯的公路车坐垫。它提醒我们：器材选择也涉及熟悉程度与长时间接触，而不只是重量表。"
+          ],
+          "sourceIds": ["trek-roubaix"],
+          "label": "赛场已确认"
+        },
+        {
+          "id": "lesson",
+          "title": "从清单看到的是取舍",
+          "paragraphs": [
+            "宽轮圈、轮胎容积与系统保护，需要放在同一套搭配里看。品牌称该场比赛全队未爆胎；这是一场比赛的记录，不能证明某种组合永远不会爆胎。",
+            "对自己的车，先检查厂家允许的轮胎与轮圈组合，再讨论实际胎宽、载荷与路面。车手的配置可以启发问题，不能替代兼容表。"
+          ],
+          "sourceIds": ["trek-roubaix"],
+          "label": "编辑解读"
+        }
+      ],
+      "image": "/reading/deignan-roubaix-2021.jpg",
+      "heroCaption": "Trek 官方赛后档案中的 Deignan 冠军车照片，保留完赛状态。图片 © Trek；页面未明确单列摄影者。",
+      "imageSource": "https://racing.trekbikes.com/stories/equipment/a-history-making-bike",
+      "bikeIds": ["roubaix-sl8-sport", "cervelo-caledonia5"],
+      "productIds": [],
+      "relatedIds": ["tires-pressure", "drivetrain-compatibility", "geometry-contact"],
+      "actions": [
+        {
+          "label": "核对轮胎与轮圈",
+          "search": "?view=workshop&tool=fit"
+        }
+      ],
+      "boundary": "下方关联车型用于延伸比较耐力设计，并非冠军车或等效装配；文章不提供未经公布的赛日胎压。",
+      "quiz": {
+        "question": "“全队该场比赛未爆胎”能证明什么？",
+        "options": ["这种轮胎不会爆胎", "这是一次特定比赛的结果", "同样胎压适合任何体重"],
+        "answer": 1,
+        "explanation": "单场结果不是控制变量实验；路面、安装、骑法和偶然性也会影响结果。"
+      }
+    },
+    {
+      "id": "aero-power",
+      "kind": "science",
+      "topic": "aero",
+      "kicker": "SCIENCE 01 / AERODYNAMICS",
+      "title": "为什么快一点，却要多踩很多瓦？",
+      "dek": "先分清空气阻力、空气相对速度和骑行功率，再看 CdA。",
+      "takeaway": "无风时，固定 CdA 的空气阻力随速度平方增长，克服它的功率随速度立方增长。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "terms",
+          "title": "CdA：把形状与面积放在一起",
+          "paragraphs": [
+            "Cd 是阻力系数，A 是参考面积，CdA 是两者的乘积。对骑行，讨论范围应包括人和车，以及具体姿态。车架管型、衣物和握位的效果互相影响，不能把各项宣传节省瓦数简单相加。"
+          ],
+          "sourceIds": ["nasa-drag"],
+          "label": "基本原理",
+          "formula": "空气阻力 F = ½ × 空气密度 ρ × CdA × 空气相对速度²"
+        },
+        {
+          "id": "wind",
+          "title": "顶风时，不要把两个速度混为一谈",
+          "paragraphs": [
+            "阻力取决于车与空气的相对速度；骑手克服这一阻力的地面机械功率，则是沿行进方向的阻力乘地速。下面只考虑正面逆风；例如地速 30 km/h、逆风 10 km/h，计算阻力用 40 km/h，计算功率时再乘 30 km/h 的地速。",
+            "代入公式时，所有速度统一使用 m/s；km/h 需要先除以 3.6。"
+          ],
+          "sourceIds": ["martin-model"],
+          "label": "模型解释",
+          "formula": "正面逆风：P空气 = ½ × ρ × CdA × (地速 + 逆风速度)² × 地速"
+        },
+        {
+          "id": "read",
+          "title": "“省 10 W”之前，先补齐条件",
+          "paragraphs": [
+            "比较气动声明时，看测试速度、偏航角、轮胎宽度、是否含骑手、基准车型与重复性。同一 CdA 改善在更低速度下通常对应更少的瓦数；这些瓦数仍可能有用，只是不要脱离条件读数字。"
+          ],
+          "sourceIds": ["dt-aero"],
+          "label": "阅读方法"
+        }
+      ],
+      "lab": "aero",
+      "bikeIds": ["aeroad-cfr", "factor-ostro-vam-ultegra"],
+      "productIds": ["dt-arc1100-65"],
+      "relatedIds": ["wheels-crosswind", "lightweight-aero", "power-ftp"],
+      "actions": [
+        {
+          "label": "在骑行数据里观察阻力假设",
+          "search": "?view=workshop&tool=power"
+        }
+      ],
+      "boundary": "演示只计算空气阻力对应的轮端功率，不含滚阻、坡度、加速与传动损失。CdA 是输入假设，不是对骑姿的测量。",
+      "quiz": {
+        "question": "无风、CdA 不变，从 20 提速到 40 km/h，空气阻力功率约变为？",
+        "options": ["2 倍", "4 倍", "8 倍"],
+        "answer": 2,
+        "explanation": "阻力变为 4 倍，再乘 2 倍速度，所以空气阻力功率为 8 倍；这不等于总骑行功率一定是 8 倍。"
+      }
+    },
+    {
+      "id": "gearing-cadence",
+      "kind": "science",
+      "topic": "drivetrain",
+      "kicker": "SCIENCE 02 / GEARING",
+      "title": "齿比、踏频和速度，怎样连起来？",
+      "dek": "大盘不一定拥有更重的最高挡；“12 速”也没有告诉你齿比范围。",
+      "takeaway": "齿比描述一圈曲柄带来多少圈后轮。选择齿比是在选择速度与踏频的对应关系。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "ratio",
+          "title": "先算一个比值",
+          "paragraphs": [
+            "前牙盘齿数除以后飞轮齿数，就是齿比。52/11 约为 4.73，48/10 为 4.80，所以较小的牙盘也可能拥有更重的最高挡。齿数之外，还要看配对的飞轮。"
+          ],
+          "sourceIds": ["sram-gears"],
+          "label": "原理与算例",
+          "formula": "每圈前进距离（m）= 前齿数 ÷ 后齿数 × 实测轮周（m）"
+        },
+        {
+          "id": "cadence",
+          "title": "速度一样，踏频可以不同",
+          "paragraphs": [
+            "假设轮周 2.13 m、踏频 90 rpm，50/17 对应约 33.8 km/h。换挡会改变维持这个速度所需的踏频，并不会凭空增加可持续功率。下面可以改变踏频，比较几种常见组合。"
+          ],
+          "sourceIds": [],
+          "label": "编辑算例"
+        },
+        {
+          "id": "spacing",
+          "title": "范围与间隔，回答不同问题",
+          "paragraphs": [
+            "最低挡关系到低速爬坡，最高挡关系到高速端，而相邻齿数跳幅影响节奏。相同车速下从 17T 换到 19T，踏频需要乘 19/17，约提高 11.8%。选择飞轮要同时考虑“够不够轻”和常用区间是否细密。",
+            "齿比范围可用最高齿比 ÷ 最低齿比表示；对双盘，前盘和后飞轮都参与计算，不能只比较飞轮上的两个端点。"
+          ],
+          "sourceIds": ["sram-gears"],
+          "label": "编辑解读"
+        }
+      ],
+      "lab": "gears",
+      "bikeIds": ["cervelo-r5", "nuroad-c62-race"],
+      "productIds": ["105-r7100", "sram-red-e1"],
+      "relatedIds": ["vingegaard-tour-2023", "roglic-lussari-2023", "drivetrain-compatibility"],
+      "actions": [
+        {
+          "label": "输入完整飞轮逐挡比较",
+          "search": "?view=workshop&tool=gears"
+        }
+      ],
+      "boundary": "理论速度假设持续踩踏、无打滑、无滑行。轮周用示例值时，不等于码表实测速度，也不能据此预测你能骑多快。",
+      "quiz": {
+        "question": "48/10 与 52/11，哪个齿比更大？",
+        "options": ["48/10", "52/11", "只看牙盘无法计算"],
+        "answer": 0,
+        "explanation": "48÷10=4.80，52÷11≈4.73；必须把前后齿数一起比较。"
+      }
+    },
+    {
+      "id": "tires-pressure",
+      "kind": "science",
+      "topic": "rolling",
+      "kicker": "SCIENCE 03 / TIRES",
+      "title": "轮胎越硬，真的越快吗？",
+      "dek": "从胎体变形、路面振动到真实胎宽，理解气压为什么没有万能答案。",
+      "takeaway": "合适胎压取决于载荷、实际胎宽、路面与轮圈系统；胎侧上限不是推荐目标。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "loss",
+          "title": "光滑滚筒与粗糙公路，条件不同",
+          "paragraphs": [
+            "胎体反复变形会耗能。在非常平滑的表面，提高气压可能减少这部分损失；到了粗糙路面，吸收不平整的能力也开始重要。不能把一种表面的滚阻结论直接推广到所有道路。"
+          ],
+          "sourceIds": ["schwalbe-rolling"],
+          "label": "基本原理"
+        },
+        {
+          "id": "width",
+          "title": "28 mm 是规格，不一定是装车后的宽度",
+          "paragraphs": [
+            "轮圈内宽、胎体结构、安装与气压都会影响成形后的实际宽度。比较胎压经验时，至少记录前后轮载荷、实测胎宽、轮圈内宽和路况。前后轮分担的载荷也未必相同。"
+          ],
+          "sourceIds": ["schwalbe-pressure", "schwalbe-dimensions"],
+          "label": "使用方法"
+        },
+        {
+          "id": "system",
+          "title": "先满足系统允许的条件",
+          "paragraphs": [
+            "无钩轮圈必须核对该轮圈允许的轮胎型号、尺寸及气压。Schwalbe 的无钩说明也区分了胎型与尺寸条件；“真空胎”三个字不是跨品牌的安装通行证。",
+            "选定兼容组合后，再在厂家允许范围内逐步调整，并观察支撑、抓地、颠簸和触底风险。不要直接复制某位职业车手的胎压。"
+          ],
+          "sourceIds": ["schwalbe-hookless"],
+          "label": "兼容性"
+        }
+      ],
+      "bikeIds": ["revolt-advanced0", "roubaix-sl8-sport"],
+      "productIds": ["gp5000-str", "schwalbe-pro-one"],
+      "relatedIds": ["deignan-roubaix-2021", "wheels-crosswind", "roubaix-aeroad-2025"],
+      "actions": [
+        {
+          "label": "打开轮胎 × 轮圈核对",
+          "search": "?view=workshop&tool=fit"
+        }
+      ],
+      "boundary": "本篇解释变量，不给脱离具体产品和载荷的胎压处方。最大压力以轮胎、轮圈及厂家组合限制中更严格的条件为准。",
+      "quiz": {
+        "question": "朋友的同款轮胎用着很好，能直接照搬胎压吗？",
+        "options": ["可以，同款就一样", "还要核对载荷、实际胎宽、轮圈和路况", "只看车架品牌即可"],
+        "answer": 1,
+        "explanation": "胎压是整套使用条件的结果；同名义胎宽也可能有不同实际宽度。"
+      }
+    },
+    {
+      "id": "wheels-crosswind",
+      "kind": "science",
+      "topic": "aero",
+      "kicker": "SCIENCE 04 / WHEELS",
+      "title": "高框轮组：看省瓦，也看侧风。",
+      "dek": "偏航角、转向力矩，以及为什么前后轮不必一样高。",
+      "takeaway": "轮高只是几何特征之一；可预测的操控与轮胎搭配，同样影响你能否持续保持速度。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "yaw",
+          "title": "风通常不是从正前方吹来",
+          "paragraphs": [
+            "偏航角是相对来流与前进方向之间的夹角，来自地速与风速的合成。风洞中不同角度的阻力曲线，描述的是不同来流条件。单看 0° 数字，容易漏掉实际骑行中的一部分情况。"
+          ],
+          "sourceIds": ["dt-aero"],
+          "label": "基本原理"
+        },
+        {
+          "id": "steering",
+          "title": "侧向力不等于转向力矩",
+          "paragraphs": [
+            "力作用的位置也很重要。前轮受风时，绕转向轴产生的力矩影响握把感受；阵风带来的变化，往往比某个固定风向下的最低阻力更值得留意。前后异高可以是一种取舍，但没有适合所有人的万能框高。"
+          ],
+          "sourceIds": ["dt-aero"],
+          "label": "基本原理"
+        },
+        {
+          "id": "compare",
+          "title": "怎样读一份轮组测试",
+          "paragraphs": [
+            "先核对测试轮胎及实测宽度、风速、偏航角区间、测试的是单轮还是整车，以及如何加权。如果两份测试的设置不同，直接按瓦数排队并不可靠。",
+            "有些特定偏航角下，轮组可能出现类似帆的减阻效应；这不代表整个人车系统会无限被风推着走，也不保证阵风中容易控制。"
+          ],
+          "sourceIds": ["dt-aero"],
+          "label": "阅读方法"
+        }
+      ],
+      "bikeIds": ["propel-sl0", "aeroad-cfr"],
+      "productIds": ["dt-arc1100-65", "zipp-404-firecrest", "enve-ses45"],
+      "relatedIds": ["aero-power", "tires-pressure", "lightweight-aero"],
+      "actions": [
+        {
+          "label": "对照轮组的尺寸与结构",
+          "search": "?view=parts&category=wheels"
+        }
+      ],
+      "boundary": "没有实测数据时，不根据轮高推算省瓦，也不把不同品牌的宣传测试拼成排名。",
+      "quiz": {
+        "question": "选轮组只看“50 mm”这个框高，遗漏了什么？",
+        "options": ["轮胎搭配和侧风转向表现", "只有涂装", "没有遗漏"],
+        "answer": 0,
+        "explanation": "轮圈截面、胎宽及来流都会改变表现；框高相同不意味着阻力与操控相同。"
+      }
+    },
+    {
+      "id": "geometry-contact",
+      "kind": "science",
+      "topic": "frame",
+      "kicker": "SCIENCE 05 / GEOMETRY",
+      "title": "Stack 和 Reach，还没说完一台车。",
+      "dek": "从车架坐标走向车把、坐垫与脚踏，读懂几何表的用途。",
+      "takeaway": "车架几何描述车架；真正接触身体的位置，还要加上把立、垫圈、车把和坐垫设置。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "coordinates",
+          "title": "先统一测量的原点",
+          "paragraphs": [
+            "传统 Stack 和 Reach 分别是五通中心到头管上端的垂直与水平距离。不同品牌的 M 或 54 并不天然等价；比较时先找相同定义的坐标。"
+          ],
+          "sourceIds": ["canyon-geometry"],
+          "label": "基本原理"
+        },
+        {
+          "id": "contact",
+          "title": "同一副车架，可以有不同握位",
+          "paragraphs": [
+            "把立长度与角度、垫圈高度、车把前伸量和手变安装共同决定握位。部分品牌提供有效 Stack / Reach，但测量终点可能不同，必须先读说明。",
+            "坐垫位置和曲柄长度也影响实际姿态。不能只凭 Stack/Reach 比值，就保证某台车适合某个人。"
+          ],
+          "sourceIds": ["canyon-geometry"],
+          "label": "使用方法"
+        },
+        {
+          "id": "handling",
+          "title": "操控需要一起看",
+          "paragraphs": [
+            "轴距、头管角、前叉偏移与拖曳距共同参与转向特性；轮胎、载荷分布和骑手动作也会改变感受。在几何对比里先观察差异，再结合实际试骑，避免把某个毫米数直接翻译成“更高级”。"
+          ],
+          "sourceIds": ["canyon-geometry"],
+          "label": "编辑解读"
+        }
+      ],
+      "bikeIds": ["tcr-pro0", "defy-pro0", "revolt-advanced0"],
+      "productIds": ["roval-rapide-cockpit", "pro-vibe-evo"],
+      "relatedIds": ["roubaix-aeroad-2025", "lightweight-aero", "aero-power"],
+      "actions": [
+        {
+          "label": "把三类车架放到同一原点",
+          "search": "?view=compare&bikes=tcr-pro0,defy-pro0,revolt-advanced0&sizes=M,M,M"
+        }
+      ],
+      "boundary": "几何叠图用于比较尺寸关系，不替代动态 fitting，也不从缺失参数中制造精确轮廓。",
+      "quiz": {
+        "question": "两台车架的 Stack 与 Reach 相同，握位一定相同吗？",
+        "options": ["一定相同", "还取决于前端部件与安装设置", "只取决于涂装"],
+        "answer": 1,
+        "explanation": "车架坐标只是起点；把立、垫圈、车把和手变都会改变接触点。"
+      }
+    },
+    {
+      "id": "lightweight-aero",
+      "kind": "science",
+      "topic": "frame",
+      "kicker": "SCIENCE 06 / WEIGHT",
+      "title": "减重 1 kg，和降低风阻怎么比较？",
+      "dek": "用速度和坡度理解收益，别急着寻找一个万能的分界坡度。",
+      "takeaway": "减重和减阻的收益随工况变化；坡度之外，速度与实际 CdA 改善同样关键。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "gravity",
+          "title": "爬坡时，质量要被抬高",
+          "paragraphs": [
+            "坡上克服重力的功率与总质量、沿路速度和坡角正弦有关。坡度百分数是高差除以水平距离，需要先转换为角度。减掉的质量越多、爬升越快，对应的重力功率差越大。",
+            "代入公式使用 kg、m/s 与 g = 9.80665 m/s²，结果单位为 W。"
+          ],
+          "sourceIds": ["martin-model"],
+          "label": "模型解释",
+          "formula": "重力功率差 ΔP = Δ质量 × g × sin(arctan(坡度% ÷ 100)) × 速度"
+        },
+        {
+          "id": "comparison",
+          "title": "同一速度，比较两个不同改动",
+          "paragraphs": [
+            "下面把减重带来的重力与滚阻变化，与假设的 CdA 下降放在一起。固定速度、坡度和环境，只看维持这一状态的轮端功率差；它不是升级后的完赛时间预测。",
+            "如果减重同时改变胎宽、姿态或轮组气动，变量便不再独立，需要整套重新评估。"
+          ],
+          "sourceIds": [],
+          "label": "编辑算例"
+        },
+        {
+          "id": "wheels",
+          "title": "轮上 100 g，不是任何时候都算双倍",
+          "paragraphs": [
+            "加速时，轮子既平移也旋转，质量分布会影响转动惯量；匀速时不会持续支付加速能量。因此不能在整段匀速爬坡中，把轮圈减重按一个固定倍数计算。",
+            "比较升级还要保持称重范围一致：是否含脚踏、胎、密封液和贯通轴，都会改变读到的数字。"
+          ],
+          "sourceIds": ["martin-model"],
+          "label": "编辑解读"
+        }
+      ],
+      "lab": "mass",
+      "bikeIds": ["aethos2-expert", "tarmac-sl8", "cervelo-r5"],
+      "productIds": ["roval-rapide-clx3"],
+      "relatedIds": ["aero-power", "wheels-crosswind", "roglic-lussari-2023"],
+      "actions": [
+        {
+          "label": "记录升级的真实重量差",
+          "search": "?view=workshop&tool=upgrade"
+        }
+      ],
+      "boundary": "演示采用匀速、无风、固定滚阻系数，不计加速、传动损失或骑手输出变化。不能据此宣称某产品在某坡度必胜。",
+      "quiz": {
+        "question": "匀速上坡时，可以把轮圈减重直接当成双倍整车减重吗？",
+        "options": ["可以，轮子始终在转", "不可以，旋转不等于一直在加速", "只要是碳轮就可以"],
+        "answer": 1,
+        "explanation": "转动惯量影响改变转速时的能量；匀速状态不能反复计入这项加速能量。"
+      }
+    },
+    {
+      "id": "power-ftp",
+      "kind": "science",
+      "topic": "power",
+      "kicker": "SCIENCE 07 / POWER",
+      "title": "功率、功体比与 FTP，各自回答什么？",
+      "dek": "把即时输出、持续能力和模型估算分开，数据才有讨论价值。",
+      "takeaway": "同一个瓦数必须带上持续时间、测量方式和场景。一次轻松骑的均值不是 FTP。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "watts",
+          "title": "功率是输出速率，W/kg 是一种归一化",
+          "paragraphs": [
+            "功率计通常结合扭矩与角速度得到瓦数。单侧方案可能用一侧的测量推算总功率；双侧与盘爪方案的测量范围又不同，不能把“都有数字”视为完全等价。"
+          ],
+          "sourceIds": ["sram-power"],
+          "label": "测量概念"
+        },
+        {
+          "id": "ftp",
+          "title": "FTP 是训练参考，不是所有能力的总分",
+          "paragraphs": [
+            "FTP 常通过标准化测试估计。20 分钟功率乘某个系数，是特定测试方法下的估算，不是每个人都成立的物理恒等式；FTP 与临界功率也不应随意互换。冲刺、短坡与长时间耐力还需要看其他持续时间。"
+          ],
+          "sourceIds": ["tp-ftp"],
+          "label": "训练概念"
+        },
+        {
+          "id": "model",
+          "title": "有速度轨迹，也不等于有实测功率",
+          "paragraphs": [
+            "GPX / TCX 中如果没有功率记录，网站只能在风、CdA、质量与滚阻假设下估算。跟骑、刹车、海拔误差和采样间断，都可能让反推偏离真实踩踏。",
+            "W/kg 通常用骑手体重作分母，适合比较某些爬坡输出；力学计算则需要人、车和装备的总质量。平路速度还明显受 CdA 等变量影响。"
+          ],
+          "sourceIds": ["martin-model"],
+          "label": "模型边界"
+        }
+      ],
+      "bikeIds": ["trinity-advanced-sl2", "nuroad-c62-race"],
+      "productIds": ["sram-red-e1"],
+      "relatedIds": ["aero-power", "lightweight-aero", "gearing-cadence"],
+      "actions": [
+        {
+          "label": "打开功率与骑行分析",
+          "search": "?view=workshop&tool=power"
+        }
+      ],
+      "boundary": "这里不根据轻松骑行、平均速度或模型均值给读者评定 FTP 与竞技水平。",
+      "quiz": {
+        "question": "一次轻松骑的模型平均功率为 150 W，可以直接当作 FTP 吗？",
+        "options": ["可以", "不能，努力程度、持续时间与测量方式都不同", "乘以 95% 就可以"],
+        "answer": 1,
+        "explanation": "估算的日常均值不满足标准化最大努力测试条件，乘系数也不能补上缺失的信息。"
+      }
+    },
+    {
+      "id": "drivetrain-compatibility",
+      "kind": "science",
+      "topic": "drivetrain",
+      "kicker": "SCIENCE 08 / COMPATIBILITY",
+      "title": "都是 12 速，为什么未必装得上？",
+      "dek": "把速别、控制系统、后拨容量和塔基分成几层核对。",
+      "takeaway": "“12 速”只描述一项特征；兼容性必须落到具体零件型号与厂家组合表。",
+      "checkedAt": "2026-09-23",
+      "minutes": 4,
+      "sections": [
+        {
+          "id": "layers",
+          "title": "先看控制，再看机械接口",
+          "paragraphs": [
+            "手变与后拨需要匹配控制协议或拉线规格；飞轮需要匹配塔基；链条与牙盘、飞轮也有对应的代际要求。品牌兼容表以具体型号为单位，不能仅凭速别或外观判断。"
+          ],
+          "sourceIds": ["shimano-compatible", "sram-manual"],
+          "label": "核对方法"
+        },
+        {
+          "id": "capacity",
+          "title": "最大飞轮与总容量，是两件事",
+          "paragraphs": [
+            "最大飞轮限制后拨能够处理的最大齿片。总容量则描述前后齿数组合带来的链长变化需求，初步可按“大盘−小盘 + 最大飞轮−最小飞轮”计算。通过算式仍不等于厂家批准：还需看最小齿数、盘片差值及型号限制。"
+          ],
+          "sourceIds": ["shimano-compatible"],
+          "label": "原理与算例",
+          "formula": "50/34T 配 11–34T：容量需求 = (50−34) + (34−11) = 39T"
+        },
+        {
+          "id": "sequence",
+          "title": "升级之前，按一条链路检查",
+          "paragraphs": [
+            "写下手变、前后拨、牙盘、链条、飞轮和塔基的完整型号，再按厂家表找允许组合。需要换塔基、垫圈或后拨时，把这些一起计入预算。",
+            "职业车队的定制或特殊装配，可能需要额外技术支持。看到赛场用过某个组合，不代表任意市售代际都能照搬。"
+          ],
+          "sourceIds": ["sram-manual"],
+          "label": "使用方法"
+        }
+      ],
+      "bikeIds": ["nuroad-c62-race"],
+      "productIds": ["105-r7100", "ultegra-r8100", "sram-red-e1"],
+      "relatedIds": ["gearing-cadence", "roglic-lussari-2023", "tires-pressure"],
+      "actions": [
+        {
+          "label": "整理自己的接口核对记录",
+          "search": "?view=workshop&tool=interfaces"
+        },
+        {
+          "label": "查看变速系统档案",
+          "search": "?view=parts&category=groupsets"
+        }
+      ],
+      "boundary": "工坊核对提供已知接口信息，最终装配仍以具体型号的现行手册和兼容表为准。",
+      "quiz": {
+        "question": "后拨支持 34T 最大飞轮，就一定支持 50/34 × 11–34 吗？",
+        "options": ["一定支持", "还要核对总容量及具体组合限制", "换一条更长链条就都行"],
+        "answer": 1,
+        "explanation": "最大齿数与总容量不是同一个限制；链长也不能替代厂家兼容要求。"
+      }
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import ReadingLinks from './ReadingLinks';
 import { ArrowLeft, ArrowRight, ArrowUpRight } from 'lucide-react';
 import stories from './data/stories.json';
 import { base, CatalogContent, PageFrame, usePageTitle } from './SiteChrome';
@@ -94,6 +95,7 @@ export default function StoriesPage() {
                 {storyId && <p role="status">这篇专题暂未收录，可以从下面的选集继续阅读。</p>}
               </header>
               <div className="reading-paths">
+                <ReadingLinks />
                 <a href={`${base}?view=generations`}>
                   <small>THE FAMILY TREE</small>
                   <h2>经典车型世代谱</h2>

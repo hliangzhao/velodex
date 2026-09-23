@@ -9,6 +9,7 @@ export default function PelotonNav({ active }: { active: 'teams' | 'riders' }) {
       <a href={`${base}?view=riders`} aria-current={active === 'riders' ? 'page' : undefined}>
         车手焦点
       </a>
+      <a href={`${base}?view=learn&category=race`}>赛场器材拆解</a>
       <span>PEOPLE × MACHINES</span>
     </nav>
   );

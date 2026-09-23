@@ -1346,6 +1346,19 @@
       "visualVerified": true,
       "reuse": "Official brand product image. No explicit open reuse license found in the product page. Source attribution is documented; no permission or license is inferred.",
       "brandHistorySource": "https://www.wilier.com/it/la-nostra-storia"
+    },
+    {
+      "id": "reading-deignan-roubaix-2021",
+      "label": "Lizzie Deignan 2021 Paris-Roubaix Femmes winning Trek Domane SLR; post-race bike",
+      "file": "public/reading/deignan-roubaix-2021.jpg",
+      "width": 1000,
+      "height": 667,
+      "imageUrl": "https://racing.trekbikes.com/wp-content/uploads/2021/10/DSCF8935-scaled-1000x0-c-default.jpg?x51873",
+      "sourceUrl": "https://racing.trekbikes.com/stories/equipment/a-history-making-bike",
+      "notes": "Official team equipment archive, published 2021-10-04. Full side view, downloaded unmodified. Page credits article author Jacob Kennison but does not explicitly name an individual photographer. Display credit Trek; no photographer inferred.",
+      "visualVerified": true,
+      "checkedAt": "2026-09-23",
+      "reuse": "Official team editorial image. No explicit open reuse license found. Source attribution is documented; no permission or license is inferred."
     }
   ]
 }

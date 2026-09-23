@@ -1,3 +1,4 @@
+import ReadingLinks from './ReadingLinks';
 import { ArrowRight, ArrowUpRight, Shuffle, Columns3 } from 'lucide-react';
 import type { Catalog } from './types';
 import { imageUrl } from './catalog';
@@ -129,6 +130,7 @@ export default function Discover() {
                 </div>
                 <StoryCards catalog={catalog} limit={3} />
                 <div className="reading-paths">
+                  <ReadingLinks />
                   <a href={`${base}?view=generations`}>
                     <small>THE FAMILY TREE</small>
                     <h3>经典车型世代谱</h3>
