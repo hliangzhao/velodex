@@ -52,7 +52,10 @@ test('parts API filters safely, supports detail links and rejects malformed quer
     wheels.products.map((p) => p.id),
     ['zipp-404-firecrest', 'zipp-303-firecrest'],
   );
-  assert.equal((await (await get('/api/parts?q=' + encodeURIComponent('马牌'))).json()).total, 3);
+  assert.equal(
+    (await (await get('/api/parts?q=' + encodeURIComponent('马牌'))).json()).total,
+    parts.products.filter((p) => p.brandId === 'continental').length,
+  );
   assert.equal((await (await get('/api/parts/105-r7100')).json()).category, 'groupsets');
   for (const category of ['handlebars', 'seatposts', 'saddles']) {
     const response = await get(`/api/parts?category=${category}`);

@@ -26,11 +26,13 @@ function Riders({ catalog }: { catalog: Catalog }) {
   const [selection, setSelection] = useState(fromUrl);
   const [query, setQuery] = useState('');
   const [role, setRole] = useState('all');
+  const [division, setDivision] = useState('all');
   useEffect(() => {
     const back = () => {
       setSelection(fromUrl());
       setQuery('');
       setRole('all');
+      setDivision('all');
     };
     window.addEventListener('popstate', back);
     return () => window.removeEventListener('popstate', back);
@@ -45,6 +47,7 @@ function Riders({ catalog }: { catalog: Catalog }) {
     pickTeam('all');
     setQuery('');
     setRole('all');
+    setDivision('all');
   };
   const filtered = dossier.riders.filter((r) => {
     const team = teams.teams.find((t) => t.id === r.teamId)!;
@@ -52,6 +55,7 @@ function Riders({ catalog }: { catalog: Catalog }) {
       (!selection.rider || r.id === selection.rider) &&
       (selection.team === 'all' || r.teamId === selection.team) &&
       (role === 'all' || r.tags.includes(role)) &&
+      (division === 'all' || team.division === division) &&
       `${r.name} ${r.english} ${r.aliases.join(' ')} ${r.country} ${r.tags.join(' ')} ${team.name} ${team.alias}`
         .toLowerCase()
         .includes(query.trim().toLowerCase())
@@ -73,7 +77,7 @@ function Riders({ catalog }: { catalog: Catalog }) {
         <div className="riders-hero-index">
           <strong>{String(dossier.riders.length).padStart(2, '0')}</strong>
           <span>位职业车手</span>
-          <small>资料核对 {dossier.checkedAt}</small>
+          <small>最近补充 {dossier.checkedAt}</small>
         </div>
       </header>
       <p className="teams-scope">
@@ -92,11 +96,29 @@ function Riders({ catalog }: { catalog: Catalog }) {
           />
         </label>
         <label>
+          组别
+          <select
+            value={division}
+            onChange={(e) => {
+              reset();
+              setDivision(e.target.value);
+            }}
+          >
+            <option value="all">全部组别</option>
+            <option value="men">男子车手</option>
+            <option value="women">女子车手</option>
+          </select>
+        </label>
+        <label>
           车队
           <select value={selection.team} onChange={(e) => pickTeam(e.target.value)}>
             <option value="all">全部车队</option>
             {teams.teams
-              .filter((t) => dossier.riders.some((r) => r.teamId === t.id))
+              .filter(
+                (t) =>
+                  (division === 'all' || t.division === division) &&
+                  dossier.riders.some((r) => r.teamId === t.id),
+              )
               .map((t) => (
                 <option value={t.id} key={t.id}>
                   {t.name}
@@ -113,7 +135,11 @@ function Riders({ catalog }: { catalog: Catalog }) {
             ))}
           </select>
         </label>
-        {(selection.rider || selection.team !== 'all' || role !== 'all' || query) && (
+        {(selection.rider ||
+          selection.team !== 'all' ||
+          role !== 'all' ||
+          division !== 'all' ||
+          query) && (
           <button className="text-link" onClick={reset}>
             查看全部车手
           </button>
@@ -129,7 +155,7 @@ function Riders({ catalog }: { catalog: Catalog }) {
             <article className="rider-card" key={r.id} id={`rider-${r.id}`}>
               <div className="rider-card-head">
                 <span>
-                  {r.country} / {dossier.season}
+                  {r.country} / {team.division === 'women' ? '女子' : '男子'} / {dossier.season}
                 </span>
                 <a
                   href={`${base}?view=riders&rider=${r.id}`}
@@ -182,7 +208,9 @@ function Riders({ catalog }: { catalog: Catalog }) {
                   <p>{r.watch}</p>
                 </div>
                 <div className="rider-recent">
-                  <small>近期记录 / {r.recent.date}</small>
+                  <small>
+                    近期记录 / {r.recent.date} · 核对 {r.checkedAt}
+                  </small>
                   <p>{r.recent.text}</p>
                   <a href={r.recent.source} target="_blank" rel="noreferrer">
                     读官方记录 ↗

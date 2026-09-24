@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-21",
+  "checkedAt": "2026-09-24",
   "note": "Photographs retain their individual licenses. Rider appearances are editorial; no endorsement is implied.",
   "photos": {
     "pogacar": {
@@ -97,6 +97,102 @@
       "year": 2025,
       "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
       "caption": "2025 欧洲锦标赛 · 法国国家队服"
+    },
+    "roglic": {
+      "image": "/riders/roglic.jpg",
+      "title": "Primož Roglič at the rider presentation of Itzulia Basque Country stage 3.jpg",
+      "author": "Hugo LUC",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Primo%C5%BE_Rogli%C4%8D_at_the_rider_presentation_of_Itzulia_Basque_Country_stage_3.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Primo%C5%BE_Rogli%C4%8D_at_the_rider_presentation_of_Itzulia_Basque_Country_stage_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "year": 2024,
+      "changes": "采用 Wikimedia Commons 提供的等比缩略图，未修改画面内容。",
+      "caption": "2024 环巴斯克赛前亮相 · 历史照片"
+    },
+    "healy": {
+      "image": "/riders/healy.jpg",
+      "title": "2024 LBL start Ben Healy.jpg",
+      "author": "Hoebele",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:2024_LBL_start_Ben_Healy.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/20/2024_LBL_start_Ben_Healy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "year": 2024,
+      "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+      "caption": "2024 列日—巴斯通—列日 · 历史照片"
+    },
+    "pidcock": {
+      "image": "/riders/pidcock.jpg",
+      "title": "Tom Pidcock (2023).jpg",
+      "author": "Joost Pauwels",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Tom_Pidcock_(2023).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/39/Tom_Pidcock_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "year": 2023,
+      "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+      "caption": "2023 年 · 历史照片"
+    },
+    "merlier": {
+      "image": "/riders/merlier.jpg",
+      "title": "Tim Merlier Belgisch kampioen Herentals 2022.jpg",
+      "author": "VereeckenCH",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tim_Merlier_Belgisch_kampioen_Herentals_2022.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Tim_Merlier_Belgisch_kampioen_Herentals_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "year": 2022,
+      "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+      "caption": "2022 Herentals · 比利时冠军衫"
+    },
+    "mohoric": {
+      "image": "/riders/mohoric.jpg",
+      "title": "Matej Mohorič (2022 Team Bahrain Victorious v2).jpg",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Matej_Mohori%C4%8D_(2022_Team_Bahrain_Victorious_v2).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Matej_Mohori%C4%8D_%282022_Team_Bahrain_Victorious_v2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "year": 2022,
+      "changes": "采用 Wikimedia Commons 提供的等比缩略图，未修改画面内容。",
+      "caption": "2022 年巴林车队 · 历史照片"
+    },
+    "vollering": {
+      "image": "/riders/vollering.jpg",
+      "title": "Demi Vollering (2023).jpg",
+      "author": "Joost Pauwels",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Demi_Vollering_(2023).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/88/Demi_Vollering_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "year": 2023,
+      "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+      "caption": "2023 年 SD Worx 队服 · 历史照片"
+    },
+    "wiebes": {
+      "image": "/riders/wiebes.jpg",
+      "title": "Lorena Wiebes (2020).jpg",
+      "author": "Joost Pauwels",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Lorena_Wiebes_(2020).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lorena_Wiebes_%282020%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "year": 2020,
+      "changes": "采用 Wikimedia Commons 提供的等比缩略图，未修改画面内容。",
+      "caption": "2020 年 Parkhotel 队服 · 历史照片"
+    },
+    "kopecky": {
+      "image": "/riders/kopecky.jpg",
+      "title": "Lotte Kopecky (2023).jpg",
+      "author": "Joost Pauwels",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Lotte_Kopecky_(2023).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Lotte_Kopecky_%282023%29.jpg",
+      "year": 2023,
+      "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+      "caption": "2023 新闻报环赛 · 历史照片"
     }
   }
 }

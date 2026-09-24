@@ -1,7 +1,7 @@
 {
   "season": 2026,
-  "checkedAt": "2026-09-21",
-  "scope": "本期精选男子职业公路车手，以长期影响力、比赛风格与近期官方报道为入口，不是实时热度榜或实力排名。",
+  "checkedAt": "2026-09-24",
+  "scope": "本期精选男子与女子职业公路车手，覆盖总成绩、古典赛、冲刺及跨项目选手。",
   "riders": [
     {
       "id": "pogacar",
@@ -32,7 +32,8 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 欧洲锦标赛 · 历史照片"
       },
-      "aliases": ["Pogacar", "Pogi"]
+      "aliases": ["Pogacar", "Pogi"],
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "jonas",
@@ -63,7 +64,8 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 环西 · 历史照片"
       },
-      "aliases": []
+      "aliases": [],
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "remco",
@@ -94,7 +96,8 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 欧洲锦标赛 · 比利时国家队服"
       },
-      "aliases": ["艾菲", "爱妃", "埃菲"]
+      "aliases": ["艾菲", "爱妃", "埃菲"],
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "mvdp",
@@ -125,7 +128,8 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 公路越野世锦赛 · 历史照片"
       },
-      "aliases": []
+      "aliases": [],
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "wout",
@@ -156,7 +160,8 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 环法 · 历史照片"
       },
-      "aliases": []
+      "aliases": [],
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "mads",
@@ -187,7 +192,8 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 环意第 5 赛段 · 历史照片"
       },
-      "aliases": []
+      "aliases": [],
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "milan",
@@ -218,7 +224,8 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 环法第 8 赛段 · 出发前"
       },
-      "aliases": []
+      "aliases": [],
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "seixas",
@@ -249,7 +256,264 @@
         "changes": "等比缩小并压缩为 JPEG，未裁切或修改画面；照片仍按所列许可提供。",
         "caption": "2025 欧洲锦标赛 · 法国国家队服"
       },
-      "aliases": []
+      "aliases": [],
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "id": "roglic",
+      "name": "普里莫日·罗格利奇",
+      "english": "Primož Roglič",
+      "country": "斯洛文尼亚",
+      "teamId": "redbull-bora",
+      "tags": ["总成绩", "爬坡", "计时"],
+      "title": "陡坡终点与总成绩攻防",
+      "intro": "多次赢得大环赛总冠军，短而陡的上坡终点是其鲜明特点。计时能力与山地赛段中的节奏控制同样值得关注。",
+      "watch": "留意他在陡坡终点前如何保留队友、控制位置，以及最后加速前是否已经消耗对手。",
+      "recent": {
+        "text": "车队环西总结记录其获得 2026 年总成绩第二名。",
+        "date": "2026-09-14",
+        "source": "https://www.redbullborahansgrohe.com/en/news/roglic-adds-second-place-to-his-vuelta-legacy"
+      },
+      "profile": "https://www.redbullborahansgrohe.com/en/news/roglic-adds-second-place-to-his-vuelta-legacy",
+      "bikeIds": ["tarmac-sl8"],
+      "aliases": ["Roglic", "Rogla", "罗哥"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/roglic.jpg",
+        "title": "Primož Roglič at the rider presentation of Itzulia Basque Country stage 3.jpg",
+        "author": "Hugo LUC",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Primo%C5%BE_Rogli%C4%8D_at_the_rider_presentation_of_Itzulia_Basque_Country_stage_3.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Primo%C5%BE_Rogli%C4%8D_at_the_rider_presentation_of_Itzulia_Basque_Country_stage_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "year": 2024,
+        "changes": "采用 Wikimedia Commons 提供的等比缩略图，未修改画面内容。",
+        "caption": "2024 环巴斯克赛前亮相 · 历史照片"
+      }
+    },
+    {
+      "id": "healy",
+      "name": "本·希利",
+      "english": "Ben Healy",
+      "country": "爱尔兰",
+      "teamId": "ef",
+      "tags": ["突围", "单日赛"],
+      "title": "远距离进攻与突围判断",
+      "intro": "希利擅长把起伏路段变成进攻机会，常在距离终点较远时行动。2025 年环法的赛段胜利和黄衫经历让更多观众认识了他的骑法。",
+      "watch": "看他何时离开集团、如何利用起伏扩大差距，以及突围同伴之间是否愿意轮换领骑。",
+      "recent": {
+        "text": "EF 宣布续约至 2029 年。",
+        "date": "2026-01-28",
+        "source": "https://www.efprocycling.com/racing/ben-healy-extends-with-ef-education-easypost/"
+      },
+      "profile": "https://www.efprocycling.com/our-team/ben-healy/",
+      "bikeIds": ["supersix-evo2"],
+      "aliases": ["Healy", "希利"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/healy.jpg",
+        "title": "2024 LBL start Ben Healy.jpg",
+        "author": "Hoebele",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:2024_LBL_start_Ben_Healy.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/20/2024_LBL_start_Ben_Healy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "year": 2024,
+        "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+        "caption": "2024 列日—巴斯通—列日 · 历史照片"
+      }
+    },
+    {
+      "id": "pidcock",
+      "name": "汤姆·皮德科克",
+      "english": "Tom Pidcock",
+      "country": "英国",
+      "teamId": "pinarello-q365",
+      "tags": ["古典赛", "爬坡", "越野"],
+      "title": "跨项目的控车与线路选择",
+      "intro": "两届奥运山地车冠军，也曾在环法阿尔普迪埃获胜。山地、公路越野和公路比赛经历，让他的过弯与下坡表现很有辨识度。",
+      "watch": "观察入弯前的减速、视线与出弯线路；电视画面中的职业技巧不适合直接照搬到开放道路。",
+      "recent": {
+        "text": "车队发布 Bike Fit 记录，介绍如何调整其公路车设定。",
+        "date": "2026-02-12",
+        "source": "https://www.pinarello-q36-5.com/news/inside-tom-pidcocks-bike-fit/"
+      },
+      "profile": "https://www.pinarello-q36-5.com/riders/tom-pidcock/",
+      "bikeIds": ["dogma-f"],
+      "aliases": ["Pidcock", "皮德考克"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/pidcock.jpg",
+        "title": "Tom Pidcock (2023).jpg",
+        "author": "Joost Pauwels",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Tom_Pidcock_(2023).jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/3/39/Tom_Pidcock_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "year": 2023,
+        "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+        "caption": "2023 年 · 历史照片"
+      }
+    },
+    {
+      "id": "merlier",
+      "name": "蒂姆·梅利尔",
+      "english": "Tim Merlier",
+      "country": "比利时",
+      "teamId": "soudal",
+      "tags": ["冲刺"],
+      "title": "最后几百米的卡位与启动",
+      "intro": "梅利尔是大集团冲刺的重要争胜者。除了终点前的加速，队友带位、选择跟随的车轮和启动时机都构成了他的比赛。",
+      "watch": "从最后两公里开始看：冲刺列车何时展开，他是否失去队友，以及何时决定离开前车的尾流。",
+      "recent": {
+        "text": "在 Koolskamp 以冲刺取胜，车队发布比赛回顾。",
+        "date": "2026-09-18",
+        "source": "https://soudal-quickstepteam.com/en/news/tim-merlier-fastest-in-koolskamp"
+      },
+      "profile": "https://soudal-quickstepteam.com/en/team/tim-merlier",
+      "bikeIds": ["tarmac-sl8"],
+      "aliases": ["Merlier", "梅利耶"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/merlier.jpg",
+        "title": "Tim Merlier Belgisch kampioen Herentals 2022.jpg",
+        "author": "VereeckenCH",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Tim_Merlier_Belgisch_kampioen_Herentals_2022.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Tim_Merlier_Belgisch_kampioen_Herentals_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "year": 2022,
+        "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+        "caption": "2022 Herentals · 比利时冠军衫"
+      }
+    },
+    {
+      "id": "mohoric",
+      "name": "马泰伊·莫霍里奇",
+      "english": "Matej Mohorič",
+      "country": "斯洛文尼亚",
+      "teamId": "bahrain",
+      "tags": ["古典赛", "突围", "砾石"],
+      "title": "下坡进攻与单日赛战术",
+      "intro": "2022 年米兰—圣雷莫冠军，也在大环赛和砾石赛事中留下过代表作。他的比赛常把路形、控车与进攻时机联系起来。",
+      "watch": "下坡优势不仅来自速度，还来自坡顶位置与出弯后的加速。观察比赛线路时，也要区分封闭赛道与日常公路。",
+      "recent": {
+        "text": "核对车队官方名单，2026 赛季继续效力 Bahrain Victorious；车队本季开始与 Bianchi 合作。",
+        "date": "2026-09-24",
+        "source": "https://bahraincyclingteam.com/team/matej-mohoric/"
+      },
+      "profile": "https://bahraincyclingteam.com/team/matej-mohoric/",
+      "bikeIds": ["bianchi-oltre-rc", "bianchi-specialissima-rc-tdf"],
+      "aliases": ["Mohoric", "莫霍里奇"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/mohoric.jpg",
+        "title": "Matej Mohorič (2022 Team Bahrain Victorious v2).jpg",
+        "author": "Petar Milošević",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Matej_Mohori%C4%8D_(2022_Team_Bahrain_Victorious_v2).jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Matej_Mohori%C4%8D_%282022_Team_Bahrain_Victorious_v2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "year": 2022,
+        "changes": "采用 Wikimedia Commons 提供的等比缩略图，未修改画面内容。",
+        "caption": "2022 年巴林车队 · 历史照片"
+      }
+    },
+    {
+      "id": "vollering",
+      "name": "德米·沃勒林",
+      "english": "Demi Vollering",
+      "country": "荷兰",
+      "teamId": "fdj-suez",
+      "tags": ["总成绩", "爬坡", "古典赛"],
+      "title": "长坡能力与多日赛的节奏",
+      "intro": "沃勒林兼具高山赛段和丘陵单日赛的争胜能力。女子大环赛中的爬坡、计时和团队协作，可以从她的比赛中连起来看。",
+      "watch": "留意长坡中队友维持的速度、她的进攻位置，以及取得差距后如何分配余下赛段的体力。",
+      "recent": {
+        "text": "车队发布女子环法夺冠总结，记录她赢得 2026 年总冠军；所列日期为文章发布日期。",
+        "date": "2026-08-13",
+        "source": "https://www.fdj-suez.fr/we-won-the-yellow-%F0%9F%92%9B/"
+      },
+      "profile": "https://www.fdj-suez.fr/team/",
+      "bikeIds": ["tarmac-sl8"],
+      "aliases": ["Vollering", "沃勒琳", "德米"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/vollering.jpg",
+        "title": "Demi Vollering (2023).jpg",
+        "author": "Joost Pauwels",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Demi_Vollering_(2023).jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/8/88/Demi_Vollering_%282023%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "year": 2023,
+        "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+        "caption": "2023 年 SD Worx 队服 · 历史照片"
+      }
+    },
+    {
+      "id": "wiebes",
+      "name": "洛雷娜·维贝斯",
+      "english": "Lorena Wiebes",
+      "country": "荷兰",
+      "teamId": "sd-worx",
+      "tags": ["冲刺", "古典赛"],
+      "title": "冲刺速度与起伏赛道适应",
+      "intro": "维贝斯以高速终点冲刺闻名，也能在带有起伏的单日赛争胜。她与科佩基同队，让车队在不同赛况下拥有多种终点方案。",
+      "watch": "看她如何在终点前保持跟轮、等待队友带出位置，以及起伏赛道是否提前消耗冲刺所需的体力。",
+      "recent": {
+        "text": "在 GP Fourmies 冲刺获胜，车队回顾了最后阶段的团队配合。",
+        "date": "2026-09-13",
+        "source": "https://teamsdworxprotime.com/en/news/lorena-wiebes-rondt-ploegwerk-af-met-sprintzege-in-gp-fourmies"
+      },
+      "profile": "https://teamsdworxprotime.com/en/team/lorena-wiebes",
+      "bikeIds": ["tarmac-sl8"],
+      "aliases": ["Wiebes", "维贝丝"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/wiebes.jpg",
+        "title": "Lorena Wiebes (2020).jpg",
+        "author": "Joost Pauwels",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "source": "https://commons.wikimedia.org/wiki/File:Lorena_Wiebes_(2020).jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Lorena_Wiebes_%282020%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "year": 2020,
+        "changes": "采用 Wikimedia Commons 提供的等比缩略图，未修改画面内容。",
+        "caption": "2020 年 Parkhotel 队服 · 历史照片"
+      }
+    },
+    {
+      "id": "kopecky",
+      "name": "洛特·科佩基",
+      "english": "Lotte Kopecky",
+      "country": "比利时",
+      "teamId": "sd-worx",
+      "tags": ["古典赛", "冲刺", "场地"],
+      "title": "石板路、场地与公路的多面手",
+      "intro": "2023、2024 年女子公路世锦赛冠军，既能在石板路和短坡进攻，也具备冲刺与场地赛能力。多项目经验让她有较多战术选择。",
+      "watch": "观察她何时主动进攻、何时为维贝斯带位；同一位车手在不同比赛中的团队角色可能完全不同。",
+      "recent": {
+        "text": "车队记录女子环法第三赛段的长距离追击，最终获得赛段第二。",
+        "date": "2026-08-04",
+        "source": "https://teamsdworxprotime.com/en/news/lotte-kopecky-narrowly-misses-out-on-stage-victory-after-a-remarkably-strong-solo-chase-lasting-many-kilometres"
+      },
+      "profile": "https://teamsdworxprotime.com/en/team/lotte-kopecky",
+      "bikeIds": ["tarmac-sl8"],
+      "aliases": ["Kopecky", "科佩琪"],
+      "checkedAt": "2026-09-24",
+      "photo": {
+        "image": "/riders/kopecky.jpg",
+        "title": "Lotte Kopecky (2023).jpg",
+        "author": "Joost Pauwels",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source": "https://commons.wikimedia.org/wiki/File:Lotte_Kopecky_(2023).jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Lotte_Kopecky_%282023%29.jpg",
+        "year": 2023,
+        "changes": "保留 Wikimedia Commons 原文件，未修改画面内容。",
+        "caption": "2023 新闻报环赛 · 历史照片"
+      }
     }
   ]
 }

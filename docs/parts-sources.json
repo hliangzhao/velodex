@@ -1,5 +1,5 @@
 {
-  "checkedDate": "2026-09-20",
+  "checkedDate": "2026-09-24",
   "assets": [
     {
       "id": "zipp-404-firecrest",
@@ -187,6 +187,96 @@
       "width": 1000,
       "height": 1000,
       "note": "官方产品图 · Tempo Argo R3"
+    },
+    {
+      "id": "lun-hyper3-d45",
+      "url": "https://cdn.shopify.com/s/files/1/0912/6101/0215/files/D45_E7_99_BD_E6_A0_87_35c55e46-1e61-4096-87e1-53a2ed8f6f02.png?v=1735785513",
+      "source": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/",
+      "file": "/parts/lun-hyper3-d45.png",
+      "width": 1080,
+      "height": 1080,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "vision-metron45-rs",
+      "url": "https://shop.visiontechusa.com/media/catalog/product/m/e/metron_45_rs_1_.png",
+      "source": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs",
+      "file": "/parts/vision-metron45-rs.png",
+      "width": 2000,
+      "height": 2000,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "sram-force-e1",
+      "url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/shiftbrake-combo/ed-force-e1/productassets_ed-frc-e1_fg/force-ed-persp-01.png",
+      "source": "https://www.sram.com/en/sram/models/ed-frc-e1",
+      "file": "/parts/sram-force-e1.png",
+      "width": 1336,
+      "height": 1336,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "magene-qed",
+      "url": "https://www.magene-enterprise.com/wp-content/uploads/2026/05/qed3.webp",
+      "source": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/",
+      "file": "/parts/magene-qed.webp",
+      "width": 864,
+      "height": 560,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "vittoria-corsa-next",
+      "url": "https://cdn.shopify.com/s/files/1/0800/0549/7120/files/corsa-next-tlr-01.webp?v=1775056386&width=2048",
+      "source": "https://vittoria.com/products/corsa-n-ext-tubeless-ready",
+      "file": "/parts/vittoria-corsa-next.png",
+      "width": 2048,
+      "height": 2048,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "gp5000-as-tr",
+      "url": "https://www.continental-tires.com/us/en/products/bicycle/tires/grand-prix-5000-allseason-tr/_jcr_content/root/container/carousel_copy/item_1773222317511.coreimg.jpeg/1773223554006/continental-grand-prix-5000-as-tr-christopherlanaway-product-shot-4.jpeg",
+      "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/",
+      "file": "/parts/gp5000-as-tr.jpg",
+      "width": 1280,
+      "height": 853,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "enve-ses-ar-handlebar",
+      "url": "https://cdn.shopify.com/s/files/1/0724/7842/5372/products/ENVE_ARBar_HeroTopSide-1.jpg?v=1683741799&width=1080",
+      "source": "https://enve.com/products/ses-ar-road-handlebar",
+      "file": "/parts/enve-ses-ar-handlebar.jpg",
+      "width": 1080,
+      "height": 720,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "ritchey-carbon-link",
+      "url": "https://cdn.sanity.io/images/pbcwwn3b/production/b5816dfeb39ca5699f0432822367903270cebbdf-1180x640.jpg?w=1200&fm=webp&q=75&auto=format",
+      "source": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost",
+      "file": "/parts/ritchey-carbon-link.webp",
+      "width": 1200,
+      "height": 651,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "prologo-scratch-m5",
+      "url": "https://cdn.shopify.com/s/files/1/0568/3619/4493/products/scratch-m5-sup_png_1200_675_contain_70.jpg?v=1789893433",
+      "source": "https://prologo.it/en/products/scratch-m5",
+      "file": "/parts/prologo-scratch-m5.jpg",
+      "width": 1302,
+      "height": 1302,
+      "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "slr-boost-ti316",
+      "url": "https://cdn11.bigcommerce.com/s-ubg9970srq/images/stencil/1280x1280/products/157/2689/041A620IKC001_SLR_Boost_TI_316_Superflow_S_S3_THREE_QUARTER__92064.1681912305.jpg?c=1",
+      "source": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2",
+      "file": "/parts/slr-boost-ti316.webp",
+      "width": 1280,
+      "height": 1280,
+      "checkedAt": "2026-09-24"
     }
   ],
   "note": "Official manufacturer product images. Copyright retained by original owners. Single components illustrate their corresponding product family."

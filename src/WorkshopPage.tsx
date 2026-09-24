@@ -300,7 +300,9 @@ function FitTool({ parts }: { parts: PartsCatalog }) {
           <div>
             <dt>轮圈</dt>
             <dd>
-              622 mm 胎圈座直径 · {metadata.inner} mm 内宽 · {metadata.hookless ? '无钩' : '有钩'}
+              {metadata
+                ? `622 mm 胎圈座直径 · ${metadata.inner} mm 内宽 · ${metadata.hookless ? '无钩' : '有钩'}`
+                : '完整胎圈与适配资料待核对，请查看轮组官方说明'}
             </dd>
           </div>
           <div>
@@ -309,7 +311,11 @@ function FitTool({ parts }: { parts: PartsCatalog }) {
           </div>
           <div>
             <dt>轮组塔基版本</dt>
-            <dd>{metadata.freehubs.join(' / ')}，购买时确认具体版本</dd>
+            <dd>
+              {metadata
+                ? `${metadata.freehubs.join(' / ')}，购买时确认具体版本`
+                : '按所选轮组与飞轮核对塔基版本'}
+            </dd>
           </div>
         </dl>
         <ol className="fit-checklist">

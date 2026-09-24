@@ -49,6 +49,8 @@ test('team dossiers link verified brands, existing retail bikes and dated primar
   const catalog = loadCatalog();
   assert.equal(new Set(dossier.teams.map((t) => t.id)).size, dossier.teams.length);
   for (const team of dossier.teams) {
+    assert.ok(['men', 'women'].includes(team.division), team.id);
+    assert.ok(team.checkedAt <= dossier.checkedAt, team.id);
     assert.ok(
       catalog.brands.some((b) => b.id === team.brandId),
       team.id,

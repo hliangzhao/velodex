@@ -59,6 +59,26 @@
   flex-wrap: wrap;
   gap: 7px;
 }
+.peloton-division {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.peloton-division select {
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+}
+.team-sources > span {
+  font-size: 11px;
+  color: var(--muted);
+  flex-basis: 100%;
+}
 .teams-filter button {
   padding: 9px 12px;
   border: 1px solid var(--line);

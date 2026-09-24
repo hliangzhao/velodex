@@ -276,7 +276,7 @@ export default function PartsPage() {
                       <ArrowUpRight size={15} />
                     </a>
                     <small className="part-date">资料核对 / {selected.checkedAt}</small>
-                    {['wheels', 'groupsets', 'tires'].includes(selected.category) &&
+                    {['wheels', 'groupsets', 'tires', 'saddles'].includes(selected.category) &&
                       selected.id !== 'aero111' && (
                         <a
                           className="source-link"

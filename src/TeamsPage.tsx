@@ -24,11 +24,13 @@ function Teams({ catalog }: { catalog: Catalog }) {
     dossier.teams.some((t) => t.id === initial) ? initial : 'all',
   );
   const [query, setQuery] = useState('');
+  const [division, setDivision] = useState('all');
   useEffect(() => {
     const back = () => {
       const id = new URLSearchParams(location.search).get('team');
       setTeamId(dossier.teams.some((t) => t.id === id) ? id! : 'all');
       setQuery('');
+      setDivision('all');
     };
     window.addEventListener('popstate', back);
     return () => window.removeEventListener('popstate', back);
@@ -44,6 +46,7 @@ function Teams({ catalog }: { catalog: Catalog }) {
     const brand = catalog.brands.find((b) => b.id === t.brandId)!;
     return (
       (teamId === 'all' || t.id === teamId) &&
+      (division === 'all' || t.division === division) &&
       `${t.name} ${t.alias} ${brand.name}`.toLowerCase().includes(query.trim().toLowerCase())
     );
   });
@@ -63,19 +66,35 @@ function Teams({ catalog }: { catalog: Catalog }) {
         <div className="teams-hero-number">
           <strong>{String(dossier.teams.length).padStart(2, '0')}</strong>
           <span>TEAMS / 本期 {dossier.teams.length} 支车队</span>
-          <small>资料核对 {dossier.checkedAt}</small>
+          <small>最近补充 {dossier.checkedAt}</small>
         </div>
       </header>
       <div className="teams-filter">
+        <label className="peloton-division">
+          组别
+          <select
+            value={division}
+            onChange={(e) => {
+              setDivision(e.target.value);
+              select('all');
+            }}
+          >
+            <option value="all">全部组别</option>
+            <option value="men">男子车队</option>
+            <option value="women">女子车队</option>
+          </select>
+        </label>
         <div role="group" aria-label="选择车队">
           <button aria-pressed={teamId === 'all'} onClick={() => select('all')}>
             全部车队
           </button>
-          {dossier.teams.map((t) => (
-            <button key={t.id} aria-pressed={teamId === t.id} onClick={() => select(t.id)}>
-              {t.short}
-            </button>
-          ))}
+          {dossier.teams
+            .filter((t) => division === 'all' || t.division === division)
+            .map((t) => (
+              <button key={t.id} aria-pressed={teamId === t.id} onClick={() => select(t.id)}>
+                {t.short}
+              </button>
+            ))}
         </div>
         <label className="search">
           <Search size={17} />
@@ -89,7 +108,7 @@ function Teams({ catalog }: { catalog: Catalog }) {
         </label>
       </div>
       <p className="teams-scope">
-        本期关注男子职业公路车队，按官方赛季公告记录。下方照片与参数来自站内收录的零售车型，车手实际用车的涂装、尺码和部件可能不同。
+        本期收录男子与女子职业公路车队，按官方公告与器材页面记录。下方照片与参数来自站内零售车型，具体代际与赛日装配差异见各队说明。
       </p>
       <div className="teams-count" role="status">
         {filtered.length} 支车队
@@ -108,7 +127,7 @@ function Teams({ catalog }: { catalog: Catalog }) {
             >
               <div className="team-card-top">
                 <span>
-                  {t.short} / {dossier.season}
+                  {t.short} / {t.division === 'women' ? '女子' : '男子'} / {dossier.season}
                 </span>
                 <a href={`${base}?view=teams&team=${t.id}`} aria-label={`打开 ${t.name} 档案`}>
                   <ArrowUpRight size={18} />
@@ -158,6 +177,7 @@ function Teams({ catalog }: { catalog: Catalog }) {
                   </a>
                 )}
                 <div className="team-sources">
+                  <span>核对于 {t.checkedAt}</span>
                   {t.sources.map((s) => (
                     <a key={s.url} href={s.url} target="_blank" rel="noreferrer">
                       {s.label}
@@ -186,7 +206,13 @@ function Teams({ catalog }: { catalog: Catalog }) {
         <div className="empty-state">
           <Search size={28} />
           <h2>没有匹配的车队</h2>
-          <button className="outline-button" onClick={() => select('all')}>
+          <button
+            className="outline-button"
+            onClick={() => {
+              select('all');
+              setDivision('all');
+            }}
+          >
             清除筛选
           </button>
         </div>

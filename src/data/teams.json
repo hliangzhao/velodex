@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "checkedAt": "2026-09-21",
+  "checkedAt": "2026-09-24",
   "teams": [
     {
       "id": "uae",
@@ -24,7 +24,9 @@
           "label": "Colnago · 2026 环法用车",
           "url": "https://www.colnago.com/en/news/tadej-pogacar-s-bikes-at-the-2026-tour-de-france"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "visma",
@@ -48,7 +50,9 @@
           "label": "车队官方 · 2026 用车发布",
           "url": "https://2026.teamvismaleaseabike.com/"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "xds-astana",
@@ -72,7 +76,9 @@
           "label": "XDS 官方 · 阿斯塔纳 AD9",
           "url": "https://xds.co/en-intl/blogs/media-room/a-step-up-xds-astana-teams-x-lab-ad9-aero-road-bike"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "decathlon",
@@ -96,7 +102,9 @@
           "label": "车队官方 · 2026 赛季与合作伙伴",
           "url": "https://decathloncmacgmteam.com/en/une-saison-2026-ambitieuse/"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "redbull-bora",
@@ -120,7 +128,9 @@
           "label": "车队官方 · 2026 赛季发布",
           "url": "https://www.redbullborahansgrohe.com/en/news/flying-look-red-bull-bora-hansgrohe-takes-off-with-a-style-update"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "tudor",
@@ -144,7 +154,9 @@
           "label": "BMC 官方 · 2026 赛季揭幕",
           "url": "https://us.bmc-switzerland.com/blogs/news/ready-set-go-the-2026-season-starts-in-australia"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "lidl-trek",
@@ -172,7 +184,9 @@
           "label": "Trek · Madone 开发与车手反馈",
           "url": "https://racing.trekbikes.com/stories/lidl-trek/madone-gen-8-development-engineering-testing"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "alpecin",
@@ -204,7 +218,9 @@
           "label": "车队官方 · 器材合作伙伴",
           "url": "https://www.alpecin-premiertech.com/official-partners/"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "ef",
@@ -228,7 +244,9 @@
           "label": "EF 官方 · 2026 LAB71 车手装配",
           "url": "https://www.efprocycling.com/racing/bike-check-what-makes-alex-baudin-s-2026-lab71-supersix-evo-cannondale-s-fastest-race-bike-yet/"
         }
-      ]
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
     },
     {
       "id": "ineos",
@@ -255,6 +273,187 @@
         {
           "label": "Pinarello 官方 · 三年续约",
           "url": "https://pinarello.com/uk/en/news/three-more"
+        }
+      ],
+      "division": "men",
+      "checkedAt": "2026-09-21"
+    },
+    {
+      "id": "soudal",
+      "name": "Soudal Quick-Step",
+      "alias": "速的奥 快步 梅利尔 狼群",
+      "short": "QUICK-STEP",
+      "brandId": "specialized",
+      "accent": "#3765a4",
+      "division": "men",
+      "headline": "快步车队的公路与计时平台",
+      "description": "快步的器材页同时介绍公路车、计时车与传动系统。核对时官网已列出 Tarmac SL9；本站关联的 SL8 是上一代零售车型，便于观察品牌设计沿革。",
+      "equipment": [
+        ["整车合作", "Specialized"],
+        ["官网公路平台", "Tarmac SL9（核对日器材页）"],
+        ["传动与轮组", "Shimano Dura-Ace R9200 / Roval"]
+      ],
+      "lookFor": "可以对照车队页面看手变、把组和轮组，但不要把本站 SL8 的几何、涂装和装配当作梅利尔本赛季的比赛用车。",
+      "bikeIds": ["tarmac-sl8"],
+      "heroBikeId": "tarmac-sl8",
+      "checkedAt": "2026-09-24",
+      "sources": [
+        {
+          "label": "车队官方器材页",
+          "url": "https://soudal-quickstepteam.com/en/team/equipment"
+        }
+      ]
+    },
+    {
+      "id": "bahrain",
+      "name": "Bahrain Victorious",
+      "alias": "巴林 胜利 莫霍里奇",
+      "short": "BAHRAIN",
+      "brandId": "bianchi",
+      "accent": "#b84738",
+      "division": "men",
+      "headline": "2026 年开始使用 Bianchi",
+      "description": "车队与 Bianchi 的多年合作从 2026 赛季开始，公路平台包括 Oltre 与 Specialissima，另有 Aquila 计时车和 Impulso 砾石车。本站用已收录的零售型号作为品牌参考。",
+      "equipment": [
+        ["合作起点", "2026 赛季"],
+        ["公路平台", "Bianchi Oltre / Specialissima"],
+        ["其他平台", "Aquila TT / Impulso Gravel"]
+      ],
+      "lookFor": "同一支队伍同时拥有气动与轻量平台，选车还取决于赛道和车手偏好。图鉴中的 Specialissima 环法涂装并非巴林队 2026 队版。",
+      "bikeIds": ["bianchi-oltre-rc", "bianchi-specialissima-rc-tdf"],
+      "heroBikeId": "bianchi-oltre-rc",
+      "checkedAt": "2026-09-24",
+      "sources": [
+        {
+          "label": "车队 × Bianchi 合作公告",
+          "url": "https://bahraincyclingteam.com/bahrain-victorious-agree-multi-year-partnership-with-bianchi-beginning-2026/"
+        },
+        {
+          "label": "官方合作伙伴",
+          "url": "https://bahraincyclingteam.com/partners/"
+        }
+      ]
+    },
+    {
+      "id": "jayco",
+      "name": "Team Jayco AlUla",
+      "alias": "杰科 杰科埃尔奥拉 澳洲",
+      "short": "JAYCO",
+      "brandId": "giant",
+      "accent": "#3b82c0",
+      "division": "men",
+      "headline": "Propel、TCR 与 Trinity 的分工",
+      "description": "Giant 与车队的合作涵盖公路和计时平台。Propel 偏重空气动力学，TCR 强调全能与轻量，Trinity 用于计时；这三类车也适合放在图鉴中观察结构差异。",
+      "equipment": [
+        ["整车合作", "Giant"],
+        ["公路平台", "Propel / TCR"],
+        ["计时平台", "Trinity"],
+        ["器材合作", "CADEX"]
+      ],
+      "lookFor": "职业车手使用的级别、座管和把组可能与零售车不同。尤其本站 TCR Advanced Pro 不是车队 Advanced SL 的同一车架版本。",
+      "bikeIds": ["propel-sl0", "tcr-pro0", "trinity-advanced-sl2"],
+      "heroBikeId": "propel-sl0",
+      "checkedAt": "2026-09-24",
+      "sources": [
+        {
+          "label": "车队官方 Giant 合作介绍",
+          "url": "https://greenedgecycling.com/2026/partners-giant/"
+        }
+      ]
+    },
+    {
+      "id": "pinarello-q365",
+      "name": "Pinarello Q36.5 Pro Cycling Team",
+      "alias": "皮纳瑞罗 Q365 Q36.5 皮德科克",
+      "short": "Q36.5",
+      "brandId": "pinarello",
+      "accent": "#718448",
+      "division": "men",
+      "headline": "围绕 Dogma F 的公路配置",
+      "description": "车队以 Pinarello 冠名，公路平台为 Dogma F。皮德科克跨公路与山地项目，讨论其器材时需要先区分比赛项目，再看车架和设定。",
+      "equipment": [
+        ["整车合作", "Pinarello"],
+        ["公路平台", "Dogma F"],
+        ["车手焦点", "Tom Pidcock"]
+      ],
+      "lookFor": "车队发布的皮德科克 Bike Fit 记录值得与图鉴几何一起读：车架尺寸只是起点，垫圈、把立与坐垫位置才组成实际骑姿。",
+      "bikeIds": ["dogma-f"],
+      "heroBikeId": "dogma-f",
+      "checkedAt": "2026-09-24",
+      "sources": [
+        {
+          "label": "车队官网",
+          "url": "https://www.pinarello-q36-5.com/"
+        },
+        {
+          "label": "皮德科克 Bike Fit 记录",
+          "url": "https://www.pinarello-q36-5.com/news/inside-tom-pidcocks-bike-fit/"
+        }
+      ]
+    },
+    {
+      "id": "fdj-suez",
+      "name": "FDJ UNITED–SUEZ",
+      "alias": "FDJ 法国博彩 苏伊士 沃勒林 女子",
+      "short": "FDJ–SUEZ",
+      "brandId": "specialized",
+      "accent": "#4158ae",
+      "division": "women",
+      "headline": "沃勒林所在的女子职业车队",
+      "description": "车队从 2025 年开始与 Specialized 合作。核对日的器材页列有 Tarmac SL9、Shiv TT 和 Shimano、Roval 部件；官网会滚动更新，不能据此倒推每一场比赛的配置。",
+      "equipment": [
+        ["整车合作", "Specialized（2025 年起）"],
+        ["官网平台", "Tarmac SL9 / Shiv TT"],
+        ["传动系统", "Shimano Dura-Ace R9200"],
+        ["轮组系列", "Roval Rapide / Alpinist"]
+      ],
+      "lookFor": "器材页同时列出气动和轻量轮组，适合比较轮圈截面与赛道需求。本站链接的 SL8 是上一代零售参考，不是沃勒林的赛日实车。",
+      "bikeIds": ["tarmac-sl8"],
+      "heroBikeId": "tarmac-sl8",
+      "checkedAt": "2026-09-24",
+      "sources": [
+        {
+          "label": "官方器材页",
+          "url": "https://www.fdj-suez.fr/equipements/"
+        },
+        {
+          "label": "Specialized 合作公告",
+          "url": "https://www.fdj-suez.fr/fdj-suez-et-specialized-une-alliance-au-service-de-linnovation-et-de-la-performance/"
+        },
+        {
+          "label": "车队名单",
+          "url": "https://www.fdj-suez.fr/team/"
+        }
+      ]
+    },
+    {
+      "id": "sd-worx",
+      "name": "Team SD Worx–Protime",
+      "alias": "SD Worx 普洛泰姆 维贝斯 科佩基 女子",
+      "short": "SD WORX",
+      "brandId": "specialized",
+      "accent": "#9d4a77",
+      "division": "women",
+      "headline": "从古典赛到大集团冲刺",
+      "description": "科佩基与维贝斯分别代表多地形争胜与高速冲刺能力。车队官方器材页列出 Specialized、SRAM 与 Roval 的合作，公路和计时用车分别介绍。",
+      "equipment": [
+        ["整车合作", "Specialized"],
+        ["官网公路平台", "Tarmac SL8（核对日器材页）"],
+        ["计时平台", "Shiv TT Disc"],
+        ["传动与轮组", "SRAM / Roval"]
+      ],
+      "lookFor": "同品牌车架可以搭配不同传动系统；与 FDJ UNITED–SUEZ 对照时，留意手变造型、盘片和轮组，而不是只看车架标志。",
+      "bikeIds": ["tarmac-sl8"],
+      "heroBikeId": "tarmac-sl8",
+      "checkedAt": "2026-09-24",
+      "sources": [
+        {
+          "label": "车队官方器材页",
+          "url": "https://teamsdworxprotime.com/en/equipment"
+        },
+        {
+          "label": "车队官方名单",
+          "url": "https://teamsdworxprotime.com/en/team"
         }
       ]
     }

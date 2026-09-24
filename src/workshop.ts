@@ -9,6 +9,21 @@ export const slots = [
   ['extras', '其余小件', '内胎 / 密封液、阀嘴、贯通轴等未计入项目'],
 ] as const;
 export type Slot = (typeof slots)[number][0];
+// A standalone handlebar or seatpost does not cover the scope of a complete build slot.
+export function partSlot(category: string): Slot | undefined {
+  switch (category) {
+    case 'groupsets':
+      return 'groupset';
+    case 'wheels':
+      return 'wheels';
+    case 'tires':
+      return 'tires';
+    case 'saddles':
+      return 'saddle';
+    default:
+      return undefined;
+  }
+}
 export type BuildItem = {
   choice: string;
   custom: string;
@@ -214,6 +229,64 @@ const tireReference = (
   note: `官方单条 ${each} g × 2；仅含两条外胎，不含内胎、密封液、胎垫或阀嘴。`,
 });
 export const weightReferences: Record<string, WeightReference[]> = {
+  'lun-hyper3-d45': [
+    {
+      id: 'default',
+      label: 'D45 碟刹 · 前后轮一对',
+      grams: 1334,
+      note: '官方一对标称 1,334 g，公差 ±50 g；具体塔基及附件范围以实物版本为准。',
+      source: 'https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/',
+      checkedAt: '2026-09-24',
+    },
+  ],
+  'vision-metron45-rs': [
+    {
+      id: 'default',
+      label: '45 RS 碟刹 · 前后轮一对',
+      grams: 1290,
+      note: '官方标称一对 1,290 g；产品页未完整说明附件称重范围。',
+      source: 'https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs',
+      checkedAt: '2026-09-24',
+    },
+  ],
+  'vittoria-corsa-next': [
+    [24, 265],
+    [26, 280],
+    [28, 305],
+    [30, 320],
+    [32, 340],
+    [34, 350],
+  ].map(([width, grams]) => ({
+    ...tireReference(
+      `${width}-black`,
+      `${width}-622 黑色 TLR · 两条`,
+      grams,
+      'https://vittoria.com/products/corsa-n-ext-tubeless-ready',
+    ),
+    checkedAt: '2026-09-24',
+  })),
+  'prologo-scratch-m5': [
+    ['nack', 'Nack 碳弓', 153],
+    ['tirox', 'Tirox 合金钢弓', 214],
+  ].map(([id, label, grams]) => ({
+    id: String(id),
+    label: String(label),
+    grams: Number(grams),
+    note: '250 × 140 mm；采用当前官方页面对应座弓版本重量，仅含坐垫。',
+    source: 'https://prologo.it/en/products/scratch-m5',
+    checkedAt: '2026-09-24',
+  })),
+  'slr-boost-ti316': [
+    ['s3', 'S3 · 130 mm', 158],
+    ['l3', 'L3 · 145 mm', 164],
+  ].map(([id, label, grams]) => ({
+    id: String(id),
+    label: String(label),
+    grams: Number(grams),
+    note: 'TI 316 圆弓 / Superflow；官方公差 ±8%，仅含坐垫。',
+    source: 'https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2',
+    checkedAt: '2026-09-24',
+  })),
   ...Object.fromEntries(
     Object.entries(wheelFit)
       .filter(([, w]) => w.grams)
@@ -308,8 +381,14 @@ export function weightBreakdown(build: DreamBuild) {
 
 export function fitCheck(wheelId: string, tireId: string) {
   const wheel = wheelFit[wheelId];
-  if (!wheel || !tireId)
+  if (!wheelId || !tireId)
     return { level: 'unknown', title: '先选择轮组与轮胎', text: '比较胎圈结构与厂商资料。' };
+  if (!wheel)
+    return {
+      level: 'unknown',
+      title: '这款轮组的兼容资料尚待核对',
+      text: '尚未收录完整的胎圈与适配资料。请查阅轮组和轮胎厂商的具体版本说明，不能据此判断兼容。',
+    };
   if (wheel.hookless && tireId === 'gp5000-clincher')
     return {
       level: 'blocked',

@@ -21239,7 +21239,8 @@
             ["制动", "QED 液压碟刹"]
           ],
           "x": 80,
-          "y": 13
+          "y": 13,
+          "catalogIds": ["magene-qed"]
         },
         {
           "id": "crank",

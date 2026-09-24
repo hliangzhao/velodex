@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20",
+  "updatedAt": "2026-09-24",
   "brands": [
     {
       "id": "dt-swiss",
@@ -112,6 +112,54 @@
       "founded": "",
       "description": "提供公路、砾石与计时坐垫，按骑行场景区分不同形状、填充和导轨规格。",
       "website": "https://www.fizik.com/"
+    },
+    {
+      "id": "lun",
+      "name": "Lún / Winspace 银贝斯",
+      "country": "中国",
+      "founded": "",
+      "description": "银贝斯旗下轮组品牌，HYPER 系列采用碳纤维辐条，按框高与制动形式区分版本。",
+      "website": "https://www.winspace.cc/"
+    },
+    {
+      "id": "vision",
+      "name": "Vision",
+      "country": "美国",
+      "founded": "",
+      "description": "FSA 旗下的轮组与空气动力学部件品牌，METRON 系列面向公路与铁三。",
+      "website": "https://www.visiontechusa.com/"
+    },
+    {
+      "id": "magene",
+      "name": "Magene 迈金",
+      "country": "中国",
+      "founded": "",
+      "description": "产品覆盖功率计、智能骑行台与电子变速，QED 系统也用于国产整车原厂装配。",
+      "website": "https://www.magene.com/"
+    },
+    {
+      "id": "ritchey",
+      "name": "Ritchey",
+      "country": "美国",
+      "founded": "",
+      "description": "长期制作车架与车把、把立、座管等部件，WCS 是旗下高阶产品系列。",
+      "website": "https://ritcheylogic.com/"
+    },
+    {
+      "id": "prologo",
+      "name": "Prologo",
+      "country": "意大利",
+      "founded": "",
+      "description": "专注坐垫、把带与人体接触部件，按形状、填充和座弓版本提供不同选择。",
+      "website": "https://prologo.it/"
+    },
+    {
+      "id": "selle-italia",
+      "name": "Selle Italia",
+      "country": "意大利",
+      "founded": "",
+      "description": "意大利坐垫品牌，SLR 系列提供不同宽度、座弓和中央开孔形式。",
+      "website": "https://www.selleitalia.com/"
     }
   ],
   "products": [
@@ -1018,6 +1066,366 @@
       "source": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
       "sourceLabel": "厂商官方产品页",
       "checkedAt": "2026-09-20"
+    },
+    {
+      "id": "lun-hyper3-d45",
+      "brandId": "lun",
+      "name": "Lún HYPER 3 D45",
+      "category": "wheels",
+      "era": "HYPER 第三代 · 碟刹",
+      "status": "current",
+      "tagline": "前低后高的碳辐条轮组",
+      "description": "D45 的名称并不代表两只轮圈都是 45 mm：前轮 46 mm、后轮 54 mm。23 mm 内宽与碳辐条构成这一代的重要变化。",
+      "specs": [
+        ["框高", "前 46 / 后 54 mm"],
+        ["内宽 / 外宽", "23 / 28.4 mm"],
+        ["官方重量", "一对 1,334 g，公差 ±50 g"],
+        ["辐条", "碳纤维；前 20 / 后 21 根"],
+        ["轮胎范围", "官方列 25–47 mm；开口胎 / 真空胎"],
+        ["系统限重", "130 kg（人、车与行李合计）"]
+      ],
+      "highlights": [
+        {
+          "title": "不对称框高",
+          "text": "前轮较低、后轮较高，让前轮操控与后轮气动各有侧重；不能仅按框高推算节省的功率。"
+        },
+        {
+          "title": "碳辐条的维护",
+          "text": "辐条与花鼓连接采用配套结构，维修前应确认当地是否有原厂备件与维护渠道。"
+        }
+      ],
+      "compatibility": "塔基有 Shimano、XDR、Campagnolo 等不同选项，购买时确认飞轮对应型号。轮胎尺寸和胎压同时遵守轮圈与轮胎厂商限制。",
+      "tradeoff": "标称重量有公差，也会受塔基版本影响。碳辐条不应使用普通钢辐条替代。",
+      "source": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
+      "image": "/parts/lun-hyper3-d45.png",
+      "imageSource": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/"
+    },
+    {
+      "id": "vision-metron45-rs",
+      "brandId": "vision",
+      "name": "METRON 45 RS",
+      "category": "wheels",
+      "era": "METRON RS · 碟刹",
+      "status": "current",
+      "tagline": "45 mm 框高的全碳辐条方案",
+      "description": "METRON 45 RS 将碳轮圈、碳辐条和 V-1000 花鼓组合在一起，内宽增加到 23 mm。它与使用钢辐条的 METRON SL 应分开比较。",
+      "specs": [
+        ["框高", "45 mm"],
+        ["轮圈内宽", "23 mm"],
+        ["官方重量", "一对 1,290 g"],
+        ["辐条", "碳纤维扁辐条；前 21 / 后 24 根"],
+        ["花鼓", "V-1000 / PRS，72 齿、5° 啮合角"],
+        ["轮胎系统", "Tubeless Ready"]
+      ],
+      "highlights": [
+        {
+          "title": "啮合角的含义",
+          "text": "5° 描述空转后重新传力所需的角度，并不等于踩踏时少损失 5°，也不是直接的速度提升。"
+        },
+        {
+          "title": "轮圈与辐条一起设计",
+          "text": "碳辐条结构需要配套张力与拆装方法，Vision 提供专用维修资料。"
+        }
+      ],
+      "compatibility": "官方列 Shimano 与 SRAM XDR 塔基版本。购买前核对贯通轴、碟片锁定形式，以及所用轮胎的尺寸和胎压表。",
+      "tradeoff": "1,290 g 是厂家标称一对重量；页面未完整说明所有附件的称重范围，不宜直接与别家最轻配置比较。",
+      "source": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
+      "image": "/parts/vision-metron45-rs.png",
+      "imageSource": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs"
+    },
+    {
+      "id": "sram-force-e1",
+      "brandId": "sram",
+      "name": "Force AXS E1",
+      "category": "groupsets",
+      "era": "E1 世代 · 公路 12 速",
+      "status": "current",
+      "tagline": "带辅助按键的新一代 Force",
+      "description": "公路 Force E1 延续 AXS 无线换挡与 Flattop 链条系统，手变增加 Bonus Buttons。这里收录 12 速公路配置，不与 XPLR 13 速后拨混为一谈。",
+      "specs": [
+        ["速别", "公路 12 速"],
+        ["盘片配置", "支持 1× / 2×，需匹配对应部件"],
+        ["后拨飞轮范围", "10–28T 至 10–36T"],
+        ["链条", "Road Flattop D1 / E1"],
+        ["通信", "AXS 无线"],
+        ["手变功能", "Bonus Buttons；刹把握距可调"]
+      ],
+      "highlights": [
+        {
+          "title": "辅助按键",
+          "text": "手变内侧按键可用于换挡或操作兼容码表，设置取决于固件、AXS 应用和码表支持。"
+        },
+        {
+          "title": "一套后拨覆盖常见公路齿比",
+          "text": "最大 36T 提供较宽齿比范围；前拨、曲柄、链线仍须逐项核对。"
+        }
+      ],
+      "compatibility": "使用官方兼容表确认链条、飞轮、前拨与曲柄。以 10T 起步的公路飞轮需要相应 XDR 塔基；公路 E1 与 XPLR 不能只凭 AXS 名称任意混搭。",
+      "tradeoff": "整套重量与价格取决于曲柄、功率计、飞轮、碟片和中轴，暂不填写一个缺少范围的总数。",
+      "source": "https://www.sram.com/en/sram/models/rd-frc-e-e1",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "图为 Force E1 手变，不代表完整套件的交付范围。",
+      "image": "/parts/sram-force-e1.png",
+      "imageSource": "https://www.sram.com/en/sram/models/ed-frc-e1"
+    },
+    {
+      "id": "magene-qed",
+      "brandId": "magene",
+      "name": "QED 电子变速碟刹小套",
+      "category": "groupsets",
+      "era": "QED · 官方 OEM 碟刹方案",
+      "status": "current",
+      "tagline": "国产整车中的电子变速选择",
+      "description": "QED 采用无线手变与集中供电的前后拨方案，可在 CAMP ACE QED 等国产整车上看到。应按整车厂公布的具体搭配理解它的兼容范围。",
+      "specs": [
+        ["通信与供电", "手变无线；前后拨连接系统电池"],
+        ["官方速别表", "10–12 速，具体适配须确认"],
+        ["前大盘 / 后拨上限", "50–54T / 最大 34T"],
+        ["官方小套重量", "DB Core Groupset 1,150 g"],
+        ["电池", "7.4 V / 800 mAh"],
+        ["功能", "同步变速、按键自定义、BLE / ANT+"]
+      ],
+      "highlights": [
+        {
+          "title": "小套不等于完整传动",
+          "text": "1,150 g 是官方碟刹核心套件口径，不含整套曲柄、牙盘、飞轮、链条、碟片和中轴，不能直接填作装车单的传动总重。"
+        },
+        {
+          "title": "从原厂整车理解兼容性",
+          "text": "官网速别范围不代表任何品牌的 10–12 速飞轮都可直接使用。购买或升级前应确认整套传动组合与固件支持。"
+        }
+      ],
+      "compatibility": "优先参照整车厂的 QED 装配清单，确认链条、飞轮、盘片、走线与电池固定方式。旧版资料与当前在线参数有差异，此条以核对日在线表为准。",
+      "tradeoff": "供电和维护方式与完全无线、独立电池后拨不同；国内官方零售小套售价尚未核实，装车预算留空。",
+      "source": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "迈金官方 QED 装配与走线示意图；图中曲柄、飞轮等不属于小套重量范围。",
+      "image": "/parts/magene-qed.webp",
+      "imageSource": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/"
+    },
+    {
+      "id": "vittoria-corsa-next",
+      "brandId": "vittoria",
+      "name": "Corsa N.EXT TLR",
+      "category": "tires",
+      "era": "N.EXT · 真空胎版",
+      "status": "current",
+      "tagline": "尼龙胎体的 Corsa",
+      "description": "N.EXT 使用尼龙胎体，在 Corsa 系列中提供有别于棉质胎体的选择。TLR 与需内胎的开口胎版本分别命名，选购时不要混看重量。",
+      "specs": [
+        ["结构", "100 TPI 尼龙胎体"],
+        ["胶料", "Graphene + Silica"],
+        ["防护", "中央防刺层与 Bead Shield 胎唇保护"],
+        ["常规宽度", "24 / 26 / 28 / 30 / 32 / 34 mm；另有 29 mm WR"],
+        ["官方单条重量", "28-622 黑色：305 g"],
+        ["轮胎系统", "Tubeless Ready"]
+      ],
+      "highlights": [
+        {
+          "title": "胎体与胶料分开看",
+          "text": "胎体影响变形与支撑，胶料影响接地表现；TPI 数字本身不能给出滚阻或抓地排名。"
+        },
+        {
+          "title": "宽度有版本区别",
+          "text": "29 mm WR 是面向宽轮圈的独立规格，不能用常规 28 mm 的重量和装配条件替代。"
+        }
+      ],
+      "compatibility": "按照 Vittoria 与轮圈厂商表格核对内宽、胎宽、胎压和是否允许无钩使用；安装真空系统还需适用的胎垫、气嘴与密封液。",
+      "tradeoff": "305 g 只是一条 28 mm 外胎，不含密封液、胎垫和气嘴；页面重量不应套用到其他尺寸。",
+      "source": "https://vittoria.com/products/corsa-n-ext-tubeless-ready",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
+      "image": "/parts/vittoria-corsa-next.png",
+      "imageSource": "https://vittoria.com/products/corsa-n-ext-tubeless-ready"
+    },
+    {
+      "id": "gp5000-as-tr",
+      "brandId": "continental",
+      "name": "Grand Prix 5000 AS TR",
+      "category": "tires",
+      "era": "GP 5000 · AllSeason TR",
+      "status": "current",
+      "tagline": "偏重全天候使用的 GP 5000",
+      "description": "AS TR 在 GP 5000 家族中强调全天候使用与防护，适合放在日常训练与长距离场景中比较。它与追求轻量竞赛的 S TR 不是同一款胎。",
+      "specs": [
+        ["定位", "AllSeason 公路真空胎"],
+        ["胶料", "BlackChili"],
+        ["防刺层", "Vectran Breaker"],
+        ["胎肩", "Lazer Grip 表面结构"],
+        ["胎体设计", "Active Comfort Technology"],
+        ["系统", "Tubeless Ready"]
+      ],
+      "highlights": [
+        {
+          "title": "全天候仍需控制速度",
+          "text": "湿地抓地受路面、胎压、温度与磨损影响，产品定位不能代替对现场路况的判断。"
+        },
+        {
+          "title": "防护与重量的取舍",
+          "text": "比较时应固定胎宽和胎侧版本；不同规格的重量和胎压限制不能互相套用。"
+        }
+      ],
+      "compatibility": "按照所购规格的 Continental 技术表与轮圈要求装配。TR 不意味着任何无钩轮圈和胎压都可用。",
+      "tradeoff": "此条未确认各在售尺寸与胎侧版本的统一重量表，重量助手保留未知。",
+      "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "官方实装细节图，摄影 Christopher Lanaway。",
+      "image": "/parts/gp5000-as-tr.jpg",
+      "imageSource": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/"
+    },
+    {
+      "id": "enve-ses-ar-handlebar",
+      "brandId": "enve",
+      "name": "SES AR Road IN-Route Handlebar",
+      "category": "handlebars",
+      "era": "SES AR · IN-Route",
+      "status": "current",
+      "tagline": "手变位与下把位采用不同宽度",
+      "description": "SES AR 的外撇下把提供更宽的握持位置，而手变位相对收窄。比较把宽时，应先确认标称尺寸是在手变处还是下把处测量。",
+      "specs": [
+        ["材质 / 夹持直径", "碳纤维 / 31.8 mm"],
+        ["Reach / Drop", "76 / 127 mm"],
+        ["标称宽度", "38 / 40 / 42 / 44 / 46 cm"],
+        ["42 cm 版实际宽度", "手变位 42.5 / 下把位 47.2 cm"],
+        ["官方重量", "42 cm 版：248 g，仅车把"],
+        ["休息把", "官方明确不兼容夹装延伸把"]
+      ],
+      "highlights": [
+        {
+          "title": "外撇与把宽",
+          "text": "下把更宽有利于获得不同的操控姿态，手变位的宽度才更接近多数巡航时间的肩部姿势。"
+        },
+        {
+          "title": "先核对走线",
+          "text": "IN-Route 走线方案需要把立与车架前端配合，31.8 mm 夹径相同不意味着所有内走线组合都可装。"
+        }
+      ],
+      "compatibility": "按 ENVE 手册确认把立、走线路径、夹持扭矩与电子变速布线；不得加装夹装式休息把。",
+      "tradeoff": "248 g 不含把立、把带、手变和线管，不能作为完整车把与把立总重。",
+      "source": "https://enve.com/products/ses-ar-road-handlebar",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
+      "image": "/parts/enve-ses-ar-handlebar.jpg",
+      "imageSource": "https://enve.com/products/ses-ar-road-handlebar"
+    },
+    {
+      "id": "ritchey-carbon-link",
+      "brandId": "ritchey",
+      "name": "WCS Carbon LINK FlexLogic",
+      "category": "seatposts",
+      "era": "WCS · LINK FlexLogic",
+      "status": "current",
+      "tagline": "圆座管的轻量与顺应性方案",
+      "description": "这根座管保留圆管外形，通过碳纤维铺层与 LINK 夹头提供坐垫位置调整。它适合讨论传统圆座管接口，而不是替代专用气动座管。",
+      "specs": [
+        ["直径", "27.2 / 30.9 / 31.6 mm"],
+        ["长度选项", "300 / 350 / 400 mm，组合以 SKU 为准"],
+        ["后飘", "15 mm"],
+        ["官方重量", "27.2 × 350 mm：195 g"],
+        ["最小插入", "100 mm；还需满足车架要求"],
+        ["座弓", "官方列圆形合金 / 钛弓及 7×10 mm 碳弓"]
+      ],
+      "highlights": [
+        {
+          "title": "舒适度与露出长度",
+          "text": "座管弯曲量受露出长度、骑手载荷与车架夹持位置影响，不能只用材料名称判断。"
+        },
+        {
+          "title": "夹头决定座弓适配",
+          "text": "LINK 夹头支持的座弓截面需要按规格核对，不可把所有椭圆碳弓当成同一种尺寸。"
+        }
+      ],
+      "compatibility": "确认车架圆孔直径、允许的座管长度与最小插入深度。座弓、夹头和紧固扭矩同时遵守各自手册。",
+      "tradeoff": "15 mm 后飘会改变坐垫可调范围；换座管后需要重新核对坐垫高度和前后位置。",
+      "source": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
+      "image": "/parts/ritchey-carbon-link.webp",
+      "imageSource": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost"
+    },
+    {
+      "id": "prologo-scratch-m5",
+      "brandId": "prologo",
+      "name": "Scratch M5",
+      "category": "saddles",
+      "era": "Scratch M5 · Nack / Tirox",
+      "status": "current",
+      "tagline": "圆弧轮廓与分区填充",
+      "description": "Scratch M5 采用较短的外形与五个独立填充分区。Nack 与 Tirox 主要区别在座弓材料和重量，选择时也要看座管夹头能否适配。",
+      "specs": [
+        ["尺寸", "250 × 140 mm"],
+        ["轮廓", "圆弧型 / T 形"],
+        ["填充", "MSS 五分区"],
+        ["底壳", "Active Base 中央开口，表层覆盖"],
+        ["Nack 官方重量", "153 g；碳纤维复合座弓"],
+        ["Tirox 官方重量", "214 g；合金钢座弓，按当前产品页"]
+      ],
+      "highlights": [
+        {
+          "title": "分区不等于人人合适",
+          "text": "分区填充用于改变不同部位的支撑，实际感受仍与坐姿、骨盆转动和骑行时长有关。"
+        },
+        {
+          "title": "区分座弓版本",
+          "text": "同名坐垫的重量差异可能来自座弓；Tirox 是合金钢，不能因为名字相近就写成纯钛弓。"
+        }
+      ],
+      "compatibility": "确认 Nack 或 Tirox 座弓的截面、夹持方式与扭矩，并保留足够的前后调节范围；先试坐再决定。",
+      "tradeoff": "短鼻坐垫更换后，不宜直接照搬旧坐垫鼻尖到车把的距离。",
+      "source": "https://prologo.it/en/products/scratch-m5",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "Scratch M5 系列官方俯视图；座弓版本需另行选择。",
+      "image": "/parts/prologo-scratch-m5.jpg",
+      "imageSource": "https://prologo.it/en/products/scratch-m5"
+    },
+    {
+      "id": "slr-boost-ti316",
+      "brandId": "selle-italia",
+      "name": "SLR Boost TI 316 Superflow",
+      "category": "saddles",
+      "era": "SLR Boost · TI 316",
+      "status": "current",
+      "tagline": "有两种宽度的短鼻开孔坐垫",
+      "description": "SLR Boost 将短鼻造型与 Superflow 中央开孔结合。S3、L3 是两个宽度版本，选择依据应包括坐姿与支撑位置，而不仅是较轻的一款。",
+      "specs": [
+        ["S3 尺寸", "130 × 248 mm"],
+        ["L3 尺寸", "145 × 248 mm"],
+        ["官方重量", "S3 158 g / L3 164 g，公差 ±8%"],
+        ["座弓", "TI 316，圆形 Ø7 mm"],
+        ["表面", "Fibra-Tek"],
+        ["底壳", "碳纤维增强尼龙"]
+      ],
+      "highlights": [
+        {
+          "title": "先选宽度再看克数",
+          "text": "坐骨支撑位置与前倾程度决定接触区域，单凭体重或性别不能确定 S3 或 L3。"
+        },
+        {
+          "title": "开孔不是舒适保证",
+          "text": "中央开孔改变压力分布，但角度、前后位置与骑行服同样影响体验。"
+        }
+      ],
+      "compatibility": "使用支持 7 mm 圆座弓的座管夹头，按允许夹持区域和扭矩安装；S3 / L3 不能仅按商品图片辨别。",
+      "tradeoff": "158 g 与 164 g 都是具体宽度的标称值并有公差，不宜据此承诺装车后的精确减重。",
+      "source": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2",
+      "sourceLabel": "厂商官方产品与技术资料",
+      "checkedAt": "2026-09-24",
+      "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
+      "image": "/parts/slr-boost-ti316.webp",
+      "imageSource": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2"
     }
   ]
 }

@@ -18,6 +18,7 @@ import {
   weightReferences,
   weightBreakdown,
   fitCheck,
+  partSlot,
   type DreamBuild as Build,
   type Slot,
   type BuildItem,
@@ -54,14 +55,8 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
             paintsForBike(platform).find((p) => p.id === query.get('paint'))?.id || 'default';
           candidate.items.frame = newBuild().items.frame;
         }
-        if (
-          part &&
-          (part.category === 'groupsets' ||
-            part.category === 'wheels' ||
-            part.category === 'tires') &&
-          part.id !== 'aero111'
-        ) {
-          const slot = part.category === 'groupsets' ? 'groupset' : part.category;
+        const slot = part && partSlot(part.category);
+        if (part && slot && part.id !== 'aero111') {
           candidate.items[slot] = {
             choice: part.id,
             custom: '',
@@ -85,9 +80,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
         if (
           candidate.items[slot].choice &&
           !parts.products.some(
-            (p) =>
-              p.id === candidate.items[slot].choice &&
-              p.category === (slot === 'groupset' ? 'groupsets' : slot),
+            (p) => p.id === candidate.items[slot].choice && partSlot(p.category) === slot,
           )
         )
           throw new Error('配件已不在图鉴中');
@@ -193,9 +186,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
     >
   )[bike.id];
   const options = (slot: Slot) =>
-    parts.products.filter(
-      (p) => p.category === (slot === 'groupset' ? 'groupsets' : slot) && p.id !== 'aero111',
-    );
+    parts.products.filter((p) => partSlot(p.category) === slot && p.id !== 'aero111');
   const changeBike = (next: Bike) =>
     setBuild((b) => ({
       ...b,
@@ -329,41 +320,43 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                     </select>
                   </label>
                 ) : null}
-                {slot === 'tires' && weightReferences[build.items[slot].choice]?.length > 0 && (
-                  <label>
-                    轮胎规格（前后相同）
-                    <select
-                      aria-label="轮胎规格"
-                      value={
-                        weightReferences[build.items[slot].choice].some(
-                          (r) => r.id === build.items[slot].weightVariant,
-                        )
-                          ? build.items[slot].weightVariant
-                          : ''
-                      }
-                      onChange={(e) =>
-                        update(slot, {
-                          weightVariant: e.target.value,
-                          grams: '',
-                          weightMode: 'auto',
-                          checked: false,
-                        })
-                      }
-                    >
-                      <option value="" disabled>
-                        未指定规格 · 请选择
-                      </option>
-                      {weightReferences[build.items[slot].choice].map((r) => (
-                        <option key={r.id} value={r.id}>
-                          {r.label}
+                {(slot === 'tires' || slot === 'saddle') &&
+                  weightReferences[build.items[slot].choice]?.length > 0 && (
+                    <label>
+                      {slot === 'tires' ? '轮胎规格（前后相同）' : '坐垫规格与座弓'}
+                      <select
+                        aria-label={slot === 'tires' ? '轮胎规格' : '坐垫规格'}
+                        value={
+                          weightReferences[build.items[slot].choice].some(
+                            (r) => r.id === build.items[slot].weightVariant,
+                          )
+                            ? build.items[slot].weightVariant
+                            : ''
+                        }
+                        onChange={(e) =>
+                          update(slot, {
+                            weightVariant: e.target.value,
+                            grams: '',
+                            weightMode: 'auto',
+                            checked: false,
+                          })
+                        }
+                      >
+                        <option value="" disabled>
+                          未指定规格 · 请选择
                         </option>
-                      ))}
-                    </select>
-                    <small>
-                      规格对应官方重量资料；更换规格后重新采用参考值。前后不同请用自定义。
-                    </small>
-                  </label>
-                )}
+                        {weightReferences[build.items[slot].choice].map((r) => (
+                          <option key={r.id} value={r.id}>
+                            {r.label}
+                          </option>
+                        ))}
+                      </select>
+                      <small>
+                        规格对应官方重量资料；更换规格后重新采用参考值。
+                        {slot === 'tires' && '前后不同请用自定义。'}
+                      </small>
+                    </label>
+                  )}
                 {slot !== 'frame' && !build.items[slot].choice && (
                   <input
                     aria-label={`${label}自定义名称`}

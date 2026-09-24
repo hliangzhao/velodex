@@ -68,6 +68,8 @@ test('pairing rejects known incompatibility and never infers approval from match
   assert.equal(fitCheck('roval-rapide-clx3', 'gp5000-clincher').level, 'review');
   assert.equal(fitCheck('zipp-303-firecrest', 'gp5000-str').level, 'review');
   assert.equal(fitCheck('missing', 'gp5000-str').level, 'unknown');
+  assert.equal(fitCheck('lun-hyper3-d45', 'vittoria-corsa-next').level, 'unknown');
+  assert.match(fitCheck('lun-hyper3-d45', 'vittoria-corsa-next').title, /尚待核对/);
   assert.deepEqual(upgrade(1800, 1400, 6000), {
     saved: 400,
     percent: (400 / 1800) * 100,
@@ -131,6 +133,25 @@ test('structure studies contain finite surfaces and separate moving components t
         }
       });
     }
+});
+
+test('new parts distinguish tire pairs, saddle variants and incomplete groupset weights', () => {
+  const { weightOf, defaultWeightVariant } = helpers;
+  assert.equal(helpers.partSlot('saddles'), 'saddle');
+  assert.equal(helpers.partSlot('handlebars'), undefined);
+  const build = newBuild();
+  const choose = (slot, id) => {
+    build.items[slot].choice = id;
+    build.items[slot].weightVariant = defaultWeightVariant(id);
+    return weightOf(build.items[slot]);
+  };
+  assert.equal(choose('wheels', 'lun-hyper3-d45').grams, 1334);
+  assert.equal(choose('tires', 'vittoria-corsa-next').grams, 610);
+  assert.equal(choose('saddle', 'slr-boost-ti316').grams, 158);
+  build.items.saddle.weightVariant = 'l3';
+  assert.equal(weightOf(build.items.saddle).grams, 164);
+  assert.equal(choose('groupset', 'magene-qed').origin, 'unknown');
+  assert.equal(choose('cockpit', 'enve-ses-ar-handlebar').grams, null);
 });
 
 test('weight assistance applies sourced pair weights, preserves manual overrides and never forces missing values to zero', () => {
