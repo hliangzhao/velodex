@@ -1,5 +1,5 @@
 {
-  "checkedDate": "2026-09-24",
+  "checkedDate": "2026-09-27",
   "assets": [
     {
       "id": "zipp-404-firecrest",
@@ -277,6 +277,254 @@
       "width": 1280,
       "height": 1280,
       "checkedAt": "2026-09-24"
+    },
+    {
+      "id": "elilee-e44",
+      "url": "https://www.elilee.com.cn/wp-content/uploads/2024/01/edb6e82d5752d4e438d1561c4c3855b1-600x400.jpg",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
+      "file": "/parts/elilee-e44.jpg",
+      "width": 600,
+      "height": 400
+    },
+    {
+      "id": "elilee-x46",
+      "url": "https://www.elilee.com.cn/wp-content/uploads/2024/04/X46前轮-金标-正面-600x600.png",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+      "file": "/parts/elilee-x46.png",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "elilee-e50",
+      "url": "https://www.elilee.com.cn/wp-content/uploads/2024/07/E50前轮-正面-600x600.png",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
+      "file": "/parts/elilee-e50.png",
+      "width": 600,
+      "height": 600
+    },
+    {
+      "id": "elilee-ek01",
+      "url": "https://www.elilee.com.cn/wp-content/uploads/2025/07/7-17-scaled-e1753258645473-600x636.png",
+      "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "file": "/parts/elilee-ek01.png",
+      "width": 600,
+      "height": 636
+    },
+    {
+      "id": "elilee-x310-24-ek01",
+      "url": "https://www.elilee.com.cn/wp-content/uploads/2025/07/7-17-scaled-e1753258645473-600x636.png",
+      "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "file": "/parts/elilee-x310-24-ek01.png",
+      "width": 600,
+      "height": 636
+    },
+    {
+      "id": "elilee-x310-dub-ek01",
+      "url": "https://www.elilee.com.cn/wp-content/uploads/2025/07/7-17-scaled-e1753258645473-600x636.png",
+      "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "file": "/parts/elilee-x310-dub-ek01.png",
+      "width": 600,
+      "height": 636
+    },
+    {
+      "id": "igpsport-bsc200s",
+      "url": "https://hwcdn.igpsport.cn/picture/2024/12/b7fe4aed1601f4afbfe24c53620c7bcb.png",
+      "source": "https://www.igpsport.cn/product/bsc200s",
+      "file": "/parts/igpsport-bsc200s.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-bsc100max",
+      "url": "https://hwcdn.igpsport.cn/picture/2025/9/0b8a6af25466124f846503b6e5c7cad8.png",
+      "source": "https://www.igpsport.cn/product/bsc100max",
+      "file": "/parts/igpsport-bsc100max.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-bsc200-pro",
+      "url": "https://hwcdn.igpsport.cn/picture/2026/9/ce2353cdeb72c9e0388ec7cd5138b42e.png",
+      "source": "https://www.igpsport.cn/product/bsc200-pro",
+      "file": "/parts/igpsport-bsc200-pro.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-bsc300t",
+      "url": "https://hwcdn.igpsport.cn/picture/2024/9/61a05c7d97af34e70746af8242da50d3.png",
+      "source": "https://www.igpsport.cn/product/bsc300t",
+      "file": "/parts/igpsport-bsc300t.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-bsc100s",
+      "url": "https://hwcdn.igpsport.cn/picture/2026/4/d985e43f8ed914ac95aaa2acb38e8989.png",
+      "source": "https://www.igpsport.cn/product/bsc100s",
+      "file": "/parts/igpsport-bsc100s.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-binavi-air",
+      "url": "https://hwcdn.igpsport.cn/picture/2025/12/02197e69962ef5ce250a1bfdb72b38e3.png",
+      "source": "https://www.igpsport.cn/product/binavi-air",
+      "file": "/parts/igpsport-binavi-air.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-bsc500",
+      "url": "https://hwcdn.igpsport.cn/picture/2026/3/b6b2b3eeb706b411fa47da7202a85a6f.png",
+      "source": "https://www.igpsport.cn/product/bsc500",
+      "file": "/parts/igpsport-bsc500.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-binavi",
+      "url": "https://hwcdn.igpsport.cn/picture/2025/3/072aefd2f59fd421fcb0e291965b2723.png",
+      "source": "https://www.igpsport.cn/product/binavi",
+      "file": "/parts/igpsport-binavi.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-cad70",
+      "url": "https://hwcdn.igpsport.cn/picture/2024/11/3b4a4f95973538cc357dd494aed2db32.png",
+      "source": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
+      "file": "/parts/igpsport-cad70.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-igs800",
+      "url": "https://hwcdn.igpsport.cn/picture/2024/11/6d530f83cf1fa1b3d29dbf1ee0226cec.png",
+      "source": "https://www.igpsport.cn/product/igs800",
+      "file": "/parts/igpsport-igs800.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-spd70",
+      "url": "https://hwcdn.igpsport.cn/picture/2024/11/adccefc8db440cb92ee6a0fce7b1e877.png",
+      "source": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
+      "file": "/parts/igpsport-spd70.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-hr80",
+      "url": "https://hwcdn.igpsport.cn/picture/2026/9/ff5056336ceb15e30af7ab62ee787de4.png",
+      "source": "https://www.igpsport.cn/product/hr80",
+      "file": "/parts/igpsport-hr80.png",
+      "width": 200,
+      "height": 200
+    },
+    {
+      "id": "igpsport-hr70",
+      "url": "https://hwcdn.igpsport.cn/picture/2025/12/8a659eb96bb1aa8711af68edcf2d2ee6.png",
+      "source": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
+      "file": "/parts/igpsport-hr70.png",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "id": "igpsport-hr50",
+      "url": "https://hwcdn.igpsport.cn/picture/2025/12/19743cf6aeb62d9920a5fc509b1c1b49.png",
+      "source": "https://www.igpsport.cn/product/hr50",
+      "file": "/parts/igpsport-hr50.png",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "id": "magene-teo-p515",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260609/5qQ1780975947LWqRGvmrqge9bI9u.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=52",
+      "file": "/parts/magene-teo-p515.png",
+      "width": 1280,
+      "height": 861
+    },
+    {
+      "id": "magene-p515",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260607/nbu1780833975FyueTzEhii1AZSxX.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=50",
+      "file": "/parts/magene-p515.png",
+      "width": 1280,
+      "height": 861
+    },
+    {
+      "id": "elilee-x58",
+      "url": "https://www.elilee.com.cn/wp-content/uploads/2024/04/X58前轮-金标-正面-scaled.png",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+      "file": "/parts/elilee-x58.png",
+      "width": 2560,
+      "height": 2560
+    },
+    {
+      "id": "magene-p715-s",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260528/78w1779958274TEdiw47dR4iPOQWn.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=49",
+      "file": "/parts/magene-p715-s.png",
+      "width": 1280,
+      "height": 861
+    },
+    {
+      "id": "magene-p715-k",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260528/78w1779958274TEdiw47dR4iPOQWn.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=49",
+      "file": "/parts/magene-p715-k.png",
+      "width": 1280,
+      "height": 861
+    },
+    {
+      "id": "magene-c706",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260506/6tm1778061770H07b3IbILMTI1bER.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=44",
+      "file": "/parts/magene-c706.png",
+      "width": 2457,
+      "height": 1654
+    },
+    {
+      "id": "magene-h613",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260607/ziv1780834349qAgYT8KgRDRx8TY3.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=51",
+      "file": "/parts/magene-h613.png",
+      "width": 1280,
+      "height": 861
+    },
+    {
+      "id": "magene-c506-se",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260609/e4G1780996783KmcmOAdUoOGK6dqd.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=53",
+      "file": "/parts/magene-c506-se.png",
+      "width": 1280,
+      "height": 861
+    },
+    {
+      "id": "magene-c606-v2",
+      "url": "https://magene-static.oss-cn-hangzhou.aliyuncs.com/stewards/20260506/c0V1778064933t4q1sICemtz6v8Zs.png",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=45",
+      "file": "/parts/magene-c606-v2.png",
+      "width": 2457,
+      "height": 1654
+    },
+    {
+      "id": "shimano-sh-rc703",
+      "url": "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICLifeStyleGear/cg3SHICFootwear/cg4SHICShoes/cg5SHICShoes/SH-RC703-shic6-primary_1.jpg",
+      "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC703.html",
+      "file": "/parts/shimano-sh-rc703.jpg",
+      "width": 3300,
+      "height": 3300
+    },
+    {
+      "id": "shimano-pd-rs500",
+      "url": "https://dassets.shimano.com/content/dam/global/cg1SHICCycling/final/products/cg2SHICComponent/cg3SHICPedal/cg4SHICPedalSPDSL/PD-RS500_C260_1.jpg",
+      "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html",
+      "file": "/parts/shimano-pd-rs500.jpg",
+      "width": 2400,
+      "height": 2400
     }
   ],
   "note": "Official manufacturer product images. Copyright retained by original owners. Single components illustrate their corresponding product family."

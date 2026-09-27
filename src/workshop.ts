@@ -20,6 +20,8 @@ export function partSlot(category: string): Slot | undefined {
       return 'tires';
     case 'saddles':
       return 'saddle';
+    case 'pedals':
+      return 'pedals';
     default:
       return undefined;
   }
@@ -229,6 +231,79 @@ const tireReference = (
   note: `官方单条 ${each} g × 2；仅含两条外胎，不含内胎、密封液、胎垫或阀嘴。`,
 });
 export const weightReferences: Record<string, WeightReference[]> = {
+  'elilee-e50': [
+    {
+      id: 'default',
+      label: '前后轮一对',
+      grams: 1555,
+      note: '1555 g ±3% / 一对，官方口径；胎垫、气嘴等附件范围需与实物确认。',
+      source: 'https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/',
+      checkedAt: '2026-09-27',
+    },
+  ],
+  'elilee-e44': [
+    {
+      id: 'default',
+      label: '前后轮一对',
+      grams: 1360,
+      note: '1360 g ±3% / 一对，官方口径；胎垫、气嘴等附件范围需与实物确认。',
+      source:
+        'https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/',
+      checkedAt: '2026-09-27',
+    },
+  ],
+  'elilee-x46': [
+    {
+      id: 'default',
+      label: '前后轮一对',
+      grams: 1125,
+      note: '1125 g ±2.5% / 一对，官方口径；胎垫、气嘴等附件范围需与实物确认。',
+      source:
+        'https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/',
+      checkedAt: '2026-09-27',
+    },
+  ],
+  'elilee-x58': [
+    {
+      id: 'default',
+      label: '前后轮一对',
+      grams: 1260,
+      note: '1260 g ±3% / 一对，官方口径；胎垫、气嘴等附件范围需与实物确认。',
+      source:
+        'https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/',
+      checkedAt: '2026-09-27',
+    },
+  ],
+  'shimano-pd-rs500': [
+    {
+      id: 'default',
+      label: '标准轴 · 左右脚踏一对',
+      grams: 320,
+      note: '320 g / 一对，标准轴；不含锁鞋与锁片。',
+      source: 'https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html',
+      checkedAt: '2026-09-27',
+    },
+  ],
+  'shimano-pd-r7000': [
+    {
+      id: 'default',
+      label: '标准轴 · 左右脚踏一对',
+      grams: 265,
+      note: '265 g / 一对，标准轴；不含锁鞋与锁片。',
+      source: 'https://bike.shimano.com/zh-CN/technologies/details/pedal-lineup-chart.html',
+      checkedAt: '2026-09-27',
+    },
+  ],
+  'shimano-pd-r8000': [
+    {
+      id: 'default',
+      label: '标准轴 · 左右脚踏一对',
+      grams: 248,
+      note: '248 g / 一对，标准轴；不含锁鞋与锁片。',
+      source: 'https://bike.shimano.com/en-SG/technologies/details/pedal-lineup-chart.html',
+      checkedAt: '2026-09-27',
+    },
+  ],
   'lun-hyper3-d45': [
     {
       id: 'default',

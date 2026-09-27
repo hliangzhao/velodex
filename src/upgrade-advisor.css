@@ -1,0 +1,759 @@
+.upgrade-advisor {
+  --u-line: #d9ddd7;
+  --u-muted: #606960;
+  --u-green: #254c3a;
+  max-width: 1480px;
+  margin: 0 auto;
+  color: #202b24;
+}
+/* The upgrade budget tray occupies the same corner as the global bike comparison link. */
+body:has(.upgrade-advisor) .compare-dock {
+  display: none;
+}
+.upgrade-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin: 28px 0;
+  padding: 32px;
+  background: #eaf0e8;
+  border-left: 4px solid var(--u-green);
+}
+.upgrade-intro h2 {
+  font-size: clamp(25px, 3vw, 38px);
+  margin: 12px 0;
+  line-height: 1.35;
+}
+.upgrade-intro p {
+  margin: 0;
+  max-width: 760px;
+  line-height: 1.8;
+  color: var(--u-muted);
+}
+.upgrade-intro > a {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.upgrade-step {
+  border: 1px solid var(--u-line);
+  padding: 28px;
+  background: #fff;
+  margin-bottom: 24px;
+}
+.upgrade-step-title {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.upgrade-step-title > span {
+  font:
+    600 27px 'Barlow Condensed',
+    sans-serif;
+  color: #6d8375;
+  line-height: 1;
+}
+.upgrade-step-title h3 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+.upgrade-step-title p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--u-muted);
+}
+.upgrade-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.upgrade-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  font-size: 12px;
+  color: var(--u-muted);
+}
+.upgrade-field input,
+.upgrade-field select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #ccd3ca;
+  background: #fafbf8;
+  color: #243128;
+  border-radius: 2px;
+  padding: 12px;
+  font: inherit;
+  font-size: 14px;
+}
+.upgrade-field input[aria-invalid='true'] {
+  border-color: #9f432d;
+}
+.upgrade-field small {
+  color: #9f432d;
+}
+.upgrade-advisor button,
+.upgrade-advisor summary,
+.upgrade-advisor input,
+.upgrade-advisor select {
+  accent-color: #345e42;
+}
+.upgrade-advisor :focus-visible {
+  outline: 2px solid #366348;
+  outline-offset: 3px;
+}
+.upgrade-note {
+  font-size: 12px !important;
+  color: var(--u-muted);
+  line-height: 1.8 !important;
+  margin: 16px 0;
+}
+.upgrade-preferences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 24px 0;
+}
+.upgrade-preferences fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.upgrade-preferences legend {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.upgrade-preferences label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--u-line);
+  font-size: 12px;
+  cursor: pointer;
+}
+.upgrade-preferences label:has(input:checked) {
+  background: #e8f0e5;
+  border-color: #647c64;
+}
+.upgrade-preferences input {
+  margin: 0;
+}
+.upgrade-direction {
+  background: #f3f5ee;
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.upgrade-direction strong {
+  font-size: 15px;
+}
+.upgrade-direction p {
+  margin: 8px 0;
+}
+.upgrade-direction button {
+  border: 0;
+  border-bottom: 1px solid #244b38;
+  background: none;
+  padding: 4px 0;
+  color: #244b38;
+  cursor: pointer;
+}
+.upgrade-details {
+  border-top: 1px solid var(--u-line);
+  margin-top: 24px;
+  padding-top: 16px;
+}
+.upgrade-details summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.upgrade-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 20px 0;
+}
+.upgrade-checks label,
+.upgrade-inline-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.upgrade-inline-check {
+  margin: 14px 0;
+}
+.upgrade-checks input,
+.upgrade-inline-check input {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+.upgrade-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 365px;
+  gap: 24px;
+  align-items: start;
+}
+.upgrade-candidates {
+  min-width: 0;
+}
+.upgrade-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+.upgrade-category button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f5ef;
+  border: 1px solid transparent;
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.upgrade-category button[aria-pressed='true'] {
+  background: #244b38;
+  color: white;
+}
+.upgrade-category small {
+  opacity: 0.7;
+  font-family: 'Barlow', sans-serif;
+}
+.upgrade-filter {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 12px;
+}
+.upgrade-keep {
+  width: 100%;
+  padding: 14px;
+  border: 1px dashed #9fae9b;
+  background: #f7f9f2;
+  margin: 0 0 18px;
+  cursor: pointer;
+  color: #35523a;
+}
+.upgrade-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.upgrade-cards article {
+  border: 1px solid var(--u-line);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.upgrade-cards article.is-picked {
+  border-color: #557a5c;
+  box-shadow: inset 0 3px #557a5c;
+}
+.upgrade-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.upgrade-card-head img {
+  width: 82px;
+  height: 90px;
+  object-fit: contain;
+  background: #fff;
+}
+.upgrade-no-image {
+  width: 65px;
+  height: 80px;
+  flex-shrink: 0;
+  display: grid;
+  place-content: center;
+  background: #f1f3ed;
+  color: #607261;
+  font-size: 13px;
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+.upgrade-card-head h4 {
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 5px 0 10px;
+}
+.upgrade-card-head small {
+  font-size: 10px;
+  color: var(--u-muted);
+}
+.upgrade-price {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.upgrade-price strong {
+  color: #33523b;
+  font-size: 14px;
+  font-weight: 600;
+}
+.upgrade-price small {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--u-muted);
+}
+.upgrade-cards dl {
+  margin: 20px 0 0;
+  font-size: 12px;
+}
+.upgrade-cards dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid #e8ebe4;
+  padding: 8px 0;
+  line-height: 1.5;
+}
+.upgrade-cards dt {
+  color: var(--u-muted);
+  flex: 0 0 76px;
+}
+.upgrade-cards dd {
+  margin: 0;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+.upgrade-cards article > p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 14px 0;
+}
+.upgrade-cards details {
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.upgrade-cards details summary {
+  cursor: pointer;
+  color: #4b654b;
+}
+.upgrade-cards details dl {
+  margin: 12px 0;
+}
+.upgrade-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #e8ebe4;
+}
+.upgrade-card-actions a {
+  font-size: 12px;
+}
+.upgrade-card-actions button {
+  border: 0;
+  background: #244b38;
+  color: #fff;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  gap: 4px;
+}
+.upgrade-card-actions button:disabled {
+  background: #e1e8da;
+  color: #38533b;
+  cursor: default;
+}
+.upgrade-plan {
+  background: #f2f4ed;
+  border: 1px solid #cdd5c6;
+  padding: 24px;
+  position: sticky;
+  top: 88px;
+  max-height: calc(100vh - 105px);
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.upgrade-plan .upgrade-step-title {
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.upgrade-plan .upgrade-step-title h3 {
+  font-size: 20px;
+}
+.upgrade-plan-empty {
+  border: 1px dashed #b7c0ae;
+  text-align: center;
+  padding: 32px 12px;
+  line-height: 2;
+  font-size: 14px;
+  color: #64705d;
+}
+.upgrade-plan-empty small {
+  font-size: 12px;
+}
+.upgrade-message {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 14px 0;
+  color: #4a6749;
+  overflow-wrap: anywhere;
+}
+.upgrade-line {
+  border-bottom: 1px solid #ced7c6;
+  padding: 18px 0;
+}
+.upgrade-line > div:first-child {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.upgrade-line h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.upgrade-line > div > button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  padding: 2px;
+}
+.upgrade-line-fields {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 10px;
+  margin: 14px 0;
+}
+.upgrade-costs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 22px;
+}
+.upgrade-costs .upgrade-line-fields {
+  margin: 0;
+}
+.upgrade-costs .upgrade-inline-check {
+  margin: 2px 0;
+}
+.upgrade-total {
+  background: #244b38;
+  color: #fff;
+  padding: 20px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.upgrade-total > span {
+  font-size: 12px;
+  color: #d0dec7;
+}
+.upgrade-total > strong {
+  font-family: 'Barlow', sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+}
+.upgrade-total > small {
+  font-size: 11px;
+  line-height: 1.6;
+  color: #d7e3d0;
+}
+.upgrade-total p {
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.7;
+}
+.upgrade-plan-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+.upgrade-plan-actions button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #bfccb4;
+  padding: 10px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+}
+.upgrade-plan-actions button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.upgrade-plan .upgrade-details {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.upgrade-plan .upgrade-details > .upgrade-field {
+  margin: 12px 0;
+}
+.upgrade-advice {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.upgrade-advice li {
+  font-size: 13px;
+  line-height: 1.8;
+  padding: 18px;
+  background: #f6f6ef;
+  overflow-wrap: anywhere;
+}
+.upgrade-advice li > span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #766540;
+}
+.upgrade-advice li[data-level='conflict'] {
+  background: #fff0e9;
+  border-left: 3px solid #a5442d;
+}
+.upgrade-advice li[data-level='conflict'] > span {
+  color: #a5442d;
+}
+.upgrade-advice li[data-level='info'] {
+  background: #f0f5eb;
+}
+.upgrade-advice li[data-level='info'] > span {
+  color: #4e7049;
+}
+.upgrade-reading {
+  padding: 28px 0 40px;
+}
+.upgrade-reading h3 {
+  font-size: 26px;
+  margin: 12px 0 24px;
+}
+.upgrade-reading details {
+  border-top: 1px solid var(--u-line);
+  padding: 20px 0;
+}
+.upgrade-reading summary {
+  font-size: 17px;
+  line-height: 1.7;
+  cursor: pointer;
+  font-weight: 600;
+}
+.upgrade-reading p {
+  font-size: 14px;
+  line-height: 2;
+  max-width: 950px;
+  color: #485447;
+}
+.upgrade-reading a {
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.upgrade-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.upgrade-table-wrap {
+  overflow: auto;
+  margin: 20px 0;
+}
+.upgrade-reading table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 580px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.upgrade-reading th,
+.upgrade-reading td {
+  text-align: left;
+  padding: 14px;
+  border: 1px solid var(--u-line);
+}
+.upgrade-reading th {
+  background: #ecf1e6;
+}
+@media (min-width: 1600px) {
+  .upgrade-workspace {
+    grid-template-columns: minmax(0, 1fr) 395px;
+  }
+}
+@media (max-width: 1100px) {
+  .upgrade-workspace {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 16px;
+  }
+  .upgrade-cards {
+    grid-template-columns: 1fr;
+  }
+  .upgrade-plan {
+    padding: 20px;
+  }
+  .upgrade-filter {
+    grid-template-columns: 1fr 1fr;
+  }
+  .upgrade-filter .upgrade-field:first-child {
+    grid-column: 1/-1;
+  }
+  .upgrade-step {
+    padding: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .upgrade-intro {
+    padding: 22px;
+    display: block;
+  }
+  .upgrade-intro > a {
+    margin-top: 20px;
+  }
+  .upgrade-fields,
+  .upgrade-preferences,
+  .upgrade-advice {
+    grid-template-columns: 1fr 1fr;
+  }
+  .upgrade-workspace {
+    grid-template-columns: 1fr;
+  }
+  .upgrade-plan {
+    position: static;
+    max-height: none;
+    margin-bottom: 24px;
+  }
+  .upgrade-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .upgrade-step {
+    padding: 20px;
+  }
+  .upgrade-preferences {
+    gap: 20px;
+  }
+  .upgrade-preferences fieldset {
+    display: block;
+  }
+  .upgrade-preferences label {
+    margin-bottom: 8px;
+  }
+  .upgrade-card-head {
+    display: block;
+  }
+  .upgrade-card-head img {
+    width: 100%;
+    height: 120px;
+  }
+  .upgrade-card-head h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 520px) {
+  .upgrade-fields,
+  .upgrade-preferences,
+  .upgrade-advice,
+  .upgrade-cards {
+    grid-template-columns: 1fr;
+  }
+  .upgrade-intro {
+    margin-top: 16px;
+  }
+  .upgrade-intro h2 {
+    font-size: 26px;
+  }
+  .upgrade-step-title h3 {
+    font-size: 19px;
+  }
+  .upgrade-step,
+  .upgrade-plan {
+    padding: 18px;
+  }
+  .upgrade-card-head {
+    display: flex;
+  }
+  .upgrade-card-head img {
+    width: 84px;
+    height: 100px;
+  }
+  .upgrade-preferences fieldset {
+    display: flex;
+  }
+  .upgrade-preferences label {
+    margin: 0;
+  }
+  .upgrade-card-actions button {
+    min-height: 42px;
+  }
+  .upgrade-category button {
+    min-height: 42px;
+  }
+  .upgrade-filter {
+    grid-template-columns: 1fr;
+  }
+  .upgrade-field input,
+  .upgrade-field select {
+    font-size: 16px;
+  }
+}
+.upgrade-price-source {
+  display: inline-block;
+  margin-left: 12px;
+}
+.upgrade-mobile-jump {
+  display: none;
+}
+#upgrade-plan {
+  scroll-margin-top: 90px;
+}
+@media (max-width: 760px) {
+  .upgrade-mobile-jump {
+    position: sticky;
+    bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    background: #244b38;
+    color: #fff;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 16px #1c30232b;
+    font-size: 13px;
+    z-index: 3;
+  }
+  .upgrade-mobile-jump a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 760px) {
+  .upgrade-mobile-jump {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 12px;
+    margin: 0;
+  }
+  .upgrade-advisor {
+    padding-bottom: 65px;
+  }
+}

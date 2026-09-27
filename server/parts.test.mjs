@@ -12,7 +12,20 @@ test('parts and paint records resolve to sourced local assets and valid cross-li
       p.id,
     );
     assert.ok(
-      ['wheels', 'groupsets', 'tires', 'handlebars', 'seatposts', 'saddles'].includes(p.category),
+      [
+        'wheels',
+        'groupsets',
+        'tires',
+        'handlebars',
+        'seatposts',
+        'saddles',
+        'powermeters',
+        'computers',
+        'sensors',
+        'pedals',
+        'cleats',
+        'shoes',
+      ].includes(p.category),
     );
     assert.equal(new URL(p.source).protocol, 'https:');
     assert.ok(

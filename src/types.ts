@@ -85,7 +85,44 @@ export type Bike = {
 export type Catalog = { updatedAt: string; brands: Brand[]; bikes: Bike[]; collectionNote: string };
 
 export type PartCategory =
-  'wheels' | 'groupsets' | 'tires' | 'handlebars' | 'seatposts' | 'saddles';
+  | 'wheels'
+  | 'groupsets'
+  | 'tires'
+  | 'handlebars'
+  | 'seatposts'
+  | 'saddles'
+  | 'powermeters'
+  | 'computers'
+  | 'sensors'
+  | 'pedals'
+  | 'cleats'
+  | 'shoes';
+export type ChinaPrice = {
+  amount: number | null;
+  kind: 'official' | 'launch' | 'pending';
+  scope: string;
+  note: string;
+  source: string;
+  checkedAt: string;
+};
+export type SelectionSpecs = {
+  // Structured values are only populated when the cited source defines the scope.
+  weightG?: number;
+  weightScope?: string;
+  depthMm?: number;
+  innerWidthMm?: number;
+  powerType?: 'left' | 'spider' | 'dual-pedal';
+  cadence?: boolean;
+  protocols?: ('ANT+' | 'BLE')[];
+  powerProtocols?: ('ANT+' | 'BLE')[];
+  navigation?: 'none' | 'track' | 'map';
+  sensor?: 'speed' | 'cadence' | 'heart';
+  cleat?: 'SPD-SL' | 'SPD' | 'KEO' | 'Speedplay';
+  shoeBolts?: 2 | 3 | 4;
+  includesCleats?: boolean;
+  spindleMm?: number;
+  notes: string[];
+};
 export type Product = {
   id: string;
   brandId: string;
@@ -105,6 +142,8 @@ export type Product = {
   source: string;
   sourceLabel: string;
   checkedAt: string;
+  chinaPrice?: ChinaPrice;
+  selection?: SelectionSpecs;
 };
 export type PartsCatalog = {
   updatedAt: string;

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24",
+  "updatedAt": "2026-09-27",
   "brands": [
     {
       "id": "dt-swiss",
@@ -160,6 +160,62 @@
       "founded": "",
       "description": "意大利坐垫品牌，SLR 系列提供不同宽度、座弓和中央开孔形式。",
       "website": "https://www.selleitalia.com/"
+    },
+    {
+      "id": "elilee",
+      "name": "ELILEE 翊俪",
+      "country": "中国",
+      "founded": "—",
+      "description": "提供碳纤维轮组、曲柄和车架；本次轮组与 EK-01 价格取自中国官网。",
+      "website": "https://www.elilee.com.cn/"
+    },
+    {
+      "id": "igpsport",
+      "name": "iGPSPORT 迹驰",
+      "country": "中国",
+      "founded": "—",
+      "description": "武汉骑行电子品牌，提供 GPS 码表、心率与速度踏频传感器。",
+      "website": "https://www.igpsport.cn/"
+    },
+    {
+      "id": "sigeyi",
+      "name": "SIGEYI 思各异",
+      "country": "中国",
+      "founded": "—",
+      "description": "提供 AXO 系列盘爪功率计；安装版本按曲柄接口和盘片孔位区分。",
+      "website": "https://www.sigeyi.cn/cn/"
+    },
+    {
+      "id": "garmin",
+      "name": "Garmin 佳明",
+      "country": "美国",
+      "founded": "1989",
+      "description": "提供骑行码表、脚踏功率计与运动传感器。",
+      "website": "https://www.garmin.com.cn/"
+    },
+    {
+      "id": "4iiii",
+      "name": "4iiii",
+      "country": "加拿大",
+      "founded": "2010",
+      "description": "加拿大功率计品牌，以曲柄应变测量与原厂安装服务为主要产品方向。",
+      "website": "https://4iiii.com/"
+    },
+    {
+      "id": "look",
+      "name": "LOOK",
+      "country": "法国",
+      "founded": "1951",
+      "description": "法国自行车与锁踏品牌，KÉO 是常见公路锁踏制式。",
+      "website": "https://www.lookcycle.com/"
+    },
+    {
+      "id": "voso",
+      "name": "VOSO",
+      "country": "中国",
+      "founded": "—",
+      "description": "提供碳纤维轮组。国内 Ultimate 系列需要按销售年份、轮高及具体报价单核对。",
+      "website": "https://mall.jd.com/view_search-5558594-42478347-99-1-20-1.html"
     }
   ],
   "products": [
@@ -199,7 +255,15 @@
       "source": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-db",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/dt-arc1100-65.jpg"
+      "image": "/parts/dt-arc1100-65.jpg",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-db",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "zipp-404-firecrest",
@@ -237,7 +301,15 @@
       "source": "https://www.sram.com/en/zipp/models/wh-404-ftld-b1",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/zipp-404-firecrest.png"
+      "image": "/parts/zipp-404-firecrest.png",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.sram.com/en/zipp/models/wh-404-ftld-b1",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "zipp-303-firecrest",
@@ -275,7 +347,15 @@
       "source": "https://www.sram.com/en/service/models/wh-303-ftld-a1",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/zipp-303-firecrest.png"
+      "image": "/parts/zipp-303-firecrest.png",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.sram.com/en/service/models/wh-303-ftld-a1",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "enve-ses45",
@@ -313,7 +393,15 @@
       "source": "https://enve.com/products/ses-4-5",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/enve-ses45.jpg"
+      "image": "/parts/enve-ses45.jpg",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://enve.com/products/ses-4-5",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "roval-rapide-clx3",
@@ -351,7 +439,15 @@
       "source": "https://www.specialized.com/us/en/roval-rapide-clx-iii/p/1000256237",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/roval-rapide-clx3.webp"
+      "image": "/parts/roval-rapide-clx3.webp",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.specialized.com/us/en/roval-rapide-clx-iii/p/1000256237",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "shimano-c50",
@@ -388,7 +484,15 @@
       "tradeoff": "与 Ultegra C50 外观接近，但花鼓与塔基不同，替换旧轮组时需先确认飞轮接口。",
       "source": "https://bike.shimano.com/products/components/pdp.P-WH-R9270-C50-TL-F.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://bike.shimano.com/products/components/pdp.P-WH-R9270-C50-TL-F.html",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "dura-ace-r9200",
@@ -428,7 +532,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/dura-ace-r9200.jpg",
       "imageCaption": "官方 RD-R9250 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9250.html"
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9250.html",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://bike.shimano.com/en-SG/stories/article/science-of-speed.html",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "ultegra-r8100",
@@ -468,7 +580,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/ultegra-r8100.jpg",
       "imageCaption": "官方 RD-R8150 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R8150.html"
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R8150.html",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://bike.shimano.com/products/components/pdp.P-RD-R8150.html",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "105-r7100",
@@ -508,7 +628,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/105-r7100.jpg",
       "imageCaption": "官方 RD-R7150 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R7150.html"
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R7150.html",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://bike.shimano.com/stories/article/shimano-105-di2-it-is-a-new-day.html",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "sram-red-e1",
@@ -546,7 +674,15 @@
       "source": "https://www.sram.com/en/sram/models/ed-red-e1",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/sram-red-e1.png"
+      "image": "/parts/sram-red-e1.png",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.sram.com/en/sram/models/ed-red-e1",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "super-record-13",
@@ -586,7 +722,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/super-record-13.jpg",
       "imageCaption": "官方 Super Record 13 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html"
+      "imageSource": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "dura-ace-r9100",
@@ -626,7 +770,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/dura-ace-r9100.jpg",
       "imageCaption": "官方 RD-R9100-SS 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html"
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "gp5000-str",
@@ -664,7 +816,15 @@
       "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-s-tr/",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/gp5000-str.webp"
+      "image": "/parts/gp5000-str.webp",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-s-tr/",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "gp5000-clincher",
@@ -701,7 +861,15 @@
       "tradeoff": "方便维护的同时，内胎材质、胎压与路况都会影响滚阻和夹胎风险。",
       "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000/",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000/",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "aero111",
@@ -739,7 +907,15 @@
       "source": "https://www.continental-tires.com/products/bicycle/tires/aero-111/",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/aero111.png"
+      "image": "/parts/aero111.png",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.continental-tires.com/products/bicycle/tires/aero-111/",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "schwalbe-pro-one",
@@ -777,7 +953,15 @@
       "source": "https://www.schwalbe.com/en/PRO-One-Tubeless-11653975",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/schwalbe-pro-one.png"
+      "image": "/parts/schwalbe-pro-one.png",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.schwalbe.com/en/PRO-One-Tubeless-11653975",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "vittoria-corsa-pro",
@@ -815,7 +999,15 @@
       "source": "https://vittoria.com/products/corsa-pro-tubeless-ready",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/vittoria-corsa-pro.png"
+      "image": "/parts/vittoria-corsa-pro.png",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://vittoria.com/products/corsa-pro-tubeless-ready",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "pirelli-race-tlr-rs",
@@ -853,7 +1045,15 @@
       "source": "https://www.pirelli.com/tires/en-us/bike/tires/catalogue/p-zero-race-tlr-rs",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/pirelli-race-tlr-rs.jpg"
+      "image": "/parts/pirelli-race-tlr-rs.jpg",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.pirelli.com/tires/en-us/bike/tires/catalogue/p-zero-race-tlr-rs",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "roval-rapide-cockpit",
@@ -889,7 +1089,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/roval-rapide-cockpit.webp",
       "imageCaption": "官方产品图 · Rapide Cockpit",
-      "imageSource": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323"
+      "imageSource": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "pro-vibe-evo",
@@ -924,7 +1132,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/pro-vibe-evo.png",
       "imageCaption": "官方产品图 · Vibe Evo",
-      "imageSource": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar"
+      "imageSource": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "roval-alpinist-seatpost",
@@ -960,7 +1176,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/roval-alpinist-seatpost.webp",
       "imageCaption": "官方产品图 · Alpinist Seatpost",
-      "imageSource": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098"
+      "imageSource": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "pro-vibe-seatpost",
@@ -995,7 +1219,15 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/pro-vibe-seatpost.png",
       "imageCaption": "官方产品图 · Vibe Carbon Seatpost",
-      "imageSource": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost"
+      "imageSource": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "power-expert",
@@ -1030,7 +1262,15 @@
       "tradeoff": "适合程度需要实际骑行确认；同系列不同宽度或导轨版本不应混用重量数据。",
       "source": "https://www.specialized.com/ph/en/power-expert/p/155978",
       "sourceLabel": "厂商官方产品页",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.specialized.com/ph/en/power-expert/p/155978",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "fizik-tempo-argo-r3",
@@ -1065,7 +1305,15 @@
       "tradeoff": "适合程度需要实际骑行确认；同系列不同宽度或导轨版本不应混用重量数据。",
       "source": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
       "sourceLabel": "厂商官方产品页",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "lun-hyper3-d45",
@@ -1101,7 +1349,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/lun-hyper3-d45.png",
-      "imageSource": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/"
+      "imageSource": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "vision-metron45-rs",
@@ -1137,7 +1393,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/vision-metron45-rs.png",
-      "imageSource": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs"
+      "imageSource": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "sram-force-e1",
@@ -1173,7 +1437,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "图为 Force E1 手变，不代表完整套件的交付范围。",
       "image": "/parts/sram-force-e1.png",
-      "imageSource": "https://www.sram.com/en/sram/models/ed-frc-e1"
+      "imageSource": "https://www.sram.com/en/sram/models/ed-frc-e1",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.sram.com/en/sram/models/rd-frc-e-e1",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "magene-qed",
@@ -1209,7 +1481,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "迈金官方 QED 装配与走线示意图；图中曲柄、飞轮等不属于小套重量范围。",
       "image": "/parts/magene-qed.webp",
-      "imageSource": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/"
+      "imageSource": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "vittoria-corsa-next",
@@ -1245,7 +1525,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/vittoria-corsa-next.png",
-      "imageSource": "https://vittoria.com/products/corsa-n-ext-tubeless-ready"
+      "imageSource": "https://vittoria.com/products/corsa-n-ext-tubeless-ready",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://vittoria.com/products/corsa-n-ext-tubeless-ready",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "gp5000-as-tr",
@@ -1281,7 +1569,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方实装细节图，摄影 Christopher Lanaway。",
       "image": "/parts/gp5000-as-tr.jpg",
-      "imageSource": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/"
+      "imageSource": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "enve-ses-ar-handlebar",
@@ -1317,7 +1613,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/enve-ses-ar-handlebar.jpg",
-      "imageSource": "https://enve.com/products/ses-ar-road-handlebar"
+      "imageSource": "https://enve.com/products/ses-ar-road-handlebar",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://enve.com/products/ses-ar-road-handlebar",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "ritchey-carbon-link",
@@ -1353,7 +1657,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/ritchey-carbon-link.webp",
-      "imageSource": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost"
+      "imageSource": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "prologo-scratch-m5",
@@ -1389,7 +1701,15 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "Scratch M5 系列官方俯视图；座弓版本需另行选择。",
       "image": "/parts/prologo-scratch-m5.jpg",
-      "imageSource": "https://prologo.it/en/products/scratch-m5"
+      "imageSource": "https://prologo.it/en/products/scratch-m5",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://prologo.it/en/products/scratch-m5",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "slr-boost-ti316",
@@ -1425,7 +1745,2340 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/slr-boost-ti316.webp",
-      "imageSource": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2"
+      "imageSource": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆对应型号 / 规格待询价",
+        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+        "source": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2",
+        "checkedAt": "2026-09-27"
+      }
+    },
+    {
+      "id": "elilee-e50",
+      "brandId": "elilee",
+      "name": "XXE E50",
+      "category": "wheels",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "50 mm 框高 · 21 mm 内宽 · 钢辐条",
+      "description": "50 mm 框高 · 21 mm 内宽 · 钢辐条。关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "specs": [
+        ["标称重量", "1555 g ±3% / 一对，官方口径"],
+        ["框高", "50 mm"],
+        ["内宽 / 外宽", "21 / 30 mm"],
+        ["辐条", "钢辐条"],
+        ["轴承", "钢轴承"],
+        ["刹车 / 轮胎", "碟刹；开口 / 真空"],
+        ["胎压边界", "官网上限 120 psi；实际遵守轮胎与轮圈更低限制"],
+        ["塔基 / 碟片 / 轴端", "商品页未完整列出；下单需确认 HG / XDR、碟片座与轴端"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。"
+        }
+      ],
+      "compatibility": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。",
+      "tradeoff": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 3200,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
+        "weightG": 1555,
+        "weightScope": "前后轮组标称值；随附胎垫/气嘴口径需核对",
+        "depthMm": 50,
+        "innerWidthMm": 21
+      },
+      "image": "/parts/elilee-e50.png",
+      "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "elilee-e44",
+      "brandId": "elilee",
+      "name": "XXE E44",
+      "category": "wheels",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "44 mm 框高 · 21 mm 内宽 · Sapim CX-Ray",
+      "description": "44 mm 框高 · 21 mm 内宽 · Sapim CX-Ray。关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "specs": [
+        ["标称重量", "1360 g ±3% / 一对，官方口径"],
+        ["框高", "44 mm"],
+        ["内宽 / 外宽", "21 / 28 mm"],
+        ["辐条", "Sapim CX-Ray"],
+        ["轴承", "钢轴承"],
+        ["刹车 / 轮胎", "碟刹；开口 / 真空"],
+        ["胎压边界", "官网上限 120 psi；实际遵守轮胎与轮圈更低限制"],
+        ["塔基 / 碟片 / 轴端", "商品页未完整列出；下单需确认 HG / XDR、碟片座与轴端"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。"
+        }
+      ],
+      "compatibility": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。",
+      "tradeoff": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 4500,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
+        "weightG": 1360,
+        "weightScope": "前后轮组标称值；随附胎垫/气嘴口径需核对",
+        "depthMm": 44,
+        "innerWidthMm": 21
+      },
+      "image": "/parts/elilee-e44.jpg",
+      "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "elilee-x46",
+      "brandId": "elilee",
+      "name": "XXE X46",
+      "category": "wheels",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "45 mm 框高 · 23 mm 内宽 · T800 碳辐条",
+      "description": "45 mm 框高 · 23 mm 内宽 · T800 碳辐条。关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "specs": [
+        ["标称重量", "1125 g ±2.5% / 一对，官方口径"],
+        ["框高", "45 mm（型号名为 X46，参数表为 45 mm）"],
+        ["内宽 / 外宽", "23 / 32 mm"],
+        ["辐条", "T800 碳辐条"],
+        ["轴承", "TTN 陶瓷轴承"],
+        ["刹车 / 轮胎", "碟刹；开口 / 真空"],
+        ["胎压边界", "官网上限 120 psi；实际遵守轮胎与轮圈更低限制"],
+        ["塔基 / 碟片 / 轴端", "商品页未完整列出；下单需确认 HG / XDR、碟片座与轴端"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。"
+        }
+      ],
+      "compatibility": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。",
+      "tradeoff": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 6800,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
+        "weightG": 1125,
+        "weightScope": "前后轮组标称值；随附胎垫/气嘴口径需核对",
+        "depthMm": 45,
+        "innerWidthMm": 23
+      },
+      "image": "/parts/elilee-x46.png",
+      "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "elilee-x58",
+      "brandId": "elilee",
+      "name": "XXE X58",
+      "category": "wheels",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "58 mm 框高 · 23 mm 内宽 · T800 碳辐条",
+      "description": "58 mm 框高 · 23 mm 内宽 · T800 碳辐条。关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "specs": [
+        ["标称重量", "1260 g ±3% / 一对，官方口径"],
+        ["框高", "58 mm"],
+        ["内宽 / 外宽", "23 / 32 mm"],
+        ["辐条", "T800 碳辐条"],
+        ["轴承", "TTN 陶瓷轴承"],
+        ["刹车 / 轮胎", "碟刹；开口 / 真空"],
+        ["胎压边界", "官网上限 120 psi；实际遵守轮胎与轮圈更低限制"],
+        ["塔基 / 碟片 / 轴端", "商品页未完整列出；下单需确认 HG / XDR、碟片座与轴端"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。"
+        }
+      ],
+      "compatibility": "先取得对应 SKU 的塔基、碟片座、轴端及允许胎宽表；轮高与重量不能代替接口确认。",
+      "tradeoff": "关注辐条备件、花鼓保养和售后条件；轴承材质本身不能证明整对轮组更省力。",
+      "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 6800,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
+        "weightG": 1260,
+        "weightScope": "前后轮组标称值；随附胎垫/气嘴口径需核对",
+        "depthMm": 58,
+        "innerWidthMm": 23
+      },
+      "image": "/parts/elilee-x58.png",
+      "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "voso-ultimate-cn",
+      "brandId": "voso",
+      "name": "Ultimate 国内询价候选",
+      "category": "wheels",
+      "era": "国内 SKU 待核对",
+      "status": "current",
+      "tagline": "先确认年份、轮高和国内销售版本",
+      "description": "先确认年份、轮高和国内销售版本。保留在清单中便于比较报价；资料未齐之前不参与减重或性能排名。",
+      "specs": [
+        ["销售范围", "国内 Ultimate 系列；具体 SKU 待商家确认"],
+        ["轮高 / 重量", "待核对；不套用海外 Ultimate 50 / 60 参数"],
+        ["花鼓 / 辐条", "待核对具体批次及备件"],
+        ["接口", "塔基、碟片座、轴端、胎圈结构均待核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "保留在清单中便于比较报价；资料未齐之前不参与减重或性能排名。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "询价时索取实物型号、前后轮重量、轮圈内外宽、系统限重、轮胎兼容表与保修条款。"
+        }
+      ],
+      "compatibility": "询价时索取实物型号、前后轮重量、轮圈内外宽、系统限重、轮胎兼容表与保修条款。",
+      "tradeoff": "保留在清单中便于比较报价；资料未齐之前不参与减重或性能排名。",
+      "source": "https://mall.jd.com/view_search-5558594-42478347-99-1-20-1.html",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "国内轮组一对；年份和轮高待定",
+        "note": "已收录为国内询价候选，尚未核实具体国行 SKU 和官方售价。",
+        "source": "https://mall.jd.com/view_search-5558594-42478347-99-1-20-1.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "填写报价时同时写明年份、轮高和塔基",
+          "请勿把 Ultimate、Ultimate Lite 或海外版本当成同一配置"
+        ]
+      }
+    },
+    {
+      "id": "elilee-ek01",
+      "brandId": "elilee",
+      "name": "EK-01 盘爪功率计",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "description": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。。盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "specs": [
+        ["测量方式", "盘爪总功率"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["标称续航", "300 小时，磁吸充电"],
+        ["测量范围", "0–2000 W；0–200 rpm"],
+        ["防护等级", "IP67"],
+        ["重量口径", "97 g 仅 EK-01 盘爪；不是整套曲柄重量"],
+        ["销售配置", "仅盘爪，不含曲柄与盘片"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "EK-01 需匹配指定曲柄接口及盘片；FC-R7100 不能直接拆下盘爪替换。换曲柄还要核对中轴、链线、长度和前拨空间。"
+        }
+      ],
+      "compatibility": "EK-01 需匹配指定曲柄接口及盘片；FC-R7100 不能直接拆下盘爪替换。换曲柄还要核对中轴、链线、长度和前拨空间。",
+      "tradeoff": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 1980,
+        "kind": "official",
+        "scope": "仅盘爪，不含曲柄与盘片",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["所选曲柄长度须与当前设定匹配", "核对盘片是否包含及 110 BCD 孔位布局"],
+        "powerType": "spider",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/elilee-ek01.png",
+      "imageSource": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件"
+    },
+    {
+      "id": "elilee-x310-24-ek01",
+      "brandId": "elilee",
+      "name": "X310 24 mm + EK-01",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "description": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。。盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "specs": [
+        ["测量方式", "盘爪总功率"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["标称续航", "300 小时，磁吸充电"],
+        ["测量范围", "0–2000 W；0–200 rpm"],
+        ["防护等级", "IP67"],
+        ["重量口径", "97 g 仅 EK-01 盘爪；不是整套曲柄重量"],
+        ["销售配置", "曲柄 + 功率盘爪；盘片另核对"],
+        ["轴心", "24 mm"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "EK-01 需匹配指定曲柄接口及盘片；FC-R7100 不能直接拆下盘爪替换。换曲柄还要核对中轴、链线、长度和前拨空间。"
+        }
+      ],
+      "compatibility": "EK-01 需匹配指定曲柄接口及盘片；FC-R7100 不能直接拆下盘爪替换。换曲柄还要核对中轴、链线、长度和前拨空间。",
+      "tradeoff": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 4360,
+        "kind": "official",
+        "scope": "曲柄 + 功率盘爪；盘片另核对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["所选曲柄长度须与当前设定匹配", "核对盘片是否包含及 110 BCD 孔位布局"],
+        "powerType": "spider",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"],
+        "spindleMm": 24
+      },
+      "image": "/parts/elilee-x310-24-ek01.png",
+      "imageSource": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件"
+    },
+    {
+      "id": "elilee-x310-dub-ek01",
+      "brandId": "elilee",
+      "name": "X310 DUB + EK-01",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "description": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。。盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "specs": [
+        ["测量方式", "盘爪总功率"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["标称续航", "300 小时，磁吸充电"],
+        ["测量范围", "0–2000 W；0–200 rpm"],
+        ["防护等级", "IP67"],
+        ["重量口径", "97 g 仅 EK-01 盘爪；不是整套曲柄重量"],
+        ["销售配置", "曲柄 + 功率盘爪；盘片另核对"],
+        ["轴心", "28.99 mm / DUB"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "EK-01 需匹配指定曲柄接口及盘片；FC-R7100 不能直接拆下盘爪替换。换曲柄还要核对中轴、链线、长度和前拨空间。"
+        }
+      ],
+      "compatibility": "EK-01 需匹配指定曲柄接口及盘片；FC-R7100 不能直接拆下盘爪替换。换曲柄还要核对中轴、链线、长度和前拨空间。",
+      "tradeoff": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 3960,
+        "kind": "official",
+        "scope": "曲柄 + 功率盘爪；盘片另核对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["所选曲柄长度须与当前设定匹配", "核对盘片是否包含及 110 BCD 孔位布局"],
+        "powerType": "spider",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"],
+        "spindleMm": 28.99
+      },
+      "image": "/parts/elilee-x310-dub-ek01.png",
+      "imageSource": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件"
+    },
+    {
+      "id": "magene-p515",
+      "brandId": "magene",
+      "name": "P515 盘爪功率计",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "110 BCD 四爪 · 99 g 盘爪",
+      "description": "110 BCD 四爪 · 99 g 盘爪。盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "specs": [
+        ["测量方式", "盘爪总功率"],
+        ["重量", "99 ±1 g / 仅盘爪"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["盘片", "110 BCD 四爪；孔位仍需核对"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["标称续航", "380 小时；145 mAh，磁吸充电"],
+        ["踏频范围", "20–240 rpm"],
+        ["防护等级", "IPX7"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "需匹配迈金指定曲柄接口、盘片和五通空间，不能只根据 110 BCD 判断可装。AD7 的 FC-R7100 不是可直接换盘爪的曲柄。"
+        }
+      ],
+      "compatibility": "需匹配迈金指定曲柄接口、盘片和五通空间，不能只根据 110 BCD 判断可装。AD7 的 FC-R7100 不是可直接换盘爪的曲柄。",
+      "tradeoff": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=50",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 1480,
+        "kind": "launch",
+        "scope": "仅 P515 盘爪，不含曲柄、盘片",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["需确认当前曲柄是否支持该盘爪接口"],
+        "powerType": "spider",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/magene-p515.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=50",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "magene-teo-p515",
+      "brandId": "magene",
+      "name": "TEO 碳曲柄 + P515",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "29 mm 轴心 · 碳曲柄与盘爪组合",
+      "description": "29 mm 轴心 · 碳曲柄与盘爪组合。适合同时更换曲柄的方案；预算应加上盘片、中轴和工时。",
+      "specs": [
+        ["轴心", "29 mm"],
+        ["曲柄长度", "160 / 165 / 167.5 / 170 / 172.5 / 175 mm"],
+        ["曲柄重量", "325 ±10 g（170 mm，仅曲柄）"],
+        ["Q-factor", "148 mm"],
+        ["功率计", "P515；±1% 标称精度"],
+        ["套装范围", "曲柄 + 功率盘爪；盘片、中轴另核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "适合同时更换曲柄的方案；预算应加上盘片、中轴和工时。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "从 24 mm 中轴改装时，需核对新的 T47 中轴、轴向宽度、垫片及链线，不能只换轴承规格后直接装车。"
+        }
+      ],
+      "compatibility": "从 24 mm 中轴改装时，需核对新的 T47 中轴、轴向宽度、垫片及链线，不能只换轴承规格后直接装车。",
+      "tradeoff": "适合同时更换曲柄的方案；预算应加上盘片、中轴和工时。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=52",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 2999,
+        "kind": "launch",
+        "scope": "TEO 曲柄 + P515；国行报价待核对",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "29 mm 轴心不直接适配 AD7 示例的 24 mm 中轴",
+          "325 g 不包含盘爪与盘片，不用于整套减重相减"
+        ],
+        "powerType": "spider",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"],
+        "spindleMm": 29
+      },
+      "image": "/parts/magene-teo-p515.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=52",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "magene-p715-k",
+      "brandId": "magene",
+      "name": "P715 K 双边脚踏功率计",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "KEO 锁片 · 左右脚独立测量",
+      "description": "KEO 锁片 · 左右脚独立测量。适合跨车使用或希望独立观察左右输出的读者；两种锁片版本不能混用。",
+      "specs": [
+        ["测量方式", "左右脚独立测量"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["锁片制式", "KEO"],
+        ["重量", "314 g / 一对，不含锁片"],
+        ["踏板中心距 / 堆高", "55 / 11 mm"],
+        ["范围", "0–2500 W；20–240 rpm"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["标称续航", "120 小时，磁吸充电"],
+        ["包装范围", "两只脚踏、垫圈、充电线；官网清单未列锁片"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "适合跨车使用或希望独立观察左右输出的读者；两种锁片版本不能混用。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "选用厂商推荐的 KEO 锁片；确认曲柄螺纹、鞋底间隙与锁片接触。设置实际曲柄长度。"
+        }
+      ],
+      "compatibility": "选用厂商推荐的 KEO 锁片；确认曲柄螺纹、鞋底间隙与锁片接触。设置实际曲柄长度。",
+      "tradeoff": "适合跨车使用或希望独立观察左右输出的读者；两种锁片版本不能混用。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=49",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 2999,
+        "kind": "launch",
+        "scope": "左右脚踏一对；锁片费用单列",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["K / S 是锁片版本差异，不是精度等级", "安装后按说明校准，并设置曲柄长度"],
+        "powerType": "dual-pedal",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"],
+        "cleat": "KEO",
+        "includesCleats": false
+      },
+      "image": "/parts/magene-p715-k.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=49",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "magene-p715-s",
+      "brandId": "magene",
+      "name": "P715 S 双边脚踏功率计",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "SPD-SL 锁片 · 左右脚独立测量",
+      "description": "SPD-SL 锁片 · 左右脚独立测量。适合跨车使用或希望独立观察左右输出的读者；两种锁片版本不能混用。",
+      "specs": [
+        ["测量方式", "左右脚独立测量"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["锁片制式", "SPD-SL"],
+        ["重量", "318 g / 一对，不含锁片"],
+        ["踏板中心距 / 堆高", "55 / 13 mm"],
+        ["范围", "0–2500 W；20–240 rpm"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["标称续航", "120 小时，磁吸充电"],
+        ["包装范围", "两只脚踏、垫圈、充电线；官网清单未列锁片"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "适合跨车使用或希望独立观察左右输出的读者；两种锁片版本不能混用。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "选用厂商推荐的 SPD-SL 锁片；确认曲柄螺纹、鞋底间隙与锁片接触。设置实际曲柄长度。"
+        }
+      ],
+      "compatibility": "选用厂商推荐的 SPD-SL 锁片；确认曲柄螺纹、鞋底间隙与锁片接触。设置实际曲柄长度。",
+      "tradeoff": "适合跨车使用或希望独立观察左右输出的读者；两种锁片版本不能混用。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=49",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 2999,
+        "kind": "launch",
+        "scope": "左右脚踏一对；锁片费用单列",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["K / S 是锁片版本差异，不是精度等级", "安装后按说明校准，并设置曲柄长度"],
+        "powerType": "dual-pedal",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"],
+        "cleat": "SPD-SL",
+        "includesCleats": false
+      },
+      "image": "/parts/magene-p715-s.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=49",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "sigeyi-axo-road",
+      "brandId": "sigeyi",
+      "name": "AXO 公路盘爪系列",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "按 SRAM、ROTOR、EASTON 等接口选型",
+      "description": "按 SRAM、ROTOR、EASTON 等接口选型。盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "specs": [
+        ["测量方式", "盘爪总功率"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["重量", "105–110 g / 公路盘爪，依型号"],
+        ["盘片接口", "110 BCD 四爪 / 五爪、107 BCD 等版本"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["续航 / 防护", "约 300 小时 / IP67"],
+        ["功率 / 踏频", "0–2000 W / 30–220 rpm"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先从厂商适配表选定完整 AXO 型号；相同 BCD 不代表曲柄安装接口相同。"
+        }
+      ],
+      "compatibility": "先从厂商适配表选定完整 AXO 型号；相同 BCD 不代表曲柄安装接口相同。",
+      "tradeoff": "盘爪测量总功率；显示左右平衡不等于左右脚独立测量。",
+      "source": "https://www.sigeyishop.com/cn/products-axo-cn/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "仅功率盘爪；具体曲柄接口型号待选",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.sigeyishop.com/cn/products-axo-cn/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["需填写完整 AXO 型号和曲柄型号"],
+        "powerType": "spider",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"]
+      }
+    },
+    {
+      "id": "garmin-rally-rs100",
+      "brandId": "garmin",
+      "name": "Rally RS100 单边脚踏功率计",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "SPD-SL · 测量左脚并估算总功率",
+      "description": "SPD-SL · 测量左脚并估算总功率。单边型适合一致性训练；左右发力比例变化会影响总功率估算。",
+      "specs": [
+        ["测量方式", "左侧测量 ×2；可选购右侧升级"],
+        ["锁片制式", "SPD-SL"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["重量", "328 g / 一对"],
+        ["标称续航", "最长 120 小时"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["Q-factor / 堆高", "53 或 55 mm / 12.2 mm"],
+        ["骑手体重上限", "105 kg"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "单边型适合一致性训练；左右发力比例变化会影响总功率估算。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "确认锁鞋与 SPD-SL 锁片、曲柄长度及踏板间隙；国行包装含锁片时无需重复购买。"
+        }
+      ],
+      "compatibility": "确认锁鞋与 SPD-SL 锁片、曲柄长度及踏板间隙；国行包装含锁片时无需重复购买。",
+      "tradeoff": "单边型适合一致性训练；左右发力比例变化会影响总功率估算。",
+      "source": "https://www.garmin.com.cn/products/sports-recreation/rally-rs100/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "RS100 左测量脚踏 + 右普通脚踏，国内包装",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.garmin.com.cn/products/sports-recreation/rally-rs100/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["单边测量不能直接提供独立左右功率"],
+        "powerType": "left",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"],
+        "cleat": "SPD-SL",
+        "includesCleats": true
+      }
+    },
+    {
+      "id": "4iiii-precision3plus",
+      "brandId": "4iiii",
+      "name": "PRECISION 3+ 左曲柄版本",
+      "category": "powermeters",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "左侧应变测量 · 先确认曲柄型号和净空",
+      "description": "左侧应变测量 · 先确认曲柄型号和净空。适合保留右侧牙盘的思路；不能把传感器附加重量直接与原曲柄重量相减。",
+      "specs": [
+        ["测量方式", "非驱动侧测量 ×2"],
+        ["标称精度", "±1%（厂商声明）"],
+        ["附加重量", "9 g / 传感器，不是整支曲柄"],
+        ["无线协议", "ANT+ / Bluetooth"],
+        ["电池 / 防护", "CR2032 / IPX7"],
+        ["结构高度", "传感器约 5.5 mm，仍需按模板检查间隙"],
+        ["曲柄版本", "Ride Ready 成品或 Factory Install；国内供货待核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "适合保留右侧牙盘的思路；不能把传感器附加重量直接与原曲柄重量相减。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "按厂商净空模板检查左曲柄与后下叉间隙，并核对曲柄长度、系列和安装接口。"
+        }
+      ],
+      "compatibility": "按厂商净空模板检查左曲柄与后下叉间隙，并核对曲柄长度、系列和安装接口。",
+      "tradeoff": "适合保留右侧牙盘的思路；不能把传感器附加重量直接与原曲柄重量相减。",
+      "source": "https://4iiii.com/precision-3-plus/",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "国内左曲柄具体型号与长度待询价",
+        "note": "技术参数来自厂商全球页；国内版本、服务与官方售价尚待核实，未引入外币价格。",
+        "source": "https://4iiii.com/precision-3-plus/",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "成品曲柄与原曲柄返厂加装是不同销售项目",
+          "安装模板通过之前，不能认定与 AD7 车架兼容"
+        ],
+        "powerType": "left",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"]
+      }
+    },
+    {
+      "id": "igpsport-bsc100s",
+      "brandId": "igpsport",
+      "name": "BSC100S",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "无地图的基础记录",
+      "description": "无地图的基础记录。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "2.6\" / 按键操作"],
+        ["主机重量", "约67g，不含支架"],
+        ["定位", "FULL GNSS"],
+        ["导航", "无导航"],
+        ["标称续航", "40h；实际随使用条件变化"],
+        ["充电接口", "Type-C USB"],
+        ["气压高度计", "有"],
+        ["外设接收", "蓝牙 / ANT+；功率以官网列出的 ANT+ 接收为准"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/bsc100s",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc100s",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "none",
+        "protocols": ["ANT+", "BLE"],
+        "powerProtocols": ["ANT+"]
+      },
+      "image": "/parts/igpsport-bsc100s.png",
+      "imageSource": "https://www.igpsport.cn/product/bsc100s",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-bsc100max",
+      "brandId": "igpsport",
+      "name": "BSC100Max",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "大字屏与蓝牙传感器",
+      "description": "大字屏与蓝牙传感器。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "3” / 按键操作"],
+        ["主机重量", "约68g，不含支架"],
+        ["定位", "FULL GNSS"],
+        ["导航", "无导航"],
+        ["标称续航", "40h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "仅蓝牙传感器；不支持 ANT+"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/bsc100max",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc100max",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "none",
+        "protocols": ["BLE"],
+        "powerProtocols": ["BLE"]
+      },
+      "image": "/parts/igpsport-bsc100max.png",
+      "imageSource": "https://www.igpsport.cn/product/bsc100max",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-bsc200s",
+      "brandId": "igpsport",
+      "name": "BSC200S",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "彩屏与轨迹导航",
+      "description": "彩屏与轨迹导航。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "2.4'' / 按键操作"],
+        ["主机重量", "约66g，不含支架"],
+        ["定位", "FULL GNSS"],
+        ["导航", "轨迹导航"],
+        ["标称续航", "25h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "蓝牙 / ANT+；功率以官网列出的 ANT+ 接收为准"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/bsc200s",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 369,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc200s",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "track",
+        "protocols": ["ANT+", "BLE"],
+        "powerProtocols": ["ANT+"]
+      },
+      "image": "/parts/igpsport-bsc200s.png",
+      "imageSource": "https://www.igpsport.cn/product/bsc200s",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-bsc200-pro",
+      "brandId": "igpsport",
+      "name": "BSC200 Pro",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "3 英寸彩色触屏与轨迹导航；语音需手机播放",
+      "description": "语音提示与轨迹导航。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "3.0'' / 触控"],
+        ["主机重量", "95g，不含支架"],
+        ["定位", "FULL GNSS"],
+        ["导航", "轨迹导航"],
+        ["标称续航", "25+h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "仅蓝牙传感器；不支持 ANT+"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/bsc200-pro",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 399,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc200-pro",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "track",
+        "protocols": ["BLE"],
+        "powerProtocols": ["BLE"]
+      },
+      "image": "/parts/igpsport-bsc200-pro.png",
+      "imageSource": "https://www.igpsport.cn/product/bsc200-pro",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-bsc300t",
+      "brandId": "igpsport",
+      "name": "BSC300T",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "轻量触屏与地图",
+      "description": "轻量触屏与地图。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "2.4'' / 触控"],
+        ["主机重量", "约67g，不含支架"],
+        ["定位", "FULL GNSS"],
+        ["导航", "地图导航"],
+        ["标称续航", "20h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "蓝牙 / ANT+；功率以官网列出的 ANT+ 接收为准"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/bsc300t",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 699,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc300t",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "map",
+        "protocols": ["ANT+", "BLE"],
+        "powerProtocols": ["ANT+"]
+      },
+      "image": "/parts/igpsport-bsc300t.png",
+      "imageSource": "https://www.igpsport.cn/product/bsc300t",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-bsc500",
+      "brandId": "igpsport",
+      "name": "BSC500",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "双频定位与外放导航",
+      "description": "双频定位与外放导航。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "3.3” / 触控"],
+        ["主机重量", "约107g，不含支架"],
+        ["定位", "FULL GNSS+双频GPS(L1+L5)"],
+        ["导航", "地图导航"],
+        ["标称续航", "25h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "蓝牙 / ANT+；功率以官网列出的 ANT+ 接收为准"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/bsc500",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 899,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc500",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "map",
+        "protocols": ["ANT+", "BLE"],
+        "powerProtocols": ["ANT+"]
+      },
+      "image": "/parts/igpsport-bsc500.png",
+      "imageSource": "https://www.igpsport.cn/product/bsc500",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-binavi-air",
+      "brandId": "igpsport",
+      "name": "BiNavi Air",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "紧凑的双频地图导航",
+      "description": "紧凑的双频地图导航。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "3.0” / 触控"],
+        ["主机重量", "约77g，不含支架"],
+        ["定位", "FULL GNSS+双频GPS(L1+L5)"],
+        ["导航", "地图导航"],
+        ["标称续航", "30+h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "蓝牙 / ANT+；功率以官网列出的 ANT+ 接收为准"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/binavi-air",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 1199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/binavi-air",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "map",
+        "protocols": ["ANT+", "BLE"],
+        "powerProtocols": ["ANT+"]
+      },
+      "image": "/parts/igpsport-binavi-air.png",
+      "imageSource": "https://www.igpsport.cn/product/binavi-air",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-binavi",
+      "brandId": "igpsport",
+      "name": "BiNavi领航者",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "大屏地图导航",
+      "description": "大屏地图导航。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "3.5\" / 触控"],
+        ["主机重量", "约103g，不含支架"],
+        ["定位", "FULL GNSS+双频GPS(L1+L5)"],
+        ["导航", "地图导航"],
+        ["标称续航", "35+h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "蓝牙 / ANT+；功率以官网列出的 ANT+ 接收为准"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/binavi",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 1699,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/binavi",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "map",
+        "protocols": ["ANT+", "BLE"],
+        "powerProtocols": ["ANT+"]
+      },
+      "image": "/parts/igpsport-binavi.png",
+      "imageSource": "https://www.igpsport.cn/product/binavi",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-igs800",
+      "brandId": "igpsport",
+      "name": "iGS800",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "大屏与长续航",
+      "description": "大屏与长续航。户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "specs": [
+        ["屏幕", "3.5\" / 触控"],
+        ["主机重量", "约110g，不含支架"],
+        ["定位", "FULL GNSS+双频GPS(L1+L5)"],
+        ["导航", "地图导航"],
+        ["标称续航", "50h；实际随使用条件变化"],
+        ["充电接口", "Type-C"],
+        ["气压高度计", "有"],
+        ["外设接收", "蓝牙 / ANT+；功率以官网列出的 ANT+ 接收为准"],
+        ["包装口径", "单机参考价；速度、踏频、心率、功率设备另购"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。"
+        }
+      ],
+      "compatibility": "核对传感器广播协议与码表接收协议；地图和手机关联功能以中国大陆固件及 App 为准。",
+      "tradeoff": "户外速度与轨迹可由 GNSS 提供；心率、踏频和实测功率需要相应数据源。",
+      "source": "https://www.igpsport.cn/product/igs800",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 2199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/igs800",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "显示功率字段不代表码表自身能测量功率",
+          "同一功率计的数据不会因为码表更贵而自动更准确"
+        ],
+        "navigation": "map",
+        "protocols": ["ANT+", "BLE"],
+        "powerProtocols": ["ANT+"]
+      },
+      "image": "/parts/igpsport-igs800.png",
+      "imageSource": "https://www.igpsport.cn/product/igs800",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "magene-c706",
+      "brandId": "magene",
+      "name": "C706",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "四维图新地图与双频定位",
+      "description": "四维图新地图与双频定位。导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。",
+      "specs": [
+        ["屏幕", "3.3 英寸触屏"],
+        ["操作", "触控 + 5 按键"],
+        ["导航", "地图导航"],
+        ["外设", "支持速度、踏频、心率、功率计等"],
+        ["国内软件", "顽鹿运动 App"],
+        ["版本范围", "中国官网文章对应型号；未使用海外售价"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "购买时确认国内版、地图授权、固件及传感器协议。C506 SE 的偏航重规划需要连接顽鹿运动 App。"
+        }
+      ],
+      "compatibility": "购买时确认国内版、地图授权、固件及传感器协议。C506 SE 的偏航重规划需要连接顽鹿运动 App。",
+      "tradeoff": "导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=44",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 999,
+        "kind": "launch",
+        "scope": "中国大陆单机；传感器套装另询价",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["核对购买套餐是否包含心率、速度或踏频传感器"],
+        "navigation": "map"
+      },
+      "image": "/parts/magene-c706.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=44",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "magene-c606-v2",
+      "brandId": "magene",
+      "name": "C606 V2",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "国内版地图导航与训练功能",
+      "description": "国内版地图导航与训练功能。导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。",
+      "specs": [
+        ["屏幕", "2.8 英寸触屏"],
+        ["操作", "触控 + 按键"],
+        ["导航", "地图导航"],
+        ["外设", "支持速度、踏频、心率、功率计等"],
+        ["国内软件", "顽鹿运动 App"],
+        ["版本范围", "中国官网文章对应型号；未使用海外售价"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "购买时确认国内版、地图授权、固件及传感器协议。C506 SE 的偏航重规划需要连接顽鹿运动 App。"
+        }
+      ],
+      "compatibility": "购买时确认国内版、地图授权、固件及传感器协议。C506 SE 的偏航重规划需要连接顽鹿运动 App。",
+      "tradeoff": "导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=45",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆单机；传感器套装另询价",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.magene.cn/knowledge_help_detail.html?id=45",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["核对购买套餐是否包含心率、速度或踏频传感器"],
+        "navigation": "map"
+      },
+      "image": "/parts/magene-c606-v2.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=45",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "magene-c506-se",
+      "brandId": "magene",
+      "name": "C506 SE",
+      "category": "computers",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "2.4 英寸彩屏与轨迹导航",
+      "description": "2.4 英寸彩屏与轨迹导航。导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。",
+      "specs": [
+        ["屏幕", "2.4 英寸彩屏"],
+        ["操作", "3 按键；不按海外版假定触控"],
+        ["导航", "轨迹导航"],
+        ["外设", "支持速度、踏频、心率、功率计等"],
+        ["国内软件", "顽鹿运动 App"],
+        ["版本范围", "中国官网文章对应型号；未使用海外售价"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "购买时确认国内版、地图授权、固件及传感器协议。C506 SE 的偏航重规划需要连接顽鹿运动 App。"
+        }
+      ],
+      "compatibility": "购买时确认国内版、地图授权、固件及传感器协议。C506 SE 的偏航重规划需要连接顽鹿运动 App。",
+      "tradeoff": "导航需求决定是否需要地图；训练读数首先取决于功率计和传感器。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=53",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "中国大陆单机；传感器套装另询价",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.magene.cn/knowledge_help_detail.html?id=53",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["核对购买套餐是否包含心率、速度或踏频传感器"],
+        "navigation": "track"
+      },
+      "image": "/parts/magene-c506-se.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=53",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "igpsport-cad70",
+      "brandId": "igpsport",
+      "name": "CAD70 踏频传感器",
+      "category": "sensors",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "已有可输出踏频的功率计时，通常不必再为同一辆车购买踏频传感器。",
+      "description": "已有可输出踏频的功率计时，通常不必再为同一辆车购买踏频传感器。。已有可输出踏频的功率计时，通常不必再为同一辆车购买踏频传感器。",
+      "specs": [
+        ["用途", "曲柄转速 / 踏频"],
+        ["重量", "7.8 g，含电池"],
+        ["电池", "CR2025；标称 300 小时"],
+        ["协议", "ANT+ / Bluetooth 5.0"],
+        ["防护", "IPX7"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "已有可输出踏频的功率计时，通常不必再为同一辆车购买踏频传感器。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。"
+        }
+      ],
+      "compatibility": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。",
+      "tradeoff": "已有可输出踏频的功率计时，通常不必再为同一辆车购买踏频传感器。",
+      "source": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 149,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["选购前检查现有设备是否已经提供这一数据"],
+        "sensor": "cadence",
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/igpsport-cad70.png",
+      "imageSource": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-spd70",
+      "brandId": "igpsport",
+      "name": "SPD70 速度传感器",
+      "category": "sensors",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "适合隧道、林荫或希望保留轮速数据的场景；轮周长设置错误会造成系统偏差。",
+      "description": "适合隧道、林荫或希望保留轮速数据的场景；轮周长设置错误会造成系统偏差。。适合隧道、林荫或希望保留轮速数据的场景；轮周长设置错误会造成系统偏差。",
+      "specs": [
+        ["用途", "轮速；需设轮周长"],
+        ["重量", "7.8 g，含电池"],
+        ["电池", "CR2025；标称 300 小时"],
+        ["协议", "ANT+ / Bluetooth 5.0"],
+        ["防护", "IPX7"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "适合隧道、林荫或希望保留轮速数据的场景；轮周长设置错误会造成系统偏差。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。"
+        }
+      ],
+      "compatibility": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。",
+      "tradeoff": "适合隧道、林荫或希望保留轮速数据的场景；轮周长设置错误会造成系统偏差。",
+      "source": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 149,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["选购前检查现有设备是否已经提供这一数据"],
+        "sensor": "speed",
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/igpsport-spd70.png",
+      "imageSource": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-hr50",
+      "brandId": "igpsport",
+      "name": "HR50 心率胸带",
+      "category": "sensors",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "胸带测心率，不直接测功率；干燥电极、松动佩戴和电池状态会影响读数。",
+      "description": "胸带测心率，不直接测功率；干燥电极、松动佩戴和电池状态会影响读数。。胸带测心率，不直接测功率；干燥电极、松动佩戴和电池状态会影响读数。",
+      "specs": [
+        ["测量", "ECG 电信号"],
+        ["重量", "主机 18 g 含电池；胸带 30 g"],
+        ["电池", "CR2032"],
+        ["协议", "ANT+ / BLE"],
+        ["范围", "30–240 bpm"],
+        ["胸带尺寸", "650–950 mm"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "胸带测心率，不直接测功率；干燥电极、松动佩戴和电池状态会影响读数。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。"
+        }
+      ],
+      "compatibility": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。",
+      "tradeoff": "胸带测心率，不直接测功率；干燥电极、松动佩戴和电池状态会影响读数。",
+      "source": "https://www.igpsport.cn/product/hr50",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 199,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/hr50",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["选购前检查现有设备是否已经提供这一数据"],
+        "sensor": "heart",
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/igpsport-hr50.png",
+      "imageSource": "https://www.igpsport.cn/product/hr50",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-hr70",
+      "brandId": "igpsport",
+      "name": "HR70 心率臂带",
+      "category": "sensors",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "适合偏好臂带佩戴方式的读者；光学心率在快速强度变化时可能存在延迟。",
+      "description": "适合偏好臂带佩戴方式的读者；光学心率在快速强度变化时可能存在延迟。。适合偏好臂带佩戴方式的读者；光学心率在快速强度变化时可能存在延迟。",
+      "specs": [
+        ["测量", "PPG 光学"],
+        ["重量", "20.3 g，主机与臂带"],
+        ["充电", "磁吸充电"],
+        ["协议", "ANT+ / Bluetooth 5.0"],
+        ["范围", "40–240 bpm"],
+        ["臂带尺寸", "220–330 mm"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "适合偏好臂带佩戴方式的读者；光学心率在快速强度变化时可能存在延迟。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。"
+        }
+      ],
+      "compatibility": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。",
+      "tradeoff": "适合偏好臂带佩戴方式的读者；光学心率在快速强度变化时可能存在延迟。",
+      "source": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 299,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["选购前检查现有设备是否已经提供这一数据"],
+        "sensor": "heart",
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/igpsport-hr70.png",
+      "imageSource": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "igpsport-hr80",
+      "brandId": "igpsport",
+      "name": "HR80 心率臂带",
+      "category": "sensors",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "先比较佩戴舒适度与记录需求；价格较高不代表能替代功率计。",
+      "description": "先比较佩戴舒适度与记录需求；价格较高不代表能替代功率计。。先比较佩戴舒适度与记录需求；价格较高不代表能替代功率计。",
+      "specs": [
+        ["测量", "PPG 光学心率"],
+        ["重量", "19 g，主机与臂带"],
+        ["电池", "可充电锂电池"],
+        ["协议", "蓝牙 / ANT+；支持同时连接 2 个蓝牙设备"],
+        ["范围", "30–240 bpm"],
+        ["臂带尺寸", "180–320 mm"],
+        ["防护等级", "IP67"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "先比较佩戴舒适度与记录需求；价格较高不代表能替代功率计。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。"
+        }
+      ],
+      "compatibility": "确认码表支持相同协议，并按说明安装和配对；心率值不能直接转换为准确功率。",
+      "tradeoff": "先比较佩戴舒适度与记录需求；价格较高不代表能替代功率计。",
+      "source": "https://www.igpsport.cn/product/hr80",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 399,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/hr80",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["选购前检查现有设备是否已经提供这一数据"],
+        "sensor": "heart",
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/igpsport-hr80.png",
+      "imageSource": "https://www.igpsport.cn/product/hr80",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "magene-h613",
+      "brandId": "magene",
+      "name": "H613 心率胸带",
+      "category": "sensors",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "可充电胸带 · 多设备连接",
+      "description": "可充电胸带 · 多设备连接。适合需要充电、多端记录和离线心率记录的读者。",
+      "specs": [
+        ["测量", "胸带式心率"],
+        ["主机重量", "12.4 g，不含胸带"],
+        ["续航", "标称 100 小时；关闭心率区间灯、ANT+ 连接条件"],
+        ["充电", "磁吸；75 mAh"],
+        ["连接", "ANT+；最多同时连接 3 个蓝牙设备"],
+        ["离线存储", "17 小时"],
+        ["胸带长度", "短 58–78 / 中 75–100 / 长 93–136 cm"],
+        ["防护", "IPX7"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "适合需要充电、多端记录和离线心率记录的读者。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "按胸围选择胸带长度，主机重量不能当成整套胸带重量。"
+        }
+      ],
+      "compatibility": "按胸围选择胸带长度，主机重量不能当成整套胸带重量。",
+      "tradeoff": "适合需要充电、多端记录和离线心率记录的读者。",
+      "source": "https://www.magene.cn/knowledge_help_detail.html?id=51",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "主机与指定长度胸带；国内报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.magene.cn/knowledge_help_detail.html?id=51",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["三种胸带长度需要在报价中明确"],
+        "sensor": "heart",
+        "protocols": ["ANT+", "BLE"]
+      },
+      "image": "/parts/magene-h613.png",
+      "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=51",
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+    },
+    {
+      "id": "shimano-pd-rs500",
+      "brandId": "shimano",
+      "name": "PD-RS500",
+      "category": "pedals",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "较轻的弹簧张力与较大的入锁目标",
+      "description": "较轻的弹簧张力与较大的入锁目标。锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。",
+      "specs": [
+        ["制式", "SPD-SL；单面入锁"],
+        ["重量", "320 g / 一对，标准轴"],
+        ["主体", "树脂主体 / 不锈钢接触板"],
+        ["锁片", "标准包装 SM-SH11；以国内包装清单为准"],
+        ["调节", "入锁 / 脱锁张力可调"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "SPD-SL 锁片配三孔锁鞋；不能用 LOOK KÉO 锁片。R8000 加长轴版本需单独核对重量和适合的站距。"
+        }
+      ],
+      "compatibility": "SPD-SL 锁片配三孔锁鞋；不能用 LOOK KÉO 锁片。R8000 加长轴版本需单独核对重量和适合的站距。",
+      "tradeoff": "锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。",
+      "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "标准轴锁踏一对；国行报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["若包装已含合适锁片，另购锁片仅作为替换或备件"],
+        "cleat": "SPD-SL",
+        "includesCleats": true
+      },
+      "image": "/parts/shimano-pd-rs500.jpg",
+      "imageSource": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "shimano-pd-r7000",
+      "brandId": "shimano",
+      "name": "105 PD-R7000",
+      "category": "pedals",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "公路训练用 SPD-SL 锁踏",
+      "description": "公路训练用 SPD-SL 锁踏。锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。",
+      "specs": [
+        ["制式", "SPD-SL；单面入锁"],
+        ["重量", "265 g / 一对，标准轴"],
+        ["主体", "碳复合主体"],
+        ["锁片", "标准包装 SM-SH11；以国内包装清单为准"],
+        ["调节", "入锁 / 脱锁张力可调"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "SPD-SL 锁片配三孔锁鞋；不能用 LOOK KÉO 锁片。R8000 加长轴版本需单独核对重量和适合的站距。"
+        }
+      ],
+      "compatibility": "SPD-SL 锁片配三孔锁鞋；不能用 LOOK KÉO 锁片。R8000 加长轴版本需单独核对重量和适合的站距。",
+      "tradeoff": "锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。",
+      "source": "https://bike.shimano.com/zh-CN/technologies/details/pedal-lineup-chart.html",
+      "sourceLabel": "禧玛诺中国脚踏产品表",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "标准轴锁踏一对；国行报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-R7000.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["若包装已含合适锁片，另购锁片仅作为替换或备件"],
+        "cleat": "SPD-SL",
+        "includesCleats": true
+      }
+    },
+    {
+      "id": "shimano-pd-r8000",
+      "brandId": "shimano",
+      "name": "Ultegra PD-R8000",
+      "category": "pedals",
+      "era": "R8000 系列档案",
+      "status": "classic",
+      "tagline": "标准轴与加长轴版本需分清",
+      "description": "标准轴与加长轴版本需分清。锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。",
+      "specs": [
+        ["制式", "SPD-SL；单面入锁"],
+        ["重量", "248 g / 一对，标准轴"],
+        ["主体", "碳复合主体"],
+        ["锁片", "标准包装 SM-SH11；以国内包装清单为准"],
+        ["调节", "入锁 / 脱锁张力可调"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "SPD-SL 锁片配三孔锁鞋；不能用 LOOK KÉO 锁片。R8000 加长轴版本需单独核对重量和适合的站距。"
+        }
+      ],
+      "compatibility": "SPD-SL 锁片配三孔锁鞋；不能用 LOOK KÉO 锁片。R8000 加长轴版本需单独核对重量和适合的站距。",
+      "tradeoff": "锁踏选择还取决于脚位、入锁习惯和备件供应，不只取决于重量。",
+      "source": "https://bike.shimano.com/en-SG/technologies/details/pedal-lineup-chart.html",
+      "sourceLabel": "禧玛诺脚踏产品表与中文安装手册",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "标准轴锁踏一对；国行报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-R8000.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["若包装已含合适锁片，另购锁片仅作为替换或备件"],
+        "cleat": "SPD-SL",
+        "includesCleats": true
+      }
+    },
+    {
+      "id": "shimano-sm-sh11",
+      "brandId": "shimano",
+      "name": "SM-SH11 黄色锁片",
+      "category": "cleats",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "SPD-SL · 6° 浮动",
+      "description": "SPD-SL · 6° 浮动。浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。",
+      "specs": [
+        ["锁踏制式", "SPD-SL"],
+        ["鞋底接口", "三孔"],
+        ["浮动角度", "6°"],
+        ["结构", "中心浮动"],
+        ["销售范围", "一对锁片；螺栓及垫片按包装核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "与 SPD-SL 锁踏配套；三孔鞋底不代表不同品牌的锁片可混用。"
+        }
+      ],
+      "compatibility": "与 SPD-SL 锁踏配套；三孔鞋底不代表不同品牌的锁片可混用。",
+      "tradeoff": "浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。",
+      "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁片一对，国内报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["鞋底螺栓长度需与鞋底及垫片匹配"],
+        "cleat": "SPD-SL",
+        "shoeBolts": 3
+      }
+    },
+    {
+      "id": "shimano-sm-sh12",
+      "brandId": "shimano",
+      "name": "SM-SH12 蓝色锁片",
+      "category": "cleats",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "SPD-SL · 2° 浮动",
+      "description": "SPD-SL · 2° 浮动。浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。",
+      "specs": [
+        ["锁踏制式", "SPD-SL"],
+        ["鞋底接口", "三孔"],
+        ["浮动角度", "2°"],
+        ["结构", "前端为轴的有限浮动"],
+        ["销售范围", "一对锁片；螺栓及垫片按包装核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "与 SPD-SL 锁踏配套；三孔鞋底不代表不同品牌的锁片可混用。"
+        }
+      ],
+      "compatibility": "与 SPD-SL 锁踏配套；三孔鞋底不代表不同品牌的锁片可混用。",
+      "tradeoff": "浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。",
+      "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁片一对，国内报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["鞋底螺栓长度需与鞋底及垫片匹配"],
+        "cleat": "SPD-SL",
+        "shoeBolts": 3
+      }
+    },
+    {
+      "id": "shimano-sm-sh10",
+      "brandId": "shimano",
+      "name": "SM-SH10 红色锁片",
+      "category": "cleats",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "SPD-SL · 0° 浮动",
+      "description": "SPD-SL · 0° 浮动。浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。",
+      "specs": [
+        ["锁踏制式", "SPD-SL"],
+        ["鞋底接口", "三孔"],
+        ["浮动角度", "0°"],
+        ["结构", "固定型"],
+        ["销售范围", "一对锁片；螺栓及垫片按包装核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "与 SPD-SL 锁踏配套；三孔鞋底不代表不同品牌的锁片可混用。"
+        }
+      ],
+      "compatibility": "与 SPD-SL 锁踏配套；三孔鞋底不代表不同品牌的锁片可混用。",
+      "tradeoff": "浮动角度与脱锁张力是两回事；应结合脚位和关节自然活动选择。",
+      "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁片一对，国内报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["鞋底螺栓长度需与鞋底及垫片匹配"],
+        "cleat": "SPD-SL",
+        "shoeBolts": 3
+      }
+    },
+    {
+      "id": "look-keo-grip-0",
+      "brandId": "look",
+      "name": "KÉO Grip 0° 黑色",
+      "category": "cleats",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "KÉO · 0° 浮动",
+      "description": "KÉO · 0° 浮动。不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。",
+      "specs": [
+        ["锁踏制式", "LOOK KÉO"],
+        ["鞋底接口", "三孔"],
+        ["浮动角度", "0°"],
+        ["颜色", "黑色"],
+        ["版本", "2026 新版 Grip；国内包装待核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "仅按厂商兼容说明匹配 KÉO 制式；不兼容 SPD-SL。"
+        }
+      ],
+      "compatibility": "仅按厂商兼容说明匹配 KÉO 制式；不兼容 SPD-SL。",
+      "tradeoff": "不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。",
+      "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁片一对；国内版本和报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["确认销售版本，旧款与新版 Grip 不以同一价格记录"],
+        "cleat": "KEO",
+        "shoeBolts": 3
+      }
+    },
+    {
+      "id": "look-keo-grip-45",
+      "brandId": "look",
+      "name": "KÉO Grip 4.5° 灰色",
+      "category": "cleats",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "KÉO · 4.5° 浮动",
+      "description": "KÉO · 4.5° 浮动。不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。",
+      "specs": [
+        ["锁踏制式", "LOOK KÉO"],
+        ["鞋底接口", "三孔"],
+        ["浮动角度", "4.5°"],
+        ["颜色", "灰色"],
+        ["版本", "2026 新版 Grip；国内包装待核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "仅按厂商兼容说明匹配 KÉO 制式；不兼容 SPD-SL。"
+        }
+      ],
+      "compatibility": "仅按厂商兼容说明匹配 KÉO 制式；不兼容 SPD-SL。",
+      "tradeoff": "不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。",
+      "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁片一对；国内版本和报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["确认销售版本，旧款与新版 Grip 不以同一价格记录"],
+        "cleat": "KEO",
+        "shoeBolts": 3
+      }
+    },
+    {
+      "id": "look-keo-grip-9",
+      "brandId": "look",
+      "name": "KÉO Grip 9° 红色",
+      "category": "cleats",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "KÉO · 9° 浮动",
+      "description": "KÉO · 9° 浮动。不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。",
+      "specs": [
+        ["锁踏制式", "LOOK KÉO"],
+        ["鞋底接口", "三孔"],
+        ["浮动角度", "9°"],
+        ["颜色", "红色"],
+        ["版本", "2026 新版 Grip；国内包装待核对"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "仅按厂商兼容说明匹配 KÉO 制式；不兼容 SPD-SL。"
+        }
+      ],
+      "compatibility": "仅按厂商兼容说明匹配 KÉO 制式；不兼容 SPD-SL。",
+      "tradeoff": "不同浮动角度用于不同脚位需求；不把零浮动当成更高等级。",
+      "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁片一对；国内版本和报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": ["确认销售版本，旧款与新版 Grip 不以同一价格记录"],
+        "cleat": "KEO",
+        "shoeBolts": 3
+      }
+    },
+    {
+      "id": "shimano-sh-rc503",
+      "brandId": "shimano",
+      "name": "RC503 骑行鞋",
+      "category": "shoes",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "3 孔鞋底 · 单 BOA L6C",
+      "description": "3 孔鞋底 · 单 BOA L6C。更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。",
+      "specs": [
+        ["鞋底接口", "3 孔 / 公路三孔锁片"],
+        ["闭合系统", "单 BOA L6C"],
+        ["中底", "碳纤维增强尼龙中底"],
+        ["楦型", "普通 / 宽楦，按国内尺码库存选择"],
+        ["重量范围", "按鞋码、楦型与单只 / 一双口径核对；不计入整车重量"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先按脚长、脚宽试穿，再核对鞋底孔位、锁片螺栓及安装调整范围。"
+        }
+      ],
+      "compatibility": "先按脚长、脚宽试穿，再核对鞋底孔位、锁片螺栓及安装调整范围。",
+      "tradeoff": "更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。",
+      "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC503.html",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁鞋一双，不含锁片；国行报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC503.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "鞋和锁片属于穿戴装备，不加到整车重量",
+          "商品名相近也要核对 RC503 / RC502 等代际"
+        ],
+        "shoeBolts": 3
+      }
+    },
+    {
+      "id": "shimano-sh-rc703",
+      "brandId": "shimano",
+      "name": "RC703 骑行鞋",
+      "category": "shoes",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "3 孔鞋底 · 双 BOA L6 Z",
+      "description": "3 孔鞋底 · 双 BOA L6 Z。更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。",
+      "specs": [
+        ["鞋底接口", "3 孔 / 公路三孔锁片"],
+        ["闭合系统", "双 BOA L6 Z"],
+        ["中底", "中空碳纤维中底"],
+        ["楦型", "普通 / 宽楦，部分半码"],
+        ["重量范围", "按鞋码、楦型与单只 / 一双口径核对；不计入整车重量"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先按脚长、脚宽试穿，再核对鞋底孔位、锁片螺栓及安装调整范围。"
+        }
+      ],
+      "compatibility": "先按脚长、脚宽试穿，再核对鞋底孔位、锁片螺栓及安装调整范围。",
+      "tradeoff": "更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。",
+      "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC703.html",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁鞋一双，不含锁片；国行报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC703.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "鞋和锁片属于穿戴装备，不加到整车重量",
+          "商品名相近也要核对 RC503 / RC502 等代际"
+        ],
+        "shoeBolts": 3
+      },
+      "image": "/parts/shimano-sh-rc703.jpg",
+      "imageSource": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC703.html",
+      "imageCaption": "厂商产品图"
+    },
+    {
+      "id": "shimano-sh-rx600",
+      "brandId": "shimano",
+      "name": "RX600 骑行鞋",
+      "category": "shoes",
+      "era": "官网现行资料",
+      "status": "current",
+      "tagline": "2 孔鞋底 · BOA L6K",
+      "description": "2 孔鞋底 · BOA L6K。更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。",
+      "specs": [
+        ["鞋底接口", "2 孔 / SPD"],
+        ["闭合系统", "BOA L6K"],
+        ["中底", "碳纤维增强鞋底，TPU 步行突起"],
+        ["楦型", "普通 / 宽楦；砾石用途"],
+        ["重量范围", "按鞋码、楦型与单只 / 一双口径核对；不计入整车重量"]
+      ],
+      "highlights": [
+        {
+          "title": "选择依据",
+          "text": "更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。"
+        },
+        {
+          "title": "下单前核对",
+          "text": "先按脚长、脚宽试穿，再核对鞋底孔位、锁片螺栓及安装调整范围。"
+        }
+      ],
+      "compatibility": "先按脚长、脚宽试穿，再核对鞋底孔位、锁片螺栓及安装调整范围。",
+      "tradeoff": "更高鞋底刚性不能补偿不合脚的楦型；需要经常下车步行时可考虑二孔系统。",
+      "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RX600.html",
+      "sourceLabel": "厂商规格与选型资料",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": null,
+        "kind": "pending",
+        "scope": "锁鞋一双，不含锁片；国行报价待核对",
+        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
+        "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RX600.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "notes": [
+          "鞋和锁片属于穿戴装备，不加到整车重量",
+          "商品名相近也要核对 RC503 / RC502 等代际"
+        ],
+        "shoeBolts": 2
+      }
+    },
+    {
+      "id": "magene-pes-p515-2025",
+      "brandId": "magene",
+      "name": "PES 曲柄 + P515（2025 发布版）",
+      "category": "powermeters",
+      "era": "2025 发布版",
+      "status": "current",
+      "tagline": "入门盘爪功率套装 · 2025 国内发布价",
+      "description": "将铝曲柄与 P515 盘爪一起更换的入门方案。此条记录对应 2025 发布套装，不把后续 2027 款的重量和轴心规格混入。",
+      "specs": [
+        ["测量方式", "盘爪总功率"],
+        ["曲柄材质", "铝合金 PES 曲柄"],
+        ["功率盘爪", "P515，110 BCD 四爪"],
+        ["发布时续航", "标称 240 小时；后续固件与版本可能变化"],
+        ["套装范围", "PES 曲柄 + P515；盘片、中轴和长度按国内销售 SKU 核对"],
+        ["代际边界", "2025 发布版；不同于后续标为 2027 款的配置"]
+      ],
+      "highlights": [
+        {
+          "title": "控制升级成本",
+          "text": "适合希望控制功率升级预算的读者；先获取完整套装报价，避免遗漏盘片、中轴或工时。"
+        },
+        {
+          "title": "分清代际",
+          "text": "2025 发布价不用于推断 2027 款的当前售价、重量或轴心规格。"
+        }
+      ],
+      "compatibility": "需要更换曲柄与盘爪；确认所购轴心、中轴、链线和长度。不能因为现车也是 105 就直接认定可装。",
+      "tradeoff": "适合希望控制功率升级预算的读者；先获取完整套装报价，避免遗漏盘片、中轴或工时。",
+      "source": "https://www.biketo.com/news/54448.html",
+      "sourceLabel": "迈金科技署名国内发布稿（美骑转载）",
+      "checkedAt": "2026-09-27",
+      "chinaPrice": {
+        "amount": 1599,
+        "kind": "launch",
+        "scope": "2025 PES 曲柄 + P515 套装；盘片配置另核对",
+        "note": "2025-05-04 中国大陆发布价，不代表当前成交价，也不用于后续 2027 款。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27"
+      },
+      "selection": {
+        "powerType": "spider",
+        "cadence": true,
+        "protocols": ["ANT+", "BLE"],
+        "notes": ["先取得具体年份、轴心与曲柄长度", "盘片是否包含需要单独核对"]
+      }
     }
   ]
 }

@@ -11,6 +11,16 @@ const helpers = await import(
 );
 const { newBuild, parseBuild, encodeBuild, decodeBuild, totals, gear, fitCheck, upgrade, slots } =
   helpers;
+test('domestic wheel and pedal pair weights contribute once to dream builds', () => {
+  const b = newBuild();
+  b.items.wheels.choice = 'elilee-e44';
+  b.items.wheels.weightVariant = helpers.defaultWeightVariant('elilee-e44');
+  b.items.pedals.choice = 'shimano-pd-r7000';
+  b.items.pedals.weightVariant = helpers.defaultWeightVariant('shimano-pd-r7000');
+  assert.deepEqual(totals(b, 'grams'), { value: 1625, known: 2, total: 8 });
+  b.items.wheels.choice = 'voso-ultimate-cn';
+  assert.deepEqual(totals(b, 'grams'), { value: 265, known: 1, total: 8 });
+});
 test('gear calculation uses circumference in millimeters and handles stationary or invalid input', () => {
   const g = gear(50, 25, 2100, 90);
   assert.equal(g.ratio, 2);

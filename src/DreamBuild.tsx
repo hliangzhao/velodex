@@ -5,6 +5,7 @@ import { imageUrl } from './catalog';
 import { paintsForBike } from './bikePaints';
 import { base } from './SiteChrome';
 import chinaPrices from './data/china-prices.json';
+import { priceLabel } from './upgrade-planner';
 import { drawPoster, itemName } from './BuildPoster';
 import WeightAssistant from './WeightAssistant';
 import {
@@ -385,24 +386,55 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                     </button>
                   </div>
                 )}
-                {slot !== 'frame' && build.items[slot].choice && (
-                  <small>
-                    {slot === 'wheels' && build.items[slot].choice === 'roval-rapide-clx3' ? (
-                      <>
-                        {chinaPrices.pending['roval-rapide-clx3'].note}{' '}
-                        <a
-                          href={chinaPrices.pending['roval-rapide-clx3'].source}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          国内官网 ↗
+                {slot !== 'frame' &&
+                  (() => {
+                    const product = parts.products.find((p) => p.id === build.items[slot].choice);
+                    const reference = product?.chinaPrice;
+                    if (!product || reference?.amount == null) return null;
+                    return (
+                      <div className="domestic-price">
+                        <strong>{priceLabel(product)}</strong>
+                        <small>
+                          {reference.scope} · 核对 {reference.checkedAt}
+                        </small>
+                        <small>{reference.note}</small>
+                        <a href={reference.source} target="_blank" rel="noreferrer">
+                          价格来源 ↗
                         </a>
-                      </>
-                    ) : (
-                      '国内官方售价待核验；预算留空，不使用海外价格换算。'
-                    )}
-                  </small>
-                )}
+                        <button
+                          className="light-button"
+                          onClick={() =>
+                            update(slot, {
+                              yuan: String(reference.amount! * (slot === 'tires' ? 2 : 1)),
+                            })
+                          }
+                        >
+                          采用此国内参考价{slot === 'tires' ? ' ×2 条' : ''}
+                        </button>
+                      </div>
+                    );
+                  })()}
+                {slot !== 'frame' &&
+                  build.items[slot].choice &&
+                  parts.products.find((p) => p.id === build.items[slot].choice)?.chinaPrice
+                    ?.amount == null && (
+                    <small>
+                      {slot === 'wheels' && build.items[slot].choice === 'roval-rapide-clx3' ? (
+                        <>
+                          {chinaPrices.pending['roval-rapide-clx3'].note}{' '}
+                          <a
+                            href={chinaPrices.pending['roval-rapide-clx3'].source}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            国内官网 ↗
+                          </a>
+                        </>
+                      ) : (
+                        '国内官方售价待核验；预算留空，不使用海外价格换算。'
+                      )}
+                    </small>
+                  )}
                 <label>
                   {label}预算 / ¥ <span className="optional-label">选填</span>
                   <input

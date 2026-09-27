@@ -35,9 +35,21 @@ export function createApp(catalog = loadCatalog(), { production = false } = {}) 
       return res.status(400).json({ error: '筛选参数必须是字符串' });
     if (
       category &&
-      !['all', 'wheels', 'groupsets', 'tires', 'handlebars', 'seatposts', 'saddles'].includes(
-        category,
-      )
+      ![
+        'all',
+        'wheels',
+        'groupsets',
+        'tires',
+        'handlebars',
+        'seatposts',
+        'saddles',
+        'powermeters',
+        'computers',
+        'sensors',
+        'pedals',
+        'cleats',
+        'shoes',
+      ].includes(category)
     )
       return res.status(400).json({ error: '不支持的配件分类' });
     const query = q?.trim().toLowerCase();
@@ -46,7 +58,7 @@ export function createApp(catalog = loadCatalog(), { production = false } = {}) 
         (!category || category === 'all' || p.category === category) &&
         (!brand || brand === 'all' || p.brandId === brand) &&
         (!query ||
-          `${p.name} ${p.brandId} ${parts.brands.find((b) => b.id === p.brandId)?.name}`
+          `${p.name} ${p.brandId} ${parts.brands.find((b) => b.id === p.brandId)?.name} ${p.specs.flat().join(' ')}`
             .toLowerCase()
             .includes(query)),
     );

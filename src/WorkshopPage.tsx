@@ -10,7 +10,9 @@ import './reading.css';
 const StructureLab = lazy(() => import('./StructureLab'));
 const InterfaceTool = lazy(() => import('./InterfaceTool'));
 const PowerLab = lazy(() => import('./PowerLab'));
+const UpgradeAdvisor = lazy(() => import('./UpgradeAdvisor'));
 const tabs = [
+  ['advisor', '现车升级指南'],
   ['build', '梦幻装车单'],
   ['gears', '齿比计算器'],
   ['power', '功率与骑行分析'],
@@ -23,7 +25,7 @@ export default function WorkshopPage() {
   usePageTitle('工坊');
   const [parts, setParts] = useState<PartsCatalog>();
   const [error, setError] = useState(false);
-  const tool = new URLSearchParams(location.search).get('tool') || 'build';
+  const tool = new URLSearchParams(location.search).get('tool') || 'advisor';
   const load = () => {
     setError(false);
     loadParts()
@@ -88,6 +90,14 @@ export default function WorkshopPage() {
         </div>
       ) : tool === 'fit' ? (
         <FitTool parts={parts} />
+      ) : tool === 'advisor' ? (
+        <CatalogContent>
+          {(catalog) => (
+            <Suspense fallback={<p>正在准备升级指南…</p>}>
+              <UpgradeAdvisor catalog={catalog} parts={parts} />
+            </Suspense>
+          )}
+        </CatalogContent>
       ) : (
         <CatalogContent>
           {(catalog) => <DreamBuild catalog={catalog} parts={parts} />}

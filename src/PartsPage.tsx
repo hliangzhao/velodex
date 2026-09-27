@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowUpRight, Check, CircleDot, Cog, Search, X } from 'lucid
 import type { PartsCatalog, PartCategory, Product } from './types';
 import { imageUrl, loadCatalog, loadParts } from './catalog';
 import './parts.css';
+import { priceLabel } from './upgrade-planner';
 import { SiteHeader, SiteFooter } from './SiteChrome';
 
 const categories: {
@@ -55,6 +56,49 @@ const categories: {
     headline: '坐垫形状与支撑',
     description: '从宽度、曲面和骑姿开始，核对导轨与座管夹具，再比较材料和重量。',
   },
+
+  {
+    id: 'powermeters',
+    name: '功率计',
+    en: 'POWER METERS',
+    headline: '功率计测量方式与安装',
+    description: '比较单边曲柄、盘爪与双边脚踏，核对接口、长度、锁片及完整改装费用。',
+  },
+  {
+    id: 'computers',
+    name: '码表',
+    en: 'COMPUTERS',
+    headline: '码表导航与数据记录',
+    description: '按国内版本比较屏幕、导航、续航和外设协议，区分单机价格与传感器套装。',
+  },
+  {
+    id: 'sensors',
+    name: '传感器',
+    en: 'SENSORS',
+    headline: '速度、踏频与心率',
+    description: '先确认想记录哪些数据，再看现有功率计、码表和手表是否已经提供，避免重复购买。',
+  },
+  {
+    id: 'pedals',
+    name: '锁踏',
+    en: 'PEDALS',
+    headline: '锁踏制式与脚位',
+    description: '重量、轴长、接触平台和入锁习惯一起比较，锁片与鞋底孔位需要匹配。',
+  },
+  {
+    id: 'cleats',
+    name: '锁片',
+    en: 'CLEATS',
+    headline: '锁片兼容与浮动范围',
+    description: 'SPD-SL 与 KÉO 即使同为三孔，也不能互换。浮动角度和脱锁张力是不同参数。',
+  },
+  {
+    id: 'shoes',
+    name: '锁鞋',
+    en: 'SHOES',
+    headline: '锁鞋孔位、楦型与闭合系统',
+    description: '按脚长与脚宽选择楦型，再核对锁片接口。锁鞋属于穿戴装备，不计入整车重量。',
+  },
 ];
 const base = import.meta.env.BASE_URL;
 
@@ -70,6 +114,7 @@ export default function PartsPage() {
   const [query, setQuery] = useState('');
   const [brand, setBrand] = useState('all');
   const [status, setStatus] = useState('all');
+  const [priceMode, setPriceMode] = useState('all');
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [bikes, setBikes] = useState<{ id: string; family: string; productIds: string[] }[]>([]);
   const load = () => {
@@ -99,6 +144,10 @@ export default function PartsPage() {
       .catch(() => {});
   }, []);
   const selected = catalog?.products.find((p) => p.id === selectedId);
+  const selectedHighlights =
+    selected?.highlights.filter(
+      (h) => h.text !== selected.compatibility && h.text !== selected.tradeoff,
+    ) || [];
   useEffect(() => {
     document.title = `${selected?.name || '配件图鉴'} · VÉLODEX`;
   }, [selected]);
@@ -115,6 +164,7 @@ export default function PartsPage() {
       setBrand('all');
       setQuery('');
       setStatus('all');
+      setPriceMode('all');
       setCompareIds([]);
     };
     window.addEventListener('popstate', back);
@@ -135,6 +185,7 @@ export default function PartsPage() {
     setCompareIds([]);
     setQuery('');
     setStatus('all');
+    setPriceMode('all');
     updateUrl(cat);
   };
   const openProduct = (product: Product) => {
@@ -153,15 +204,22 @@ export default function PartsPage() {
       catalog.products.some((p) => p.brandId === b.id && p.category === category),
     ) || [];
   const products =
-    catalog?.products.filter(
-      (p) =>
-        p.category === category &&
-        (brand === 'all' || p.brandId === brand) &&
-        (status === 'all' || p.status === status) &&
-        `${p.name} ${p.brandId} ${catalog.brands.find((b) => b.id === p.brandId)?.name}`
-          .toLowerCase()
-          .includes(query.toLowerCase().trim()),
-    ) || [];
+    catalog?.products
+      .filter(
+        (p) =>
+          p.category === category &&
+          (brand === 'all' || p.brandId === brand) &&
+          (status === 'all' || p.status === status) &&
+          (priceMode !== 'priced' || p.chinaPrice?.amount != null) &&
+          `${p.name} ${p.brandId} ${catalog.brands.find((b) => b.id === p.brandId)?.name} ${p.specs.flat().join(' ')}`
+            .toLowerCase()
+            .includes(query.toLowerCase().trim()),
+      )
+      .sort((a, b) =>
+        priceMode === 'ascending'
+          ? (a.chinaPrice?.amount ?? Infinity) - (b.chinaPrice?.amount ?? Infinity)
+          : 0,
+      ) || [];
   const compare = catalog?.products.filter((p) => compareIds.includes(p.id)) || [];
   const selectedBrand = catalog?.brands.find((b) => b.id === selected?.brandId);
   return (
@@ -179,7 +237,7 @@ export default function PartsPage() {
               <br />
               规格与选型参考
             </h1>
-            <p>查看主要厂商的轮组、套件和接触点配件，比较规格、结构与适用场景。</p>
+            <p>比较轮组、功率计、码表、传感器及接触点配件，查看规格、国内参考价与安装条件。</p>
           </div>
           <div className="parts-hero-art" aria-hidden="true">
             <PartDrawing category={category} />
@@ -193,7 +251,7 @@ export default function PartsPage() {
         <div className="parts-categories" role="group" aria-label="配件分类">
           {categories.map((c, i) => (
             <button key={c.id} aria-pressed={category === c.id} onClick={() => pickCategory(c.id)}>
-              <span>0{i + 1}</span>
+              <span>{String(i + 1).padStart(2, '0')}</span>
               <strong>{c.name}</strong>
               <small>{c.en}</small>
               <ArrowUpRight size={18} />
@@ -258,6 +316,24 @@ export default function PartsPage() {
                   </div>
                   <div className="part-specs">
                     <p className="part-description">{selected.description}</p>
+                    <div className="part-china-price">
+                      <strong>{priceLabel(selected)}</strong>
+                      <p>{selected.chinaPrice?.scope}</p>
+                      <small>
+                        {selected.chinaPrice?.note} 核对：
+                        {selected.chinaPrice?.checkedAt || selected.checkedAt}
+                      </small>
+                    </div>
+                    {selected.chinaPrice?.amount != null && (
+                      <a
+                        className="source-link"
+                        href={selected.chinaPrice.source}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        价格出处 ↗
+                      </a>
+                    )}
                     <dl>
                       {selected.specs.map(([k, v]) => (
                         <div key={k}>
@@ -276,7 +352,12 @@ export default function PartsPage() {
                       <ArrowUpRight size={15} />
                     </a>
                     <small className="part-date">资料核对 / {selected.checkedAt}</small>
-                    {['wheels', 'groupsets', 'tires', 'saddles'].includes(selected.category) &&
+                    <a className="source-link" href={`${base}?view=workshop&tool=advisor`}>
+                      打开现车升级指南 <ArrowUpRight size={15} />
+                    </a>
+                    {['wheels', 'groupsets', 'tires', 'saddles', 'pedals'].includes(
+                      selected.category,
+                    ) &&
                       selected.id !== 'aero111' && (
                         <a
                           className="source-link"
@@ -287,15 +368,17 @@ export default function PartsPage() {
                       )}
                   </div>
                 </div>
-                <div className="performance-notes">
-                  {selected.highlights.map((h, i) => (
-                    <div key={h.title}>
-                      <span>0{i + 1}</span>
-                      <h3>{h.title}</h3>
-                      <p>{h.text}</p>
-                    </div>
-                  ))}
-                </div>
+                {selectedHighlights.length > 0 && (
+                  <div className="performance-notes">
+                    {selectedHighlights.map((h, i) => (
+                      <div key={h.title}>
+                        <span>{String(i + 1).padStart(2, '0')}</span>
+                        <h3>{h.title}</h3>
+                        <p>{h.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 <div className="part-choices">
                   <div>
                     <span className="eyebrow">FIT THE SYSTEM</span>
@@ -344,7 +427,7 @@ export default function PartsPage() {
                   <Search size={18} />
                   <input
                     aria-label="搜索配件"
-                    placeholder="搜索厂商、产品"
+                    placeholder="搜索厂商、型号、规格"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                   />
@@ -371,6 +454,21 @@ export default function PartsPage() {
                     <option value="all">全部世代</option>
                     <option value="current">现行系列</option>
                     <option value="classic">经典档案</option>
+                  </select>
+                </label>
+              </div>
+              <div className="parts-price-toolbar">
+                <a href={`${base}?view=workshop&tool=advisor`}>计算升级预算与核对搭配 ↗</a>
+                <label>
+                  国内价格{' '}
+                  <select
+                    aria-label="国内价格筛选"
+                    value={priceMode}
+                    onChange={(e) => setPriceMode(e.target.value)}
+                  >
+                    <option value="all">全部资料</option>
+                    <option value="priced">仅有官方参考价</option>
+                    <option value="ascending">价格从低到高，待询价在后</option>
                   </select>
                 </label>
               </div>
@@ -404,6 +502,7 @@ export default function PartsPage() {
                         </div>
                         <h3>{p.name}</h3>
                         <p>{p.tagline}</p>
+                        <strong className="part-card-price">{priceLabel(p)}</strong>
                         <div className="part-card-facts">
                           {p.specs.slice(0, 2).map(([k, v]) => (
                             <span key={k}>
@@ -440,6 +539,7 @@ export default function PartsPage() {
                       setBrand('all');
                       setQuery('');
                       setStatus('all');
+                      setPriceMode('all');
                     }}
                   >
                     清除筛选
@@ -478,6 +578,16 @@ export default function PartsPage() {
                       </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                        <th>国内参考价</th>
+                        {compare.map((p) => (
+                          <td key={p.id}>
+                            {priceLabel(p)}
+                            <br />
+                            <small>{p.chinaPrice?.scope}</small>
+                          </td>
+                        ))}
+                      </tr>
                       {Array.from(new Set(compare.flatMap((p) => p.specs.map((s) => s[0])))).map(
                         (key) => (
                           <tr key={key}>
@@ -511,6 +621,26 @@ export default function PartsPage() {
 }
 
 function PartDrawing({ category }: { category: PartCategory }) {
+  if (['powermeters', 'computers', 'sensors', 'pedals', 'cleats', 'shoes'].includes(category))
+    return (
+      <svg viewBox="0 0 360 260" fill="none" aria-hidden="true">
+        <rect
+          x="105"
+          y="40"
+          width="150"
+          height="180"
+          rx="18"
+          stroke="currentColor"
+          strokeWidth="3"
+        />
+        <path
+          d="M130 90H230 M130 110H200 M130 170L157 142L183 160L227 126"
+          stroke="currentColor"
+          strokeWidth="3"
+        />
+        <circle cx="180" cy="196" r="5" fill="currentColor" />
+      </svg>
+    );
   if (category === 'handlebars' || category === 'seatposts')
     return (
       <svg viewBox="0 0 360 260" fill="none" aria-hidden="true">
