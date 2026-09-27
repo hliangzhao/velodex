@@ -175,5 +175,41 @@ test('editorial collections reference available bikes and complete, shareable co
       );
     assert.ok(story.compare.length >= 2 && story.compare.length <= 3);
     assert.equal(new Set(story.compare).size, story.compare.length);
+    if (story.guide) {
+      const { sections, sources, summary, buildIds } = story.guide;
+      assert.equal(new Set(sources.map((s) => s.id)).size, sources.length);
+      assert.equal(new Set(sections.map((s) => s.id)).size, sections.length);
+      for (const source of sources) assert.equal(new URL(source.url).protocol, 'https:');
+      for (const section of sections) {
+        assert.ok(section.paragraphs.length > 0);
+        for (const id of section.sourceIds)
+          assert.ok(
+            sources.some((s) => s.id === id),
+            id,
+          );
+      }
+      for (const table of [summary, ...sections.flatMap((s) => (s.table ? [s.table] : []))])
+        for (const row of table.rows) assert.equal(row.length, table.columns.length);
+      for (const id of buildIds)
+        assert.ok(
+          bikes.some((b) => b.id === id),
+          id,
+        );
+    }
   }
+});
+
+test('RCR guide compares current geometry without copying the RCR frame into RCR-F builds', () => {
+  const byId = (id) => bikes.find((b) => b.id === id);
+  const r = geometryFor(byId('vanrysel-rcr-105'), 'M');
+  const pro = geometryFor(byId('vanrysel-rcr-pro-force'), 'M');
+  const f = geometryFor(byId('vanrysel-rcr-f-ultegra'), 'M');
+  assert.deepEqual([r.stack, r.reach, pro.stack, pro.reach], [546, 388, 546, 388]);
+  assert.deepEqual([f.stack, f.reach, f.headTube], [535, 392, 130]);
+  assert.equal(geometryFor(byId('vanrysel-rcr-f-105'), 'L').stack, 561);
+  assert.match(byId('vanrysel-rcr-f-105').geometry.note, /551/);
+  const ids = ['vanrysel-rcr-105', 'vanrysel-rcr-pro-force', 'vanrysel-rcr-f-ultegra'];
+  const entries = ids.map((bikeId) => ({ bikeId, size: 'M' }));
+  assert.deepEqual(comparisonFromSearch(comparisonSearch(entries), bikes), entries);
+  assert.equal(byId('vanrysel-rcr-pro-force').paints.length, 2);
 });

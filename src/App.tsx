@@ -50,7 +50,9 @@ function App({ browse = false }: { browse?: boolean }) {
     new URLSearchParams(location.search).get('paint') || 'default',
   );
   const [collection, setCollection] = useState<Collection>('all');
-  const [brand, setBrand] = useState('all');
+  const [brand, setBrand] = useState(
+    () => new URLSearchParams(location.search).get('brand') || 'all',
+  );
   const [query, setQuery] = useState('');
   const [showPins, setShowPins] = useState(true);
   const [is3D, setIs3D] = useState(false);
@@ -547,7 +549,8 @@ function App({ browse = false }: { browse?: boolean }) {
                       .filter(
                         (story) =>
                           story.chapters.some((chapter) => chapter.bikeId === bike.id) ||
-                          story.compare.includes(bike.id),
+                          story.compare.includes(bike.id) ||
+                          story.guide?.buildIds.includes(bike.id),
                       )
                       .map((story) => (
                         <a key={story.id} href={`${base}?view=stories&story=${story.id}`}>

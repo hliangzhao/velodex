@@ -85,7 +85,15 @@ test('catalog API filters and returns correct records without exposing arbitrary
   const decathlon = await (await get('/api/bikes?q=' + encodeURIComponent('迪卡侬'))).json();
   assert.deepEqual(
     decathlon.bikes.map((b) => b.id),
-    ['vanrysel-edr-cf', 'vanrysel-rcr-pro'],
+    [
+      'vanrysel-edr-cf',
+      'vanrysel-rcr-pro',
+      'vanrysel-rcr-105',
+      'vanrysel-rcr-pro-force',
+      'vanrysel-rcr-f-105',
+      'vanrysel-rcr-f-ultegra',
+      'vanrysel-rcr-f-duraace',
+    ],
   );
   const meridaArchive = await (await get('/api/bikes?brand=merida&collection=classic')).json();
   assert.deepEqual(

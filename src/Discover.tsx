@@ -17,9 +17,21 @@ export function StoryCards({ catalog, limit }: { catalog: Catalog; limit?: numbe
         const bike = catalog.bikes.find((b) => b.id === story.hero)!;
         return (
           <a className="story-card" href={`${base}?view=stories&story=${story.id}`} key={story.id}>
-            <div className="story-image">
+            <div
+              className="story-image"
+              style={story.guide ? { aspectRatio: bike.imageRatio } : undefined}
+            >
               <span>{story.number}</span>
-              <img src={imageUrl(bike.image)} alt={bike.family} loading="lazy" />
+              <img
+                src={imageUrl(bike.image)}
+                alt={bike.family}
+                loading="lazy"
+                style={
+                  story.guide && bike.imageFit === 'cover'
+                    ? { objectFit: 'cover', objectPosition: bike.imagePosition, padding: 0 }
+                    : undefined
+                }
+              />
             </div>
             <div className="story-card-copy">
               <span className="eyebrow">{story.tag}</span>

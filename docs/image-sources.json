@@ -1,5 +1,5 @@
 {
-  "checkedDate": "2026-09-23",
+  "checkedDate": "2026-09-27",
   "assets": [
     {
       "id": "tarmac-sl8",
@@ -1839,6 +1839,111 @@
       "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
       "configurationSource": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
       "configurationNote": "CAMP 中国官网 GX700 的四款涂装。官方单盘 12 速资料中的齿盘齿数与单盘描述冲突，暂不录入齿数；照片上的轮胎品牌仅用于观察，不替代官方配置清单。"
+    },
+    {
+      "id": "vanrysel-rcr-105",
+      "label": "RCR / Shimano 105 Di2 / Ultra White / 极白",
+      "file": "public/bikes/vanrysel-rcr-105.jpg",
+      "width": 1800,
+      "height": 1800,
+      "background": "light gray",
+      "imageUrl": "https://contents.mediadecathlon.com/p2808972/k$cb944684f770d3afe0a6ebbeb27ef9f9/picture.jpg?format=jpg&f=1800x0",
+      "sourceUrl": "https://www.decathlon.co.uk/p/shimano-105-di2-2x12s-road-bike-power-sensor-rcr-white/355190/c227m8883075",
+      "notes": "官方整车图；未修改原图，通过展示画布裁去空白边距。",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
+      "configurationSource": "https://www.decathlon.co.uk/p/shimano-105-di2-2x12s-road-bike-power-sensor-rcr-white/355190/c227m8883075",
+      "configurationNote": "英国版 · 产品 8883075"
+    },
+    {
+      "id": "vanrysel-rcr-pro-force",
+      "label": "RCR Pro / SRAM Force AXS E1 / Raw Carbon / 裸碳黑",
+      "file": "public/bikes/vanrysel-rcr-pro-force.jpg",
+      "width": 1800,
+      "height": 1800,
+      "background": "light gray",
+      "imageUrl": "https://contents.mediadecathlon.com/p2958435/k$7cdc3868fa3cfc400ee71326ac2d101c/picture.jpg?format=jpg&f=1800x0",
+      "sourceUrl": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+      "notes": "官方整车图；未修改原图，通过展示画布裁去空白边距。",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
+      "configurationSource": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+      "configurationNote": "法国版 · 产品 8941079 / 8941080 / 8941081"
+    },
+    {
+      "id": "vanrysel-rcr-pro-force-midnight",
+      "label": "RCR Pro / SRAM Force AXS E1 / Midnight Indigo / 午夜蓝",
+      "file": "public/bikes/vanrysel-rcr-pro-force-midnight.jpg",
+      "width": 1800,
+      "height": 1800,
+      "background": "light gray",
+      "imageUrl": "https://contents.mediadecathlon.com/p2958427/k$707d401234c437201e6f0f620fc96830/picture.jpg",
+      "sourceUrl": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+      "notes": "官方整车图；未修改原图，通过展示画布裁去空白边距。",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
+      "configurationSource": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+      "configurationNote": "法国版 · 产品 8941079 / 8941080 / 8941081"
+    },
+    {
+      "id": "vanrysel-rcr-pro-force-pearl",
+      "label": "RCR Pro / SRAM Force AXS E1 / Pearl / 珍珠白粉",
+      "file": "public/bikes/vanrysel-rcr-pro-force-pearl.jpg",
+      "width": 1800,
+      "height": 1800,
+      "background": "light gray",
+      "imageUrl": "https://contents.mediadecathlon.com/p3096574/k$c5f52ef295564a26339c964966af5d0c/picture.jpg",
+      "sourceUrl": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+      "notes": "官方整车图；未修改原图，通过展示画布裁去空白边距。",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
+      "configurationSource": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+      "configurationNote": "法国版 · 产品 8941079 / 8941080 / 8941081"
+    },
+    {
+      "id": "vanrysel-rcr-f-105",
+      "label": "RCR-F Pro / Shimano 105 Di2 / Lunar Grey / 月灰",
+      "file": "public/bikes/vanrysel-rcr-f-105.jpg",
+      "width": 1800,
+      "height": 1800,
+      "background": "light gray",
+      "imageUrl": "https://contents.mediadecathlon.com/p2891598/k$031fbc032ef3257f94304c81f2e8f024/picture.jpg?format=jpg&f=1800x0",
+      "sourceUrl": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-105-di2-12v-grey/358179/c180c425m8913505",
+      "notes": "官方整车图；未修改原图，通过展示画布裁去空白边距。",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
+      "configurationSource": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-105-di2-12v-grey/358179/c180c425m8913505",
+      "configurationNote": "英国版 · 产品 8913505"
+    },
+    {
+      "id": "vanrysel-rcr-f-ultegra",
+      "label": "RCR-F Pro / Shimano Ultegra Di2 / Electric Purple / 电光紫",
+      "file": "public/bikes/vanrysel-rcr-f-ultegra.jpg",
+      "width": 1800,
+      "height": 1800,
+      "background": "light gray",
+      "imageUrl": "https://contents.mediadecathlon.com/p2903173/k$3b6deed7010d15673393e1a38a9da80c/picture.jpg?format=jpg&f=1800x0",
+      "sourceUrl": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-ultegra-di2-12v-purple/358168/c62c425m8913506",
+      "notes": "官方整车图；未修改原图，通过展示画布裁去空白边距。",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
+      "configurationSource": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-ultegra-di2-12v-purple/358168/c62c425m8913506",
+      "configurationNote": "英国版 · 产品 8913506"
+    },
+    {
+      "id": "vanrysel-rcr-f-duraace",
+      "label": "RCR-F Pro / Shimano Dura-Ace Di2 / Signature Carbon / 碳黑",
+      "file": "public/bikes/vanrysel-rcr-f-duraace.jpg",
+      "width": 1800,
+      "height": 1800,
+      "background": "light gray",
+      "imageUrl": "https://contents.mediadecathlon.com/p2903197/k$d377aa1ee37d76c2ee0e1c3abe0b852a/picture.jpg?format=jpg&f=1800x0",
+      "sourceUrl": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-dura-ace-di2-12v-signature/358149/c425m8913100",
+      "notes": "官方整车图；未修改原图，通过展示画布裁去空白边距。",
+      "visualVerified": true,
+      "reuse": "Official brand product image. No explicit open reuse license found. Attribution records the source and does not imply permission.",
+      "configurationSource": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-dura-ace-di2-12v-signature/358149/c425m8913100",
+      "configurationNote": "英国版 · 产品 8913100"
     }
   ]
 }

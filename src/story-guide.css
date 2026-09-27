@@ -1,0 +1,121 @@
+.story-guide-overview,
+.story-guide {
+  max-width: 1050px;
+  margin: 0 auto 64px;
+}
+.story-guide-meta {
+  color: #68785b;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.story-table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 24px 0;
+}
+.story-table-scroll:focus-visible {
+  outline: 2px solid #657a49;
+  outline-offset: 4px;
+}
+.story-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 590px;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: left;
+}
+.story-table caption {
+  text-align: left;
+  padding: 14px 20px;
+  background: #e7eddd;
+  font-weight: 600;
+}
+.story-table th,
+.story-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.story-table thead th {
+  color: #68785b;
+  font-weight: 500;
+  background: #f0f3e9;
+}
+.story-table tbody th {
+  font-weight: 500;
+}
+.story-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+.story-table small {
+  display: block;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #748367;
+}
+.story-table a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.story-builds .story-table {
+  min-width: 960px;
+}
+.story-guide-nav {
+  display: flex;
+  gap: 10px 24px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.story-guide-nav a:hover,
+.story-guide-citations a:hover {
+  text-decoration: underline;
+}
+.story-guide-section {
+  margin: 0 0 52px;
+  scroll-margin-top: 100px;
+}
+.story-guide-section h2 {
+  font-size: clamp(22px, 2.5vw, 29px);
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+.story-guide-section > p {
+  max-width: 840px;
+  font-size: 15px;
+  line-height: 2.1;
+  color: #526247;
+  margin-bottom: 18px;
+}
+.story-guide-citations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  color: #6e7d61;
+  font-size: 11px;
+  line-height: 1.8;
+}
+#series-overview {
+  scroll-margin-top: 100px;
+}
+@media (max-width: 600px) {
+  .story-guide-overview,
+  .story-guide {
+    margin-bottom: 42px;
+  }
+  .story-table th,
+  .story-table td {
+    padding: 12px;
+  }
+  .story-guide-section > p {
+    font-size: 14px;
+  }
+}

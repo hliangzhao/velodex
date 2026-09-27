@@ -195,5 +195,181 @@
       }
     ],
     "closing": "比赛适用性应以赛事规则与具体装车设定核对。此专题介绍观察方法，不提供姿态拟合或跨车型风阻排名。"
+  },
+  {
+    "id": "vanrysel-rcr-guide",
+    "number": "07",
+    "tag": "VAN RYSEL / 车系详解",
+    "title": "Van Rysel RCR、RCR Pro 与 RCR-F Pro 怎么选",
+    "subtitle": "从命名、碳布铺层到几何与整车配置，认识迪卡侬的竞赛公路车",
+    "hero": "vanrysel-rcr-f-ultegra",
+    "intro": "RCR 家族的名称容易让人误以为它是一条从低到高的配置阶梯。实际上，RCR 与 RCR Pro 的区别主要在同一设计下的碳布铺层，RCR-F Pro 则采用另一套更偏重气动的车架。先确认车架平台，再看套件、轮组和把组，才能读懂同样写着 Pro 的整车为何各有侧重。",
+    "compare": ["vanrysel-rcr-105", "vanrysel-rcr-pro-force", "vanrysel-rcr-f-ultegra"],
+    "chapters": [
+      {
+        "bikeId": "vanrysel-rcr-105",
+        "label": "RCR / RCR-R",
+        "title": "RCR 保留竞赛车架的基本设计",
+        "text": "普通 RCR 使用高模量碳纤维，和 Pro 共享外形设计思路。这里收录的 105 Di2 版已经配备碳轮与功率计，并不是休闲几何的入门车。升级轮组或变速系统可以改变整车表现，但不会改变车架本身的铺层。",
+        "look": "观察重点：独立把立、下沉后上叉，以及车架上的 RCR 标识"
+      },
+      {
+        "bikeId": "vanrysel-rcr-pro-force",
+        "label": "RCR PRO / RCR-R PRO",
+        "title": "RCR Pro 的升级藏在碳纤维铺层里",
+        "text": "Pro 采用不同的纤维组合，品牌强调在受力区域提高刚性并减轻重量。外形相近，照片很难直接证明这种区别。新收录的 Force AXS E1 版搭配 Zipp 303 SW；原有 Ultegra 版使用 Swiss Side 轮组，同属 Pro，却是两套不同的零售配置。",
+        "look": "观察重点：把立与车把仍为分体结构；Force E1 有三款涂装可切换"
+      },
+      {
+        "bikeId": "vanrysel-rcr-f-ultegra",
+        "label": "RCR-F PRO",
+        "title": "RCR-F Pro 把气动设计放在更突出的位置",
+        "text": "RCR-F 的头管、下管和座管轮廓更深，配套 DEDA 一体把。它与 Swiss Side 联合开发，面向平路、起伏路和高速竞赛。这里的 Ultegra 版与 105 版采用同一车架平台；Dura-Ace 版进一步更换套件、功率计、轮组及坐垫。",
+        "look": "观察重点：加深的管型、一体把、62 mm 轮组，以及前后不同的轮胎"
+      }
+    ],
+    "closing": "默认对比 RCR 105 Di2、RCR Pro Force E1 与 RCR-F Pro Ultegra，三款均选 M 码。对比台可以分别更换尺码并叠加几何；零售配置与车队用车不能直接画等号。",
+    "guide": {
+      "checkedAt": "2026-09-27",
+      "minutes": 8,
+      "summary": {
+        "caption": "三个系列的关系",
+        "columns": ["常用名称", "当前官网名称", "主要区别"],
+        "rows": [
+          ["RCR", "RCR-R", "高模量碳架，全能竞赛取向"],
+          ["RCR Pro", "RCR-R Pro", "同一外形设计下采用 Pro 铺层"],
+          ["RCR-F Pro", "RCR-F Pro", "独立的气动平台，管型与前端不同"]
+        ]
+      },
+      "sections": [
+        {
+          "id": "names",
+          "title": "RCR-R 是什么，Pro 又指什么",
+          "paragraphs": [
+            "目前 Van Rysel 英国官网将全能公路系列列为 RCR-R 与 RCR-R Pro，部分地区的商品标题仍写 RCR 与 RCR Pro。本专题将这些名称对应展示；仅凭名称里多出的一个 R，不能判断车架换代，也不能推断套件年份。",
+            "普通 RCR 和 RCR Pro 的差别在碳纤维材料与铺层安排。官方给出的 M 码含涂装车架参考重量分别是 830 g 和 790 g，但也注明涂装会影响重量。因此，整车之间几百克的差距不能全部归因于这 40 g 的车架差异。",
+            "RCR-F Pro 则是另一套车架设计。105 Di2、Ultegra Di2 和 Dura-Ace Di2 都可以装在这套 Pro 车架上；105 版的套件定位较低，并不意味着它使用普通 RCR 车架。"
+          ],
+          "sourceIds": ["range", "layup", "r105", "force", "f105"]
+        },
+        {
+          "id": "geometry",
+          "title": "同为 M 码，前端高度仍有差别",
+          "paragraphs": [
+            "按本次核对的当前产品几何图，RCR 的 M 码 Stack / Reach 为 546 / 388 mm，RCR-F 为 535 / 392 mm。相对五通，RCR-F 的头管顶端低 11 mm、向前多 4 mm。这是车架参考点的差异，不能直接当作手握位置的变化。",
+            "实际把位还受头碗盖、垫圈、把立角度和长度、弯把 Reach 以及手变安装位置影响。RCR-F 的一体把限制了车把与把立独立更换的自由度，买车前应一起核对把宽和把立长度。DEDA 标称把宽还涉及外侧与中对中的测量差别。",
+            "资料版本也会影响比较：图鉴原有 RCR Pro Ultegra 按 2024 手册记录，M 码为 542 / 389 mm；本次新增 RCR 与 Force E1 则采用当前图。RCR-F 的 L 码 Stack 在旧技术手册中为 551 mm、当前产品图为 561 mm。本次按当前图收录并保留差异说明，不能据此推断具体改款。"
+          ],
+          "sourceIds": ["rgeo", "fgeo", "fmanual"],
+          "table": {
+            "caption": "当前官方几何图中的 M 码，长度单位 mm",
+            "columns": ["尺寸", "RCR / RCR Pro 当前图", "RCR-F Pro 当前图"],
+            "rows": [
+              ["Stack", "546", "535"],
+              ["Reach", "388", "392"],
+              ["头管长度", "147", "130"],
+              ["后下叉长度", "410", "410"],
+              ["轴距", "986", "986"]
+            ]
+          }
+        },
+        {
+          "id": "aero",
+          "title": "怎样理解节省 13 W 的宣传数据",
+          "paragraphs": [
+            "Van Rysel 宣称，在 45 km/h 的对比测试中，RCR-F 相比 RCR Pro 节省 13 W；同时给出头管刚性提高 7% 的数据。这两个指标回答不同的问题：一个关于空气阻力，一个关于特定部位的结构变形。头管刚性提高 7%，并不意味着踩踏效率或速度提高 7%。",
+            "13 W 也不是装车后在任何速度下都能获得的固定收益。骑手姿态、轮组、轮胎、附件和侧风都会影响结果。当前宣传页没有完整列出全部可复现条件，本站将其作为品牌的开发参考，不拿它给不同整车版本排名。",
+            "在无风、空气密度和阻力面积不变等假设下，克服气动阻力所需的功率随车速的三次方变化。这个关系能解释为何高速时更值得重视气动；有风时还要分别考虑相对风速与对地速度，不能把品牌的 13 W 直接套成个人节省值。"
+          ],
+          "sourceIds": ["faero"]
+        },
+        {
+          "id": "builds",
+          "title": "套件名称之外，还要看哪些配置",
+          "paragraphs": [
+            "下面的配置表按具体地区和产品编号整理。RCR-F 的 105 与 Ultegra 两版都配 HADRON² 625 Classic；Dura-Ace 版则换为 Ultimate 625、Shimano 双侧功率计和 Vento Argo 00 坐垫。只比较套件等级，会漏掉这些影响体验与维护成本的变化。",
+            "RCR Pro Force E1 使用 Zipp 303 SW 和 30 mm 外胎，齿比为 48/35 搭配 10–36T；本文的 Shimano 版本为 52/36 搭配 11–34T。Force 版的最低档比为 0.972，后者为 1.059，低约 8.2%；在同样轮径下更容易以较高踏频应付陡坡，但实际需要还取决于骑手能力和路线。",
+            "Zipp 303 SW 采用无钩轮圈，需按照厂家清单核对轮胎和胎压；本条产品页要求不超过 5 bar。RCR-F 的 Shimano 版本使用有钩轮圈，并配前 26 mm Aero 111、后 28 mm GP 5000 S TR。胎宽、轮圈结构和气压应一起核对。",
+            "表中的整车重量均为厂家标称的 M 码真空胎配置，保留各产品自身口径，不作为本站实测排名。本次未取得可核验的中国大陆官方售价，因此没有把英镑或欧元换算成人民币，也不将海外配置标成国行版本。"
+          ],
+          "sourceIds": ["r105", "force", "f105", "fultegra", "fdura"]
+        },
+        {
+          "id": "choice",
+          "title": "按自己的路线和骑姿选择",
+          "paragraphs": [
+            "如果想用较完整的原配装备参加训练、俱乐部骑行或业余比赛，可以先看 RCR 105 Di2，确认尺码和把位是否适合。Pro 铺层对你是否值得，应该连同整套轮组、轮胎、接触点以及实际报价一起比较。",
+            "长爬坡较多、路线变化较大时，RCR Pro 的全能取向值得考虑；经常在平路和起伏路进行高速团骑、冲刺或比赛，则可以重点比较 RCR-F Pro。它们都采用竞赛几何，长距离舒适性仍取决于合适的骑姿与轮胎设置。",
+            "如果需要较高的前端或更宽泛的长途使用空间，可以同时查看图鉴里的 EDR CF。不要为了某个系列名或车队涂装勉强接受不合适的把位；先确定身体能持续保持的姿态，再比较重量与气动收益。"
+          ],
+          "sourceIds": ["range", "rgeo", "fgeo"]
+        }
+      ],
+      "buildIds": [
+        "vanrysel-rcr-105",
+        "vanrysel-rcr-pro",
+        "vanrysel-rcr-pro-force",
+        "vanrysel-rcr-f-105",
+        "vanrysel-rcr-f-ultegra",
+        "vanrysel-rcr-f-duraace"
+      ],
+      "sources": [
+        {
+          "id": "range",
+          "title": "Van Rysel 当前竞赛公路系列",
+          "url": "https://www.vanrysel.com/en-GB/browse/race-road-bikes"
+        },
+        {
+          "id": "layup",
+          "title": "Van Rysel 美国 · RCR 与 RCR Pro 的铺层",
+          "url": "https://www.vanryselus.com/blogs/news/introducing-rcr-and-rcr-pro"
+        },
+        {
+          "id": "r105",
+          "title": "迪卡侬英国 · RCR 105 Di2 · 8883075",
+          "url": "https://www.decathlon.co.uk/p/shimano-105-di2-2x12s-road-bike-power-sensor-rcr-white/355190/c227m8883075"
+        },
+        {
+          "id": "force",
+          "title": "迪卡侬法国 · RCR Pro Force E1 · 8941079",
+          "url": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079"
+        },
+        {
+          "id": "f105",
+          "title": "迪卡侬英国 · RCR-F Pro 105 · 8913505",
+          "url": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-105-di2-12v-grey/358179/c180c425m8913505"
+        },
+        {
+          "id": "fultegra",
+          "title": "迪卡侬英国 · RCR-F Pro Ultegra · 8913506",
+          "url": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-ultegra-di2-12v-purple/358168/c62c425m8913506"
+        },
+        {
+          "id": "fdura",
+          "title": "迪卡侬英国 · RCR-F Pro Dura-Ace · 8913100",
+          "url": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-dura-ace-di2-12v-signature/358149/c425m8913100"
+        },
+        {
+          "id": "rgeo",
+          "title": "Van Rysel 当前 RCR 几何图",
+          "url": "https://contents.mediadecathlon.com/p2926284/k$70e3c15ca2d6a7c6435ef9719778d3df/2926284_default.jpg"
+        },
+        {
+          "id": "fgeo",
+          "title": "Van Rysel 当前 RCR-F 几何图",
+          "url": "https://contents.mediadecathlon.com/p2908039/k$65d3eff3dd1b010a6d394250a9477cb2/2908039_default.jpg"
+        },
+        {
+          "id": "faero",
+          "title": "Van Rysel · RCR-F 气动开发",
+          "url": "https://www.vanrysel.com/en-GB/browse/rcr-f"
+        },
+        {
+          "id": "fmanual",
+          "title": "Van Rysel · RCR-F 技术手册（2025-01-29）",
+          "url": "https://cdn.decathlon-share.com/product-user-guide/3e19111440061/doc-source-rcr-f-en-2025-01-29.pdf"
+        }
+      ]
+    }
   }
 ]

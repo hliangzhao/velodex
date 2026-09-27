@@ -29,24 +29,26 @@ VÉLODEX 是这份兴趣的延伸：把喜欢的车、想弄懂的设计和值�
 
 | 整车品牌 | 整车车型 | 外观与涂装 | 核心配件 | 职业车队 | 车手焦点 |
 | :------: | :------: | :--------: | :------: | :------: | :------: |
-|  **24**  |  **79**  |  **119**   |  **34**  |  **16**  |  **16**  |
+|  **24**  |  **84**  |  **126**   |  **34**  |  **16**  |  **16**  |
 
-外观数包含每款车型的默认配色与已收录的额外涂装；其中 23 款车型支持多涂装切换。配件来自 20 个厂商。
+外观数包含每款车型的默认配色与已收录的额外涂装；其中 24 款车型支持多涂装切换。配件来自 20 个厂商。
 
 近期补充 10 款中国大陆官网车型：喜德盛 / X-LAB RS8、RS9、2026 AD7、AD350、AD600、GT8，以及 CAMP ACE III 105、ACE QED、SR5 ETS、GX700，共 28 种外观。国内版与海外版分别建档，标注人民币官方整车价格；RS8、RS9 和国内版 AD7 可查看完整官方几何数据。搜索支持地区和涂装名称，例如“中国大陆”“唐三彩”“星黛紫”。[查看这批车型的资料与核对说明](docs/mainland-catalog.md)。
 
 配件新增银贝斯 HYPER 3、Vision METRON RS、迈金 QED、Force E1 等 10 款产品；车队新增快步、巴林、Jayco、Q36.5、FDJ UNITED–SUEZ 和 SD Worx–Protime。车队与车手页支持男子 / 女子组别筛选，车手照片保留作者、许可与拍摄年份。[查看本批资料与版本说明](docs/peloton-expansion.md)。
 
-| 去哪里                                                      | 可以做什么                                                                                     |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [发现](https://hliangzhao.me/velodex/)                      | 浏览精选车型与专题，或随机查看一款车。                                                         |
-| [整车图鉴](https://hliangzhao.me/velodex/?view=bikes)       | 按品牌或年份浏览，结合骑行定位、在售 / 经典等标签筛选。                                        |
-| [配件图鉴](https://hliangzhao.me/velodex/?view=parts)       | 了解轮组、变速系统、轮胎、车把、座管与坐垫，同类产品并排比较。                                 |
-| [专题与世代谱](https://hliangzhao.me/velodex/?view=stories) | 从 Tarmac 世代、国产品牌、耐力与砾石、轻量几何、铝架和 TT 前端六篇选集出发，沿设计变化往回看。 |
-| [车队与车手](https://hliangzhao.me/velodex/?view=teams)     | 认识职业赛场上的人、车队与器材合作，读带日期和出处的资料。                                     |
-| [整车对比](https://hliangzhao.me/velodex/?view=compare)     | 最多三款车分别选尺码，比较配置，以相同毫米比例叠加车架几何。                                   |
-| [我的车库](https://hliangzhao.me/velodex/?view=garage)      | 按涂装收藏“想拥有 / 已拥有 / 只是喜欢”的车，留下笔记，导入或导出备份。                         |
-| [骑友工坊](https://hliangzhao.me/velodex/?view=workshop)    | 做装车单、算齿比、核对接口、观察结构，探索自己的骑行数据。                                     |
+新增 [Van Rysel RCR 家族专题](https://hliangzhao.me/velodex/?view=stories&story=vanrysel-rcr-guide)，区分 RCR / RCR-R、RCR Pro / RCR-R Pro 与 RCR-F Pro 的命名、铺层、几何和配置。新增五款整车，Force E1 版支持三种涂装，专题提供六套零售配置速查与三车几何对比。[资料核对说明](docs/vanrysel-rcr.md)。
+
+| 去哪里                                                      | 可以做什么                                                                                        |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [发现](https://hliangzhao.me/velodex/)                      | 浏览精选车型与专题，或随机查看一款车。                                                            |
+| [整车图鉴](https://hliangzhao.me/velodex/?view=bikes)       | 按品牌或年份浏览，结合骑行定位、在售 / 经典等标签筛选。                                           |
+| [配件图鉴](https://hliangzhao.me/velodex/?view=parts)       | 了解轮组、变速系统、轮胎、车把、座管与坐垫，同类产品并排比较。                                    |
+| [专题与世代谱](https://hliangzhao.me/velodex/?view=stories) | 七篇选集涵盖 Tarmac 世代、国产品牌、耐力与砾石、轻量几何、铝架、TT，以及 Van Rysel RCR 家族详解。 |
+| [车队与车手](https://hliangzhao.me/velodex/?view=teams)     | 认识职业赛场上的人、车队与器材合作，读带日期和出处的资料。                                        |
+| [整车对比](https://hliangzhao.me/velodex/?view=compare)     | 最多三款车分别选尺码，比较配置，以相同毫米比例叠加车架几何。                                      |
+| [我的车库](https://hliangzhao.me/velodex/?view=garage)      | 按涂装收藏“想拥有 / 已拥有 / 只是喜欢”的车，留下笔记，导入或导出备份。                            |
+| [骑友工坊](https://hliangzhao.me/velodex/?view=workshop)    | 做装车单、算齿比、核对接口、观察结构，探索自己的骑行数据。                                        |
 
 ## 车型资料与查看方式
 

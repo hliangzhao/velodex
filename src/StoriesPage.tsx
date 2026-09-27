@@ -6,6 +6,8 @@ import { imageUrl } from './catalog';
 import { comparisonSearch } from './experience';
 import { StoryCards } from './Discover';
 import { CompareButton, SaveButton } from './Library';
+import StoryGuide, { GuideOverview } from './StoryGuide';
+import './story-guide.css';
 
 export default function StoriesPage() {
   const storyId = new URLSearchParams(location.search).get('story');
@@ -34,7 +36,8 @@ export default function StoriesPage() {
                 </span>
                 <p>{story.intro}</p>
               </div>
-              <div className="story-chapters">
+              {story.guide && <GuideOverview guide={story.guide} />}
+              <div className="story-chapters" id="series-overview">
                 {story.chapters.map((chapter, index) => {
                   const bike = catalog.bikes.find((b) => b.id === chapter.bikeId)!;
                   return (
@@ -45,7 +48,21 @@ export default function StoriesPage() {
                           <span>{chapter.label}</span>
                         </div>
                         <a href={`${base}?bike=${bike.id}`}>
-                          <img src={imageUrl(bike.image)} alt={bike.name} loading="lazy" />
+                          <img
+                            src={imageUrl(bike.image)}
+                            alt={bike.name}
+                            loading="lazy"
+                            style={
+                              story.guide && bike.imageFit === 'cover'
+                                ? {
+                                    height: 'auto',
+                                    aspectRatio: bike.imageRatio,
+                                    objectFit: 'cover',
+                                    objectPosition: bike.imagePosition,
+                                  }
+                                : undefined
+                            }
+                          />
                         </a>
                         <div>
                           <SaveButton bike={bike} />
@@ -75,6 +92,7 @@ export default function StoriesPage() {
                   );
                 })}
               </div>
+              {story.guide && <StoryGuide guide={story.guide} catalog={catalog} />}
               <div className="story-end">
                 <h2>对比本专题车型</h2>
                 <p>{story.closing}</p>

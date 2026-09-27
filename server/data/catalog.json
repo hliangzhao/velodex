@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-09-27",
   "collectionNote": "“人气精选”为编辑选集，涵盖公路竞赛与砾石探索，不代表销量或实时热度排名。",
   "brands": [
     {
@@ -5610,11 +5610,11 @@
     {
       "id": "vanrysel-rcr-pro",
       "brandId": "vanrysel",
-      "name": "Van Rysel RCR-R Pro",
+      "name": "Van Rysel RCR Pro / RCR-R Pro Ultegra Di2",
       "family": "RCR-R Pro",
       "edition": "英国版 · 产品 8929970",
       "kind": "全能公路",
-      "description": "迪卡侬的竞赛旗舰路线：扁平上管、宽下管与下沉后上叉，配 Ultegra Di2 和 Swiss Side 50 mm 碳轮。裸碳涂装保留了车架本来的纹理。",
+      "description": "RCR Pro（现行名称 RCR-R Pro）的 Ultegra Di2 零售配置，配 Swiss Side 50 mm 碳轮与 Inpeak 功率计。裸碳涂装保留纤维纹理；本条几何仍按已注明的 2024 官方手册记录。",
       "color": "Raw Carbon / 裸碳黑",
       "colorHex": "#3d3e3b",
       "weight": "7.35 kg",
@@ -5629,7 +5629,7 @@
       "imageRatio": 1.6,
       "source": "https://www.decathlon.co.uk/p/road-bike-rcr-r-pro-shimano-ultegra-di2-with-power-sensor-raw-carbon/360908/c382c382m8929970",
       "sourceLabel": "迪卡侬 Van Rysel 官方 · 英国版 · 产品 8929970",
-      "checkedAt": "2026-09-20",
+      "checkedAt": "2026-09-27",
       "hasPowerMeter": true,
       "imagePosition": "50% 55%",
       "components": [
@@ -5752,11 +5752,11 @@
           "english": "HANDLEBAR / COCKPIT",
           "x": 70,
           "y": 28,
-          "title": "原厂车把 · 型号待补",
-          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "title": "DEDA Superzero RS / Superbox EVO",
+          "description": "碳把与独立把立。官方页面的把宽测量文字有混用，订购时需核对外侧与中对中口径。",
           "specs": [
-            ["配置记录", "当前收录版本的具体型号尚未核实"],
-            ["尺寸", "宽度、Reach、Drop 待原厂资料补充"]
+            ["把立 XS → XL", "80 / 90 / 100 / 110 / 120 mm"],
+            ["把宽", "官网列 400 / 420 / 440 mm，测量口径待核对"]
           ]
         },
         {
@@ -5765,22 +5765,22 @@
           "english": "SEATPOST",
           "x": 38,
           "y": 26,
-          "title": "原厂座管 · 型号待补",
-          "description": "按本条目所注明的官方版本记录；尺寸与配置可能随尺码或批次变化。",
+          "title": "RCR 碳纤维座管",
+          "description": "RCR 平台专用座管，调整时应按对应车架手册核对插入深度。",
           "specs": [
-            ["配置记录", "当前收录版本的具体型号尚未核实"],
-            ["尺寸", "截面、长度及后飘待原厂资料补充"]
+            ["材质", "碳纤维"],
+            ["XS / S / M / L / XL", "316 / 331 / 356 / 406 / 406 mm"]
           ]
         },
         {
           "id": "saddle",
           "name": "坐垫",
           "english": "SADDLE",
-          "title": "原厂坐垫 · 型号待补",
-          "description": "坐垫选择要结合宽度、支撑形状和骑姿；价格、重量或是否使用 3D 打印填充，都不能单独决定适合程度。",
+          "title": "Fizik Vento Argo R5 / Antares R5",
+          "description": "官网明确说明坐垫会随版本变化；图片不能保证交付批次。",
           "specs": [
-            ["原配型号", "原厂坐垫 · 型号待补"],
-            ["尺寸与导轨", "按具体尺码、批次及原厂夹具核对"]
+            ["官网列名", "Vento Argo R5 或 Antares R5"],
+            ["标注宽度", "140 mm，实际版本需核对"]
           ],
           "x": 36,
           "y": 17
@@ -22178,6 +22178,1378 @@
         "source": "https://www.campbicycle.com/cn/gravel_92368/gx700.html",
         "limit": "未收录同一骑手、速度、偏航角和装配条件下的风洞数据；不据管型或配置推算节省瓦数。"
       }
+    },
+    {
+      "id": "vanrysel-rcr-105",
+      "brandId": "vanrysel",
+      "name": "Van Rysel RCR / RCR-R Shimano 105 Di2",
+      "family": "RCR",
+      "build": "Shimano 105 Di2",
+      "edition": "英国版 · 产品 8883075",
+      "modelYear": null,
+      "yearNote": "官方未明确标注这套零售配置的车型年；产品编号用于区分版本。",
+      "kind": "全能公路",
+      "description": "RCR（现行名称 RCR-R）的普通高模量碳架版本，配 105 Di2、HADRON Classic 470 碳轮和 Inpeak 单侧功率计。与 Pro 的主要区别在车架铺层，而不只是套件。",
+      "collections": ["current", "popular"],
+      "image": "/bikes/vanrysel-rcr-105.jpg",
+      "imageCredit": "迪卡侬 Van Rysel",
+      "imageSource": "https://contents.mediadecathlon.com/p2808972/k$cb944684f770d3afe0a6ebbeb27ef9f9/picture.jpg?format=jpg&f=1800x0",
+      "imageRatio": 1.5,
+      "imageFit": "cover",
+      "imagePosition": "50% 55%",
+      "imageNote": "对应所列地区产品的官方展示图；装配按该产品配置表记录。",
+      "color": "Ultra White / 极白",
+      "colorHex": "#ececea",
+      "source": "https://www.decathlon.co.uk/p/shimano-105-di2-2x12s-road-bike-power-sensor-rcr-white/355190/c227m8883075",
+      "sourceLabel": "迪卡侬官方 · 英国版 · 产品 8883075",
+      "checkedAt": "2026-09-27",
+      "weight": "8.0 kg",
+      "weightNote": "官方标称 · M 码真空胎配置；各涂装及生产批次可能不同，非本站实测。",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": true,
+      "material": "RCR 高模量碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 509,
+            "reach": 378,
+            "headAngle": 71,
+            "seatAngle": 75.5,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 109,
+            "seatTube": 453
+          },
+          {
+            "size": "XS",
+            "stack": 515,
+            "reach": 383,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 70,
+            "headTube": 114,
+            "seatTube": 463
+          },
+          {
+            "size": "S",
+            "stack": 531,
+            "reach": 386,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 131,
+            "seatTube": 473
+          },
+          {
+            "size": "M",
+            "stack": 546,
+            "reach": 388,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 147,
+            "seatTube": 483
+          },
+          {
+            "size": "L",
+            "stack": 572,
+            "reach": 396,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1002,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 174,
+            "seatTube": 513
+          },
+          {
+            "size": "XL",
+            "stack": 596,
+            "reach": 408,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1022,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 199,
+            "seatTube": 543
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://contents.mediadecathlon.com/p2926284/k$70e3c15ca2d6a7c6435ef9719778d3df/2926284_default.jpg",
+        "sourceLabel": "Van Rysel 官方 · 当前产品页几何图",
+        "note": "按当前官方几何图逐尺码录入，长度为 mm、角度为 °；图中含 XXS，不代表该配置当前供应此尺码。本图 M 码为 546 / 388 mm；旧版 2024 RCR 手册为 542 / 389 mm。图鉴保留旧 Ultegra 条目的历史手册数据，不将两份表混合。"
+      },
+      "aero": {
+        "title": "与 ONERA 合作的气动开发",
+        "description": "品牌对车架和前叉开展风洞开发，介绍的主要偏航角范围为 −15° 至 +15°。这些设计信息不等于本网站获得了完整风洞数据。",
+        "source": "https://www.decathlon.co.uk/p/shimano-105-di2-2x12s-road-bike-power-sensor-rcr-white/355190/c227m8883075",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "RCR 高模量碳纤维",
+          "description": "RCR 与 RCR Pro 共用外形设计思路，以碳纤维铺层区分等级。普通 RCR 换装高等级套件后，仍是原来的车架版本。",
+          "specs": [
+            ["车架标称重量", "830 g · M 码含涂装"],
+            ["前叉", "官方正文 380 g、规格栏 350 g，重量口径待核对"],
+            ["轮胎间隙", "产品详情称 33 mm；旧手册为 32 mm，按具体车架确认"],
+            ["五通", "未在本条配置页统一确认"]
+          ],
+          "x": 56,
+          "y": 53
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "DEDA Superzero RS / Superbox EVO",
+          "description": "碳把与独立把立。官方页面的把宽测量文字有混用，订购时需核对外侧与中对中口径。",
+          "specs": [
+            ["把立 XS → XL", "80 / 90 / 100 / 110 / 120 mm"],
+            ["把宽", "官网列 400 / 420 / 440 mm，测量口径待核对"]
+          ],
+          "x": 68,
+          "y": 27
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "RCR 碳纤维座管",
+          "description": "RCR 平台专用座管，调整时应按对应车架手册核对插入深度。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["后飘", "15 mm"]
+          ],
+          "x": 35,
+          "y": 30
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Van Rysel Road Light",
+          "description": "迪卡侬短鼻公路坐垫。",
+          "specs": [
+            ["宽度", "140 mm"],
+            ["版本", "按所列零售配置，非车队特装"]
+          ],
+          "x": 33,
+          "y": 15
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano 105 Di2 ST-R7170",
+          "description": "电子换挡与液压碟刹手变。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "x": 78,
+          "y": 24,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano 105 R7100",
+          "description": "原配曲柄按尺码分配。",
+          "specs": [
+            ["XS / S / M", "170 / 170 / 172.5 mm"],
+            ["L / XL", "175 mm（XL 需核对所购批次）"]
+          ],
+          "x": 51,
+          "y": 75,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "本配置使用半压缩双盘，不以套件可选规格代替原配齿数。",
+          "specs": [
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12"]
+          ],
+          "x": 43,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 105 R7100 · 11–34T",
+          "description": "对应所列版本的十二速飞轮。",
+          "specs": [
+            ["范围", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "x": 24,
+          "y": 64,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "Inpeak Powercrank-E Single",
+          "description": "原配左曲柄功率计，以单侧测量估算总功率。",
+          "specs": [
+            ["测量", "左侧"],
+            ["原配状态", "官方配置表明确列出"]
+          ],
+          "x": 47,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Swiss Side HADRON Classic 470",
+          "description": "按型号保留原厂配置；官方不同字段中的框高或重量可能有出入。",
+          "specs": [
+            ["型号", "HADRON Classic 470"],
+            ["轮圈", "有钩 / 真空胎兼容"],
+            ["轮组重量", "1600 g · 官方整车页"],
+            ["框高", "型号与规格栏 45 mm 不一致，暂不取值"]
+          ],
+          "x": 80,
+          "y": 82
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP 5000 S TR",
+          "description": "原配公路真空胎，实际胎宽随轮圈与胎压变化。",
+          "specs": [
+            ["前轮", "GP 5000 S TR · 28 mm"],
+            ["后轮", "GP 5000 S TR · 28 mm"]
+          ],
+          "x": 91,
+          "y": 60,
+          "catalogIds": ["gp5000-str"]
+        }
+      ]
+    },
+    {
+      "id": "vanrysel-rcr-pro-force",
+      "brandId": "vanrysel",
+      "name": "Van Rysel RCR Pro / RCR-R Pro SRAM Force AXS E1",
+      "family": "RCR Pro",
+      "build": "SRAM Force AXS E1",
+      "edition": "法国版 · 产品 8941079 / 8941080 / 8941081",
+      "modelYear": null,
+      "yearNote": "官方未明确标注这套零售配置的车型年；产品编号用于区分版本。",
+      "kind": "全能公路",
+      "description": "RCR Pro（亦称 RCR-R Pro）的 Force E1 配置，配 Zipp 303 SW、Quarq 和 30 mm 外胎。提供裸碳黑、午夜蓝与珍珠色，可与旧款 Ultegra 配置逐项对照。",
+      "collections": ["current", "popular"],
+      "image": "/bikes/vanrysel-rcr-pro-force.jpg",
+      "imageCredit": "迪卡侬 Van Rysel",
+      "imageSource": "https://contents.mediadecathlon.com/p2958435/k$7cdc3868fa3cfc400ee71326ac2d101c/picture.jpg?format=jpg&f=1800x0",
+      "imageRatio": 1.5,
+      "imageFit": "cover",
+      "imagePosition": "50% 55%",
+      "imageNote": "对应所列地区产品的官方展示图；装配按该产品配置表记录。",
+      "color": "Raw Carbon / 裸碳黑",
+      "colorHex": "#383938",
+      "source": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+      "sourceLabel": "迪卡侬官方 · 法国版 · 产品 8941079 / 8941080 / 8941081",
+      "checkedAt": "2026-09-27",
+      "weight": "7.5 kg",
+      "weightNote": "官方标称 · M 码真空胎配置；各涂装及生产批次可能不同，非本站实测。",
+      "groupset": "SRAM Force AXS E1",
+      "hasPowerMeter": true,
+      "material": "RCR Pro 超高模量碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 509,
+            "reach": 378,
+            "headAngle": 71,
+            "seatAngle": 75.5,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 109,
+            "seatTube": 453
+          },
+          {
+            "size": "XS",
+            "stack": 515,
+            "reach": 383,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 70,
+            "headTube": 114,
+            "seatTube": 463
+          },
+          {
+            "size": "S",
+            "stack": 531,
+            "reach": 386,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 131,
+            "seatTube": 473
+          },
+          {
+            "size": "M",
+            "stack": 546,
+            "reach": 388,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 147,
+            "seatTube": 483
+          },
+          {
+            "size": "L",
+            "stack": 572,
+            "reach": 396,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1002,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 174,
+            "seatTube": 513
+          },
+          {
+            "size": "XL",
+            "stack": 596,
+            "reach": 408,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1022,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 199,
+            "seatTube": 543
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://contents.mediadecathlon.com/p2926284/k$70e3c15ca2d6a7c6435ef9719778d3df/2926284_default.jpg",
+        "sourceLabel": "Van Rysel 官方 · 当前产品页几何图",
+        "note": "按当前官方几何图逐尺码录入，长度为 mm、角度为 °；图中含 XXS，不代表该配置当前供应此尺码。本图 M 码为 546 / 388 mm；旧版 2024 RCR 手册为 542 / 389 mm。图鉴保留旧 Ultegra 条目的历史手册数据，不将两份表混合。"
+      },
+      "aero": {
+        "title": "与 ONERA 合作的气动开发",
+        "description": "品牌对车架和前叉开展风洞开发，介绍的主要偏航角范围为 −15° 至 +15°。这些设计信息不等于本网站获得了完整风洞数据。",
+        "source": "https://www.decathlon.fr/p/velo-de-route-sram-force-axs-e1-2x12v-capteur-de-puissance-rcr-pro-brut-gris/361957/c425c382m8941079",
+        "limit": "尚未录入相同骑手、速度、偏航角、轮胎与装配条件下的可比风阻数据；下方计算器仅作原理演示。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "RCR Pro 超高模量碳纤维",
+          "description": "RCR 与 RCR Pro 共用外形设计思路，以碳纤维铺层区分等级。普通 RCR 换装高等级套件后，仍是原来的车架版本。",
+          "specs": [
+            ["车架标称重量", "790 g · M 码含涂装"],
+            ["前叉", "官方正文 380 g、规格栏 350 g，重量口径待核对"],
+            ["轮胎间隙", "产品详情称 33 mm；旧手册为 32 mm，按具体车架确认"],
+            ["五通", "未在本条配置页统一确认"]
+          ],
+          "x": 57,
+          "y": 49
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "DEDA Superzero RS / Superbox EVO",
+          "description": "碳把与独立把立。官方页面的把宽测量文字有混用，订购时需核对外侧与中对中口径。",
+          "specs": [
+            ["把立 XS → XL", "80 / 90 / 100 / 110 / 120 mm"],
+            ["把宽", "官网列 400 / 420 / 440 mm，测量口径待核对"]
+          ],
+          "x": 70,
+          "y": 20
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "RCR 碳纤维座管",
+          "description": "RCR 平台专用座管，调整时应按对应车架手册核对插入深度。",
+          "specs": [
+            ["材质", "碳纤维"],
+            ["后飘", "15 mm"]
+          ],
+          "x": 35,
+          "y": 24
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Vento Argo R5 / Antares R5",
+          "description": "官网明确说明坐垫会随版本变化；图片不能保证交付批次。",
+          "specs": [
+            ["官网列名", "Vento Argo R5 或 Antares R5"],
+            ["标注宽度", "140 mm，实际版本需核对"]
+          ],
+          "x": 33,
+          "y": 8
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "SRAM Force AXS E1",
+          "description": "E1 代无线电子换挡及液压制动。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "x": 81,
+          "y": 18,
+          "catalogIds": ["sram-force-e1"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "SRAM Force E1 DUB PM",
+          "description": "曲柄长度随车架尺码变化。",
+          "specs": [
+            ["XS / S / M", "165 / 170 / 172.5 mm"],
+            ["L / XL", "175 mm"]
+          ],
+          "x": 51,
+          "y": 73,
+          "catalogIds": ["sram-force-e1"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "48 / 35T",
+          "description": "原配 SRAM 双盘组合。",
+          "specs": [
+            ["齿数", "48 / 35T"],
+            ["代际", "Force E1 / 12 速"]
+          ],
+          "x": 43,
+          "y": 71
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "SRAM Force XG-1270 E1 · 10–36T",
+          "description": "与 Force E1 后拨配套，低档比为 35/36。",
+          "specs": [
+            ["范围", "10–36T"],
+            ["塔基", "SRAM XDR"]
+          ],
+          "x": 22,
+          "y": 61,
+          "catalogIds": ["sram-force-e1"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "Quarq 功率计",
+          "description": "该版本标配 Quarq，具体测量形式以 Force E1 原配组件为准。",
+          "specs": [
+            ["系统", "SRAM AXS / Quarq"],
+            ["原配状态", "官方配置表明确列出"]
+          ],
+          "x": 45,
+          "y": 71
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Zipp 303 SW",
+          "description": "这一版使用 303 SW，不能与旧款 RCR Force 的 Zipp 404 或 303 S 混记。",
+          "specs": [
+            ["框高", "40 mm"],
+            ["轮圈", "无钩 / Hookless"],
+            ["附件", "AXS 胎压传感器"],
+            ["使用要求", "轮胎型号、胎宽及胎压均须符合 Zipp 兼容表"]
+          ],
+          "x": 80,
+          "y": 82
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental GP 5000 S TR",
+          "description": "原配 30 mm 真空胎；胎压同时遵守轮圈与轮胎的较低限值。",
+          "specs": [
+            ["标称尺寸", "700 × 30C"],
+            ["胎压上限", "本整车页要求不超过 5 bar"]
+          ],
+          "x": 95,
+          "y": 59,
+          "catalogIds": ["gp5000-str"]
+        }
+      ],
+      "paints": [
+        {
+          "id": "midnight",
+          "name": "Midnight Indigo / 午夜蓝",
+          "hex": "#2d2e49",
+          "image": "/bikes/vanrysel-rcr-pro-force-midnight.jpg",
+          "source": "https://contents.mediadecathlon.com/p2958427/k$707d401234c437201e6f0f620fc96830/picture.jpg",
+          "imageRatio": 1.5,
+          "imageFit": "cover",
+          "imagePosition": "50% 55%",
+          "note": "法国官方 Force AXS E1 同配置涂装 · 产品 8941080"
+        },
+        {
+          "id": "pearl",
+          "name": "Pearl / 珍珠白粉",
+          "hex": "#dfc5d1",
+          "image": "/bikes/vanrysel-rcr-pro-force-pearl.jpg",
+          "source": "https://contents.mediadecathlon.com/p3096574/k$c5f52ef295564a26339c964966af5d0c/picture.jpg",
+          "imageRatio": 1.5,
+          "imageFit": "cover",
+          "imagePosition": "50% 55%",
+          "note": "法国官方 Force AXS E1 同配置涂装 · 产品 8941081"
+        }
+      ]
+    },
+    {
+      "id": "vanrysel-rcr-f-105",
+      "brandId": "vanrysel",
+      "name": "Van Rysel RCR-F Pro Shimano 105 Di2",
+      "family": "RCR-F Pro",
+      "build": "Shimano 105 Di2",
+      "edition": "英国版 · 产品 8913505",
+      "modelYear": null,
+      "yearNote": "官方未明确标注这套零售配置的车型年；产品编号用于区分版本。",
+      "kind": "气动竞赛",
+      "description": "RCR-F Pro 气动车架配 105 Di2 的版本。保留 DEDA 一体把、62 mm HADRON² Classic 轮组和前 Aero 111 / 后 GP 5000 S TR 组合。",
+      "collections": ["current", "popular"],
+      "image": "/bikes/vanrysel-rcr-f-105.jpg",
+      "imageCredit": "迪卡侬 Van Rysel",
+      "imageSource": "https://contents.mediadecathlon.com/p2891598/k$031fbc032ef3257f94304c81f2e8f024/picture.jpg?format=jpg&f=1800x0",
+      "imageRatio": 1.5,
+      "imageFit": "cover",
+      "imagePosition": "50% 55%",
+      "imageNote": "对应所列地区产品的官方展示图；装配按该产品配置表记录。",
+      "color": "Lunar Grey / 月灰",
+      "colorHex": "#adb0b5",
+      "source": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-105-di2-12v-grey/358179/c180c425m8913505",
+      "sourceLabel": "迪卡侬官方 · 英国版 · 产品 8913505",
+      "checkedAt": "2026-09-27",
+      "weight": "8.2 kg",
+      "weightNote": "官方标称 · M 码真空胎配置；各涂装及生产批次可能不同，非本站实测。",
+      "groupset": "Shimano 105 Di2",
+      "hasPowerMeter": true,
+      "material": "RCR-F Pro 超高模量碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 498,
+            "reach": 382,
+            "headAngle": 71,
+            "seatAngle": 75.5,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 92,
+            "seatTube": 457
+          },
+          {
+            "size": "XS",
+            "stack": 504,
+            "reach": 386,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 70,
+            "headTube": 97,
+            "seatTube": 467
+          },
+          {
+            "size": "S",
+            "stack": 520,
+            "reach": 389,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 114,
+            "seatTube": 477
+          },
+          {
+            "size": "M",
+            "stack": 535,
+            "reach": 392,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 130,
+            "seatTube": 487
+          },
+          {
+            "size": "L",
+            "stack": 561,
+            "reach": 399,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1002,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 157,
+            "seatTube": 518
+          },
+          {
+            "size": "XL",
+            "stack": 585,
+            "reach": 412,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1022,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 182,
+            "seatTube": 547
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://contents.mediadecathlon.com/p2908039/k$65d3eff3dd1b010a6d394250a9477cb2/2908039_default.jpg",
+        "sourceLabel": "Van Rysel 官方 · 当前产品页几何图",
+        "note": "按当前官方几何图逐尺码录入，长度为 mm、角度为 °；图中含 XXS，不代表该配置当前供应此尺码。L 码 Stack 按产品图记为 561 mm；2025-01-29 手册表中为 551 mm，两份资料有差异，选车时应再向品牌核对。"
+      },
+      "aero": {
+        "title": "Swiss Side 联合气动开发",
+        "description": "Van Rysel 宣称 RCR-F 相较 RCR Pro 在 45 km/h 下节省 13 W，头管刚性提高 7%。前者来自品牌对比测试，后者是局部结构指标。",
+        "source": "https://www.vanrysel.com/en-GB/browse/rcr-f",
+        "limit": "品牌宣传页没有完整列出可复现的骑手、轮胎、轮组和偏航角加权条件；13 W 不能视为任何速度或装配下的固定收益，7% 也不等于整车效率增加 7%。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "RCR-F Pro 超高模量碳纤维",
+          "description": "RCR-F 是独立的气动公路平台，前端与座管均使用专用部件。",
+          "specs": [
+            ["车架标称重量", "1010 g · M 码，原页称 gross weight，未统一说明含漆口径"],
+            ["前叉", "420 g · 官方 gross weight"],
+            ["轮胎间隙", "32 mm"],
+            ["五通", "Pressfit BB86 · 41 × 86.5 mm"]
+          ],
+          "x": 56,
+          "y": 53
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "DEDA × Van Rysel RCR-F Combo",
+          "description": "一体式把组，附下把握持嵌件。把宽按 DEDA 外侧测量口径标注，不能直接与中对中把宽比较。",
+          "specs": [
+            ["结构", "碳纤维一体把"],
+            ["XS / S / M", "80–400 / 90–420 / 100–420 mm"],
+            ["L / XL", "110–440 / 120–440 mm"]
+          ],
+          "x": 68,
+          "y": 27
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "RCR-F 碳纤维座管",
+          "description": "专用于 RCR-F 平台，不按普通圆座管通用规格理解。",
+          "specs": [
+            ["后飘", "15 mm"],
+            ["XS / S / M", "314 / 330 / 352 mm"],
+            ["L / XL", "400 / 410 mm"]
+          ],
+          "x": 35,
+          "y": 30
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Van Rysel Road · 地区版本待核对",
+          "description": "英国配置页未明确列出坐垫型号；德国系列对照表分别列出 105 的 Road 145 mm 与 Ultegra 的 Antares 140 mm，交付版本需核对。",
+          "specs": [
+            ["德国系列对照表", "145 mm"],
+            ["版本", "按所列零售配置，非车队特装"]
+          ],
+          "x": 33,
+          "y": 15
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano 105 Di2 ST-R7170",
+          "description": "电子换挡与液压碟刹手变。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "x": 78,
+          "y": 24,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano 105 R7100",
+          "description": "原配曲柄按尺码分配。",
+          "specs": [
+            ["XS / S / M", "165 / 170 / 172.5 mm"],
+            ["L / XL", "175 mm"]
+          ],
+          "x": 51,
+          "y": 75,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "本配置使用半压缩双盘，不以套件可选规格代替原配齿数。",
+          "specs": [
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12"]
+          ],
+          "x": 43,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano 105 R7100 · 11–34T",
+          "description": "对应所列版本的十二速飞轮。",
+          "specs": [
+            ["范围", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "x": 24,
+          "y": 64,
+          "catalogIds": ["105-r7100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "Inpeak Powercrank-E Single",
+          "description": "原配左曲柄功率计，以单侧测量估算总功率。",
+          "specs": [
+            ["测量", "左侧"],
+            ["原配状态", "官方配置表明确列出"]
+          ],
+          "x": 47,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Swiss Side HADRON² 625 Classic",
+          "description": "按型号保留原厂配置；官方不同字段中的框高或重量可能有出入。",
+          "specs": [
+            ["框高", "62 mm · 官方整车页"],
+            ["轮圈", "有钩 / 真空胎兼容"],
+            ["轮组重量", "前 848 + 后 996 g；摘要约 1840 g"]
+          ],
+          "x": 80,
+          "y": 82
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental Aero 111 / GP 5000 S TR",
+          "description": "RCR-F 前后使用不同胎型和胎宽，不能把前轮气动方案推广到所有 RCR。",
+          "specs": [
+            ["前轮", "Aero 111 TLR · 26 mm"],
+            ["后轮", "GP 5000 S TR · 28 mm"]
+          ],
+          "x": 91,
+          "y": 60,
+          "catalogIds": ["gp5000-str"]
+        }
+      ]
+    },
+    {
+      "id": "vanrysel-rcr-f-ultegra",
+      "brandId": "vanrysel",
+      "name": "Van Rysel RCR-F Pro Shimano Ultegra Di2",
+      "family": "RCR-F Pro",
+      "build": "Shimano Ultegra Di2",
+      "edition": "英国版 · 产品 8913506",
+      "modelYear": null,
+      "yearNote": "官方未明确标注这套零售配置的车型年；产品编号用于区分版本。",
+      "kind": "气动竞赛",
+      "description": "电光紫的 Ultegra Di2 版本，与 105 版共用 RCR-F Pro 平台和 HADRON² Classic 625 轮组，主要升级传动与制动。",
+      "collections": ["current", "popular"],
+      "image": "/bikes/vanrysel-rcr-f-ultegra.jpg",
+      "imageCredit": "迪卡侬 Van Rysel",
+      "imageSource": "https://contents.mediadecathlon.com/p2903173/k$3b6deed7010d15673393e1a38a9da80c/picture.jpg?format=jpg&f=1800x0",
+      "imageRatio": 1.5,
+      "imageFit": "cover",
+      "imagePosition": "50% 55%",
+      "imageNote": "对应所列地区产品的官方展示图；装配按该产品配置表记录。",
+      "color": "Electric Purple / 电光紫",
+      "colorHex": "#5038ac",
+      "source": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-ultegra-di2-12v-purple/358168/c62c425m8913506",
+      "sourceLabel": "迪卡侬官方 · 英国版 · 产品 8913506",
+      "checkedAt": "2026-09-27",
+      "weight": "8.0 kg",
+      "weightNote": "官方标称 · M 码真空胎配置；各涂装及生产批次可能不同，非本站实测。",
+      "groupset": "Shimano Ultegra Di2",
+      "hasPowerMeter": true,
+      "material": "RCR-F Pro 超高模量碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 498,
+            "reach": 382,
+            "headAngle": 71,
+            "seatAngle": 75.5,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 92,
+            "seatTube": 457
+          },
+          {
+            "size": "XS",
+            "stack": 504,
+            "reach": 386,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 70,
+            "headTube": 97,
+            "seatTube": 467
+          },
+          {
+            "size": "S",
+            "stack": 520,
+            "reach": 389,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 114,
+            "seatTube": 477
+          },
+          {
+            "size": "M",
+            "stack": 535,
+            "reach": 392,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 130,
+            "seatTube": 487
+          },
+          {
+            "size": "L",
+            "stack": 561,
+            "reach": 399,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1002,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 157,
+            "seatTube": 518
+          },
+          {
+            "size": "XL",
+            "stack": 585,
+            "reach": 412,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1022,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 182,
+            "seatTube": 547
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://contents.mediadecathlon.com/p2908039/k$65d3eff3dd1b010a6d394250a9477cb2/2908039_default.jpg",
+        "sourceLabel": "Van Rysel 官方 · 当前产品页几何图",
+        "note": "按当前官方几何图逐尺码录入，长度为 mm、角度为 °；图中含 XXS，不代表该配置当前供应此尺码。L 码 Stack 按产品图记为 561 mm；2025-01-29 手册表中为 551 mm，两份资料有差异，选车时应再向品牌核对。"
+      },
+      "aero": {
+        "title": "Swiss Side 联合气动开发",
+        "description": "Van Rysel 宣称 RCR-F 相较 RCR Pro 在 45 km/h 下节省 13 W，头管刚性提高 7%。前者来自品牌对比测试，后者是局部结构指标。",
+        "source": "https://www.vanrysel.com/en-GB/browse/rcr-f",
+        "limit": "品牌宣传页没有完整列出可复现的骑手、轮胎、轮组和偏航角加权条件；13 W 不能视为任何速度或装配下的固定收益，7% 也不等于整车效率增加 7%。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "RCR-F Pro 超高模量碳纤维",
+          "description": "RCR-F 是独立的气动公路平台，前端与座管均使用专用部件。",
+          "specs": [
+            ["车架标称重量", "1010 g · M 码，原页称 gross weight，未统一说明含漆口径"],
+            ["前叉", "420 g · 官方 gross weight"],
+            ["轮胎间隙", "32 mm"],
+            ["五通", "Pressfit BB86 · 41 × 86.5 mm"]
+          ],
+          "x": 56,
+          "y": 53
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "DEDA × Van Rysel RCR-F Combo",
+          "description": "一体式把组，附下把握持嵌件。把宽按 DEDA 外侧测量口径标注，不能直接与中对中把宽比较。",
+          "specs": [
+            ["结构", "碳纤维一体把"],
+            ["XS / S / M", "80–400 / 90–420 / 100–420 mm"],
+            ["L / XL", "110–440 / 120–440 mm"]
+          ],
+          "x": 68,
+          "y": 27
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "RCR-F 碳纤维座管",
+          "description": "专用于 RCR-F 平台，不按普通圆座管通用规格理解。",
+          "specs": [
+            ["后飘", "15 mm"],
+            ["XS / S / M", "314 / 330 / 352 mm"],
+            ["L / XL", "400 / 410 mm"]
+          ],
+          "x": 35,
+          "y": 30
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Antares · 地区版本待核对",
+          "description": "英国配置页未明确列出坐垫型号；德国系列对照表分别列出 105 的 Road 145 mm 与 Ultegra 的 Antares 140 mm，交付版本需核对。",
+          "specs": [
+            ["德国系列对照表", "140 mm"],
+            ["版本", "按所列零售配置，非车队特装"]
+          ],
+          "x": 33,
+          "y": 15
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Ultegra Di2 ST-R8170",
+          "description": "电子换挡与液压碟刹手变。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "x": 78,
+          "y": 24,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Ultegra R8100",
+          "description": "原配曲柄按尺码分配。",
+          "specs": [
+            ["XS / S / M", "165 / 170 / 172.5 mm"],
+            ["L / XL", "175 mm"]
+          ],
+          "x": 51,
+          "y": 75,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "本配置使用半压缩双盘，不以套件可选规格代替原配齿数。",
+          "specs": [
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12"]
+          ],
+          "x": 43,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Ultegra R8100 · 11–34T",
+          "description": "按官方详细传动表记录；Ultegra 产品规格栏的 10/34 与正文不一致，采用正文及系列对照表的 11–34T。",
+          "specs": [
+            ["范围", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "x": 24,
+          "y": 64,
+          "catalogIds": ["ultegra-r8100"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "Inpeak Powercrank-E Single",
+          "description": "原配左曲柄功率计，以单侧测量估算总功率。",
+          "specs": [
+            ["测量", "左侧"],
+            ["原配状态", "官方配置表明确列出"]
+          ],
+          "x": 47,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Swiss Side HADRON² 625 Classic",
+          "description": "按型号保留原厂配置；官方不同字段中的框高或重量可能有出入。",
+          "specs": [
+            ["框高", "62 mm · 官方整车页"],
+            ["轮圈", "有钩 / 真空胎兼容"],
+            ["轮组重量", "前 848 + 后 996 g；摘要约 1840 g"]
+          ],
+          "x": 80,
+          "y": 82
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental Aero 111 / GP 5000 S TR",
+          "description": "RCR-F 前后使用不同胎型和胎宽，不能把前轮气动方案推广到所有 RCR。",
+          "specs": [
+            ["前轮", "Aero 111 TLR · 26 mm"],
+            ["后轮", "GP 5000 S TR · 28 mm"]
+          ],
+          "x": 91,
+          "y": 60,
+          "catalogIds": ["gp5000-str"]
+        }
+      ]
+    },
+    {
+      "id": "vanrysel-rcr-f-duraace",
+      "brandId": "vanrysel",
+      "name": "Van Rysel RCR-F Pro Shimano Dura-Ace Di2",
+      "family": "RCR-F Pro",
+      "build": "Shimano Dura-Ace Di2",
+      "edition": "英国版 · 产品 8913100",
+      "modelYear": null,
+      "yearNote": "官方未明确标注这套零售配置的车型年；产品编号用于区分版本。",
+      "kind": "气动竞赛",
+      "description": "RCR-F Pro 的 Shimano 旗舰零售配置，使用 Dura-Ace 双侧功率计、HADRON² Ultimate 625 和 Fizik Vento Argo 00。此条为 Signature 碳黑涂装，不等同当季车队整车。",
+      "collections": ["current", "popular", "flagship"],
+      "image": "/bikes/vanrysel-rcr-f-duraace.jpg",
+      "imageCredit": "迪卡侬 Van Rysel",
+      "imageSource": "https://contents.mediadecathlon.com/p2903197/k$d377aa1ee37d76c2ee0e1c3abe0b852a/picture.jpg?format=jpg&f=1800x0",
+      "imageRatio": 1.5,
+      "imageFit": "cover",
+      "imagePosition": "50% 55%",
+      "imageNote": "对应所列地区产品的官方展示图；装配按该产品配置表记录。",
+      "color": "Signature Carbon / 碳黑",
+      "colorHex": "#292a2e",
+      "source": "https://www.decathlon.co.uk/p/road-bike-rcr-f-pro-shimano-dura-ace-di2-12v-signature/358149/c425m8913100",
+      "sourceLabel": "迪卡侬官方 · 英国版 · 产品 8913100",
+      "checkedAt": "2026-09-27",
+      "weight": "7.5 kg",
+      "weightNote": "官方标称 · M 码真空胎配置；各涂装及生产批次可能不同，非本站实测。",
+      "groupset": "Shimano Dura-Ace Di2",
+      "hasPowerMeter": true,
+      "material": "RCR-F Pro 超高模量碳纤维",
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XXS",
+            "stack": 498,
+            "reach": 382,
+            "headAngle": 71,
+            "seatAngle": 75.5,
+            "wheelbase": 980,
+            "chainstay": 410,
+            "bbDrop": 73,
+            "headTube": 92,
+            "seatTube": 457
+          },
+          {
+            "size": "XS",
+            "stack": 504,
+            "reach": 386,
+            "headAngle": 72,
+            "seatAngle": 74,
+            "wheelbase": 978,
+            "chainstay": 410,
+            "bbDrop": 70,
+            "headTube": 97,
+            "seatTube": 467
+          },
+          {
+            "size": "S",
+            "stack": 520,
+            "reach": 389,
+            "headAngle": 73,
+            "seatAngle": 74,
+            "wheelbase": 979,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 114,
+            "seatTube": 477
+          },
+          {
+            "size": "M",
+            "stack": 535,
+            "reach": 392,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 986,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 130,
+            "seatTube": 487
+          },
+          {
+            "size": "L",
+            "stack": 561,
+            "reach": 399,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1002,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 157,
+            "seatTube": 518
+          },
+          {
+            "size": "XL",
+            "stack": 585,
+            "reach": 412,
+            "headAngle": 73,
+            "seatAngle": 73.5,
+            "wheelbase": 1022,
+            "chainstay": 410,
+            "bbDrop": 67,
+            "headTube": 182,
+            "seatTube": 547
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://contents.mediadecathlon.com/p2908039/k$65d3eff3dd1b010a6d394250a9477cb2/2908039_default.jpg",
+        "sourceLabel": "Van Rysel 官方 · 当前产品页几何图",
+        "note": "按当前官方几何图逐尺码录入，长度为 mm、角度为 °；图中含 XXS，不代表该配置当前供应此尺码。L 码 Stack 按产品图记为 561 mm；2025-01-29 手册表中为 551 mm，两份资料有差异，选车时应再向品牌核对。"
+      },
+      "aero": {
+        "title": "Swiss Side 联合气动开发",
+        "description": "Van Rysel 宣称 RCR-F 相较 RCR Pro 在 45 km/h 下节省 13 W，头管刚性提高 7%。前者来自品牌对比测试，后者是局部结构指标。",
+        "source": "https://www.vanrysel.com/en-GB/browse/rcr-f",
+        "limit": "品牌宣传页没有完整列出可复现的骑手、轮胎、轮组和偏航角加权条件；13 W 不能视为任何速度或装配下的固定收益，7% 也不等于整车效率增加 7%。"
+      },
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "title": "RCR-F Pro 超高模量碳纤维",
+          "description": "RCR-F 是独立的气动公路平台，前端与座管均使用专用部件。",
+          "specs": [
+            ["车架标称重量", "1010 g · M 码，原页称 gross weight，未统一说明含漆口径"],
+            ["前叉", "420 g · 官方 gross weight"],
+            ["轮胎间隙", "32 mm"],
+            ["五通", "Pressfit BB86 · 41 × 86.5 mm"]
+          ],
+          "x": 56,
+          "y": 53
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "title": "DEDA × Van Rysel RCR-F Combo",
+          "description": "一体式把组，附下把握持嵌件。把宽按 DEDA 外侧测量口径标注，不能直接与中对中把宽比较。",
+          "specs": [
+            ["结构", "碳纤维一体把"],
+            ["XS / S / M", "80–400 / 90–420 / 100–420 mm"],
+            ["L / XL", "110–440 / 120–440 mm"]
+          ],
+          "x": 68,
+          "y": 27
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "title": "RCR-F 碳纤维座管",
+          "description": "专用于 RCR-F 平台，不按普通圆座管通用规格理解。",
+          "specs": [
+            ["后飘", "15 mm"],
+            ["XS / S / M", "314 / 330 / 352 mm"],
+            ["L / XL", "400 / 410 mm"]
+          ],
+          "x": 35,
+          "y": 30
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "title": "Fizik Vento Argo 00",
+          "description": "Dura-Ace 产品页明确列出型号。",
+          "specs": [
+            ["宽度", "140 mm"],
+            ["版本", "按所列零售配置，非车队特装"]
+          ],
+          "x": 33,
+          "y": 15
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "title": "Shimano Dura-Ace Di2 ST-R9270",
+          "description": "电子换挡与液压碟刹手变。",
+          "specs": [
+            ["速别", "2 × 12"],
+            ["碟片", "前 160 / 后 140 mm"]
+          ],
+          "x": 78,
+          "y": 24,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "title": "Shimano Dura-Ace R9200",
+          "description": "原配曲柄按尺码分配。",
+          "specs": [
+            ["XS / S / M", "165 / 170 / 172.5 mm"],
+            ["L / XL", "175 mm"]
+          ],
+          "x": 51,
+          "y": 75,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "title": "52 / 36T",
+          "description": "本配置使用半压缩双盘，不以套件可选规格代替原配齿数。",
+          "specs": [
+            ["大 / 小盘", "52 / 36T"],
+            ["速别", "2 × 12"]
+          ],
+          "x": 43,
+          "y": 72
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "title": "Shimano Dura-Ace R9200 · 11–34T",
+          "description": "对应所列版本的十二速飞轮。",
+          "specs": [
+            ["范围", "11–34T"],
+            ["速别", "12 速"]
+          ],
+          "x": 24,
+          "y": 64,
+          "catalogIds": ["dura-ace-r9200"]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "title": "Shimano FC-R9200-P 双侧功率计",
+          "description": "Dura-Ace 版按英国详细配置记录为 Shimano 双侧功率计，不套用系列对照页的 Inpeak 文案。",
+          "specs": [
+            ["测量", "双侧"],
+            ["原配状态", "官方配置表明确列出"]
+          ],
+          "x": 47,
+          "y": 68
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "title": "Swiss Side HADRON² 625 Ultimate",
+          "description": "Ultimate 页的重量字段混入 Classic 数据，未采用该重量。",
+          "specs": [
+            ["框高", "62 mm · 官方整车页"],
+            ["轮圈", "有钩 / 真空胎兼容"],
+            ["花鼓", "DT Swiss 180 / SINC 陶瓷轴承"]
+          ],
+          "x": 80,
+          "y": 82
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "title": "Continental Aero 111 / GP 5000 S TR",
+          "description": "RCR-F 前后使用不同胎型和胎宽，不能把前轮气动方案推广到所有 RCR。",
+          "specs": [
+            ["前轮", "Aero 111 TLR · 26 mm"],
+            ["后轮", "GP 5000 S TR · 28 mm"]
+          ],
+          "x": 91,
+          "y": 60,
+          "catalogIds": ["gp5000-str"]
+        }
+      ]
     }
   ]
 }
