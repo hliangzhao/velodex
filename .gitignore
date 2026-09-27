@@ -9,3 +9,7 @@ dist-pages/
 coverage/
 playwright-report/
 .local/
+
+# Private mobile prototype: keep source, tests and docs local.
+/src/mobile/
+/mobile.html
