@@ -79,7 +79,10 @@ test('pairing rejects known incompatibility and never infers approval from match
   assert.equal(fitCheck('zipp-303-firecrest', 'gp5000-str').level, 'review');
   assert.equal(fitCheck('missing', 'gp5000-str').level, 'unknown');
   assert.equal(fitCheck('lun-hyper3-d45', 'vittoria-corsa-next').level, 'unknown');
-  assert.match(fitCheck('lun-hyper3-d45', 'vittoria-corsa-next').title, /尚待核对/);
+  assert.match(
+    fitCheck('lun-hyper3-d45', 'vittoria-corsa-next').title,
+    /请查阅这款轮组的轮胎兼容表/,
+  );
   assert.deepEqual(upgrade(1800, 1400, 6000), {
     saved: 400,
     percent: (400 / 1800) * 100,
@@ -88,14 +91,23 @@ test('pairing rejects known incompatibility and never infers approval from match
   assert.equal(upgrade(1400, 1400, 6000).yuanPerGram, null);
   assert.equal(upgrade(null, 100, 10), null);
 });
-test('domestic reference prices are CNY, scoped to a frameset and independent of overseas complete-bike prices', () => {
-  const data = JSON.parse(readFileSync(new URL('../src/data/china-prices.json', import.meta.url)));
-  assert.equal(data.currency, 'CNY');
-  assert.equal(data.market, '中国大陆');
+test('frame reference prices have their own currency and region, independent of complete-bike prices', () => {
+  const data = JSON.parse(
+    readFileSync(new URL('../src/data/reference-prices.json', import.meta.url)),
+  );
+  assert.equal(data.frames['tarmac-sl8'].currency, 'CNY');
+  assert.equal(data.frames['tarmac-sl8'].market, '中国大陆');
   assert.equal(data.frames['tarmac-sl8'].amount, 38990);
   assert.equal(data.frames['tarmac-sl8'].unit, '一套车架组');
   assert.equal(new URL(data.frames['tarmac-sl8'].source).hostname, 'www.specialized.com.cn');
-  assert.deepEqual(data.parts, {});
+  assert.equal(data.frames['winspace-slc5'].currency, 'USD');
+  assert.equal(data.frames['winspace-slc5'].amount, 2900);
+  assert.equal(data.frames['winspace-t1600'].amount, 2200);
+  for (const price of Object.values(data.frames)) {
+    assert.equal(price.unit, '一套车架组');
+    assert.ok(price.market && price.source && price.checkedAt);
+    assert.ok(price.amount > 0);
+  }
 });
 const modelCode = transpile('../src/buildStructure.ts').replace(
   "from 'three'",

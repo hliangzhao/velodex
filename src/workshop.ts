@@ -461,7 +461,7 @@ export function fitCheck(wheelId: string, tireId: string) {
   if (!wheel)
     return {
       level: 'unknown',
-      title: '这款轮组的兼容资料尚待核对',
+      title: '请查阅这款轮组的轮胎兼容表',
       text: '尚未收录完整的胎圈与适配资料。请查阅轮组和轮胎厂商的具体版本说明，不能据此判断兼容。',
     };
   if (wheel.hookless && tireId === 'gp5000-clincher')

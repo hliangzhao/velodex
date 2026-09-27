@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { Download, Share2, Save, Check, Link as LinkIcon } from 'lucide-react';
-import type { Bike, Catalog, PartsCatalog } from './types';
+import type { Bike, Catalog, PartsCatalog, ReferencePrice } from './types';
 import { imageUrl } from './catalog';
 import { paintsForBike } from './bikePaints';
 import { base } from './SiteChrome';
-import chinaPrices from './data/china-prices.json';
-import { priceLabel } from './upgrade-planner';
+import referencePrices from './data/reference-prices.json';
+import { priceLabel, referencePriceLabel } from './upgrade-planner';
 import { drawPoster, itemName } from './BuildPoster';
 import WeightAssistant from './WeightAssistant';
 import {
@@ -181,10 +181,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
     price = totals(build, 'yuan');
   const fit = fitCheck(build.items.wheels.choice, build.items.tires.choice);
   const framePrice = (
-    chinaPrices.frames as Record<
-      string,
-      { amount: number; name: string; unit: string; source: string; note: string }
-    >
+    referencePrices.frames as Record<string, ReferencePrice & { name: string; unit: string }>
   )[bike.id];
   const options = (slot: Slot) =>
     parts.products.filter((p) => partSlot(p.category) === slot && p.id !== 'aero111');
@@ -275,7 +272,7 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
           <span className="eyebrow">02 / 配件与备件清单</span>
           <h2>选择配件</h2>
           <p className="work-note">
-            只选喜欢的配置，也能保存、分享和生成海报。预算与重量都可跳过。轮组、轮胎和脚踏按一对选配；重量助手会自动采用已核验资料，想调整时再展开。价格仍优先采用中国大陆官方售价。
+            只选喜欢的配置，也能保存、分享和生成海报。预算与重量都可跳过。轮组、轮胎和脚踏按一对选配；重量助手会自动采用已核验资料，想调整时再展开。参考价优先采用中国大陆价格，海外价格注明地区与币种。
           </p>
           <div className="build-items">
             {slots.map(([slot, label, scope]) => (
@@ -370,26 +367,30 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                 <small>{scope}</small>
                 {slot === 'frame' && framePrice && (
                   <div className="domestic-price">
-                    <strong>中国大陆官方参考 · ¥{framePrice.amount.toLocaleString('zh-CN')}</strong>
+                    <strong>{referencePriceLabel(framePrice)}</strong>
                     <small>
-                      {framePrice.name} / {framePrice.unit} · 核验 {chinaPrices.checkedAt}
+                      {framePrice.name} / {framePrice.unit} · 查阅 {framePrice.checkedAt}
                     </small>
                     <small>{framePrice.note}</small>
                     <a href={framePrice.source} target="_blank" rel="noreferrer">
-                      国内官网 ↗
+                      价格来源 ↗
                     </a>
-                    <button
-                      className="light-button"
-                      onClick={() => update(slot, { yuan: String(framePrice.amount) })}
-                    >
-                      采用此国内参考价
-                    </button>
+                    {framePrice.currency === 'CNY' ? (
+                      <button
+                        className="light-button"
+                        onClick={() => update(slot, { yuan: String(framePrice.amount) })}
+                      >
+                        采用此人民币参考价
+                      </button>
+                    ) : (
+                      <small>预算以人民币记录，请在下方填写实际到手价。</small>
+                    )}
                   </div>
                 )}
                 {slot !== 'frame' &&
                   (() => {
                     const product = parts.products.find((p) => p.id === build.items[slot].choice);
-                    const reference = product?.chinaPrice;
+                    const reference = product?.price;
                     if (!product || reference?.amount == null) return null;
                     return (
                       <div className="domestic-price">
@@ -401,40 +402,23 @@ export default function DreamBuild({ catalog, parts }: { catalog: Catalog; parts
                         <a href={reference.source} target="_blank" rel="noreferrer">
                           价格来源 ↗
                         </a>
-                        <button
-                          className="light-button"
-                          onClick={() =>
-                            update(slot, {
-                              yuan: String(reference.amount! * (slot === 'tires' ? 2 : 1)),
-                            })
-                          }
-                        >
-                          采用此国内参考价{slot === 'tires' ? ' ×2 条' : ''}
-                        </button>
+                        {reference.currency === 'CNY' ? (
+                          <button
+                            className="light-button"
+                            onClick={() =>
+                              update(slot, {
+                                yuan: String(reference.amount! * (slot === 'tires' ? 2 : 1)),
+                              })
+                            }
+                          >
+                            采用此人民币参考价{slot === 'tires' ? ' ×2 条' : ''}
+                          </button>
+                        ) : (
+                          <small>预算以人民币记录，请在下方填写实际到手价。</small>
+                        )}
                       </div>
                     );
                   })()}
-                {slot !== 'frame' &&
-                  build.items[slot].choice &&
-                  parts.products.find((p) => p.id === build.items[slot].choice)?.chinaPrice
-                    ?.amount == null && (
-                    <small>
-                      {slot === 'wheels' && build.items[slot].choice === 'roval-rapide-clx3' ? (
-                        <>
-                          {chinaPrices.pending['roval-rapide-clx3'].note}{' '}
-                          <a
-                            href={chinaPrices.pending['roval-rapide-clx3'].source}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            国内官网 ↗
-                          </a>
-                        </>
-                      ) : (
-                        '国内官方售价待核验；预算留空，不使用海外价格换算。'
-                      )}
-                    </small>
-                  )}
                 <label>
                   {label}预算 / ¥ <span className="optional-label">选填</span>
                   <input

@@ -5,6 +5,7 @@ import { imageUrl } from './catalog';
 import { base } from './SiteChrome';
 import {
   candidateNote,
+  compareReferencePrices,
   cny,
   costSummary,
   initialAdvisor,
@@ -64,10 +65,11 @@ function NumberField({
   );
 }
 function Price({ product }: { product: Product }) {
+  if (!product.price) return null;
   return (
     <div className="upgrade-price">
       <strong>{priceLabel(product)}</strong>
-      <small>{product.chinaPrice?.scope}</small>
+      <small>{product.price?.scope}</small>
     </div>
   );
 }
@@ -113,15 +115,15 @@ export default function UpgradeAdvisor({
       (p) =>
         p.category === category &&
         (brand === 'all' || p.brandId === brand) &&
-        (!pricedOnly || p.chinaPrice?.amount != null) &&
+        (!pricedOnly || p.price?.amount != null) &&
         (!maxPrice ||
-          p.chinaPrice?.amount == null ||
-          p.chinaPrice.amount <= (numberOrNull(maxPrice) ?? Infinity)) &&
+          p.price?.currency !== 'CNY' ||
+          p.price.amount <= (numberOrNull(maxPrice) ?? Infinity)) &&
         `${p.name} ${p.brandId} ${parts.brands.find((b) => b.id === p.brandId)?.name} ${p.specs.flat().join(' ')}`
           .toLowerCase()
           .includes(query.trim().toLowerCase()),
     )
-    .sort((a, b) => (a.chinaPrice?.amount ?? Infinity) - (b.chinaPrice?.amount ?? Infinity));
+    .sort(compareReferencePrices);
   const chooseCategory = (cat: PartCategory) => {
     setCategory(cat);
     setBrand('all');
@@ -174,15 +176,16 @@ export default function UpgradeAdvisor({
       '',
       ...selected.flatMap(({ p, q }) => [
         `${p.name} ×${q.quantity}`,
-        `版本：${q.version || p.chinaPrice?.scope || '待确认'}`,
-        `单价：${quotePrice(q, p) === null ? '待询价' : cny(quotePrice(q, p)!)}（${q.price ? '读者报价' : priceLabel(p)}）`,
-        `${p.chinaPrice?.note || ''}`,
+        `版本：${q.version || p.price?.scope || p.name}`,
+        ...(p.price ? [`地区参考：${priceLabel(p)}`] : []),
+        `人民币单价：${quotePrice(q, p) === null ? '请填写到手报价' : cny(quotePrice(q, p)!)}（${q.price ? '读者报价' : p.price?.currency === 'CNY' ? '国内参考价' : '尚未计入预算'}）`,
+        `${p.price?.note || ''}`,
         `参数来源：${p.source}`,
-        `价格来源：${p.chinaPrice?.source || '读者报价'}`,
+        `价格来源：${p.price?.source || '读者报价'}`,
         `核对：${p.compatibility}`,
         '',
       ]),
-      `工时 / 运费：${state.installation || '待询价'}；适配 / 耗材：${state.adapters || '待询价'}`,
+      `工时 / 运费：${state.installation || '未填写'}；适配 / 耗材：${state.adapters || '未填写'}`,
       `旧轮转售：${money.applySale ? `${state.resaleLow}–${state.resaleHigh} 元，读者估计` : '不扣除'}`,
       `${money.complete ? '预计净支出' : '已知金额小计，非最终预算'}：${cny(money.min)}–${cny(money.max)}`,
       `尚缺：${money.missing.join('、') || '无未报价项目；仍需确认实际成交及安装'}`,
@@ -195,7 +198,7 @@ export default function UpgradeAdvisor({
     a.download = 'velodex-升级询价单.txt';
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    setMessage('已导出清单，包含价格来源、规格备注及待核对项目。');
+    setMessage('已导出清单，包含地区价格、人民币报价与安装核对项目。');
   };
   return (
     <div className="upgrade-advisor">
@@ -252,7 +255,7 @@ export default function UpgradeAdvisor({
                   }));
               }}
             >
-              <option value="">选择车型（价格、重量留待核对）</option>
+              <option value="">选择车型（购车价和实测重量可自行填写）</option>
               {catalog.bikes.map((b) => (
                 <option key={b.id} value={b.id}>
                   {b.name} · {b.edition}
@@ -280,7 +283,7 @@ export default function UpgradeAdvisor({
         </div>
         <p className="upgrade-note">
           AD7 示例：¥13,980、M 码约 8.44
-          kg，均为读者提供；称重附件范围待确认。官网整车重量与实际装车称重可能口径不同。C45 SL
+          kg，均为读者提供；称重时所含附件未记录。官网整车重量与实际装车称重可能口径不同。C45 SL
           原轮组重量留空，不以估计值计算减重。
         </p>
         <div className="upgrade-preferences">
@@ -392,7 +395,7 @@ export default function UpgradeAdvisor({
           </div>
           <p className="upgrade-note">
             AD7
-            不同年份与销售配置可能不同。请以实车标识为准；不知道接口时可以先做候选清单，最终安装结论留待核对。
+            不同年份与销售配置可能不同。请以实车标识为准；不知道接口时可以先做候选清单，安装前由车店检查。
           </p>
         </details>
       </section>
@@ -402,7 +405,9 @@ export default function UpgradeAdvisor({
             <span>02</span>
             <div>
               <h3>选择配件，比较具体版本</h3>
-              <p>按国内官网价格由低到高排列，待询价项目保留在末尾。不是性能排名。</p>
+              <p>
+                人民币参考价优先显示，其他价格按币种分组、组内升序排列。地区、版本与销售单位分别标注。
+              </p>
             </div>
           </div>
           <div className="upgrade-category" role="group" aria-label="升级配件类别">
@@ -438,10 +443,10 @@ export default function UpgradeAdvisor({
               </select>
             </label>
             <NumberField
-              label="单项价格上限 / 元"
+              label="人民币参考价上限 / 元"
               value={maxPrice}
               set={setMaxPrice}
-              placeholder="不限；待询价仍显示"
+              placeholder="仅筛选人民币参考价"
             />
           </div>
           <label className="upgrade-inline-check">
@@ -450,11 +455,11 @@ export default function UpgradeAdvisor({
               checked={pricedOnly}
               onChange={(e) => setPricedOnly(e.target.checked)}
             />
-            只看已有国内官方参考价的产品
+            只看已有参考价的产品
           </label>
           <p className="upgrade-note">
             找到 {products.length}{' '}
-            项。轮组价格是一对，传感器通常是单只，轮胎通常是单条；具体包装范围以每条记录为准。
+            项。轮组价格是一对，传感器通常是单只，轮胎通常是单条；具体包装范围以每条记录为准。外币价格不参与人民币上限筛选。
           </p>
           {category === 'wheels' && (
             <button
@@ -517,16 +522,18 @@ export default function UpgradeAdvisor({
                     ))}
                   </dl>
                   <p>{p.compatibility}</p>
-                  <p>
-                    {p.chinaPrice?.note} 核对：{p.chinaPrice?.checkedAt}
-                  </p>
+                  {p.price && (
+                    <p>
+                      {p.price.note} 查阅：{p.price.checkedAt}
+                    </p>
+                  )}
                   <a href={p.source} target="_blank" rel="noreferrer">
                     查看资料来源 ↗
                   </a>
-                  {p.chinaPrice?.amount != null && (
+                  {p.price?.amount != null && (
                     <a
                       className="upgrade-price-source"
-                      href={p.chinaPrice.source}
+                      href={p.price.source}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -555,7 +562,9 @@ export default function UpgradeAdvisor({
             <span>03</span>
             <div>
               <h3>我的升级方案</h3>
-              <p>报价留空时使用已核实的国内参考价；没有参考价的项目继续保留为待询价。</p>
+              <p>
+                预算统一使用人民币。国内参考价可自动计入；海外价格保留原币种展示，请填写人民币到手报价后计入总额。
+              </p>
             </div>
           </div>
           <div role="status" className="upgrade-message">
@@ -588,7 +597,7 @@ export default function UpgradeAdvisor({
                   value={q.price}
                   set={(v) => updateQuote(p.id, { price: v })}
                   placeholder={
-                    p.chinaPrice?.amount != null ? String(p.chinaPrice.amount) : '待询价'
+                    p.price?.currency === 'CNY' ? String(p.price.amount) : '填写人民币到手价'
                   }
                 />
                 <label className="upgrade-field">
@@ -775,7 +784,7 @@ export default function UpgradeAdvisor({
           {advice.map((a, i) => (
             <li key={i} data-level={a.level}>
               <span>
-                {a.level === 'conflict' ? '搭配冲突' : a.level === 'check' ? '待核对' : '可考虑'}
+                {a.level === 'conflict' ? '搭配冲突' : a.level === 'check' ? '安装核对' : '可考虑'}
               </span>
               {a.text}
             </li>
@@ -806,7 +815,7 @@ function UpgradeReading() {
           先核对轮高、内外宽、胎圈结构、允许胎宽与系统限重，再看辐条和花鼓。棘轮齿数更多主要改变啮合角，陶瓷轴承标签也不能单独证明更低阻力。维护便利性要看密封、轴承尺寸、塔基与棘轮备件能否买到；碳辐条还要问单根更换及返厂流程。
         </p>
         <p>
-          稳定性不能只按轮高排名。前轮轮廓、轮胎搭配、偏航角、骑手体重与操控都会影响侧风感受；没有同条件测量时，应把这一项保留为待试骑，而不是编造评分。
+          稳定性不能只按轮高排名。前轮轮廓、轮胎搭配、偏航角、骑手体重与操控都会影响侧风感受；可优先参考条件相近的测试，并通过试骑判断是否适合自己。
         </p>
         <a href={`${base}?view=learn&category=science`}>查看空气动力学、轮胎与功率专题 ↗</a>
       </details>

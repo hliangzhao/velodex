@@ -15,6 +15,10 @@ const {
   numberOrNull,
   wheelWeightChange,
   candidateNote,
+  quotePrice,
+  priceLabel,
+  referencePriceLabel,
+  compareReferencePrices,
 } = await import(`data:text/javascript;base64,${Buffer.from(source).toString('base64')}`);
 const products = loadParts().products;
 const pick = (id, price = '', quantity = 1) => ({ id, price, quantity, version: '' });
@@ -42,7 +46,7 @@ test('budget separates quantities, missing quotes, labor, consumables and one wh
   assert.equal(cost.complete, true);
   s.picks.push(pick('voso-ultimate-cn'));
   assert.equal(costSummary(s, products).complete, false);
-  assert.ok(costSummary(s, products).missing.includes('Ultimate 国内询价候选'));
+  assert.ok(costSummary(s, products).missing.includes('Ultimate 50 · 日本版'));
   s.picks = [pick('igpsport-cad70', '', 2)];
   assert.equal(costSummary(s, products).applySale, false);
   assert.equal(costSummary(s, products).min, 448);
@@ -138,16 +142,59 @@ test('saved and shared plans validate ids, bounded text, booleans, quantities an
   assert.equal(parseAdvisor('{broken', products), null);
   assert.equal(parseAdvisor('x'.repeat(20001), products), null);
 });
-test('expanded catalogue has unit-aware domestic prices and verified edge cases', () => {
+test('overseas references never become RMB quotes without explicit input', () => {
+  const s = initialAdvisor();
+  s.installation = '0';
+  s.adapters = '0';
+  s.picks = [pick('voso-ultimate-cn'), pick('shimano-pd-r7000'), pick('elilee-e44')];
+  assert.equal(costSummary(s, products).subtotal, 4500);
+  assert.equal(costSummary(s, products).complete, false);
+  assert.equal(costSummary(s, products).missing.length, 2);
+  const voso = products.find((p) => p.id === 'voso-ultimate-cn');
+  assert.equal(quotePrice(pick(voso.id), voso), null);
+  assert.equal(quotePrice(pick(voso.id, '0'), voso), 0);
+  assert.equal(quotePrice(pick(voso.id, 'invalid'), voso), null);
+  s.picks[0].price = '4000';
+  s.picks[1].price = '680';
+  assert.equal(costSummary(s, products).subtotal, 9180);
+  assert.equal(costSummary(s, products).complete, true);
+});
+test('price labels preserve currency, region and decimals; ordering does not compare unlike currencies', () => {
+  const ids = ['voso-ultimate-cn', 'shimano-pd-r7000', 'elilee-e44'];
+  const withoutPrice = products.find((p) => !p.price);
+  const sorted = [...ids.map((id) => products.find((p) => p.id === id)), withoutPrice].sort(
+    compareReferencePrices,
+  );
+  assert.deepEqual(
+    sorted.map((p) => p.id),
+    ['elilee-e44', 'shimano-pd-r7000', 'voso-ultimate-cn', withoutPrice.id],
+  );
+  assert.equal(priceLabel(withoutPrice), '');
+  assert.equal(priceLabel(sorted[2]), 'JP¥132,000 · 日本代理商价');
+  assert.equal(
+    referencePriceLabel({ amount: 111.99, currency: 'USD', market: '美国', kind: 'official' }),
+    'US$111.99 · 美国官网价',
+  );
+});
+test('published prices have a region, currency, sales unit and source without editorial placeholders', () => {
   assert.ok(products.length >= 80);
   for (const p of products) {
-    const v = p.chinaPrice;
-    assert.ok(v && v.scope && v.note && /^\d{4}-\d{2}-\d{2}$/.test(v.checkedAt), p.id);
+    const v = p.price;
+    assert.equal('chinaPrice' in p, false, p.id);
+    if (!v) continue;
+    assert.ok(v.market && v.scope && v.note && /^\d{4}-\d{2}-\d{2}$/.test(v.checkedAt), p.id);
     assert.equal(new URL(v.source).protocol, 'https:');
-    assert.ok(['official', 'pending', 'launch'].includes(v.kind));
-    if (v.kind === 'pending') assert.equal(v.amount, null);
-    else assert.ok(v.amount > 0 && Number.isFinite(v.amount));
+    assert.ok(['official', 'distributor', 'launch'].includes(v.kind));
+    assert.ok(['CNY', 'USD', 'EUR', 'GBP', 'JPY', 'CAD'].includes(v.currency));
+    assert.ok(v.amount > 0 && Number.isFinite(v.amount));
   }
+  assert.ok(products.filter((p) => p.price?.currency === 'CNY').length >= 27);
+  assert.ok(products.filter((p) => p.price && p.price.currency !== 'CNY').length >= 21);
+  for (const file of ['parts', 'catalog'])
+    assert.doesNotMatch(
+      readFileSync(new URL(`./data/${file}.json`, import.meta.url), 'utf8'),
+      /待确认|待核实|待核对|待询价|待核验/,
+    );
   assert.equal(products.find((p) => p.id === 'elilee-x46').selection.depthMm, 45);
   assert.deepEqual(products.find((p) => p.id === 'igpsport-bsc100max').selection.powerProtocols, [
     'BLE',
@@ -155,9 +202,10 @@ test('expanded catalogue has unit-aware domestic prices and verified edge cases'
   assert.deepEqual(products.find((p) => p.id === 'igpsport-bsc200-pro').selection.protocols, [
     'BLE',
   ]);
-  assert.equal(products.find((p) => p.id === 'voso-ultimate-cn').selection.weightG, undefined);
-  assert.equal(products.find((p) => p.id === 'voso-ultimate-cn').chinaPrice.amount, null);
-  assert.equal(products.find((p) => p.id === 'magene-pes-p515-2025').chinaPrice.kind, 'launch');
+  assert.equal(products.find((p) => p.id === 'voso-ultimate-cn').selection.weightG, 1275);
+  assert.equal(products.find((p) => p.id === 'voso-ultimate-cn').price.amount, 132000);
+  assert.equal(products.find((p) => p.id === 'voso-ultimate-cn').price.currency, 'JPY');
+  assert.equal(products.find((p) => p.id === 'magene-pes-p515-2025').price.kind, 'launch');
 });
 test('server exposes added categories and specification search for local frontend', async (t) => {
   const server = createApp().listen(0, '127.0.0.1');

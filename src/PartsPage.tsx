@@ -3,7 +3,7 @@ import { ArrowLeft, ArrowUpRight, Check, CircleDot, Cog, Search, X } from 'lucid
 import type { PartsCatalog, PartCategory, Product } from './types';
 import { imageUrl, loadCatalog, loadParts } from './catalog';
 import './parts.css';
-import { priceLabel } from './upgrade-planner';
+import { compareReferencePrices, priceLabel } from './upgrade-planner';
 import { SiteHeader, SiteFooter } from './SiteChrome';
 
 const categories: {
@@ -210,16 +210,12 @@ export default function PartsPage() {
           p.category === category &&
           (brand === 'all' || p.brandId === brand) &&
           (status === 'all' || p.status === status) &&
-          (priceMode !== 'priced' || p.chinaPrice?.amount != null) &&
+          (priceMode !== 'priced' || p.price?.amount != null) &&
           `${p.name} ${p.brandId} ${catalog.brands.find((b) => b.id === p.brandId)?.name} ${p.specs.flat().join(' ')}`
             .toLowerCase()
             .includes(query.toLowerCase().trim()),
       )
-      .sort((a, b) =>
-        priceMode === 'ascending'
-          ? (a.chinaPrice?.amount ?? Infinity) - (b.chinaPrice?.amount ?? Infinity)
-          : 0,
-      ) || [];
+      .sort((a, b) => (priceMode === 'ascending' ? compareReferencePrices(a, b) : 0)) || [];
   const compare = catalog?.products.filter((p) => compareIds.includes(p.id)) || [];
   const selectedBrand = catalog?.brands.find((b) => b.id === selected?.brandId);
   return (
@@ -237,7 +233,7 @@ export default function PartsPage() {
               <br />
               规格与选型参考
             </h1>
-            <p>比较轮组、功率计、码表、传感器及接触点配件，查看规格、国内参考价与安装条件。</p>
+            <p>比较轮组、功率计、码表、传感器及接触点配件，查看规格、各地区参考价与安装条件。</p>
           </div>
           <div className="parts-hero-art" aria-hidden="true">
             <PartDrawing category={category} />
@@ -316,18 +312,20 @@ export default function PartsPage() {
                   </div>
                   <div className="part-specs">
                     <p className="part-description">{selected.description}</p>
-                    <div className="part-china-price">
-                      <strong>{priceLabel(selected)}</strong>
-                      <p>{selected.chinaPrice?.scope}</p>
-                      <small>
-                        {selected.chinaPrice?.note} 核对：
-                        {selected.chinaPrice?.checkedAt || selected.checkedAt}
-                      </small>
-                    </div>
-                    {selected.chinaPrice?.amount != null && (
+                    {selected.price && (
+                      <div className="part-china-price">
+                        <strong>{priceLabel(selected)}</strong>
+                        <p>{selected.price?.scope}</p>
+                        <small>
+                          {selected.price?.note} 核对：
+                          {selected.price?.checkedAt || selected.checkedAt}
+                        </small>
+                      </div>
+                    )}
+                    {selected.price?.amount != null && (
                       <a
                         className="source-link"
-                        href={selected.chinaPrice.source}
+                        href={selected.price.source}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -460,15 +458,15 @@ export default function PartsPage() {
               <div className="parts-price-toolbar">
                 <a href={`${base}?view=workshop&tool=advisor`}>计算升级预算与核对搭配 ↗</a>
                 <label>
-                  国内价格{' '}
+                  参考价格{' '}
                   <select
-                    aria-label="国内价格筛选"
+                    aria-label="参考价格筛选"
                     value={priceMode}
                     onChange={(e) => setPriceMode(e.target.value)}
                   >
                     <option value="all">全部资料</option>
-                    <option value="priced">仅有官方参考价</option>
-                    <option value="ascending">价格从低到高，待询价在后</option>
+                    <option value="priced">仅显示有参考价的产品</option>
+                    <option value="ascending">按币种分组，组内价格升序</option>
                   </select>
                 </label>
               </div>
@@ -502,7 +500,7 @@ export default function PartsPage() {
                         </div>
                         <h3>{p.name}</h3>
                         <p>{p.tagline}</p>
-                        <strong className="part-card-price">{priceLabel(p)}</strong>
+                        {p.price && <strong className="part-card-price">{priceLabel(p)}</strong>}
                         <div className="part-card-facts">
                           {p.specs.slice(0, 2).map(([k, v]) => (
                             <span key={k}>
@@ -579,12 +577,12 @@ export default function PartsPage() {
                     </thead>
                     <tbody>
                       <tr>
-                        <th>国内参考价</th>
+                        <th>参考价与地区</th>
                         {compare.map((p) => (
                           <td key={p.id}>
-                            {priceLabel(p)}
+                            {priceLabel(p) || '—'}
                             <br />
-                            <small>{p.chinaPrice?.scope}</small>
+                            <small>{p.price?.scope}</small>
                           </td>
                         ))}
                       </tr>

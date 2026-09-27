@@ -97,9 +97,11 @@ export type PartCategory =
   | 'pedals'
   | 'cleats'
   | 'shoes';
-export type ChinaPrice = {
-  amount: number | null;
-  kind: 'official' | 'launch' | 'pending';
+export type ReferencePrice = {
+  amount: number;
+  currency: 'CNY' | 'USD' | 'EUR' | 'GBP' | 'JPY' | 'CAD';
+  market: string;
+  kind: 'official' | 'launch' | 'distributor';
   scope: string;
   note: string;
   source: string;
@@ -142,7 +144,7 @@ export type Product = {
   source: string;
   sourceLabel: string;
   checkedAt: string;
-  chinaPrice?: ChinaPrice;
+  price?: ReferencePrice;
   selection?: SelectionSpecs;
 };
 export type PartsCatalog = {

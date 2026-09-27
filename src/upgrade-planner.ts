@@ -1,4 +1,4 @@
-import type { PartCategory, Product } from './types';
+import type { PartCategory, Product, ReferencePrice } from './types';
 
 export const upgradeCategories: { id: PartCategory; name: string }[] = [
   { id: 'wheels', name: '轮组' },
@@ -98,14 +98,30 @@ export function cny(value: number) {
   return `¥${value.toLocaleString('zh-CN', { maximumFractionDigits: 0 })}`;
 }
 export function priceLabel(p: Product) {
-  const price = p.chinaPrice;
-  return price?.amount != null
-    ? `${cny(price.amount)} · ${price.kind === 'launch' ? '国内发布价' : '国内官网价'}`
-    : '国内售价待核实';
+  return p.price ? referencePriceLabel(p.price) : '';
+}
+export function referencePriceLabel(price: ReferencePrice) {
+  const symbols = { CNY: '¥', USD: 'US$', EUR: '€', GBP: '£', JPY: 'JP¥', CAD: 'CA$' };
+  const amount = price.amount.toLocaleString('zh-CN', { maximumFractionDigits: 2 });
+  const kind =
+    price.kind === 'launch' ? '发布价' : price.kind === 'distributor' ? '代理商价' : '官网价';
+  return `${symbols[price.currency]}${amount} · ${price.market}${kind}`;
+}
+export function compareReferencePrices(a: Product, b: Product) {
+  if (!a.price || !b.price) return a.price ? -1 : b.price ? 1 : 0;
+  const order = ['CNY', 'USD', 'EUR', 'GBP', 'JPY', 'CAD'];
+  return (
+    order.indexOf(a.price.currency) - order.indexOf(b.price.currency) ||
+    a.price.amount - b.price.amount
+  );
 }
 export function quotePrice(q: Quote, p: Product): number | null {
   // Explicit quotes take precedence, including zero. Invalid nonempty quotes do not silently use MSRP.
-  return q.price.trim() ? numberOrNull(q.price) : (p.chinaPrice?.amount ?? null);
+  return q.price.trim()
+    ? numberOrNull(q.price)
+    : p.price?.currency === 'CNY'
+      ? p.price.amount
+      : null;
 }
 export function costSummary(state: AdvisorState, products: Product[]) {
   let subtotal = 0;
@@ -253,13 +269,13 @@ export function planAdvice(state: AdvisorState, products: Product[]): Advice[] {
 export function candidateNote(p: Product, state: AdvisorState): string {
   const s = p.selection;
   if (p.category === 'wheels') {
-    if (!s?.depthMm) return '具体轮高、版本和接口尚需确认，暂不作性能排序。';
+    if (!s?.depthMm) return '结合规格表比较轮高与胎宽，选购时一并核对接口、备件与安装费用。';
     if (state.route === 'wind')
       return s.depthMm > 50
         ? '较高框轮候选：开阔路段请优先确认侧风操控。'
         : '可先列入中框候选；仍需侧风测试与实骑判断。';
     if (state.priority === 'weight' || state.route === 'climb')
-      return `${s.weightG ? `标称 ${s.weightG} g` : '重量待核对'}；先确认与旧轮组称重范围相同，再比较减重。`;
+      return `${s.weightG ? `标称 ${s.weightG} g` : '比较前可先称量轮组'}；在与旧轮组附件范围相同时比较减重。`;
     return state.priority === 'speed'
       ? '巡航比较需结合轮胎实际宽度和同条件风洞数据，不能只看轮高。'
       : '先比较整对到手价、花鼓维护、辐条备件与售后条件。';

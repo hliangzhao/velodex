@@ -255,15 +255,7 @@
       "source": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-db",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/dt-arc1100-65.jpg",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.dtswiss.com/en/wheels/wheels-road/aero/arc-1100-dicut-db",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/dt-arc1100-65.jpg"
     },
     {
       "id": "zipp-404-firecrest",
@@ -301,15 +293,7 @@
       "source": "https://www.sram.com/en/zipp/models/wh-404-ftld-b1",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/zipp-404-firecrest.png",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.sram.com/en/zipp/models/wh-404-ftld-b1",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/zipp-404-firecrest.png"
     },
     {
       "id": "zipp-303-firecrest",
@@ -347,15 +331,7 @@
       "source": "https://www.sram.com/en/service/models/wh-303-ftld-a1",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/zipp-303-firecrest.png",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.sram.com/en/service/models/wh-303-ftld-a1",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/zipp-303-firecrest.png"
     },
     {
       "id": "enve-ses45",
@@ -394,12 +370,14 @@
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
       "image": "/parts/enve-ses45.jpg",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+      "price": {
+        "amount": 2850,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "INNERDRIVE 前后轮一对；HG / XDR / N3W / Microspline 后轮",
         "source": "https://enve.com/products/ses-4-5",
+        "note": "前轮 US$1,282.50 + 后轮 US$1,567.50 合计；非页面默认单只前轮价格。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -439,15 +417,7 @@
       "source": "https://www.specialized.com/us/en/roval-rapide-clx-iii/p/1000256237",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/roval-rapide-clx3.webp",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.specialized.com/us/en/roval-rapide-clx-iii/p/1000256237",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/roval-rapide-clx3.webp"
     },
     {
       "id": "shimano-c50",
@@ -484,15 +454,7 @@
       "tradeoff": "与 Ultegra C50 外观接近，但花鼓与塔基不同，替换旧轮组时需先确认飞轮接口。",
       "source": "https://bike.shimano.com/products/components/pdp.P-WH-R9270-C50-TL-F.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://bike.shimano.com/products/components/pdp.P-WH-R9270-C50-TL-F.html",
-        "checkedAt": "2026-09-27"
-      }
+      "checkedAt": "2026-09-20"
     },
     {
       "id": "dura-ace-r9200",
@@ -532,15 +494,7 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/dura-ace-r9200.jpg",
       "imageCaption": "官方 RD-R9250 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9250.html",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://bike.shimano.com/en-SG/stories/article/science-of-speed.html",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9250.html"
     },
     {
       "id": "ultegra-r8100",
@@ -580,15 +534,7 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/ultegra-r8100.jpg",
       "imageCaption": "官方 RD-R8150 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R8150.html",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://bike.shimano.com/products/components/pdp.P-RD-R8150.html",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R8150.html"
     },
     {
       "id": "105-r7100",
@@ -628,15 +574,7 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/105-r7100.jpg",
       "imageCaption": "官方 RD-R7150 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R7150.html",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://bike.shimano.com/stories/article/shimano-105-di2-it-is-a-new-day.html",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R7150.html"
     },
     {
       "id": "sram-red-e1",
@@ -674,15 +612,7 @@
       "source": "https://www.sram.com/en/sram/models/ed-red-e1",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/sram-red-e1.png",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.sram.com/en/sram/models/ed-red-e1",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/sram-red-e1.png"
     },
     {
       "id": "super-record-13",
@@ -722,15 +652,7 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/super-record-13.jpg",
       "imageCaption": "官方 Super Record 13 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://www.campagnolo.com/us-en/super-record-13-rear-derailleur/CRDSUPERRECORD13.html"
     },
     {
       "id": "dura-ace-r9100",
@@ -770,15 +692,7 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/dura-ace-r9100.jpg",
       "imageCaption": "官方 RD-R9100-SS 后拨图 · 系列代表部件，非整套套件",
-      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://bike.shimano.com/en-NZ/products/components/pdp.P-RD-R9100-SS.html"
     },
     {
       "id": "gp5000-str",
@@ -816,15 +730,7 @@
       "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-s-tr/",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/gp5000-str.webp",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-s-tr/",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/gp5000-str.webp"
     },
     {
       "id": "gp5000-clincher",
@@ -861,15 +767,7 @@
       "tradeoff": "方便维护的同时，内胎材质、胎压与路况都会影响滚阻和夹胎风险。",
       "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000/",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000/",
-        "checkedAt": "2026-09-27"
-      }
+      "checkedAt": "2026-09-20"
     },
     {
       "id": "aero111",
@@ -907,15 +805,7 @@
       "source": "https://www.continental-tires.com/products/bicycle/tires/aero-111/",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/aero111.png",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.continental-tires.com/products/bicycle/tires/aero-111/",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/aero111.png"
     },
     {
       "id": "schwalbe-pro-one",
@@ -953,15 +843,7 @@
       "source": "https://www.schwalbe.com/en/PRO-One-Tubeless-11653975",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/schwalbe-pro-one.png",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.schwalbe.com/en/PRO-One-Tubeless-11653975",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/schwalbe-pro-one.png"
     },
     {
       "id": "vittoria-corsa-pro",
@@ -1000,12 +882,14 @@
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
       "image": "/parts/vittoria-corsa-pro.png",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+      "price": {
+        "amount": 111.99,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "700×24c / Para / 单条外胎",
         "source": "https://vittoria.com/products/corsa-pro-tubeless-ready",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -1045,15 +929,7 @@
       "source": "https://www.pirelli.com/tires/en-us/bike/tires/catalogue/p-zero-race-tlr-rs",
       "sourceLabel": "厂商官方产品／技术资料",
       "checkedAt": "2026-09-20",
-      "image": "/parts/pirelli-race-tlr-rs.jpg",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.pirelli.com/tires/en-us/bike/tires/catalogue/p-zero-race-tlr-rs",
-        "checkedAt": "2026-09-27"
-      }
+      "image": "/parts/pirelli-race-tlr-rs.jpg"
     },
     {
       "id": "roval-rapide-cockpit",
@@ -1090,12 +966,14 @@
       "image": "/parts/roval-rapide-cockpit.webp",
       "imageCaption": "官方产品图 · Rapide Cockpit",
       "imageSource": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+      "price": {
+        "amount": 699.99,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "Rapide Cockpit / 一体式车把与把立",
         "source": "https://www.specialized.com/us/en/roval-rapide-cockpit/p/218323",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -1132,15 +1010,7 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/pro-vibe-evo.png",
       "imageCaption": "官方产品图 · Vibe Evo",
-      "imageSource": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://pro-bikegear.com/products/pro-vibe-evo-handlebar"
     },
     {
       "id": "roval-alpinist-seatpost",
@@ -1177,12 +1047,14 @@
       "image": "/parts/roval-alpinist-seatpost.webp",
       "imageCaption": "官方产品图 · Alpinist Seatpost",
       "imageSource": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+      "price": {
+        "amount": 205,
+        "currency": "GBP",
+        "market": "英国",
+        "scope": "Alpinist / 一支座管",
         "source": "https://www.specialized.com/gb/en/roval-alpinist-seatpost/p/187098",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -1219,15 +1091,7 @@
       "checkedAt": "2026-09-20",
       "image": "/parts/pro-vibe-seatpost.png",
       "imageCaption": "官方产品图 · Vibe Carbon Seatpost",
-      "imageSource": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://pro-bikegear.com/products/pro-vibe-carbon-seatpost"
     },
     {
       "id": "power-expert",
@@ -1262,15 +1126,7 @@
       "tradeoff": "适合程度需要实际骑行确认；同系列不同宽度或导轨版本不应混用重量数据。",
       "source": "https://www.specialized.com/ph/en/power-expert/p/155978",
       "sourceLabel": "厂商官方产品页",
-      "checkedAt": "2026-09-20",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.specialized.com/ph/en/power-expert/p/155978",
-        "checkedAt": "2026-09-27"
-      }
+      "checkedAt": "2026-09-20"
     },
     {
       "id": "fizik-tempo-argo-r3",
@@ -1305,15 +1161,7 @@
       "tradeoff": "适合程度需要实际骑行确认；同系列不同宽度或导轨版本不应混用重量数据。",
       "source": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
       "sourceLabel": "厂商官方产品页",
-      "checkedAt": "2026-09-20",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.fizik.com/en-us/products/saddles-tempo-argo-r3-black-targor3fa1",
-        "checkedAt": "2026-09-27"
-      }
+      "checkedAt": "2026-09-20"
     },
     {
       "id": "lun-hyper3-d45",
@@ -1350,12 +1198,14 @@
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/lun-hyper3-d45.png",
       "imageSource": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.winspace.cc/product/hyper-3-d45-disc-brake-wheelset/",
+      "price": {
+        "amount": 1499,
+        "currency": "USD",
+        "market": "国际直销（中国香港发货）",
+        "scope": "HYPER 3 D45 前后轮一对",
+        "source": "https://www.winspace.cc/products/hyper-3-d45-disc-brake-wheelset",
+        "note": "国际官网美元展示价，原价 US$1,699；各地税费与运输方式另计。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -1393,15 +1243,7 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/vision-metron45-rs.png",
-      "imageSource": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://shop.visiontechusa.com/fr/wheelsets/road-triathlon/metron-45-rs"
     },
     {
       "id": "sram-force-e1",
@@ -1437,15 +1279,7 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "图为 Force E1 手变，不代表完整套件的交付范围。",
       "image": "/parts/sram-force-e1.png",
-      "imageSource": "https://www.sram.com/en/sram/models/ed-frc-e1",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.sram.com/en/sram/models/rd-frc-e-e1",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://www.sram.com/en/sram/models/ed-frc-e1"
     },
     {
       "id": "magene-qed",
@@ -1481,15 +1315,7 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "迈金官方 QED 装配与走线示意图；图中曲柄、飞轮等不属于小套重量范围。",
       "image": "/parts/magene-qed.webp",
-      "imageSource": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://www.magene-enterprise.com/cycling-solutions/electronic-shifting-systems/"
     },
     {
       "id": "vittoria-corsa-next",
@@ -1526,12 +1352,14 @@
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/vittoria-corsa-next.png",
       "imageSource": "https://vittoria.com/products/corsa-n-ext-tubeless-ready",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+      "price": {
+        "amount": 96.99,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "700×24c / 黑色 / 单条外胎",
         "source": "https://vittoria.com/products/corsa-n-ext-tubeless-ready",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -1569,15 +1397,7 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方实装细节图，摄影 Christopher Lanaway。",
       "image": "/parts/gp5000-as-tr.jpg",
-      "imageSource": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000-allseason-tr/"
     },
     {
       "id": "enve-ses-ar-handlebar",
@@ -1614,12 +1434,14 @@
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/enve-ses-ar-handlebar.jpg",
       "imageSource": "https://enve.com/products/ses-ar-road-handlebar",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+      "price": {
+        "amount": 400,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "SES AR IN-Route / 38 cm / 一支车把",
         "source": "https://enve.com/products/ses-ar-road-handlebar",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -1657,15 +1479,7 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/ritchey-carbon-link.webp",
-      "imageSource": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://ritcheylogic.com/bike/seatposts/wcs-carbon-link-flexlogic-seatpost"
     },
     {
       "id": "prologo-scratch-m5",
@@ -1702,12 +1516,14 @@
       "imageCaption": "Scratch M5 系列官方俯视图；座弓版本需另行选择。",
       "image": "/parts/prologo-scratch-m5.jpg",
       "imageSource": "https://prologo.it/en/products/scratch-m5",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
+      "price": {
+        "amount": 229,
+        "currency": "EUR",
+        "market": "意大利",
+        "scope": "Scratch M5 / Nack 碳弓 / 黑色 / 一个坐垫",
         "source": "https://prologo.it/en/products/scratch-m5",
+        "note": "价格对应 Nack 碳弓，Tirox 合金钢弓属于另一销售规格。",
+        "kind": "official",
         "checkedAt": "2026-09-27"
       }
     },
@@ -1745,15 +1561,7 @@
       "checkedAt": "2026-09-24",
       "imageCaption": "官方产品参考图；具体尺寸、颜色与附件以所选版本为准。",
       "image": "/parts/slr-boost-ti316.webp",
-      "imageSource": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆对应型号 / 规格待询价",
-        "note": "尚未核实该版本的国内官方售价，未采用海外价格换算。",
-        "source": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2",
-        "checkedAt": "2026-09-27"
-      }
+      "imageSource": "https://it.selleitalia.com/slr-boost-ti-316-superflow/?setCurrencyId=2"
     },
     {
       "id": "elilee-e50",
@@ -1789,14 +1597,6 @@
       "source": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 3200,
-        "kind": "official",
-        "scope": "前后轮组一对",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
         "weightG": 1555,
@@ -1806,7 +1606,17 @@
       },
       "image": "/parts/elilee-e50.png",
       "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 3200,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-e50%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "elilee-e44",
@@ -1842,14 +1652,6 @@
       "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 4500,
-        "kind": "official",
-        "scope": "前后轮组一对",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
         "weightG": 1360,
@@ -1859,7 +1661,17 @@
       },
       "image": "/parts/elilee-e44.jpg",
       "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 4500,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "elilee-x46",
@@ -1895,14 +1707,6 @@
       "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 6800,
-        "kind": "official",
-        "scope": "前后轮组一对",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
         "weightG": 1125,
@@ -1912,7 +1716,17 @@
       },
       "image": "/parts/elilee-x46.png",
       "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 6800,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "elilee-x58",
@@ -1948,14 +1762,6 @@
       "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 6800,
-        "kind": "official",
-        "scope": "前后轮组一对",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["确认花鼓型号、棘轮规格和可购买的辐条备件", "确认额定系统重量、胎宽表与保修政策"],
         "weightG": 1260,
@@ -1965,51 +1771,70 @@
       },
       "image": "/parts/elilee-x58.png",
       "imageSource": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 6800,
+        "kind": "official",
+        "scope": "前后轮组一对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/elilee-xxe-%E7%A2%B3%E7%BA%A4%E7%BB%B4%E8%BE%90%E8%BD%AE%E7%BB%84/",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "voso-ultimate-cn",
       "brandId": "voso",
-      "name": "Ultimate 国内询价候选",
+      "name": "Ultimate 50 · 日本版",
       "category": "wheels",
-      "era": "国内 SKU 待核对",
+      "era": "日本代理商现行规格",
       "status": "current",
-      "tagline": "先确认年份、轮高和国内销售版本",
-      "description": "先确认年份、轮高和国内销售版本。保留在清单中便于比较报价；资料未齐之前不参与减重或性能排名。",
+      "tagline": "50 mm · 有钩碳圈 · 碳辐条",
+      "description": "日本代理商 Podium 销售的 Ultimate 50，采用 24 mm 内宽轮圈与 36T 浮动棘轮花鼓。这里的规格和价格对应日本市场版本。",
       "specs": [
-        ["销售范围", "国内 Ultimate 系列；具体 SKU 待商家确认"],
-        ["轮高 / 重量", "待核对；不套用海外 Ultimate 50 / 60 参数"],
-        ["花鼓 / 辐条", "待核对具体批次及备件"],
-        ["接口", "塔基、碟片座、轴端、胎圈结构均待核对"]
+        ["框高", "前 / 后 50 mm"],
+        ["内宽 / 外宽", "24 / 30 mm"],
+        ["重量", "一对 1275 g ±2%；前 585 g / 后 690 g"],
+        ["胎圈结构", "有钩碳纤维轮圈"],
+        ["轮圈材料", "Toray T800 + T700"],
+        ["花鼓", "VOSO / 36T 浮动棘轮"],
+        ["轴端与碟片", "前 12×100 / 后 12×142；Center Lock"],
+        ["塔基", "Shimano 11–12 速；8–10 速需垫圈"],
+        ["轴承", "前 6802×2；后 15267×2 + 6802×2"],
+        ["辐条", "5.2 mm 碳辐条；前后各 21 根，2:1 编法"]
       ],
       "highlights": [
         {
-          "title": "选择依据",
-          "text": "保留在清单中便于比较报价；资料未齐之前不参与减重或性能排名。"
+          "title": "明确的零件规格",
+          "text": "轴承型号、棘轮结构和辐条尺寸均可从日本代理商资料查阅，便于向购买渠道了解维护与备件。"
         },
         {
-          "title": "下单前核对",
-          "text": "询价时索取实物型号、前后轮重量、轮圈内外宽、系统限重、轮胎兼容表与保修条款。"
+          "title": "地区版本",
+          "text": "日本版价格含当地消费税；国内同名产品请按实际年份、轮高和配置比较。"
         }
       ],
-      "compatibility": "询价时索取实物型号、前后轮重量、轮圈内外宽、系统限重、轮胎兼容表与保修条款。",
-      "tradeoff": "保留在清单中便于比较报价；资料未齐之前不参与减重或性能排名。",
-      "source": "https://mall.jd.com/view_search-5558594-42478347-99-1-20-1.html",
-      "sourceLabel": "厂商规格与选型资料",
+      "compatibility": "适用于相应贯通轴、Center Lock 碟片座和 Shimano 公路塔基系统。安装前核对轮胎兼容表、碟片位置及系统限重。",
+      "tradeoff": "碳辐条需要相应备件和装配工艺；选择购买渠道时一并了解辐条更换、保修与跨地区维修条件。",
+      "source": "https://www.podium.co.jp/lineup/13487",
+      "sourceLabel": "Podium 日本代理商 · VOSO Ultimate",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "国内轮组一对；年份和轮高待定",
-        "note": "已收录为国内询价候选，尚未核实具体国行 SKU 和官方售价。",
-        "source": "https://mall.jd.com/view_search-5558594-42478347-99-1-20-1.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
-        "notes": [
-          "填写报价时同时写明年份、轮高和塔基",
-          "请勿把 Ultimate、Ultimate Lite 或海外版本当成同一配置"
-        ]
+        "weightG": 1275,
+        "weightScope": "日本版前后轮一对；与旧轮比较时统一附件范围",
+        "depthMm": 50,
+        "innerWidthMm": 24,
+        "notes": ["日本市场版本，价格与售后范围按日本代理商资料", "核对轮胎兼容表与系统限重"]
+      },
+      "price": {
+        "amount": 132000,
+        "currency": "JPY",
+        "market": "日本",
+        "scope": "Ultimate 50 / Shimano 塔基 / 前后轮一对",
+        "source": "https://www.podium.co.jp/lineup/13487",
+        "note": "日本代理商含税定价；不含跨境运费和进口成本。",
+        "kind": "distributor",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -2046,14 +1871,6 @@
       "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 1980,
-        "kind": "official",
-        "scope": "仅盘爪，不含曲柄与盘片",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["所选曲柄长度须与当前设定匹配", "核对盘片是否包含及 110 BCD 孔位布局"],
         "powerType": "spider",
@@ -2062,7 +1879,17 @@
       },
       "image": "/parts/elilee-ek01.png",
       "imageSource": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
-      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件"
+      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件",
+      "price": {
+        "amount": 1980,
+        "kind": "official",
+        "scope": "仅盘爪，不含曲柄与盘片",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "elilee-x310-24-ek01",
@@ -2099,14 +1926,6 @@
       "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 4360,
-        "kind": "official",
-        "scope": "曲柄 + 功率盘爪；盘片另核对",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["所选曲柄长度须与当前设定匹配", "核对盘片是否包含及 110 BCD 孔位布局"],
         "powerType": "spider",
@@ -2116,7 +1935,17 @@
       },
       "image": "/parts/elilee-x310-24-ek01.png",
       "imageSource": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
-      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件"
+      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件",
+      "price": {
+        "amount": 4360,
+        "kind": "official",
+        "scope": "曲柄 + 功率盘爪；盘片另核对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "elilee-x310-dub-ek01",
@@ -2153,14 +1982,6 @@
       "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 3960,
-        "kind": "official",
-        "scope": "曲柄 + 功率盘爪；盘片另核对",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["所选曲柄长度须与当前设定匹配", "核对盘片是否包含及 110 BCD 孔位布局"],
         "powerType": "spider",
@@ -2170,7 +1991,17 @@
       },
       "image": "/parts/elilee-x310-dub-ek01.png",
       "imageSource": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
-      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件"
+      "imageCaption": "官方 EK-01 盘爪图；曲柄套装仅展示代表部件",
+      "price": {
+        "amount": 3960,
+        "kind": "official",
+        "scope": "曲柄 + 功率盘爪；盘片另核对",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.elilee.com.cn/product/ek-01-%E7%9B%98%E7%88%AA%E5%8A%9F%E7%8E%87%E8%AE%A1/",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "magene-p515",
@@ -2206,14 +2037,6 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=50",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 1480,
-        "kind": "launch",
-        "scope": "仅 P515 盘爪，不含曲柄、盘片",
-        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
-        "source": "https://www.biketo.com/news/54448.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["需确认当前曲柄是否支持该盘爪接口"],
         "powerType": "spider",
@@ -2222,7 +2045,17 @@
       },
       "image": "/parts/magene-p515.png",
       "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=50",
-      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准",
+      "price": {
+        "amount": 1480,
+        "kind": "launch",
+        "scope": "仅 P515 盘爪，不含曲柄、盘片",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "magene-teo-p515",
@@ -2256,14 +2089,6 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=52",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 2999,
-        "kind": "launch",
-        "scope": "TEO 曲柄 + P515；国行报价待核对",
-        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
-        "source": "https://www.biketo.com/news/54448.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "29 mm 轴心不直接适配 AD7 示例的 24 mm 中轴",
@@ -2276,7 +2101,17 @@
       },
       "image": "/parts/magene-teo-p515.png",
       "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=52",
-      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准",
+      "price": {
+        "amount": 2999,
+        "kind": "launch",
+        "scope": "TEO 曲柄 + P515；2025 发布套装",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "magene-p715-k",
@@ -2313,14 +2148,6 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=49",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 2999,
-        "kind": "launch",
-        "scope": "左右脚踏一对；锁片费用单列",
-        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
-        "source": "https://www.biketo.com/news/54448.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["K / S 是锁片版本差异，不是精度等级", "安装后按说明校准，并设置曲柄长度"],
         "powerType": "dual-pedal",
@@ -2331,7 +2158,17 @@
       },
       "image": "/parts/magene-p715-k.png",
       "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=49",
-      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准",
+      "price": {
+        "amount": 2999,
+        "kind": "launch",
+        "scope": "左右脚踏一对；锁片费用单列",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "magene-p715-s",
@@ -2368,14 +2205,6 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=49",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 2999,
-        "kind": "launch",
-        "scope": "左右脚踏一对；锁片费用单列",
-        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
-        "source": "https://www.biketo.com/news/54448.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["K / S 是锁片版本差异，不是精度等级", "安装后按说明校准，并设置曲柄长度"],
         "powerType": "dual-pedal",
@@ -2386,7 +2215,17 @@
       },
       "image": "/parts/magene-p715-s.png",
       "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=49",
-      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准",
+      "price": {
+        "amount": 2999,
+        "kind": "launch",
+        "scope": "左右脚踏一对；锁片费用单列",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "sigeyi-axo-road",
@@ -2421,14 +2260,6 @@
       "source": "https://www.sigeyishop.com/cn/products-axo-cn/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "仅功率盘爪；具体曲柄接口型号待选",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.sigeyishop.com/cn/products-axo-cn/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["需填写完整 AXO 型号和曲柄型号"],
         "powerType": "spider",
@@ -2470,14 +2301,6 @@
       "source": "https://www.garmin.com.cn/products/sports-recreation/rally-rs100/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "RS100 左测量脚踏 + 右普通脚踏，国内包装",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.garmin.com.cn/products/sports-recreation/rally-rs100/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["单边测量不能直接提供独立左右功率"],
         "powerType": "left",
@@ -2503,7 +2326,7 @@
         ["无线协议", "ANT+ / Bluetooth"],
         ["电池 / 防护", "CR2032 / IPX7"],
         ["结构高度", "传感器约 5.5 mm，仍需按模板检查间隙"],
-        ["曲柄版本", "Ride Ready 成品或 Factory Install；国内供货待核对"]
+        ["曲柄版本", "Ride Ready 成品或 Factory Install 送厂安装；服务范围以购买地区为准"]
       ],
       "highlights": [
         {
@@ -2520,14 +2343,6 @@
       "source": "https://4iiii.com/precision-3-plus/",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "国内左曲柄具体型号与长度待询价",
-        "note": "技术参数来自厂商全球页；国内版本、服务与官方售价尚待核实，未引入外币价格。",
-        "source": "https://4iiii.com/precision-3-plus/",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "成品曲柄与原曲柄返厂加装是不同销售项目",
@@ -2573,14 +2388,6 @@
       "source": "https://www.igpsport.cn/product/bsc100s",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 199,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/bsc100s",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2592,7 +2399,17 @@
       },
       "image": "/parts/igpsport-bsc100s.png",
       "imageSource": "https://www.igpsport.cn/product/bsc100s",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc100s",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-bsc100max",
@@ -2629,14 +2446,6 @@
       "source": "https://www.igpsport.cn/product/bsc100max",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 199,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/bsc100max",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2648,7 +2457,17 @@
       },
       "image": "/parts/igpsport-bsc100max.png",
       "imageSource": "https://www.igpsport.cn/product/bsc100max",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc100max",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-bsc200s",
@@ -2685,14 +2504,6 @@
       "source": "https://www.igpsport.cn/product/bsc200s",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 369,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/bsc200s",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2704,7 +2515,17 @@
       },
       "image": "/parts/igpsport-bsc200s.png",
       "imageSource": "https://www.igpsport.cn/product/bsc200s",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 369,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc200s",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-bsc200-pro",
@@ -2741,14 +2562,6 @@
       "source": "https://www.igpsport.cn/product/bsc200-pro",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 399,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/bsc200-pro",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2760,7 +2573,17 @@
       },
       "image": "/parts/igpsport-bsc200-pro.png",
       "imageSource": "https://www.igpsport.cn/product/bsc200-pro",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 399,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc200-pro",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-bsc300t",
@@ -2797,14 +2620,6 @@
       "source": "https://www.igpsport.cn/product/bsc300t",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 699,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/bsc300t",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2816,7 +2631,17 @@
       },
       "image": "/parts/igpsport-bsc300t.png",
       "imageSource": "https://www.igpsport.cn/product/bsc300t",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 699,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc300t",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-bsc500",
@@ -2853,14 +2678,6 @@
       "source": "https://www.igpsport.cn/product/bsc500",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 899,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/bsc500",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2872,7 +2689,17 @@
       },
       "image": "/parts/igpsport-bsc500.png",
       "imageSource": "https://www.igpsport.cn/product/bsc500",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 899,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/bsc500",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-binavi-air",
@@ -2909,14 +2736,6 @@
       "source": "https://www.igpsport.cn/product/binavi-air",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 1199,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/binavi-air",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2928,7 +2747,17 @@
       },
       "image": "/parts/igpsport-binavi-air.png",
       "imageSource": "https://www.igpsport.cn/product/binavi-air",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 1199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/binavi-air",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-binavi",
@@ -2965,14 +2794,6 @@
       "source": "https://www.igpsport.cn/product/binavi",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 1699,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/binavi",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -2984,7 +2805,17 @@
       },
       "image": "/parts/igpsport-binavi.png",
       "imageSource": "https://www.igpsport.cn/product/binavi",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 1699,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/binavi",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-igs800",
@@ -3021,14 +2852,6 @@
       "source": "https://www.igpsport.cn/product/igs800",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 2199,
-        "kind": "official",
-        "scope": "单机；外部传感器另购",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/igs800",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "显示功率字段不代表码表自身能测量功率",
@@ -3040,7 +2863,17 @@
       },
       "image": "/parts/igpsport-igs800.png",
       "imageSource": "https://www.igpsport.cn/product/igs800",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 2199,
+        "kind": "official",
+        "scope": "单机；外部传感器另购",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/igs800",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "magene-c706",
@@ -3074,21 +2907,23 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=44",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 999,
-        "kind": "launch",
-        "scope": "中国大陆单机；传感器套装另询价",
-        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
-        "source": "https://www.biketo.com/news/54448.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["核对购买套餐是否包含心率、速度或踏频传感器"],
         "navigation": "map"
       },
       "image": "/parts/magene-c706.png",
       "imageSource": "https://www.magene.cn/knowledge_help_detail.html?id=44",
-      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准"
+      "imageCaption": "迈金中国官网产品资料图；具体配置以参数为准",
+      "price": {
+        "amount": 999,
+        "kind": "launch",
+        "scope": "中国大陆单机；传感器套装另询价",
+        "note": "2025-05-04 国内发布定价，来源为迈金科技署名发布稿（美骑转载）；不是当前成交价，购买前请核对版本和报价。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "magene-c606-v2",
@@ -3122,14 +2957,6 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=45",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆单机；传感器套装另询价",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.magene.cn/knowledge_help_detail.html?id=45",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["核对购买套餐是否包含心率、速度或踏频传感器"],
         "navigation": "map"
@@ -3170,14 +2997,6 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=53",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "中国大陆单机；传感器套装另询价",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.magene.cn/knowledge_help_detail.html?id=53",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["核对购买套餐是否包含心率、速度或踏频传感器"],
         "navigation": "track"
@@ -3217,14 +3036,6 @@
       "source": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 149,
-        "kind": "official",
-        "scope": "单只传感器 / 心率带套装",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["选购前检查现有设备是否已经提供这一数据"],
         "sensor": "cadence",
@@ -3232,7 +3043,17 @@
       },
       "image": "/parts/igpsport-cad70.png",
       "imageSource": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 149,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/cad70-bike-cadence-sensor",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-spd70",
@@ -3265,14 +3086,6 @@
       "source": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 149,
-        "kind": "official",
-        "scope": "单只传感器 / 心率带套装",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["选购前检查现有设备是否已经提供这一数据"],
         "sensor": "speed",
@@ -3280,7 +3093,17 @@
       },
       "image": "/parts/igpsport-spd70.png",
       "imageSource": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 149,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/spd70-bike-speed-sensor",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-hr50",
@@ -3314,14 +3137,6 @@
       "source": "https://www.igpsport.cn/product/hr50",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 199,
-        "kind": "official",
-        "scope": "单只传感器 / 心率带套装",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/hr50",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["选购前检查现有设备是否已经提供这一数据"],
         "sensor": "heart",
@@ -3329,7 +3144,17 @@
       },
       "image": "/parts/igpsport-hr50.png",
       "imageSource": "https://www.igpsport.cn/product/hr50",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 199,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/hr50",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-hr70",
@@ -3363,14 +3188,6 @@
       "source": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 299,
-        "kind": "official",
-        "scope": "单只传感器 / 心率带套装",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["选购前检查现有设备是否已经提供这一数据"],
         "sensor": "heart",
@@ -3378,7 +3195,17 @@
       },
       "image": "/parts/igpsport-hr70.png",
       "imageSource": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 299,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/hr70-heart-rate-monitor-armband",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "igpsport-hr80",
@@ -3413,14 +3240,6 @@
       "source": "https://www.igpsport.cn/product/hr80",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 399,
-        "kind": "official",
-        "scope": "单只传感器 / 心率带套装",
-        "note": "国内官网展示价；未计优惠、运费和安装费。",
-        "source": "https://www.igpsport.cn/product/hr80",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["选购前检查现有设备是否已经提供这一数据"],
         "sensor": "heart",
@@ -3428,7 +3247,17 @@
       },
       "image": "/parts/igpsport-hr80.png",
       "imageSource": "https://www.igpsport.cn/product/hr80",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 399,
+        "kind": "official",
+        "scope": "单只传感器 / 心率带套装",
+        "note": "国内官网展示价；未计优惠、运费和安装费。",
+        "source": "https://www.igpsport.cn/product/hr80",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
+      }
     },
     {
       "id": "magene-h613",
@@ -3464,14 +3293,6 @@
       "source": "https://www.magene.cn/knowledge_help_detail.html?id=51",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "主机与指定长度胸带；国内报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.magene.cn/knowledge_help_detail.html?id=51",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["三种胸带长度需要在报价中明确"],
         "sensor": "heart",
@@ -3512,14 +3333,6 @@
       "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "标准轴锁踏一对；国行报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["若包装已含合适锁片，另购锁片仅作为替换或备件"],
         "cleat": "SPD-SL",
@@ -3527,7 +3340,17 @@
       },
       "image": "/parts/shimano-pd-rs500.jpg",
       "imageSource": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-RS500.html",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 80,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "标准轴 / 左右脚踏一对；附 SM-SH11 锁片",
+        "source": "https://ride.shimano.com/collections/pedals-road",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "shimano-pd-r7000",
@@ -3560,18 +3383,20 @@
       "source": "https://bike.shimano.com/zh-CN/technologies/details/pedal-lineup-chart.html",
       "sourceLabel": "禧玛诺中国脚踏产品表",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "标准轴锁踏一对；国行报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-R7000.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["若包装已含合适锁片，另购锁片仅作为替换或备件"],
         "cleat": "SPD-SL",
         "includesCleats": true
+      },
+      "price": {
+        "amount": 175,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "标准轴 / 左右脚踏一对；附 SM-SH11 锁片",
+        "source": "https://ride.shimano.com/collections/pedals-road",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3605,18 +3430,20 @@
       "source": "https://bike.shimano.com/en-SG/technologies/details/pedal-lineup-chart.html",
       "sourceLabel": "禧玛诺脚踏产品表与中文安装手册",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "标准轴锁踏一对；国行报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://bike.shimano.com/zh-CN/products/components/pdp.P-PD-R8000.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["若包装已含合适锁片，另购锁片仅作为替换或备件"],
         "cleat": "SPD-SL",
         "includesCleats": true
+      },
+      "price": {
+        "amount": 200,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "标准轴 / 左右脚踏一对；附 SM-SH11 锁片",
+        "source": "https://ride.shimano.com/collections/pedals-road",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3650,18 +3477,20 @@
       "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁片一对，国内报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["鞋底螺栓长度需与鞋底及垫片匹配"],
         "cleat": "SPD-SL",
         "shoeBolts": 3
+      },
+      "price": {
+        "amount": 34,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "黄色 / 6° / 锁片一对",
+        "source": "https://ride.shimano.com/products/sm-sh11",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3695,18 +3524,20 @@
       "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁片一对，国内报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["鞋底螺栓长度需与鞋底及垫片匹配"],
         "cleat": "SPD-SL",
         "shoeBolts": 3
+      },
+      "price": {
+        "amount": 34,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "蓝色 / 2° / 锁片一对",
+        "source": "https://ride.shimano.com/products/sm-sh12",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3740,18 +3571,20 @@
       "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁片一对，国内报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://si.shimano.com/zh-CN/pdfs/dm/RAPD001/DM-RAPD001-03-CHI.pdf",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["鞋底螺栓长度需与鞋底及垫片匹配"],
         "cleat": "SPD-SL",
         "shoeBolts": 3
+      },
+      "price": {
+        "amount": 34,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "红色 / 0° / 锁片一对",
+        "source": "https://ride.shimano.com/products/sm-sh10",
+        "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3768,7 +3601,7 @@
         ["鞋底接口", "三孔"],
         ["浮动角度", "0°"],
         ["颜色", "黑色"],
-        ["版本", "2026 新版 Grip；国内包装待核对"]
+        ["版本", "2026 New KÉO Grip；包装内容以购买地区的商品页为准"]
       ],
       "highlights": [
         {
@@ -3785,18 +3618,20 @@
       "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁片一对；国内版本和报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["确认销售版本，旧款与新版 Grip 不以同一价格记录"],
         "cleat": "KEO",
         "shoeBolts": 3
+      },
+      "price": {
+        "amount": 28,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "New KÉO Grip / 0° 黑色 / 锁片一对",
+        "source": "https://www.lookcycle.com/us-en/products/pedals/road/cleats/keo-grip",
+        "note": "价格对应官网当前 New KÉO Grip 包装；浮动角度分别选择。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3813,7 +3648,7 @@
         ["鞋底接口", "三孔"],
         ["浮动角度", "4.5°"],
         ["颜色", "灰色"],
-        ["版本", "2026 新版 Grip；国内包装待核对"]
+        ["版本", "2026 New KÉO Grip；包装内容以购买地区的商品页为准"]
       ],
       "highlights": [
         {
@@ -3830,18 +3665,20 @@
       "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁片一对；国内版本和报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["确认销售版本，旧款与新版 Grip 不以同一价格记录"],
         "cleat": "KEO",
         "shoeBolts": 3
+      },
+      "price": {
+        "amount": 28,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "New KÉO Grip / 4.5° 灰色 / 锁片一对",
+        "source": "https://www.lookcycle.com/us-en/products/pedals/road/cleats/keo-grip",
+        "note": "价格对应官网当前 New KÉO Grip 包装；浮动角度分别选择。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3858,7 +3695,7 @@
         ["鞋底接口", "三孔"],
         ["浮动角度", "9°"],
         ["颜色", "红色"],
-        ["版本", "2026 新版 Grip；国内包装待核对"]
+        ["版本", "2026 New KÉO Grip；包装内容以购买地区的商品页为准"]
       ],
       "highlights": [
         {
@@ -3875,18 +3712,20 @@
       "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁片一对；国内版本和报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": ["确认销售版本，旧款与新版 Grip 不以同一价格记录"],
         "cleat": "KEO",
         "shoeBolts": 3
+      },
+      "price": {
+        "amount": 28,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "New KÉO Grip / 9° 红色 / 锁片一对",
+        "source": "https://www.lookcycle.com/us-en/products/pedals/road/cleats/keo-grip",
+        "note": "价格对应官网当前 New KÉO Grip 包装；浮动角度分别选择。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3920,20 +3759,22 @@
       "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC503.html",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁鞋一双，不含锁片；国行报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC503.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "鞋和锁片属于穿戴装备，不加到整车重量",
           "商品名相近也要核对 RC503 / RC502 等代际"
         ],
         "shoeBolts": 3
+      },
+      "price": {
+        "amount": 190,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "RC503 / 普通楦 / 黑色 / 锁鞋一双",
+        "source": "https://ride.shimano.com/products/sh-rc503",
+        "note": "美国官网展示价；鞋码、楦型与颜色按具体商品选项选择，锁片单独购买。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -3967,14 +3808,6 @@
       "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC703.html",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁鞋一双，不含锁片；国行报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC703.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "鞋和锁片属于穿戴装备，不加到整车重量",
@@ -3984,7 +3817,17 @@
       },
       "image": "/parts/shimano-sh-rc703.jpg",
       "imageSource": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RC703.html",
-      "imageCaption": "厂商产品图"
+      "imageCaption": "厂商产品图",
+      "price": {
+        "amount": 270,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "RC703 / 普通楦 / 黑色 / 锁鞋一双",
+        "source": "https://ride.shimano.com/products/sh-rc703",
+        "note": "美国官网展示价；鞋码、楦型与颜色按具体商品选项选择，锁片单独购买。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
+      }
     },
     {
       "id": "shimano-sh-rx600",
@@ -4017,20 +3860,22 @@
       "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RX600.html",
       "sourceLabel": "厂商规格与选型资料",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": null,
-        "kind": "pending",
-        "scope": "锁鞋一双，不含锁片；国行报价待核对",
-        "note": "未核实中国大陆官方售价；请录入国内授权渠道报价，海外价格不参与换算。",
-        "source": "https://bike.shimano.com/zh-CN/products/apparel/pdp.P-SH-RX600.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "notes": [
           "鞋和锁片属于穿戴装备，不加到整车重量",
           "商品名相近也要核对 RC503 / RC502 等代际"
         ],
         "shoeBolts": 2
+      },
+      "price": {
+        "amount": 190,
+        "currency": "USD",
+        "market": "美国",
+        "scope": "RX600 / 普通楦 / 黑色 / 锁鞋一双",
+        "source": "https://ride.shimano.com/products/sh-rx600",
+        "note": "美国官网展示价；鞋码、楦型与颜色按具体商品选项选择，锁片单独购买。",
+        "kind": "official",
+        "checkedAt": "2026-09-27"
       }
     },
     {
@@ -4065,19 +3910,21 @@
       "source": "https://www.biketo.com/news/54448.html",
       "sourceLabel": "迈金科技署名国内发布稿（美骑转载）",
       "checkedAt": "2026-09-27",
-      "chinaPrice": {
-        "amount": 1599,
-        "kind": "launch",
-        "scope": "2025 PES 曲柄 + P515 套装；盘片配置另核对",
-        "note": "2025-05-04 中国大陆发布价，不代表当前成交价，也不用于后续 2027 款。",
-        "source": "https://www.biketo.com/news/54448.html",
-        "checkedAt": "2026-09-27"
-      },
       "selection": {
         "powerType": "spider",
         "cadence": true,
         "protocols": ["ANT+", "BLE"],
         "notes": ["先取得具体年份、轴心与曲柄长度", "盘片是否包含需要单独核对"]
+      },
+      "price": {
+        "amount": 1599,
+        "kind": "launch",
+        "scope": "2025 PES 曲柄 + P515 套装；盘片配置另核对",
+        "note": "2025-05-04 中国大陆发布价，不代表当前成交价，也不用于后续 2027 款。",
+        "source": "https://www.biketo.com/news/54448.html",
+        "checkedAt": "2026-09-27",
+        "currency": "CNY",
+        "market": "中国大陆"
       }
     }
   ]

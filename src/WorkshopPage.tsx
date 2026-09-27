@@ -312,11 +312,11 @@ function FitTool({ parts }: { parts: PartsCatalog }) {
             <dd>
               {metadata
                 ? `622 mm 胎圈座直径 · ${metadata.inner} mm 内宽 · ${metadata.hookless ? '无钩' : '有钩'}`
-                : '完整胎圈与适配资料待核对，请查看轮组官方说明'}
+                : '请按轮组官方说明选择胎圈类型与轮胎规格'}
             </dd>
           </div>
           <div>
-            <dt>待核对胎宽</dt>
+            <dt>准备使用的胎宽</dt>
             <dd>{width || '未填写'} mm 标称值；不是充气后的实测宽度</dd>
           </div>
           <div>
