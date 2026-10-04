@@ -246,7 +246,7 @@ function App({ browse = false }: { browse?: boolean }) {
                     <CompareButton bike={bike} />
                     <a
                       className="quiet-action"
-                      href={`${base}?view=workshop&tool=build&platform=${bike.id}&paint=${paint.id}`}
+                      href={`${base}?view=studio&useBike=${bike.id}&paint=${paint.id}`}
                     >
                       用这台车开始装车 <ArrowUpRight size={15} />
                     </a>

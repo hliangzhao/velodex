@@ -54,6 +54,14 @@ export default function FeedbackPage() {
     [loading, setLoading] = useState(false),
     [draft, setDraft] = useState(''),
     [status, setStatus] = useState('');
+  const [submission, setSubmission] = useState({
+    type: '参数纠错',
+    model: '',
+    version: '',
+    value: '',
+    scope: '',
+    source: '',
+  });
   const feedbackUrl =
     data?.available === false ? 'https://github.com/hliangzhao/velodex/discussions' : discussion;
   const load = () => {
@@ -115,6 +123,59 @@ export default function FeedbackPage() {
             留言使用 GitHub Discussions 保存，登录 GitHub
             后即可公开发布。站内展示近期留言快照，新留言通常随网站自动发布更新；即时内容请打开完整讨论。
           </p>
+          <details open={new URLSearchParams(location.search).get('kind') === 'correction'}>
+            <summary>提交器材资料、实测或纠错</summary>
+            <p>
+              补充具体型号、版本和来源，方便逐项核对。读者投稿与官方参数分别记录，核对后才更新正式资料库。
+            </p>
+            <label>
+              资料类型
+              <select
+                value={submission.type}
+                onChange={(e) => setSubmission({ ...submission, type: e.target.value })}
+              >
+                <option>参数纠错</option>
+                <option>新增型号</option>
+                <option>实测重量</option>
+                <option>安装经验</option>
+                <option>个人成交价</option>
+              </select>
+            </label>
+            {(
+              [
+                ['model', '品牌与型号'],
+                ['version', '年份、尺码与销售地区'],
+                ['value', '参数、价格或实测结果'],
+                ['scope', '测量范围 / 安装条件'],
+                ['source', '官网链接或证据说明'],
+              ] as const
+            ).map(([key, name]) => (
+              <label key={key}>
+                {name}
+                <input
+                  value={submission[key]}
+                  maxLength={600}
+                  onChange={(e) => setSubmission({ ...submission, [key]: e.target.value })}
+                />
+              </label>
+            ))}
+            <button
+              className="light-button"
+              disabled={!submission.model.trim() || !submission.value.trim()}
+              onClick={() =>
+                edit(
+                  [
+                    draft,
+                    `【${submission.type}】\n型号：${submission.model}\n版本：${submission.version}\n结果：${submission.value}\n范围与条件：${submission.scope}\n来源：${submission.source}\n投稿资料，供维护者核对后收录。`,
+                  ]
+                    .filter(Boolean)
+                    .join('\n\n'),
+                )
+              }
+            >
+              整理到留言草稿
+            </button>
+          </details>
           <label>
             留言草稿（只保存在当前浏览器）
             <textarea

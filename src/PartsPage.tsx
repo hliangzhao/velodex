@@ -350,20 +350,12 @@ export default function PartsPage() {
                       <ArrowUpRight size={15} />
                     </a>
                     <small className="part-date">资料核对 / {selected.checkedAt}</small>
-                    <a className="source-link" href={`${base}?view=workshop&tool=advisor`}>
-                      打开现车升级指南 <ArrowUpRight size={15} />
+                    <a
+                      className="source-link"
+                      href={`${base}?view=studio&addProduct=${selected.id}`}
+                    >
+                      加入装车方案 <ArrowUpRight size={15} />
                     </a>
-                    {['wheels', 'groupsets', 'tires', 'saddles', 'pedals'].includes(
-                      selected.category,
-                    ) &&
-                      selected.id !== 'aero111' && (
-                        <a
-                          className="source-link"
-                          href={`${base}?view=workshop&tool=build&part=${selected.id}`}
-                        >
-                          放入梦幻装车单 <ArrowUpRight size={15} />
-                        </a>
-                      )}
                   </div>
                 </div>
                 {selectedHighlights.length > 0 && (

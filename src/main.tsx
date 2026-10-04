@@ -21,10 +21,15 @@ const TeamsPage = lazy(() => import('./TeamsPage'));
 const RidersPage = lazy(() => import('./RidersPage'));
 const ReadingPage = lazy(() => import('./ReadingPage'));
 const GenerationsPage = lazy(() => import('./GenerationsPage'));
+const StudioPage = lazy(() => import('./studio/Studio'));
 const params = new URLSearchParams(location.search);
 const view = params.get('view');
 const page =
-  view === 'learn' ? (
+  view === 'studio' ? (
+    <StudioPage />
+  ) : view === 'discover' ? (
+    <Discover />
+  ) : view === 'learn' ? (
     <ReadingPage />
   ) : view === 'riders' ? (
     <RidersPage />
@@ -49,12 +54,12 @@ const page =
   ) : view === 'bikes' || ['#collection', '#brands'].includes(location.hash) ? (
     <App browse />
   ) : (
-    <Discover />
+    <StudioPage />
   );
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <LibraryProvider>
-      <Suspense fallback={<div className="load-state">正在打开图鉴…</div>}>{page}</Suspense>
+      <Suspense fallback={<div className="load-state">正在打开工作台…</div>}>{page}</Suspense>
     </LibraryProvider>
   </React.StrictMode>,
 );

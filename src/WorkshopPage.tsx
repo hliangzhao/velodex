@@ -25,7 +25,7 @@ export default function WorkshopPage() {
   usePageTitle('工坊');
   const [parts, setParts] = useState<PartsCatalog>();
   const [error, setError] = useState(false);
-  const tool = new URLSearchParams(location.search).get('tool') || 'advisor';
+  const tool = new URLSearchParams(location.search).get('tool') || 'gears';
   const load = () => {
     setError(false);
     loadParts()
@@ -49,7 +49,11 @@ export default function WorkshopPage() {
         {tabs.map(([id, label]) => (
           <a
             key={id}
-            href={`${base}?view=workshop&tool=${id}`}
+            href={
+              id === 'advisor' || id === 'build'
+                ? `${base}?view=studio`
+                : `${base}?view=workshop&tool=${id}`
+            }
             aria-current={tool === id ? 'page' : undefined}
             className={tool === id ? 'active' : ''}
           >

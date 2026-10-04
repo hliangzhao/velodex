@@ -5,6 +5,7 @@ import { loadCatalog } from './catalog';
 import type { Catalog } from './types';
 
 export type Page =
+  | 'studio'
   | 'discover'
   | 'bikes'
   | 'parts'
@@ -25,21 +26,19 @@ export function SiteHeader({ active }: { active: Page }) {
       <nav aria-label="主导航">
         {(
           [
-            ['discover', '发现'],
-            ['bikes', '整车图鉴'],
-            ['parts', '配件图鉴'],
-            ['stories', '专题'],
-            ['teams', '车队与车手'],
-            ['compare', '整车对比'],
-            ['garage', '我的车库'],
-            ['workshop', '工坊'],
+            ['studio', '装车台'],
+            ['bikes', '车型资料'],
+            ['parts', '配件资料'],
+            ['compare', '车型对比'],
+            ['workshop', '骑行工具'],
+            ['discover', '专题与发现'],
           ] as [Page, string][]
         ).map(([page, label]) => (
           <a
             key={page}
             className={active === page ? 'active' : ''}
             aria-current={active === page ? 'page' : undefined}
-            href={page === 'discover' ? base : `${base}?view=${page}`}
+            href={page === 'studio' ? base : `${base}?view=${page}`}
           >
             {label}
             {page === 'garage' && library.saved.length > 0 && <small>{library.saved.length}</small>}
@@ -47,7 +46,7 @@ export function SiteHeader({ active }: { active: Page }) {
         ))}
       </nav>
       <span className="header-caption">
-        FOR THE LOVE OF BIKES<span>公路车 · 器材 · 骑行</span>
+        BUILD YOUR RIDE<span>选配 · 估价 · 比较</span>
       </span>
     </header>
   );
@@ -68,7 +67,7 @@ export function SiteFooter() {
         </a>
         <a href={`${base}?view=feedback`}>读者留言 ↗</a>
         <a href={`${base}?view=bikes`}>
-          继续逛图鉴 <ArrowUpRight size={16} aria-hidden="true" />
+          查阅车型资料 <ArrowUpRight size={16} aria-hidden="true" />
         </a>
       </nav>
     </footer>
@@ -122,6 +121,6 @@ export function CatalogContent({ children }: { children: (catalog: Catalog) => R
 }
 export function usePageTitle(title: string) {
   useEffect(() => {
-    document.title = `${title} · VÉLODEX 公路车图鉴`;
+    document.title = `${title} · VÉLODEX 装车与升级`;
   }, [title]);
 }

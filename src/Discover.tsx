@@ -62,11 +62,11 @@ export default function Discover() {
             <>
               <div className="work-banner">
                 <div>
-                  <span className="eyebrow">NEW / 骑友工坊</span>
-                  <h2>制作你的梦幻装车单</h2>
-                  <p>选择车型、涂装和配件，记录预算与重量，生成可分享的装车海报。</p>
+                  <span className="eyebrow">装车与升级</span>
+                  <h2>把看中的器材放进方案</h2>
+                  <p>比较费用与安装条件，保存配置，再试一套不同的搭配。</p>
                 </div>
-                <a href={`${base}?view=workshop`}>开始装车 ↗</a>
+                <a href={`${base}?view=studio`}>打开装车台 ↗</a>
               </div>
               <div className="discovery-overline">
                 <span>
