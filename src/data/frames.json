@@ -1,0 +1,250 @@
+[
+  {
+    "id": "elilee-blize",
+    "name": "ELILEE BLIZE 标准版",
+    "brand": "ELILEE 翊俪",
+    "market": "中国大陆",
+    "kind": "综合公路",
+    "source": "https://www.elilee.com.cn/product/公路车架/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["用途", "综合公路"],
+      ["版本", "2025 年 8 月官方目录版本"],
+      ["报价范围", "车架组；随盒把组、座管及小件按订单逐项列出"],
+      ["尺码", "XS / S / M / L / XL / XXL"]
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "paints": ["白", "白金", "白黄", "红白", "镭射黑", "黑", "黑金"],
+    "ordering": [
+      "车架尺码与涂装",
+      "把组、座管、碗组及贯通轴的随盒范围",
+      "中轴、走线附件与安装工时"
+    ],
+    "price": {
+      "amount": 11800,
+      "currency": "CNY",
+      "market": "中国大陆",
+      "kind": "official",
+      "scope": "一套 BLIZE 标准版 车架组",
+      "note": "采用品牌 2025 年 8 月目录零售价，核对于 2026-10-04；用于版本间估价，实际到手价可自行覆盖。",
+      "source": "https://www.elilee.com.cn/wp-content/uploads/2025/08/ELILEE-%E4%BA%A7%E5%93%81%E7%9B%AE%E5%BD%958-12.pdf",
+      "checkedAt": "2026-10-04"
+    }
+  },
+  {
+    "id": "elilee-blize-xxe",
+    "name": "ELILEE BLIZE XXE",
+    "brand": "ELILEE 翊俪",
+    "market": "中国大陆",
+    "kind": "综合公路",
+    "source": "https://www.elilee.com.cn/product/公路车架/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["用途", "综合公路"],
+      ["版本", "2025 年 8 月官方目录版本"],
+      ["报价范围", "车架组；随盒把组、座管及小件按订单逐项列出"],
+      ["尺码", "XS / S / M / L / XL / XXL"],
+      ["碳纤维", "Toray T1100 + M40J"],
+      ["裸架重量", "M 码 680 g，不含涂装；不作为完整车架组重量计入"]
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "paints": ["白", "白金", "白黄", "红白", "镭射黑", "黑", "黑金"],
+    "ordering": [
+      "车架尺码与涂装",
+      "把组、座管、碗组及贯通轴的随盒范围",
+      "中轴、走线附件与安装工时"
+    ],
+    "price": {
+      "amount": 16800,
+      "currency": "CNY",
+      "market": "中国大陆",
+      "kind": "official",
+      "scope": "一套 BLIZE XXE 车架组",
+      "note": "采用品牌 2025 年 8 月目录零售价，核对于 2026-10-04；用于版本间估价，实际到手价可自行覆盖。",
+      "source": "https://www.elilee.com.cn/wp-content/uploads/2025/08/ELILEE-%E4%BA%A7%E5%93%81%E7%9B%AE%E5%BD%958-12.pdf",
+      "checkedAt": "2026-10-04"
+    }
+  },
+  {
+    "id": "elilee-evolution-gen2",
+    "name": "ELILEE EVOLUTION XXE Gen2 标准版",
+    "brand": "ELILEE 翊俪",
+    "market": "中国大陆",
+    "kind": "铁三 / TT",
+    "source": "https://www.elilee.com.cn/product/铁三车架/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["用途", "铁三 / TT"],
+      ["版本", "2025 年 8 月官方目录版本"],
+      ["报价范围", "车架组；随盒把组、座管及小件按订单逐项列出"]
+    ],
+    "sizes": [],
+    "paints": [],
+    "ordering": [
+      "车架尺码与涂装",
+      "把组、座管、碗组及贯通轴的随盒范围",
+      "中轴、走线附件与安装工时"
+    ],
+    "price": {
+      "amount": 34800,
+      "currency": "CNY",
+      "market": "中国大陆",
+      "kind": "official",
+      "scope": "一套 EVOLUTION XXE Gen2 标准版 车架组",
+      "note": "采用品牌 2025 年 8 月目录零售价，核对于 2026-10-04；用于版本间估价，实际到手价可自行覆盖。",
+      "source": "https://www.elilee.com.cn/wp-content/uploads/2025/08/ELILEE-%E4%BA%A7%E5%93%81%E7%9B%AE%E5%BD%958-12.pdf",
+      "checkedAt": "2026-10-04"
+    }
+  },
+  {
+    "id": "elilee-evolution-gen2-light",
+    "name": "ELILEE EVOLUTION XXE Gen2 超轻版",
+    "brand": "ELILEE 翊俪",
+    "market": "中国大陆",
+    "kind": "铁三 / TT",
+    "source": "https://www.elilee.com.cn/product/铁三车架/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["用途", "铁三 / TT"],
+      ["版本", "2025 年 8 月官方目录版本"],
+      ["报价范围", "车架组；随盒把组、座管及小件按订单逐项列出"]
+    ],
+    "sizes": [],
+    "paints": [],
+    "ordering": [
+      "车架尺码与涂装",
+      "把组、座管、碗组及贯通轴的随盒范围",
+      "中轴、走线附件与安装工时"
+    ],
+    "price": {
+      "amount": 44800,
+      "currency": "CNY",
+      "market": "中国大陆",
+      "kind": "official",
+      "scope": "一套 EVOLUTION XXE Gen2 超轻版 车架组",
+      "note": "采用品牌 2025 年 8 月目录零售价，核对于 2026-10-04；用于版本间估价，实际到手价可自行覆盖。",
+      "source": "https://www.elilee.com.cn/wp-content/uploads/2025/08/ELILEE-%E4%BA%A7%E5%93%81%E7%9B%AE%E5%BD%958-12.pdf",
+      "checkedAt": "2026-10-04"
+    }
+  },
+  {
+    "id": "seka-spear",
+    "name": "SEKA Spear 标准版",
+    "brand": "SEKA",
+    "market": "中国大陆规格",
+    "kind": "综合公路",
+    "source": "https://www.sekabikes.com/spear-2/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["五通", "BSA 螺纹 / 68 mm"],
+      ["最大实际胎宽", "32 mm"],
+      ["裸架重量", "780 g，M 码，不含涂装及金属件；不作为车架组重量计入"],
+      ["配套把组", "Rapier，一体把 19 种尺寸"],
+      ["坐垫夹持", "7×7 / 7×9 / 7×10 mm 座弓"],
+      ["碗组轴承", "49.5×40.5×6.5 mm，45°/45°"]
+    ],
+    "sizes": [],
+    "paints": ["欧珀白", "影黑", "锡蓝", "素银", "亮黑"],
+    "ordering": ["尺码与涂装", "把组规格、座管偏移与随盒附件", "车店到手价与交付时间"],
+    "image": "/media/frames/seka-spear.jpg",
+    "imageSource": "https://www.sekabikes.com/wp-content/uploads/2024/11/暗银V3-59.jpg",
+    "imageCaption": "SEKA 官方同系列展示图；涂装及随盒附件以所选版本和订单为准。"
+  },
+  {
+    "id": "seka-spear-rdc",
+    "name": "SEKA Spear RDC",
+    "brand": "SEKA",
+    "market": "中国大陆规格",
+    "kind": "综合公路",
+    "source": "https://www.sekabikes.com/spear-2/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["五通", "BSA 螺纹 / 68 mm"],
+      ["最大实际胎宽", "32 mm"],
+      ["裸架重量", "685 g，M 码，不含涂装及金属件；不作为车架组重量计入"],
+      ["配套把组", "Rapier，一体把 19 种尺寸"],
+      ["坐垫夹持", "7×7 / 7×9 / 7×10 mm 座弓"],
+      ["碗组轴承", "49.5×40.5×6.5 mm，45°/45°"]
+    ],
+    "sizes": [],
+    "paints": ["欧珀白", "影黑", "锡蓝", "素银", "亮黑"],
+    "ordering": ["尺码与涂装", "把组规格、座管偏移与随盒附件", "车店到手价与交付时间"],
+    "image": "/media/frames/seka-spear.jpg",
+    "imageSource": "https://www.sekabikes.com/wp-content/uploads/2024/11/暗银V3-59.jpg",
+    "imageCaption": "SEKA 官方同系列展示图；涂装及随盒附件以所选版本和订单为准。"
+  },
+  {
+    "id": "seka-exaero",
+    "name": "SEKA ExAero STD",
+    "brand": "SEKA",
+    "market": "中国大陆规格",
+    "kind": "气动公路",
+    "source": "https://www.sekabikes.com/exaero/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["五通", "BSA 螺纹 / 68 mm"],
+      ["最大实际胎宽", "32 mm"],
+      ["裸架重量", "935 g，54 码，不含涂装及金属件；不作为车架组重量计入"],
+      ["配套把组", "Gladius STD / ALTA +25，各 19 种尺寸"],
+      ["坐垫夹持", "7×7 / 7×9 / 7×10 mm 座弓"],
+      ["碗组轴承", "49.5×40.5×6.5 mm，45°/45°"],
+      ["轴端", "前 12×100 / 后 12×142 mm"],
+      ["尾钩", "SRAM UDH"]
+    ],
+    "sizes": [],
+    "paints": [],
+    "ordering": ["尺码与涂装", "把组规格、座管偏移与随盒附件", "车店到手价与交付时间"],
+    "image": "/media/frames/seka-exaero-photo.jpg",
+    "imageSource": "https://www.sekabikes.com/wp-content/uploads/2026/08/SLIDER-_B1-1.jpg",
+    "imageCaption": "SEKA 官方同系列车架与把组展示图；具体涂装、把组及随盒配件以所选订单为准。"
+  },
+  {
+    "id": "seka-exaero-rdc",
+    "name": "SEKA ExAero RDC",
+    "brand": "SEKA",
+    "market": "中国大陆规格",
+    "kind": "气动公路",
+    "source": "https://www.sekabikes.com/exaero/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["五通", "BSA 螺纹 / 68 mm"],
+      ["最大实际胎宽", "32 mm"],
+      ["裸架重量", "820 g，54 码，不含涂装及金属件；不作为车架组重量计入"],
+      ["配套把组", "Gladius STD / ALTA +25，各 19 种尺寸"],
+      ["坐垫夹持", "7×7 / 7×9 / 7×10 mm 座弓"],
+      ["碗组轴承", "49.5×40.5×6.5 mm，45°/45°"],
+      ["轴端", "前 12×100 / 后 12×142 mm"],
+      ["尾钩", "SRAM UDH"]
+    ],
+    "sizes": [],
+    "paints": [],
+    "ordering": ["尺码与涂装", "把组规格、座管偏移与随盒附件", "车店到手价与交付时间"],
+    "image": "/media/frames/seka-exaero-photo.jpg",
+    "imageSource": "https://www.sekabikes.com/wp-content/uploads/2026/08/SLIDER-_B1-1.jpg",
+    "imageCaption": "SEKA 官方同系列车架与把组展示图；具体涂装、把组及随盒配件以所选订单为准。"
+  },
+  {
+    "id": "seka-exaero-gr",
+    "name": "SEKA ExAero GR",
+    "brand": "SEKA",
+    "market": "中国大陆规格",
+    "kind": "砾石",
+    "source": "https://www.sekabikes.com/exaero-gr/",
+    "checkedAt": "2026-10-04",
+    "specs": [
+      ["五通", "T47 螺纹 / 68 mm"],
+      ["最大实际胎宽", "前 56 / 后 52 mm"],
+      ["裸架重量", "980 g，54 码，不含涂装及金属件；不作为车架组重量计入"],
+      ["配套把组", "Gladius GR，16° 外撇、15 种尺寸"],
+      ["坐垫夹持", "7×7 / 7×9 / 7×10 mm 座弓"],
+      ["碗组轴承", "52×40×7 mm，45°/45°"],
+      ["轴端", "前 12×100 / 后 12×142 mm"]
+    ],
+    "sizes": [],
+    "paints": [],
+    "ordering": ["尺码与涂装", "把组规格、座管偏移与随盒附件", "车店到手价与交付时间"],
+    "image": "/media/frames/seka-gr-photo.jpg",
+    "imageSource": "https://www.sekabikes.com/wp-content/uploads/2025/12/ExAero-GR-V5_-scaled.jpg",
+    "imageCaption": "SEKA 官方同系列车架与把组展示图；具体涂装、把组及随盒配件以所选订单为准。"
+  }
+]

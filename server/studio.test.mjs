@@ -127,3 +127,58 @@ test('known interface and hookless conflicts are distinguished from gaps in cove
   assert.ok(notes.some((n) => n.level === 'conflict' && n.text.includes('碟片接口')));
   assert.ok(notes.some((n) => n.level === 'check'));
 });
+
+const libraryBuild = await build({
+  entryPoints: ['src/studio/library.ts'],
+  bundle: true,
+  write: false,
+  platform: 'node',
+  format: 'esm',
+});
+const library = await import(
+  `data:text/javascript;base64,${Buffer.from(libraryBuild.outputFiles[0].text).toString('base64')}`
+);
+test('mainland filtering distinguishes a mainland CNY quote from overseas CNY display', () => {
+  const p = { amount: 100, currency: 'CNY', market: '中国香港' };
+  assert.equal(library.matchesPrice(p, 'cn'), false);
+  assert.equal(library.matchesPrice(p, 'foreign'), true);
+  assert.equal(library.matchesPrice(undefined, 'cn'), false);
+  const wheels = library.findProducts(parts, 'wheels', '方远', 'all', 'cn');
+  assert.equal(wheels.length, 18);
+  const families = library.productFamilies(wheels);
+  assert.equal(families.length, 6);
+  assert.ok(families.every(([, options]) => options.length === 3));
+});
+test('selecting a wheel version preserves that exact product, price and visual depth after sharing', () => {
+  const product = parts.products.find((p) => p.id === 'farsports-evo-s-cs6-2025');
+  const p = m.newPlan();
+  p.items = [m.productItem(product)];
+  const loaded = m.decodePlan(m.encodePlan(p));
+  assert.equal(loaded.items[0].reference.amount, 10999);
+  assert.equal(loaded.items[0].productId, product.id);
+  assert.equal(m.estimate(loaded).subtotal, 10999);
+  assert.deepEqual(m.wheelDepths(product), { depth: 60, rearDepth: 60 });
+  // A shared family specification table is not an exact CS version weighing.
+  assert.equal(loaded.items[0].weight, '');
+});
+test('new frames separate technical bare-frame weight from the purchased frameset', () => {
+  assert.equal(library.frames.length, 12);
+  assert.equal(library.frames.filter((f) => f.price?.currency === 'CNY').length, 5);
+  const f = library.frames.find((f) => f.id === 'elilee-blize-xxe');
+  assert.equal(f.price.amount, 16800);
+  assert.ok(f.specs.some(([k, v]) => k === '裸架重量' && v.includes('不作为完整车架组重量')));
+  assert.ok(
+    library.frames.every(
+      (f) => f.source.startsWith('https://') && f.checkedAt && f.ordering.length,
+    ),
+  );
+});
+test('shop quote export includes purchased interfaces and excludes removed items from order questions', () => {
+  const p = m.newPlan();
+  p.items = [item('farsports-evo-c5-2025'), { ...item('elilee-e44'), action: 'remove' }];
+  const questions = library.orderQuestions(p, parts);
+  assert.equal(questions.length, 1);
+  assert.ok(questions[0].questions.some((q) => q.includes('塔基')));
+  const text = library.quoteText(p, parts);
+  assert.ok(text.includes('工时') && text.includes('不重复计价') && text.includes('随盒'));
+});

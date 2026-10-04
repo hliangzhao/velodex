@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-04",
   "brands": [
     {
       "id": "dt-swiss",
@@ -216,6 +216,14 @@
       "founded": "—",
       "description": "提供碳纤维轮组。国内 Ultimate 系列需要按销售年份、轮高及具体报价单核对。",
       "website": "https://mall.jd.com/view_search-5558594-42478347-99-1-20-1.html"
+    },
+    {
+      "id": "farsports",
+      "name": "Farsports 方远",
+      "country": "中国",
+      "founded": "",
+      "description": "厦门碳纤维轮组与车把品牌。国内 C、S 和 EVO 系列按辐条、轮高及轴承版本分别收录。",
+      "website": "https://www.farsports.cn/"
     }
   ],
   "products": [
@@ -3926,6 +3934,1250 @@
         "currency": "CNY",
         "market": "中国大陆"
       }
+    },
+    {
+      "id": "farsports-c3-2025",
+      "brandId": "farsports",
+      "name": "C 钢条 C3",
+      "familyId": "farsports-c-2025",
+      "familyName": "C 钢条 · 2025",
+      "optionLabel": "C3 · 35 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "35 mm 框高 / 21 mm 内宽 / Alpina Ultralite 钢辐条",
+      "description": "中国官网销售的 C 钢条 系列 C3 规格。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "image": "/media/parts/farsports-1264-1.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/C3-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 35 mm（官方参数表）"],
+        ["内宽", "21 mm"],
+        ["外宽", "28 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1210 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "C 钢条 与其他系列分开报价，所选框高为 35 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 21 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "source": "https://www.farsports.cn/1264.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 5699,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 C 钢条 · C3",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1264.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 35,
+        "innerWidthMm": 21,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-c5-2025",
+      "brandId": "farsports",
+      "name": "C 钢条 C5",
+      "familyId": "farsports-c-2025",
+      "familyName": "C 钢条 · 2025",
+      "optionLabel": "C5 · 50 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "50 mm 框高 / 24 mm 内宽 / Alpina Ultralite 钢辐条",
+      "description": "中国官网销售的 C 钢条 系列 C5 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-1264-0.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/c5-1-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 50 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1330 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "C 钢条 与其他系列分开报价，所选框高为 50 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/1264.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 5699,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 C 钢条 · C5",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1264.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 50,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-c6-2025",
+      "brandId": "farsports",
+      "name": "C 钢条 C6",
+      "familyId": "farsports-c-2025",
+      "familyName": "C 钢条 · 2025",
+      "optionLabel": "C6 · 60 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "60 mm 框高 / 24 mm 内宽 / Alpina Ultralite 钢辐条",
+      "description": "中国官网销售的 C 钢条 系列 C6 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-1264-2.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/C6-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 60 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1430 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "C 钢条 与其他系列分开报价，所选框高为 60 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/1264.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 5699,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 C 钢条 · C6",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1264.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 60,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-s3-2025",
+      "brandId": "farsports",
+      "name": "S 碳条 S3",
+      "familyId": "farsports-s-2025",
+      "familyName": "S 碳条 · 2025",
+      "optionLabel": "S3 · 35 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "35 mm 框高 / 21 mm 内宽 / 5.0 mm T 型头碳纤维辐条",
+      "description": "中国官网销售的 S 碳条 系列 S3 规格。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "image": "/media/parts/farsports-634-2.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/S3-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 35 mm（官方参数表）"],
+        ["内宽", "21 mm"],
+        ["外宽", "28 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1130 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "S 碳条 与其他系列分开报价，所选框高为 35 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 21 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "source": "https://www.farsports.cn/634.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 6699,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 S 碳条 · S3",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/634.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 35,
+        "innerWidthMm": 21,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-s5-2025",
+      "brandId": "farsports",
+      "name": "S 碳条 S5",
+      "familyId": "farsports-s-2025",
+      "familyName": "S 碳条 · 2025",
+      "optionLabel": "S5 · 50 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "50 mm 框高 / 24 mm 内宽 / 5.0 mm T 型头碳纤维辐条",
+      "description": "中国官网销售的 S 碳条 系列 S5 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-634-0.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/s5-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 50 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1230 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "S 碳条 与其他系列分开报价，所选框高为 50 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/634.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 6699,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 S 碳条 · S5",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/634.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 50,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-s6-2025",
+      "brandId": "farsports",
+      "name": "S 碳条 S6",
+      "familyId": "farsports-s-2025",
+      "familyName": "S 碳条 · 2025",
+      "optionLabel": "S6 · 60 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "60 mm 框高 / 24 mm 内宽 / 5.0 mm T 型头碳纤维辐条",
+      "description": "中国官网销售的 S 碳条 系列 S6 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-634-1.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/S6-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 60 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1330 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "S 碳条 与其他系列分开报价，所选框高为 60 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/634.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 6699,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 S 碳条 · S6",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/634.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 60,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-c3-2025",
+      "brandId": "farsports",
+      "name": "EVO C 钢条 C3",
+      "familyId": "farsports-evo-c-2025",
+      "familyName": "EVO C 钢条 · 2025",
+      "optionLabel": "C3 · 35 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "35 mm 框高 / 21 mm 内宽 / Alpina Ultralite 钢辐条",
+      "description": "中国官网销售的 EVO C 钢条 系列 C3 规格。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "image": "/media/parts/farsports-640-2.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/05/EVOC3-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 35 mm（官方参数表）"],
+        ["内宽", "21 mm"],
+        ["外宽", "28 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1210 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO C 钢条 与其他系列分开报价，所选框高为 35 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 21 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "source": "https://www.farsports.cn/640.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 7999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO C 钢条 · C3",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/640.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 35,
+        "innerWidthMm": 21,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-c5-2025",
+      "brandId": "farsports",
+      "name": "EVO C 钢条 C5",
+      "familyId": "farsports-evo-c-2025",
+      "familyName": "EVO C 钢条 · 2025",
+      "optionLabel": "C5 · 50 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "50 mm 框高 / 24 mm 内宽 / Alpina Ultralite 钢辐条",
+      "description": "中国官网销售的 EVO C 钢条 系列 C5 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-640-1.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/05/EVOC5-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 50 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1330 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO C 钢条 与其他系列分开报价，所选框高为 50 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/640.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 7999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO C 钢条 · C5",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/640.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 50,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-c6-2025",
+      "brandId": "farsports",
+      "name": "EVO C 钢条 C6",
+      "familyId": "farsports-evo-c-2025",
+      "familyName": "EVO C 钢条 · 2025",
+      "optionLabel": "C6 · 60 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "60 mm 框高 / 24 mm 内宽 / Alpina Ultralite 钢辐条",
+      "description": "中国官网销售的 EVO C 钢条 系列 C6 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-640-0.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/05/evoc6-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 60 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1430 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO C 钢条 与其他系列分开报价，所选框高为 60 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/640.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 7999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO C 钢条 · C6",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/640.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 60,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-s3-2025",
+      "brandId": "farsports",
+      "name": "EVO S 碳条 S3",
+      "familyId": "farsports-evo-s-2025",
+      "familyName": "EVO S 碳条 · 2025",
+      "optionLabel": "S3 · 35 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "35 mm 框高 / 21 mm 内宽 / 5.0 mm T 型头碳纤维辐条",
+      "description": "中国官网销售的 EVO S 碳条 系列 S3 规格。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "image": "/media/parts/farsports-617-1.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/EVOS3-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 35 mm（官方参数表）"],
+        ["内宽", "21 mm"],
+        ["外宽", "28 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1130 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO S 碳条 与其他系列分开报价，所选框高为 35 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 21 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "source": "https://www.farsports.cn/617.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 8999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO S 碳条 · S3",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/617.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 35,
+        "innerWidthMm": 21,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-s5-2025",
+      "brandId": "farsports",
+      "name": "EVO S 碳条 S5",
+      "familyId": "farsports-evo-s-2025",
+      "familyName": "EVO S 碳条 · 2025",
+      "optionLabel": "S5 · 50 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "50 mm 框高 / 24 mm 内宽 / 5.0 mm T 型头碳纤维辐条",
+      "description": "中国官网销售的 EVO S 碳条 系列 S5 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-617-0.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/EVOS5-1-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 50 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1230 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO S 碳条 与其他系列分开报价，所选框高为 50 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/617.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 8999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO S 碳条 · S5",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/617.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 50,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-s6-2025",
+      "brandId": "farsports",
+      "name": "EVO S 碳条 S6",
+      "familyId": "farsports-evo-s-2025",
+      "familyName": "EVO S 碳条 · 2025",
+      "optionLabel": "S6 · 60 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "60 mm 框高 / 24 mm 内宽 / 5.0 mm T 型头碳纤维辐条",
+      "description": "中国官网销售的 EVO S 碳条 系列 S6 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-617-2.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/EVOS6-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 60 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "普通版；与 CS 版本分开计价"],
+        ["参数表重量", "1330 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO S 碳条 与其他系列分开报价，所选框高为 60 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/617.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 8999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO S 碳条 · S6",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/617.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 60,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-c-cs3-2025",
+      "brandId": "farsports",
+      "name": "EVO C 钢条 CS C3",
+      "familyId": "farsports-evo-c-cs-2025",
+      "familyName": "EVO C 钢条 CS · 2025",
+      "optionLabel": "C3 · 35 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "35 mm 框高 / 21 mm 内宽 / CeramicSpeed 轴承",
+      "description": "中国官网销售的 EVO C 钢条 CS 系列 C3 规格。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "image": "/media/parts/farsports-640-2.jpg",
+      "imageCaption": "方远官网产品图；CS 与普通 EVO 共用外观图，轴承版本以名称为准。",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/05/EVOC3-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 35 mm（官方参数表）"],
+        ["内宽", "21 mm"],
+        ["外宽", "28 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "CeramicSpeed 陶瓷轴承"],
+        ["参数表重量", "1210 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO C 钢条 CS 与其他系列分开报价，所选框高为 35 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 21 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "source": "https://www.farsports.cn/1506.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 9999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO C 钢条 CS · C3",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1506.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 35,
+        "innerWidthMm": 21,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-c-cs5-2025",
+      "brandId": "farsports",
+      "name": "EVO C 钢条 CS C5",
+      "familyId": "farsports-evo-c-cs-2025",
+      "familyName": "EVO C 钢条 CS · 2025",
+      "optionLabel": "C5 · 50 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "50 mm 框高 / 24 mm 内宽 / CeramicSpeed 轴承",
+      "description": "中国官网销售的 EVO C 钢条 CS 系列 C5 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-640-1.jpg",
+      "imageCaption": "方远官网产品图；CS 与普通 EVO 共用外观图，轴承版本以名称为准。",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/05/EVOC5-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 50 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "CeramicSpeed 陶瓷轴承"],
+        ["参数表重量", "1330 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO C 钢条 CS 与其他系列分开报价，所选框高为 50 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/1506.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 9999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO C 钢条 CS · C5",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1506.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 50,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-c-cs6-2025",
+      "brandId": "farsports",
+      "name": "EVO C 钢条 CS C6",
+      "familyId": "farsports-evo-c-cs-2025",
+      "familyName": "EVO C 钢条 CS · 2025",
+      "optionLabel": "C6 · 60 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "60 mm 框高 / 24 mm 内宽 / CeramicSpeed 轴承",
+      "description": "中国官网销售的 EVO C 钢条 CS 系列 C6 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-640-0.jpg",
+      "imageCaption": "方远官网产品图；CS 与普通 EVO 共用外观图，轴承版本以名称为准。",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/05/evoc6-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 60 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "Alpina Ultralite 钢辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "CeramicSpeed 陶瓷轴承"],
+        ["参数表重量", "1430 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO C 钢条 CS 与其他系列分开报价，所选框高为 60 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/1506.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 9999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO C 钢条 CS · C6",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1506.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 60,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-s-cs3-2025",
+      "brandId": "farsports",
+      "name": "EVO S 碳条 CS S3",
+      "familyId": "farsports-evo-s-cs-2025",
+      "familyName": "EVO S 碳条 CS · 2025",
+      "optionLabel": "S3 · 35 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "35 mm 框高 / 21 mm 内宽 / CeramicSpeed 轴承",
+      "description": "中国官网销售的 EVO S 碳条 CS 系列 S3 规格。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "image": "/media/parts/farsports-617-1.jpg",
+      "imageCaption": "方远官网产品图；CS 与普通 EVO 共用外观图，轴承版本以名称为准。",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/EVOS3-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 35 mm（官方参数表）"],
+        ["内宽", "21 mm"],
+        ["外宽", "28 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "CeramicSpeed 陶瓷轴承"],
+        ["参数表重量", "1130 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO S 碳条 CS 与其他系列分开报价，所选框高为 35 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 21 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。官网参数表标注 35 mm / 21 mm，页面标题段落仍写 30 mm；本条目按参数表记录。",
+      "source": "https://www.farsports.cn/1511.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 10999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO S 碳条 CS · S3",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1511.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 35,
+        "innerWidthMm": 21,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-s-cs5-2025",
+      "brandId": "farsports",
+      "name": "EVO S 碳条 CS S5",
+      "familyId": "farsports-evo-s-cs-2025",
+      "familyName": "EVO S 碳条 CS · 2025",
+      "optionLabel": "S5 · 50 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "50 mm 框高 / 24 mm 内宽 / CeramicSpeed 轴承",
+      "description": "中国官网销售的 EVO S 碳条 CS 系列 S5 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-617-0.jpg",
+      "imageCaption": "方远官网产品图；CS 与普通 EVO 共用外观图，轴承版本以名称为准。",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/EVOS5-1-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 50 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "CeramicSpeed 陶瓷轴承"],
+        ["参数表重量", "1230 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO S 碳条 CS 与其他系列分开报价，所选框高为 50 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/1511.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 10999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO S 碳条 CS · S5",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1511.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 50,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-evo-s-cs6-2025",
+      "brandId": "farsports",
+      "name": "EVO S 碳条 CS S6",
+      "familyId": "farsports-evo-s-cs-2025",
+      "familyName": "EVO S 碳条 CS · 2025",
+      "optionLabel": "S6 · 60 mm",
+      "category": "wheels",
+      "era": "2025 款 · 中国大陆",
+      "status": "current",
+      "tagline": "60 mm 框高 / 24 mm 内宽 / CeramicSpeed 轴承",
+      "description": "中国官网销售的 EVO S 碳条 CS 系列 S6 规格。框高与内宽按中国官网该型号参数表记录。",
+      "image": "/media/parts/farsports-617-2.jpg",
+      "imageCaption": "方远官网产品图；CS 与普通 EVO 共用外观图，轴承版本以名称为准。",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2025/07/EVOS6-scaled.jpg",
+      "specs": [
+        ["框高", "前 / 后 60 mm（官方参数表）"],
+        ["内宽", "24 mm"],
+        ["外宽", "30 mm"],
+        ["胎圈结构", "有钩 · Tubeless Ready"],
+        ["辐条", "5.0 mm T 型头碳纤维辐条"],
+        ["花鼓", "SH01F / SH01R 对齿结构"],
+        ["碟片接口", "Center Lock 中锁"],
+        ["轴承版本", "CeramicSpeed 陶瓷轴承"],
+        ["参数表重量", "1330 g；共享参数表，非各轴承版本单独称量"],
+        [
+          "重量口径",
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      ],
+      "highlights": [
+        {
+          "title": "按完整型号选购",
+          "text": "EVO S 碳条 CS 与其他系列分开报价，所选框高为 60 mm。"
+        },
+        {
+          "title": "核对轮胎系统",
+          "text": "此规格为 24 mm 内宽有钩轮圈，胎宽、胎压还需同时符合轮胎厂商与轮组的限制。"
+        }
+      ],
+      "compatibility": "中锁碟片接口。塔基、轴端、飞轮速别与外胎组合需按购买版本核对；品牌相同不等于各代规格通用。",
+      "tradeoff": "价格差异包含辐条、轮圈及轴承版本，不能仅凭总价或宣传重量推断速度与耐用性。框高与内宽按中国官网该型号参数表记录。",
+      "source": "https://www.farsports.cn/1511.html",
+      "sourceLabel": "方远中国官网 · 对应系列与参数表",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 10999,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一对轮组 · 2025 款 EVO S 碳条 CS · S6",
+        "note": "中国官网对应系列标价；塔基、气嘴及随盒附件按订单核对。",
+        "source": "https://www.farsports.cn/1511.html",
+        "checkedAt": "2026-10-04"
+      },
+      "selection": {
+        "depthMm": 60,
+        "innerWidthMm": 24,
+        "notes": [
+          "官网在标准版、EVO 及 CS 页共用参数表，未分列轴承版本与胎垫、气嘴范围，因此不自动填入装车重量。"
+        ]
+      },
+      "ordering": ["塔基与飞轮制式", "贯通轴规格", "随盒气嘴、胎垫与转换件"]
+    },
+    {
+      "id": "farsports-f1s",
+      "brandId": "farsports",
+      "name": "F1S 一体把",
+      "category": "handlebars",
+      "era": "中国大陆销售版",
+      "status": "current",
+      "tagline": "碳纤维一体把 · 单独计价",
+      "description": "F1S 国内版本采用把横与把立一体的结构。把宽与把立长度需在下单时选定，装入清单后可记录所选尺寸。",
+      "image": "/media/parts/farsports-f1s.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2024/05/0a0191fb91c1b73978ea250c93c1669.jpg",
+      "specs": [
+        ["结构", "碳纤维一体式弯把与把立"],
+        ["销售版本", "中国大陆 F1 系列"],
+        ["计价单位", "一支一体把"],
+        ["安装配套", "按车架前端选择对应垫圈、碗组上盖和走线路径"],
+        ["把宽选项", "360 / 380 / 400 / 420 mm"],
+        ["把立长度选项", "80 / 90 / 100 / 110 / 120 mm"]
+      ],
+      "highlights": [
+        {
+          "title": "把位先于外观",
+          "text": "一体把不能像分体把立那样单独改变长度，先用几何与把位工具比较现有设定。"
+        },
+        {
+          "title": "把组外的小件",
+          "text": "定制垫圈、上盖、码表架、把带及安装工时需要在车店报价中分别注明。"
+        }
+      ],
+      "compatibility": "与车架前端、舵管和走线路径配套使用；不根据同品牌或相似外形自动判定适配。",
+      "tradeoff": "一体结构简洁，但调整长度通常要更换整支车把。先确定尺寸与附件，再比较到手价。",
+      "source": "https://www.farsports.cn/665.html",
+      "sourceLabel": "方远中国官网 · F1 系列",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 1898,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一支一体把",
+        "note": "中国官网公开标价；转接垫圈、码表架及把带是否随附，以所购套装为准。",
+        "source": "https://www.farsports.cn/665.html",
+        "checkedAt": "2026-10-04"
+      },
+      "ordering": ["把宽与把立长度", "舵管、碗组上盖与走线路径", "码表架、垫圈和把带"]
+    },
+    {
+      "id": "farsports-f1x",
+      "brandId": "farsports",
+      "name": "F1X 一体把",
+      "category": "handlebars",
+      "era": "中国大陆销售版",
+      "status": "current",
+      "tagline": "碳纤维一体把 · 单独计价",
+      "description": "F1X 国内版本采用把横与把立一体的结构。把宽与把立长度需在下单时选定，装入清单后可记录所选尺寸。",
+      "image": "/media/parts/farsports-f1x.jpg",
+      "imageCaption": "方远中国官网产品图",
+      "imageSource": "https://www.farsports.cn/wp-content/uploads/2024/05/5-3.jpg",
+      "specs": [
+        ["结构", "碳纤维一体式弯把与把立"],
+        ["销售版本", "中国大陆 F1 系列"],
+        ["计价单位", "一支一体把"],
+        ["安装配套", "按车架前端选择对应垫圈、碗组上盖和走线路径"]
+      ],
+      "highlights": [
+        {
+          "title": "把位先于外观",
+          "text": "一体把不能像分体把立那样单独改变长度，先用几何与把位工具比较现有设定。"
+        },
+        {
+          "title": "把组外的小件",
+          "text": "定制垫圈、上盖、码表架、把带及安装工时需要在车店报价中分别注明。"
+        }
+      ],
+      "compatibility": "与车架前端、舵管和走线路径配套使用；不根据同品牌或相似外形自动判定适配。",
+      "tradeoff": "一体结构简洁，但调整长度通常要更换整支车把。先确定尺寸与附件，再比较到手价。",
+      "source": "https://www.farsports.cn/660.html",
+      "sourceLabel": "方远中国官网 · F1 系列",
+      "checkedAt": "2026-10-04",
+      "price": {
+        "amount": 2498,
+        "currency": "CNY",
+        "market": "中国大陆",
+        "kind": "official",
+        "scope": "一支一体把",
+        "note": "中国官网公开标价；转接垫圈、码表架及把带是否随附，以所购套装为准。",
+        "source": "https://www.farsports.cn/660.html",
+        "checkedAt": "2026-10-04"
+      },
+      "ordering": ["把宽与把立长度", "舵管、碗组上盖与走线路径", "码表架、垫圈和把带"]
     }
   ]
 }

@@ -6,7 +6,6 @@ import {
   Copy,
   Download,
   Plus,
-  Search,
   Share2,
   Trash2,
   Undo2,
@@ -21,7 +20,8 @@ import type { Catalog, PartsCatalog, Product } from '../types';
 import { imageUrl, loadCatalog, loadParts } from '../catalog';
 import { referencePriceLabel } from '../upgrade-planner';
 import { weightReferences } from '../workshop';
-import frameData from '../data/reference-prices.json';
+import PartsPicker from './PartsPicker';
+import { orderQuestions, quoteText } from './library';
 import { PageFrame, usePageTitle } from '../SiteChrome';
 import {
   amount,
@@ -147,8 +147,6 @@ export function Studio({
     [status, setStatus] = useState('方案仅保存在本机'),
     [undo, setUndo] = useState<Plan | null>(null);
   const [category, setCategory] = useState<Category>('wheels'),
-    [query, setQuery] = useState(''),
-    [priceFilter, setPriceFilter] = useState('all'),
     [bikeQuery, setBikeQuery] = useState('');
   const [detail, setDetail] = useState<Product | null>(null),
     [compare, setCompare] = useState<SavedPlan | null>(null),
@@ -159,6 +157,9 @@ export function Studio({
   const file = useRef<HTMLInputElement>(null),
     dialog = useRef<HTMLDialogElement>(null);
   const handledRequest = useRef('');
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [tab]);
   const bike = catalog.bikes.find((b) => b.id === plan.bikeId),
     total = estimate(plan),
     advice = checks(plan, parts);
@@ -179,7 +180,9 @@ export function Studio({
     if (ref?.length === 1) {
       item.weight = String(ref[0].grams / (p.category === 'tires' ? 2 : 1));
       item.weightScope = ref[0].note;
-      item.variant = ref[0].label.replace('两条', '单条计重');
+      item.variant = [item.variant, ref[0].label.replace('两条', '单条计重')]
+        .filter(Boolean)
+        .join(' · ');
     }
     change({
       ...plan,
@@ -301,17 +304,8 @@ export function Studio({
       setBusy(false);
     }
   };
-  const products = parts.products.filter(
-    (p) =>
-      category === p.category &&
-      (!query ||
-        `${p.name} ${p.brandId} ${parts.brands.find((b) => b.id === p.brandId)?.name} ${p.specs.flat().join(' ')}`
-          .toLowerCase()
-          .includes(query.toLowerCase())) &&
-      (priceFilter === 'all' || (priceFilter === 'cn' ? p.price?.currency === 'CNY' : !!p.price)),
-  );
   return (
-    <div className="studio">
+    <div className="studio" data-tab={tab}>
       <div className="st-mobile-budget" aria-label="当前选配费用">
         <button
           onClick={() =>
@@ -336,7 +330,7 @@ export function Studio({
       <header className="st-heading">
         <div>
           <span className="st-kicker">{brand} / 装车与升级</span>
-          <h1>把喜欢的配置，装进预算</h1>
+          <h1>你的装车工作台</h1>
           <p>从现车升级到整车选配，比较外观、费用和安装条件。</p>
         </div>
         <div className="st-heading-actions">
@@ -355,7 +349,7 @@ export function Studio({
           [
             ['build', '装车台', Wrench],
             ['parts', '选配件', Layers3],
-            ['fit', '几何与把位', Ruler],
+            ['fit', '调把位', Ruler],
             ['plans', '我的方案', Bookmark],
           ] as const
         ).map(([id, name, Icon]) => (
@@ -393,83 +387,95 @@ export function Studio({
           {tab === 'build' && (
             <>
               <section className="st-panel st-platform">
-                <div className="st-section-title">
-                  <h2>{plan.mode === 'upgrade' ? '你的现车' : '车架与参考外观'}</h2>
-                  <span>{plan.mode === 'upgrade' ? '升级方案' : '自由装车'}</span>
-                </div>
-                <label>
-                  方案名称
-                  <input
-                    value={plan.title}
-                    maxLength={80}
-                    onChange={(e) => change({ ...plan, title: e.target.value })}
-                  />
-                </label>
-                <div className="st-fields">
+                <details className="st-platform-editor">
+                  <summary>
+                    <div>
+                      <span>{plan.mode === 'upgrade' ? '升级现车' : '从零装车'}</span>
+                      <h2>{plan.bikeName || '选择车辆或填写车架'}</h2>
+                      <small>
+                        {plan.size || '不限品牌与车型'} · {plan.title}
+                      </small>
+                    </div>
+                    <span className="st-edit-label">编辑</span>
+                  </summary>
+                  <div className="st-section-title">
+                    <h2>{plan.mode === 'upgrade' ? '你的现车' : '车架与参考外观'}</h2>
+                    <span>{plan.mode === 'upgrade' ? '升级方案' : '自由装车'}</span>
+                  </div>
                   <label>
-                    查找车型
+                    方案名称
                     <input
-                      type="search"
-                      value={bikeQuery}
-                      onChange={(e) => setBikeQuery(e.target.value)}
-                      placeholder="品牌、型号、年份"
+                      value={plan.title}
+                      maxLength={80}
+                      onChange={(e) => change({ ...plan, title: e.target.value })}
                     />
                   </label>
-                  <label>
-                    从车型库选择
-                    <select
-                      value={plan.bikeId}
-                      onChange={(e) => {
-                        const b = catalog.bikes.find((b) => b.id === e.target.value);
-                        if (plan.bikeId === e.target.value) return;
-                        setPending(selectBike(plan, b));
-                      }}
-                    >
-                      <option value="">自行填写 / 不指定车型</option>
-                      {catalog.bikes
-                        .filter(
-                          (b) =>
-                            b.id === plan.bikeId ||
-                            !bikeQuery ||
-                            `${b.name} ${b.edition} ${b.modelYear} ${catalog.brands.find((x) => x.id === b.brandId)?.name}`
-                              .toLowerCase()
-                              .includes(bikeQuery.toLowerCase()),
-                        )
-                        .map((b) => (
-                          <option key={b.id} value={b.id}>
-                            {b.name} · {b.modelYear || b.edition}
-                          </option>
+                  <div className="st-fields">
+                    <label>
+                      查找车型
+                      <input
+                        type="search"
+                        value={bikeQuery}
+                        onChange={(e) => setBikeQuery(e.target.value)}
+                        placeholder="品牌、型号、年份"
+                      />
+                    </label>
+                    <label>
+                      从车型库选择
+                      <select
+                        value={plan.bikeId}
+                        onChange={(e) => {
+                          const b = catalog.bikes.find((b) => b.id === e.target.value);
+                          if (plan.bikeId === e.target.value) return;
+                          setPending(selectBike(plan, b));
+                        }}
+                      >
+                        <option value="">自行填写 / 不指定车型</option>
+                        {catalog.bikes
+                          .filter(
+                            (b) =>
+                              b.id === plan.bikeId ||
+                              !bikeQuery ||
+                              `${b.name} ${b.edition} ${b.modelYear} ${catalog.brands.find((x) => x.id === b.brandId)?.name}`
+                                .toLowerCase()
+                                .includes(bikeQuery.toLowerCase()),
+                          )
+                          .map((b) => (
+                            <option key={b.id} value={b.id}>
+                              {b.name} · {b.modelYear || b.edition}
+                            </option>
+                          ))}
+                      </select>
+                    </label>
+                  </div>
+                  <div className="st-fields">
+                    <label>
+                      车辆 / 车架名称
+                      <input
+                        value={plan.bikeName}
+                        maxLength={200}
+                        placeholder="也可以填写未收录的车型"
+                        onChange={(e) => change({ ...plan, bikeName: e.target.value })}
+                      />
+                    </label>
+                    <label>
+                      实际尺码
+                      <input
+                        list="st-sizes"
+                        value={plan.size}
+                        maxLength={30}
+                        placeholder="按实车填写"
+                        onChange={(e) => change({ ...plan, size: e.target.value })}
+                      />
+                      <datalist id="st-sizes">
+                        {bike?.geometry.sizes.map((g) => (
+                          <option key={g.size} value={g.size} />
                         ))}
-                    </select>
-                  </label>
-                </div>
-                <div className="st-fields">
-                  <label>
-                    车辆 / 车架名称
-                    <input
-                      value={plan.bikeName}
-                      maxLength={200}
-                      placeholder="也可以填写未收录的车型"
-                      onChange={(e) => change({ ...plan, bikeName: e.target.value })}
-                    />
-                  </label>
-                  <label>
-                    实际尺码
-                    <input
-                      list="st-sizes"
-                      value={plan.size}
-                      maxLength={30}
-                      placeholder="按实车填写"
-                      onChange={(e) => change({ ...plan, size: e.target.value })}
-                    />
-                    <datalist id="st-sizes">
-                      {bike?.geometry.sizes.map((g) => (
-                        <option key={g.size} value={g.size} />
-                      ))}
-                    </datalist>
-                  </label>
-                </div>
-                {bike && <a href={`${base}?bike=${bike.id}`}>查看该车型规格与几何 ↗</a>}
+                      </datalist>
+                    </label>
+                  </div>
+                  {bike && <a href={`${base}?bike=${bike.id}`}>查看该车型规格与几何 ↗</a>}
+                </details>
               </section>
               <VisualBuild key={plan.bikeId} plan={plan} bike={bike} change={change} />
               <section className="st-panel">
@@ -519,130 +525,145 @@ export function Studio({
                           <Trash2 size={17} />
                         </button>
                       </div>
-                      <label>
-                        型号
-                        <input
-                          value={i.name}
-                          maxLength={200}
-                          placeholder="填写具体型号"
-                          onChange={(e) => itemChange(i.key, { name: e.target.value })}
-                        />
-                      </label>
-                      <div className="st-fields">
-                        <label>
-                          销售规格 / 版本
-                          <input
-                            value={i.variant}
-                            maxLength={400}
-                            placeholder="尺码、塔基、年份、销售地区等"
-                            onChange={(e) => itemChange(i.key, { variant: e.target.value })}
-                          />
-                        </label>
-                        <label>
-                          数量
-                          <input
-                            type="number"
-                            min="1"
-                            max="20"
-                            value={i.quantity}
-                            onChange={(e) => {
-                              if (
-                                Number.isInteger(+e.target.value) &&
-                                +e.target.value >= 1 &&
-                                +e.target.value <= 20
-                              )
-                                itemChange(i.key, { quantity: +e.target.value });
-                            }}
-                          />
-                        </label>
+                      <div className="st-line-summary">
+                        <h3>{i.name || '自定义零件'}</h3>
+                        <p>{i.variant || label(i.category)}</p>
+                        <strong>
+                          {i.action === 'buy'
+                            ? unitPrice(i) === null
+                              ? '填写到手价'
+                              : `${money(unitPrice(i)! * i.quantity)} · ${i.quantity} 件`
+                            : i.action === 'keep'
+                              ? '本次沿用'
+                              : '拆下转售'}
+                        </strong>
                       </div>
-                      {i.reference && (
-                        <div className="st-price-source">
-                          <b>{referencePriceLabel(i.reference)}</b>
-                          <span>
-                            {i.reference.scope} · {i.reference.checkedAt}
-                          </span>
-                          <a href={i.reference.source} target="_blank" rel="noreferrer">
-                            价格来源 ↗
-                          </a>
-                          {i.reference.currency !== 'CNY' && (
-                            <p>海外参考价不直接计入人民币预算，可填写自己的到手单价。</p>
-                          )}
-                        </div>
-                      )}
-                      {i.action === 'buy' && (
-                        <NumberField
-                          label="人民币到手单价 / 元"
-                          value={i.price}
-                          placeholder={
-                            i.reference?.currency === 'CNY'
-                              ? `默认采用参考价 ${i.reference.amount}`
-                              : '自行填写报价'
-                          }
-                          set={(price) => itemChange(i.key, { price })}
-                        />
-                      )}
-                      <details>
-                        <summary>重量、称量范围与资料</summary>
-                        {(weightReferences[i.productId]?.length || 0) > 1 && (
+                      <details className="st-line-editor">
+                        <summary>编辑规格与报价</summary>
+                        <label>
+                          型号
+                          <input
+                            value={i.name}
+                            maxLength={200}
+                            placeholder="填写具体型号"
+                            onChange={(e) => itemChange(i.key, { name: e.target.value })}
+                          />
+                        </label>
+                        <div className="st-fields">
                           <label>
-                            采用已收录重量
-                            <select
-                              defaultValue=""
-                              onChange={(e) => {
-                                const r = weightReferences[i.productId]?.find(
-                                  (r) => r.id === e.target.value,
-                                );
-                                if (r)
-                                  itemChange(i.key, {
-                                    weight: String(r.grams / (i.category === 'tires' ? 2 : 1)),
-                                    weightScope: r.note,
-                                    variant: r.label.replace('两条', '单条计重'),
-                                  });
-                              }}
-                            >
-                              <option value="">选择具体版本后填入</option>
-                              {weightReferences[i.productId].map((r) => (
-                                <option key={r.id} value={r.id}>
-                                  {r.label} · {r.grams} g
-                                </option>
-                              ))}
-                            </select>
+                            销售规格 / 版本
+                            <input
+                              value={i.variant}
+                              maxLength={400}
+                              placeholder="尺码、塔基、年份、销售地区等"
+                              onChange={(e) => itemChange(i.key, { variant: e.target.value })}
+                            />
                           </label>
+                          <label>
+                            数量
+                            <input
+                              type="number"
+                              min="1"
+                              max="20"
+                              value={i.quantity}
+                              onChange={(e) => {
+                                if (
+                                  Number.isInteger(+e.target.value) &&
+                                  +e.target.value >= 1 &&
+                                  +e.target.value <= 20
+                                )
+                                  itemChange(i.key, { quantity: +e.target.value });
+                              }}
+                            />
+                          </label>
+                        </div>
+                        {i.reference && (
+                          <div className="st-price-source">
+                            <b>{referencePriceLabel(i.reference)}</b>
+                            <span>
+                              {i.reference.scope} · {i.reference.checkedAt}
+                            </span>
+                            <a href={i.reference.source} target="_blank" rel="noreferrer">
+                              价格来源 ↗
+                            </a>
+                            {i.reference.currency !== 'CNY' && (
+                              <p>海外参考价不直接计入人民币预算，可填写自己的到手单价。</p>
+                            )}
+                          </div>
                         )}
-                        <NumberField
-                          label={`每个销售单位重量 / g${i.category === 'tires' ? '（单条）' : ''}`}
-                          value={i.weight}
-                          placeholder="可跳过，不影响选配估价"
-                          set={(weight) => itemChange(i.key, { weight })}
-                        />
-                        <label>
-                          称重范围
-                          <input
-                            value={i.weightScope}
-                            maxLength={500}
-                            onChange={(e) => itemChange(i.key, { weightScope: e.target.value })}
-                            placeholder="例如整对轮组，不含胎垫与气嘴"
+                        {i.action === 'buy' && (
+                          <NumberField
+                            label="人民币到手单价 / 元"
+                            value={i.price}
+                            placeholder={
+                              i.reference?.currency === 'CNY'
+                                ? `默认采用参考价 ${i.reference.amount}`
+                                : '自行填写报价'
+                            }
+                            set={(price) => itemChange(i.key, { price })}
                           />
-                        </label>
-                        <label className="st-checkbox">
-                          <input
-                            type="checkbox"
-                            checked={i.onBike}
-                            onChange={(e) => itemChange(i.key, { onBike: e.target.checked })}
+                        )}
+                        <details>
+                          <summary>重量、称量范围与资料</summary>
+                          {(weightReferences[i.productId]?.length || 0) > 1 && (
+                            <label>
+                              采用已收录重量
+                              <select
+                                defaultValue=""
+                                onChange={(e) => {
+                                  const r = weightReferences[i.productId]?.find(
+                                    (r) => r.id === e.target.value,
+                                  );
+                                  if (r)
+                                    itemChange(i.key, {
+                                      weight: String(r.grams / (i.category === 'tires' ? 2 : 1)),
+                                      weightScope: r.note,
+                                    });
+                                }}
+                              >
+                                <option value="">选择具体版本后填入</option>
+                                {weightReferences[i.productId].map((r) => (
+                                  <option key={r.id} value={r.id}>
+                                    {r.label} · {r.grams} g
+                                  </option>
+                                ))}
+                              </select>
+                            </label>
+                          )}
+                          <NumberField
+                            label={`每个销售单位重量 / g${i.category === 'tires' ? '（单条）' : ''}`}
+                            value={i.weight}
+                            placeholder="可跳过，不影响选配估价"
+                            set={(weight) => itemChange(i.key, { weight })}
                           />
-                          计入车上重量（锁鞋、锁片与穿戴设备通常不计）
-                        </label>
-                        <label>
-                          资料链接
-                          <input
-                            type="url"
-                            value={i.source}
-                            maxLength={2000}
-                            onChange={(e) => itemChange(i.key, { source: e.target.value })}
-                            placeholder="https://…"
-                          />
-                        </label>
+                          <label>
+                            称重范围
+                            <input
+                              value={i.weightScope}
+                              maxLength={500}
+                              onChange={(e) => itemChange(i.key, { weightScope: e.target.value })}
+                              placeholder="例如整对轮组，不含胎垫与气嘴"
+                            />
+                          </label>
+                          <label className="st-checkbox">
+                            <input
+                              type="checkbox"
+                              checked={i.onBike}
+                              onChange={(e) => itemChange(i.key, { onBike: e.target.checked })}
+                            />
+                            计入车上重量（锁鞋、锁片与穿戴设备通常不计）
+                          </label>
+                          <label>
+                            资料链接
+                            <input
+                              type="url"
+                              value={i.source}
+                              maxLength={2000}
+                              onChange={(e) => itemChange(i.key, { source: e.target.value })}
+                              placeholder="https://…"
+                            />
+                          </label>
+                        </details>
                       </details>
                     </article>
                   ))}
@@ -669,253 +690,202 @@ export function Studio({
                   </button>
                 </div>
               </section>
-              <section className="st-panel">
-                <h2>费用与重量口径</h2>
-                <div className="st-fields">
-                  <NumberField
-                    label="本次预算 / 元"
-                    value={plan.budget}
-                    set={(budget) => change({ ...plan, budget })}
-                  />
-                  <NumberField
-                    label="工时与运费 / 元"
-                    value={plan.labor}
-                    set={(labor) => change({ ...plan, labor })}
-                  />
-                  <NumberField
-                    label="清单外安装件与耗材 / 元"
-                    value={plan.consumables}
-                    set={(consumables) => change({ ...plan, consumables })}
-                  />
-                  {plan.mode === 'upgrade' && (
-                    <NumberField
-                      label="拆下旧件预计转售合计 / 元"
-                      value={plan.resale}
-                      set={(resale) => change({ ...plan, resale })}
-                    />
-                  )}
-                </div>
-                <p className="st-fine">
-                  没有这项费用时填写 0。清单已经包含的安装件不再重复计入杂费，转售价格是你的预估。
-                </p>
-                {plan.mode === 'upgrade' && (
-                  <>
-                    <NumberField
-                      label="现车实测重量 / g"
-                      value={plan.baselineWeight}
-                      placeholder="可选；例如 8200"
-                      set={(baselineWeight) => change({ ...plan, baselineWeight })}
-                    />
-                    <label className="st-checkbox">
-                      <input
-                        type="checkbox"
-                        checked={plan.weightAligned}
-                        onChange={(e) => change({ ...plan, weightAligned: e.target.checked })}
-                      />
-                      已列出所有拆下的零件，且新旧重量的附件范围一致
-                    </label>
-                  </>
-                )}
-                <label>
-                  方案备注
-                  <textarea
-                    value={plan.notes}
-                    maxLength={3000}
-                    placeholder="用途、偏好、车店报价说明等"
-                    onChange={(e) => change({ ...plan, notes: e.target.value })}
-                  />
-                </label>
+              <section className="st-panel st-quote">
+                <details className="st-settings">
+                  <summary>
+                    车店询价单 <span>按所选零件列出订购规格与费用范围</span>
+                  </summary>
+                  <p>把方案交给车店时，除了总价，也请写清各个销售版本和随盒附件。</p>
+                  {orderQuestions(plan, parts).map((i) => (
+                    <div className="st-order-item" key={i.key}>
+                      <h3>{i.name}</h3>
+                      <ul>
+                        {i.questions.map((q) => (
+                          <li key={q}>{q}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                  <p className="st-fine">
+                    工时、运费、安装小件与耗材分别报价；套餐内包含的部件不重复计价。若提供整车重量，请写明是否含脚踏、码表与水壶架。
+                  </p>
+                  <button
+                    disabled={!valid || !plan.items.some((i) => i.action === 'buy')}
+                    onClick={async () => {
+                      try {
+                        await exportFile(
+                          new Blob([quoteText(plan, parts)], { type: 'text/plain;charset=utf-8' }),
+                          '装车询价单.txt',
+                        );
+                        setStatus('询价单已生成，可自行发送给车店');
+                      } catch {
+                        setStatus('导出未完成，请重试');
+                      }
+                    }}
+                  >
+                    <Download size={16} />
+                    导出询价单
+                  </button>
+                </details>
               </section>
               <section className="st-panel">
-                <h2>安装条件</h2>
-                <p>
-                  填入现车接口后，核对所选配件。每项判断保留其依据，未触发冲突不代表整车已经通过装配检查。
-                </p>
-                <div className="st-fields">
-                  {(
-                    [
-                      ['axle', '轴端', ['12×100 / 12×142', '快拆', '其他']],
-                      ['rotor', '现有碟片接口', ['Center Lock', '六钉', '圈刹']],
-                      ['freehub', '塔基 / 飞轮制式', ['HG 公路 11/12 速', 'XDR', '其他']],
-                    ] as const
-                  ).map(([key, name, values]) => (
-                    <label key={key}>
-                      {name}
-                      <select
-                        value={plan.interfaces[key]}
+                <details className="st-settings">
+                  <summary>
+                    费用与重量口径 <span>预算、工时、旧件转售</span>
+                  </summary>
+                  <div className="st-fields">
+                    <NumberField
+                      label="本次预算 / 元"
+                      value={plan.budget}
+                      set={(budget) => change({ ...plan, budget })}
+                    />
+                    <NumberField
+                      label="工时与运费 / 元"
+                      value={plan.labor}
+                      set={(labor) => change({ ...plan, labor })}
+                    />
+                    <NumberField
+                      label="清单外安装件与耗材 / 元"
+                      value={plan.consumables}
+                      set={(consumables) => change({ ...plan, consumables })}
+                    />
+                    {plan.mode === 'upgrade' && (
+                      <NumberField
+                        label="拆下旧件预计转售合计 / 元"
+                        value={plan.resale}
+                        set={(resale) => change({ ...plan, resale })}
+                      />
+                    )}
+                  </div>
+                  <p className="st-fine">
+                    没有这项费用时填写 0。清单已经包含的安装件不再重复计入杂费，转售价格是你的预估。
+                  </p>
+                  {plan.mode === 'upgrade' && (
+                    <>
+                      <NumberField
+                        label="现车实测重量 / g"
+                        value={plan.baselineWeight}
+                        placeholder="可选；例如 8200"
+                        set={(baselineWeight) => change({ ...plan, baselineWeight })}
+                      />
+                      <label className="st-checkbox">
+                        <input
+                          type="checkbox"
+                          checked={plan.weightAligned}
+                          onChange={(e) => change({ ...plan, weightAligned: e.target.checked })}
+                        />
+                        已列出所有拆下的零件，且新旧重量的附件范围一致
+                      </label>
+                    </>
+                  )}
+                  <label>
+                    方案备注
+                    <textarea
+                      value={plan.notes}
+                      maxLength={3000}
+                      placeholder="用途、偏好、车店报价说明等"
+                      onChange={(e) => change({ ...plan, notes: e.target.value })}
+                    />
+                  </label>
+                </details>
+              </section>
+              <section className="st-panel">
+                <details className="st-settings">
+                  <summary>
+                    安装条件 <span>接口与规则检查</span>
+                  </summary>
+                  <p>
+                    填入现车接口后，核对所选配件。每项判断保留其依据，未触发冲突不代表整车已经通过装配检查。
+                  </p>
+                  <div className="st-fields">
+                    {(
+                      [
+                        ['axle', '轴端', ['12×100 / 12×142', '快拆', '其他']],
+                        ['rotor', '现有碟片接口', ['Center Lock', '六钉', '圈刹']],
+                        ['freehub', '塔基 / 飞轮制式', ['HG 公路 11/12 速', 'XDR', '其他']],
+                      ] as const
+                    ).map(([key, name, values]) => (
+                      <label key={key}>
+                        {name}
+                        <select
+                          value={plan.interfaces[key]}
+                          onChange={(e) =>
+                            change({
+                              ...plan,
+                              interfaces: { ...plan.interfaces, [key]: e.target.value },
+                            })
+                          }
+                        >
+                          <option value="">未填写</option>
+                          {values.map((v) => (
+                            <option key={v}>{v}</option>
+                          ))}
+                        </select>
+                      </label>
+                    ))}
+                    <label>
+                      当前曲柄 / 中轴
+                      <input
+                        value={plan.interfaces.crank}
+                        placeholder="按实车型号填写"
                         onChange={(e) =>
                           change({
                             ...plan,
-                            interfaces: { ...plan.interfaces, [key]: e.target.value },
+                            interfaces: { ...plan.interfaces, crank: e.target.value },
                           })
                         }
-                      >
-                        <option value="">未填写</option>
-                        {values.map((v) => (
-                          <option key={v}>{v}</option>
-                        ))}
-                      </select>
+                      />
                     </label>
-                  ))}
-                  <label>
-                    当前曲柄 / 中轴
-                    <input
-                      value={plan.interfaces.crank}
-                      placeholder="按实车型号填写"
-                      onChange={(e) =>
-                        change({
-                          ...plan,
-                          interfaces: { ...plan.interfaces, crank: e.target.value },
-                        })
-                      }
-                    />
-                  </label>
-                </div>
-                <div className="st-checks">
-                  {advice.map((a, i) => (
-                    <p key={i} className={a.level}>
-                      <b>
-                        {a.level === 'conflict'
-                          ? '存在冲突'
-                          : a.level === 'info'
-                            ? '规格说明'
-                            : '安装核对'}
-                      </b>
-                      {a.text}
-                    </p>
-                  ))}
-                  {!advice.length && <p>选择配件后显示已覆盖的规则检查。</p>}
-                </div>
-                <div className="st-inline-actions">
-                  <a href={`${base}?view=workshop&tool=interfaces`}>接口详解 ↗</a>
-                  <a href={`${base}?view=workshop&tool=fit`}>轮胎与轮圈 ↗</a>
-                  <a href={`${base}?view=learn&category=science`}>骑行科学 ↗</a>
-                </div>
+                  </div>
+                  <div className="st-checks">
+                    {advice.map((a, i) => (
+                      <p key={i} className={a.level}>
+                        <b>
+                          {a.level === 'conflict'
+                            ? '存在冲突'
+                            : a.level === 'info'
+                              ? '规格说明'
+                              : '安装核对'}
+                        </b>
+                        {a.text}
+                      </p>
+                    ))}
+                    {!advice.length && <p>选择配件后显示已覆盖的规则检查。</p>}
+                  </div>
+                  <div className="st-inline-actions">
+                    <a href={`${base}?view=workshop&tool=interfaces`}>接口详解 ↗</a>
+                    <a href={`${base}?view=workshop&tool=fit`}>轮胎与轮圈 ↗</a>
+                    <a href={`${base}?view=learn&category=science`}>骑行科学 ↗</a>
+                  </div>
+                </details>
               </section>
             </>
           )}
           {tab === 'parts' && (
-            <section className="st-panel">
-              <div className="st-section-title">
-                <div>
-                  <h2>为你的方案选配</h2>
-                  <p>价格优先采用大陆版本，海外版本保留币种和地区。</p>
-                </div>
-                <button onClick={() => setTab('build')}>
-                  返回清单 <ArrowRight size={16} />
-                </button>
-              </div>
-              <div className="st-categories">
-                {categories.map(([id, name]) => (
-                  <button key={id} aria-pressed={category === id} onClick={() => setCategory(id)}>
-                    {name}
-                  </button>
-                ))}
-              </div>
-              <div className="st-search">
-                <Search size={18} />
-                <input
-                  type="search"
-                  aria-label="搜索配件"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="搜索品牌、型号与规格"
-                />
-                <select
-                  aria-label="价格范围"
-                  value={priceFilter}
-                  onChange={(e) => setPriceFilter(e.target.value)}
-                >
-                  <option value="all">全部价格来源</option>
-                  <option value="cn">人民币参考价</option>
-                  <option value="priced">已收录价格</option>
-                </select>
-              </div>
-              <div className="st-product-grid">
-                {category === 'frame'
-                  ? Object.entries(frameData.frames)
-                      .filter(
-                        ([, f]) =>
-                          (!query || f.name.toLowerCase().includes(query.toLowerCase())) &&
-                          (priceFilter !== 'cn' || f.currency === 'CNY'),
-                      )
-                      .map(([id, f]) => (
-                        <article className="st-product" key={id}>
-                          <span>车架组</span>
-                          <h3>{f.name}</h3>
-                          <p>{referencePriceLabel(f as PlanItem['reference'] & {})}</p>
-                          <p className="st-fine">
-                            {f.scope} · {f.checkedAt}
-                          </p>
-                          <button
-                            onClick={() => {
-                              const item = {
-                                ...customItem('frame'),
-                                name: f.name,
-                                variant: f.scope,
-                                reference: f as PlanItem['reference'],
-                                source: f.source,
-                              };
-                              change({ ...plan, items: [...plan.items, item] });
-                              setStatus(`已加入 ${f.name}`);
-                            }}
-                          >
-                            <Plus size={16} />
-                            加入清单
-                          </button>
-                          <a href={f.source} target="_blank" rel="noreferrer">
-                            查看来源 ↗
-                          </a>
-                        </article>
-                      ))
-                  : products.map((p) => (
-                      <article className="st-product" key={p.id}>
-                        <button
-                          className="st-product-image"
-                          aria-label={`查看${p.name}`}
-                          onClick={() => setDetail(p)}
-                        >
-                          {p.image ? (
-                            <img src={imageUrl(p.image)} alt={p.name} loading="lazy" />
-                          ) : (
-                            <Layers3 size={42} />
-                          )}
-                        </button>
-                        <span>{parts.brands.find((b) => b.id === p.brandId)?.name}</span>
-                        <h3>
-                          <button onClick={() => setDetail(p)}>{p.name}</button>
-                        </h3>
-                        <p>{p.price ? referencePriceLabel(p.price) : '可自行填写到手价'}</p>
-                        <small>{p.price?.scope || p.era}</small>
-                        <div className="st-product-actions">
-                          <button onClick={() => setDetail(p)}>参数与版本</button>
-                          <button
-                            className="st-primary"
-                            disabled={plan.items.length >= 60}
-                            onClick={() => add(p)}
-                          >
-                            <Plus size={16} />
-                            加入
-                          </button>
-                        </div>
-                      </article>
-                    ))}
-              </div>
-              {category !== 'frame' && !products.length && (
-                <div className="st-empty">
-                  <p>没有符合筛选条件的产品，可以自行填写型号和报价。</p>
-                </div>
-              )}
-              <button
-                onClick={() => {
-                  change({ ...plan, items: [...plan.items, customItem(category)] });
-                  setTab('build');
-                }}
-              >
-                <Plus size={16} />
-                自行添加{label(category)}
-              </button>
-            </section>
+            <PartsPicker
+              parts={parts}
+              category={category}
+              setCategory={setCategory}
+              add={add}
+              detail={setDetail}
+              full={plan.items.length >= 60}
+              back={() => setTab('build')}
+              custom={() => {
+                change({ ...plan, items: [...plan.items, customItem(category)] });
+                setTab('build');
+              }}
+              addFrame={(f, variant) => {
+                const item = {
+                  ...customItem('frame'),
+                  name: f.name,
+                  variant,
+                  reference: f.price,
+                  source: f.source,
+                };
+                change({ ...plan, items: [...plan.items, item] });
+                setStatus(`已加入 ${f.name}`);
+              }}
+            />
           )}
           {tab === 'fit' && <FitTransfer plan={plan} catalog={catalog} change={change} />}
           {tab === 'plans' && (
@@ -1064,11 +1034,12 @@ export function Studio({
           <button
             onClick={() => {
               setTab('build');
-              requestAnimationFrame(() =>
-                document
-                  .querySelector('.st-checks')
-                  ?.scrollIntoView({ behavior: 'smooth', block: 'center' }),
-              );
+              requestAnimationFrame(() => {
+                const target = document.querySelector('.st-checks');
+                const section = target?.closest('details');
+                if (section) section.open = true;
+                target?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              });
             }}
             className="st-check-link"
           >
@@ -1124,6 +1095,25 @@ export function Studio({
               {detail.image && (
                 <img className="st-detail-image" src={imageUrl(detail.image)} alt={detail.name} />
               )}
+              {detail.familyId && (
+                <label>
+                  同系列规格
+                  <select
+                    value={detail.id}
+                    onChange={(e) =>
+                      setDetail(parts.products.find((p) => p.id === e.target.value) || detail)
+                    }
+                  >
+                    {parts.products
+                      .filter((p) => p.familyId === detail.familyId)
+                      .map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.optionLabel || p.name}
+                        </option>
+                      ))}
+                  </select>
+                </label>
+              )}
               <p>{detail.description}</p>
               <dl>
                 {detail.specs.map(([k, v]) => (
@@ -1141,8 +1131,23 @@ export function Studio({
                   {detail.price.checkedAt}
                 </p>
               )}
+              {detail.price && <p className="st-note">{detail.price.note}</p>}
+              {detail.ordering && (
+                <div className="st-note">
+                  <strong>请让报价单写清楚</strong>
+                  <ul>
+                    {detail.ordering.map((s) => (
+                      <li key={s}>{s}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               <div className="st-inline-actions">
-                <button className="st-primary" onClick={() => add(detail)}>
+                <button
+                  className="st-primary"
+                  disabled={plan.items.length >= 60}
+                  onClick={() => add(detail)}
+                >
                   <Plus size={16} />
                   加入当前清单
                 </button>

@@ -127,6 +127,10 @@ export type SelectionSpecs = {
 };
 export type Product = {
   id: string;
+  familyId?: string;
+  familyName?: string;
+  optionLabel?: string;
+  ordering?: string[];
   brandId: string;
   name: string;
   category: PartCategory;
