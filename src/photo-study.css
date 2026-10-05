@@ -1,0 +1,229 @@
+.photo-study {
+  width: min(1460px, 96vw);
+  height: 94dvh;
+  max-height: none;
+  max-width: none;
+  padding: 0;
+  border: 1px solid #d5ded0;
+  border-radius: 16px;
+  background: #f5f7f1;
+  color: #243b2d;
+  overflow: auto;
+}
+.photo-study::backdrop {
+  background: #102119da;
+  backdrop-filter: blur(6px);
+}
+.photo-study[open] {
+  display: flex;
+  flex-direction: column;
+}
+.photo-study > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  border-bottom: 1px solid #dde5d6;
+  gap: 15px;
+}
+.photo-study > header span {
+  font-size: 11px;
+  color: #74816b;
+}
+.photo-study h2 {
+  margin: 5px 0 0;
+  font-size: 23px;
+}
+.photo-study button {
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  border: 1px solid #d8e0d1;
+  background: #fff;
+  border-radius: 7px;
+  padding: 8px;
+  min-height: 36px;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.photo-study button:disabled {
+  opacity: 0.4;
+}
+.photo-study-tools {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+  font-size: 12px;
+}
+.photo-study-tools label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.photo-study-tools select {
+  max-width: 330px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #d8e0d1;
+  border-radius: 7px;
+  color: inherit;
+}
+.photo-study-panes {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  padding: 0 18px;
+  flex: 1;
+  min-height: 0;
+}
+.photo-study-panes.is-comparing {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.photo-study-pane {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+.photo-study-pane h3 {
+  font-size: 13px;
+  margin: 4px 0 10px;
+}
+.photo-study-stage {
+  position: relative;
+  flex: 1;
+  min-height: 230px;
+  background: #fff;
+  overflow: hidden;
+  touch-action: none;
+  cursor: grab;
+  border: 1px solid #dfe5da;
+  border-radius: 10px;
+}
+.photo-study-stage:active {
+  cursor: grabbing;
+}
+.photo-study-stage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  transform-origin: center;
+}
+.photo-study-stage.is-dark {
+  background: #24352b;
+}
+.photo-study-stage.has-grid:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(#8a9d7333 1px, transparent 1px),
+    linear-gradient(90deg, #8a9d7333 1px, transparent 1px);
+  background-size: 10% 10%;
+}
+.photo-study-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  font-size: 11px;
+}
+.photo-study-controls output {
+  min-width: 38px;
+  text-align: center;
+}
+.photo-study-source {
+  font-size: 11px;
+  color: #617258;
+  line-height: 1.6;
+}
+.photo-study-source p {
+  margin: 4px 0;
+}
+.photo-study-source a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: inherit;
+  margin: 8px;
+}
+.photo-study-source button {
+  font-size: 11px;
+}
+.photo-study-note {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #617258;
+  padding: 8px 24px;
+  margin: 0;
+}
+.photo-study-error,
+.photo-study-loading {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+.photo-study-error button {
+  display: block;
+  margin: 12px auto;
+}
+@media (max-width: 760px) {
+  .photo-study {
+    width: 100vw;
+    height: 100dvh;
+    border-radius: 0;
+    border: 0;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .photo-study > header {
+    padding: 14px 16px;
+  }
+  .photo-study h2 {
+    font-size: 19px;
+  }
+  .photo-study-tools {
+    padding: 10px 16px;
+    gap: 10px;
+  }
+  .photo-study-tools select {
+    max-width: 220px;
+  }
+  .photo-study-panes {
+    padding: 0 10px;
+  }
+  .photo-study-panes.is-comparing {
+    grid-template-columns: 1fr;
+    flex: none;
+  }
+  .photo-study-panes.is-comparing .photo-study-stage {
+    height: 32dvh;
+    flex: none;
+    min-height: 200px;
+  }
+  .photo-study-stage {
+    min-height: 200px;
+  }
+  .photo-study-note {
+    padding: 12px 16px;
+  }
+  .photo-study-controls {
+    gap: 5px;
+  }
+  .photo-study-source {
+    padding: 0 5px;
+  }
+}

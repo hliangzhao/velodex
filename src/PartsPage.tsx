@@ -5,6 +5,7 @@ import { imageUrl, loadCatalog, loadParts } from './catalog';
 import './parts.css';
 import { compareReferencePrices, priceLabel } from './upgrade-planner';
 import { SiteHeader, SiteFooter } from './SiteChrome';
+import PhotoButton, { productPhoto } from './PhotoButton';
 
 const categories: {
   id: PartCategory;
@@ -306,6 +307,14 @@ export default function PartsPage() {
                         </a>
                       )}
                     </small>
+                    {selected.image && (
+                      <PhotoButton
+                        asset={productPhoto(selected)!}
+                        alternatives={catalog!.products
+                          .filter((p) => p.category === selected.category)
+                          .flatMap((p) => (productPhoto(p) ? [productPhoto(p)!] : []))}
+                      />
+                    )}
                     <span className="part-edition">
                       {selected.era} · {selected.status === 'classic' ? '经典档案' : '现行系列'}
                     </span>

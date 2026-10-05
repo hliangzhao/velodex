@@ -4,6 +4,7 @@ import type { Bike, Catalog, GeometrySize } from './types';
 import { imageUrl } from './catalog';
 import { base, CatalogContent, PageFrame, usePageTitle } from './SiteChrome';
 import { useLibrary } from './Library';
+import PhotoButton from './PhotoButton';
 import {
   comparisonFromSearch,
   comparisonSearch,
@@ -174,6 +175,20 @@ function Comparison({ catalog }: { catalog: Catalog }) {
               <h2>{bike.family}</h2>
             </a>
             <p>{bike.build}</p>
+            <PhotoButton
+              asset={{
+                id: bike.id,
+                name: bike.name,
+                image: bike.image,
+                source: bike.imageSource || bike.source,
+              }}
+              alternatives={selected.map(({ bike: b }) => ({
+                id: b.id,
+                name: b.name,
+                image: b.image,
+                source: b.imageSource || b.source,
+              }))}
+            />
             <small>{bike.edition}</small>
             <div className="compare-size">
               <label>

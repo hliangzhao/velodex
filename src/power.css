@@ -345,3 +345,343 @@
   resize: vertical;
   box-sizing: border-box;
 }
+
+.power-primer {
+  margin: 18px 0;
+  color: #617154;
+  font-size: 13px;
+}
+.power-primer > summary {
+  cursor: pointer;
+  padding: 12px 0;
+}
+.power-mode {
+  display: flex;
+  gap: 8px;
+  margin: 25px 0;
+}
+.power-mode button {
+  padding: 13px 20px;
+  border: 1px solid #d7dfce;
+  border-radius: 9px;
+  background: #fff;
+  color: #47613a;
+  font: inherit;
+  cursor: pointer;
+  font-size: 13px;
+}
+.power-mode [aria-pressed='true'] {
+  background: #224535;
+  color: #fff;
+  border-color: #224535;
+}
+.training-panel {
+  display: grid;
+  gap: 22px;
+}
+.training-panel h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+.training-panel h4 {
+  font-size: 15px;
+  margin: 28px 0 16px;
+}
+.training-panel p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #647258;
+}
+.training-profile {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.training-profile > div {
+  flex: 1 1 260px;
+}
+.training-panel label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  min-width: 0;
+}
+.training-panel select,
+.training-panel input,
+.training-panel textarea {
+  font: inherit;
+  font-size: 14px;
+  color: #294432;
+  background: #fff;
+  border: 1px solid #d6dfce;
+  border-radius: 8px;
+  padding: 12px;
+  max-width: 100%;
+}
+.training-profile input {
+  width: 150px;
+}
+.training-empty {
+  padding: 15px 5px;
+}
+.training-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.training-title > span {
+  font-size: 10px;
+  border-radius: 20px;
+  padding: 7px 10px;
+  background: #eaf0df;
+  color: #657a50;
+}
+.training-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.training-metrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid #e1e7d8;
+  border-radius: 10px;
+}
+.training-metrics small {
+  font-size: 11px;
+  color: #748067;
+}
+.training-metrics strong {
+  font-size: 26px;
+  color: #254331;
+}
+.training-metrics em {
+  font-size: 12px;
+  font-style: normal;
+}
+.training-notice {
+  padding: 16px;
+  border-radius: 9px;
+  background: #f5f1dc;
+}
+.training-peaks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.training-peaks > div {
+  display: grid;
+  gap: 10px;
+  border-bottom: 2px solid #d7e7ab;
+  padding: 12px 0;
+}
+.training-peaks span {
+  font-size: 12px;
+  color: #718060;
+}
+.training-peaks strong {
+  font-size: 24px;
+}
+.training-peaks small {
+  font-size: 10px;
+}
+.training-zones > div {
+  display: grid;
+  grid-template-columns: 160px minmax(30px, 1fr) 95px;
+  gap: 16px;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 12px;
+}
+.training-zones span small {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  color: #7a866e;
+}
+.training-zones > div > div {
+  height: 12px;
+  background: #eff2e9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.training-zones i {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+}
+.training-zones b {
+  font-size: 11px;
+  text-align: right;
+}
+.training-advice {
+  background: #f0f4e8;
+  padding: 1px 20px 12px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.training-save,
+.training-controls {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.training-blocks {
+  display: flex;
+  gap: 3px;
+  margin: 22px 0;
+}
+.training-blocks > div {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 11px;
+  color: #4b6240;
+}
+.training-workout ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+.training-workout li {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #e5e9df;
+  padding: 13px 0;
+  font-size: 12px;
+}
+.training-workout li span {
+  color: #6c7d5e;
+}
+.training-history-list article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #e2e7da;
+  padding: 16px 0;
+}
+.training-history-list article > div {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+.training-history-list strong {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.training-history-list span {
+  font-size: 11px;
+  color: #748169;
+}
+.training-history-list button,
+.training-history > button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid #dce4d3;
+  border-radius: 7px;
+  padding: 9px;
+  background: #fff;
+  color: #49613e;
+  font-size: 12px;
+}
+.training-history > button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.training-history textarea {
+  width: 100%;
+  height: 220px;
+  font-size: 12px;
+}
+.training-history details {
+  margin-top: 15px;
+}
+@media (max-width: 760px) {
+  .training-panel {
+    gap: 16px;
+  }
+  .training-panel .work-panel {
+    padding: 18px;
+  }
+  .training-panel h3 {
+    font-size: 20px;
+  }
+  .training-panel p {
+    font-size: 12px;
+  }
+  .training-profile {
+    display: grid;
+    gap: 16px;
+  }
+  .training-profile input {
+    width: 100%;
+  }
+  .training-title {
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .training-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+  .training-metrics > div {
+    padding: 12px;
+  }
+  .training-metrics strong {
+    font-size: 22px;
+  }
+  .training-peaks {
+    gap: 8px;
+  }
+  .training-peaks strong {
+    font-size: 19px;
+  }
+  .training-peaks span {
+    font-size: 10px;
+  }
+  .training-zones > div {
+    grid-template-columns: 112px minmax(20px, 1fr) 70px;
+    gap: 8px;
+    font-size: 11px;
+  }
+  .training-zones b {
+    font-size: 10px;
+  }
+  .training-controls label {
+    flex: 1;
+  }
+  .training-save label {
+    flex: 1 1 100%;
+  }
+  .training-save button {
+    width: 100%;
+    justify-content: center;
+  }
+  .training-workout li {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .power-mode button {
+    flex: 1;
+    padding: 12px 7px;
+    font-size: 12px;
+  }
+  .training-profile select {
+    width: 100%;
+  }
+  .training-peaks small {
+    display: block;
+  }
+}

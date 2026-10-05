@@ -312,7 +312,7 @@ function App({ browse = false }: { browse?: boolean }) {
                           <button
                             disabled={is3D}
                             onClick={() => setPhotoOpen(true)}
-                            aria-label="打开官方照片细看"
+                            aria-label="打开照片观察台"
                           >
                             <ZoomIn size={17} />
                             <span>照片细看</span>
@@ -789,7 +789,12 @@ function App({ browse = false }: { browse?: boolean }) {
       <SiteFooter />
       <CompareDock />
       {photoOpen && paint && bike && (
-        <PhotoViewer paint={paint} name={bike.family} onClose={() => setPhotoOpen(false)} />
+        <PhotoViewer
+          paint={paint}
+          name={bike.family}
+          alternatives={paints}
+          onClose={() => setPhotoOpen(false)}
+        />
       )}
       <dialog
         ref={dialog}

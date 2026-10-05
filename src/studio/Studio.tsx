@@ -21,6 +21,8 @@ import { imageUrl, loadCatalog, loadParts } from '../catalog';
 import { referencePriceLabel } from '../upgrade-planner';
 import { weightReferences } from '../workshop';
 import PartsPicker from './PartsPicker';
+import BudgetWorkbench from './BudgetWorkbench';
+import PhotoButton, { productPhoto } from '../PhotoButton';
 import { orderQuestions, quoteText } from './library';
 import { PageFrame, usePageTitle } from '../SiteChrome';
 import {
@@ -386,6 +388,15 @@ export function Studio({
         <div className="st-main">
           {tab === 'build' && (
             <>
+              <div className="st-workbench-links">
+                <a href={`${base}?view=workshop&tool=power`}>
+                  骑行分析与训练 <ArrowRight size={15} />
+                </a>
+                <a href={`${base}?view=compare`}>
+                  外观与几何对比 <ArrowRight size={15} />
+                </a>
+              </div>
+              <BudgetWorkbench plan={plan} parts={parts} change={change} detail={setDetail} />
               <section className="st-panel st-platform">
                 <details className="st-platform-editor">
                   <summary>
@@ -1093,7 +1104,15 @@ export function Studio({
               <span className="st-kicker">{label(detail.category)}</span>
               <h2>{detail.name}</h2>
               {detail.image && (
-                <img className="st-detail-image" src={imageUrl(detail.image)} alt={detail.name} />
+                <>
+                  <img className="st-detail-image" src={imageUrl(detail.image)} alt={detail.name} />
+                  <PhotoButton
+                    asset={productPhoto(detail)!}
+                    alternatives={parts.products
+                      .filter((p) => p.category === detail.category)
+                      .flatMap((p) => (productPhoto(p) ? [productPhoto(p)!] : []))}
+                  />
+                </>
               )}
               {detail.familyId && (
                 <label>

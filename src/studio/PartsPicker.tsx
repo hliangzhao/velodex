@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ArrowRight, Bike, Layers3, Plus, Search } from 'lucide-react';
 import type { PartsCatalog, Product } from '../types';
 import { imageUrl } from '../catalog';
+import PhotoButton from '../PhotoButton';
 import { referencePriceLabel } from '../upgrade-planner';
 import { categories, label, type Category } from './model';
 import {
@@ -259,6 +260,26 @@ function FrameCard({
           <em>{f.market}</em>
         </span>
         <h3>{f.name}</h3>
+        {f.image && (
+          <PhotoButton
+            asset={{
+              id: f.id,
+              name: f.name,
+              image: f.image,
+              source: f.imageSource || f.source,
+              note: f.imageCaption,
+            }}
+            alternatives={frames
+              .filter((g) => g.image)
+              .map((g) => ({
+                id: g.id,
+                name: g.name,
+                image: g.image!,
+                source: g.imageSource || g.source,
+                note: g.imageCaption,
+              }))}
+          />
+        )}
         <p className="st-product-price">
           {f.price ? referencePriceLabel(f.price) : '填写自己的到手价'}
         </p>

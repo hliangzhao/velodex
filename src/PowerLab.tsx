@@ -13,6 +13,7 @@ import {
   type RideInterval,
 } from './ride';
 import './power.css';
+import TrainingPanel from './TrainingPanel';
 
 const fields: {
   key: Exclude<keyof RideSettings, 'flat'>;
@@ -100,6 +101,7 @@ function downloadCSV(rows: RideInterval[], settings: RideSettings) {
 }
 export default function PowerLab() {
   const [ride, setRide] = useState<Ride>();
+  const [mode, setMode] = useState<'training' | 'model'>('training');
   const [name, setName] = useState('');
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
@@ -174,41 +176,46 @@ export default function PowerLab() {
       <header className="power-heading">
         <span className="eyebrow">POWER / UNDERSTAND THE EFFORT</span>
         <h2>功率与骑行表现</h2>
-        <p>导入骑行记录后，可查看文件中的功率数据，并用阻力模型估算不同条件下的功率需求。</p>
+        <p>
+          导入骑行记录，分析持续功率和训练分区，生成参考课表并保存摘要。风阻与重量的影响可在物理模型中单独比较。
+        </p>
       </header>
-      <div className="power-knowledge">
-        <article>
-          <span>01 / WATTS</span>
-          <h3>功率不是速度</h3>
-          <p>
-            功率是做功的速率，单位
-            W。相同功率下，坡度、风、姿态和跟骑都会改变速度。平均功率按时间加权，零功率滑行也应计入；缺失记录不等于零。
-          </p>
-        </article>
-        <article>
-          <span>02 / W·KG⁻¹</span>
-          <h3>功体比的计算口径</h3>
-          <p>
-            通常指功率 ÷ 骑手体重。例如 250 W / 70 kg ≈ 3.57
-            W/kg。爬坡模型还需计入车和行李；平路高速表现也受绝对功率与 CdA 影响。
-          </p>
-        </article>
-        <article>
-          <span>03 / FTP</span>
-          <h3>阈值是训练参考</h3>
-          <p>
-            FTP 是功能性阈值功率，用于描述持续输出能力和设定训练强度。规范 20 分钟测试均值 × 0.95
-            是常见估算方法，但个体和测试方案会影响结果；日常骑行均值不等于 FTP。
-          </p>
-          <a
-            href="https://help.trainingpeaks.com/hc/en-us/articles/204071934-How-to-Calculate-Threshold-Values-for-Power-Heart-Rate-or-Pace"
-            target="_blank"
-            rel="noreferrer"
-          >
-            TrainingPeaks · 阈值说明 <ArrowUpRight size={12} />
-          </a>
-        </article>
-      </div>
+      <details className="power-primer">
+        <summary>功率、功体比与 FTP 的区别</summary>
+        <div className="power-knowledge">
+          <article>
+            <span>01 / WATTS</span>
+            <h3>功率不是速度</h3>
+            <p>
+              功率是做功的速率，单位
+              W。相同功率下，坡度、风、姿态和跟骑都会改变速度。平均功率按时间加权，零功率滑行也应计入；缺失记录不等于零。
+            </p>
+          </article>
+          <article>
+            <span>02 / W·KG⁻¹</span>
+            <h3>功体比的计算口径</h3>
+            <p>
+              通常指功率 ÷ 骑手体重。例如 250 W / 70 kg ≈ 3.57
+              W/kg。爬坡模型还需计入车和行李；平路高速表现也受绝对功率与 CdA 影响。
+            </p>
+          </article>
+          <article>
+            <span>03 / FTP</span>
+            <h3>阈值是训练参考</h3>
+            <p>
+              FTP 是功能性阈值功率，用于描述持续输出能力和设定训练强度。规范 20 分钟测试均值 × 0.95
+              是常见估算方法，但个体和测试方案会影响结果；日常骑行均值不等于 FTP。
+            </p>
+            <a
+              href="https://help.trainingpeaks.com/hc/en-us/articles/204071934-How-to-Calculate-Threshold-Values-for-Power-Heart-Rate-or-Pace"
+              target="_blank"
+              rel="noreferrer"
+            >
+              TrainingPeaks · 阈值说明 <ArrowUpRight size={12} />
+            </a>
+          </article>
+        </div>
+      </details>
       <div className="power-upload work-panel">
         <div>
           <FileUp size={25} />
@@ -288,244 +295,265 @@ export default function PowerLab() {
           </p>
         )}
       </div>
-      <div className="power-analysis-layout">
-        <section className="work-panel power-inputs">
-          <span className="eyebrow">MODEL ASSUMPTIONS</span>
-          <h3>功率估算参数</h3>
-          <p>
-            整车重量已含随车部件。若手头只有分件重量，可先用
-            <a href={`${base}?view=workshop&tool=build`}>装车单</a>汇总。未核实的默认值都是示例。
-          </p>
-          <div className="power-fields">
-            {fields.map((f) => (
-              <label key={f.key}>
-                {f.label}
+      <nav className="power-mode" aria-label="骑行分析方式">
+        <button aria-pressed={mode === 'training'} onClick={() => setMode('training')}>
+          训练分析与记录
+        </button>
+        <button aria-pressed={mode === 'model'} onClick={() => setMode('model')}>
+          阻力与功率估算
+        </button>
+      </nav>
+      {mode === 'training' && <TrainingPanel ride={ride} name={name} ftp={ftp} setFTP={setFTP} />}
+      {mode === 'model' && (
+        <>
+          <div className="power-analysis-layout">
+            <section className="work-panel power-inputs">
+              <span className="eyebrow">MODEL ASSUMPTIONS</span>
+              <h3>功率估算参数</h3>
+              <p>
+                整车重量已含随车部件。若手头只有分件重量，可先用
+                <a href={`${base}?view=workshop&tool=build`}>装车单</a>
+                汇总。未核实的默认值都是示例。
+              </p>
+              <div className="power-fields">
+                {fields.map((f) => (
+                  <label key={f.key}>
+                    {f.label}
+                    <input
+                      type="number"
+                      min={f.min}
+                      max={f.max}
+                      step={f.step}
+                      value={values[f.key]}
+                      onChange={(e) => setValues({ ...values, [f.key]: e.target.value })}
+                    />
+                    {f.note && <small>{f.note}</small>}
+                  </label>
+                ))}
+              </div>
+              <label className="power-check">
+                <input type="checkbox" checked={flat} onChange={(e) => setFlat(e.target.checked)} />{' '}
+                将全程视为平路（忽略海拔）
+              </label>
+              <p className="power-small">
+                只有明确接受平路假设时才勾选。缺失海拔的区间默认不估算。
+              </p>
+              <label className="power-ftp">
+                已知 FTP / W（选填）
                 <input
                   type="number"
-                  min={f.min}
-                  max={f.max}
-                  step={f.step}
-                  value={values[f.key]}
-                  onChange={(e) => setValues({ ...values, [f.key]: e.target.value })}
+                  min="1"
+                  max="1000"
+                  value={ftp}
+                  placeholder="例如 250"
+                  onChange={(e) => setFTP(e.target.value)}
                 />
-                {f.note && <small>{f.note}</small>}
               </label>
-            ))}
-          </div>
-          <label className="power-check">
-            <input type="checkbox" checked={flat} onChange={(e) => setFlat(e.target.checked)} />{' '}
-            将全程视为平路（忽略海拔）
-          </label>
-          <p className="power-small">只有明确接受平路假设时才勾选。缺失海拔的区间默认不估算。</p>
-          <label className="power-ftp">
-            已知 FTP / W（选填）
-            <input
-              type="number"
-              min="1"
-              max="1000"
-              value={ftp}
-              placeholder="例如 250"
-              onChange={(e) => setFTP(e.target.value)}
-            />
-          </label>
-          {ftp && !validFTP && <p className="power-error">FTP 请填写 1–1000 W。</p>}
-          {!valid && (
-            <p role="alert" className="power-error">
-              有输入超出范围或为空，请检查各字段。
-            </p>
-          )}
-        </section>
-        <section className="work-panel power-results" aria-live="polite">
-          <span className="eyebrow">THE RIDE REPORT</span>
-          <h3>{name || '导入记录后查看分析'}</h3>
-          {analysis?.error && (
-            <p role="alert" className="power-error">
-              {analysis.error}
-            </p>
-          )}
-          {!ride && (
-            <p>
-              如果文件包含功率记录，这里会优先展示记录值。估算曲线用于理解重量、坡度和风阻的影响，不能替代功率计测量。
-            </p>
-          )}
-          {result && ride && (
-            <>
-              <p className="power-small">
-                {ride.format} · {ride.points.length.toLocaleString()} 个带时间点 · 有效连续区间{' '}
-                {minutes(result.duration)}。轨迹分段、重复时间和超过 30 秒的缺口不拼接。
-              </p>
-              <div className="power-metrics">
-                <div>
-                  <small>文件功率 · 时间加权</small>
-                  <strong>
-                    {fmt(average)}
-                    <span> W</span>
-                  </strong>
-                  <p>
-                    覆盖 {fmt((100 * result.measured.seconds) / result.duration)}% ·
-                    含记录中的零功率
+              {ftp && !validFTP && <p className="power-error">FTP 请填写 1–1000 W。</p>}
+              {!valid && (
+                <p role="alert" className="power-error">
+                  有输入超出范围或为空，请检查各字段。
+                </p>
+              )}
+            </section>
+            <section className="work-panel power-results" aria-live="polite">
+              <span className="eyebrow">THE RIDE REPORT</span>
+              <h3>{name || '导入记录后查看分析'}</h3>
+              {analysis?.error && (
+                <p role="alert" className="power-error">
+                  {analysis.error}
+                </p>
+              )}
+              {!ride && (
+                <p>
+                  如果文件包含功率记录，这里会优先展示记录值。估算曲线用于理解重量、坡度和风阻的影响，不能替代功率计测量。
+                </p>
+              )}
+              {result && ride && (
+                <>
+                  <p className="power-small">
+                    {ride.format} · {ride.points.length.toLocaleString()} 个带时间点 · 有效连续区间{' '}
+                    {minutes(result.duration)}。轨迹分段、重复时间和超过 30 秒的缺口不拼接。
                   </p>
-                </div>
-                <div className="estimated">
-                  <small>模型估算 · 时间加权</small>
-                  <strong>
-                    {fmt(result.estimated.average)}
-                    <span> W</span>
-                  </strong>
-                  <p>
-                    覆盖 {fmt((100 * result.estimated.seconds) / result.duration)}% ·{' '}
-                    {flat ? '全程平路假设' : '使用平滑海拔'}
-                  </p>
-                  {result.estimated.average != null && (
-                    <p>
-                      估算均值 / 骑手体重：{fmt(result.estimated.average / settings.rider, 2)} W/kg
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <small>记录均值 / 骑手体重</small>
-                  <strong>
-                    {fmt(average == null ? undefined : average / settings.rider, 2)}
-                    <span> W/kg</span>
-                  </strong>
-                  <p>分母 {settings.rider} kg；这是本次记录均值</p>
-                </div>
-                <div>
-                  <small>最佳连续 20 分钟 · 文件记录</small>
-                  <strong>
-                    {fmt(result.best20)}
-                    <span> W</span>
-                  </strong>
-                  <p>无完整 20 分钟功率记录时留空</p>
-                </div>
-              </div>
-              <div className="power-summary">
-                <span>
-                  有效距离{' '}
-                  {result.distanceSeconds ? `${fmt(result.distance / 1000, 2)} km` : '未提供'}（覆盖{' '}
-                  {fmt((100 * result.distanceSeconds) / result.duration)}%）
-                </span>
-                <span>
-                  平滑累计上升 {result.altitudeSeconds ? `${fmt(result.climbing)} m` : '未提供'}
-                  （海拔覆盖 {fmt((100 * result.altitudeSeconds) / result.duration)}%）
-                </span>
-                <span>
-                  记录功率机械功{' '}
-                  {result.measured.seconds ? `${fmt(result.measured.joules / 1000)} kJ` : '未提供'}{' '}
-                  · 不是代谢热量
-                </span>
-              </div>
-              {result.measured.average == null && (
-                <p className="power-notice">
-                  文件没有可统计的功率记录。可在数据齐全时进行模型估算，不能据此推算 FTP。
-                </p>
-              )}
-              {result.estimated.average == null && (
-                <p className="power-notice">
-                  估算需要有效速度和海拔。可检查源文件；仅在路线确为平路且接受简化时，使用左侧平路假设。
-                </p>
-              )}
-              <PowerChart rows={result.intervals} />
-              {result.low != null && (
-                <p className="power-small">
-                  敏感性示例：仅把 CdA 改为当前值的 80% / 120%，估算均值为 {fmt(result.low)}–
-                  {fmt(result.high)} W。这不是误差范围或置信区间；未知风况可能带来更大偏差。
-                </p>
-              )}
-              {validFTP && (
-                <p className="power-notice">
-                  所填 FTP：{+ftp} W · {fmt(+ftp / settings.rider, 2)} W/kg。
-                  {average != null &&
-                    `本次记录均值约为 FTP 的 ${fmt((average / +ftp) * 100)}%。此比例不是 IF，未计算 NP / TSS。`}
-                </p>
-              )}
-              {result.best20 != null && !ride.format.startsWith('模拟') && (
-                <div className="ftp-estimate">
-                  <label className="power-check">
-                    <input
-                      type="checkbox"
-                      checked={testConfirmed}
-                      onChange={(e) => setTestConfirmed(e.target.checked)}
-                    />{' '}
-                    我确认这次记录包含规范的 20 分钟全力测试，且文件功率来自功率计。
-                  </label>
-                  {testConfirmed && (
-                    <p>
-                      FTP 经验估算：
+                  <div className="power-metrics">
+                    <div>
+                      <small>文件功率 · 时间加权</small>
                       <strong>
-                        {fmt(result.best20 * 0.95)} W /{' '}
-                        {fmt((result.best20 * 0.95) / settings.rider, 2)} W/kg
+                        {fmt(average)}
+                        <span> W</span>
                       </strong>
-                      。采用最佳 20 分钟 × 0.95；需结合所用测试方案判断。
+                      <p>
+                        覆盖 {fmt((100 * result.measured.seconds) / result.duration)}% ·
+                        含记录中的零功率
+                      </p>
+                    </div>
+                    <div className="estimated">
+                      <small>模型估算 · 时间加权</small>
+                      <strong>
+                        {fmt(result.estimated.average)}
+                        <span> W</span>
+                      </strong>
+                      <p>
+                        覆盖 {fmt((100 * result.estimated.seconds) / result.duration)}% ·{' '}
+                        {flat ? '全程平路假设' : '使用平滑海拔'}
+                      </p>
+                      {result.estimated.average != null && (
+                        <p>
+                          估算均值 / 骑手体重：{fmt(result.estimated.average / settings.rider, 2)}{' '}
+                          W/kg
+                        </p>
+                      )}
+                    </div>
+                    <div>
+                      <small>记录均值 / 骑手体重</small>
+                      <strong>
+                        {fmt(average == null ? undefined : average / settings.rider, 2)}
+                        <span> W/kg</span>
+                      </strong>
+                      <p>分母 {settings.rider} kg；这是本次记录均值</p>
+                    </div>
+                    <div>
+                      <small>最佳连续 20 分钟 · 文件记录</small>
+                      <strong>
+                        {fmt(result.best20)}
+                        <span> W</span>
+                      </strong>
+                      <p>无完整 20 分钟功率记录时留空</p>
+                    </div>
+                  </div>
+                  <div className="power-summary">
+                    <span>
+                      有效距离{' '}
+                      {result.distanceSeconds ? `${fmt(result.distance / 1000, 2)} km` : '未提供'}
+                      （覆盖 {fmt((100 * result.distanceSeconds) / result.duration)}%）
+                    </span>
+                    <span>
+                      平滑累计上升 {result.altitudeSeconds ? `${fmt(result.climbing)} m` : '未提供'}
+                      （海拔覆盖 {fmt((100 * result.altitudeSeconds) / result.duration)}%）
+                    </span>
+                    <span>
+                      记录功率机械功{' '}
+                      {result.measured.seconds
+                        ? `${fmt(result.measured.joules / 1000)} kJ`
+                        : '未提供'}{' '}
+                      · 不是代谢热量
+                    </span>
+                  </div>
+                  {result.measured.average == null && (
+                    <p className="power-notice">
+                      文件没有可统计的功率记录。可在数据齐全时进行模型估算，不能据此推算 FTP。
                     </p>
                   )}
-                </div>
+                  {result.estimated.average == null && (
+                    <p className="power-notice">
+                      估算需要有效速度和海拔。可检查源文件；仅在路线确为平路且接受简化时，使用左侧平路假设。
+                    </p>
+                  )}
+                  <PowerChart rows={result.intervals} />
+                  {result.low != null && (
+                    <p className="power-small">
+                      敏感性示例：仅把 CdA 改为当前值的 80% / 120%，估算均值为 {fmt(result.low)}–
+                      {fmt(result.high)} W。这不是误差范围或置信区间；未知风况可能带来更大偏差。
+                    </p>
+                  )}
+                  {validFTP && (
+                    <p className="power-notice">
+                      所填 FTP：{+ftp} W · {fmt(+ftp / settings.rider, 2)} W/kg。
+                      {average != null &&
+                        `本次记录均值约为 FTP 的 ${fmt((average / +ftp) * 100)}%。此比例不是 IF，未计算 NP / TSS。`}
+                    </p>
+                  )}
+                  {result.best20 != null && !ride.format.startsWith('模拟') && (
+                    <div className="ftp-estimate">
+                      <label className="power-check">
+                        <input
+                          type="checkbox"
+                          checked={testConfirmed}
+                          onChange={(e) => setTestConfirmed(e.target.checked)}
+                        />{' '}
+                        我确认这次记录包含规范的 20 分钟全力测试，且文件功率来自功率计。
+                      </label>
+                      {testConfirmed && (
+                        <p>
+                          FTP 经验估算：
+                          <strong>
+                            {fmt(result.best20 * 0.95)} W /{' '}
+                            {fmt((result.best20 * 0.95) / settings.rider, 2)} W/kg
+                          </strong>
+                          。采用最佳 20 分钟 × 0.95；需结合所用测试方案判断。
+                        </p>
+                      )}
+                    </div>
+                  )}
+                  {(ride.discarded > 0 || result.skipped > 0) && (
+                    <p className="power-small">
+                      跳过 {ride.discarded} 个无效或不递增时间点；{result.skipped}{' '}
+                      个异常速度区间不参与距离和模型估算，保留其中有效的功率记录。
+                    </p>
+                  )}
+                  <button
+                    className="outline-button"
+                    onClick={() => setCSV(downloadCSV(result.intervals, settings))}
+                  >
+                    <Download size={15} /> 导出功率明细 CSV
+                  </button>
+                  {csv && (
+                    <div className="power-csv">
+                      <p role="status">
+                        已生成 CSV
+                        并发起下载，包含本次模型参数。若浏览器未保存文件，也可复制下方文本。
+                      </p>
+                      <textarea
+                        aria-label="功率明细 CSV 文本"
+                        readOnly
+                        value={csv}
+                        onFocus={(e) => e.target.select()}
+                      />
+                    </div>
+                  )}
+                </>
               )}
-              {(ride.discarded > 0 || result.skipped > 0) && (
-                <p className="power-small">
-                  跳过 {ride.discarded} 个无效或不递增时间点；{result.skipped}{' '}
-                  个异常速度区间不参与距离和模型估算，保留其中有效的功率记录。
-                </p>
-              )}
-              <button
-                className="outline-button"
-                onClick={() => setCSV(downloadCSV(result.intervals, settings))}
+            </section>
+          </div>
+          <details className="power-method">
+            <summary>计算方法、数据缺口与适用边界</summary>
+            <p>
+              功率模型：P = max(0, [½ρCdA(v+w)|v+w| + mg·sinθ + Crr·mg·cosθ + ma]·v / η)。m
+              为人、整车与携带物总质量，v 为地速，w 为沿行进方向的等效迎风，η 为传动效率。负需求截为
+              0，不作能量回收。
+            </p>
+            <p>
+              优先使用 TCX 距离差，否则用 GPS 坐标距离，再尝试速度记录。连续片段内对海拔和速度作约
+              30
+              秒窗口平均，再求坡度和加速度；这会削弱短促冲刺和陡坡。平均记录功率使用相邻样本的梯形积分，缺失值不填零，最佳
+              20 分钟不能跨缺口。
+            </p>
+            <p>
+              文件中的功率字段可能由上游平台估算，本工具不能自动证明它来自传感器。GPS
+              海拔噪声、定位漂移、刹车、侧风、跟骑、姿态变化和转动惯量未被完整建模；未知条件下，不用于判断某个配件的真实节省瓦数。
+            </p>
+            <p>
+              来源：
+              <a
+                href="https://www.gribble.org/cycling/power_v_speed.html"
+                target="_blank"
+                rel="noreferrer"
               >
-                <Download size={15} /> 导出功率明细 CSV
-              </button>
-              {csv && (
-                <div className="power-csv">
-                  <p role="status">
-                    已生成 CSV 并发起下载，包含本次模型参数。若浏览器未保存文件，也可复制下方文本。
-                  </p>
-                  <textarea
-                    aria-label="功率明细 CSV 文本"
-                    readOnly
-                    value={csv}
-                    onFocus={(e) => e.target.select()}
-                  />
-                </div>
-              )}
-            </>
-          )}
-        </section>
-      </div>
-      <details className="power-method">
-        <summary>计算方法、数据缺口与适用边界</summary>
-        <p>
-          功率模型：P = max(0, [½ρCdA(v+w)|v+w| + mg·sinθ + Crr·mg·cosθ + ma]·v / η)。m
-          为人、整车与携带物总质量，v 为地速，w 为沿行进方向的等效迎风，η 为传动效率。负需求截为
-          0，不作能量回收。
-        </p>
-        <p>
-          优先使用 TCX 距离差，否则用 GPS 坐标距离，再尝试速度记录。连续片段内对海拔和速度作约 30
-          秒窗口平均，再求坡度和加速度；这会削弱短促冲刺和陡坡。平均记录功率使用相邻样本的梯形积分，缺失值不填零，最佳
-          20 分钟不能跨缺口。
-        </p>
-        <p>
-          文件中的功率字段可能由上游平台估算，本工具不能自动证明它来自传感器。GPS
-          海拔噪声、定位漂移、刹车、侧风、跟骑、姿态变化和转动惯量未被完整建模；未知条件下，不用于判断某个配件的真实节省瓦数。
-        </p>
-        <p>
-          来源：
-          <a
-            href="https://www.gribble.org/cycling/power_v_speed.html"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Steve Gribble · 骑行阻力模型
-          </a>
-          ；
-          <a
-            href="https://www.trainingpeaks.com/blog/the-physiology-of-ftp-and-new-testing-protocols/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            TrainingPeaks · FTP 测试与差异
-          </a>
-          。
-        </p>
-      </details>
+                Steve Gribble · 骑行阻力模型
+              </a>
+              ；
+              <a
+                href="https://www.trainingpeaks.com/blog/the-physiology-of-ftp-and-new-testing-protocols/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                TrainingPeaks · FTP 测试与差异
+              </a>
+              。
+            </p>
+          </details>
+        </>
+      )}
     </div>
   );
 }

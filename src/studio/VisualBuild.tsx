@@ -3,6 +3,7 @@ import type { Bike } from '../types';
 import { imageUrl } from '../catalog';
 import { paintsForBike } from '../bikePaints';
 import { type Plan, type Point } from './model';
+import PhotoButton from '../PhotoButton';
 
 export default function VisualBuild({
   plan,
@@ -168,6 +169,10 @@ export default function VisualBuild({
             </div>
           </div>
           <div className="st-visual-controls">
+            <PhotoButton
+              asset={{ ...paint, name: `${bike?.family || ''} ${paint.name}` }}
+              alternatives={paints}
+            />
             <label>
               查看比例
               <select value={zoom} onChange={(e) => setZoom(+e.target.value)}>

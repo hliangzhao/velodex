@@ -7,6 +7,8 @@ export type RidePoint = {
   distance?: number;
   speed?: number;
   power?: number;
+  heartRate?: number;
+  cadence?: number;
 };
 export type Ride = { format: string; points: RidePoint[]; discarded: number };
 export type RideSettings = {
@@ -87,6 +89,7 @@ export function parseRideXML(xml: string): Ride {
       if (time <= previous || time - previous > 30) segment++;
       previous = time;
       const power = inRange(number(content(node, ['Watts', 'watts', 'power', 'Power'])), 0, 5000);
+      const heartRateNode = descendants(node, 'HeartRateBpm')[0];
       points.push({
         time,
         segment,
@@ -104,6 +107,18 @@ export function parseRideXML(xml: string): Ride {
         distance: gpx ? undefined : inRange(number(content(node, ['DistanceMeters'])), 0, 10000000),
         speed: inRange(number(content(node, gpx ? ['speed'] : ['Speed'])), 0, 40),
         power,
+        heartRate: inRange(
+          number(
+            gpx
+              ? content(node, ['hr'])
+              : heartRateNode
+                ? content(heartRateNode, ['Value'])
+                : undefined,
+          ),
+          25,
+          250,
+        ),
+        cadence: inRange(number(content(node, gpx ? ['cad'] : ['Cadence', 'RunCadence'])), 0, 250),
       });
     }
   }
