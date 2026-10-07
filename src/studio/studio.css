@@ -5,7 +5,6 @@
   --st-paper: #fff;
   color: var(--st-ink);
   padding: 32px 0 80px;
-  container-type: inline-size;
   font-size: 14px;
 }
 .studio * {
@@ -1881,4 +1880,76 @@
 }
 .studio .st-cost-ledger {
   display: block;
+}
+
+/* Both price sources stay visible: reference MSRP and the rider's actual quote. */
+.st-navigation {
+  display: contents;
+}
+.st-purchase {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--st-line);
+}
+.st-purchase-fields {
+  display: grid;
+  grid-template-columns: minmax(90px, 0.75fr) minmax(0, 1.5fr);
+  gap: 12px;
+}
+.st-purchase-fields label {
+  min-width: 0;
+}
+.st-purchase-fields :is(input, select) {
+  min-width: 0;
+  width: 100%;
+}
+.st-purchase .st-purchase-hint {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--st-muted);
+  margin: 0;
+}
+.st-purchase > button {
+  width: 100%;
+}
+@media (max-width: 760px) {
+  .st-product:not(.st-frame-card) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .st-product:not(.st-frame-card) .st-product-image {
+    height: 180px;
+    width: 100%;
+  }
+  .st-product-content {
+    width: 100%;
+    min-width: 0;
+  }
+  .st-product:not(.st-frame-card) h3 button {
+    font-size: 19px;
+  }
+  .st-product .st-version {
+    display: grid;
+    gap: 7px;
+  }
+  .st-product .st-version > span {
+    display: block;
+  }
+  .st-product:not(.st-frame-card) .st-product-actions button {
+    min-height: 44px;
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+  .st-results {
+    gap: 8px 16px;
+    flex-wrap: wrap;
+  }
+  .st-dialog .st-inline-actions {
+    position: static;
+    padding: 16px 0 0;
+    margin-top: 18px;
+  }
 }

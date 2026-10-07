@@ -81,6 +81,23 @@ export const shelfKey = 'velodex.studio.shelf.v1';
 export const label = (category: Category) =>
   categories.find(([c]) => c === category)?.[1] || category;
 export const money = (n: number) => '¥' + n.toLocaleString('zh-CN', { maximumFractionDigits: 2 });
+export type PurchaseQuote = { price: string; condition: 'new' | 'used' };
+export function validPurchaseQuote(quote: PurchaseQuote) {
+  const price = quote.price.trim();
+  if (!price) return quote.condition === 'new';
+  return /^\d+(\.\d{1,2})?$/.test(price) && amount(price) !== null;
+}
+export function applyPurchaseQuote(item: PlanItem, quote?: PurchaseQuote): PlanItem {
+  if (!quote) return item;
+  if (!validPurchaseQuote(quote)) throw new Error('Invalid purchase quote');
+  return {
+    ...item,
+    price: quote.price.trim(),
+    variant: [item.variant, quote.condition === 'used' ? '二手购入' : '']
+      .filter(Boolean)
+      .join(' · '),
+  };
+}
 export function amount(s: string): number | null {
   if (!/^\d+(\.\d{0,3})?$/.test(s.trim())) return null;
   const n = Number(s);

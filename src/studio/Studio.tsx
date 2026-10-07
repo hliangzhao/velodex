@@ -23,6 +23,7 @@ import { imageUrl, loadCatalog, loadParts } from '../catalog';
 import { referencePriceLabel } from '../upgrade-planner';
 import { weightReferences } from '../workshop';
 import PartsPicker from './PartsPicker';
+import PurchaseControls from './PurchaseControls';
 import BudgetWorkbench from './BudgetWorkbench';
 import CostBreakdown from './CostBreakdown';
 import PhotoButton, { productPhoto } from '../PhotoButton';
@@ -30,6 +31,8 @@ import { orderQuestions, quoteText } from './library';
 import { PageFrame, usePageTitle } from '../SiteChrome';
 import {
   amount,
+  applyPurchaseQuote,
+  type PurchaseQuote,
   categories,
   checks,
   customItem,
@@ -162,6 +165,18 @@ export function Studio({
   const file = useRef<HTMLInputElement>(null),
     dialog = useRef<HTMLDialogElement>(null);
   const costDialog = useRef<HTMLDialogElement>(null);
+  const navigation = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const element = navigation.current;
+    if (!element) return;
+    const observer = new ResizeObserver(() => {
+      element
+        .closest<HTMLElement>('.studio')
+        ?.style.setProperty('--st-dock-height', `${element.getBoundingClientRect().height}px`);
+    });
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
   const editCosts = () => {
     costDialog.current?.close();
     setTab('build');
@@ -191,8 +206,8 @@ export function Studio({
     setEdited(true);
     setLink('');
   };
-  const add = (p: Product) => {
-    const item = productItem(p);
+  const add = (p: Product, quote?: PurchaseQuote) => {
+    const item = applyPurchaseQuote(productItem(p), quote);
     const ref = weightReferences[p.id];
     if (ref?.length === 1) {
       item.weight = String(ref[0].grams / (p.category === 'tires' ? 2 : 1));
@@ -323,21 +338,6 @@ export function Studio({
   };
   return (
     <div className="studio" data-tab={tab}>
-      <div className="st-mobile-budget" aria-label="当前选配费用">
-        <button onClick={() => costDialog.current?.showModal()} aria-label="查看费用明细">
-          <small>{total.priceComplete ? '净支出估算' : '已知净支出'} · 查看明细</small>
-          <strong>{money(total.net)}</strong>
-        </button>
-        <button
-          className="st-primary"
-          onClick={() => {
-            setTab(tab === 'parts' ? 'build' : 'parts');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-        >
-          {tab === 'parts' ? '查看清单' : '继续选配'} <ArrowRight size={16} />
-        </button>
-      </div>
       <header className="st-heading">
         <div>
           <span className="st-kicker">{brand} / 装车与升级</span>
@@ -355,26 +355,43 @@ export function Studio({
           </button>
         </div>
       </header>
-      <nav className="st-tabs" aria-label="装车工作区">
-        {(
-          [
-            ['build', '装车台', Wrench],
-            ['parts', '选配件', Layers3],
-            ['fit', '调把位', Ruler],
-            ['plans', '我的方案', Bookmark],
-          ] as const
-        ).map(([id, name, Icon]) => (
-          <button
-            key={id}
-            aria-current={tab === id ? 'page' : undefined}
-            onClick={() => setTab(id)}
-          >
-            <Icon size={19} />
-            {name}
-            {id === 'plans' && shelf.length > 0 && <small>{shelf.length}</small>}
+      <div className="st-navigation" ref={navigation}>
+        <div className="st-mobile-budget" aria-label="当前选配费用">
+          <button onClick={() => costDialog.current?.showModal()} aria-label="查看费用明细">
+            <small>{total.priceComplete ? '净支出估算' : '已知净支出'} · 查看明细</small>
+            <strong>{money(total.net)}</strong>
           </button>
-        ))}
-      </nav>
+          <button
+            className="st-primary"
+            onClick={() => {
+              setTab(tab === 'parts' ? 'build' : 'parts');
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
+            {tab === 'parts' ? '查看清单' : '继续选配'} <ArrowRight size={16} />
+          </button>
+        </div>
+        <nav className="st-tabs" aria-label="装车工作区">
+          {(
+            [
+              ['build', '装车台', Wrench],
+              ['parts', '选配件', Layers3],
+              ['fit', '调把位', Ruler],
+              ['plans', '我的方案', Bookmark],
+            ] as const
+          ).map(([id, name, Icon]) => (
+            <button
+              key={id}
+              aria-current={tab === id ? 'page' : undefined}
+              onClick={() => setTab(id)}
+            >
+              <Icon size={19} />
+              {name}
+              {id === 'plans' && shelf.length > 0 && <small>{shelf.length}</small>}
+            </button>
+          ))}
+        </nav>
+      </div>
       <div className="st-status" role="status">
         <span>
           <i />
@@ -904,14 +921,17 @@ export function Studio({
                 change({ ...plan, items: [...plan.items, customItem(category)] });
                 setTab('build');
               }}
-              addFrame={(f, variant) => {
-                const item = {
-                  ...customItem('frame'),
-                  name: f.name,
-                  variant,
-                  reference: f.price,
-                  source: f.source,
-                };
+              addFrame={(f, variant, quote) => {
+                const item = applyPurchaseQuote(
+                  {
+                    ...customItem('frame'),
+                    name: f.name,
+                    variant,
+                    reference: f.price,
+                    source: f.source,
+                  },
+                  quote,
+                );
                 change({ ...plan, items: [...plan.items, item] });
                 setStatus(`已加入 ${f.name}`);
               }}
@@ -1216,15 +1236,14 @@ export function Studio({
                   </ul>
                 </div>
               )}
+              <PurchaseControls
+                key={detail.id}
+                reference={detail.price}
+                quantity={detail.category === 'tires' && detail.id !== 'aero111' ? 2 : 1}
+                full={plan.items.length >= 60}
+                add={(quote) => add(detail, quote)}
+              />
               <div className="st-inline-actions">
-                <button
-                  className="st-primary"
-                  disabled={plan.items.length >= 60}
-                  onClick={() => add(detail)}
-                >
-                  <Plus size={16} />
-                  加入当前清单
-                </button>
                 <a href={detail.source} target="_blank" rel="noreferrer">
                   查看原始资料 ↗
                 </a>

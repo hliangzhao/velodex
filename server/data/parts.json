@@ -462,7 +462,10 @@
       "tradeoff": "与 Ultegra C50 外观接近，但花鼓与塔基不同，替换旧轮组时需先确认飞轮接口。",
       "source": "https://bike.shimano.com/products/components/pdp.P-WH-R9270-C50-TL-F.html",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "image": "/parts/shimano-c50.jpg",
+      "imageCaption": "Shimano 官方 WH-R9270-C50-TL 前轮花鼓细节图，展示 C50 TL 的辐条与花鼓结构。",
+      "imageSource": "https://bike.shimano.com/products/components/pdp.P-WH-R9270-C50-TL-F.html"
     },
     {
       "id": "dura-ace-r9200",
@@ -775,7 +778,10 @@
       "tradeoff": "方便维护的同时，内胎材质、胎压与路况都会影响滚阻和夹胎风险。",
       "source": "https://www.continental-tires.com/products/bicycle/tires/grand-prix-5000/",
       "sourceLabel": "厂商官方产品／技术资料",
-      "checkedAt": "2026-09-20"
+      "checkedAt": "2026-09-20",
+      "image": "/parts/gp5000-clincher.webp",
+      "imageCaption": "Continental 官方 Grand Prix 5000 开口胎外观图，非 S TR 真空版本。",
+      "imageSource": "https://www.continental-tires.com/fr/fr/products/bicycle/Grand-Prix-5000-Range/"
     },
     {
       "id": "aero111",
@@ -1843,7 +1849,10 @@
         "note": "日本代理商含税定价；不含跨境运费和进口成本。",
         "kind": "distributor",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/voso-ultimate-cn.jpg",
+      "imageCaption": "日本官方代理的 Ultimate 50 外观图；图片展示单轮，价格范围仍按前后轮一对标注。",
+      "imageSource": "https://www.podium.co.jp/lineup/13487"
     },
     {
       "id": "elilee-ek01",
@@ -2273,7 +2282,10 @@
         "powerType": "spider",
         "cadence": true,
         "protocols": ["ANT+", "BLE"]
-      }
+      },
+      "image": "/parts/sigeyi-axo-road.jpg",
+      "imageCaption": "SIGEYI 官方 AXO 公路五爪盘爪搭配曲柄的示例图；盘爪型号需匹配曲柄接口，报价不默认包含图中曲柄。",
+      "imageSource": "https://www.sigeyishop.com/cn/products-axo-cn/"
     },
     {
       "id": "garmin-rally-rs100",
@@ -2316,7 +2328,10 @@
         "protocols": ["ANT+", "BLE"],
         "cleat": "SPD-SL",
         "includesCleats": true
-      }
+      },
+      "image": "/parts/garmin-rally-rs100.jpg",
+      "imageCaption": "Garmin 中国官网 Rally RS100 踏板细节图；图中为单只踏板，购买范围以所列版本为准。",
+      "imageSource": "https://www.garmin.com.cn/products/sports-recreation/rally-rs100/"
     },
     {
       "id": "4iiii-precision3plus",
@@ -2359,7 +2374,10 @@
         "powerType": "left",
         "cadence": true,
         "protocols": ["ANT+", "BLE"]
-      }
+      },
+      "image": "/parts/4iiii-precision3plus.jpg",
+      "imageCaption": "4iiii 官方 PRECISION 3+ 宣传图，展示左曲柄传感器；具体曲柄型号按所选版本匹配。",
+      "imageSource": "https://4iiii.com/precision-3-plus/"
     },
     {
       "id": "igpsport-bsc100s",
@@ -3405,7 +3423,10 @@
         "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/shimano-pd-r7000.jpg",
+      "imageCaption": "Shimano 官方 105 PD-R7000 产品照片。",
+      "imageSource": "https://bike.shimano.com/products/components/pdp.P-PD-R7000.html"
     },
     {
       "id": "shimano-pd-r8000",
@@ -3452,7 +3473,10 @@
         "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/shimano-pd-r8000.jpg",
+      "imageCaption": "Shimano 官方 Ultegra PD-R8000 产品照片。",
+      "imageSource": "https://bike.shimano.com/products/components/pdp.P-PD-R8000.html"
     },
     {
       "id": "shimano-sm-sh11",
@@ -3499,7 +3523,10 @@
         "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/shimano-sm-sh11.jpg",
+      "imageCaption": "Shimano 官方 SM-SH11 黄色锁片 产品照片。",
+      "imageSource": "https://ride.shimano.com/products/sm-sh11"
     },
     {
       "id": "shimano-sm-sh12",
@@ -3546,7 +3573,10 @@
         "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/shimano-sm-sh12.jpg",
+      "imageCaption": "Shimano 官方 SM-SH12 蓝色锁片 产品照片。",
+      "imageSource": "https://ride.shimano.com/products/sm-sh12"
     },
     {
       "id": "shimano-sm-sh10",
@@ -3593,7 +3623,10 @@
         "note": "官网所列价格；运费、税费及进口成本以购买地结算为准。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/shimano-sm-sh10.jpg",
+      "imageCaption": "Shimano 官方 SM-SH10 红色锁片 产品照片。",
+      "imageSource": "https://ride.shimano.com/products/sm-sh10"
     },
     {
       "id": "look-keo-grip-0",
@@ -3640,7 +3673,10 @@
         "note": "价格对应官网当前 New KÉO Grip 包装；浮动角度分别选择。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/look-keo-grip-0.jpg",
+      "imageCaption": "LOOK 官网现款 KEO GRIP 外观图；黑色 0°、灰色 4.5°、红色 9°，旧批次外观可能不同。",
+      "imageSource": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip"
     },
     {
       "id": "look-keo-grip-45",
@@ -3687,7 +3723,10 @@
         "note": "价格对应官网当前 New KÉO Grip 包装；浮动角度分别选择。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/look-keo-grip-45.jpg",
+      "imageCaption": "LOOK 官网现款 KEO GRIP 外观图；黑色 0°、灰色 4.5°、红色 9°，旧批次外观可能不同。",
+      "imageSource": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip"
     },
     {
       "id": "look-keo-grip-9",
@@ -3734,7 +3773,10 @@
         "note": "价格对应官网当前 New KÉO Grip 包装；浮动角度分别选择。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/look-keo-grip-9.jpg",
+      "imageCaption": "LOOK 官网现款 KEO GRIP 外观图；黑色 0°、灰色 4.5°、红色 9°，旧批次外观可能不同。",
+      "imageSource": "https://www.lookcycle.com/at-en/products/pedals/road/cleats/keo-grip"
     },
     {
       "id": "shimano-sh-rc503",
@@ -3783,7 +3825,10 @@
         "note": "美国官网展示价；鞋码、楦型与颜色按具体商品选项选择，锁片单独购买。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/shimano-sh-rc503.jpg",
+      "imageCaption": "Shimano 官方 RC503 黑色外观图。",
+      "imageSource": "https://ride.shimano.com/products/sh-rc503"
     },
     {
       "id": "shimano-sh-rc703",
@@ -3884,7 +3929,10 @@
         "note": "美国官网展示价；鞋码、楦型与颜色按具体商品选项选择，锁片单独购买。",
         "kind": "official",
         "checkedAt": "2026-09-27"
-      }
+      },
+      "image": "/parts/shimano-sh-rx600.jpg",
+      "imageCaption": "Shimano 官方 RX600 米色/蓝色外观图。",
+      "imageSource": "https://ride.shimano.com/products/sh-rx600"
     },
     {
       "id": "magene-pes-p515-2025",
@@ -3933,7 +3981,10 @@
         "checkedAt": "2026-09-27",
         "currency": "CNY",
         "market": "中国大陆"
-      }
+      },
+      "image": "/parts/magene-pes-p515-2025.png",
+      "imageCaption": "Magene 官方 PES P515 曲柄与盘爪外观图，未安装牙盘；所含配件以选购版本为准。",
+      "imageSource": "https://www.magene.com/en/pes/217-pes-p515-power-meter-set.html"
     },
     {
       "id": "farsports-c3-2025",

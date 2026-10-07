@@ -4,7 +4,8 @@ import type { PartsCatalog, Product } from '../types';
 import { imageUrl } from '../catalog';
 import PhotoButton from '../PhotoButton';
 import { referencePriceLabel } from '../upgrade-planner';
-import { categories, label, type Category } from './model';
+import { categories, label, type Category, type PurchaseQuote } from './model';
+import PurchaseControls from './PurchaseControls';
 import {
   findProducts,
   frames,
@@ -28,9 +29,9 @@ export default function PartsPicker({
   parts: PartsCatalog;
   category: Category;
   setCategory: (c: Category) => void;
-  add: (p: Product) => void;
+  add: (p: Product, quote: PurchaseQuote) => void;
   detail: (p: Product) => void;
-  addFrame: (f: FrameOption, variant: string) => void;
+  addFrame: (f: FrameOption, variant: string, quote: PurchaseQuote) => void;
   custom: () => void;
   back: () => void;
   full: boolean;
@@ -125,7 +126,12 @@ export default function PartsPicker({
       <div className="st-product-grid">
         {category === 'frame'
           ? availableFrames.map((f) => (
-              <FrameCard key={f.id} frame={f} add={(variant) => addFrame(f, variant)} full={full} />
+              <FrameCard
+                key={f.id}
+                frame={f}
+                add={(variant, quote) => addFrame(f, variant, quote)}
+                full={full}
+              />
             ))
           : productFamilies(products).map(([id, options]) => (
               <ProductCard
@@ -171,7 +177,7 @@ function ProductCard({
 }: {
   options: Product[];
   parts: PartsCatalog;
-  add: (p: Product) => void;
+  add: (p: Product, quote: PurchaseQuote) => void;
   detail: (p: Product) => void;
   full: boolean;
 }) {
@@ -222,11 +228,14 @@ function ProductCard({
         <small>{p.price?.scope || p.era}</small>
         <div className="st-product-actions">
           <button onClick={() => detail(p)}>规格与订购</button>
-          <button className="st-primary" disabled={full} onClick={() => add(p)}>
-            <Plus size={16} />
-            加入清单
-          </button>
         </div>
+        <PurchaseControls
+          key={p.id}
+          reference={p.price}
+          quantity={p.category === 'tires' && p.id !== 'aero111' ? 2 : 1}
+          full={full}
+          add={(quote) => add(p, quote)}
+        />
       </div>
     </article>
   );
@@ -237,7 +246,7 @@ function FrameCard({
   full,
 }: {
   frame: FrameOption;
-  add: (variant: string) => void;
+  add: (variant: string, quote: PurchaseQuote) => void;
   full: boolean;
 }) {
   const [size, setSize] = useState(''),
@@ -332,14 +341,11 @@ function FrameCard({
             </a>
           )}
         </details>
-        <button
-          className="st-primary"
-          disabled={full}
-          onClick={() => add([f.market, size, paint].filter(Boolean).join(' · '))}
-        >
-          <Plus size={16} />
-          加入清单
-        </button>
+        <PurchaseControls
+          reference={f.price}
+          full={full}
+          add={(quote) => add([f.market, size, paint].filter(Boolean).join(' · '), quote)}
+        />
       </div>
     </article>
   );

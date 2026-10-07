@@ -182,3 +182,34 @@ test('shop quote export includes purchased interfaces and excludes removed items
   const text = library.quoteText(p, parts);
   assert.ok(text.includes('工时') && text.includes('不重复计价') && text.includes('随盒'));
 });
+
+test('rider purchase prices override retail references and survive share and import', () => {
+  const original = item('elilee-e50');
+  const bought = m.applyPurchaseQuote(original, { price: ' 2100.50 ', condition: 'used' });
+  assert.equal(bought.price, '2100.50');
+  assert.equal(bought.reference.amount, 3200);
+  assert.match(bought.variant, /二手购入/);
+  assert.equal(original.price, '');
+  const plan = m.newPlan();
+  plan.items = [bought];
+  const restored = m.decodePlan(m.encodePlan(plan));
+  assert.equal(m.estimate(restored).subtotal, 2100.5);
+  assert.match(restored.items[0].variant, /二手购入/);
+  assert.equal(m.unitPrice(m.applyPurchaseQuote(original, { price: '0', condition: 'used' })), 0);
+  assert.equal(m.unitPrice(m.applyPurchaseQuote(original, { price: '', condition: 'new' })), 3200);
+});
+test('used purchases require a quote; foreign retail never becomes a yuan amount', () => {
+  for (const price of ['', '-1', '1e3', 'NaN', '1000001', '12.345']) {
+    assert.equal(m.validPurchaseQuote({ price, condition: 'used' }), false);
+  }
+  const foreign = item('voso-ultimate-cn');
+  assert.equal(m.unitPrice(m.applyPurchaseQuote(foreign, { price: '', condition: 'new' })), null);
+  assert.equal(
+    m.unitPrice(m.applyPurchaseQuote(foreign, { price: '4500', condition: 'used' })),
+    4500,
+  );
+  const tire = m.applyPurchaseQuote(item('gp5000-clincher'), { price: '200', condition: 'used' });
+  const plan = m.newPlan();
+  plan.items = [tire];
+  assert.equal(m.estimate(plan).subtotal, 400);
+});
