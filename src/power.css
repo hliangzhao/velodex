@@ -365,15 +365,15 @@
   border: 1px solid #d7dfce;
   border-radius: 9px;
   background: #fff;
-  color: #47613a;
+  color: #45635c;
   font: inherit;
   cursor: pointer;
   font-size: 13px;
 }
 .power-mode [aria-pressed='true'] {
-  background: #224535;
+  background: #205650;
   color: #fff;
-  border-color: #224535;
+  border-color: #205650;
 }
 .training-panel {
   display: grid;
@@ -390,7 +390,7 @@
 .training-panel p {
   font-size: 13px;
   line-height: 1.9;
-  color: #647258;
+  color: #5a6e66;
 }
 .training-profile {
   display: flex;
@@ -413,7 +413,7 @@
 .training-panel textarea {
   font: inherit;
   font-size: 14px;
-  color: #294432;
+  color: #23473f;
   background: #fff;
   border: 1px solid #d6dfce;
   border-radius: 8px;
@@ -436,7 +436,7 @@
   font-size: 10px;
   border-radius: 20px;
   padding: 7px 10px;
-  background: #eaf0df;
+  background: #e1eee6;
   color: #657a50;
 }
 .training-metrics {
@@ -455,7 +455,7 @@
 }
 .training-metrics small {
   font-size: 11px;
-  color: #748067;
+  color: #62766d;
 }
 .training-metrics strong {
   font-size: 26px;
@@ -684,4 +684,157 @@
   .training-peaks small {
     display: block;
   }
+}
+
+/* Keep analysis, training templates and history within one short, stable navigation. */
+.power-mode {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid #dce4df;
+  border-radius: 12px;
+  background: #eaf0e9;
+}
+.power-mode button {
+  border: 0;
+  background: transparent;
+  font-size: 13px;
+  min-height: 44px;
+  padding: 11px 8px;
+}
+.power-mode [aria-pressed='true'] {
+  background: #205650;
+  box-shadow: 0 2px 6px #173d3415;
+}
+.power-lab .work-panel {
+  border-radius: 16px;
+  border-color: #dce4df;
+}
+.power-lab .power-upload {
+  border: 1px dashed #afcabc;
+  background: #f9fbf7;
+  padding: 26px;
+}
+.training-profile {
+  background: #f0f5ef;
+}
+.training-profile > .training-profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  flex: 1 1 100%;
+}
+.training-profile-actions small {
+  color: #667a6d;
+  font-size: 11px;
+}
+.training-profile-actions button {
+  font-size: 12px;
+}
+.training-message {
+  padding: 13px 17px;
+  background: #e5f0e6;
+  border-radius: 10px;
+}
+.training-week {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+  margin: 26px 0 14px;
+}
+.training-week > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.training-week small,
+.training-week span {
+  font-size: 11px;
+  color: #63796c;
+}
+.training-week > div > div {
+  height: 88px;
+  width: min(100%, 36px);
+  background: #f0f4ef;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.training-week i {
+  display: block;
+  background: #669781;
+  width: 100%;
+  border-radius: 4px;
+}
+.training-panel .work-panel {
+  box-shadow: 0 4px 20px #193e3b03;
+}
+.training-metrics > div {
+  background: #f8faf6;
+  border-color: #e0e7dd;
+}
+.training-metrics strong {
+  color: #245447;
+}
+.training-history-list article {
+  border-radius: 10px;
+}
+.power-lab :focus-visible {
+  outline: 3px solid #559580;
+  outline-offset: 3px;
+}
+@media (max-width: 760px) {
+  .power-mode {
+    margin: 18px 0;
+    gap: 2px;
+    padding: 4px;
+  }
+  .power-mode button {
+    font-size: 12px;
+    padding: 10px 3px;
+    white-space: nowrap;
+  }
+  .power-lab .power-upload {
+    padding: 20px;
+  }
+  .power-upload h3 {
+    font-size: 22px;
+  }
+  .power-upload-actions {
+    gap: 9px;
+  }
+  .power-upload-actions :is(button, label) {
+    font-size: 12px;
+  }
+  .power-lab :is(input:not([type='file']), select, textarea) {
+    font-size: 16px;
+  }
+  .training-profile {
+    gap: 14px;
+  }
+  .training-profile > div:first-child {
+    flex-basis: 100%;
+  }
+  .training-profile label {
+    width: 100%;
+    margin: 0;
+  }
+  .training-profile input {
+    width: 100%;
+  }
+  .training-week {
+    gap: 8px;
+  }
+  .training-title {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+.power-lab :is(.dark-button, .outline-button) {
+  border-radius: 9px;
+  min-height: 44px;
 }

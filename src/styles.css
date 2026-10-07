@@ -8,13 +8,13 @@
     'Microsoft Yahei',
     sans-serif;
   color: #202520;
-  background: #f6f7f3;
+  background: #f4f5f2;
   font-synthesis: none;
-  --ink: #1d231f;
-  --muted: #788077;
-  --line: #dfe3da;
-  --acid: #d5f660;
-  --paper: #f6f7f3;
+  --ink: #193e3b;
+  --muted: #62756d;
+  --line: #dce4df;
+  --acid: #c9e8bc;
+  --paper: #f4f5f2;
   scroll-behavior: smooth;
 }
 * {

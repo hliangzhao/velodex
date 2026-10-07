@@ -169,6 +169,43 @@ export type TrainingEntry = {
   source: 'meter' | 'unknown' | 'estimated';
 };
 export const historyKey = 'velodex.training.history.v1';
+export const profileKey = 'velodex.training.profile.v1';
+export type TrainingProfile = { ftp: number; updatedAt: string };
+export function parseTrainingProfile(raw: unknown): TrainingProfile | null {
+  if (!raw || typeof raw !== 'object') return null;
+  const p = raw as TrainingProfile;
+  if (
+    typeof p.ftp !== 'number' ||
+    !validFTP(p.ftp) ||
+    typeof p.updatedAt !== 'string' ||
+    !/^\d{4}-\d{2}-\d{2}$/.test(p.updatedAt) ||
+    !Number.isFinite(Date.parse(p.updatedAt)) ||
+    new Date(p.updatedAt).toISOString().slice(0, 10) !== p.updatedAt
+  )
+    return null;
+  return { ftp: p.ftp, updatedAt: p.updatedAt };
+}
+export function readTrainingProfile(): TrainingProfile | null {
+  try {
+    return parseTrainingProfile(JSON.parse(localStorage.getItem(profileKey) || 'null'));
+  } catch {
+    return null;
+  }
+}
+/** Seven local calendar dates, including today; unrecorded days are not assumed rest days. */
+export function trainingWeek(entries: TrainingEntry[], now = new Date()) {
+  return Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 6 + i, 12);
+    const date = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const rides = entries.filter((e) => e.date === date);
+    return {
+      date,
+      label: `${d.getMonth() + 1}/${d.getDate()}`,
+      count: rides.length,
+      minutes: rides.reduce((sum, e) => sum + e.minutes, 0),
+    };
+  });
+}
 export function parseTrainingHistory(raw: unknown): TrainingEntry[] {
   if (!Array.isArray(raw)) return [];
   const num = (x: unknown, lo: number, hi: number) =>

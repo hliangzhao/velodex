@@ -12,6 +12,9 @@ import {
   workoutText,
   type TrainingEntry,
   type WorkoutGoal,
+  readTrainingProfile,
+  profileKey,
+  trainingWeek,
 } from './training';
 async function download(blob: Blob, name: string) {
   const url = URL.createObjectURL(blob),
@@ -40,11 +43,13 @@ export default function TrainingPanel({
   name,
   ftp,
   setFTP,
+  section,
 }: {
   ride?: Ride;
   name: string;
   ftp: string;
   setFTP: (s: string) => void;
+  section: 'training' | 'workout' | 'history';
 }) {
   const [source, setSource] = useState<'unknown' | 'meter' | 'estimated'>('unknown');
   const [goal, setGoal] = useState<WorkoutGoal>('endurance'),
@@ -60,6 +65,7 @@ export default function TrainingPanel({
   const [message, setMessage] = useState(''),
     [undo, setUndo] = useState<TrainingEntry[] | null>(null),
     [exported, setExported] = useState('');
+  const [profile, setProfile] = useState(readTrainingProfile);
   useEffect(() => {
     setSource('unknown');
     setRPE('');
@@ -70,10 +76,18 @@ export default function TrainingPanel({
   const measured = source === 'meter' || isDemo;
   const ftpOK = ftp.trim() !== '' && validFTP(+ftp);
   const blocks = workout(goal, duration);
-  const recent = history.filter((e) => {
-    const days = (Date.now() - new Date(e.date + 'T12:00:00').getTime()) / 86400000;
-    return days >= -1 && days < 7;
-  });
+  const week = trainingWeek(history);
+  const saveProfile = () => {
+    if (!ftpOK) return;
+    const next = { ftp: +ftp, updatedAt: localDate(Date.now()) };
+    try {
+      localStorage.setItem(profileKey, JSON.stringify(next));
+      setProfile(next);
+      setMessage('FTP 已保存在本机，下次打开时自动使用。历史摘要仍保留当时的 FTP。');
+    } catch {
+      setMessage('训练基准保存失败，本次仍可使用。');
+    }
+  };
   const writeHistory = (next: TrainingEntry[]) => {
     try {
       localStorage.setItem(historyKey, JSON.stringify(next));
@@ -127,35 +141,68 @@ export default function TrainingPanel({
   };
   return (
     <div className="training-panel">
-      <section className="work-panel training-profile">
-        <div>
-          <h3>训练基准</h3>
-          <p>填写近期测试或已核实的 FTP。没有功率计数据时，仍可记录骑行时长和主观感受。</p>
-        </div>
-        <label>
-          已知 FTP / W
-          <input
-            type="number"
-            min="1"
-            max="1000"
-            value={ftp}
-            placeholder="选填，例如 250"
-            onChange={(e) => setFTP(e.target.value)}
-          />
-        </label>
-        {ftp && !ftpOK && <p role="alert">FTP 请填写 1–1000 W；骑行均值不作为 FTP。</p>}
-        {ride && !isDemo && (
+      {section !== 'history' && (
+        <section className="work-panel training-profile">
+          <div>
+            <h3>我的训练基准</h3>
+            <p>填写近期测试或已核实的 FTP。没有功率计数据时，仍可记录骑行时长和主观感受。</p>
+          </div>
           <label>
-            文件中的功率来自哪里
-            <select value={source} onChange={(e) => setSource(e.target.value as typeof source)}>
-              <option value="unknown">不清楚 / 没有功率记录</option>
-              <option value="meter">功率计或可测功率的骑行台</option>
-              <option value="estimated">平台根据速度等信息估算</option>
-            </select>
+            已知 FTP / W
+            <input
+              type="number"
+              min="1"
+              max="1000"
+              value={ftp}
+              placeholder="选填，例如 250"
+              onChange={(e) => setFTP(e.target.value)}
+            />
           </label>
-        )}
-      </section>
-      {!ride && (
+          <div className="training-profile-actions">
+            <button
+              className="outline-button"
+              disabled={!ftpOK || profile?.ftp === +ftp}
+              onClick={saveProfile}
+            >
+              <Save size={15} />
+              记住 FTP
+            </button>
+            {profile && (
+              <>
+                <small>
+                  本机保存于 {profile.updatedAt} · {profile.ftp} W
+                </small>
+                <button
+                  className="text-link"
+                  onClick={() => {
+                    try {
+                      localStorage.removeItem(profileKey);
+                      setProfile(null);
+                      setMessage('已取消记忆。当前输入仅用于本次分析，历史记录未改变。');
+                    } catch {
+                      setMessage('取消记忆失败，请重试。');
+                    }
+                  }}
+                >
+                  取消记忆
+                </button>
+              </>
+            )}
+          </div>
+          {ftp && !ftpOK && <p role="alert">FTP 请填写 1–1000 W；骑行均值不作为 FTP。</p>}
+          {section === 'training' && ride && !isDemo && (
+            <label>
+              文件中的功率来自哪里
+              <select value={source} onChange={(e) => setSource(e.target.value as typeof source)}>
+                <option value="unknown">不清楚 / 没有功率记录</option>
+                <option value="meter">功率计或可测功率的骑行台</option>
+                <option value="estimated">平台根据速度等信息估算</option>
+              </select>
+            </label>
+          )}
+        </section>
+      )}
+      {section === 'training' && !ride && (
         <div className="training-empty">
           <h3>从一次骑行开始</h3>
           <p>
@@ -164,7 +211,7 @@ export default function TrainingPanel({
           </p>
         </div>
       )}
-      {report && (
+      {section === 'training' && report && (
         <section className="work-panel training-report">
           <div className="training-title">
             <h3>{isDemo ? '模拟骑行分析' : '这次骑行说明了什么'}</h3>
@@ -351,139 +398,166 @@ export default function TrainingPanel({
           )}
         </section>
       )}
-      <section className="work-panel training-workout">
-        <h3>把目标变成一节课</h3>
-        <p>
-          以下为可调整的参考模板，不从一次骑行自动开出训练处方。没有近期稳定训练习惯，先选恢复或耐力。
-        </p>
-        <div className="training-controls">
-          <label>
-            训练目标
-            <select value={goal} onChange={(e) => setGoal(e.target.value as WorkoutGoal)}>
-              <option value="recovery">恢复转腿</option>
-              <option value="endurance">基础耐力</option>
-              <option value="tempo">节奏稳定性</option>
-              <option value="threshold">阈值附近输出</option>
-            </select>
-          </label>
-          <label>
-            可用时间
-            <select value={duration} onChange={(e) => setDuration(+e.target.value)}>
-              {[30, 45, 60, 90].map((n) => (
-                <option key={n} value={n}>
-                  {n} 分钟
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-        <div className="training-blocks" aria-label="课表阶段示意">
-          {blocks.map((b, i) => (
-            <div
-              key={i}
-              style={{ flex: b.minutes, background: b.high > 0.75 ? '#dce7b5' : '#e8ede2' }}
-            >
-              <span>{b.minutes}′</span>
-            </div>
-          ))}
-        </div>
-        <ol>
-          {blocks.map((b, i) => (
-            <li key={i}>
-              <strong>
-                {b.name} · {b.minutes} 分钟
-              </strong>
-              <span>
-                {Math.round(b.low * 100)}–{Math.round(b.high * 100)}% FTP
-                {ftpOK ? ` · ${Math.round(b.low * +ftp)}–${Math.round(b.high * +ftp)} W` : ''}
-              </span>
-            </li>
-          ))}
-        </ol>
-        <p className="power-small">
-          强度日之间留出恢复；疲劳未消退时改选轻松骑行。功率只是控制强度的参考，不能替代对身体感受的判断。
-        </p>
-        <button
-          className="outline-button"
-          disabled={!ftpOK}
-          onClick={async () => {
-            const text = workoutText(goal, duration, +ftp);
-            setExported(text);
-            try {
-              await download(
-                new Blob([text], { type: 'text/plain;charset=utf-8' }),
-                '骑行参考课表.txt',
-              );
-            } catch {
-              setMessage('课表可从下方复制保存。');
-            }
-          }}
-        >
-          <Download size={15} />
-          导出参考课表
-        </button>
-      </section>
-      <section className="work-panel training-history">
-        <h3>我的训练记录</h3>
-        <p>
-          最近 7 天已保存 {recent.length} 次，共{' '}
-          {recent.reduce((s, e) => s + e.minutes, 0).toFixed(0)}{' '}
-          分钟。只统计你保存到本机的摘要，不代表完整训练史。
-        </p>
-        {!history.length && (
-          <p className="power-small">导入一次真实骑行并填写主观感受后，即可开始积累记录。</p>
-        )}
-        <div className="training-history-list">
-          {history.map((e) => (
-            <article key={e.id}>
-              <div>
+      {section === 'workout' && (
+        <section className="work-panel training-workout">
+          <h3>安排一节适合今天的训练</h3>
+          <p>
+            以下为可调整的参考模板，不从一次骑行自动开出训练处方。没有近期稳定训练习惯，先选恢复或耐力。
+          </p>
+          <div className="training-controls">
+            <label>
+              训练目标
+              <select value={goal} onChange={(e) => setGoal(e.target.value as WorkoutGoal)}>
+                <option value="recovery">恢复转腿</option>
+                <option value="endurance">基础耐力</option>
+                <option value="tempo">节奏稳定性</option>
+                <option value="threshold">阈值附近输出</option>
+              </select>
+            </label>
+            <label>
+              可用时间
+              <select value={duration} onChange={(e) => setDuration(+e.target.value)}>
+                {[30, 45, 60, 90].map((n) => (
+                  <option key={n} value={n}>
+                    {n} 分钟
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <div className="training-blocks" aria-label="课表阶段示意">
+            {blocks.map((b, i) => (
+              <div
+                key={i}
+                style={{ flex: b.minutes, background: b.high > 0.75 ? '#dce7b5' : '#e8ede2' }}
+              >
+                <span>{b.minutes}′</span>
+              </div>
+            ))}
+          </div>
+          <ol>
+            {blocks.map((b, i) => (
+              <li key={i}>
                 <strong>
-                  {e.date} · {e.name}
+                  {b.name} · {b.minutes} 分钟
                 </strong>
                 <span>
-                  {e.minutes.toFixed(0)} 分钟 · RPE {e.rpe}/10 · 文件均值{' '}
-                  {e.mean?.toFixed(0) ?? '—'} W
-                  {e.tss != null ? ` · 估算 TSS ${e.tss.toFixed(1)}` : ''}
+                  {Math.round(b.low * 100)}–{Math.round(b.high * 100)}% FTP
+                  {ftpOK ? ` · ${Math.round(b.low * +ftp)}–${Math.round(b.high * +ftp)} W` : ''}
                 </span>
-                <span>{sourceNames[e.source]}</span>
-              </div>
-              <button
-                onClick={() => {
-                  if (writeHistory(history.filter((h) => h.id !== e.id))) setUndo(history);
-                }}
-              >
-                移除
-              </button>
-            </article>
-          ))}
-        </div>
-        {undo && (
+              </li>
+            ))}
+          </ol>
+          <p className="power-small">
+            强度日之间留出恢复；疲劳未消退时改选轻松骑行。功率只是控制强度的参考，不能替代对身体感受的判断。
+          </p>
           <button
-            onClick={() => {
-              if (writeHistory(undo)) setUndo(null);
+            className="outline-button"
+            disabled={!ftpOK}
+            onClick={async () => {
+              const text = workoutText(goal, duration, +ftp);
+              setExported(text);
+              try {
+                await download(
+                  new Blob([text], { type: 'text/plain;charset=utf-8' }),
+                  '骑行参考课表.txt',
+                );
+              } catch {
+                setMessage('课表可从下方复制保存。');
+              }
             }}
           >
-            撤销移除
+            <Download size={15} />
+            导出参考课表
           </button>
-        )}
-        {!!history.length && (
-          <button className="outline-button" onClick={exportHistory}>
-            导出全部摘要
-          </button>
-        )}
-        {message && <p role="status">{message}</p>}
-        {exported && (
-          <details open>
-            <summary>可复制的导出文本</summary>
-            <textarea
-              aria-label="训练导出文本"
-              readOnly
-              value={exported}
-              onFocus={(e) => e.target.select()}
-            />
-          </details>
-        )}
-      </section>
+        </section>
+      )}
+      {section === 'history' && (
+        <section className="work-panel training-history">
+          <h3>我的训练记录</h3>
+          <p>
+            最近 7 天已保存 {week.reduce((n, d) => n + d.count, 0)} 次，共{' '}
+            {week.reduce((n, d) => n + d.minutes, 0).toFixed(0)}{' '}
+            分钟。只统计你保存到本机的摘要，不代表完整训练史。
+          </p>
+          <div className="training-week" aria-label="最近七天已保存的骑行时长">
+            {week.map((d) => (
+              <div
+                key={d.date}
+                aria-label={`${d.date}：${d.count ? `${d.count} 次，共 ${d.minutes.toFixed(0)} 分钟` : '未保存记录'}`}
+              >
+                <small>{d.count ? `${d.minutes.toFixed(0)}′` : '—'}</small>
+                <div>
+                  <i
+                    style={{
+                      height: `${(d.minutes / Math.max(60, ...week.map((x) => x.minutes))) * 100}%`,
+                    }}
+                  />
+                </div>
+                <span>{d.label}</span>
+              </div>
+            ))}
+          </div>
+          <p className="power-small">空白表示没有保存摘要，不代表当天没有骑行。</p>
+          {!history.length && (
+            <p className="power-small">导入一次真实骑行并填写主观感受后，即可开始积累记录。</p>
+          )}
+          <div className="training-history-list">
+            {history.map((e) => (
+              <article key={e.id}>
+                <div>
+                  <strong>
+                    {e.date} · {e.name}
+                  </strong>
+                  <span>
+                    {e.minutes.toFixed(0)} 分钟 · RPE {e.rpe}/10 · 文件均值{' '}
+                    {e.mean?.toFixed(0) ?? '—'} W
+                    {e.tss != null ? ` · 估算 TSS ${e.tss.toFixed(1)}` : ''}
+                  </span>
+                  <span>{sourceNames[e.source]}</span>
+                </div>
+                <button
+                  onClick={() => {
+                    if (writeHistory(history.filter((h) => h.id !== e.id))) setUndo(history);
+                  }}
+                >
+                  移除
+                </button>
+              </article>
+            ))}
+          </div>
+          {undo && (
+            <button
+              onClick={() => {
+                if (writeHistory(undo)) setUndo(null);
+              }}
+            >
+              撤销移除
+            </button>
+          )}
+          {!!history.length && (
+            <button className="outline-button" onClick={exportHistory}>
+              导出全部摘要
+            </button>
+          )}
+        </section>
+      )}
+      {message && (
+        <p className="training-message" role="status">
+          {message}
+        </p>
+      )}
+      {exported && (
+        <details open>
+          <summary>可复制的导出文本</summary>
+          <textarea
+            aria-label="训练导出文本"
+            readOnly
+            value={exported}
+            onFocus={(e) => e.target.select()}
+          />
+        </details>
+      )}
       <details className="power-method">
         <summary>计算口径与资料来源</summary>
         <p>

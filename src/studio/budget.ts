@@ -17,6 +17,7 @@ export type Quotes = Record<string, Quote>;
 export type BudgetCandidate = {
   id: string;
   name: string;
+  brand?: string;
   category: Category;
   reference?: ReferencePrice;
   source: string;
@@ -74,6 +75,7 @@ export function budgetCatalog(parts: PartsCatalog, category: Category): BudgetCa
     .map((p) => ({
       id: p.id,
       name: p.name,
+      brand: parts.brands.find((b) => b.id === p.brandId)?.name || p.brandId,
       category,
       reference: p.price,
       source: p.source,
@@ -124,7 +126,12 @@ export function budgetOptions(plan: Plan, parts: PartsCatalog, needs: BudgetNeed
     unknownSpec = 0;
   const options = catalog.flatMap((c) => {
     if (needs.replace && !old) return [];
-    if (c.item.productId && old?.productId === c.item.productId) return [];
+    if (
+      c.item.productId &&
+      old?.productId === c.item.productId &&
+      (!quotes[c.id] || quotes[c.id].amount === unitPrice(old))
+    )
+      return [];
     if (!quotes[c.id] && !matchesPrice(c.reference, 'cn')) {
       noPrice++;
       return [];

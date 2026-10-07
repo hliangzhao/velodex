@@ -208,3 +208,58 @@ test('training history validates values, deduplicates fingerprints and strips pr
   assert.equal(history.length, 1);
   assert.ok(!('latitude' in history[0]));
 });
+
+test('a better shop quote can replace the same model without duplicating the purchase', () => {
+  const p = plan(),
+    wheel = m.productItem(product('elilee-e44'));
+  p.items = [wheel];
+  const choice = { ...needs, replace: wheel.key };
+  assert.equal(
+    b.budgetOptions(p, parts, choice, {}).options.some((o) => o.candidate.id === wheel.productId),
+    false,
+  );
+  const quoted = b.budgetOptions(p, parts, choice, {
+    [wheel.productId]: { amount: 3999, date: '2026-10-07' },
+  });
+  const next = quoted.options.find((o) => o.candidate.id === wheel.productId);
+  assert.ok(next);
+  assert.equal(next.next.items.length, 1);
+  assert.equal(next.next.items[0].key, wheel.key);
+  assert.equal(next.cost, 3999);
+  assert.equal(next.saving, m.unitPrice(wheel) - 3999);
+});
+test('remembered FTP accepts only bounded numeric values and real dates, never raw personal fields', () => {
+  assert.deepEqual(t.parseTrainingProfile({ ftp: 250, updatedAt: '2026-10-07', rawGPS: [1] }), {
+    ftp: 250,
+    updatedAt: '2026-10-07',
+  });
+  for (const raw of [
+    null,
+    {},
+    { ftp: '250', updatedAt: '2026-10-07' },
+    { ftp: 0, updatedAt: '2026-10-07' },
+    { ftp: 1001, updatedAt: '2026-10-07' },
+    { ftp: 250, updatedAt: '2026-02-30' },
+  ])
+    assert.equal(t.parseTrainingProfile(raw), null);
+});
+test('seven-day training summary uses local calendar dates across month boundaries', () => {
+  const entries = [
+    { date: '2026-09-29', minutes: 99 }, // outside the window
+    { date: '2026-09-30', minutes: 30 },
+    { date: '2026-10-06', minutes: 45 },
+    { date: '2026-10-06', minutes: 15 },
+    { date: '2026-10-07', minutes: 90 }, // future date
+  ];
+  const week = t.trainingWeek(entries, new Date(2026, 9, 6, 0, 5));
+  assert.equal(week.length, 7);
+  assert.equal(week[0].date, '2026-09-30');
+  assert.equal(week[6].date, '2026-10-06');
+  assert.equal(week[6].count, 2);
+  assert.equal(week[6].minutes, 60);
+  assert.equal(
+    week.reduce((n, d) => n + d.minutes, 0),
+    90,
+  );
+  assert.equal(week[1].count, 0);
+});

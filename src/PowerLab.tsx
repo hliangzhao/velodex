@@ -14,6 +14,7 @@ import {
 } from './ride';
 import './power.css';
 import TrainingPanel from './TrainingPanel';
+import { readTrainingProfile } from './training';
 
 const fields: {
   key: Exclude<keyof RideSettings, 'flat'>;
@@ -101,13 +102,16 @@ function downloadCSV(rows: RideInterval[], settings: RideSettings) {
 }
 export default function PowerLab() {
   const [ride, setRide] = useState<Ride>();
-  const [mode, setMode] = useState<'training' | 'model'>('training');
+  const [mode, setMode] = useState<'training' | 'workout' | 'history' | 'model'>('training');
   const [name, setName] = useState('');
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
   const [xml, setXML] = useState('');
   const [csv, setCSV] = useState('');
-  const [ftp, setFTP] = useState('');
+  const [ftp, setFTP] = useState(() => {
+    const profile = readTrainingProfile();
+    return profile ? String(profile.ftp) : '';
+  });
   const [testConfirmed, setTestConfirmed] = useState(false);
   const [values, setValues] = useState(() =>
     Object.fromEntries(
@@ -216,94 +220,104 @@ export default function PowerLab() {
           </article>
         </div>
       </details>
-      <div className="power-upload work-panel">
-        <div>
-          <FileUp size={25} />
-          <h3>导入骑行记录</h3>
-          <p>
-            GPX / TCX · 最大 10 MB · 100,000
-            点。需要时间戳；路线文件常常没有时间。支持常见功率扩展、海拔、坐标与 TCX 距离记录。
-          </p>
-          <div className="power-upload-actions">
-            <label className="dark-button">
-              选择骑行文件
-              <input
-                ref={input}
-                type="file"
-                accept=".gpx,.tcx,.xml"
-                aria-label="选择 GPX 或 TCX 骑行文件"
-                onChange={(e) => readFile(e.target.files?.[0])}
-              />
-            </label>
-            <button
-              className="outline-button"
-              disabled={busy}
-              onClick={() => {
-                request.current++;
-                setRide(demoRide());
-                setName('30 分钟模拟骑行');
-                setError('');
-                setTestConfirmed(false);
-                setFlat(false);
-              }}
-            >
-              先看模拟示例
-            </button>
-            {ride && (
+      <nav className="power-mode" aria-label="骑行工具内容">
+        {(
+          [
+            ['training', '骑行分析'],
+            ['workout', '参考课表'],
+            ['history', '训练记录'],
+            ['model', '阻力估算'],
+          ] as const
+        ).map(([id, title]) => (
+          <button key={id} aria-pressed={mode === id} onClick={() => setMode(id)}>
+            {title}
+          </button>
+        ))}
+      </nav>
+      {(mode === 'training' || mode === 'model') && (
+        <div className="power-upload work-panel">
+          <div>
+            <FileUp size={25} />
+            <h3>导入骑行记录</h3>
+            <p>
+              GPX / TCX · 最大 10 MB · 100,000
+              点。需要时间戳；路线文件常常没有时间。支持常见功率扩展、海拔、坐标与 TCX 距离记录。
+            </p>
+            <div className="power-upload-actions">
+              <label className="dark-button">
+                选择骑行文件
+                <input
+                  ref={input}
+                  type="file"
+                  accept=".gpx,.tcx,.xml"
+                  aria-label="选择 GPX 或 TCX 骑行文件"
+                  onChange={(e) => readFile(e.target.files?.[0])}
+                />
+              </label>
               <button
-                className="text-link"
+                className="outline-button"
+                disabled={busy}
                 onClick={() => {
                   request.current++;
-                  setRide(undefined);
-                  setName('');
-                  setXML('');
+                  setRide(demoRide());
+                  setName('30 分钟模拟骑行');
                   setError('');
                   setTestConfirmed(false);
-                  if (input.current) input.current.value = '';
+                  setFlat(false);
                 }}
               >
-                清除本次数据
+                先看模拟示例
               </button>
-            )}
+              {ride && (
+                <button
+                  className="text-link"
+                  onClick={() => {
+                    request.current++;
+                    setRide(undefined);
+                    setName('');
+                    setXML('');
+                    setError('');
+                    setTestConfirmed(false);
+                    if (input.current) input.current.value = '';
+                  }}
+                >
+                  清除本次数据
+                </button>
+              )}
+            </div>
           </div>
-        </div>
-        <p className="power-private">
-          <LockKeyhole size={16} /> 文件仅在当前浏览器内存中处理，不上传、不保存轨迹。导出的 CSV
-          不含经纬度。
-        </p>
-        <details className="power-paste">
-          <summary>或粘贴 GPX / TCX 文本</summary>
-          <textarea
-            aria-label="GPX 或 TCX XML 文本"
-            value={xml}
-            maxLength={MAX_RIDE_BYTES}
-            onChange={(e) => setXML(e.target.value)}
-            placeholder="粘贴完整 XML 内容"
-          />
-          <button
-            className="outline-button"
-            disabled={busy || !xml.trim()}
-            onClick={() => accept(xml, '粘贴的骑行记录')}
-          >
-            读取文本
-          </button>
-        </details>
-        {busy && <p role="status">正在读取本地文件…</p>}
-        {error && (
-          <p className="power-error" role="alert">
-            {error}
+          <p className="power-private">
+            <LockKeyhole size={16} /> 文件仅在当前浏览器内存中处理，不上传、不保存轨迹。导出的 CSV
+            不含经纬度。
           </p>
-        )}
-      </div>
-      <nav className="power-mode" aria-label="骑行分析方式">
-        <button aria-pressed={mode === 'training'} onClick={() => setMode('training')}>
-          训练分析与记录
-        </button>
-        <button aria-pressed={mode === 'model'} onClick={() => setMode('model')}>
-          阻力与功率估算
-        </button>
-      </nav>
-      {mode === 'training' && <TrainingPanel ride={ride} name={name} ftp={ftp} setFTP={setFTP} />}
+          <details className="power-paste">
+            <summary>或粘贴 GPX / TCX 文本</summary>
+            <textarea
+              aria-label="GPX 或 TCX XML 文本"
+              value={xml}
+              maxLength={MAX_RIDE_BYTES}
+              onChange={(e) => setXML(e.target.value)}
+              placeholder="粘贴完整 XML 内容"
+            />
+            <button
+              className="outline-button"
+              disabled={busy || !xml.trim()}
+              onClick={() => accept(xml, '粘贴的骑行记录')}
+            >
+              读取文本
+            </button>
+          </details>
+          {busy && <p role="status">正在读取本地文件…</p>}
+          {error && (
+            <p className="power-error" role="alert">
+              {error}
+            </p>
+          )}
+        </div>
+      )}
+      {mode !== 'model' && (
+        <TrainingPanel ride={ride} name={name} ftp={ftp} setFTP={setFTP} section={mode} />
+      )}
       {mode === 'model' && (
         <>
           <div className="power-analysis-layout">

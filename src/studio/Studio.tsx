@@ -15,6 +15,8 @@ import {
   Layers3,
   Ruler,
   Bookmark,
+  Activity,
+  ScanLine,
 } from 'lucide-react';
 import type { Catalog, PartsCatalog, Product } from '../types';
 import { imageUrl, loadCatalog, loadParts } from '../catalog';
@@ -22,6 +24,7 @@ import { referencePriceLabel } from '../upgrade-planner';
 import { weightReferences } from '../workshop';
 import PartsPicker from './PartsPicker';
 import BudgetWorkbench from './BudgetWorkbench';
+import CostBreakdown from './CostBreakdown';
 import PhotoButton, { productPhoto } from '../PhotoButton';
 import { orderQuestions, quoteText } from './library';
 import { PageFrame, usePageTitle } from '../SiteChrome';
@@ -158,6 +161,18 @@ export function Studio({
     [removed, setRemoved] = useState<SavedPlan | null>(null);
   const file = useRef<HTMLInputElement>(null),
     dialog = useRef<HTMLDialogElement>(null);
+  const costDialog = useRef<HTMLDialogElement>(null);
+  const editCosts = () => {
+    costDialog.current?.close();
+    setTab('build');
+    requestAnimationFrame(() => {
+      const section = document.querySelector<HTMLDetailsElement>('.st-cost-settings');
+      if (section) {
+        section.open = true;
+        section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  };
   const handledRequest = useRef('');
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -309,14 +324,8 @@ export function Studio({
   return (
     <div className="studio" data-tab={tab}>
       <div className="st-mobile-budget" aria-label="当前选配费用">
-        <button
-          onClick={() =>
-            document
-              .querySelector('.st-summary')
-              ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-          }
-        >
-          <small>{total.priceComplete ? '净支出估算' : '已知净支出'}</small>
+        <button onClick={() => costDialog.current?.showModal()} aria-label="查看费用明细">
+          <small>{total.priceComplete ? '净支出估算' : '已知净支出'} · 查看明细</small>
           <strong>{money(total.net)}</strong>
         </button>
         <button
@@ -390,10 +399,20 @@ export function Studio({
             <>
               <div className="st-workbench-links">
                 <a href={`${base}?view=workshop&tool=power`}>
-                  骑行分析与训练 <ArrowRight size={15} />
+                  <Activity size={19} />
+                  <span>
+                    <strong>骑行分析与训练</strong>
+                    <small>读懂功率，安排下一次骑行</small>
+                  </span>
+                  <ArrowRight size={15} />
                 </a>
                 <a href={`${base}?view=compare`}>
-                  外观与几何对比 <ArrowRight size={15} />
+                  <ScanLine size={19} />
+                  <span>
+                    <strong>外观与几何对比</strong>
+                    <small>查看大图，比较车型尺寸</small>
+                  </span>
+                  <ArrowRight size={15} />
                 </a>
               </div>
               <BudgetWorkbench plan={plan} parts={parts} change={change} detail={setDetail} />
@@ -740,7 +759,7 @@ export function Studio({
                 </details>
               </section>
               <section className="st-panel">
-                <details className="st-settings">
+                <details className="st-settings st-cost-settings">
                   <summary>
                     费用与重量口径 <span>预算、工时、旧件转售</span>
                   </summary>
@@ -1008,12 +1027,10 @@ export function Studio({
               {plan.items.filter((i) => i.action === 'buy').length} 项有报价
             </span>
           </div>
-          {amount(plan.budget) !== null && (
-            <p className={total.net > Number(plan.budget) ? 'st-over-budget' : ''}>
-              {total.net > Number(plan.budget) ? '超出预算' : '已知支出后的预算余额'}{' '}
-              {money(Math.abs(Number(plan.budget) - total.net))}
-            </p>
-          )}
+          <CostBreakdown plan={plan} />
+          <button className="st-cost-edit" onClick={editCosts}>
+            调整预算与杂费 <ArrowRight size={14} />
+          </button>
           {(total.missingPrices.length > 0 || total.missingFees.length > 0) && (
             <div className="st-summary-note">
               未计入：
@@ -1087,6 +1104,44 @@ export function Studio({
         <a href={`${base}?view=workshop&tool=gears`}>齿比工具</a>
         <a href={`${base}?view=feedback&kind=correction`}>补充资料与纠错 ↗</a>
       </div>
+      <dialog
+        className="st-dialog st-cost-dialog"
+        ref={costDialog}
+        onClick={(e) => {
+          if (e.target === e.currentTarget) costDialog.current?.close();
+        }}
+      >
+        <div>
+          <button
+            className="st-dialog-close st-icon"
+            aria-label="关闭费用明细"
+            onClick={() => costDialog.current?.close()}
+          >
+            <X size={20} />
+          </button>
+          <span className="st-kicker">{plan.title || '当前方案'}</span>
+          <h2>这份方案要花多少钱</h2>
+          <div className="st-total">
+            <small>{total.priceComplete ? '净支出估算' : '已知净支出'}</small>
+            <strong>{money(total.net)}</strong>
+          </div>
+          <CostBreakdown plan={plan} />
+          {!!total.missingPrices.length && (
+            <p className="st-summary-note">
+              尚无报价：{total.missingPrices.map((i) => i.name || label(i.category)).join('、')}
+            </p>
+          )}
+          {!!total.coverage.length && (
+            <p className="st-summary-note">
+              整车清单未列出：{total.coverage.map((c) => label(c as Category)).join('、')}
+              。当前合计不是完整整车费用。
+            </p>
+          )}
+          <button className="st-primary" onClick={editCosts}>
+            调整预算与杂费 <ArrowRight size={16} />
+          </button>
+        </div>
+      </dialog>
       <dialog
         className="st-dialog"
         ref={dialog}

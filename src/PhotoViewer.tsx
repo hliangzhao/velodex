@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { ArrowUpRight, Minus, Plus, RotateCcw, X } from 'lucide-react';
 import { imageUrl } from './catalog';
 import './photo-study.css';
@@ -39,7 +40,7 @@ export default function PhotoViewer({
       previous?.focus({ preventScroll: true });
     };
   }, []);
-  return (
+  return createPortal(
     <dialog
       ref={dialog}
       className="photo-study"
@@ -88,7 +89,8 @@ export default function PhotoViewer({
       <p className="photo-study-note">
         每张图可独立双指缩放、拖动或滚轮放大；双击切换放大。不同照片的角度、透视和比例可能不同，网格只辅助观察；车架尺寸请以几何表和等比例几何对比为准。
       </p>
-    </dialog>
+    </dialog>,
+    document.body,
   );
 }
 function PhotoPane({ asset, grid }: { asset: PhotoAsset; grid: boolean }) {
