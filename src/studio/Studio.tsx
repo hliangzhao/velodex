@@ -17,6 +17,7 @@ import {
   Bookmark,
   Activity,
   ScanLine,
+  ReceiptText,
 } from 'lucide-react';
 import type { Catalog, PartsCatalog, Product } from '../types';
 import { imageUrl, loadCatalog, loadParts } from '../catalog';
@@ -24,10 +25,13 @@ import { referencePriceLabel } from '../upgrade-planner';
 import { weightReferences } from '../workshop';
 import PartsPicker from './PartsPicker';
 import PurchaseControls from './PurchaseControls';
+import QuoteWorkbench from './QuoteWorkbench';
+import SalesFields from './SalesFields';
+import { productProfile, frameProfile, salesForItem, salesText } from './sales';
 import BudgetWorkbench from './BudgetWorkbench';
 import CostBreakdown from './CostBreakdown';
 import PhotoButton, { productPhoto } from '../PhotoButton';
-import { orderQuestions, quoteText } from './library';
+import { frames, orderQuestions, quoteText } from './library';
 import { PageFrame, usePageTitle } from '../SiteChrome';
 import {
   amount,
@@ -60,7 +64,7 @@ import FitTransfer from './FitTransfer';
 import { poster } from './poster';
 import './studio.css';
 
-export type StudioTab = 'build' | 'parts' | 'fit' | 'plans';
+export type StudioTab = 'build' | 'parts' | 'quotes' | 'fit' | 'plans';
 const base = import.meta.env.BASE_URL;
 function read(key: string) {
   try {
@@ -136,7 +140,9 @@ export function Studio({
 }) {
   const [plan, setPlan] = useState<Plan>(() => parsePlan(read(draftKey)) || newPlan());
   const [tab, setTab] = useState<StudioTab>(() =>
-    ['parts', 'fit', 'plans'].includes(new URLSearchParams(location.search).get('section') || '')
+    ['parts', 'quotes', 'fit', 'plans'].includes(
+      new URLSearchParams(location.search).get('section') || '',
+    )
       ? (new URLSearchParams(location.search).get('section') as StudioTab)
       : 'build',
   );
@@ -356,27 +362,29 @@ export function Studio({
         </div>
       </header>
       <div className="st-navigation" ref={navigation}>
-        <div className="st-mobile-budget" aria-label="当前选配费用">
-          <button onClick={() => costDialog.current?.showModal()} aria-label="查看费用明细">
-            <small>{total.priceComplete ? '净支出估算' : '已知净支出'} · 查看明细</small>
-            <strong>{money(total.net)}</strong>
-          </button>
-          <button
-            className="st-primary"
-            onClick={() => {
-              setTab(tab === 'parts' ? 'build' : 'parts');
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
-          >
-            {tab === 'parts' ? '查看清单' : '继续选配'} <ArrowRight size={16} />
-          </button>
-        </div>
+        {tab !== 'quotes' && (
+          <div className="st-mobile-budget" aria-label="当前选配费用">
+            <button onClick={() => costDialog.current?.showModal()} aria-label="查看费用明细">
+              <small>{total.priceComplete ? '净支出估算' : '已知净支出'} · 查看明细</small>
+              <strong>{money(total.net)}</strong>
+            </button>
+            <button
+              className="st-primary"
+              onClick={() => {
+                setTab(tab === 'parts' ? 'build' : 'parts');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            >
+              {tab === 'parts' ? '查看清单' : '继续选配'} <ArrowRight size={16} />
+            </button>
+          </div>
+        )}
         <nav className="st-tabs" aria-label="装车工作区">
           {(
             [
               ['build', '装车台', Wrench],
               ['parts', '选配件', Layers3],
-              ['fit', '调把位', Ruler],
+              ['quotes', '比报价', ReceiptText],
               ['plans', '我的方案', Bookmark],
             ] as const
           ).map(([id, name, Icon]) => (
@@ -433,6 +441,16 @@ export function Studio({
                 </a>
               </div>
               <BudgetWorkbench plan={plan} parts={parts} change={change} detail={setDetail} />
+              <div className="st-inline-actions st-workspace-tools">
+                <button onClick={() => setTab('fit')}>
+                  <Ruler size={18} />
+                  几何与把位
+                </button>
+                <button onClick={() => setTab('quotes')}>
+                  <ReceiptText size={18} />
+                  记录与比较商家报价
+                </button>
+              </div>
               <section className="st-panel st-platform">
                 <details className="st-platform-editor">
                   <summary>
@@ -575,6 +593,7 @@ export function Studio({
                       <div className="st-line-summary">
                         <h3>{i.name || '自定义零件'}</h3>
                         <p>{i.variant || label(i.category)}</p>
+                        {i.sales && <p className="st-fine">{salesText(i.sales)}</p>}
                         <strong>
                           {i.action === 'buy'
                             ? unitPrice(i) === null
@@ -587,6 +606,23 @@ export function Studio({
                       </div>
                       <details className="st-line-editor">
                         <summary>编辑规格与报价</summary>
+                        {(() => {
+                          const p = parts.products.find((p) => p.id === i.productId);
+                          const f = frames.find(
+                            (f) =>
+                              f.id === i.sales?.profileId ||
+                              (f.source === i.source && f.name === i.name),
+                          );
+                          const profile = p ? productProfile(p) : f ? frameProfile(f) : undefined;
+                          return (
+                            <SalesFields
+                              category={i.category}
+                              profile={profile}
+                              value={salesForItem(i, profile)}
+                              change={(sales) => itemChange(i.key, { sales })}
+                            />
+                          );
+                        })()}
                         <label>
                           型号
                           <input
@@ -937,7 +973,18 @@ export function Studio({
               }}
             />
           )}
-          {tab === 'fit' && <FitTransfer plan={plan} catalog={catalog} change={change} />}
+          {tab === 'quotes' && (
+            <QuoteWorkbench plan={plan} exportFile={exportFile} editPlan={() => setTab('build')} />
+          )}
+          {tab === 'fit' && (
+            <>
+              <button onClick={() => setTab('build')}>
+                <ArrowLeft size={17} />
+                返回装车台
+              </button>
+              <FitTransfer plan={plan} catalog={catalog} change={change} />
+            </>
+          )}
           {tab === 'plans' && (
             <section className="st-panel">
               <div className="st-section-title">
@@ -1238,6 +1285,8 @@ export function Studio({
               )}
               <PurchaseControls
                 key={detail.id}
+                profile={productProfile(detail)}
+                category={detail.category}
                 reference={detail.price}
                 quantity={detail.category === 'tires' && detail.id !== 'aero111' ? 2 : 1}
                 full={plan.items.length >= 60}

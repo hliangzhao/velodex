@@ -1,5 +1,13 @@
 import type { Bike, Catalog, PartsCatalog, Product, ReferencePrice } from '../types';
 import { initialAdvisor, planAdvice } from '../upgrade-planner';
+import {
+  initialSales,
+  productProfile,
+  parseSales,
+  salesText,
+  type SalesSelection,
+  type Condition,
+} from './sales';
 
 export const categories = [
   ['frame', '车架组'],
@@ -46,6 +54,7 @@ export type PlanItem = {
   weightScope: string;
   source: string;
   reference?: ReferencePrice;
+  sales?: SalesSelection;
 };
 export type Plan = {
   schema: 'velodex.studio';
@@ -81,7 +90,7 @@ export const shelfKey = 'velodex.studio.shelf.v1';
 export const label = (category: Category) =>
   categories.find(([c]) => c === category)?.[1] || category;
 export const money = (n: number) => '¥' + n.toLocaleString('zh-CN', { maximumFractionDigits: 2 });
-export type PurchaseQuote = { price: string; condition: 'new' | 'used' };
+export type PurchaseQuote = { price: string; condition: Condition; sales?: SalesSelection };
 export function validPurchaseQuote(quote: PurchaseQuote) {
   const price = quote.price.trim();
   if (!price) return quote.condition === 'new';
@@ -93,7 +102,13 @@ export function applyPurchaseQuote(item: PlanItem, quote?: PurchaseQuote): PlanI
   return {
     ...item,
     price: quote.price.trim(),
-    variant: [item.variant, quote.condition === 'used' ? '二手购入' : '']
+    ...(quote.sales || item.sales
+      ? { sales: { ...(quote.sales || item.sales)!, condition: quote.condition } }
+      : {}),
+    variant: [
+      item.variant,
+      quote.condition === 'used' ? '二手购入' : quote.condition === 'takeoff' ? '拆车件' : '',
+    ]
       .filter(Boolean)
       .join(' · '),
   };
@@ -171,6 +186,7 @@ export function productItem(p: Product): PlanItem {
     weightScope: p.selection?.weightScope || '',
     source: p.source,
     reference: p.price,
+    sales: initialSales(productProfile(p)),
     onBike: !['shoes', 'cleats'].includes(p.category) && p.selection?.sensor !== 'heart',
   };
 }
@@ -200,6 +216,7 @@ export function customItem(category: Category = 'other'): PlanItem {
   };
 }
 export function unitPrice(i: PlanItem) {
+  if (i.sales && i.sales.condition !== 'new' && !i.price.trim()) return null;
   return i.price.trim()
     ? amount(i.price)
     : i.reference?.currency === 'CNY'
@@ -402,6 +419,9 @@ export function parsePlan(raw: unknown): Plan | null {
   if (!Array.isArray(p.items) || p.items.length > 60) return null;
   const items: PlanItem[] = [];
   for (const i of p.items) {
+    if (!i || typeof i !== 'object' || Array.isArray(i)) return null;
+    const sales = i.sales === undefined ? undefined : parseSales(i.sales);
+    if (sales === null) return null;
     if (
       !i ||
       !str(i.key, 80) ||
@@ -442,6 +462,7 @@ export function parsePlan(raw: unknown): Plan | null {
       weightScope: i.weightScope,
       source: i.source,
       onBike: i.onBike,
+      ...(sales ? { sales } : {}),
       ...(r
         ? {
             reference: {
@@ -572,7 +593,7 @@ export function planText(p: Plan) {
     p.size && `尺码：${p.size}`,
     ...p.items.map(
       (i) =>
-        `${{ buy: '购入', keep: '沿用', remove: '拆下' }[i.action]} · ${i.name || label(i.category)} × ${i.quantity}\n规格：${i.variant || '自定义'}；${i.action === 'buy' ? `人民币单价：${unitPrice(i) === null ? '未计价' : money(unitPrice(i)!)}` : '本次不采购'}\n${i.reference ? `${i.reference.market} / ${i.reference.currency} ${i.reference.amount} / ${i.reference.scope} / ${i.reference.checkedAt}\n${i.reference.source}` : i.source}`,
+        `${{ buy: '购入', keep: '沿用', remove: '拆下' }[i.action]} · ${i.name || label(i.category)} × ${i.quantity}\n规格：${i.variant || '自定义'}；${i.sales ? salesText(i.sales) + '\n' : ''}${i.action === 'buy' ? `人民币单价：${unitPrice(i) === null ? '未计价' : money(unitPrice(i)!)}` : '本次不采购'}\n${i.reference ? `${i.reference.market} / ${i.reference.currency} ${i.reference.amount} / ${i.reference.scope} / ${i.reference.checkedAt}\n${i.reference.source}` : i.source}`,
     ),
     `工时运费：${p.labor || '未计入'}；安装耗材：${p.consumables || '未计入'}；旧件转售：${p.mode === 'build' ? '不适用' : p.resale || '未计入'}`,
     `${t.priceComplete ? '净支出估算' : '已知净支出'}：${money(t.net)}`,

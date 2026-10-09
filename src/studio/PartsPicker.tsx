@@ -6,6 +6,7 @@ import PhotoButton from '../PhotoButton';
 import { referencePriceLabel } from '../upgrade-planner';
 import { categories, label, type Category, type PurchaseQuote } from './model';
 import PurchaseControls from './PurchaseControls';
+import { productProfile, frameProfile } from './sales';
 import {
   findProducts,
   frames,
@@ -231,6 +232,8 @@ function ProductCard({
         </div>
         <PurchaseControls
           key={p.id}
+          profile={productProfile(p)}
+          category={p.category}
           reference={p.price}
           quantity={p.category === 'tires' && p.id !== 'aero111' ? 2 : 1}
           full={full}
@@ -249,8 +252,6 @@ function FrameCard({
   add: (variant: string, quote: PurchaseQuote) => void;
   full: boolean;
 }) {
-  const [size, setSize] = useState(''),
-    [paint, setPaint] = useState('');
   return (
     <article className="st-product st-frame-card">
       {f.image ? (
@@ -308,28 +309,6 @@ function FrameCard({
               </div>
             ))}
           </dl>
-          {!!f.sizes.length && (
-            <label>
-              尺码
-              <select value={size} onChange={(e) => setSize(e.target.value)}>
-                <option value="">加入后填写也可以</option>
-                {f.sizes.map((s) => (
-                  <option key={s}>{s}</option>
-                ))}
-              </select>
-            </label>
-          )}
-          {!!f.paints.length && (
-            <label>
-              涂装
-              <select value={paint} onChange={(e) => setPaint(e.target.value)}>
-                <option value="">加入后填写也可以</option>
-                {f.paints.map((s) => (
-                  <option key={s}>{s}</option>
-                ))}
-              </select>
-            </label>
-          )}
           <p className="st-fine">{f.ordering.join('；')}。选项来自规格目录，不代表库存。</p>
           {f.price && <p className="st-fine">{f.price.note}</p>}
           <a href={f.source} target="_blank" rel="noreferrer">
@@ -342,9 +321,11 @@ function FrameCard({
           )}
         </details>
         <PurchaseControls
+          profile={frameProfile(f)}
+          category="frame"
           reference={f.price}
           full={full}
-          add={(quote) => add([f.market, size, paint].filter(Boolean).join(' · '), quote)}
+          add={(quote) => add(f.market, quote)}
         />
       </div>
     </article>
