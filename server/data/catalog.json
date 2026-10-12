@@ -24443,14 +24443,6 @@
       },
       "paints": [
         {
-          "id": "pearl",
-          "name": "贝母白色",
-          "hex": "#e1e0d7",
-          "image": "/bikes/propel-advanced1-cn-2027.jpg",
-          "imageRatio": 1.499063085571518,
-          "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3790"
-        },
-        {
           "id": "purple",
           "name": "风暴紫色",
           "hex": "#595064",
