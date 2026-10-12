@@ -155,8 +155,8 @@ export default function VisualBuild({
                           cx={p.x * w}
                           cy={p.y * h}
                           r="8"
-                          fill="#d5ed87"
-                          stroke="#173c30"
+                          fill="#d9e2ff"
+                          stroke="#20242c"
                           strokeWidth="3"
                         />
                         <text x={p.x * w + 14} y={p.y * h} fontSize="22">

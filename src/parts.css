@@ -7,13 +7,13 @@
   position: relative;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  background: #202720;
-  color: #eef2e5;
+  background: #181e28;
+  color: #eef0f4;
   padding: 54px 50px;
   overflow: hidden;
 }
 .parts-hero .eyebrow {
-  color: #a7bb8d;
+  color: #7d8797;
 }
 .parts-hero h1 {
   font-size: clamp(34px, 4.2vw, 60px);
@@ -27,10 +27,10 @@
 .parts-hero p {
   font-size: 13px;
   line-height: 2;
-  color: #a6b29e;
+  color: #c3cad5;
 }
 .parts-hero-art {
-  color: #c6d2b3;
+  color: #c3cad5;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@
 .parts-hero-art > span {
   font-family: 'Barlow', sans-serif;
   letter-spacing: 3px;
-  color: #748568;
+  color: #5e697a;
   font-size: 10px;
 }
 .parts-count {
@@ -64,7 +64,7 @@
     sans-serif;
   width: 65px;
   letter-spacing: 1px;
-  color: #a6b29e;
+  color: #c3cad5;
 }
 .parts-categories {
   display: grid;
@@ -95,7 +95,7 @@
   font:
     11px 'Barlow',
     sans-serif;
-  color: #7c876f;
+  color: #7d8797;
 }
 .parts-categories button > span {
   font:
@@ -122,7 +122,7 @@
 .parts-section-heading p {
   font-size: 12px;
   line-height: 1.9;
-  color: #7c8575;
+  color: #7d8797;
   max-width: 580px;
   margin: 0;
 }
@@ -163,13 +163,13 @@
 }
 .part-card {
   border: 1px solid var(--line);
-  background: #fafbf7;
+  background: #fafafa;
   min-width: 0;
   transition: border-color 0.2s;
 }
 .part-card:hover,
 .part-card.selected {
-  border-color: #99b161;
+  border-color: #7d8797;
 }
 .part-card-main {
   width: 100%;
@@ -186,7 +186,7 @@
     sans-serif;
 }
 .part-card-top small {
-  color: #8a967b;
+  color: #7d8797;
   font:
     10px 'Barlow',
     sans-serif;
@@ -197,7 +197,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5f7150;
+  color: #5e697a;
 }
 .part-card-image img {
   width: 100%;
@@ -217,7 +217,7 @@
 }
 .part-card p {
   font-size: 12px;
-  color: #7a8572;
+  color: #7d8797;
   margin: 0 0 23px;
   min-height: 20px;
 }
@@ -233,7 +233,7 @@
 .part-card-facts small {
   display: block;
   font: 10px sans-serif;
-  color: #909a86;
+  color: #7d8797;
   margin-bottom: 6px;
 }
 .part-card-bottom {
@@ -244,14 +244,14 @@
   padding: 12px 22px;
   border-top: 1px solid var(--line);
   font-size: 10px;
-  color: #87917d;
+  color: #7d8797;
 }
 .part-card-bottom button {
   display: flex;
   align-items: center;
   gap: 5px;
   padding: 7px;
-  color: #576841;
+  color: #5e697a;
 }
 .part-card-bottom button:disabled {
   opacity: 0.3;
@@ -262,8 +262,8 @@
   color: var(--ink);
 }
 .part-detail-page {
-  border: 1px solid #d5ddc9;
-  background: #fbfcf8;
+  border: 1px solid #e0e4eb;
+  background: #fafafa;
   padding: 28px;
   scroll-margin-top: 24px;
 }
@@ -282,7 +282,7 @@
   gap: 45px;
 }
 .part-profile {
-  background: #eff2e8;
+  background: #eef0f4;
   padding: 30px;
   min-width: 0;
 }
@@ -291,7 +291,7 @@
     600 13px 'Barlow',
     sans-serif;
   letter-spacing: 1.5px;
-  color: #708353;
+  color: #5e697a;
 }
 .part-profile h2 {
   font:
@@ -300,7 +300,7 @@
   margin: 12px 0;
 }
 .part-profile > p {
-  color: #7c8870;
+  color: #7d8797;
   font-size: 12px;
 }
 .part-profile-image {
@@ -308,7 +308,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #60794a;
+  color: #5e697a;
 }
 .part-profile-image img,
 .part-profile-image svg {
@@ -319,13 +319,13 @@
 }
 .part-edition {
   font-size: 10px;
-  color: #7e8d70;
+  color: #7d8797;
 }
 .part-description {
   margin: 0 0 25px;
   font-size: 14px;
   line-height: 2;
-  color: #616d57;
+  color: #5e697a;
 }
 .part-specs dl {
   margin: 0 0 20px;
@@ -339,7 +339,7 @@
 }
 .part-specs dt {
   font-size: 12px;
-  color: #8a947f;
+  color: #7d8797;
 }
 .part-specs dd {
   margin: 0;
@@ -348,7 +348,7 @@
 }
 .part-date {
   display: block;
-  color: #8a947f;
+  color: #7d8797;
   margin-top: 14px;
   font-size: 10px;
 }
@@ -362,7 +362,7 @@
   font:
     16px 'Barlow Condensed',
     sans-serif;
-  color: #97ad77;
+  color: #7d8797;
 }
 .performance-notes h3,
 .part-choices h3 {
@@ -373,7 +373,7 @@
 .performance-notes p,
 .part-choices p {
   font-size: 12px;
-  color: #77816d;
+  color: #5e697a;
   line-height: 1.9;
   margin: 0;
 }
@@ -406,7 +406,7 @@
 }
 .related-bikes > span {
   font-size: 10px;
-  color: #8b957f;
+  color: #7d8797;
   margin-right: 10px;
 }
 .related-bikes a {
@@ -420,7 +420,7 @@
     sans-serif;
 }
 .parts-compare {
-  background: #edf1e5;
+  background: #eef0f4;
   padding: 28px;
   margin: 40px 0;
 }
@@ -438,7 +438,7 @@
 }
 .parts-compare > p,
 .parts-footnote {
-  color: #8b947f;
+  color: #7d8797;
   font-size: 11px;
   line-height: 1.9;
 }
@@ -453,7 +453,7 @@
 }
 .parts-compare th,
 .parts-compare td {
-  border-bottom: 1px solid #d4ddc8;
+  border-bottom: 1px solid #e0e4eb;
   padding: 14px 18px;
   text-align: left;
   line-height: 1.8;
@@ -462,7 +462,7 @@
 }
 .parts-compare th:first-child {
   width: 125px;
-  color: #82936e;
+  color: #7d8797;
   font-weight: 400;
 }
 .parts-compare thead th {
@@ -674,7 +674,7 @@
   align-items: center;
   justify-content: flex-end;
   gap: 5px;
-  color: #48502f;
+  color: #303947;
   font-size: 12px;
   margin: 0 0 18px;
 }
@@ -697,13 +697,13 @@
 
 .part-china-price {
   padding: 18px 20px;
-  background: #eef2e8;
+  background: #eef0f4;
   margin-bottom: 24px;
-  border-left: 3px solid #536e49;
+  border-left: 3px solid #5e697a;
 }
 .part-china-price strong {
   font-size: 23px;
-  color: #334f34;
+  color: #303947;
 }
 .part-china-price p {
   margin: 8px 0;
@@ -712,12 +712,12 @@
 .part-china-price small {
   font-size: 12px;
   line-height: 1.8;
-  color: #5f6a5e;
+  color: #5e697a;
 }
 .part-card-price {
   display: block;
   font-size: 15px;
-  color: #405d3d;
+  color: #5e697a;
   margin: 8px 0 18px;
 }
 .parts-price-toolbar {
@@ -729,7 +729,7 @@
   font-size: 13px;
 }
 .parts-price-toolbar select {
-  border: 1px solid #d8ddcf;
+  border: 1px solid #e0e4eb;
   background: white;
   padding: 10px;
   font: inherit;

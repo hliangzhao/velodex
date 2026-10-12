@@ -4,14 +4,14 @@
   max-height: none;
   max-width: none;
   padding: 0;
-  border: 1px solid #d5ded0;
+  border: 1px solid #e0e4eb;
   border-radius: 16px;
-  background: #f5f7f1;
-  color: #243b2d;
+  background: #f6f7f9;
+  color: #303947;
   overflow: auto;
 }
 .photo-study::backdrop {
-  background: #102119da;
+  background: #181e28da;
   backdrop-filter: blur(6px);
 }
 .photo-study[open] {
@@ -23,12 +23,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 18px 24px;
-  border-bottom: 1px solid #dde5d6;
+  border-bottom: 1px solid #e0e4eb;
   gap: 15px;
 }
 .photo-study > header span {
   font-size: 11px;
-  color: #74816b;
+  color: #5e697a;
 }
 .photo-study h2 {
   margin: 5px 0 0;
@@ -38,7 +38,7 @@
   cursor: pointer;
   font: inherit;
   color: inherit;
-  border: 1px solid #d8e0d1;
+  border: 1px solid #e0e4eb;
   background: #fff;
   border-radius: 7px;
   padding: 8px;
@@ -68,7 +68,7 @@
   max-width: 330px;
   padding: 8px;
   background: #fff;
-  border: 1px solid #d8e0d1;
+  border: 1px solid #e0e4eb;
   border-radius: 7px;
   color: inherit;
 }
@@ -101,7 +101,7 @@
   overflow: hidden;
   touch-action: none;
   cursor: grab;
-  border: 1px solid #dfe5da;
+  border: 1px solid #eef0f4;
   border-radius: 10px;
 }
 .photo-study-stage:active {
@@ -117,7 +117,7 @@
   transform-origin: center;
 }
 .photo-study-stage.is-dark {
-  background: #24352b;
+  background: #303947;
 }
 .photo-study-stage.has-grid:after {
   content: '';
@@ -125,8 +125,8 @@
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(#8a9d7333 1px, transparent 1px),
-    linear-gradient(90deg, #8a9d7333 1px, transparent 1px);
+    linear-gradient(#7d879733 1px, transparent 1px),
+    linear-gradient(90deg, #7d879733 1px, transparent 1px);
   background-size: 10% 10%;
 }
 .photo-study-controls {
@@ -144,7 +144,7 @@
 }
 .photo-study-source {
   font-size: 11px;
-  color: #617258;
+  color: #5e697a;
   line-height: 1.6;
 }
 .photo-study-source p {
@@ -163,7 +163,7 @@
 .photo-study-note {
   font-size: 11px;
   line-height: 1.7;
-  color: #617258;
+  color: #5e697a;
   padding: 8px 24px;
   margin: 0;
 }

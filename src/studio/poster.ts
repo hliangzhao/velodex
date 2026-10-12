@@ -10,17 +10,17 @@ export async function poster(p: Plan, bike: Bike | undefined, brand: string): Pr
   canvas.height = Math.max(1440, 920 + p.items.length * 76 + 210);
   const c = canvas.getContext('2d');
   if (!c) throw Error('Canvas unavailable');
-  const text = (s: string, x: number, y: number, size = 28, color = '#173c30', max = 940) => {
+  const text = (s: string, x: number, y: number, size = 28, color = '#20242c', max = 940) => {
     c.fillStyle = color;
     c.font = `500 ${size}px sans-serif`;
     while (c.measureText(s).width > max && s.length > 1) s = s.slice(0, -2) + '…';
     c.fillText(s, x, y);
   };
-  c.fillStyle = '#f4f5ed';
+  c.fillStyle = '#f6f7f9';
   c.fillRect(0, 0, canvas.width, canvas.height);
-  c.fillStyle = '#173c30';
+  c.fillStyle = '#20242c';
   c.fillRect(0, 0, 1080, 220);
-  text(`${brand} / ${p.mode === 'build' ? '我的装车方案' : '我的升级方案'}`, 60, 75, 28, '#daee9e');
+  text(`${brand} / ${p.mode === 'build' ? '我的装车方案' : '我的升级方案'}`, 60, 75, 28, '#d9e2ff');
   text(p.title, 60, 154, 48, '#fff');
   let painted = false;
   if (bike) {
@@ -50,10 +50,10 @@ export async function poster(p: Plan, bike: Bike | undefined, brand: string): Pr
     60,
     700,
     21,
-    '#687970',
+    '#5e697a',
   );
   const t = estimate(p);
-  c.fillStyle = '#dcecaa';
+  c.fillStyle = '#e7ecff';
   c.fillRect(60, 735, 960, 125);
   text(t.priceComplete ? '净支出估算' : '已知净支出', 85, 778, 22);
   text(money(t.net), 85, 826, 40);
@@ -61,25 +61,25 @@ export async function poster(p: Plan, bike: Bike | undefined, brand: string): Pr
   text(p.mode === 'build' ? '所列车上零件' : '升级后估重', 610, 778, 22);
   p.items.forEach((item, i) => {
     const y = 920 + i * 76;
-    c.strokeStyle = '#d9e0d3';
+    c.strokeStyle = '#e0e4eb';
     c.beginPath();
     c.moveTo(60, y + 29);
     c.lineTo(1020, y + 29);
     c.stroke();
-    text(label(item.category), 60, y, 22, '#65736c', 145);
-    text(`${item.name || '自定义'} × ${item.quantity}`, 220, y, 26, '#173c30', 790);
+    text(label(item.category), 60, y, 22, '#5e697a', 145);
+    text(`${item.name || '自定义'} × ${item.quantity}`, 220, y, 26, '#20242c', 790);
     text(
       `${{ buy: '购入', keep: '沿用', remove: '拆下' }[item.action]} · ${item.variant || '自定义规格'}`,
       220,
       y + 24,
       17,
-      '#65736c',
+      '#5e697a',
       790,
     );
   });
   const bottom = canvas.height - 130;
-  text('参考价与个人报价分别记录，来源与安装条件见完整方案', 60, bottom, 22, '#65736c');
-  text('不含未列零件与未计价项目', 60, bottom + 36, 22, '#65736c');
+  text('参考价与个人报价分别记录，来源与安装条件见完整方案', 60, bottom, 22, '#5e697a');
+  text('不含未列零件与未计价项目', 60, bottom + 36, 22, '#5e697a');
   text('hliangzhao.me/velodex', 60, bottom + 82, 25);
   return new Promise((resolve, reject) =>
     canvas.toBlob((b) => (b ? resolve(b) : reject(Error('PNG failed'))), 'image/png'),

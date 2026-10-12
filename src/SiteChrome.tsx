@@ -1,4 +1,4 @@
-import { ArrowUpLeft, ArrowUpRight, Github } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 import { useEffect, useState, type ReactNode } from 'react';
 import { useLibrary, CompareDock } from './Library';
 import { loadCatalog } from './catalog';
@@ -57,11 +57,7 @@ export function SiteFooter() {
       <a className="wordmark" href={base}>
         VÉLODEX
       </a>
-      <span>献给每一个忍不住回头看车的人。</span>
       <nav className="footer-links" aria-label="页脚导航">
-        <a href="https://hliangzhao.me/">
-          <ArrowUpLeft size={15} aria-hidden="true" /> 返回学术主页
-        </a>
         <a href="https://github.com/hliangzhao/velodex" target="_blank" rel="noreferrer">
           <Github size={15} aria-hidden="true" /> GitHub 仓库
         </a>

@@ -16,7 +16,7 @@
   font-size: 13px;
 }
 .catalog-order button[aria-pressed='true'] {
-  background: #293526;
+  background: #303947;
   color: #fff;
 }
 .catalog-order label {
@@ -24,7 +24,7 @@
   align-items: center;
   gap: 10px;
   font-size: 12px;
-  color: #627056;
+  color: #5e697a;
 }
 .catalog-order select {
   background: transparent;
@@ -35,12 +35,12 @@
 .catalog-order > span {
   margin-left: auto;
   font-size: 12px;
-  color: #627056;
+  color: #5e697a;
 }
 .catalog-year-note {
   font-size: 11px;
   line-height: 1.8;
-  color: #727968;
+  color: #5e697a;
   max-width: 830px;
   margin: 15px 0 25px;
 }
@@ -58,7 +58,7 @@
   font-size: 12px;
 }
 .catalog-jumps small {
-  color: #7b856f;
+  color: #5e697a;
 }
 .catalog-group {
   scroll-margin-top: 100px;
@@ -80,7 +80,7 @@
 }
 .catalog-group > header > span {
   font-size: 12px;
-  color: #718065;
+  color: #5e697a;
   white-space: nowrap;
 }
 .card-footer {
@@ -92,9 +92,9 @@
   font-size: 10px;
   font-weight: 500;
   padding: 3px 6px;
-  border: 1px solid #d9dece;
+  border: 1px solid #e0e4eb;
   white-space: nowrap;
-  color: #536146;
+  color: #5e697a;
 }
 @media (max-width: 600px) {
   .catalog-order {

@@ -10,7 +10,7 @@
 .power-knowledge p {
   font-size: 13px;
   line-height: 1.9;
-  color: #6d7a61;
+  color: #5e697a;
 }
 .power-knowledge {
   display: grid;
@@ -19,14 +19,14 @@
   margin-bottom: 30px;
 }
 .power-knowledge article {
-  border-top: 2px solid #8ca55a;
+  border-top: 2px solid #7d8797;
   padding: 20px 5px;
 }
 .power-knowledge article > span {
   font:
     500 11px 'Barlow',
     sans-serif;
-  color: #7f926b;
+  color: #7d8797;
   letter-spacing: 1px;
 }
 .power-knowledge h3 {
@@ -35,7 +35,7 @@
 }
 .power-knowledge a {
   font-size: 10px;
-  color: #667e4c;
+  color: #5e697a;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -51,7 +51,7 @@
   max-width: 800px;
   font-size: 13px;
   line-height: 1.9;
-  color: #6c7b5e;
+  color: #5e697a;
 }
 .power-upload-actions {
   display: flex;
@@ -72,7 +72,7 @@
   width: 100%;
 }
 .power-upload .dark-button:focus-within {
-  outline: 2px solid #779740;
+  outline: 2px solid #5e697a;
   outline-offset: 3px;
 }
 .power-private {
@@ -87,7 +87,7 @@
 .power-paste {
   margin-top: 18px;
   font-size: 12px;
-  color: #6d7f5a;
+  color: #5e697a;
 }
 .power-paste textarea {
   display: block;
@@ -115,7 +115,7 @@
 .power-results > p {
   font-size: 12px;
   line-height: 1.9;
-  color: #6b7d5c;
+  color: #5e697a;
 }
 .power-inputs a {
   text-decoration: underline;
@@ -129,7 +129,7 @@
 .power-fields label,
 .power-ftp {
   font-size: 11px;
-  color: #526546;
+  color: #5e697a;
 }
 .power-fields input,
 .power-ftp input {
@@ -137,7 +137,7 @@
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  border: 1px solid #cfd8c1;
+  border: 1px solid #e0e4eb;
   background: #fff;
   padding: 11px 10px;
   margin: 8px 0;
@@ -148,7 +148,7 @@
 .power-fields small {
   display: block;
   font-size: 10px;
-  color: #7a8970;
+  color: #7d8797;
   line-height: 1.8;
 }
 .power-check {
@@ -161,7 +161,7 @@
 .power-check input {
   margin: 5px 0 0;
   flex-shrink: 0;
-  accent-color: #6f8d3c;
+  accent-color: #5e697a;
 }
 .power-ftp {
   display: block;
@@ -170,7 +170,7 @@
 .power-small {
   font-size: 11px !important;
   line-height: 1.9;
-  color: #768568;
+  color: #5e697a;
 }
 .power-error {
   color: #a13a2e !important;
@@ -185,7 +185,7 @@
 .power-metrics > div {
   padding: 18px;
   border-bottom: 1px solid var(--line);
-  background: #f1f5e9;
+  background: #f6f7f9;
 }
 .power-metrics > div:nth-child(odd) {
   border-right: 1px solid var(--line);
@@ -198,7 +198,7 @@
 }
 .power-metrics small {
   font-size: 10px;
-  color: #6c7b5f;
+  color: #5e697a;
 }
 .power-metrics strong {
   display: block;
@@ -209,24 +209,24 @@
 }
 .power-metrics strong span {
   font-size: 15px;
-  color: #7c8a6c;
+  color: #7d8797;
 }
 .power-metrics p {
   font-size: 10px;
   line-height: 1.7;
-  color: #7a856e;
+  color: #5e697a;
   margin: 0;
 }
 .power-summary {
   display: grid;
   gap: 9px;
   font-size: 11px;
-  color: #6c7c5c;
+  color: #5e697a;
   line-height: 1.8;
 }
 .power-notice {
-  background: #edf2df;
-  border-left: 2px solid #9bb562;
+  background: #eef0f4;
+  border-left: 2px solid #7d8797;
   padding: 14px 17px;
 }
 .power-chart {
@@ -256,11 +256,11 @@
   font:
     11px 'Barlow',
     sans-serif;
-  fill: #718362;
+  fill: #5e697a;
 }
 .power-chart > p {
   font-size: 10px;
-  color: #7d8c70;
+  color: #7d8797;
 }
 .ftp-estimate {
   padding: 18px 0;
@@ -277,11 +277,11 @@
   padding: 22px;
   font-size: 12px;
   line-height: 1.9;
-  color: #6e7e61;
+  color: #5e697a;
 }
 .power-method summary {
   cursor: pointer;
-  color: #344b28;
+  color: #303947;
 }
 .power-method a {
   text-decoration: underline;
@@ -334,7 +334,7 @@
 .power-csv p {
   font-size: 11px;
   line-height: 1.8;
-  color: #708262;
+  color: #5e697a;
 }
 .power-csv textarea {
   width: 100%;
@@ -348,7 +348,7 @@
 
 .power-primer {
   margin: 18px 0;
-  color: #617154;
+  color: #5e697a;
   font-size: 13px;
 }
 .power-primer > summary {
@@ -362,18 +362,18 @@
 }
 .power-mode button {
   padding: 13px 20px;
-  border: 1px solid #d7dfce;
+  border: 1px solid #e0e4eb;
   border-radius: 9px;
   background: #fff;
-  color: #45635c;
+  color: #5e697a;
   font: inherit;
   cursor: pointer;
   font-size: 13px;
 }
 .power-mode [aria-pressed='true'] {
-  background: #205650;
+  background: #303947;
   color: #fff;
-  border-color: #205650;
+  border-color: #303947;
 }
 .training-panel {
   display: grid;
@@ -390,7 +390,7 @@
 .training-panel p {
   font-size: 13px;
   line-height: 1.9;
-  color: #5a6e66;
+  color: #5e697a;
 }
 .training-profile {
   display: flex;
@@ -413,9 +413,9 @@
 .training-panel textarea {
   font: inherit;
   font-size: 14px;
-  color: #23473f;
+  color: #303947;
   background: #fff;
-  border: 1px solid #d6dfce;
+  border: 1px solid #e0e4eb;
   border-radius: 8px;
   padding: 12px;
   max-width: 100%;
@@ -436,8 +436,8 @@
   font-size: 10px;
   border-radius: 20px;
   padding: 7px 10px;
-  background: #e1eee6;
-  color: #657a50;
+  background: #eef0f4;
+  color: #5e697a;
 }
 .training-metrics {
   display: grid;
@@ -450,16 +450,16 @@
   flex-direction: column;
   gap: 10px;
   padding: 18px;
-  border: 1px solid #e1e7d8;
+  border: 1px solid #eef0f4;
   border-radius: 10px;
 }
 .training-metrics small {
   font-size: 11px;
-  color: #62766d;
+  color: #5e697a;
 }
 .training-metrics strong {
   font-size: 26px;
-  color: #254331;
+  color: #303947;
 }
 .training-metrics em {
   font-size: 12px;
@@ -478,12 +478,12 @@
 .training-peaks > div {
   display: grid;
   gap: 10px;
-  border-bottom: 2px solid #d7e7ab;
+  border-bottom: 2px solid #e0e4eb;
   padding: 12px 0;
 }
 .training-peaks span {
   font-size: 12px;
-  color: #718060;
+  color: #5e697a;
 }
 .training-peaks strong {
   font-size: 24px;
@@ -503,11 +503,11 @@
   display: block;
   font-size: 10px;
   margin-top: 5px;
-  color: #7a866e;
+  color: #5e697a;
 }
 .training-zones > div > div {
   height: 12px;
-  background: #eff2e9;
+  background: #f6f7f9;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -521,7 +521,7 @@
   text-align: right;
 }
 .training-advice {
-  background: #f0f4e8;
+  background: #f6f7f9;
   padding: 1px 20px 12px;
   border-radius: 10px;
   margin-top: 25px;
@@ -546,7 +546,7 @@
   justify-content: center;
   border-radius: 5px;
   font-size: 11px;
-  color: #4b6240;
+  color: #5e697a;
 }
 .training-workout ol {
   list-style: none;
@@ -557,19 +557,19 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  border-bottom: 1px solid #e5e9df;
+  border-bottom: 1px solid #eef0f4;
   padding: 13px 0;
   font-size: 12px;
 }
 .training-workout li span {
-  color: #6c7d5e;
+  color: #5e697a;
 }
 .training-history-list article {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  border-bottom: 1px solid #e2e7da;
+  border-bottom: 1px solid #eef0f4;
   padding: 16px 0;
 }
 .training-history-list article > div {
@@ -583,17 +583,17 @@
 }
 .training-history-list span {
   font-size: 11px;
-  color: #748169;
+  color: #5e697a;
 }
 .training-history-list button,
 .training-history > button {
   font: inherit;
   cursor: pointer;
-  border: 1px solid #dce4d3;
+  border: 1px solid #e0e4eb;
   border-radius: 7px;
   padding: 9px;
   background: #fff;
-  color: #49613e;
+  color: #5e697a;
   font-size: 12px;
 }
 .training-history > button {
@@ -692,9 +692,9 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 4px;
   padding: 5px;
-  border: 1px solid #dce4df;
+  border: 1px solid #eef0f4;
   border-radius: 12px;
-  background: #eaf0e9;
+  background: #eef0f4;
 }
 .power-mode button {
   border: 0;
@@ -704,20 +704,20 @@
   padding: 11px 8px;
 }
 .power-mode [aria-pressed='true'] {
-  background: #205650;
-  box-shadow: 0 2px 6px #173d3415;
+  background: #303947;
+  box-shadow: 0 2px 6px #30394715;
 }
 .power-lab .work-panel {
   border-radius: 16px;
-  border-color: #dce4df;
+  border-color: #eef0f4;
 }
 .power-lab .power-upload {
-  border: 1px dashed #afcabc;
-  background: #f9fbf7;
+  border: 1px dashed #c3cad5;
+  background: #fafafa;
   padding: 26px;
 }
 .training-profile {
-  background: #f0f5ef;
+  background: #f6f7f9;
 }
 .training-profile > .training-profile-actions {
   display: flex;
@@ -727,7 +727,7 @@
   flex: 1 1 100%;
 }
 .training-profile-actions small {
-  color: #667a6d;
+  color: #5e697a;
   font-size: 11px;
 }
 .training-profile-actions button {
@@ -735,7 +735,7 @@
 }
 .training-message {
   padding: 13px 17px;
-  background: #e5f0e6;
+  background: #eef0f4;
   border-radius: 10px;
 }
 .training-week {
@@ -753,12 +753,12 @@
 .training-week small,
 .training-week span {
   font-size: 11px;
-  color: #63796c;
+  color: #5e697a;
 }
 .training-week > div > div {
   height: 88px;
   width: min(100%, 36px);
-  background: #f0f4ef;
+  background: #f6f7f9;
   border-radius: 5px;
   display: flex;
   align-items: flex-end;
@@ -766,25 +766,25 @@
 }
 .training-week i {
   display: block;
-  background: #669781;
+  background: #7d8797;
   width: 100%;
   border-radius: 4px;
 }
 .training-panel .work-panel {
-  box-shadow: 0 4px 20px #193e3b03;
+  box-shadow: 0 4px 20px #30394703;
 }
 .training-metrics > div {
-  background: #f8faf6;
-  border-color: #e0e7dd;
+  background: #fafafa;
+  border-color: #eef0f4;
 }
 .training-metrics strong {
-  color: #245447;
+  color: #303947;
 }
 .training-history-list article {
   border-radius: 10px;
 }
 .power-lab :focus-visible {
-  outline: 3px solid #559580;
+  outline: 3px solid #5e697a;
   outline-offset: 3px;
 }
 @media (max-width: 760px) {

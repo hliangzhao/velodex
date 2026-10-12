@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27",
+  "updatedAt": "2026-10-12",
   "collectionNote": "“人气精选”为编辑选集，涵盖公路竞赛与砾石探索，不代表销量或实时热度排名。",
   "brands": [
     {
@@ -23591,6 +23591,1177 @@
           "catalogIds": ["gp5000-str"]
         }
       ]
+    },
+    {
+      "id": "tcr-advanced1-kom-cn",
+      "brandId": "giant",
+      "name": "TCR Advanced 1-KOM",
+      "family": "TCR",
+      "build": "105 Di2 · 中国大陆",
+      "edition": "2025 · 中国大陆版",
+      "modelYear": 2025,
+      "yearNote": "车型年取自捷安特大陆商品页公开数据。",
+      "kind": "轻量爬坡",
+      "description": "第十代 TCR 的 105 Di2 入门配置，50/34T 牙盘与 11–36T 飞轮更适合起伏和爬坡路线。",
+      "collections": ["current"],
+      "image": "/bikes/tcr-advanced1-kom-cn.jpg",
+      "imageCredit": "Giant 捷安特中国大陆官网",
+      "imageRatio": 1.5831134564643798,
+      "color": "沥青绿",
+      "colorHex": "#394c50",
+      "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1393",
+      "sourceLabel": "捷安特中国大陆官网 · TCR Advanced 1-KOM",
+      "checkedAt": "2026-10-12",
+      "weight": "未公布",
+      "weightNote": "大陆官网未发布整车称量结果，重量不参与自动升级估算。",
+      "groupset": "105 Di2",
+      "hasPowerMeter": false,
+      "material": "Advanced 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 47,
+          "title": "Giant Advanced 碳纤维车架",
+          "description": "按大陆版本记录车架与前叉等级。",
+          "specs": [
+            ["车架", "Advanced-Grade Composite, 12x142mm thru-axle, disc"],
+            [
+              "前叉",
+              "Advanced-Grade Composite, full-composite OverDrive steerer, 12x100mm thru-axle, disc"
+            ]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 17,
+          "title": "Giant Contact",
+          "description": "车把宽度和把立长度需与所选车架尺码一起核对。",
+          "specs": [
+            ["车把", "Giant Contact"],
+            ["把立", "Giant Contact AeroLight"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 36,
+          "y": 21,
+          "title": "Giant Variant 碳纤维座管",
+          "description": "座管形状与车架配套；更换时需核对夹具与后飘量。",
+          "specs": [
+            ["原配座管", "Giant Variant, composite, -5/+15mm offset"],
+            ["版本范围", "2025 中国大陆 · 商品 1393"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "x": 32,
+          "y": 5,
+          "title": "GIANT Approach",
+          "description": "原配坐垫型号；商品页未列出尺寸与重量。",
+          "specs": [
+            ["型号", "GIANT Approach"],
+            ["版本范围", "2025 中国大陆 · 商品 1393"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 81,
+          "y": 15,
+          "title": "Shimano 105 Di2",
+          "description": "电子与机械版本分开记录，刹车均按本车配置表标注。",
+          "specs": [
+            ["手变", "Shimano 105 Di2"],
+            ["前拨", "Shimano 105 Di2"],
+            ["后拨", "Shimano 105 Di2"],
+            ["刹车", "Shimano 105 Di2 hydraulic, Giant MPH rotors [F]160mm, [R]140mm"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 73,
+          "title": "Shimano 105",
+          "description": "曲柄与中轴以此大陆商品的规格表为依据。",
+          "specs": [
+            ["曲柄 / 牙盘", "Shimano 105, 34/50"],
+            ["中轴", "Shimano, press fit"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 75,
+          "title": "50 / 34T",
+          "description": "双盘配置，搭配原配飞轮比较最低和最高齿比。",
+          "specs": [
+            ["牙盘", "Shimano 105, 34/50"],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 22,
+          "y": 65,
+          "title": "Shimano 105, 12-speed, 11x36",
+          "description": "保留官网列出的速别与齿数范围。",
+          "specs": [
+            ["飞轮", "Shimano 105, 12-speed, 11x36"],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 44,
+          "y": 70,
+          "title": "官网未列功率计",
+          "description": "原配表未列出功率计；选购时可按曲柄或锁踏接口另行配置。",
+          "specs": [
+            ["原配牙盘", "Shimano 105, 34/50"],
+            ["版本范围", "2025 中国大陆 · 商品 1393"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 86,
+          "y": 86,
+          "title": "Giant P-R2 · 36 mm",
+          "description": "轮组框高与花鼓资料按本车配置表记录。",
+          "specs": [
+            ["轮圈", "Giant P-R2, [F]36mm, [R]36mm"],
+            ["花鼓", "Giant alloy, 12mm thru-axle"],
+            ["辐条", "stainless"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 91,
+          "y": 44,
+          "title": "Giant Gavia Course 1",
+          "description": "真空胎配置；胎宽、轮圈适配和胎压需按实际装配核对。",
+          "specs": [
+            ["轮胎", "Giant Gavia Course 1, tubeless, 700x25c (28mm), folding"],
+            ["版本范围", "2025 中国大陆 · 商品 1393"]
+          ]
+        }
+      ],
+      "geometry": {
+        "status": "unavailable",
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1393",
+        "sourceLabel": "捷安特中国大陆官网 · 车架几何",
+        "note": "本商品页未发布完整尺寸表；不使用海外或其他代际的几何替代。"
+      },
+      "aero": {
+        "title": "公路车架设计",
+        "description": "第十代 TCR 延续压缩车架设计，兼顾整合走线与管型优化。",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1393",
+        "limit": "本条目没有可与其他车在相同条件下比较的风阻数值。"
+      },
+      "price": {
+        "label": "¥18,800",
+        "market": "中国大陆官网建议售价 · 整车",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1393",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "id": "tcr-pro1-di2-cn",
+      "brandId": "giant",
+      "name": "TCR Advanced Pro 1-Di2",
+      "family": "TCR",
+      "build": "105 Di2 · 中国大陆",
+      "edition": "2025 · 中国大陆版",
+      "modelYear": 2025,
+      "yearNote": "车型年取自捷安特大陆商品页公开数据。",
+      "kind": "轻量爬坡",
+      "description": "Advanced 碳纤维车架搭配 Advanced SL 前叉，原配 Giant Power Pro 功率计，可直接用于功率训练。",
+      "collections": ["current"],
+      "image": "/bikes/tcr-pro1-di2-cn.jpg",
+      "imageCredit": "Giant 捷安特中国大陆官网",
+      "imageRatio": 1.5862524785194976,
+      "color": "炭黑色",
+      "colorHex": "#34363a",
+      "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1396",
+      "sourceLabel": "捷安特中国大陆官网 · TCR Advanced Pro 1-Di2",
+      "checkedAt": "2026-10-12",
+      "weight": "未公布",
+      "weightNote": "大陆官网未发布整车称量结果，重量不参与自动升级估算。",
+      "groupset": "105 Di2",
+      "hasPowerMeter": true,
+      "material": "Advanced 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 47,
+          "title": "Giant Advanced 碳纤维车架",
+          "description": "按大陆版本记录车架与前叉等级。",
+          "specs": [
+            ["车架", "Advanced-Grade Composite, 12x142mm thru-axle, disc"],
+            [
+              "前叉",
+              "Advanced SL-Grade Composite, full-composite OverDrive Aero steerer, 12x100mm thru-axle, disc"
+            ]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 17,
+          "title": "Giant Contact SL",
+          "description": "车把宽度和把立长度需与所选车架尺码一起核对。",
+          "specs": [
+            ["车把", "Giant Contact SL"],
+            ["把立", "Giant Contact SL AeroLight"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 36,
+          "y": 21,
+          "title": "Giant Variant 碳纤维座管",
+          "description": "座管形状与车架配套；更换时需核对夹具与后飘量。",
+          "specs": [
+            ["原配座管", "Giant Variant, composite, -5/+15mm offset"],
+            ["版本范围", "2025 中国大陆 · 商品 1396"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "x": 32,
+          "y": 5,
+          "title": "Giant Fleet SL",
+          "description": "原配坐垫型号；商品页未列出尺寸与重量。",
+          "specs": [
+            ["型号", "Giant Fleet SL"],
+            ["版本范围", "2025 中国大陆 · 商品 1396"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 81,
+          "y": 15,
+          "title": "Shimano 105 Di2",
+          "description": "电子与机械版本分开记录，刹车均按本车配置表标注。",
+          "specs": [
+            ["手变", "Shimano 105 Di2"],
+            ["前拨", "Shimano 105 Di2"],
+            ["后拨", "Shimano 105 Di2"],
+            ["刹车", "Shimano 105 Di2 hydraulic, Shimano SM-RT70 rotors [F]160mm, [R]140mm"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 73,
+          "title": "Shimano 105",
+          "description": "曲柄与中轴以此大陆商品的规格表为依据。",
+          "specs": [
+            ["曲柄 / 牙盘", "Shimano 105, 36/52 with Giant Power Pro power meter"],
+            ["中轴", "Shimano, press fit"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 75,
+          "title": "52 / 36T",
+          "description": "双盘配置，搭配原配飞轮比较最低和最高齿比。",
+          "specs": [
+            ["牙盘", "Shimano 105, 36/52 with Giant Power Pro power meter"],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 22,
+          "y": 65,
+          "title": "Shimano 105, 12-speed, 11x34",
+          "description": "保留官网列出的速别与齿数范围。",
+          "specs": [
+            ["飞轮", "Shimano 105, 12-speed, 11x34"],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 44,
+          "y": 70,
+          "title": "Giant Power Pro",
+          "description": "该版本牙盘规格明确含 Giant Power Pro。",
+          "specs": [
+            ["原配牙盘", "Shimano 105, 36/52 with Giant Power Pro power meter"],
+            ["版本范围", "2025 中国大陆 · 商品 1396"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 86,
+          "y": 86,
+          "title": "原配轮组",
+          "description": "大陆规格表仅公布 Sapim CX-Ray 辐条，未单列轮圈与花鼓型号。",
+          "specs": [
+            ["辐条", "Sapim CX-Ray"],
+            ["版本范围", "2025 中国大陆 · 商品 1396"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 91,
+          "y": 44,
+          "title": "Giant Gavia Course 0",
+          "description": "真空胎配置；胎宽、轮圈适配和胎压需按实际装配核对。",
+          "specs": [
+            ["轮胎", "Giant Gavia Course 0, tubeless, 700x25c (28mm), folding"],
+            ["版本范围", "2025 中国大陆 · 商品 1396"]
+          ]
+        }
+      ],
+      "geometry": {
+        "status": "unavailable",
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1396",
+        "sourceLabel": "捷安特中国大陆官网 · 车架几何",
+        "note": "本商品页未发布完整尺寸表；不使用海外或其他代际的几何替代。"
+      },
+      "aero": {
+        "title": "公路车架设计",
+        "description": "第十代 TCR 延续压缩车架设计，兼顾整合走线与管型优化。",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1396",
+        "limit": "本条目没有可与其他车在相同条件下比较的风阻数值。"
+      },
+      "price": {
+        "label": "¥29,800",
+        "market": "中国大陆官网建议售价 · 整车",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1396",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "id": "defy-advanced2-cn",
+      "brandId": "giant",
+      "name": "Defy Advanced 2",
+      "family": "Defy",
+      "build": "Shimano 105 · 中国大陆",
+      "edition": "2025 · 中国大陆版",
+      "modelYear": 2025,
+      "yearNote": "车型年取自捷安特大陆商品页公开数据。",
+      "kind": "长途耐力",
+      "description": "第五代 Defy 面向长距离公路骑行，采用 Advanced 碳纤维车架、D-Fuse 减震设计和 Shimano 105 传动。",
+      "collections": ["current"],
+      "image": "/bikes/defy-advanced2-cn.jpg",
+      "imageCredit": "Giant 捷安特中国大陆官网",
+      "imageRatio": 1.6085790884718498,
+      "color": "黑色 · 官网主图",
+      "colorHex": "#303338",
+      "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1837",
+      "sourceLabel": "捷安特中国大陆官网 · Defy Advanced 2",
+      "checkedAt": "2026-10-12",
+      "weight": "未公布",
+      "weightNote": "大陆官网未发布整车称量结果，重量不参与自动升级估算。",
+      "groupset": "Shimano 105",
+      "hasPowerMeter": false,
+      "material": "Advanced 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 47,
+          "title": "Giant Advanced 碳纤维车架",
+          "description": "按大陆版本记录车架与前叉等级。",
+          "specs": [
+            ["车架", "Advanced-Grade Composite"],
+            ["前叉", "Advanced-Grade Composite, Full-Composite OverDrive one Steerer"]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 69,
+          "y": 17,
+          "title": "Giant D-Fuse 车把",
+          "description": "车把宽度和把立长度需与所选车架尺码一起核对。",
+          "specs": [
+            ["配置资料", "大陆商品页未单列型号"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 36,
+          "y": 21,
+          "title": "Giant D-Fuse",
+          "description": "座管形状与车架配套；更换时需核对夹具与后飘量。",
+          "specs": [
+            ["配置资料", "大陆商品页未单列型号"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "x": 32,
+          "y": 5,
+          "title": "Giant Approach",
+          "description": "原配坐垫型号；商品页未列出尺寸与重量。",
+          "specs": [
+            ["型号", "Giant Approach"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 81,
+          "y": 15,
+          "title": "Shimano 105",
+          "description": "电子与机械版本分开记录，刹车均按本车配置表标注。",
+          "specs": [
+            ["前拨", "Shimano105"],
+            ["后拨", "Shimano105"],
+            ["刹车", "Shimano 105 HRD"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 73,
+          "title": "Shimano RS520",
+          "description": "曲柄与中轴以此大陆商品的规格表为依据。",
+          "specs": [
+            ["曲柄 / 牙盘", "Shimano rs520 34/50"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 75,
+          "title": "50 / 34T",
+          "description": "双盘配置，搭配原配飞轮比较最低和最高齿比。",
+          "specs": [
+            ["牙盘", "Shimano rs520 34/50"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 22,
+          "y": 65,
+          "title": "飞轮规格未公布",
+          "description": "大陆商品页未单列飞轮型号与齿数。",
+          "specs": [
+            ["配置资料", "大陆商品页未单列型号"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 44,
+          "y": 70,
+          "title": "官网未列功率计",
+          "description": "原配表未列出功率计；选购时可按曲柄或锁踏接口另行配置。",
+          "specs": [
+            ["原配牙盘", "Shimano rs520 34/50"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 86,
+          "y": 86,
+          "title": "原配轮组",
+          "description": "此商品页未单列完整轮组型号，不将系列介绍中的轮组当作本车配置。",
+          "specs": [
+            ["配置资料", "大陆商品页未单列型号"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 91,
+          "y": 44,
+          "title": "原配轮胎",
+          "description": "商品页未单列轮胎型号和尺寸。",
+          "specs": [
+            ["配置资料", "大陆商品页未单列型号"],
+            ["版本范围", "2025 中国大陆 · 商品 1837"]
+          ]
+        }
+      ],
+      "geometry": {
+        "status": "unavailable",
+        "sizes": [],
+        "defaultSize": "",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1837",
+        "sourceLabel": "捷安特中国大陆官网 · 车架几何",
+        "note": "本商品页未发布完整尺寸表；不使用海外或其他代际的几何替代。"
+      },
+      "aero": {
+        "title": "公路车架设计",
+        "description": "本车以长距离舒适性为重点；官网没有给出此配置的风阻测试数值。",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1837",
+        "limit": "本条目没有可与其他车在相同条件下比较的风阻数值。"
+      },
+      "price": {
+        "label": "¥14,800",
+        "market": "中国大陆官网建议售价 · 整车",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=1837",
+        "checkedAt": "2026-10-12"
+      }
+    },
+    {
+      "id": "propel-advanced1-cn-2027",
+      "brandId": "giant",
+      "name": "Propel Advanced 1",
+      "family": "Propel",
+      "build": "105 Di2 · 中国大陆",
+      "edition": "2027 · 中国大陆版",
+      "modelYear": 2027,
+      "yearNote": "车型年取自捷安特大陆商品页公开数据。",
+      "kind": "气动竞赛",
+      "description": "大陆官网标为 2027 款，搭配 105 Di2、Contact SLR 1 Aero 一体把与 50 mm 碳轮；最大胎容增加至 32 mm。",
+      "collections": ["current"],
+      "image": "/bikes/propel-advanced1-cn-2027.jpg",
+      "imageCredit": "Giant 捷安特中国大陆官网",
+      "imageRatio": 1.499063085571518,
+      "color": "贝母白色",
+      "colorHex": "#e1e0d7",
+      "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3790",
+      "sourceLabel": "捷安特中国大陆官网 · Propel Advanced 1",
+      "checkedAt": "2026-10-12",
+      "weight": "未公布",
+      "weightNote": "大陆官网未发布整车称量结果，重量不参与自动升级估算。",
+      "groupset": "105 Di2",
+      "hasPowerMeter": false,
+      "material": "Advanced 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 47,
+          "title": "Giant Advanced 碳纤维车架",
+          "description": "按大陆版本记录车架与前叉等级。",
+          "specs": [
+            ["车架", "Advanced-grade Composite, 12x142mm thru-axle, disc"],
+            [
+              "前叉",
+              "Advanced-grade Composite, full-composite OverDrive Aero steerer, 12x100mm thru-axle, disc"
+            ]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 68,
+          "y": 23,
+          "title": "Giant Contact SLR 1 Aero",
+          "description": "车把宽度和把立长度需与所选车架尺码一起核对。",
+          "specs": [
+            ["车把", "Giant Contact SLR 1 Aero"],
+            ["把立", "Giant Contact SLR 1 Aero"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 36,
+          "y": 27,
+          "title": "Giant Vector 碳纤维座管",
+          "description": "座管形状与车架配套；更换时需核对夹具与后飘量。",
+          "specs": [
+            ["原配座管", "Giant Vector, composite, -5/+15mm offset"],
+            ["版本范围", "2027 中国大陆 · 商品 3790"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "x": 32,
+          "y": 11,
+          "title": "Giant Fleet SL",
+          "description": "原配坐垫型号；商品页未列出尺寸与重量。",
+          "specs": [
+            ["型号", "Giant Fleet SL"],
+            ["版本范围", "2027 中国大陆 · 商品 3790"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 80,
+          "y": 22,
+          "title": "Shimano 105 Di2",
+          "description": "电子与机械版本分开记录，刹车均按本车配置表标注。",
+          "specs": [
+            ["手变", "Shimano 105 Di2"],
+            ["前拨", "Shimano 105 Di2"],
+            ["后拨", "Shimano 105 Di2"],
+            ["刹车", "Shimano 105 Di2 hydraulic"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 73,
+          "title": "Shimano 105",
+          "description": "曲柄与中轴以此大陆商品的规格表为依据。",
+          "specs": [
+            [
+              "曲柄 / 牙盘",
+              "Shimano 105 Di2, 36/52 XS:165mm, S:165mm, M:170mm, M/L:170mm, L:172.5mm, XL:172.5mm"
+            ],
+            ["中轴", "Shimano, press fit"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 75,
+          "title": "52 / 36T",
+          "description": "双盘配置，搭配原配飞轮比较最低和最高齿比。",
+          "specs": [
+            [
+              "牙盘",
+              "Shimano 105 Di2, 36/52 XS:165mm, S:165mm, M:170mm, M/L:170mm, L:172.5mm, XL:172.5mm"
+            ],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 22,
+          "y": 65,
+          "title": "Shimano 105, 12-speed, 11x36",
+          "description": "保留官网列出的速别与齿数范围。",
+          "specs": [
+            ["飞轮", "Shimano 105, 12-speed, 11x36"],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 44,
+          "y": 70,
+          "title": "官网未列功率计",
+          "description": "原配表未列出功率计；选购时可按曲柄或锁踏接口另行配置。",
+          "specs": [
+            [
+              "原配牙盘",
+              "Shimano 105 Di2, 36/52 XS:165mm, S:165mm, M:170mm, M/L:170mm, L:172.5mm, XL:172.5mm"
+            ],
+            ["版本范围", "2027 中国大陆 · 商品 3790"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 86,
+          "y": 86,
+          "title": "Giant SLR 2 50-GC",
+          "description": "轮组框高与花鼓资料按本车配置表记录。",
+          "specs": [
+            ["轮组", "Giant SLR 2 50-GC Carbon Disc WheelSystem, [F]50mm, [R]50mm"],
+            ["版本范围", "2027 中国大陆 · 商品 3790"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 91,
+          "y": 44,
+          "title": "Giant Gavia Course 0",
+          "description": "真空胎配置；胎宽、轮圈适配和胎压需按实际装配核对。",
+          "specs": [
+            ["轮胎", "Giant Gavia COURSE 0 Tubeless"],
+            ["版本范围", "2027 中国大陆 · 商品 3790"]
+          ]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 515.0,
+            "reach": 377.0,
+            "seatTube": 484.0,
+            "seatAngle": 74.5,
+            "headAngle": 71.5,
+            "headTube": 115.0,
+            "wheelbase": 971.0,
+            "chainstay": 405.0,
+            "bbDrop": 72.0
+          },
+          {
+            "size": "S",
+            "stack": 530.0,
+            "reach": 383.0,
+            "seatTube": 505.0,
+            "seatAngle": 74.0,
+            "headAngle": 72.5,
+            "headTube": 127.0,
+            "wheelbase": 973.0,
+            "chainstay": 405.0,
+            "bbDrop": 72.0
+          },
+          {
+            "size": "M",
+            "stack": 546.0,
+            "reach": 388.0,
+            "seatTube": 528.5,
+            "seatAngle": 73.5,
+            "headAngle": 73.0,
+            "headTube": 145.0,
+            "wheelbase": 980.0,
+            "chainstay": 405.0,
+            "bbDrop": 69.5
+          },
+          {
+            "size": "ML",
+            "stack": 565.0,
+            "reach": 392.0,
+            "seatTube": 554.0,
+            "seatAngle": 73.0,
+            "headAngle": 73.0,
+            "headTube": 165.0,
+            "wheelbase": 990.0,
+            "chainstay": 405.0,
+            "bbDrop": 69.5
+          },
+          {
+            "size": "L",
+            "stack": 582.0,
+            "reach": 402.0,
+            "seatTube": 576.0,
+            "seatAngle": 73.0,
+            "headAngle": 73.0,
+            "headTube": 185.0,
+            "wheelbase": 1006.0,
+            "chainstay": 405.0,
+            "bbDrop": 67.0
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3790",
+        "sourceLabel": "捷安特中国大陆官网 · 车架几何",
+        "note": "按本商品页几何表逐尺码录入。单位为 mm / °；不同代际独立记录。"
+      },
+      "aero": {
+        "title": "AeroSystem 管型",
+        "description": "官网介绍以管型与把组整合改善空气动力学。",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3790",
+        "limit": "本条目没有可与其他车在相同条件下比较的风阻数值。"
+      },
+      "price": {
+        "label": "¥23,800",
+        "market": "中国大陆官网建议售价 · 整车",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3790",
+        "checkedAt": "2026-10-12"
+      },
+      "paints": [
+        {
+          "id": "pearl",
+          "name": "贝母白色",
+          "hex": "#e1e0d7",
+          "image": "/bikes/propel-advanced1-cn-2027.jpg",
+          "imageRatio": 1.499063085571518,
+          "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3790"
+        },
+        {
+          "id": "purple",
+          "name": "风暴紫色",
+          "hex": "#595064",
+          "image": "/bikes/propel-advanced1-cn-2027-purple.jpg",
+          "imageRatio": 1.431980906921241,
+          "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3790",
+          "hotspots": {
+            "frame": {
+              "x": 54,
+              "y": 45
+            },
+            "saddle": {
+              "x": 32,
+              "y": 14
+            },
+            "handlebar": {
+              "x": 68,
+              "y": 24
+            },
+            "shifters": {
+              "x": 80,
+              "y": 23
+            },
+            "seatpost": {
+              "x": 36,
+              "y": 27
+            },
+            "crank": {
+              "x": 50,
+              "y": 73
+            },
+            "chainrings": {
+              "x": 45,
+              "y": 73
+            },
+            "power": {
+              "x": 44,
+              "y": 67
+            },
+            "cassette": {
+              "x": 25,
+              "y": 66
+            },
+            "wheels": {
+              "x": 85,
+              "y": 80
+            },
+            "tires": {
+              "x": 91,
+              "y": 44
+            }
+          },
+          "note": "官网斜侧视角，点击热点查看对应部件。"
+        }
+      ]
+    },
+    {
+      "id": "propel-advanced2-cn",
+      "brandId": "giant",
+      "name": "Propel Advanced 2",
+      "family": "Propel",
+      "build": "Shimano 105 · 中国大陆",
+      "edition": "2025 · 中国大陆版",
+      "modelYear": 2025,
+      "yearNote": "车型年取自捷安特大陆商品页公开数据。",
+      "kind": "气动竞赛",
+      "description": "机械 105 与 P-A2 碟刹轮组的大陆配置。分体式 Contact SL Aero 把组保留调节余地，适合先骑原车、再逐步升级。",
+      "collections": ["current"],
+      "image": "/bikes/propel-advanced2-cn.jpg",
+      "imageCredit": "Giant 捷安特中国大陆官网",
+      "imageRatio": 1.431980906921241,
+      "color": "牛油果色",
+      "colorHex": "#b6d593",
+      "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3402",
+      "sourceLabel": "捷安特中国大陆官网 · Propel Advanced 2",
+      "checkedAt": "2026-10-12",
+      "weight": "未公布",
+      "weightNote": "大陆官网未发布整车称量结果，重量不参与自动升级估算。",
+      "groupset": "Shimano 105",
+      "hasPowerMeter": false,
+      "material": "Advanced 碳纤维",
+      "components": [
+        {
+          "id": "frame",
+          "name": "车架",
+          "english": "FRAMESET",
+          "x": 55,
+          "y": 47,
+          "title": "Giant Advanced 碳纤维车架",
+          "description": "按大陆版本记录车架与前叉等级。",
+          "specs": [
+            ["车架", "Advanced-Grade Composite, 12x142mm thru-axle, Disc"],
+            [
+              "前叉",
+              "Advanced-Grade Composite, Hybrid OverDrive Aero Steerer, 12x100mm thru-axle, Disc"
+            ]
+          ]
+        },
+        {
+          "id": "handlebar",
+          "name": "车把",
+          "english": "HANDLEBAR / COCKPIT",
+          "x": 68,
+          "y": 23,
+          "title": "Giant Contact SL Aero",
+          "description": "车把宽度和把立长度需与所选车架尺码一起核对。",
+          "specs": [
+            ["车把", "Giant Contact SL Aero"],
+            ["把立", "Giant Contact SL Aero"]
+          ]
+        },
+        {
+          "id": "seatpost",
+          "name": "座管",
+          "english": "SEATPOST",
+          "x": 36,
+          "y": 27,
+          "title": "Giant Vector 碳纤维座管",
+          "description": "座管形状与车架配套；更换时需核对夹具与后飘量。",
+          "specs": [
+            ["原配座管", "Giant Vector Composite w/ offset -5/+15"],
+            ["版本范围", "2025 中国大陆 · 商品 3402"]
+          ]
+        },
+        {
+          "id": "saddle",
+          "name": "坐垫",
+          "english": "SADDLE",
+          "x": 32,
+          "y": 11,
+          "title": "Giant Fleet SL",
+          "description": "原配坐垫型号；商品页未列出尺寸与重量。",
+          "specs": [
+            ["型号", "Giant Fleet SL"],
+            ["版本范围", "2025 中国大陆 · 商品 3402"]
+          ]
+        },
+        {
+          "id": "shifters",
+          "name": "手变",
+          "english": "SHIFT / BRAKE LEVERS",
+          "x": 80,
+          "y": 22,
+          "title": "Shimano 105",
+          "description": "电子与机械版本分开记录，刹车均按本车配置表标注。",
+          "specs": [
+            ["手变", "Shimano 105"],
+            ["前拨", "Shimano 105"],
+            ["后拨", "Shimano 105"],
+            ["刹车", "Shimano 105 HRD"]
+          ]
+        },
+        {
+          "id": "crank",
+          "name": "曲柄",
+          "english": "CRANK ARMS",
+          "x": 52,
+          "y": 73,
+          "title": "Shimano 105",
+          "description": "曲柄与中轴以此大陆商品的规格表为依据。",
+          "specs": [
+            ["曲柄 / 牙盘", "Shimano 105"],
+            ["中轴", "Shimano, PressFit RS500"]
+          ]
+        },
+        {
+          "id": "chainrings",
+          "name": "牙盘",
+          "english": "CHAINRINGS",
+          "x": 45,
+          "y": 75,
+          "title": "Shimano 105 牙盘",
+          "description": "齿数仅采用官方明确公布的值；Propel Advanced 2 商品页未单列齿数。",
+          "specs": [
+            ["牙盘", "Shimano 105"],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "cassette",
+          "name": "飞轮",
+          "english": "CASSETTE",
+          "x": 22,
+          "y": 65,
+          "title": "Shimano 105, 11-34",
+          "description": "保留官网列出的速别与齿数范围。",
+          "specs": [
+            ["飞轮", "Shimano 105, 11-34"],
+            ["链条", "KMC X12L-1"]
+          ]
+        },
+        {
+          "id": "power",
+          "name": "功率计",
+          "english": "POWER METER",
+          "x": 44,
+          "y": 70,
+          "title": "官网未列功率计",
+          "description": "原配表未列出功率计；选购时可按曲柄或锁踏接口另行配置。",
+          "specs": [
+            ["原配牙盘", "Shimano 105"],
+            ["版本范围", "2025 中国大陆 · 商品 3402"]
+          ]
+        },
+        {
+          "id": "wheels",
+          "name": "轮组",
+          "english": "WHEELSET",
+          "x": 86,
+          "y": 86,
+          "title": "Giant P-A2 · 38 mm",
+          "description": "轮组框高与花鼓资料按本车配置表记录。",
+          "specs": [
+            ["轮组", "Giant P-A2 (38mm with 21mm ID) Disc wheel set"],
+            ["版本范围", "2025 中国大陆 · 商品 3402"]
+          ]
+        },
+        {
+          "id": "tires",
+          "name": "轮胎",
+          "english": "TIRES",
+          "x": 91,
+          "y": 44,
+          "title": "Giant Gavia Course 1",
+          "description": "真空胎配置；胎宽、轮圈适配和胎压需按实际装配核对。",
+          "specs": [
+            ["轮胎", "Giant Gavia COURSE 1 Tubeless"],
+            ["版本范围", "2025 中国大陆 · 商品 3402"]
+          ]
+        }
+      ],
+      "geometry": {
+        "sizes": [
+          {
+            "size": "XS",
+            "stack": 517.0,
+            "reach": 376.0,
+            "seatTube": 465.0,
+            "seatAngle": 74.5,
+            "headAngle": 71.0,
+            "headTube": 120.0,
+            "wheelbase": 976.0,
+            "chainstay": 405.0,
+            "bbDrop": 72.0
+          },
+          {
+            "size": "S",
+            "stack": 528.0,
+            "reach": 383.0,
+            "seatTube": 500.0,
+            "seatAngle": 74.0,
+            "headAngle": 72.25,
+            "headTube": 130.0,
+            "wheelbase": 976.6,
+            "chainstay": 405.0,
+            "bbDrop": 69.5
+          },
+          {
+            "size": "M",
+            "stack": 545.0,
+            "reach": 388.0,
+            "seatTube": 520.0,
+            "seatAngle": 73.5,
+            "headAngle": 73.0,
+            "headTube": 145.0,
+            "wheelbase": 980.0,
+            "chainstay": 405.0,
+            "bbDrop": 69.5
+          },
+          {
+            "size": "ML",
+            "stack": 562.0,
+            "reach": 393.0,
+            "seatTube": 545.0,
+            "seatAngle": 73.0,
+            "headAngle": 73.0,
+            "headTube": 165.0,
+            "wheelbase": 991.0,
+            "chainstay": 405.0,
+            "bbDrop": 67.0
+          },
+          {
+            "size": "L",
+            "stack": 581.0,
+            "reach": 402.0,
+            "seatTube": 575.0,
+            "seatAngle": 73.0,
+            "headAngle": 73.0,
+            "headTube": 185.0,
+            "wheelbase": 1006.0,
+            "chainstay": 405.0,
+            "bbDrop": 67.0
+          }
+        ],
+        "defaultSize": "M",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3402",
+        "sourceLabel": "捷安特中国大陆官网 · 车架几何",
+        "note": "按本商品页几何表逐尺码录入。单位为 mm / °；不同代际独立记录。"
+      },
+      "aero": {
+        "title": "AeroSystem 管型",
+        "description": "官网介绍以管型与把组整合改善空气动力学。",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3402",
+        "limit": "本条目没有可与其他车在相同条件下比较的风阻数值。"
+      },
+      "price": {
+        "label": "¥17,800",
+        "market": "中国大陆官网建议售价 · 整车",
+        "source": "https://www.giant.com.cn/index.php/index/bike_view.html?id=3402",
+        "checkedAt": "2026-10-12"
+      }
     }
   ]
 }

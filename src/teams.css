@@ -13,11 +13,11 @@
   margin: 20px 0;
 }
 .teams-hero h1 span {
-  color: #718d35;
+  color: #5e697a;
 }
 .teams-hero p {
   line-height: 1.9;
-  color: #687360;
+  color: #5e697a;
   margin: 0;
 }
 .teams-hero-number {
@@ -31,7 +31,7 @@
   font:
     600 128px/0.95 'Barlow Condensed',
     sans-serif;
-  color: #7b9056;
+  color: #5e697a;
   letter-spacing: -5px;
 }
 .teams-hero-number span {
@@ -42,7 +42,7 @@
   margin-top: 18px;
 }
 .teams-hero-number small {
-  color: #7b866f;
+  color: #7d8797;
   font-size: 11px;
   margin-top: 10px;
 }
@@ -85,13 +85,13 @@
   font-size: 11px;
 }
 .teams-filter button[aria-pressed='true'] {
-  background: #253020;
-  color: #ecf1dc;
-  border-color: #253020;
+  background: #303947;
+  color: #eef0f4;
+  border-color: #303947;
 }
 .teams-scope {
   max-width: 860px;
-  color: #6a7860;
+  color: #5e697a;
   font-size: 12px;
   line-height: 1.9;
   margin: 8px 0 16px;
@@ -101,7 +101,7 @@
     500 11px 'Barlow',
     sans-serif;
   letter-spacing: 1px;
-  color: #768768;
+  color: #5e697a;
   margin-bottom: 15px;
 }
 .teams-grid {
@@ -113,7 +113,7 @@
   min-width: 0;
   border: 1px solid var(--line);
   border-top: 3px solid var(--team-color);
-  background: #fafbf6;
+  background: #fafafa;
 }
 .team-card-top {
   display: flex;
@@ -134,7 +134,7 @@
   min-height: 135px;
 }
 .team-intro > small {
-  color: #708060;
+  color: #5e697a;
   font-size: 11px;
 }
 .team-intro h2 {
@@ -147,7 +147,7 @@
 .team-intro p {
   font-size: 13px;
   line-height: 1.7;
-  color: #66745b;
+  color: #5e697a;
   margin: 0;
 }
 .team-bike-photo {
@@ -167,7 +167,7 @@
   justify-content: space-between;
   gap: 10px;
   font-size: 10px;
-  color: #7a8570;
+  color: #7d8797;
   margin-top: 8px;
 }
 .team-body {
@@ -177,7 +177,7 @@
   min-height: 90px;
   font-size: 12px;
   line-height: 1.9;
-  color: #627456;
+  color: #5e697a;
   margin: 0 0 20px;
 }
 .team-body dl {
@@ -194,7 +194,7 @@
   line-height: 1.7;
 }
 .team-body dt {
-  color: #748367;
+  color: #5e697a;
 }
 .team-body dd {
   margin: 0;
@@ -213,7 +213,7 @@
 .team-look p {
   font-size: 12px;
   line-height: 1.9;
-  color: #65765a;
+  color: #5e697a;
   margin: 0;
 }
 .team-bike-links {
@@ -224,7 +224,7 @@
 .team-bike-links > span {
   width: 100%;
   font-size: 10px;
-  color: #7c8a6f;
+  color: #7d8797;
   margin-bottom: 5px;
 }
 .team-bike-links a {
@@ -232,11 +232,11 @@
   align-items: center;
   gap: 8px;
   padding: 8px 10px;
-  border: 1px solid #d5ddc9;
+  border: 1px solid #e0e4eb;
   font-size: 12px;
 }
 .team-bike-links a:hover {
-  background: #edf2df;
+  background: #eef0f4;
 }
 .team-compare {
   margin-top: 20px;
@@ -251,7 +251,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #748168;
+  color: #5e697a;
   font-size: 10px;
   line-height: 1.8;
 }
@@ -262,7 +262,7 @@
   align-items: center;
   margin: 30px 0 55px;
   font-size: 11px;
-  color: #748367;
+  color: #5e697a;
   line-height: 1.9;
 }
 .team-footnote .text-link {
@@ -316,15 +316,15 @@
   padding: 5px 0;
 }
 .peloton-nav a[aria-current='page'] {
-  border-bottom: 2px solid #778b4b;
-  color: #526936;
+  border-bottom: 2px solid #5e697a;
+  color: #5e697a;
 }
 .peloton-nav span {
   margin-left: auto;
   font:
     500 10px 'Barlow',
     sans-serif;
-  color: #7d896f;
+  color: #7d8797;
   letter-spacing: 1.5px;
 }
 .team-riders {
@@ -336,11 +336,11 @@
 }
 .team-riders span {
   width: 100%;
-  color: #78866a;
+  color: #5e697a;
 }
 .team-riders a {
   padding: 7px 9px;
-  background: #eff2e6;
+  background: #eef0f4;
 }
 @media (max-width: 600px) {
   .peloton-nav {

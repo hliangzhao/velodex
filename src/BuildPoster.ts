@@ -26,11 +26,11 @@ export async function drawPoster(
   const picture = new Image();
   picture.src = imageUrl(paint.image);
   await picture.decode();
-  c.fillStyle = '#f1f0e8';
+  c.fillStyle = '#f6f7f9';
   c.fillRect(0, 0, 1080, 1600);
-  c.fillStyle = '#17392e';
+  c.fillStyle = '#20242c';
   c.fillRect(0, 0, 1080, 210);
-  c.fillStyle = '#d9f479';
+  c.fillStyle = '#e7ecff';
   c.font = '600 30px "Barlow Condensed", sans-serif';
   c.fillText('VÉLODEX / DREAM BUILD', 64, 68);
   const fitText = (
@@ -39,7 +39,7 @@ export async function drawPoster(
     y: number,
     max: number,
     size: number,
-    color = '#17392e',
+    color = '#20242c',
   ) => {
     c.fillStyle = color;
     c.font = `600 ${size}px sans-serif`;
@@ -53,7 +53,7 @@ export async function drawPoster(
     }
     c.fillText(s, x, y);
   };
-  fitText(build.title || '我的梦幻装车单', 64, 147, 952, 46, '#f1f0e8');
+  fitText(build.title || '我的梦幻装车单', 64, 147, 952, 46, '#f6f7f9');
   const scale = Math.min(960 / picture.naturalWidth, 440 / picture.naturalHeight);
   c.drawImage(
     picture,
@@ -63,23 +63,23 @@ export async function drawPoster(
     picture.naturalHeight * scale,
   );
   fitText(bike.family, 64, 705, 952, 48);
-  fitText(paint.name, 64, 744, 952, 24, '#627068');
+  fitText(paint.name, 64, 744, 952, 24, '#5e697a');
   c.font = '20px sans-serif';
-  c.fillStyle = '#627068';
+  c.fillStyle = '#5e697a';
   c.fillText('灵感车型原图 · 不代表所选配件的实装效果', 64, 777);
   slots.forEach(([slot, label], i) => {
     const y = 825 + i * 57;
-    c.strokeStyle = '#d7d9cd';
+    c.strokeStyle = '#e0e4eb';
     c.beginPath();
     c.moveTo(64, y - 19);
     c.lineTo(1016, y - 19);
     c.stroke();
     c.font = '23px sans-serif';
-    c.fillStyle = '#627068';
+    c.fillStyle = '#5e697a';
     c.fillText(label, 64, y + 14);
     fitText(itemName(build, slot, bike, products), 265, y + 14, 735, 26);
   });
-  c.fillStyle = '#d9f479';
+  c.fillStyle = '#e7ecff';
   c.fillRect(64, 1300, 952, 116);
   const g = totals(build, 'grams'),
     p = totals(build, 'yuan');
@@ -100,7 +100,7 @@ export async function drawPoster(
     30,
   );
   c.font = '20px sans-serif';
-  c.fillStyle = '#17392e';
+  c.fillStyle = '#20242c';
   c.fillText(
     g.known
       ? `${g.known}/${g.total} 项 · 官方 ${weightBreakdown(build).official} / 自填 ${weightBreakdown(build).manual}`
@@ -109,15 +109,14 @@ export async function drawPoster(
     1387,
   );
   c.fillText(`${p.known} / ${p.total} 项已填 · 用户预算`, 560, 1387);
-  c.fillStyle = '#627068';
+  c.fillStyle = '#5e697a';
   c.font = '20px sans-serif';
   c.fillText('非实车称重，未知项未计入；配件兼容性需另核对。', 64, 1464);
   c.fillText(`原图：${bike.imageCredit.slice(0, 65)}`, 64, 1500);
-  c.fillStyle = '#17392e';
+  c.fillStyle = '#20242c';
   c.font = '600 26px "Barlow", sans-serif';
   c.fillText('hliangzhao.me/velodex', 64, 1560);
   c.font = '22px sans-serif';
-  c.fillText('献给每一个忍不住回头看车的人。', 614, 1560);
   return new Promise((resolve, reject) =>
     canvas.toBlob(
       (blob) => (blob ? resolve(blob) : reject(new Error('PNG 导出失败'))),

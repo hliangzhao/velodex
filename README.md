@@ -4,8 +4,6 @@
 
 **装车选配 · 升级估价 · 器材与骑行知识**
 
-献给每一个忍不住回头看车的人。
-
 [打开装车台](https://hliangzhao.me/velodex/) · [车型资料](https://hliangzhao.me/velodex/?view=bikes) · [骑行工具](https://hliangzhao.me/velodex/?view=workshop) · [交流与建议](https://github.com/hliangzhao/velodex/discussions/1)
 
 [![检查与构建](https://github.com/hliangzhao/velodex/actions/workflows/checks.yml/badge.svg)](https://github.com/hliangzhao/velodex/actions/workflows/checks.yml)
@@ -74,15 +72,17 @@ VÉLODEX 是这份兴趣的延伸：把喜欢的车、想弄懂的设计和值�
 
 ## 网站内容
 
-截至 **2026 年 10 月 4 日**，站内已收录：
+截至 **2026 年 10 月 12 日**，站内已收录：
 
 | 整车品牌 | 整车车型 | 外观与涂装 | 核心配件 | 职业车队 | 车手焦点 |
 | :------: | :------: | :--------: | :------: | :------: | :------: |
-|  **24**  |  **84**  |  **126**   | **100**  |  **16**  |  **16**  |
+|  **24**  |  **89**  |  **132**   | **100**  |  **16**  |  **16**  |
 
-外观数包含每款车型的默认配色与已收录的额外涂装；其中 24 款车型支持多涂装切换。配件来自 28 个厂商。
+外观数包含每款车型的默认配色与已收录的额外涂装；其中 25 款车型支持多涂装切换。配件来自 28 个厂商。
 
-本次新增 Farsports C / S、EVO C / S 及其 CS 轴承版本，共 18 个轮组规格和 F1S、F1X 一体把；新增 ELILEE BLIZE、EVOLUTION Gen2 与 SEKA Spear、ExAero、ExAero GR 共 9 个车架版本。装车台可选 12 个车架版本，人民币与海外参考价分别显示。[大陆选配资料与版本说明](docs/mainland-build-options.md)。
+新增捷安特大陆版 TCR Advanced 1-KOM、TCR Advanced Pro 1-Di2、Defy Advanced 2、Propel Advanced 2 与 2027 Propel Advanced 1，独立记录官方整车参考价和版本来源；两款 Propel 可查看大陆几何表，Advanced 1 支持贝母白与风暴紫涂装切换。
+
+此前新增 Farsports C / S、EVO C / S 及其 CS 轴承版本，共 18 个轮组规格和 F1S、F1X 一体把；新增 ELILEE BLIZE、EVOLUTION Gen2 与 SEKA Spear、ExAero、ExAero GR 共 9 个车架版本。装车台可选 12 个车架版本，人民币与海外参考价分别显示。[大陆选配资料与版本说明](docs/mainland-build-options.md)。
 
 近期补充 10 款中国大陆官网车型：喜德盛 / X-LAB RS8、RS9、2026 AD7、AD350、AD600、GT8，以及 CAMP ACE III 105、ACE QED、SR5 ETS、GX700，共 28 种外观。国内版与海外版分别建档，标注人民币官方整车价格；RS8、RS9 和国内版 AD7 可查看完整官方几何数据。搜索支持地区和涂装名称，例如“中国大陆”“唐三彩”“星黛紫”。[查看这批车型的资料与核对说明](docs/mainland-catalog.md)。
 
@@ -221,6 +221,6 @@ npm run dev
 
 **享受做学术，也享受骑行与生活。**
 
-[去逛 VÉLODEX](https://hliangzhao.me/velodex/) · [作者的学术主页](https://hliangzhao.me/) · [GitHub 仓库](https://github.com/hliangzhao/velodex)
+[去逛 VÉLODEX](https://hliangzhao.me/velodex/) · [GitHub 仓库](https://github.com/hliangzhao/velodex)
 
 </div>

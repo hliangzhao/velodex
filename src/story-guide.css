@@ -4,7 +4,7 @@
   margin: 0 auto 64px;
 }
 .story-guide-meta {
-  color: #68785b;
+  color: #5e697a;
   font-size: 12px;
   margin-bottom: 20px;
 }
@@ -15,7 +15,7 @@
   margin: 24px 0;
 }
 .story-table-scroll:focus-visible {
-  outline: 2px solid #657a49;
+  outline: 2px solid #5e697a;
   outline-offset: 4px;
 }
 .story-table {
@@ -29,7 +29,7 @@
 .story-table caption {
   text-align: left;
   padding: 14px 20px;
-  background: #e7eddd;
+  background: #eef0f4;
   font-weight: 600;
 }
 .story-table th,
@@ -39,9 +39,9 @@
   vertical-align: top;
 }
 .story-table thead th {
-  color: #68785b;
+  color: #5e697a;
   font-weight: 500;
-  background: #f0f3e9;
+  background: #f6f7f9;
 }
 .story-table tbody th {
   font-weight: 500;
@@ -53,7 +53,7 @@
   display: block;
   margin-top: 5px;
   font-size: 11px;
-  color: #748367;
+  color: #5e697a;
 }
 .story-table a {
   display: inline-flex;
@@ -90,7 +90,7 @@
   max-width: 840px;
   font-size: 15px;
   line-height: 2.1;
-  color: #526247;
+  color: #5e697a;
   margin-bottom: 18px;
 }
 .story-guide-citations {
@@ -99,7 +99,7 @@
   gap: 8px 18px;
   border-top: 1px solid var(--line);
   padding-top: 16px;
-  color: #6e7d61;
+  color: #5e697a;
   font-size: 11px;
   line-height: 1.8;
 }
